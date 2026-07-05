@@ -1,0 +1,113 @@
+# ============================================================================
+# JobRadar config — target companies + matching rules
+# Edit this file to add/remove companies or tune what counts as a match.
+# Company feeds use public ATS JSON APIs (Greenhouse / Lever / Ashby) — no
+# scraping, no ToS risk. To add a company, find its ATS token (see README).
+# ============================================================================
+
+match:
+  # A role's TITLE must contain at least one of these (case-insensitive).
+  role_keywords:
+    - devops
+    - "site reliability"
+    - sre
+    - "platform engineer"
+    - "platform engineering"
+    - "infrastructure engineer"
+    - "cloud engineer"
+    - "systems engineer"
+    - "systems development"
+    - kubernetes
+    - "cloud infrastructure"
+
+  # Seniority tags — used only to LABEL alerts (not to filter), so you never
+  # miss a good role that titles itself unusually.
+  seniority_keywords:
+    - senior
+    - staff
+    - lead
+    - principal
+    - "sde-3"
+    - "sde iii"
+    - "sde-2"
+    - "l5"
+    - "l6"
+
+  # Location must match India (city or "India") OR remote-India-eligible.
+  location_india_keywords:
+    - mumbai
+    - navi mumbai
+    - bengaluru
+    - bangalore
+    - hyderabad
+    - pune
+    - gurugram
+    - gurgaon
+    - noida
+    - chennai
+    - delhi
+    - india
+
+  # A bare "Remote" role passes only if it ALSO mentions one of these
+  # (so a US-only remote role at a global company doesn't spam you).
+  remote_region_keywords:
+    - india
+    - apac
+    - asia
+    - global
+    - worldwide
+    - anywhere
+
+  # Drop the role if its title/location contains any of these.
+  exclude_keywords:
+    - intern
+    - internship
+    - "new grad"
+    - "new graduate"
+    - graduate program
+    - apprentice
+    - trainee
+    - "working student"
+
+  # Never alert for your own employer (NDA + you're not leaving).
+  exclude_companies:
+    - dream11
+    - "dream sports"
+    - fancode
+    - "sporta technologies"
+
+# ----------------------------------------------------------------------------
+# Companies. ats: greenhouse | lever | ashby.  token: the board identifier.
+# All tokens below were verified live (returned jobs) on build day.
+# tier is just a label shown in the alert.
+# ----------------------------------------------------------------------------
+companies:
+  # --- India product / fintech (highest relevance) ---
+  - { name: PhonePe,     ats: greenhouse, token: phonepe,    tier: "Fintech · Blr" }
+  - { name: Groww,       ats: greenhouse, token: groww,      tier: "Fintech · Blr" }
+  - { name: Slice,       ats: greenhouse, token: slice,      tier: "Fintech · Blr" }
+  - { name: CRED,        ats: lever,      token: cred,       tier: "Fintech · Blr" }
+  - { name: Zeta,        ats: greenhouse, token: zetaglobal, tier: "Fintech · Blr/Mum" }
+  - { name: PubMatic,    ats: greenhouse, token: pubmatic,   tier: "Adtech · Pune/Mum" }
+  - { name: Druva,       ats: greenhouse, token: druva,      tier: "SaaS · Pune" }
+  - { name: Postman,     ats: greenhouse, token: postman,    tier: "SaaS · Blr" }
+  - { name: HackerRank,  ats: greenhouse, token: hackerrank, tier: "SaaS · Blr" }
+  - { name: Plivo,       ats: lever,      token: plivo,      tier: "SaaS · Blr" }
+
+  # --- Global product cos with India/remote-India DevOps hiring ---
+  - { name: GitLab,      ats: greenhouse, token: gitlab,     tier: "Product · Remote" }
+  - { name: Cloudflare,  ats: greenhouse, token: cloudflare, tier: "Product · Blr/Remote" }
+  - { name: MongoDB,     ats: greenhouse, token: mongodb,    tier: "Product · Blr/Remote" }
+  - { name: Elastic,     ats: greenhouse, token: elastic,    tier: "Product · Remote" }
+  - { name: Rubrik,      ats: greenhouse, token: rubrik,     tier: "Product · Blr" }
+  - { name: Databricks,  ats: greenhouse, token: databricks, tier: "Product · Blr" }
+  - { name: Stripe,      ats: greenhouse, token: stripe,     tier: "Fintech · Blr/Remote" }
+  - { name: Adyen,       ats: greenhouse, token: adyen,      tier: "Fintech · Global" }
+  - { name: Notion,      ats: ashby,      token: notion,     tier: "SaaS · Remote" }
+
+  # ---------------------------------------------------------------------------
+  # BIG-TECH TARGETS (Amazon, Google, Microsoft, Apple, Atlassian, Flipkart,
+  # Walmart, Salesforce, Adobe, Razorpay) use their OWN career sites, not these
+  # ATSes — they need custom fetchers (v2). Until then, set a saved search on
+  # each and let their native email alerts cover them. See README > Roadmap.
+  # ---------------------------------------------------------------------------

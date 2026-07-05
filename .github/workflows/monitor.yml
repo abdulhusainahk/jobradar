@@ -1,0 +1,53 @@
+name: JobRadar monitor
+
+on:
+  schedule:
+    # Every 30 minutes. GitHub cron is UTC and may drift 10-30 min under load —
+    # fine for job monitoring (postings live for days).
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}   # lets you run it manually from the Actions tab
+
+# Needed so the job can commit the updated seen_jobs.json back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: jobradar
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run JobRadar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_USER:         ${{ secrets.EMAIL_USER }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO:           ${{ secrets.EMAIL_TO }}
+          # Optional AI scoring (leave unset for free keyword-only mode):
+          AI_SCORING:         ${{ vars.AI_SCORING }}
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m jobradar
+
+      - name: Persist seen-jobs state
+        run: |
+          git config user.name  "jobradar-bot"
+          git config user.email "jobradar-bot@users.noreply.github.com"
+          git add seen_jobs.json
+          if git diff --cached --quiet; then
+            echo "No state change."
+          else
+            git commit -m "chore: update seen jobs [skip ci]"
+            git push
+          fi
