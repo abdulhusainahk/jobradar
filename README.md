@@ -1,11 +1,13 @@
 # JobRadar 🎯
 
 A free, always-on **cloud monitor** for senior DevOps / SRE / Platform openings at
-high-end product companies (Mumbai → Bangalore → remote-India). It polls each
-company's **public ATS API** (Greenhouse / Lever / Ashby) on a schedule via
-**GitHub Actions**, filters for roles that fit your profile, de-dupes against
-what it has already seen, and pings you on **Telegram + email** the moment a new
-one appears.
+high-end product companies across **India (Mumbai/Bangalore first), UAE (Dubai),
+and Europe** (per the roadmap). It polls each company's **public job API** —
+ATS boards (Greenhouse / Lever / Ashby) *and* big-tech portals (Amazon,
+Microsoft, Salesforce/Adobe via Workday) — on a schedule via **GitHub Actions**,
+filters for roles that fit your profile, sorts **newest-posted first**, de-dupes
+against what it has already sent, and pings you on **Telegram + email** the
+moment a new one appears.
 
 - **₹0/month** — runs on GitHub Actions' free public-repo minutes. No server, no PC.
 - **No scraping, no ToS risk** — reads official ATS JSON feeds only.
@@ -13,7 +15,13 @@ one appears.
   at top product companies). Optional device-side *assisted* apply via Simplify.
 - **Keyword-only by default (free).** Optional AI fit-scoring is a feature flag.
 
-Verified live on build day: **19 companies, ~3,250 roles scanned, correct matches.**
+Verified live on build day: **~30 companies + big-tech portals, ~4,000 roles
+scanned, 28 correct India/UAE/Europe matches, newest first.**
+
+**Dedup:** every alerted role is keyed `company::job_id` in `seen_jobs.json` and
+never sent twice — even across restarts. **Recency:** matches are ordered
+newest-posted first, and each alert shows a "🆕 posted today / Nd ago" badge, so
+the freshest openings (the ones worth applying to *immediately*) are at the top.
 
 ---
 
@@ -120,18 +128,26 @@ Edit `config.yaml`. Each entry needs an `ats` and a `token`:
 | `greenhouse` | careers page URL `boards.greenhouse.io/<token>` | `https://boards-api.greenhouse.io/v1/boards/<token>/jobs` |
 | `lever` | `jobs.lever.co/<token>` | `https://api.lever.co/v0/postings/<token>?mode=json` |
 | `ashby` | `jobs.ashbyhq.com/<token>` | `https://api.ashbyhq.com/posting-api/job-board/<token>` |
+| `amazon` | (no token — set `queries:` list) | uses `amazon.jobs/en/search.json?sort=recent` |
+| `microsoft` | (no token — set `queries:` list) | uses `gcsservices.careers.microsoft.com` search |
+| `workday` | set `host:` + `site:` (from the careers URL `<host>/<site>`) | POSTs `/wday/cxs/<tenant>/<site>/jobs` |
 
 If the test URL returns JSON with jobs, the token is valid. Tune matching in the
-`match:` block (role/location/seniority/exclude keywords).
+`match:` block: `regions_enabled` (india/uae/europe), `locations`, role and
+exclude keywords.
+
+> **Microsoft note:** the Microsoft fetcher is coded to the live careers API but
+> could not be validated from the build sandbox (its TLS was intercepted). It
+> fails safe to zero if it can't connect — check the first Action run's logs to
+> confirm it returns roles.
 
 ---
 
 ## Roadmap (v2)
 
-- **Big-tech fetchers.** Amazon, Google, Microsoft, Apple, Atlassian, Flipkart,
-  Walmart, Salesforce, Adobe, Razorpay use their own career sites (custom JSON
-  APIs), not Greenhouse/Lever/Ashby. Each needs a bespoke fetcher. Until then,
-  set a **saved search + native email alert** on each of those career pages.
+- **Still native-alert only** (no clean public API): Google, Apple, Atlassian,
+  Flipkart, Walmart, Razorpay. Set a **saved search + native email alert** on
+  each of those career pages until a bespoke fetcher exists.
 - Assisted auto-apply hook (Simplify/FastApply, device-side).
 - Cloudflare Workers Cron variant for sub-minute latency.
 - Weekly digest + "roles closed" tracking.

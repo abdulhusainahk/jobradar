@@ -8,9 +8,21 @@ import html
 import os
 import smtplib
 import sys
+from datetime import datetime, timezone
 from email.mime.text import MIMEText
 
 import requests
+
+
+def _age(ts: float) -> str:
+    if not ts:
+        return ""
+    days = (datetime.now(timezone.utc).timestamp() - ts) / 86400
+    if days < 1:
+        return " · 🆕 posted today"
+    if days < 2:
+        return " · posted yesterday"
+    return f" · posted {int(days)}d ago"
 
 
 def _log(msg: str) -> None:
@@ -22,7 +34,8 @@ def _job_line_html(job: dict) -> str:
     score = f" · fit {job['ai_score']}/100" if job.get("ai_score") is not None else ""
     return (
         f"🎯 <b>{html.escape(job['title'])}</b>{tag}{score}<br>"
-        f"🏢 {html.escape(job['company'])} <i>({html.escape(job.get('tier',''))})</i><br>"
+        f"🏢 {html.escape(job['company'])} <i>({html.escape(job.get('tier',''))})</i>"
+        f"{html.escape(_age(job.get('posted_ts', 0)))}<br>"
         f"📍 {html.escape(job['location'] or 'n/a')}<br>"
         f"🔗 <a href=\"{html.escape(job['url'])}\">Apply / view posting</a>"
         + (f"<br>💬 <i>{html.escape(job['ai_note'])}</i>" if job.get("ai_note") else "")

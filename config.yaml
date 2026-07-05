@@ -33,27 +33,51 @@ match:
     - "l5"
     - "l6"
 
-  # Location must match India (city or "India") OR remote-India-eligible.
-  location_india_keywords:
-    - mumbai
-    - navi mumbai
-    - bengaluru
-    - bangalore
-    - hyderabad
-    - pune
-    - gurugram
-    - gurgaon
-    - noida
-    - chennai
-    - delhi
-    - india
+  # Which region groups to alert on. Comment one out to disable it.
+  regions_enabled: [india, uae, europe]
 
-  # A bare "Remote" role passes only if it ALSO mentions one of these
+  # Location keyword groups. A role matches if its location contains any keyword
+  # from an ENABLED region (India first per your focus; UAE + Europe per roadmap).
+  locations:
+    india:
+      - mumbai
+      - navi mumbai
+      - bengaluru
+      - bangalore
+      - hyderabad
+      - pune
+      - gurugram
+      - gurgaon
+      - noida
+      - chennai
+      - delhi
+      - india
+    uae:
+      - dubai
+      - abu dhabi
+      - "u.a.e"
+      - uae
+      - united arab emirates
+    europe:
+      - dublin
+      - ireland
+      - berlin
+      - munich
+      - germany
+      - amsterdam
+      - netherlands
+      - london
+      - united kingdom
+      - "emea"
+
+  # A bare "Remote" role passes only if it ALSO mentions one of these regions
   # (so a US-only remote role at a global company doesn't spam you).
   remote_region_keywords:
     - india
     - apac
     - asia
+    - emea
+    - europe
     - global
     - worldwide
     - anywhere
@@ -101,13 +125,27 @@ companies:
   - { name: Elastic,     ats: greenhouse, token: elastic,    tier: "Product · Remote" }
   - { name: Rubrik,      ats: greenhouse, token: rubrik,     tier: "Product · Blr" }
   - { name: Databricks,  ats: greenhouse, token: databricks, tier: "Product · Blr" }
-  - { name: Stripe,      ats: greenhouse, token: stripe,     tier: "Fintech · Blr/Remote" }
-  - { name: Adyen,       ats: greenhouse, token: adyen,      tier: "Fintech · Global" }
   - { name: Notion,      ats: ashby,      token: notion,     tier: "SaaS · Remote" }
 
+  # --- Big-tech (custom portal fetchers, verified) ---
+  # Amazon/Microsoft loop role queries and return newest-first; location filter
+  # narrows to your enabled regions (India/UAE/Europe incl. Dubai & EU hubs).
+  - { name: Amazon,     ats: amazon,    tier: "FAANG (incl. Dubai/EU hubs)" }
+  - { name: Microsoft,  ats: microsoft, tier: "MANGO GCC" }
+  - { name: Salesforce, ats: workday,   host: salesforce.wd12.myworkdayjobs.com, site: External_Career_Site, tier: "Product GCC" }
+  - { name: Adobe,      ats: workday,   host: adobe.wd5.myworkdayjobs.com,        site: external_experienced, tier: "Product GCC" }
+
+  # --- UAE / Europe roadmap targets (via their ATS feeds) ---
+  - { name: Stripe,       ats: greenhouse, token: stripe,       tier: "EU/Blr · Fintech" }
+  - { name: Adyen,        ats: greenhouse, token: adyen,        tier: "Amsterdam · Fintech" }
+  - { name: N26,          ats: greenhouse, token: n26,          tier: "Berlin · Fintech" }
+  - { name: Spotify,      ats: lever,      token: spotify,      tier: "EU · Media-tech" }
+  - { name: Celonis,      ats: greenhouse, token: celonis,      tier: "Munich · SaaS" }
+  - { name: Monzo,        ats: greenhouse, token: monzo,        tier: "London · Fintech" }
+  - { name: GetYourGuide, ats: greenhouse, token: getyourguide, tier: "Berlin · Travel-tech" }
+
   # ---------------------------------------------------------------------------
-  # BIG-TECH TARGETS (Amazon, Google, Microsoft, Apple, Atlassian, Flipkart,
-  # Walmart, Salesforce, Adobe, Razorpay) use their OWN career sites, not these
-  # ATSes — they need custom fetchers (v2). Until then, set a saved search on
-  # each and let their native email alerts cover them. See README > Roadmap.
+  # Still native-alert only (no clean public API): Google, Apple, Atlassian,
+  # Flipkart, Walmart, Razorpay, PhonePe-UAE. Set a saved search + email alert
+  # on each of those career pages. See README > Roadmap.
   # ---------------------------------------------------------------------------

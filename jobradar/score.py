@@ -77,6 +77,6 @@ def score_jobs(jobs: list[dict]) -> list[dict]:
             job["ai_note"] = ""
         if job.get("ai_score") is None or job["ai_score"] >= MIN_SCORE:
             kept.append(job)
-    # Best matches first
-    kept.sort(key=lambda j: (j.get("ai_score") or 0), reverse=True)
+    # Note: final ordering is by recency (newest first), applied in main.py.
+    # AI_MIN_SCORE only filters here; it does not reorder.
     return kept

@@ -11,13 +11,23 @@ def role_matches(title: str, m: dict) -> bool:
     return any(k.lower() in t for k in m.get("role_keywords", []))
 
 
+def _allowed_locations(m: dict) -> list[str]:
+    """Union of location keywords for every enabled region."""
+    locs = m.get("locations", {})
+    enabled = m.get("regions_enabled", list(locs.keys()))
+    out: list[str] = []
+    for region in enabled:
+        out += locs.get(region, [])
+    return out
+
+
 def location_matches(location: str, m: dict) -> bool:
     loc = _lower(location)
     if not loc:
         return False
-    if any(k.lower() in loc for k in m.get("location_india_keywords", [])):
+    if any(k.lower() in loc for k in _allowed_locations(m)):
         return True
-    # bare "remote" only counts if paired with an allowed region
+    # bare "remote" only counts if paired with an allowed region term
     if "remote" in loc:
         return any(k.lower() in loc for k in m.get("remote_region_keywords", []))
     return False

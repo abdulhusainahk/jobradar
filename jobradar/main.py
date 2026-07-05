@@ -50,6 +50,10 @@ def run() -> int:
 
     matched_new = score.score_jobs(matched_new)  # no-op unless AI_SCORING=on
 
+    # Newest postings first (what you want to act on soonest). Unknown dates
+    # (posted_ts == 0) sink to the bottom.
+    matched_new.sort(key=lambda j: j.get("posted_ts", 0.0), reverse=True)
+
     if matched_new:
         for j in matched_new:
             print(f"  → {j['company']}: {j['title']} [{j['location']}]", file=sys.stderr)
