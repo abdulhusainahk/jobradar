@@ -11,6 +11,10 @@ on:
         description: "Send ONE test alert to confirm Telegram/email works, then exit"
         type: boolean
         default: false
+      resend_all:
+        description: "Re-send ALL current matches as one fit-ranked digest (non-destructive)"
+        type: boolean
+        default: false
 
 # Needed so the job can commit the updated seen_jobs.json back to the repo.
 permissions:
@@ -44,6 +48,7 @@ jobs:
           AI_SCORING:         ${{ vars.AI_SCORING }}
           ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
           JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
+          JOBRADAR_RESEND_ALL: ${{ inputs.resend_all }}
         run: python -m jobradar
 
       - name: Persist seen-jobs state

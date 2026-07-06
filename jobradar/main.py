@@ -42,10 +42,15 @@ def run() -> int:
               "(see the [telegram]/[email] lines above).", file=sys.stderr)
         return 0
 
+    # resend_all: re-send ALL current matches as one fit-ranked digest, without
+    # touching saved state (non-destructive, repeatable). For seeing the current
+    # open roles in the new format on demand.
+    resend = _truthy(os.environ.get("JOBRADAR_RESEND_ALL", ""))
+
     st = state.load()
     # First ever run: record what's already open as a baseline and DON'T alert,
     # so you only get pinged for roles posted after JobRadar goes live.
-    baseline = not st["seen"]
+    baseline = (not resend) and (not st["seen"])
 
     tier_by_company = {c["name"]: c.get("tier", "") for c in companies}
 
@@ -56,13 +61,14 @@ def run() -> int:
             total_seen += 1
             if not jf.passes(job, m):
                 continue
-            if not state.is_new(st, job):
+            if not resend and not state.is_new(st, job):
                 continue
             job["tier"] = tier_by_company.get(job["company"], "")
             job["seniority"] = jf.seniority_tag(job["title"], m)
             job["_c"] = c  # source config, for on-demand JD fetch
             matched_new.append(job)
-            state.mark(st, job)  # mark so we never re-alert, even if notify fails
+            if not resend:
+                state.mark(st, job)  # mark so we never re-alert, even if notify fails
 
     print(f"\nScanned {total_seen} roles across {len(companies)} companies; "
           f"{len(matched_new)} match(es).", file=sys.stderr)
@@ -101,7 +107,8 @@ def run() -> int:
                   f"[{j['location']}]", file=sys.stderr)
         notify.dispatch(matched_new)
 
-    state.save(st)  # persist even with zero matches (keeps the file/commit fresh)
+    if not resend:
+        state.save(st)  # persist (keeps the committed state fresh)
     return 0
 
 
