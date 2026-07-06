@@ -301,10 +301,48 @@ def google(c: dict) -> list[dict]:
     return out
 
 
+def oracle(c: dict) -> list[dict]:
+    """Oracle Recruiting Cloud (fa.oraclecloud.com) — used by many finance GCCs
+    (JP Morgan, etc.). Config needs host + site (siteNumber, default CX_1001).
+    """
+    host = c["host"]
+    site = c.get("site", "CX_1001")
+    base = f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+    seen, out = set(), []
+    for q in c.get("queries", DEFAULT_QUERIES):
+        kw = requests.utils.quote(f'"{q}"')
+        url = (f"{base}?onlyData=true&expand=requisitionList.secondaryLocations"
+               f"&finder=findReqs;siteNumber={site},keyword={kw},"
+               f"sortBy=POSTING_DATES_DESC,limit=50")
+        try:
+            data = _get(url)
+        except Exception as e:  # noqa: BLE001
+            _log(f"[oracle:{host}] '{q}': {e}")
+            continue
+        items = data.get("items") or []
+        reqs = items[0].get("requisitionList", []) if items else []
+        for j in reqs:
+            jid = str(j.get("Id"))
+            if jid in seen:
+                continue
+            seen.add(jid)
+            locs = [j.get("PrimaryLocation", "")] + \
+                   [s.get("Name", "") for s in (j.get("secondaryLocations") or [])]
+            out.append({
+                "id": jid,
+                "title": (j.get("Title") or "").strip(),
+                "company": c["name"],
+                "location": "; ".join([l for l in locs if l][:3]),
+                "url": f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{jid}",
+                "posted_ts": _iso_ts(j.get("PostedDate")),
+            })
+    return out
+
+
 _FETCHERS = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
     "amazon": amazon, "microsoft": microsoft, "workday": workday,
-    "atlassian": atlassian, "google": google,
+    "atlassian": atlassian, "google": google, "oracle": oracle,
 }
 
 

@@ -108,12 +108,13 @@ match:
     - "working student"
     - junior
     - "jr."
-    - associate
     - "entry level"
     - "entry-level"
-    # too senior / management (Senior/Staff/Lead/Principal are kept — they're your targets)
-    - director
-    - "vice president"
+    # NOTE: "Vice President" and "Associate" are NOT excluded — at banks/finance
+    # GCCs these are senior IC *levels* (VP ≈ 6-10 yrs, ₹52-90L), exactly your
+    # target. The experience-band filter still drops genuinely junior ones.
+    # too senior / management (Senior/Staff/Lead/Principal/VP are kept — your targets)
+    - director            # also catches Executive/Managing Director (bank ED/MD = too senior)
     - "head of"
     - chief
     - "distinguished engineer"
@@ -179,6 +180,9 @@ companies:
   - { name: GetYourGuide, ats: greenhouse, token: getyourguide, tier: "Berlin · Travel-tech" }
   - { name: HelloFresh,   ats: greenhouse, token: hellofresh,   tier: "Berlin · Food-tech" }
   - { name: Trivago,      ats: greenhouse, token: trivago,      tier: "Düsseldorf · Travel-tech" }
+
+  # --- Finance GCCs (huge Mumbai/Blr tech hubs; VP-level ≈ 60L+, clears target) ---
+  - { name: "J.P. Morgan", ats: oracle, host: jpmc.fa.oraclecloud.com, site: CX_1001, tier: "Finance GCC · Mumbai HQ" }
 
   # ---------------------------------------------------------------------------
   # Still native-alert only (no clean public API): Apple, Flipkart, Walmart,

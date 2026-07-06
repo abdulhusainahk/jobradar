@@ -38,6 +38,16 @@ def enrich_jd(job: dict) -> str:
                 f"?position_id={jid}&domain=microsoft.com&hl=en",
                 headers=HEADERS, timeout=TIMEOUT).json()
             return _strip((d.get("data") or {}).get("jobDescription", ""))
+        if ats == "oracle":
+            host, site = c["host"], c.get("site", "CX_1001")
+            d = requests.get(
+                f"https://{host}/hcmRestApi/resources/latest/"
+                f"recruitingCEJobRequisitionDetails?onlyData=true&expand=all"
+                f'&finder=ById;Id="{jid}",siteNumber={site}',
+                headers=HEADERS, timeout=TIMEOUT).json()
+            it = (d.get("items") or [{}])[0]
+            return _strip((it.get("ExternalDescriptionStr") or "") + " "
+                          + (it.get("ExternalQualificationsStr") or ""))
         if ats == "workday":
             host, site = c["host"], c["site"]
             tenant = host.split(".")[0]
