@@ -5,7 +5,8 @@ import sys
 
 import yaml
 
-from . import describe, fetchers, filter as jf, fit as jfit, notify, score, state
+from . import (describe, experience, fetchers, filter as jf, fit as jfit,
+               notify, score, state)
 
 
 def load_config(path: str = "config.yaml") -> dict:
@@ -81,11 +82,16 @@ def run() -> int:
         return 0
 
     # Analyze each new role's description for DevOps alignment vs your resume.
+    cand = m.get("candidate_years", 6)
+    max_req = m.get("max_required_years", 99)
     for job in matched_new:
         jd = describe.enrich_jd(job)
         job["_jd"] = jd  # cache for the optional AI layer
         job["fit"] = jfit.devops_fit(job, jd)
         job["_india"] = jf.location_is_india(job["location"], m)
+        ex = experience.assess(jd, cand, max_req)
+        job["exp_note"] = ex["note"]
+        job["_exp_drop"] = ex["drop"]
 
     # Drop monitoring-only roles below the score threshold (their "not worth it"
     # bucket) — boosted senior/DevOps-titled roles can survive it.
@@ -97,6 +103,14 @@ def run() -> int:
         if dropped:
             print(f"[fit] dropped {dropped} monitoring-only role(s) below "
                   f"{thresh}", file=sys.stderr)
+        matched_new = kept
+
+    # Drop roles whose required experience is outside your band (too junior/senior).
+    if m.get("drop_out_of_band") and matched_new:
+        kept = [j for j in matched_new if not j.get("_exp_drop")]
+        dropped = len(matched_new) - len(kept)
+        if dropped:
+            print(f"[exp] dropped {dropped} out-of-band role(s)", file=sys.stderr)
         matched_new = kept
 
     matched_new = score.score_jobs(matched_new)  # no-op unless AI_SCORING=on

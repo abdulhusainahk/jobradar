@@ -43,6 +43,7 @@ def _job_line_html(job: dict) -> str:
     sen = f" · <i>{_esc(job['seniority'])}</i>" if job.get("seniority") else ""
     matched = fit.get("matched") or []
     skills = ("<br>🛠 " + _esc(", ".join(matched))) if matched else ""
+    yrs = (f"<br>{_esc(job['exp_note'])}") if job.get("exp_note") else ""
     note = (f"<br>💬 <i>{_esc(job['ai_note'])}</i>") if job.get("ai_note") else ""
     return (
         (f"{_esc(ftier)}<br>" if ftier else "")
@@ -51,7 +52,7 @@ def _job_line_html(job: dict) -> str:
         f"{_esc(_age(job.get('posted_ts', 0)))}<br>"
         f"📍 {_esc(job['location'] or 'n/a')}<br>"
         f"🔗 <a href=\"{_esc(job['url'])}\">Apply / view posting</a>"
-        + skills + note
+        + yrs + skills + note
     )
 
 

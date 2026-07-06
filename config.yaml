@@ -90,8 +90,14 @@ match:
     - worldwide
     - anywhere
 
+  # Experience band — you're ~this many years in; avoid roles far below/above.
+  candidate_years: 6
+  max_required_years: 11     # drop roles whose JD demands MORE than this (too senior)
+  drop_out_of_band: true     # set false to keep out-of-band roles (just flagged)
+
   # Drop the role if its title/location contains any of these.
   exclude_keywords:
+    # too junior
     - intern
     - internship
     - "new grad"
@@ -100,6 +106,18 @@ match:
     - apprentice
     - trainee
     - "working student"
+    - junior
+    - "jr."
+    - associate
+    - "entry level"
+    - "entry-level"
+    # too senior / management (Senior/Staff/Lead/Principal are kept — they're your targets)
+    - director
+    - "vice president"
+    - "head of"
+    - chief
+    - "distinguished engineer"
+    - fellow
 
   # Never alert for your own employer (NDA + you're not leaving).
   exclude_companies:
