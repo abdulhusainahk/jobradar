@@ -85,6 +85,7 @@ def run() -> int:
         jd = describe.enrich_jd(job)
         job["_jd"] = jd  # cache for the optional AI layer
         job["fit"] = jfit.devops_fit(job, jd)
+        job["_india"] = jf.location_is_india(job["location"], m)
 
     # Drop monitoring-only roles below the score threshold (their "not worth it"
     # bucket) — boosted senior/DevOps-titled roles can survive it.

@@ -33,6 +33,13 @@ def location_matches(location: str, m: dict) -> bool:
     return False
 
 
+def location_is_india(location: str, m: dict) -> bool:
+    """True if the role is (also) in India — used to group alerts."""
+    loc = _lower(location)
+    india_kw = (m.get("locations", {}) or {}).get("india", [])
+    return any(k.lower() in loc for k in india_kw)
+
+
 def is_excluded(job: dict, m: dict) -> bool:
     blob = f"{_lower(job.get('title'))} {_lower(job.get('location'))}"
     if any(k.lower() in blob for k in m.get("exclude_keywords", [])):

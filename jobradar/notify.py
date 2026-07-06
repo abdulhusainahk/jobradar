@@ -92,6 +92,13 @@ def _chunk(blocks: list[str], header: str, limit: int = 3800) -> list[str]:
     return out
 
 
+def _split_groups(jobs: list[dict]):
+    """(India, International) — each preserving the incoming best-fit-first order."""
+    india = [j for j in jobs if j.get("_india")]
+    foreign = [j for j in jobs if not j.get("_india")]
+    return india, foreign
+
+
 def send_telegram(jobs: list[dict]) -> None:
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
@@ -99,13 +106,15 @@ def send_telegram(jobs: list[dict]) -> None:
         _log("[telegram] skipped (no TELEGRAM_BOT_TOKEN/CHAT_ID)")
         return
     url = f"https://api.telegram.org/bot{token}/sendMessage"
-    header = (f"🎯 <b>{len(jobs)} new DevOps-fit role"
-              f"{'s' if len(jobs) != 1 else ''}</b> — best fit first\n\n")
-    # One combined digest (chunked only if it exceeds Telegram's size limit).
-    blocks = [_job_line_html(j).replace("<br>", "\n") for j in jobs]
-    for msg in _chunk(blocks, header):
-        _tg_send_one(url, chat_id, msg)
-        time.sleep(0.4)  # gentle pacing between chunks
+    india, foreign = _split_groups(jobs)
+    for label, grp in (("🇮🇳 <b>India</b>", india),
+                       ("🌍 <b>International</b>", foreign)):
+        if not grp:
+            continue
+        header = f"{label} openings ({len(grp)}) — best fit first\n\n"
+        for msg in _chunk([_job_line_html(j).replace("<br>", "\n") for j in grp], header):
+            _tg_send_one(url, chat_id, msg)
+            time.sleep(0.4)  # gentle pacing between chunks
 
 
 # ---------------- Email ----------------
@@ -116,10 +125,18 @@ def send_email(jobs: list[dict]) -> None:
     if not user or not pw:
         _log("[email] skipped (no EMAIL_USER/EMAIL_APP_PASSWORD)")
         return
-    rows = "<hr>".join(_job_line_html(j) for j in jobs)
+    india, foreign = _split_groups(jobs)
+    sections = ""
+    for label, grp in (("🇮🇳 India openings", india),
+                       ("🌍 International openings", foreign)):
+        if not grp:
+            continue
+        rows = "<hr>".join(_job_line_html(j) for j in grp)
+        sections += (f"<h3 style='margin-top:20px'>{label} ({len(grp)})"
+                     f"</h3>{rows}")
     body = (
         f"<h2>JobRadar — {len(jobs)} new DevOps-fit role"
-        f"{'s' if len(jobs) != 1 else ''} (best fit first)</h2>{rows}"
+        f"{'s' if len(jobs) != 1 else ''} (best fit first)</h2>{sections}"
         "<hr><p style='color:#888;font-size:12px'>"
         "🟢 strong / 🟡 moderate / 🔴 monitoring-only. Apply fast + with a "
         "referral. Sent by your JobRadar GitHub Action.</p>"
