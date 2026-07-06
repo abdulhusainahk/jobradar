@@ -114,6 +114,7 @@ def lever(c: dict) -> list[dict]:
             "location": (cats.get("location") or "").strip(),
             "url": j.get("hostedUrl", ""),
             "posted_ts": (j.get("createdAt") or 0) / 1000.0,
+            "_jd": (j.get("descriptionPlain") or "")[:6000],  # JD is inline on Lever
         })
     return out
 
@@ -132,6 +133,7 @@ def ashby(c: dict) -> list[dict]:
             "location": loc,
             "url": j.get("jobUrl") or j.get("applyUrl", ""),
             "posted_ts": _iso_ts(j.get("publishedAt")),
+            "_jd": (j.get("descriptionPlain") or "")[:6000],
         })
     return out
 
@@ -153,6 +155,9 @@ def amazon(c: dict) -> list[dict]:
             if jid in seen:
                 continue
             seen.add(jid)
+            jd = " ".join(filter(None, [
+                j.get("description", ""), j.get("basic_qualifications", ""),
+                j.get("preferred_qualifications", "")]))
             out.append({
                 "id": jid,
                 "title": (j.get("title") or "").strip(),
@@ -160,6 +165,7 @@ def amazon(c: dict) -> list[dict]:
                 "location": (j.get("normalized_location") or j.get("location") or "").strip(),
                 "url": "https://www.amazon.jobs" + (j.get("job_path") or ""),
                 "posted_ts": _amazon_ts(j.get("posted_date", "")),
+                "_jd": jd[:6000],  # Amazon JD is inline in search.json
             })
     return out
 
@@ -230,6 +236,7 @@ def workday(c: dict) -> list[dict]:
                 "location": (j.get("locationsText") or "").strip(),
                 "url": f"https://{host}/en-US/{site}{path}",
                 "posted_ts": _workday_ts(j.get("postedOn", "")),
+                "_path": path,  # for per-job JD fetch
             })
     return out
 

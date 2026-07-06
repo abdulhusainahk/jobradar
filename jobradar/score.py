@@ -53,12 +53,18 @@ def score_jobs(jobs: list[dict]) -> list[dict]:
     }
     kept = []
     for job in jobs:
+        jd = (job.get("_jd") or "")[:4000]
         prompt = (
             f"Candidate profile:\n{PROFILE}\n\n"
             f"Job posting:\nTitle: {job['title']}\nCompany: {job['company']}\n"
-            f"Location: {job['location']}\n\n"
-            "Rate fit 0-100 for this candidate and give a one-sentence reason "
-            "(mention any seniority/comp/location mismatch)."
+            f"Location: {job['location']}\n"
+            f"Description:\n{jd or '(not available)'}\n\n"
+            "Rate DevOps-engineer fit 0-100 for this candidate. Reward roles that "
+            "require real DevOps tools/practices (IaC/Terraform, CI/CD, Kubernetes, "
+            "provisioning, automation). PENALIZE roles that are monitoring/on-call "
+            "only with little automation — those are low fit even if titled 'SRE'. "
+            "Give a one-sentence reason noting DevOps-alignment and any "
+            "seniority/location mismatch."
         )
         try:
             resp = client.messages.create(
