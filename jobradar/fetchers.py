@@ -63,6 +63,13 @@ def _amazon_ts(s: str) -> float:
         return 0.0
 
 
+def _atlassian_ts(s: str) -> float:
+    try:
+        return datetime.strptime(s, "%Y-%m-%d %I:%M %p").timestamp()
+    except Exception:
+        return 0.0
+
+
 def _workday_ts(s: str) -> float:
     now = datetime.now(timezone.utc).timestamp()
     s = (s or "").lower()
@@ -227,9 +234,70 @@ def workday(c: dict) -> list[dict]:
     return out
 
 
+def atlassian(c: dict) -> list[dict]:
+    """Atlassian publishes all jobs as a single JSON array (iCIMS-backed)."""
+    data = _get("https://www.atlassian.com/endpoint/careers/listings")
+    out = []
+    for j in data:
+        pjp = j.get("portalJobPost") or {}
+        out.append({
+            "id": str(j.get("id")),
+            "title": (j.get("title") or "").strip(),
+            "company": c["name"],
+            "location": "; ".join((j.get("locations") or [])[:2]),
+            "url": pjp.get("portalUrl", ""),
+            "posted_ts": _atlassian_ts(pjp.get("updatedDate", "")),
+        })
+    return out
+
+
+# Google Careers is server-side rendered (no clean JSON API). Best-effort:
+# parse job links from the results HTML; results are server-side location-
+# filtered, so we trust the location we queried. Fails safe to [] if Google
+# ever serves a JS shell / blocks the request.
+import re as _re  # noqa: E402
+
+# Google titles infra roles as "Site Reliability Engineer" almost exclusively,
+# so 2 fuzzy queries cover it — keeps this heavy (SSR) fetcher's runtime down.
+GOOGLE_QUERIES = ["site reliability", "platform engineer"]
+GOOGLE_LOCATIONS = ["India", "United Arab Emirates", "Ireland",
+                    "Germany", "Netherlands", "United Kingdom"]
+_G_LINK = _re.compile(r'href="jobs/results/(\d+)-([a-z0-9-]+)\?')
+
+
+def google(c: dict) -> list[dict]:
+    base = "https://www.google.com/about/careers/applications/jobs/results"
+    seen, out = set(), []
+    for q in c.get("queries", GOOGLE_QUERIES):
+        for loc in c.get("locations", GOOGLE_LOCATIONS):
+            url = f"{base}?q={requests.utils.quote(q)}&location={requests.utils.quote(loc)}&sort_by=date"
+            try:
+                r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                html = r.text
+            except Exception as e:  # noqa: BLE001
+                _log(f"[google] '{q}'/{loc}: {e}")
+                continue
+            for m in _G_LINK.finditer(html):
+                jid, slug = m.group(1), m.group(2)
+                if jid in seen:
+                    continue
+                seen.add(jid)
+                out.append({
+                    "id": jid,
+                    "title": slug.replace("-", " ").title(),
+                    "company": c["name"],
+                    "location": loc,  # results are server-filtered to this region
+                    "url": f"{base}/{jid}-{slug}",
+                    "posted_ts": 0.0,  # no per-job timestamp in HTML
+                })
+    return out
+
+
 _FETCHERS = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
     "amazon": amazon, "microsoft": microsoft, "workday": workday,
+    "atlassian": atlassian, "google": google,
 }
 
 

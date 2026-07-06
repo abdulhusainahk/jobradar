@@ -128,15 +128,23 @@ companies:
   - { name: Databricks,  ats: greenhouse, token: databricks, tier: "Product · Blr" }
   - { name: Notion,      ats: ashby,      token: notion,     tier: "SaaS · Remote" }
 
-  # --- Big-tech (custom portal fetchers, verified) ---
-  # Amazon/Microsoft loop role queries and return newest-first; location filter
-  # narrows to your enabled regions (India/UAE/Europe incl. Dubai & EU hubs).
+  - { name: Datadog,     ats: greenhouse, token: datadog,   tier: "Observability · Remote/EU" }
+  - { name: Okta,        ats: greenhouse, token: okta,      tier: "Security · Blr/Remote" }
+  - { name: Twilio,      ats: greenhouse, token: twilio,    tier: "SaaS · Remote" }
+  - { name: Airbnb,      ats: greenhouse, token: airbnb,    tier: "Product · Remote" }
+
+  # --- Big-tech portals (custom fetchers, verified via live network capture) ---
+  # Amazon/Microsoft/Google loop role queries x locations and return newest-first;
+  # the location filter narrows to your enabled regions (India/UAE/Europe).
   - { name: Amazon,     ats: amazon,    tier: "FAANG (incl. Dubai/EU hubs)" }
-  - { name: Microsoft,  ats: microsoft, tier: "MANGO GCC" }
+  - { name: Microsoft,  ats: microsoft, tier: "MANGO GCC (Phenom PCSX API)" }
+  - { name: Google,     ats: google,    tier: "FAANG (SSR HTML, best-effort)" }
+  - { name: Atlassian,  ats: atlassian, tier: "Product · Blr/EU (iCIMS JSON)" }
   - { name: Salesforce, ats: workday,   host: salesforce.wd12.myworkdayjobs.com, site: External_Career_Site, tier: "Product GCC" }
   - { name: Adobe,      ats: workday,   host: adobe.wd5.myworkdayjobs.com,        site: external_experienced, tier: "Product GCC" }
 
   # --- UAE / Europe roadmap targets (via their ATS feeds) ---
+  - { name: Careem,       ats: greenhouse, token: careem,       tier: "Dubai · Super-app (UAE)" }
   - { name: Stripe,       ats: greenhouse, token: stripe,       tier: "EU/Blr · Fintech" }
   - { name: Adyen,        ats: greenhouse, token: adyen,        tier: "Amsterdam · Fintech" }
   - { name: N26,          ats: greenhouse, token: n26,          tier: "Berlin · Fintech" }
@@ -144,9 +152,12 @@ companies:
   - { name: Celonis,      ats: greenhouse, token: celonis,      tier: "Munich · SaaS" }
   - { name: Monzo,        ats: greenhouse, token: monzo,        tier: "London · Fintech" }
   - { name: GetYourGuide, ats: greenhouse, token: getyourguide, tier: "Berlin · Travel-tech" }
+  - { name: HelloFresh,   ats: greenhouse, token: hellofresh,   tier: "Berlin · Food-tech" }
+  - { name: Trivago,      ats: greenhouse, token: trivago,      tier: "Düsseldorf · Travel-tech" }
 
   # ---------------------------------------------------------------------------
-  # Still native-alert only (no clean public API): Google, Apple, Atlassian,
-  # Flipkart, Walmart, Razorpay, PhonePe-UAE. Set a saved search + email alert
-  # on each of those career pages. See README > Roadmap.
+  # Still native-alert only (no clean public API): Apple, Flipkart, Walmart,
+  # Razorpay, Swiggy, Meesho, Zomato, Games24x7, Angel One, Careem-Talabat,
+  # Klarna, Wise, Revolut. Set a saved search + email alert on each career page.
+  # See README > Roadmap.
   # ---------------------------------------------------------------------------
