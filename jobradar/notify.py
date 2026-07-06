@@ -8,6 +8,7 @@ import html
 import os
 import smtplib
 import sys
+import time
 from datetime import datetime, timezone
 from email.mime.text import MIMEText
 
@@ -52,17 +53,23 @@ def send_telegram(jobs: list[dict]) -> None:
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     for job in jobs:
         text = _job_line_html(job).replace("<br>", "\n")
-        try:
-            r = requests.post(url, timeout=20, json={
-                "chat_id": chat_id,
-                "text": text,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": False,
-            })
+        payload = {"chat_id": chat_id, "text": text,
+                   "parse_mode": "HTML", "disable_web_page_preview": False}
+        for attempt in range(4):
+            try:
+                r = requests.post(url, timeout=20, json=payload)
+            except Exception as e:  # noqa: BLE001
+                _log(f"[telegram] error: {e}")
+                break
+            if r.status_code == 429:  # rate limited — honor Telegram's retry_after
+                wait = (r.json().get("parameters") or {}).get("retry_after", 3)
+                _log(f"[telegram] 429; sleeping {wait}s")
+                time.sleep(wait + 1)
+                continue
             if r.status_code != 200:
                 _log(f"[telegram] {r.status_code}: {r.text[:200]}")
-        except Exception as e:  # noqa: BLE001
-            _log(f"[telegram] error: {e}")
+            break
+        time.sleep(0.4)  # gentle pacing to stay under the per-chat rate limit
 
 
 # ---------------- Email ----------------
