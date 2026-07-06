@@ -19,7 +19,9 @@ match:
     - "systems development"
     - kubernetes
     - "cloud infrastructure"
-    - observability
+  # NOTE: "observability" was removed as an inclusion keyword — at observability
+  # companies (Datadog/Okta) it matched product roles, not infra-DevOps. It's
+  # still used to DETECT monitoring-heavy JDs during fit scoring.
 
   # Seniority tags — used only to LABEL alerts (not to filter), so you never
   # miss a good role that titles itself unusually.
@@ -37,10 +39,10 @@ match:
   # Which region groups to alert on. Comment one out to disable it.
   regions_enabled: [india, uae, europe]
 
-  # If true, silently drop "monitoring-only" roles (SRE roles whose JD has no
-  # DevOps/IaC/CI-CD/automation content). Default false = keep but flag 🔴 and
-  # sort them to the bottom, so you still see them and decide.
-  drop_monitoring_only: false
+  # Drop "monitoring-only" roles (SRE roles whose JD has no DevOps/IaC/CI-CD/
+  # automation content) ONLY when they score below this. A senior, DevOps-titled
+  # role at big-tech can be boosted above the line and kept. Set 0 to never drop.
+  drop_monitoring_below: 45
 
   # Location keyword groups. A role matches if its location contains any keyword
   # from an ENABLED region (India first per your focus; UAE + Europe per roadmap).

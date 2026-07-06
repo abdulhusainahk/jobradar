@@ -20,6 +20,12 @@ DEVOPS = {
     "platform engineering", "internal developer platform", "sre tooling",
 }
 CLOUD = {"aws", "azure", "gcp", "google cloud"}
+# Title signals — a role explicitly titled DevOps/Platform/Infra/SRE gets a boost.
+TITLE_SIGNALS = ("devops", "platform engineer", "platform engineering",
+                 "infrastructure engineer", "site reliability", "sre",
+                 "cloud engineer", "systems development")
+TITLE_BOOST = 12
+SENIORITY_BOOST = 8   # applied when a Senior/Staff/Lead/Principal/SDE-3 tag is present
 # Monitoring/ops signals — fine WITH DevOps work, a red flag if that's ALL there is.
 MONITORING = {
     "monitoring", "observability", "alerting", "on-call", "on call",
@@ -57,14 +63,20 @@ def devops_fit(job: dict, jd: str) -> dict:
     s = len(dv)
     has_jd = bool(jd)
 
-    score = min(100, s * 15 + len(cl) * 6)
+    title = (job.get("title") or "").lower()
+    title_boost = TITLE_BOOST if any(t in title for t in TITLE_SIGNALS) else 0
+    sen_boost = SENIORITY_BOOST if job.get("seniority") else 0
+    score = min(100, s * 15 + len(cl) * 6 + title_boost + sen_boost)
+
     if s >= 3:
         tier = "🟢 Strong DevOps fit"
     elif s >= 1:
         tier = "🟡 Moderate fit"
     elif mon and has_jd:
+        # Monitoring-heavy JD with no DevOps tooling. Title/seniority boost can
+        # still lift a senior big-tech role over the drop threshold; otherwise
+        # it's filtered out (see drop_monitoring_below in config).
         tier = "🔴 Monitoring-only — likely not worth it"
-        score = min(score, 12)
     elif not has_jd:
         tier = "⚪ Unscored (no JD)"
     else:

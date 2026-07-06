@@ -86,12 +86,16 @@ def run() -> int:
         job["_jd"] = jd  # cache for the optional AI layer
         job["fit"] = jfit.devops_fit(job, jd)
 
-    # Optionally drop monitoring-only roles (their "not worth it" bucket).
-    if m.get("drop_monitoring_only") and matched_new:
-        kept = [j for j in matched_new if not j["fit"].get("monitoring_only")]
+    # Drop monitoring-only roles below the score threshold (their "not worth it"
+    # bucket) — boosted senior/DevOps-titled roles can survive it.
+    thresh = m.get("drop_monitoring_below", 0)
+    if thresh and matched_new:
+        kept = [j for j in matched_new
+                if not (j["fit"].get("monitoring_only") and j["fit"]["score"] < thresh)]
         dropped = len(matched_new) - len(kept)
         if dropped:
-            print(f"[fit] dropped {dropped} monitoring-only role(s)", file=sys.stderr)
+            print(f"[fit] dropped {dropped} monitoring-only role(s) below "
+                  f"{thresh}", file=sys.stderr)
         matched_new = kept
 
     matched_new = score.score_jobs(matched_new)  # no-op unless AI_SCORING=on
