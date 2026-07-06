@@ -157,33 +157,40 @@ def amazon(c: dict) -> list[dict]:
     return out
 
 
+# Microsoft migrated to a Phenom-based portal (apply.careers.microsoft.com).
+# Its public search API returns newest-first via sort_by=timestamp.
+MS_QUERIES = ["devops", "site reliability", "platform engineer"]
+MS_LOCATIONS = ["India", "United Arab Emirates", "Ireland",
+                "Germany", "Netherlands", "United Kingdom"]
+
+
 def microsoft(c: dict) -> list[dict]:
-    """Microsoft careers search API (gcsservices). Shape per public endpoint."""
+    """Microsoft careers (Phenom PCSX) search API — queries x locations, newest first."""
     seen, out = set(), []
-    for q in c.get("queries", DEFAULT_QUERIES):
-        url = ("https://gcsservices.careers.microsoft.com/search/api/v1/search?"
-               f"q={requests.utils.quote(q)}&pg=1&pgSz=50&o=Recent&flt=true")
-        try:
-            data = _get(url)
-        except Exception as e:  # noqa: BLE001
-            _log(f"[microsoft] query '{q}': {e}")
-            continue
-        jobs = (((data or {}).get("operationResult") or {}).get("result") or {}).get("jobs", [])
-        for j in jobs:
-            jid = str(j.get("jobId"))
-            if jid in seen:
+    for q in c.get("queries", MS_QUERIES):
+        for loc in c.get("locations", MS_LOCATIONS):
+            url = ("https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com"
+                   f"&query={requests.utils.quote(q)}&location={requests.utils.quote(loc)}"
+                   "&start=0&sort_by=timestamp")
+            try:
+                data = _get(url)
+            except Exception as e:  # noqa: BLE001
+                _log(f"[microsoft] '{q}'/{loc}: {e}")
                 continue
-            seen.add(jid)
-            props = j.get("properties") or {}
-            locs = props.get("locations") or [props.get("primaryLocation", "")]
-            out.append({
-                "id": jid,
-                "title": (j.get("title") or "").strip(),
-                "company": c["name"],
-                "location": ", ".join([l for l in locs if l][:2]),
-                "url": f"https://jobs.careers.microsoft.com/global/en/job/{jid}",
-                "posted_ts": _iso_ts(j.get("postingDate")),
-            })
+            for j in (data.get("data") or {}).get("positions", []):
+                jid = str(j.get("id"))
+                if jid in seen:
+                    continue
+                seen.add(jid)
+                locs = j.get("locations") or []
+                out.append({
+                    "id": jid,
+                    "title": (j.get("name") or "").strip(),
+                    "company": c["name"],
+                    "location": "; ".join(locs[:2]),
+                    "url": "https://apply.careers.microsoft.com" + (j.get("positionUrl") or ""),
+                    "posted_ts": float(j.get("postedTs") or 0),
+                })
     return out
 
 

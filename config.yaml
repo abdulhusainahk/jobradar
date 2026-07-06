@@ -19,6 +19,7 @@ match:
     - "systems development"
     - kubernetes
     - "cloud infrastructure"
+    - observability
 
   # Seniority tags — used only to LABEL alerts (not to filter), so you never
   # miss a good role that titles itself unusually.
