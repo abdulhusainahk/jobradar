@@ -5,7 +5,12 @@ on:
     # Every 30 minutes. GitHub cron is UTC and may drift 10-30 min under load —
     # fine for job monitoring (postings live for days).
     - cron: "*/30 * * * *"
-  workflow_dispatch: {}   # lets you run it manually from the Actions tab
+  workflow_dispatch:      # lets you run it manually from the Actions tab
+    inputs:
+      test_alert:
+        description: "Send ONE test alert to confirm Telegram/email works, then exit"
+        type: boolean
+        default: false
 
 # Needed so the job can commit the updated seen_jobs.json back to the repo.
 permissions:
@@ -38,6 +43,7 @@ jobs:
           # Optional AI scoring (leave unset for free keyword-only mode):
           AI_SCORING:         ${{ vars.AI_SCORING }}
           ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
         run: python -m jobradar
 
       - name: Persist seen-jobs state

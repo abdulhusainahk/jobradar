@@ -13,10 +13,35 @@ def load_config(path: str = "config.yaml") -> dict:
         return yaml.safe_load(f)
 
 
+def _truthy(v: str) -> bool:
+    return str(v).lower() in ("1", "true", "on", "yes")
+
+
 def run() -> int:
     cfg = load_config(os.environ.get("JOBRADAR_CONFIG", "config.yaml"))
     m = cfg.get("match", {})
     companies = cfg.get("companies", [])
+
+    # Self-test: send ONE synthetic alert to prove Telegram/email are wired up,
+    # then exit without touching any real state. Triggered by the workflow's
+    # "test_alert" input (JOBRADAR_TEST_ALERT=true).
+    if _truthy(os.environ.get("JOBRADAR_TEST_ALERT", "")):
+        import time
+        test_job = {
+            "title": "[TEST] Senior DevOps Engineer",
+            "company": "JobRadar Self-Test",
+            "tier": "delivery check",
+            "location": "Mumbai, India",
+            "url": "https://github.com/abdulhusainahk/jobradar",
+            "posted_ts": time.time(),
+            "seniority": "Senior",
+        }
+        print("[test] sending one synthetic alert to confirm delivery...", file=sys.stderr)
+        notify.dispatch([test_job])
+        print("[test] done — if you didn't receive it, a secret is wrong "
+              "(see the [telegram]/[email] lines above).", file=sys.stderr)
+        return 0
+
     st = state.load()
     # First ever run: record what's already open as a baseline and DON'T alert,
     # so you only get pinged for roles posted after JobRadar goes live.
