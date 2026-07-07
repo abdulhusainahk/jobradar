@@ -60,6 +60,7 @@ def run() -> int:
     for c in companies:
         for job in fetchers.fetch_company(c):
             total_seen += 1
+            job["_finance"] = bool(c.get("finance"))  # gates VP/Associate exclusion
             if not jf.passes(job, m):
                 continue
             if not resend and not state.is_new(st, job):

@@ -44,6 +44,10 @@ def is_excluded(job: dict, m: dict) -> bool:
     blob = f"{_lower(job.get('title'))} {_lower(job.get('location'))}"
     if any(k.lower() in blob for k in m.get("exclude_keywords", [])):
         return True
+    # VP/Associate: excluded everywhere except finance companies (IC levels there).
+    if not job.get("_finance"):
+        if any(k.lower() in blob for k in m.get("exclude_unless_finance", [])):
+            return True
     comp = _lower(job.get("company"))
     if any(k.lower() in comp for k in m.get("exclude_companies", [])):
         return True
