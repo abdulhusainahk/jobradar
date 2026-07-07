@@ -32,10 +32,12 @@ def enrich_jd(job: dict) -> str:
                 f"https://boards-api.greenhouse.io/v1/boards/{c['token']}/jobs/{jid}",
                 headers=HEADERS, timeout=TIMEOUT).json()
             return _strip(d.get("content", ""))
-        if ats == "microsoft":
+        if ats in ("microsoft", "pcsx"):
+            host = "apply.careers.microsoft.com" if ats == "microsoft" else c["host"]
+            domain = "microsoft.com" if ats == "microsoft" else c["domain"]
             d = requests.get(
-                f"https://apply.careers.microsoft.com/api/pcsx/position_details"
-                f"?position_id={jid}&domain=microsoft.com&hl=en",
+                f"https://{host}/api/pcsx/position_details"
+                f"?position_id={jid}&domain={domain}&hl=en",
                 headers=HEADERS, timeout=TIMEOUT).json()
             return _strip((d.get("data") or {}).get("jobDescription", ""))
         if ats == "oracle":

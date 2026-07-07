@@ -170,25 +170,24 @@ def amazon(c: dict) -> list[dict]:
     return out
 
 
-# Microsoft migrated to a Phenom-based portal (apply.careers.microsoft.com).
-# Its public search API returns newest-first via sort_by=timestamp.
-MS_QUERIES = ["devops", "site reliability", "platform engineer"]
-MS_LOCATIONS = ["India", "United Arab Emirates", "Ireland",
-                "Germany", "Netherlands", "United Kingdom"]
+# PCSX careers-search API — same shape across Microsoft's Phenom portal and
+# Eightfold-hosted portals (Morgan Stanley, etc.). Newest-first via sort_by.
+PCSX_QUERIES = ["devops", "site reliability", "platform engineer"]
+PCSX_LOCATIONS = ["India", "United Arab Emirates", "Ireland",
+                  "Germany", "Netherlands", "United Kingdom"]
 
 
-def microsoft(c: dict) -> list[dict]:
-    """Microsoft careers (Phenom PCSX) search API — queries x locations, newest first."""
+def _pcsx(c: dict, host: str, domain: str) -> list[dict]:
     seen, out = set(), []
-    for q in c.get("queries", MS_QUERIES):
-        for loc in c.get("locations", MS_LOCATIONS):
-            url = ("https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com"
+    for q in c.get("queries", PCSX_QUERIES):
+        for loc in c.get("locations", PCSX_LOCATIONS):
+            url = (f"https://{host}/api/pcsx/search?domain={domain}"
                    f"&query={requests.utils.quote(q)}&location={requests.utils.quote(loc)}"
                    "&start=0&sort_by=timestamp")
             try:
                 data = _get(url)
             except Exception as e:  # noqa: BLE001
-                _log(f"[microsoft] '{q}'/{loc}: {e}")
+                _log(f"[pcsx:{host}] '{q}'/{loc}: {e}")
                 continue
             for j in (data.get("data") or {}).get("positions", []):
                 jid = str(j.get("id"))
@@ -201,10 +200,19 @@ def microsoft(c: dict) -> list[dict]:
                     "title": (j.get("name") or "").strip(),
                     "company": c["name"],
                     "location": "; ".join(locs[:2]),
-                    "url": "https://apply.careers.microsoft.com" + (j.get("positionUrl") or ""),
+                    "url": f"https://{host}" + (j.get("positionUrl") or ""),
                     "posted_ts": float(j.get("postedTs") or 0),
                 })
     return out
+
+
+def microsoft(c: dict) -> list[dict]:
+    return _pcsx(c, "apply.careers.microsoft.com", "microsoft.com")
+
+
+def pcsx(c: dict) -> list[dict]:
+    """Generic PCSX portal (e.g. Eightfold-hosted). Config needs host + domain."""
+    return _pcsx(c, c["host"], c["domain"])
 
 
 def workday(c: dict) -> list[dict]:
@@ -342,7 +350,7 @@ def oracle(c: dict) -> list[dict]:
 _FETCHERS = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
     "amazon": amazon, "microsoft": microsoft, "workday": workday,
-    "atlassian": atlassian, "google": google, "oracle": oracle,
+    "atlassian": atlassian, "google": google, "oracle": oracle, "pcsx": pcsx,
 }
 
 

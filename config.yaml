@@ -188,7 +188,8 @@ companies:
   - { name: Trivago,      ats: greenhouse, token: trivago,      tier: "Düsseldorf · Travel-tech" }
 
   # --- Finance GCCs (huge Mumbai/Blr tech hubs; VP-level ≈ 60L+, clears target) ---
-  - { name: "J.P. Morgan", ats: oracle, host: jpmc.fa.oraclecloud.com, site: CX_1001, finance: true, tier: "Finance GCC · Mumbai HQ" }
+  - { name: "J.P. Morgan",    ats: oracle, host: jpmc.fa.oraclecloud.com, site: CX_1001, finance: true, tier: "Finance GCC · Mumbai HQ" }
+  - { name: "Morgan Stanley", ats: pcsx, host: morganstanley.eightfold.ai, domain: morganstanley.com, finance: true, tier: "Finance GCC · Mumbai/Blr" }
 
   # ---------------------------------------------------------------------------
   # Still native-alert only (no clean public API): Apple, Flipkart, Walmart,
