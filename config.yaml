@@ -165,6 +165,19 @@ companies:
   - { name: Twilio,      ats: greenhouse, token: twilio,    tier: "SaaS · Remote" }
   - { name: Airbnb,      ats: greenhouse, token: airbnb,    tier: "Product · Remote" }
 
+  # --- DevOps/infra product cos (strong fit, India/remote hubs) ---
+  - { name: Zscaler,     ats: greenhouse, token: zscaler,     tier: "Security cloud · Blr" }
+  - { name: "Sumo Logic", ats: greenhouse, token: sumologic,  tier: "Observability · Blr" }
+  - { name: PagerDuty,   ats: greenhouse, token: pagerduty,   tier: "SRE/DevOps · Blr/Remote" }
+  - { name: "Grafana Labs", ats: greenhouse, token: grafanalabs, tier: "Observability · Remote" }
+  - { name: CockroachDB, ats: greenhouse, token: cockroachlabs, tier: "Distributed DB · Remote" }
+  # --- India SaaS / fintech / e-comm ---
+  - { name: HighRadius,  ats: greenhouse, token: highradius,  tier: "Fintech SaaS · Hyderabad" }
+  - { name: Freshworks,  ats: lever,      token: freshworks,  tier: "SaaS · Chennai/Blr" }
+  - { name: Meesho,      ats: lever,      token: meesho,      tier: "E-comm · Blr" }
+  - { name: MindTickle,  ats: lever,      token: mindtickle,  tier: "SaaS · Pune/Blr" }
+  - { name: Atlan,       ats: ashby,      token: atlan,       tier: "Data platform · Blr" }
+
   # --- Big-tech portals (custom fetchers, verified via live network capture) ---
   # Amazon/Microsoft/Google loop role queries x locations and return newest-first;
   # the location filter narrows to your enabled regions (India/UAE/Europe).
