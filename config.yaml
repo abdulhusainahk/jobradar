@@ -211,9 +211,42 @@ companies:
   - { name: "PayPal",         ats: pcsx, host: paypal.eightfold.ai, domain: paypal.com, finance: true, tier: "Fintech · Chennai/Blr/Hyd" }
   - { name: "Target",         ats: workday, host: target.wd5.myworkdayjobs.com, site: targetcareers, tier: "Retail GCC · Bengaluru" }
 
+  # ===========================================================================
+  # NATIVE-ALERT companies (custom career sites, no API). These flow into the
+  # SAME digest via Google Alerts RSS — so you get ONE common alert, not 25
+  # separate company emails. Setup (one-time, ~10 min): see NATIVE-ALERTS.md.
+  # For each: create a Google Alert with the given query, set delivery = RSS,
+  # copy the feed URL, and uncomment the line + paste it as `url:`.
   # ---------------------------------------------------------------------------
-  # Still native-alert only (no clean public API): Apple, Flipkart, Walmart,
-  # Razorpay, Swiggy, Meesho, Zomato, Games24x7, Angel One, Careem-Talabat,
-  # Klarna, Wise, Revolut. Set a saved search + email alert on each career page.
-  # See README > Roadmap.
-  # ---------------------------------------------------------------------------
+  # -- Big 4 --
+  # - { name: Deloitte,   ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
+  # - { name: PwC,        ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
+  # - { name: EY,         ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
+  # - { name: KPMG,       ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
+  # -- MANGO / GCC gap --
+  # - { name: Uber,       ats: rss, url: "PASTE_RSS_URL", tier: "Product · Native" }
+  # - { name: Intuit,     ats: rss, url: "PASTE_RSS_URL", tier: "Product · Native" }
+  # - { name: Walmart,    ats: rss, url: "PASTE_RSS_URL", tier: "GCC · Native" }
+  # - { name: Visa,       ats: rss, url: "PASTE_RSS_URL", tier: "Fintech GCC · Native" }
+  # -- Mumbai brands --
+  # - { name: CleverTap,  ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai · Native" }
+  # - { name: "Media.net", ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai · Native" }
+  # - { name: Fynd,       ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai · Native" }
+  # - { name: Games24x7,  ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai · Native" }
+  # - { name: "Angel One", ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai · Native" }
+  # - { name: ACKO,       ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai · Native" }
+  # - { name: smallcase,  ats: rss, url: "PASTE_RSS_URL", tier: "Blr/Mum · Native" }
+  # - { name: Quantiphi,  ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai AI · Native" }
+  # - { name: Fractal,    ats: rss, url: "PASTE_RSS_URL", tier: "Mumbai AI · Native" }
+  # -- SaaS / infra --
+  # - { name: Razorpay,   ats: rss, url: "PASTE_RSS_URL", tier: "Fintech · Native" }
+  # - { name: Swiggy,     ats: rss, url: "PASTE_RSS_URL", tier: "E-comm · Native" }
+  # - { name: Flipkart,   ats: rss, url: "PASTE_RSS_URL", tier: "E-comm · Native" }
+  # - { name: Juspay,     ats: rss, url: "PASTE_RSS_URL", tier: "Fintech · Native" }
+  # - { name: Nutanix,    ats: rss, url: "PASTE_RSS_URL", tier: "Infra · Native" }
+  # - { name: Harness,    ats: rss, url: "PASTE_RSS_URL", tier: "DevOps · Native" }
+  # - { name: HashiCorp,  ats: rss, url: "PASTE_RSS_URL", tier: "DevOps · Native" }
+  # - { name: Confluent,  ats: rss, url: "PASTE_RSS_URL", tier: "Data · Native" }
+  # - { name: BrowserStack, ats: rss, url: "PASTE_RSS_URL", tier: "SaaS · Native" }
+  # - { name: Sprinklr,   ats: rss, url: "PASTE_RSS_URL", tier: "SaaS · Native" }
+  # ===========================================================================

@@ -12,9 +12,14 @@ Each fetcher takes the whole company config dict and fails safe to [] on any
 error (logged), so one bad company never breaks the run.
 """
 from __future__ import annotations
+import hashlib
+import html as _htmllib
 import re
 import sys
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from urllib.parse import parse_qs, urlparse
 
 import requests
 
@@ -347,10 +352,77 @@ def oracle(c: dict) -> list[dict]:
     return out
 
 
+_ATOM = "{http://www.w3.org/2005/Atom}"
+
+
+def _rfc822_ts(s: str) -> float:
+    try:
+        return parsedate_to_datetime(s).timestamp()
+    except Exception:
+        return 0.0
+
+
+def _clean_title(t: str) -> str:
+    return _htmllib.unescape(re.sub(r"<[^>]+>", "", t or "")).strip()
+
+
+def _real_url(link: str) -> str:
+    # Google Alerts wraps links as .../url?...&url=<real>&...
+    if "google.com/url" in (link or ""):
+        q = parse_qs(urlparse(link).query)
+        if q.get("url"):
+            return q["url"][0]
+    return link or ""
+
+
+def rss(c: dict) -> list[dict]:
+    """Consume a Google Alerts (or any careers) RSS/Atom feed. Lets custom
+    career sites with no API flow into the SAME digest via native alerts.
+    Config: {name, ats: rss, url: <feed>, location?: "India"}.
+    """
+    r = requests.get(c["url"], headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    root = ET.fromstring(r.content)
+    loc = c.get("location", "India")  # the alert query is region-scoped
+    out = []
+
+    def item(gid, title, link, ts):
+        return {
+            "id": hashlib.md5((gid or link).encode("utf-8")).hexdigest()[:16],
+            "title": _clean_title(title),
+            "company": c["name"],
+            "location": loc,
+            "url": _real_url(link),
+            "posted_ts": ts,
+            "_rss": True,
+        }
+
+    entries = root.findall(f".//{_ATOM}entry")
+    if entries:  # Atom (Google Alerts)
+        for e in entries:
+            le = e.find(f"{_ATOM}link")
+            out.append(item(
+                e.findtext(f"{_ATOM}id"),
+                e.findtext(f"{_ATOM}title", default=""),
+                le.get("href") if le is not None else "",
+                _iso_ts(e.findtext(f"{_ATOM}updated") or e.findtext(f"{_ATOM}published") or ""),
+            ))
+    else:  # RSS 2.0
+        for it in root.findall(".//item"):
+            out.append(item(
+                it.findtext("guid"),
+                it.findtext("title") or "",
+                it.findtext("link") or "",
+                _rfc822_ts(it.findtext("pubDate") or ""),
+            ))
+    return out
+
+
 _FETCHERS = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
     "amazon": amazon, "microsoft": microsoft, "workday": workday,
     "atlassian": atlassian, "google": google, "oracle": oracle, "pcsx": pcsx,
+    "rss": rss,
 }
 
 
