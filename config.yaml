@@ -177,6 +177,9 @@ companies:
   - { name: Meesho,      ats: lever,      token: meesho,      tier: "E-comm · Blr" }
   - { name: MindTickle,  ats: lever,      token: mindtickle,  tier: "SaaS · Pune/Blr" }
   - { name: Atlan,       ats: ashby,      token: atlan,       tier: "Data platform · Blr" }
+  - { name: Snowflake,   ats: ashby,      token: snowflake,   tier: "Data cloud · Pune/Remote" }
+  - { name: Navi,        ats: ashby,      token: navi,        tier: "Fintech · Blr" }
+  - { name: NVIDIA,      ats: workday,    host: nvidia.wd5.myworkdayjobs.com, site: NVIDIAExternalCareerSite, tier: "MANGO · Pune/Blr/Hyd" }
 
   # --- Big-tech portals (custom fetchers, verified via live network capture) ---
   # Amazon/Microsoft/Google loop role queries x locations and return newest-first;
