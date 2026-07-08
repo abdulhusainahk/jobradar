@@ -190,6 +190,7 @@ companies:
   # --- Finance GCCs (huge Mumbai/Blr tech hubs; VP-level ≈ 60L+, clears target) ---
   - { name: "J.P. Morgan",    ats: oracle, host: jpmc.fa.oraclecloud.com, site: CX_1001, finance: true, tier: "Finance GCC · Mumbai HQ" }
   - { name: "Morgan Stanley", ats: pcsx, host: morganstanley.eightfold.ai, domain: morganstanley.com, finance: true, tier: "Finance GCC · Mumbai/Blr" }
+  - { name: "Citi",           ats: pcsx, host: citi.eightfold.ai, domain: citi.com, finance: true, tier: "Finance GCC · Chennai/Pune/Mum" }
 
   # ---------------------------------------------------------------------------
   # Still native-alert only (no clean public API): Apple, Flipkart, Walmart,
