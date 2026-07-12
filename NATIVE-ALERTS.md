@@ -1,5 +1,13 @@
 # Native-alert companies → one common digest
 
+> ✅ **Already live (Jul 2026):** 5 Google Alerts are set up and wired into
+> `config.yaml` — **Deloitte** (individual, India-scoped) + 4 India-scoped
+> **grouped** alerts covering PwC/EY/KPMG, the Mumbai brands, the SaaS/infra set,
+> and Uber/Intuit/Walmart/Visa/Wells Fargo/Wayfair. They flow into your normal
+> digest. The per-company queries below are kept as reference if you ever want a
+> finer, cleaner site-scoped alert for a specific company.
+
+
 Some companies (Big 4, Indian consumer startups, a few enterprises) run **custom
 career sites with no machine-readable API** — JobRadar can't poll them directly.
 
