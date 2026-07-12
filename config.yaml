@@ -219,7 +219,7 @@ companies:
   # copy the feed URL, and uncomment the line + paste it as `url:`.
   # ---------------------------------------------------------------------------
   # -- Big 4 --
-  # - { name: Deloitte,   ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
+  - { name: Deloitte,   ats: rss, url: "https://www.google.com/alerts/feeds/08421968391209913331/2724848281564234799", tier: "Big4 · Native" }
   # - { name: PwC,        ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
   # - { name: EY,         ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
   # - { name: KPMG,       ats: rss, url: "PASTE_RSS_URL", tier: "Big4 · Native" }
