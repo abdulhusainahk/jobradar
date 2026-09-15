@@ -1,157 +1,190 @@
-# JobRadar 🎯
+# JobRadar
 
-A free, always-on **cloud monitor** for senior DevOps / SRE / Platform openings at
-high-end product companies across **India (Mumbai/Bangalore first), UAE (Dubai),
-and Europe** (per the roadmap). It polls each company's **public job API** —
-ATS boards (Greenhouse / Lever / Ashby) *and* big-tech portals (Amazon,
-Microsoft, Salesforce/Adobe via Workday) — on a schedule via **GitHub Actions**,
-filters for roles that fit your profile, sorts **newest-posted first**, de-dupes
-against what it has already sent, and pings you on **Telegram + email** the
-moment a new one appears.
+A GitHub Actions monitor for DevOps, SRE and platform roles across India, UAE and
+selected European locations. It reads configured employer feeds and career
+portals, filters jobs against your preferences, ranks matches, and delivers
+Telegram and/or email digests. Google Alerts RSS supplements employers without a
+supported direct integration.
 
-- **₹0/month** — runs on GitHub Actions' free public-repo minutes. No server, no PC.
-- **No scraping, no ToS risk** — reads official ATS JSON feeds only.
-- **Notify-first** — you apply fast, with a referral (the highest-conversion path
-  at top product companies). Optional device-side *assisted* apply via Simplify.
-- **Keyword-only by default (free).** Optional AI fit-scoring is a feature flag.
-
-Verified live on build day: **~30 companies + big-tech portals, ~4,000 roles
-scanned, 28 correct India/UAE/Europe matches, newest first.**
-
-**Dedup:** every alerted role is keyed `company::job_id` in `seen_jobs.json` and
-never sent twice — even across restarts. **Recency:** matches are ordered
-newest-posted first, and each alert shows a "🆕 posted today / Nd ago" badge, so
-the freshest openings (the ones worth applying to *immediately*) are at the top.
-
----
+Keyword matching needs no AI subscription. Optional Gemini scoring uses the
+Google AI Studio API; keep its project on the **Free Tier** if you want free API
+usage. A free-tier-compatible model does not prevent charges on a paid project.
 
 ## How it works
 
-```
-GitHub Actions cron (every 30 min)
-        │
-        ▼
-  fetch each company's ATS feed  →  filter (role + location + seniority)
-        │                                   │
-        ▼                                   ▼
-  dedupe vs seen_jobs.json  ───────►  new matches only
-        │                                   │
-        ▼                                   ▼
-  commit updated state              Telegram + email alert
+```text
+Employer feeds -> all result pages -> title/location matching -> dedup
+  -> full-description experience/DevOps assessment
+  -> optional Gemini scoring -> best fit first, recency breaks ties
+  -> durable pending alerts -> per-channel delivery -> saved acknowledgements
 ```
 
-The dedup store `seen_jobs.json` is committed back to the repo each run, so state
-survives with zero infrastructure. The **first run is a silent baseline** — it
-records everything currently open and alerts on nothing, so you only get pinged
-for roles posted *after* JobRadar goes live.
+- The monitor is scheduled at minutes **17 and 47** of each UTC hour. GitHub can
+  delay or skip scheduled runs; this is not an instant-alert or 30-minute SLA.
+- The first run with a new state file records a **silent baseline**. It does not
+  send all existing matches. An empty successful baseline is still initialized.
+- `seen_jobs.json` preserves finalized history and a pending delivery outbox.
+  Existing legacy history migrates automatically without clearing prior keys.
+- A failed channel stays pending. A successful Telegram delivery is not repeated
+  just because email failed. Pending job snapshots survive a listing disappearing
+  from its feed. Required channels are retained until they acknowledge delivery.
+- State is atomically replaced locally and committed back by Actions, including
+  when a source or notification failure makes the monitor exit unsuccessfully.
+- Delivery is **at least once**, not exactly once: an interruption after a remote
+  service accepts a message but before its acknowledgement is persisted can
+  cause a duplicate. `resend_all` intentionally sends duplicates.
+- Source errors are distinguished from valid empty boards. Partial results are
+  retained, but a degraded source scan exits unsuccessfully rather than claiming
+  complete coverage.
 
----
+## Repository setup
 
-## Setup (one-time, ~15 min)
+Enable GitHub Actions and allow the workflow's `contents: write` permission so it
+can persist state. Standard hosted runners for public repositories are free;
+private-repository usage follows your GitHub plan's quota.
 
-### 1. Create the repo
-Create a **public** repo `jobradar` under your GitHub account and push this folder:
+Add settings under **Settings -> Secrets and variables -> Actions**. Configure
+whichever notification channels you want; both are independently optional.
+
+| Repository secret | Purpose |
+| --- | --- |
+| `TELEGRAM_BOT_TOKEN` | Bot token from Telegram's `@BotFather` |
+| `TELEGRAM_CHAT_ID` | Chat the bot should notify; message the bot first |
+| `EMAIL_USER` | Gmail account used to send digests |
+| `EMAIL_APP_PASSWORD` | Gmail App Password, not the normal account password |
+| `EMAIL_TO` | Recipient address(es), comma-separated; empty defaults to `EMAIL_USER` |
+| `GEMINI_API_KEY` | Optional Google AI Studio API key for Gemini scoring |
+
+To obtain a Telegram chat ID, message your bot, then inspect its `getUpdates`
+response using Telegram's API. Keep the token-bearing URL private. Gmail App
+Passwords require two-step verification and an account that supports App Passwords.
+
+Notification secrets are not required for fetching or ranking. With no channels
+configured, new alerts remain pending rather than being marked delivered.
+
+## Gemini free-tier scoring
+
+1. Create a key at <https://aistudio.google.com/apikey>.
+2. Check the associated project's billing tier. **Do not enable billing** if you
+   want free-tier usage only.
+3. Add the key as repository secret **`GEMINI_API_KEY`**. Do not commit it.
+4. The Actions workflow enables scoring by default when that key is available.
+   Set repository variable `AI_SCORING=off` to force keyword-only operation.
+
+| Repository variable | Default | Meaning |
+| --- | --- | --- |
+| `AI_SCORING` | `on` in Actions | `on` enables Gemini; `off` forces keyword matching |
+| `JOBRADAR_MODEL` | `gemini-3.8-flash` | Gemini model ID; check current free-tier availability |
+| `AI_MIN_SCORE` | `0` | Drop successfully AI-scored jobs below this value, from 0 to 100 |
+| `AI_MAX_ATTEMPTS` | `3` | Total attempts per failed Gemini request, from 2 to 5 |
+
+The client uses Gemini's REST API with structured JSON output. It validates the
+score and note before using them. No Anthropic key, subscription, SDK or provider
+fallback is needed.
+
+### Failure behavior
+
+- A missing key immediately keeps keyword scoring; there is no useful request to
+  retry without credentials.
+- A configured key gets **three attempts by default** for request or response
+  failures, including authentication errors, quotas, timeouts, unavailable
+  models, blocked responses, invalid JSON and invalid scores.
+- Retries use exponential backoff and the `Retry-After` header, with each delay
+  bounded at 30 seconds.
+- If attempts are exhausted, AI stops for the rest of the new batch. **All partial
+  AI scores and exclusions are discarded**, preserving the complete deterministic
+  shortlist and its heuristic ranking. `AI_MIN_SCORE` never drops fallback jobs.
+- Successful pending alerts reuse their saved assessment during delivery retries;
+  they do not incur another AI request.
+
+Only new deterministic matches are normally sent to Gemini. `resend_all` scores
+all current matches, so it can exhaust the free quota and trigger keyword
+fallback. No code can guarantee that a particular account/model always has free
+quota. Google may use free-tier content to improve its products; do not put
+confidential information in the profile or prompts.
+
+Official references: [API keys](https://ai.google.dev/gemini-api/docs/api-key),
+[pricing and free-tier availability](https://ai.google.dev/gemini-api/docs/pricing),
+[structured output](https://ai.google.dev/gemini-api/docs/structured-output).
+
+## Candidate preferences and search scope
+
+Edit `config.yaml`:
+
+- `profile`: role, skills and preferences used by Gemini.
+- `match.candidate_years` and `max_required_years`: shared experience constraints.
+- `match.regions_enabled`, `locations` and `preferred_locations`: shared regional
+  eligibility and AI preferences. A preference does not exclude other enabled regions.
+- `role_keywords`: title phrases. `intern` does not match `internal`.
+- `exclude_keywords`, `exclude_unless_finance`, `exclude_companies`: explicit
+  exclusions, including the current employer.
+- `drop_monitoring_below`: heuristic threshold for monitoring-only descriptions;
+  use `0` to keep those roles for AI or manual assessment.
+
+Experience filtering distinguishes overall engineering requirements from
+individual tool tenure and avoids hard-dropping ambiguous requirements. Explicit
+country information takes precedence over ambiguous city names.
+
+**AI scoring is not web discovery.** It cannot recover jobs absent from employer
+feeds or discarded by deterministic matching. Add a source or adjust keyword
+rules to expand discovery.
+
+## Supported sources
+
+| ATS / source | Configuration |
+| --- | --- |
+| Greenhouse, Lever, Ashby | `ats` and employer `token` |
+| SmartRecruiters | `ats: smartrecruiters`, company token; PhonePe is `PHONEPELIMITED`, Freshworks is `Freshworks` |
+| TurboHire | `ats: turbohire`, career subdomain token; Navi is `navi` |
+| Amazon | `ats: amazon`; optional `queries`; uses `base_query` and pagination |
+| Microsoft | `ats: microsoft`; PCSX search with pagination |
+| Other PCSX portals | `ats: pcsx`, `host`, `domain`; optional `queries` and `locations` |
+| Workday | `ats: workday`, `host`, `site`; resolves multi-location summaries |
+| Oracle Recruiting | `ats: oracle`, `host`, `site`; complete board scan by default |
+| Atlassian | `ats: atlassian` |
+| Google Careers | `ats: google`; best-effort HTML results, not a complete search index |
+| RSS / Atom | `ats: rss`, feed `url`, optional query-scoped `location` |
+
+Verify the **employer identity**, not just that a token returns jobs. Fintech Zeta
+uses Lever `zeta`; Greenhouse `zetaglobal` is a different company. Navi fintech
+uses TurboHire, not Ashby `navi`. Plivo's official careers page still uses its
+Lever board, which can legitimately be empty.
+
+APIs can change or rate-limit access. Pagination stops on exhausted results or a
+visible source failure, not an arbitrary page cap. Oracle's broad search uses one
+complete board scan rather than six overlapping global keyword scans. RSS cannot
+guarantee complete coverage or accurate per-job locations; see `NATIVE-ALERTS.md`.
+Public accessibility does not remove the need to follow each source's terms.
+GET-based sources retry HTTP 429 up to three total attempts, honoring
+`Retry-After` with bounded waits (30/60 seconds when the header is absent).
+Oracle advances by its reported page window, including hidden rows, rather than
+reusing the last page when the returned count is smaller than its advertised total.
+
+## Running and checking locally
 
 ```bash
-cd C:/Users/Administrator/jobradar
-git init && git add -A && git commit -m "JobRadar v0.1"
-git branch -M main
-git remote add origin https://github.com/abdulhusainahk/jobradar.git
-git push -u origin main
-```
-> Public repo = unlimited free Actions minutes. (Private works too but bills against a monthly quota.)
-
-### 2. Create a Telegram bot (2 min)
-1. In Telegram, message **@BotFather** → `/newbot` → follow prompts → copy the **bot token**.
-2. Message your new bot once (say "hi") so it can DM you.
-3. Get your **chat id**: open
-   `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates` in a browser and copy
-   `result[0].message.chat.id` (a number).
-
-### 3. Get a Gmail App Password (for email copies)
-Google Account → **Security** → 2-Step Verification (must be on) →
-**App passwords** → generate one for "Mail". Copy the 16-char password.
-(Use `abdulhusainahk@gmail.com`.)
-
-### 4. Add repo secrets
-Repo → **Settings → Secrets and variables → Actions → New repository secret**:
-
-| Secret | Value |
-|---|---|
-| `TELEGRAM_BOT_TOKEN` | from BotFather |
-| `TELEGRAM_CHAT_ID` | your chat id |
-| `EMAIL_USER` | `abdulhusainahk@gmail.com` |
-| `EMAIL_APP_PASSWORD` | the 16-char Gmail app password |
-| `EMAIL_TO` | `abdulhusainahk@gmail.com` (comma-separate for multiple) |
-
-That's it. The workflow runs every 30 min automatically. Trigger it now from
-**Actions → JobRadar monitor → Run workflow** to record the baseline.
-
----
-
-## Enabling AI scoring later (optional, ~pennies/month)
-
-Keyword-only is the default and fully free. To add a Claude-Haiku **fit score
-(0-100) + tailored note** on each new role:
-
-1. Create a **dedicated** Anthropic API key at console.anthropic.com (this is
-   separate from your Claude subscription — the subscription can't power headless
-   cloud calls). Set a low monthly spend cap.
-2. Add secret `ANTHROPIC_API_KEY`.
-3. Add a repo **variable** (not secret): `AI_SCORING = on`
-   (Settings → Secrets and variables → Actions → **Variables** tab).
-
-Cost is trivial — it scores only *new* postings (a handful/day) on Haiku
-(`$1/$5` per 1M tokens). Edit your profile text in `jobradar/score.py`. Set
-`AI_MIN_SCORE` (repo variable) to auto-drop weak matches.
-
----
-
-## Running / testing locally
-
-```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-# dry run (no secrets set = it just scans & prints, sends nothing):
-JOBRADAR_STATE=/tmp/state.json python -m jobradar
+
+# No notification credentials: scan and persist only an isolated local state.
+AI_SCORING=off JOBRADAR_STATE=/tmp/jobradar-state.json python -m jobradar
+
+# Regression checks (no live credentials or network requests needed).
+python -m unittest discover -s tests -v
 ```
 
-Delete `seen_jobs.json` (or point `JOBRADAR_STATE` elsewhere) to re-baseline.
+Local AI scoring is off unless `AI_SCORING=on` is explicitly set alongside
+`GEMINI_API_KEY`. Use `JOBRADAR_CONFIG` to point at a separate configuration.
+Do not delete production state to test a change: use another `JOBRADAR_STATE` path.
 
----
+From **Actions -> JobRadar monitor -> Run workflow**:
 
-## Adding companies
+- `test_alert`: sends one synthetic delivery check and leaves state untouched.
+  It does **not** test Gemini. Failed/unconfigured delivery exits unsuccessfully.
+- `resend_all`: sends all current matches without changing production state. Use
+  it deliberately after matching-rule changes if you want to reconsider older
+  jobs already finalized by the previous rules. Expect duplicate notifications.
 
-Edit `config.yaml`. Each entry needs an `ats` and a `token`:
-
-| ATS | How to find the token | Test URL |
-|---|---|---|
-| `greenhouse` | careers page URL `boards.greenhouse.io/<token>` | `https://boards-api.greenhouse.io/v1/boards/<token>/jobs` |
-| `lever` | `jobs.lever.co/<token>` | `https://api.lever.co/v0/postings/<token>?mode=json` |
-| `ashby` | `jobs.ashbyhq.com/<token>` | `https://api.ashbyhq.com/posting-api/job-board/<token>` |
-| `amazon` | (no token — set `queries:` list) | uses `amazon.jobs/en/search.json?sort=recent` |
-| `microsoft` | (no token — set `queries:` list) | uses `gcsservices.careers.microsoft.com` search |
-| `workday` | set `host:` + `site:` (from the careers URL `<host>/<site>`) | POSTs `/wday/cxs/<tenant>/<site>/jobs` |
-
-If the test URL returns JSON with jobs, the token is valid. Tune matching in the
-`match:` block: `regions_enabled` (india/uae/europe), `locations`, role and
-exclude keywords.
-
-> **Microsoft note:** the Microsoft fetcher is coded to the live careers API but
-> could not be validated from the build sandbox (its TLS was intercepted). It
-> fails safe to zero if it can't connect — check the first Action run's logs to
-> confirm it returns roles.
-
----
-
-## Roadmap (v2)
-
-- **Still native-alert only** (no clean public API): Google, Apple, Atlassian,
-  Flipkart, Walmart, Razorpay. Set a **saved search + native email alert** on
-  each of those career pages until a bespoke fetcher exists.
-- Assisted auto-apply hook (Simplify/FastApply, device-side).
-- Cloudflare Workers Cron variant for sub-minute latency.
-- Weekly digest + "roles closed" tracking.
-
-## Note
-Built for personal job-radar use. Reads only public ATS endpoints. Excludes your
-current employer (Dream Sports / FanCode) by config.
+The separate **JobRadar checks** workflow runs regression tests for code pushes
+and pull requests; state-only commits do not trigger it.

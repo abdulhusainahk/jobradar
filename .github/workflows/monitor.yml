@@ -2,9 +2,9 @@ name: JobRadar monitor
 
 on:
   schedule:
-    # Every 30 minutes. GitHub cron is UTC and may drift 10-30 min under load —
-    # fine for job monitoring (postings live for days).
-    - cron: "*/30 * * * *"
+    # Twice hourly, away from the busy hour boundary. GitHub may delay/skip runs;
+    # this is best-effort scheduling, not a 30-minute delivery guarantee.
+    - cron: "17,47 * * * *"
   workflow_dispatch:      # lets you run it manually from the Actions tab
     inputs:
       test_alert:
@@ -27,6 +27,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -38,20 +39,26 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run JobRadar
+        id: monitor
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
           EMAIL_USER:         ${{ secrets.EMAIL_USER }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_TO:           ${{ secrets.EMAIL_TO }}
-          # Optional AI scoring (leave unset for free keyword-only mode):
-          AI_SCORING:         ${{ vars.AI_SCORING }}
-          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          # Missing/failed Gemini credentials retain keyword-only matching.
+          AI_SCORING:         ${{ vars.AI_SCORING || 'on' }}
+          GEMINI_API_KEY:     ${{ secrets.GEMINI_API_KEY }}
+          AI_MIN_SCORE:       ${{ vars.AI_MIN_SCORE || '0' }}
+          AI_MAX_ATTEMPTS:    ${{ vars.AI_MAX_ATTEMPTS || '3' }}
+          JOBRADAR_MODEL:     ${{ vars.JOBRADAR_MODEL }}
           JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
           JOBRADAR_RESEND_ALL: ${{ inputs.resend_all }}
         run: python -m jobradar
 
       - name: Persist seen-jobs state
+        # Preserve retryable alerts even when a source/channel failed.
+        if: ${{ always() && (steps.monitor.outcome == 'success' || steps.monitor.outcome == 'failure') }}
         run: |
           git config user.name  "jobradar-bot"
           git config user.email "jobradar-bot@users.noreply.github.com"
@@ -60,5 +67,6 @@ jobs:
             echo "No state change."
           else
             git commit -m "chore: update seen jobs [skip ci]"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi

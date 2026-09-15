@@ -1,0 +1,114 @@
+import copy
+import io
+import json
+import unittest
+from contextlib import redirect_stderr
+from unittest.mock import Mock, patch
+
+import requests
+
+from jobradar import score
+
+
+CONFIG = {
+    "profile": {"skills": ["Terraform", "Kubernetes"]},
+    "match": {"candidate_years": 6, "regions_enabled": ["india", "uae"],
+              "locations": {"india": ["Mumbai"], "uae": ["Dubai"]}},
+}
+JOBS = [
+    {"id": "a", "company": "Example", "title": "Senior DevOps Engineer",
+     "location": "Mumbai, India", "fit": {"score": 80}, "_jd": "Terraform and AWS"},
+    {"id": "b", "company": "Example", "title": "Platform Engineer",
+     "location": "Dubai, UAE", "fit": {"score": 60}, "_jd": "Kubernetes automation"},
+]
+
+
+def response(value=90, note="Strong infrastructure fit", status=200, finish="STOP"):
+    result = Mock()
+    result.status_code = status
+    result.headers = {}
+    result.json.return_value = {"candidates": [{
+        "finishReason": finish,
+        "content": {"parts": [{"text": json.dumps({"score": value, "note": note})}]},
+    }]}
+    if status >= 400:
+        result.raise_for_status.side_effect = requests.HTTPError("provider rejected request")
+    return result
+
+
+class GeminiScoringTests(unittest.TestCase):
+    def setUp(self):
+        self.environment = patch.dict("os.environ", {
+            "AI_SCORING": "on", "GEMINI_API_KEY": "private-test-key",
+            "AI_MIN_SCORE": "70", "AI_MAX_ATTEMPTS": "3", "JOBRADAR_MODEL": "",
+        }, clear=True)
+        self.environment.start()
+        self.addCleanup(self.environment.stop)
+        self.session_patch = patch.object(score.requests, "Session")
+        self.session = self.session_patch.start().return_value.__enter__.return_value
+        self.addCleanup(self.session_patch.stop)
+        self.sleep_patch = patch.object(score.time, "sleep")
+        self.sleep = self.sleep_patch.start()
+        self.addCleanup(self.sleep_patch.stop)
+        self.jobs = copy.deepcopy(JOBS)
+
+    def test_transient_transport_failure_recovers_before_scoring_threshold(self):
+        self.session.post.side_effect = [requests.Timeout(), response(95), response(40)]
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["id"] for job in kept], ["a"])
+        self.assertEqual(kept[0]["ai_score"], 95)
+        self.assertEqual(self.session.post.call_count, 3)
+        self.assertEqual(self.jobs[0]["fit"]["score"], 80)
+
+    def test_rate_limit_exhaustion_restores_even_prior_ai_rejections(self):
+        limited = response(status=429)
+        limited.headers = {"Retry-After": "5"}
+        self.session.post.side_effect = [response(20), limited, limited, limited]
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["id"] for job in kept], ["a", "b"])
+        self.assertTrue(all("ai_score" not in job and "ai_note" not in job for job in kept))
+        self.assertEqual([job["fit"]["score"] for job in kept], [80, 60])
+        self.assertEqual(self.session.post.call_count, 4)
+        self.assertEqual([call.args[0] for call in self.sleep.call_args_list], [5.0, 5.0])
+
+    def test_invalid_key_retries_then_stops_ai_for_remaining_jobs(self):
+        self.session.post.return_value = response(status=403)
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(kept, JOBS)
+        self.assertEqual(self.session.post.call_count, 3)
+
+    def test_invalid_structured_scores_never_hide_keyword_matches(self):
+        # A bool passes isinstance(value, int); a score >100 must not pass either.
+        for value in [True, 101, "95"]:
+            with self.subTest(value=value):
+                self.session.post.reset_mock(side_effect=True)
+                self.session.post.return_value = response(value)
+                kept = score.score_jobs(copy.deepcopy(JOBS), CONFIG)
+                self.assertEqual(kept, JOBS)
+                self.assertEqual(self.session.post.call_count, 3)
+
+    def test_blocked_response_can_recover_on_retry(self):
+        self.session.post.side_effect = [response(finish="SAFETY"), response(100), response(70)]
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["ai_score"] for job in kept], [100, 70])
+
+    def test_missing_key_keeps_low_keyword_scores_despite_ai_threshold(self):
+        with patch.dict("os.environ", {"GEMINI_API_KEY": ""}):
+            kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(kept, JOBS)
+        self.session.post.assert_not_called()
+
+    def test_provider_exception_cannot_leak_key_or_prompt_to_logs(self):
+        self.session.post.side_effect = requests.ConnectionError(
+            "private-test-key Candidate secret-profile provider rejected request"
+        )
+        log = io.StringIO()
+        with redirect_stderr(log):
+            kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(kept, JOBS)
+        self.assertNotIn("private-test-key", log.getvalue())
+        self.assertNotIn("secret-profile", log.getvalue())
+
+
+if __name__ == "__main__":
+    unittest.main()

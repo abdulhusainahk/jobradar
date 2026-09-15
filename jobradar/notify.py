@@ -14,6 +14,8 @@ from email.mime.text import MIMEText
 
 import requests
 
+from .state import key
+
 
 def _age(ts: float) -> str:
     if not ts:
@@ -57,40 +59,84 @@ def _job_line_html(job: dict) -> str:
 
 
 # ---------------- Telegram ----------------
-def _tg_send_one(url: str, chat_id: str, text: str) -> None:
+def _tg_send_one(url: str, chat_id: str, text: str) -> bool:
     payload = {"chat_id": chat_id, "text": text, "parse_mode": "HTML",
                "disable_web_page_preview": True}
-    for _ in range(4):
+    for attempt in range(4):
         try:
-            r = requests.post(url, timeout=20, json=payload)
-        except Exception as e:  # noqa: BLE001
-            _log(f"[telegram] error: {e}")
-            return
-        if r.status_code == 429:  # honor Telegram's retry_after
-            wait = (r.json().get("parameters") or {}).get("retry_after", 3)
-            _log(f"[telegram] 429; sleeping {wait}s")
-            time.sleep(wait + 1)
-            continue
-        if r.status_code != 200:
-            _log(f"[telegram] {r.status_code}: {r.text[:200]}")
-        return
+            response = requests.post(url, timeout=20, json=payload)
+            if response.status_code == 429:
+                if attempt == 3:
+                    _log("[telegram] rate limit retries exhausted")
+                    return False
+                retry_after = (response.json().get("parameters") or {}).get("retry_after", 3)
+                delay = max(0, min(60, float(retry_after)))
+                _log(f"[telegram] 429; retrying in {delay + 1:g}s")
+                time.sleep(delay + 1)
+                continue
+            if response.status_code != 200:
+                _log(f"[telegram] HTTP {response.status_code}")
+                return False
+            if response.json().get("ok") is not True:
+                _log("[telegram] API rejected message")
+                return False
+            return True
+        except Exception as exc:
+            # requests exceptions and response bodies may contain the bot URL.
+            _log(f"[telegram] delivery failed ({type(exc).__name__})")
+            return False
+    return False
 
 
-def _chunk(blocks: list[str], header: str, limit: int = 3800) -> list[str]:
-    """Pack job blocks into as few Telegram messages as possible (<4096 chars)."""
-    pages: list[list[str]] = [[]]
-    size = len(header)
-    for b in blocks:
-        if pages[-1] and size + len(b) + 2 > limit:
-            pages.append([])
-            size = 0
-        pages[-1].append(b)
-        size += len(b) + 2
-    out = []
-    for i, p in enumerate(pages):
-        h = header if i == 0 else f"🎯 <b>(continued {i + 1}/{len(pages)})</b>\n\n"
-        out.append(h + "\n\n".join(p))
-    return out
+def _text_size(text: str) -> int:
+    """Conservative Telegram bound: UTF-16 units, including markup/entities."""
+    return len(text.encode("utf-16-le")) // 2
+
+
+def _telegram_block(job: dict, limit: int) -> str:
+    block = _job_line_html(job).replace("<br>", "\n")
+    if _text_size(block) <= limit:
+        return block
+
+    # Never slice rendered HTML: that can split a tag, entity, or link. Optional
+    # analysis yields to a compact alert built from independently escaped fields.
+    def short(value, size=160):
+        text = str(value or "")
+        return _esc(text if len(text) <= size else text[:size] + "...")
+
+    block = (f"<b>{short(job.get('title'))}</b>\n"
+             f"{short(job.get('company'), 80)}\n"
+             f"{short(job.get('location'), 80)}")
+    link = f'\n<a href="{_esc(job.get("url"))}">Apply / view posting</a>'
+    if _text_size(block + link) <= limit:
+        block += link
+    else:
+        block += "\nPosting URL omitted (too long)."
+    if _text_size(block) > limit:
+        raise ValueError("Telegram header leaves insufficient room for an alert")
+    return block
+
+
+def _chunk(blocks: list[tuple[dict, str]], header: str,
+           limit: int = 3800) -> list[tuple[str, list[dict]]]:
+    """Pack whole, already bounded blocks, retaining each message's jobs."""
+    pages = []
+    text = header
+    jobs = []
+    for job, block in blocks:
+        separator = "\n\n" if jobs else ""
+        if _text_size(text + separator + block) > limit:
+            if not jobs:
+                raise ValueError("Telegram block exceeds message limit")
+            pages.append((text, jobs))
+            text, jobs, separator = header, [], ""
+        if _text_size(text + separator + block) > limit:
+            raise ValueError("Telegram block exceeds message limit")
+        text += separator + block
+        jobs.append(job)
+    if jobs:
+        pages.append((text, jobs))
+    return pages
 
 
 def _split_groups(jobs: list[dict]):
@@ -100,12 +146,22 @@ def _split_groups(jobs: list[dict]):
     return india, foreign
 
 
-def send_telegram(jobs: list[dict]) -> None:
+def configured_channels() -> list[str]:
+    channels = []
+    if os.environ.get("TELEGRAM_BOT_TOKEN") and os.environ.get("TELEGRAM_CHAT_ID"):
+        channels.append("telegram")
+    if os.environ.get("EMAIL_USER") and os.environ.get("EMAIL_APP_PASSWORD"):
+        channels.append("email")
+    return channels
+
+
+def send_telegram(jobs: list[dict]) -> dict[str, bool]:
+    outcomes = {key(job): False for job in jobs}
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
     if not token or not chat_id:
         _log("[telegram] skipped (no TELEGRAM_BOT_TOKEN/CHAT_ID)")
-        return
+        return outcomes
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     india, foreign = _split_groups(jobs)
     for label, grp in (("🇮🇳 <b>India</b>", india),
@@ -113,19 +169,29 @@ def send_telegram(jobs: list[dict]) -> None:
         if not grp:
             continue
         header = f"{label} openings ({len(grp)}) — best fit first\n\n"
-        for msg in _chunk([_job_line_html(j).replace("<br>", "\n") for j in grp], header):
-            _tg_send_one(url, chat_id, msg)
+        blocks = []
+        for job in grp:
+            try:
+                blocks.append((job, _telegram_block(job, 3800 - _text_size(header))))
+            except Exception as exc:
+                _log(f"[telegram] cannot render alert ({type(exc).__name__})")
+        for msg, chunk_jobs in _chunk(blocks, header):
+            if _tg_send_one(url, chat_id, msg):
+                for job in chunk_jobs:
+                    outcomes[key(job)] = True
             time.sleep(0.4)  # gentle pacing between chunks
+    return outcomes
 
 
 # ---------------- Email ----------------
-def send_email(jobs: list[dict]) -> None:
+def send_email(jobs: list[dict]) -> dict[str, bool]:
+    outcomes = {key(job): False for job in jobs}
     user = os.environ.get("EMAIL_USER")
     pw = os.environ.get("EMAIL_APP_PASSWORD")
-    to = os.environ.get("EMAIL_TO", user)
+    to = (os.environ.get("EMAIL_TO") or "").strip() or user
     if not user or not pw:
         _log("[email] skipped (no EMAIL_USER/EMAIL_APP_PASSWORD)")
-        return
+        return outcomes
     india, foreign = _split_groups(jobs)
     sections = ""
     for label, grp in (("🇮🇳 India openings", india),
@@ -150,14 +216,46 @@ def send_email(jobs: list[dict]) -> None:
         with smtplib.SMTP("smtp.gmail.com", 587, timeout=30) as s:
             s.starttls()
             s.login(user, pw)
-            s.sendmail(user, [a.strip() for a in to.split(",")], msg.as_string())
-        _log(f"[email] sent digest to {to}")
-    except Exception as e:  # noqa: BLE001
-        _log(f"[email] error: {e}")
+            refused = s.sendmail(user, [a.strip() for a in to.split(",") if a.strip()],
+                                 msg.as_string())
+            if refused:
+                _log("[email] one or more recipients refused the digest")
+                return outcomes
+        _log("[email] sent digest")
+        return {job_key: True for job_key in outcomes}
+    except Exception as exc:
+        _log(f"[email] delivery failed ({type(exc).__name__})")
+        return outcomes
 
 
-def dispatch(jobs: list[dict]) -> None:
+def dispatch(jobs: list[dict], channels_by_job: dict[str, list[str]] | None = None
+             ) -> dict[str, dict[str, bool]]:
+    """Return explicit outcomes only for attempted channel/job pairs.
+
+    With no routing map, use all currently configured channels. An explicit map
+    sends only the requested pairs, allowing durable retries to skip successes.
+    Missing credentials for a requested channel produce False, never success.
+    """
     if not jobs:
-        return
-    send_telegram(jobs)
-    send_email(jobs)
+        return {}
+    if channels_by_job is None:
+        channels = configured_channels()
+        channels_by_job = {key(job): channels for job in jobs}
+    outcomes = {}
+    requested = dict.fromkeys(channel for job in jobs
+                              for channel in channels_by_job.get(key(job), []))
+    senders = {"telegram": send_telegram, "email": send_email}
+    for channel in requested:
+        batch = [job for job in jobs if channel in channels_by_job.get(key(job), [])]
+        result = {key(job): False for job in batch}
+        try:
+            sender = senders.get(channel)
+            if sender is None:
+                _log("[notify] unsupported delivery channel")
+            else:
+                sent = sender(batch)
+                result = {job_key: sent.get(job_key) is True for job_key in result}
+        except Exception as exc:
+            _log(f"[notify] delivery failed ({type(exc).__name__})")
+        outcomes[channel] = result
+    return outcomes

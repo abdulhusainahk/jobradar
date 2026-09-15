@@ -1,9 +1,26 @@
 # ============================================================================
 # JobRadar config — target companies + matching rules
 # Edit this file to add/remove companies or tune what counts as a match.
-# Company feeds use public ATS JSON APIs (Greenhouse / Lever / Ashby) — no
-# scraping, no ToS risk. To add a company, find its ATS token (see README).
+# Public employer APIs, career pages and RSS feeds; source availability and terms
+# vary. To add a company, verify its employer identity and ATS token (see README).
 # ============================================================================
+
+profile:
+  role: "Senior DevOps & Platform Engineer"
+  skills:
+    - AWS
+    - Azure
+    - Terraform
+    - Terragrunt
+    - Kubernetes
+    - Helm
+    - GitHub Actions
+    - Jenkins
+    - Prometheus
+    - Grafana
+    - ELK
+    - "AI/LLMOps and MCP servers"
+  preferences: "Product companies; infrastructure automation rather than pure support."
 
 match:
   # A role's TITLE must contain at least one of these (case-insensitive).
@@ -38,14 +55,14 @@ match:
 
   # Which region groups to alert on. Comment one out to disable it.
   regions_enabled: [india, uae, europe]
+  preferred_locations: [Mumbai, Bangalore, "Remote India"]
 
-  # Drop "monitoring-only" roles (SRE roles whose JD has no DevOps/IaC/CI-CD/
-  # automation content) ONLY when they score below this. A senior, DevOps-titled
-  # role at big-tech can be boosted above the line and kept. Set 0 to never drop.
+  # Drop monitoring-only descriptions below this heuristic threshold.
+  # Set 0 to retain them for AI scoring or manual assessment.
   drop_monitoring_below: 45
 
-  # Location keyword groups. A role matches if its location contains any keyword
-  # from an ENABLED region (India first per your focus; UAE + Europe per roadmap).
+  # Boundary-aware location groups. Explicit countries disambiguate cities;
+  # only enabled regions pass, including region-qualified remote roles.
   locations:
     india:
       - mumbai
@@ -95,7 +112,7 @@ match:
   max_required_years: 11     # drop roles whose JD demands MORE than this (too senior)
   drop_out_of_band: true     # set false to keep out-of-band roles (just flagged)
 
-  # Drop the role if its title/location contains any of these.
+  # Drop whole title/location phrases, not substrings (intern != internal).
   exclude_keywords:
     # too junior
     - intern
@@ -134,21 +151,22 @@ match:
     - "sporta technologies"
 
 # ----------------------------------------------------------------------------
-# Companies. ats: greenhouse | lever | ashby.  token: the board identifier.
-# All tokens below were verified live (returned jobs) on build day.
+# Companies use public ATS feeds and employer career portals.
+# token identifies a board; host/site identify tenant-specific career APIs.
 # tier is just a label shown in the alert.
 # ----------------------------------------------------------------------------
 companies:
   # --- India product / fintech (highest relevance) ---
-  - { name: PhonePe,     ats: greenhouse, token: phonepe,    tier: "Fintech · Blr" }
+  - { name: PhonePe,     ats: smartrecruiters, token: PHONEPELIMITED, tier: "Fintech · Blr" }
   - { name: Groww,       ats: greenhouse, token: groww,      tier: "Fintech · Blr" }
   - { name: Slice,       ats: greenhouse, token: slice,      tier: "Fintech · Blr" }
   - { name: CRED,        ats: lever,      token: cred,       tier: "Fintech · Blr" }
-  - { name: Zeta,        ats: greenhouse, token: zetaglobal, tier: "Fintech · Blr/Mum" }
+  - { name: Zeta,        ats: lever,      token: zeta,       tier: "Fintech · Blr/Mum" }
   - { name: PubMatic,    ats: greenhouse, token: pubmatic,   tier: "Adtech · Pune/Mum" }
   - { name: Druva,       ats: greenhouse, token: druva,      tier: "SaaS · Pune" }
   - { name: Postman,     ats: greenhouse, token: postman,    tier: "SaaS · Blr" }
   - { name: HackerRank,  ats: greenhouse, token: hackerrank, tier: "SaaS · Blr" }
+  # Plivo's current /jobs/ page still uses this Lever board, even when empty.
   - { name: Plivo,       ats: lever,      token: plivo,      tier: "SaaS · Blr" }
 
   # --- Global product cos with India/remote-India DevOps hiring ---
@@ -173,17 +191,17 @@ companies:
   - { name: CockroachDB, ats: greenhouse, token: cockroachlabs, tier: "Distributed DB · Remote" }
   # --- India SaaS / fintech / e-comm ---
   - { name: HighRadius,  ats: greenhouse, token: highradius,  tier: "Fintech SaaS · Hyderabad" }
-  - { name: Freshworks,  ats: lever,      token: freshworks,  tier: "SaaS · Chennai/Blr" }
+  - { name: Freshworks,  ats: smartrecruiters, token: Freshworks, tier: "SaaS · Chennai/Blr" }
   - { name: Meesho,      ats: lever,      token: meesho,      tier: "E-comm · Blr" }
   - { name: MindTickle,  ats: lever,      token: mindtickle,  tier: "SaaS · Pune/Blr" }
   - { name: Atlan,       ats: ashby,      token: atlan,       tier: "Data platform · Blr" }
   - { name: Snowflake,   ats: ashby,      token: snowflake,   tier: "Data cloud · Pune/Remote" }
-  - { name: Navi,        ats: ashby,      token: navi,        tier: "Fintech · Blr" }
+  - { name: Navi,        ats: turbohire,  token: navi,        tier: "Fintech · Blr" }
   - { name: NVIDIA,      ats: workday,    host: nvidia.wd5.myworkdayjobs.com, site: NVIDIAExternalCareerSite, tier: "MANGO · Pune/Blr/Hyd" }
 
   # --- Big-tech portals (custom fetchers, verified via live network capture) ---
-  # Amazon/Microsoft/Google loop role queries x locations and return newest-first;
-  # the location filter narrows to your enabled regions (India/UAE/Europe).
+  # Role-search APIs paginate every result; Google retains its regional SSR search.
+  # Region matching runs after canonical locations have been extracted.
   - { name: Amazon,     ats: amazon,    tier: "FAANG (incl. Dubai/EU hubs)" }
   - { name: Microsoft,  ats: microsoft, tier: "MANGO GCC (Phenom PCSX API)" }
   - { name: Google,     ats: google,    tier: "FAANG (SSR HTML, best-effort)" }

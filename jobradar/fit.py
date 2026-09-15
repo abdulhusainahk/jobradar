@@ -10,6 +10,8 @@ Free and offline. For deeper semantic judgment, enable the AI layer (score.py).
 """
 from __future__ import annotations
 
+from .filter import _contains_phrase, _normalize
+
 # Strong DevOps signals — drawn from the resume (weight each distinct hit).
 DEVOPS = {
     "terraform", "terragrunt", "ansible", "kubernetes", "k8s", "helm",
@@ -42,7 +44,14 @@ _DISPLAY = {
 
 
 def _hits(text: str, terms: set[str]) -> list[str]:
-    return sorted({t for t in terms if t in text})
+    # Separator aliases (CI/CD and CI CD) are one signal, not two hits.
+    seen, hits = set(), []
+    for term in sorted(terms):
+        phrase = _normalize(term)
+        if phrase not in seen and _contains_phrase(text, term):
+            seen.add(phrase)
+            hits.append(term)
+    return hits
 
 
 def _pretty(terms: list[str]) -> list[str]:
@@ -56,15 +65,15 @@ def _pretty(terms: list[str]) -> list[str]:
 
 
 def devops_fit(job: dict, jd: str) -> dict:
-    text = f"{jd or ''} {job.get('title', '')}".lower()
+    text = _normalize(f"{jd or ''} {job.get('title', '')}")
     dv = _hits(text, DEVOPS)
     cl = _hits(text, CLOUD)
     mon = _hits(text, MONITORING)
     s = len(dv)
     has_jd = bool(jd)
 
-    title = (job.get("title") or "").lower()
-    title_boost = TITLE_BOOST if any(t in title for t in TITLE_SIGNALS) else 0
+    title = _normalize(job.get("title"))
+    title_boost = TITLE_BOOST if any(_contains_phrase(title, t) for t in TITLE_SIGNALS) else 0
     sen_boost = SENIORITY_BOOST if job.get("seniority") else 0
     score = min(100, s * 15 + len(cl) * 6 + title_boost + sen_boost)
 
