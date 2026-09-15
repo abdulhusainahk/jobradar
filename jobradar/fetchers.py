@@ -35,6 +35,7 @@ FETCH_ERRORS: list[str] = []
 DEFAULT_QUERIES = [
     "devops", "site reliability", "platform engineer",
     "infrastructure engineer", "systems development engineer", "cloud engineer",
+    "production engineer", "reliability engineer", "developer productivity", "developer experience",
 ]
 
 
@@ -445,9 +446,8 @@ def atlassian(c: dict) -> list[dict]:
 # ever serves a JS shell / blocks the request.
 import re as _re  # noqa: E402
 
-# Google titles infra roles as "Site Reliability Engineer" almost exclusively,
-# so 2 fuzzy queries cover it — keeps this heavy (SSR) fetcher's runtime down.
-GOOGLE_QUERIES = ["site reliability", "platform engineer"]
+GOOGLE_QUERIES = ["site reliability", "platform engineer", "production engineer",
+                  "developer productivity", "developer experience"]
 GOOGLE_LOCATIONS = ["India", "United Arab Emirates", "Ireland",
                     "Germany", "Netherlands", "United Kingdom"]
 _G_LINK = _re.compile(r'href="jobs/results/(\d+)-([a-z0-9-]+)\?')

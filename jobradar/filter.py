@@ -57,15 +57,13 @@ def _country_regions(country: str) -> set[str]:
             if country in names}
 
 
-def _location_regions(location: str, m: dict) -> set[str]:
-    regions: set[str] = set()
+def _location_options(location: str, m: dict):
+    """Yield known region sets, or None when an alternative needs JD review."""
     for part in _LOCATION_SPLIT.split(location or ""):
         loc = _normalize(part)
         if not loc:
+            yield None
             continue
-        # IN is also Indiana, so only structured country metadata may use it
-        # unambiguously. Other short codes need a field boundary and must not
-        # override explicit foreign-country/state evidence (DE is also Delaware).
         fields = {_normalize(field) for field in part.split(",")}
         outside = any(_contains_phrase(loc, name) for name in _OUTSIDE)
         countries = {region for region, names in _COUNTRIES.items()
@@ -73,8 +71,9 @@ def _location_regions(location: str, m: dict) -> set[str]:
                              if len(name) <= 3 else _contains_phrase(loc, name))
                             for name in names)}
         if countries or outside:
-            regions.update(countries)
+            yield countries
             continue
+        regions: set[str] = set()
         if _contains_phrase(loc, "remote"):
             for keyword in m.get("remote_region_keywords", []):
                 if _contains_phrase(loc, keyword):
@@ -83,8 +82,6 @@ def _location_regions(location: str, m: dict) -> set[str]:
                         regions.update(m.get("regions_enabled", list(m.get("locations") or {})))
                     else:
                         regions.update(_REMOTE_REGIONS.get(scope, set()))
-        # Accept configured cities only when their remaining qualifiers are
-        # familiar. Unknown country/city suffixes must not turn into Europe/India.
         for region, keywords in (m.get("locations") or {}).items():
             remainder = f" {loc} "
             city_hit = False
@@ -99,7 +96,11 @@ def _location_regions(location: str, m: dict) -> set[str]:
                 remainder = remainder.replace(f" {_normalize(qualifier)} ", " ")
             if not remainder.strip():
                 regions.add(region)
-    return regions
+        yield regions or None
+
+
+def _location_regions(location: str, m: dict) -> set[str]:
+    return {region for option in _location_options(location, m) if option for region in option}
 
 
 def location_matches(location: str, m: dict) -> bool:
@@ -116,28 +117,31 @@ def location_is_india(location: str, m: dict, country: str | None = None) -> boo
     return "india" in _location_regions(location, physical)
 
 
-def _job_location_matches(job: dict, m: dict) -> bool:
-    """Use retained provider country fields when present; strings remain supported."""
+def location_status(job: dict, m: dict) -> str:
+    """Distinguish an explicit exclusion from an unresolved job location."""
     enabled = set(m.get("regions_enabled", list(m.get("locations") or {})))
-    # A structured location list describes the alternatives more precisely than
-    # the display string. Do not let an ambiguous display city override it.
+    if not enabled:
+        return "outside"
     entries = job.get("locations") or [job]
     if job.get("locations") and any(job.get(key) for key in ("country_code", "countryCode", "country")):
         entries = [job, *entries]
+    unknown = False
     for entry in entries:
         if isinstance(entry, str):
-            if location_matches(entry, m):
-                return True
+            options = _location_options(entry, m)
+        elif isinstance(entry, dict):
+            country = entry.get("country_code") or entry.get("countryCode") or entry.get("country")
+            options = ([_country_regions(country)] if country else
+                       _location_options(entry.get("location") or entry.get("city") or "", m))
+        else:
+            unknown = True
             continue
-        if not isinstance(entry, dict):
-            continue
-        country = entry.get("country_code") or entry.get("countryCode") or entry.get("country")
-        if country:
-            if _country_regions(country) & enabled:
-                return True
-        elif location_matches(entry.get("location") or entry.get("city") or "", m):
-            return True
-    return False
+        for regions in options:
+            if regions is None:
+                unknown = True
+            elif regions & enabled:
+                return "allowed"
+    return "unknown" if unknown else "outside"
 
 
 def is_excluded(job: dict, m: dict) -> bool:
@@ -163,5 +167,14 @@ def passes(job: dict, m: dict) -> bool:
     return (
         not is_excluded(job, m)
         and role_matches(job.get("title", ""), m)
-        and _job_location_matches(job, m)
+        and location_status(job, m) == "allowed"
+    )
+
+
+def is_candidate(job: dict, m: dict) -> bool:
+    """Cheap hard constraints; uncertain locations remain eligible for AI review."""
+    return (
+        not is_excluded(job, m)
+        and role_matches(job.get("title", ""), m)
+        and location_status(job, m) != "outside"
     )

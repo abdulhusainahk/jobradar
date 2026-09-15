@@ -71,9 +71,9 @@ def run() -> int:
                 continue
             fetched_keys.add(key)
             job["_finance"] = bool(company.get("finance"))
-            if not jf.passes(job, match):
-                continue
             if not resend and not state.is_new(st, job):
+                continue
+            if not jf.is_candidate(job, match):
                 continue
             job["tier"] = company.get("tier", "")
             job["seniority"] = jf.seniority_tag(job["title"], match)
@@ -81,7 +81,7 @@ def run() -> int:
             matched_new.append(job)
 
     print(f"\nScanned {total_seen} roles across {len(companies)} sources; "
-          f"{len(matched_new)} new keyword match(es).", file=sys.stderr)
+          f"{len(matched_new)} new candidate(s).", file=sys.stderr)
     degraded = bool(fetchers.FETCH_ERRORS)
     if degraded:
         print(f"[sources] degraded: {len(fetchers.FETCH_ERRORS)} fetch failure(s); "
@@ -97,34 +97,40 @@ def run() -> int:
               file=sys.stderr)
         return 1 if degraded else 0
 
-    retained = []
     for job in matched_new:
-        jd = describe.enrich_jd(job)
-        job["_jd"] = jd
-        job["fit"] = jfit.devops_fit(job, jd)
+        job["_jd"] = describe.enrich_jd(job)
+        job["fit"] = jfit.devops_fit(job, job["_jd"])
         job["_india"] = jf.location_is_india(
             job["location"], match,
             job.get("country_code") or job.get("countryCode") or job.get("country"),
         )
-        assessment = experience.assess(
-            jd, match.get("candidate_years", 6), match.get("max_required_years", 11)
-        )
-        job["exp_note"] = assessment["note"]
-        threshold = match.get("drop_monitoring_below", 0)
-        monitoring_drop = (
-            threshold and job["fit"].get("monitoring_only")
-            and job["fit"]["score"] < threshold
-        )
-        if monitoring_drop or (match.get("drop_out_of_band") and assessment["drop"]):
-            if not resend:
-                state.reject(st, job)
-            continue
-        retained.append(job)
+        job["_location_status"] = jf.location_status(job, match)
 
-    scored = score.score_jobs(retained, cfg)
+    scored = score.score_jobs(matched_new, cfg)
+    ai_used = bool(matched_new) and all(job.get("ai_decision") for job in matched_new)
+    if not ai_used:
+        scored = []
+        for job in matched_new:
+            assessment = experience.assess(
+                job["_jd"], match.get("candidate_years", 6), match.get("max_required_years", 11)
+            )
+            job["exp_note"] = assessment["note"]
+            threshold = match.get("drop_monitoring_below", 0)
+            monitoring_drop = (
+                threshold and job["fit"].get("monitoring_only")
+                and job["fit"]["score"] < threshold
+            )
+            if (not jf.passes(job, match) or monitoring_drop
+                    or (match.get("drop_out_of_band") and assessment["drop"])):
+                continue
+            scored.append(job)
+    if matched_new:
+        mode = "AI" if ai_used else "heuristic fallback"
+        print(f"[selection] {mode}: retained {len(scored)} of {len(matched_new)} candidates",
+              file=sys.stderr)
     kept_keys = {state.key(job) for job in scored}
     if not resend:
-        for job in retained:
+        for job in matched_new:
             if state.key(job) not in kept_keys:
                 state.reject(st, job)
         for job in scored:

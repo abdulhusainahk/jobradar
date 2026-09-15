@@ -13,10 +13,12 @@ usage. A free-tier-compatible model does not prevent charges on a paid project.
 ## How it works
 
 ```text
-Employer feeds -> all result pages -> title/location matching -> dedup
-  -> full-description experience/DevOps assessment
-  -> optional Gemini scoring -> best fit first, recency breaks ties
-  -> durable pending alerts -> per-channel delivery -> saved acknowledgements
+Employer feeds -> all result pages -> normalize + dedup
+  -> hard exclusions + broad title candidates -> full job descriptions
+  -> Gemini relevance / experience / location assessment + fit score
+       success: keep, reject, or retain as uncertain for review
+       failure: existing keyword/location + experience/DevOps heuristic filters
+  -> best fit first -> durable per-channel delivery -> saved acknowledgements
 ```
 
 - The monitor is scheduled at minutes **17 and 47** of each UTC hour. GitHub can
@@ -74,13 +76,25 @@ configured, new alerts remain pending rather than being marked delivered.
 | Repository variable | Default | Meaning |
 | --- | --- | --- |
 | `AI_SCORING` | `on` in Actions | `on` enables Gemini; `off` forces keyword matching |
-| `JOBRADAR_MODEL` | `gemini-3.8-flash` | Gemini model ID; check current free-tier availability |
-| `AI_MIN_SCORE` | `0` | Drop successfully AI-scored jobs below this value, from 0 to 100 |
+| `JOBRADAR_MODEL` | `gemini-3.5-flash-lite` | Gemini model ID; check current free-tier availability |
+| `AI_MIN_SCORE` | `0` | Minimum score for confident `keep` decisions; uncertain roles bypass this threshold |
 | `AI_MAX_ATTEMPTS` | `3` | Total attempts per failed Gemini request, from 2 to 5 |
 
-The client uses Gemini's REST API with structured JSON output. It validates the
-score and note before using them. No Anthropic key, subscription, SDK or provider
-fallback is needed.
+The client uses Gemini's REST API with validated structured JSON. One request per
+new candidate assesses actual role relevance, overall experience (not individual
+tool tenure), geographic eligibility, fit score, and a short reason. No additional
+AI SDK is required.
+
+| Decision | Selection behavior |
+| --- | --- |
+| `keep` | Retain when its score meets `AI_MIN_SCORE`; rank by AI score |
+| `reject` | Drop a clear mismatch, regardless of its numeric score |
+| `uncertain` | Retain even below `AI_MIN_SCORE`; show **Review required: AI uncertain** |
+
+The response also includes `relevance`, `experience_fit`, and `location_fit`.
+Missing descriptions or unresolved evidence cannot create a definitive rejection
+without a clear mismatch. AI-selected alerts use AI assessments as their primary
+labels; the numeric heuristic score remains available as a secondary signal.
 
 ### Failure behavior
 
@@ -92,13 +106,16 @@ fallback is needed.
 - Retries use exponential backoff and the `Retry-After` header, with each delay
   bounded at 30 seconds.
 - If attempts are exhausted, AI stops for the rest of the new batch. **All partial
-  AI scores and exclusions are discarded**, preserving the complete deterministic
-  shortlist and its heuristic ranking. `AI_MIN_SCORE` never drops fallback jobs.
+  AI scores and decisions are discarded** before applying the existing deterministic
+  filters and ranking. `AI_MIN_SCORE` never filters this fallback path.
 - Successful pending alerts reuse their saved assessment during delivery retries;
   they do not incur another AI request.
 
-Only new deterministic matches are normally sent to Gemini. `resend_all` scores
-all current matches, so it can exhaust the free quota and trigger keyword
+Only unseen, plausible candidates reach Gemini. Experience and monitoring-only
+heuristics do not reject candidates before AI runs. Explicit employer/seniority
+exclusions and clearly outside locations still fail before enrichment or API use;
+unresolved locations can reach AI, while fallback requires a known allowed location.
+`resend_all` assesses all current candidates, so it can exhaust the free quota and trigger
 fallback. No code can guarantee that a particular account/model always has free
 quota. Google may use free-tier content to improve its products; do not put
 confidential information in the profile or prompts.
@@ -115,19 +132,26 @@ Edit `config.yaml`:
 - `match.candidate_years` and `max_required_years`: shared experience constraints.
 - `match.regions_enabled`, `locations` and `preferred_locations`: shared regional
   eligibility and AI preferences. A preference does not exclude other enabled regions.
-- `role_keywords`: title phrases. `intern` does not match `internal`.
+- `role_keywords`: broad candidate title phrases, including production engineering
+  and developer productivity/experience. `intern` does not match `internal`.
 - `exclude_keywords`, `exclude_unless_finance`, `exclude_companies`: explicit
   exclusions, including the current employer.
-- `drop_monitoring_below`: heuristic threshold for monitoring-only descriptions;
-  use `0` to keep those roles for AI or manual assessment.
+- `drop_monitoring_below`: fallback-only threshold for monitoring-only descriptions.
+- `drop_out_of_band`: enables experience-band rejection; Gemini evaluates semantic
+  requirements when available, and the regex-based filter is used only on fallback.
 
-Experience filtering distinguishes overall engineering requirements from
-individual tool tenure and avoids hard-dropping ambiguous requirements. Explicit
-country information takes precedence over ambiguous city names.
+Candidate titles and provider queries remain deterministic. Broader titles are not
+automatically suitable: Gemini can reject, for example, a manufacturing production
+role while retaining an infrastructure production engineer. The fallback is less
+precise and can retain low-scoring, unclear matches.
 
-**AI scoring is not web discovery.** It cannot recover jobs absent from employer
-feeds or discarded by deterministic matching. Add a source or adjust keyword
-rules to expand discovery.
+Existing finalized history is not reset by this cutover, and queued alerts reuse
+their saved assessments. Use `resend_all` deliberately if you want older finalized
+roles reconsidered; it also resends notifications.
+
+**AI assessment is not web discovery.** It cannot recover jobs absent from feeds
+or outside the broad title/hard-constraint gate. It now runs before uncertain
+description-based rejections rather than only scoring their survivors.
 
 ## Supported sources
 

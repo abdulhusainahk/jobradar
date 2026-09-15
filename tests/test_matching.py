@@ -131,6 +131,33 @@ class GeographicMatchingTests(unittest.TestCase):
             {"city": "Mumbai", "countryCode": "IN"}]), match_config("india")))
 
 
+class CandidateSelectionTests(unittest.TestCase):
+    def test_broader_titles_are_candidates_without_relaxing_hard_exclusions(self):
+        config = match_config("india")
+        config["role_keywords"].extend(["production engineer", "developer productivity"])
+        self.assertTrue(matching.is_candidate(job("Senior Production Engineer"), config))
+        self.assertTrue(matching.is_candidate(job("Developer Productivity Engineer"), config))
+        self.assertFalse(matching.is_candidate(job("Production Engineer Intern"), config))
+        self.assertFalse(matching.is_candidate(job("Production Engineer", company="Dream Sports"), config))
+        self.assertFalse(matching.is_candidate(job("Production Engineer", country_code="US"), config))
+
+    def test_unknown_location_reaches_ai_but_not_strict_fallback(self):
+        config = match_config("india")
+        self.assertTrue(matching.is_candidate(job(location="Remote"), config))
+        self.assertEqual(matching.location_status(job(location="Remote"), config), "unknown")
+        self.assertFalse(matching.passes(job(location="Remote"), config))
+        self.assertFalse(matching.is_candidate(job(location="Remote US"), config))
+        self.assertFalse(matching.is_candidate(job(location="Remote Europe"), config))
+        self.assertFalse(matching.is_candidate(job(location="Remote"), match_config()))
+
+    def test_unknown_alternative_does_not_erase_explicit_allowed_location(self):
+        config = match_config("india")
+        self.assertEqual(matching.location_status(job(location="Office TBD; Mumbai, India"), config), "allowed")
+        self.assertTrue(matching.passes(job(location="Office TBD; Mumbai, India"), config))
+        self.assertTrue(matching.is_candidate(job(location="US; Office TBD"), config))
+        self.assertFalse(matching.passes(job(location="US; Office TBD"), config))
+
+
 class ExperienceMatchingTests(unittest.TestCase):
     def test_engineering_band_is_not_replaced_by_junior_tool_tenure(self):
         for description in (

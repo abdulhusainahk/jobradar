@@ -39,13 +39,19 @@ def _esc(s) -> str:
 def _job_line_html(job: dict) -> str:
     fit = job.get("fit") or {}
     ftier = fit.get("tier", "")
+    if job.get("ai_decision") == "keep":
+        ftier = "AI-selected candidate"
+    elif job.get("ai_decision") == "uncertain":
+        ftier = "Review required: AI uncertain"
     fscore = fit.get("score")
-    sc = f" · fit {fscore}/100" if fscore is not None else ""
+    sc = f" · heuristic {fscore}/100" if fscore is not None else ""
     ai = f" · AI {job['ai_score']}/100" if job.get("ai_score") is not None else ""
     sen = f" · <i>{_esc(job['seniority'])}</i>" if job.get("seniority") else ""
     matched = fit.get("matched") or []
     skills = ("<br>🛠 " + _esc(", ".join(matched))) if matched else ""
     yrs = (f"<br>{_esc(job['exp_note'])}") if job.get("exp_note") else ""
+    if job.get("ai_experience_fit"):
+        yrs = "<br>AI experience: " + _esc(job["ai_experience_fit"].replace("_", " "))
     note = (f"<br>💬 <i>{_esc(job['ai_note'])}</i>") if job.get("ai_note") else ""
     return (
         (f"{_esc(ftier)}<br>" if ftier else "")
@@ -107,6 +113,8 @@ def _telegram_block(job: dict, limit: int) -> str:
     block = (f"<b>{short(job.get('title'))}</b>\n"
              f"{short(job.get('company'), 80)}\n"
              f"{short(job.get('location'), 80)}")
+    if job.get("ai_decision") == "uncertain":
+        block = "Review required: AI uncertain\n" + block
     link = f'\n<a href="{_esc(job.get("url"))}">Apply / view posting</a>'
     if _text_size(block + link) <= limit:
         block += link

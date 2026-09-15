@@ -23,13 +23,18 @@ JOBS = [
 ]
 
 
-def response(value=90, note="Strong infrastructure fit", status=200, finish="STOP"):
+def response(value=90, note="Strong infrastructure fit", status=200, finish="STOP",
+             decision="keep", relevance="relevant", experience_fit="within_band",
+             location_fit="allowed"):
     result = Mock()
     result.status_code = status
     result.headers = {}
     result.json.return_value = {"candidates": [{
         "finishReason": finish,
-        "content": {"parts": [{"text": json.dumps({"score": value, "note": note})}]},
+        "content": {"parts": [{"text": json.dumps({
+            "score": value, "note": note, "decision": decision, "relevance": relevance,
+            "experience_fit": experience_fit, "location_fit": location_fit,
+        })}]},
     }]}
     if status >= 400:
         result.raise_for_status.side_effect = requests.HTTPError("provider rejected request")
@@ -66,7 +71,7 @@ class GeminiScoringTests(unittest.TestCase):
         self.session.post.side_effect = [response(20), limited, limited, limited]
         kept = score.score_jobs(self.jobs, CONFIG)
         self.assertEqual([job["id"] for job in kept], ["a", "b"])
-        self.assertTrue(all("ai_score" not in job and "ai_note" not in job for job in kept))
+        self.assertTrue(all(not any(key.startswith("ai_") for key in job) for job in kept))
         self.assertEqual([job["fit"]["score"] for job in kept], [80, 60])
         self.assertEqual(self.session.post.call_count, 4)
         self.assertEqual([call.args[0] for call in self.sleep.call_args_list], [5.0, 5.0])
@@ -108,6 +113,40 @@ class GeminiScoringTests(unittest.TestCase):
         self.assertEqual(kept, JOBS)
         self.assertNotIn("private-test-key", log.getvalue())
         self.assertNotIn("secret-profile", log.getvalue())
+
+    def test_decision_precedence_retains_uncertainty_below_threshold(self):
+        self.jobs.append({**copy.deepcopy(JOBS[1]), "id": "c"})
+        self.session.post.side_effect = [
+            response(95),
+            response(99, decision="reject", relevance="irrelevant"),
+            response(5, decision="uncertain", experience_fit="uncertain"),
+        ]
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["id"] for job in kept], ["a", "c"])
+        self.assertEqual(kept[1]["ai_decision"], "uncertain")
+        self.assertEqual(self.jobs[1]["ai_decision"], "reject")
+
+    def test_missing_description_cannot_produce_a_definitive_ai_rejection(self):
+        self.jobs[0]["_jd"] = ""
+        self.session.post.return_value = response(0, decision="reject", relevance="irrelevant")
+        kept = score.score_jobs(self.jobs[:1], CONFIG)
+        self.assertEqual([job["id"] for job in kept], ["a"])
+        self.assertEqual(kept[0]["ai_decision"], "uncertain")
+
+    def test_unresolved_evidence_is_not_treated_as_a_clear_mismatch(self):
+        self.session.post.side_effect = [
+            response(10, decision="reject", experience_fit="uncertain"),
+            response(10, decision="reject", relevance="irrelevant", experience_fit="uncertain"),
+        ]
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["id"] for job in kept], ["a"])
+        self.assertEqual(kept[0]["ai_decision"], "uncertain")
+
+    def test_invalid_decision_retries_then_returns_no_partial_assessments(self):
+        self.session.post.return_value = response(decision="perhaps")
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(kept, JOBS)
+        self.assertEqual(self.session.post.call_count, 3)
 
 
 if __name__ == "__main__":

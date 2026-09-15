@@ -22,10 +22,11 @@ class MonitorLifecycleTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
+        self.config = copy.deepcopy(CONFIG)
         self.patches = [
             patch.dict("os.environ", {}, clear=True),
             patch.object(state, "STATE_FILE", str(Path(self.tmp.name) / "state.json")),
-            patch.object(main, "load_config", return_value=copy.deepcopy(CONFIG)),
+            patch.object(main, "load_config", return_value=self.config),
             patch.object(main.notify, "configured_channels", return_value=["telegram"]),
             patch.object(main.describe, "enrich_jd", return_value=JD),
         ]
@@ -65,6 +66,7 @@ class MonitorLifecycleTests(unittest.TestCase):
             for job in jobs:
                 job["ai_score"] = 20 if job["id"] == "new" else 95
                 job["ai_note"] = "Assessed fit"
+                job["ai_decision"] = "keep"
             return jobs
 
         with patch.object(main.fetchers, "fetch_company", return_value=[copy.deepcopy(JOB), second]), \
@@ -75,6 +77,78 @@ class MonitorLifecycleTests(unittest.TestCase):
                 }) as dispatch:
             self.assertEqual(main.run(), 0)
         self.assertEqual([job["id"] for job in dispatch.call_args.args[0]], ["second", "new"])
+
+    def test_ai_can_rescue_a_role_before_monitoring_heuristics_drop_it(self):
+        self.config["match"].update(drop_monitoring_below=45, drop_out_of_band=True)
+        state.save({"version": 2, "seen": {}, "pending": {}, "initialized": True})
+        jd = "6+ years engineering experience. On-call monitoring; build self-healing recovery services."
+
+        def assess(jobs, config):
+            for job in jobs:
+                job.update(ai_decision="keep", ai_score=85, ai_note="Owns engineering, not just monitoring.")
+            return jobs
+
+        with patch.object(main.fetchers, "fetch_company", return_value=[copy.deepcopy(JOB)]), \
+                patch.object(main.describe, "enrich_jd", return_value=jd), \
+                patch.object(main.score, "score_jobs", side_effect=assess), \
+                patch.object(main.notify, "dispatch", return_value={"telegram": {state.key(JOB): True}}) as dispatch:
+            self.assertEqual(main.run(), 0)
+        delivered = dispatch.call_args.args[0]
+        self.assertEqual([job["id"] for job in delivered], ["new"])
+        self.assertTrue(delivered[0]["fit"]["monitoring_only"])
+        self.assertIn(state.key(JOB), state.load()["seen"])
+
+    def test_uncertain_ai_retains_a_role_the_experience_parser_would_drop(self):
+        self.config["match"]["drop_out_of_band"] = True
+        state.save({"version": 2, "seen": {}, "pending": {}, "initialized": True})
+        jd = "2-3 years of overall engineering experience."
+
+        def assess(jobs, config):
+            for job in jobs:
+                job.update(ai_decision="uncertain", ai_score=5,
+                           ai_note="Senior title and junior experience band conflict.",
+                           ai_experience_fit="uncertain")
+            return jobs
+
+        with patch.object(main.fetchers, "fetch_company", return_value=[copy.deepcopy(JOB)]), \
+                patch.object(main.describe, "enrich_jd", return_value=jd), \
+                patch.object(main.score, "score_jobs", side_effect=assess), \
+                patch.object(main.notify, "dispatch", return_value={"telegram": {state.key(JOB): True}}) as dispatch:
+            self.assertEqual(main.run(), 0)
+        self.assertEqual(dispatch.call_args.args[0][0]["ai_decision"], "uncertain")
+        self.assertIn(state.key(JOB), state.load()["seen"])
+
+    def test_failed_ai_uses_existing_heuristic_rejections_and_ranking(self):
+        self.config["match"].update(drop_monitoring_below=45, drop_out_of_band=True)
+        state.save({"version": 2, "seen": {}, "pending": {}, "initialized": True})
+        jobs = [dict(JOB, id=name) for name in ("monitoring", "junior", "good")]
+        descriptions = {"monitoring": "Monitoring dashboards and on-call incidents.",
+                        "junior": "2-3 years of overall engineering experience.", "good": JD}
+        with patch.dict("os.environ", {"AI_SCORING": "on", "GEMINI_API_KEY": "private-test-key"}), \
+                patch.object(main.fetchers, "fetch_company", return_value=jobs), \
+                patch.object(main.describe, "enrich_jd", side_effect=lambda job: descriptions[job["id"]]), \
+                patch.object(main.score.requests, "Session") as client, \
+                patch.object(main.score.time, "sleep"), \
+                patch.object(main.notify, "dispatch", return_value={"telegram": {"Example::good": True}}) as dispatch:
+            client.return_value.__enter__.return_value.post.side_effect = main.score.requests.Timeout()
+            self.assertEqual(main.run(), 0)
+        delivered = dispatch.call_args.args[0]
+        self.assertEqual([job["id"] for job in delivered], ["good"])
+        self.assertFalse(any(key.startswith("ai_") for key in delivered[0]))
+        self.assertEqual(set(state.load()["seen"]), {state.key(job) for job in jobs})
+
+    def test_hard_exclusions_do_not_reach_description_or_ai_calls(self):
+        self.config["match"].update(exclude_companies=["Excluded"], exclude_keywords=["intern"])
+        state.save({"version": 2, "seen": {}, "pending": {}, "initialized": True})
+        jobs = [dict(JOB, id="employer", company="Excluded"),
+                dict(JOB, id="intern", title="DevOps Intern"),
+                dict(JOB, id="country", country_code="US")]
+        with patch.object(main.fetchers, "fetch_company", return_value=jobs), \
+                patch.object(main.describe, "enrich_jd", side_effect=AssertionError("Excluded job enriched")), \
+                patch.object(main.notify, "dispatch", return_value={}) as dispatch:
+            self.assertEqual(main.run(), 0)
+        self.assertEqual(dispatch.call_args.args[0], [])
+        self.assertEqual(state.load()["seen"], {})
 
 
 if __name__ == "__main__":

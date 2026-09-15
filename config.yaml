@@ -23,7 +23,7 @@ profile:
   preferences: "Product companies; infrastructure automation rather than pure support."
 
 match:
-  # A role's TITLE must contain at least one of these (case-insensitive).
+  # Broad candidate titles; Gemini evaluates actual responsibilities in the JD.
   role_keywords:
     - devops
     - "site reliability"
@@ -36,6 +36,11 @@ match:
     - "systems development"
     - kubernetes
     - "cloud infrastructure"
+    - "production engineer"
+    - "production engineering"
+    - "reliability engineer"
+    - "developer productivity"
+    - "developer experience"
   # NOTE: "observability" was removed as an inclusion keyword — at observability
   # companies (Datadog/Okta) it matched product roles, not infra-DevOps. It's
   # still used to DETECT monitoring-heavy JDs during fit scoring.
@@ -57,12 +62,12 @@ match:
   regions_enabled: [india, uae, europe]
   preferred_locations: [Mumbai, Bangalore, "Remote India"]
 
-  # Drop monitoring-only descriptions below this heuristic threshold.
-  # Set 0 to retain them for AI scoring or manual assessment.
+  # Fallback-only monitoring filter. AI decisions take precedence when available.
+  # Set 0 to disable this heuristic rejection when AI is off or unavailable.
   drop_monitoring_below: 45
 
-  # Boundary-aware location groups. Explicit countries disambiguate cities;
-  # only enabled regions pass, including region-qualified remote roles.
+  # Known outside locations fail early. Unresolved locations reach Gemini;
+  # the deterministic fallback still requires an allowed location.
   locations:
     india:
       - mumbai
