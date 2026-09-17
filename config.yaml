@@ -229,9 +229,9 @@ companies:
   # --- Finance GCCs (huge Mumbai/Blr tech hubs; VP-level ≈ 60L+, clears target) ---
   - { name: "J.P. Morgan",    ats: oracle, host: jpmc.fa.oraclecloud.com, site: CX_1001, finance: true, tier: "Finance GCC · Mumbai HQ" }
   - { name: "Morgan Stanley", ats: pcsx, host: morganstanley.eightfold.ai, domain: morganstanley.com, finance: true, tier: "Finance GCC · Mumbai/Blr" }
-  - { name: "Citi",           ats: pcsx, host: citi.eightfold.ai, domain: citi.com, finance: true, tier: "Finance GCC · Chennai/Pune/Mum" }
+  - { name: "Citi",           ats: pcsx, host: citi.eightfold.ai, domain: citi.com, queries: [""], requests_per_minute: 60, finance: true, tier: "Finance GCC · Chennai/Pune/Mum" }
   - { name: "Mastercard",     ats: workday, host: mastercard.wd1.myworkdayjobs.com, site: CorporateCareers, finance: true, tier: "Finance GCC · Pune/Vadodara" }
-  - { name: "PayPal",         ats: pcsx, host: paypal.eightfold.ai, domain: paypal.com, finance: true, tier: "Fintech · Chennai/Blr/Hyd" }
+  - { name: "PayPal",         ats: pcsx, host: paypal.eightfold.ai, domain: paypal.com, queries: [""], requests_per_minute: 60, finance: true, tier: "Fintech · Chennai/Blr/Hyd" }
   - { name: "Target",         ats: workday, host: target.wd5.myworkdayjobs.com, site: targetcareers, tier: "Retail GCC · Bengaluru" }
 
   # ===========================================================================

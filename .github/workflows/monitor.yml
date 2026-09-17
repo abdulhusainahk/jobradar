@@ -51,6 +51,7 @@ jobs:
           GEMINI_API_KEY:     ${{ secrets.GEMINI_API_KEY }}
           AI_MIN_SCORE:       ${{ vars.AI_MIN_SCORE || '0' }}
           AI_MAX_ATTEMPTS:    ${{ vars.AI_MAX_ATTEMPTS || '3' }}
+          AI_REQUESTS_PER_MINUTE: ${{ vars.AI_REQUESTS_PER_MINUTE || '10' }}
           JOBRADAR_MODEL:     ${{ vars.JOBRADAR_MODEL }}
           JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
           JOBRADAR_RESEND_ALL: ${{ inputs.resend_all }}

@@ -76,22 +76,38 @@ def _pages(c: dict, context: str, fetch, identity):
             next_offset = int(next_offset)
             if next_offset <= offset:
                 raise ValueError("pagination offset made no progress")
-            keys = {str(identity(row)) for row in rows}
+            valid_rows, keys = [], set()
+            for index, row in enumerate(rows):
+                try:
+                    value = identity(row)
+                    if type(value) not in (str, int) or not str(value).strip():
+                        raise ValueError("missing job identity")
+                except (KeyError, TypeError, ValueError, AttributeError) as error:
+                    _error(c, f"{context}, offset {offset}, row {index}", error)
+                    keys.add(("malformed", json.dumps(row, sort_keys=True)))
+                    continue
+                keys.add(("job", str(value)))
+                valid_rows.append(row)
             if not keys - seen:
                 raise ValueError("pagination made no progress (repeated jobs)")
             seen.update(keys)
         except Exception as e:  # keep earlier pages and continue other searches
             _error(c, f"{context}, offset {offset}", e)
             return
-        yield rows
+        if valid_rows:
+            yield valid_rows
         offset = next_offset
         if total is not None and offset >= total:
             return
 
 
-def _get(url: str, headers: dict | None = None):
+def _get(url: str, headers: dict | None = None, session: requests.Session | None = None,
+         before_request=None):
     for attempt in range(3):
-        response = requests.get(url, headers=headers or HEADERS, timeout=TIMEOUT)
+        if before_request is not None:
+            before_request()
+        client = session if session is not None else requests
+        response = client.get(url, headers=headers or HEADERS, timeout=TIMEOUT)
         try:
             if response.status_code == 429 and attempt < 2:
                 delay = 30.0 * (2 ** attempt)
@@ -338,32 +354,59 @@ def amazon(c: dict) -> list[dict]:
 
 def _pcsx(c: dict, host: str, domain: str) -> list[dict]:
     seen, out = set(), []
-    for q in c.get("queries", DEFAULT_QUERIES):
-        # Unscoped by default: a country search can omit eligible remote roles.
-        for loc in c.get("locations", [""]):
-            def page(offset):
-                params = urlencode({"domain": domain, "query": q, "location": loc,
-                                    "start": offset, "sort_by": "timestamp"})
-                data = _get(f"https://{host}/api/pcsx/search?{params}")
-                if data.get("status", 200) != 200:
-                    raise ValueError(data.get("error") or data["status"])
-                payload = data["data"]
-                rows = payload["positions"]
-                return rows, payload.get("count"), offset + len(rows)
+    rpm = c.get("requests_per_minute", 60)
+    if type(rpm) is not int or not 1 <= rpm <= 600:
+        raise ValueError("PCSX requests_per_minute must be an integer from 1 to 600")
+    interval, next_request_at = 60.0 / rpm, 0.0
+    denied = False
 
-            for rows in _pages(c, f"pcsx {q!r}/{loc}", page, lambda j: j["id"]):
-                for j in rows:
-                    jid = str(j["id"])
-                    if jid in seen:
-                        continue
-                    seen.add(jid)
-                    out.append({
-                        "id": jid, "title": (j.get("name") or "").strip(),
-                        "company": c["name"],
-                        "location": _locations(j.get("locations") or []),
-                        "url": urljoin(f"https://{host}", j.get("positionUrl") or ""),
-                        "posted_ts": float(j.get("postedTs") or 0),
-                    })
+    def pace():
+        nonlocal next_request_at
+        wait = max(0.0, next_request_at - time.monotonic())
+        if wait:
+            time.sleep(wait)
+        next_request_at = time.monotonic() + interval
+
+    with requests.Session() as session:
+        for q in c.get("queries", DEFAULT_QUERIES):
+            for loc in c.get("locations", [""]):
+                def page(offset):
+                    nonlocal denied
+                    params = urlencode({"domain": domain, "query": q, "location": loc,
+                                        "start": offset, "sort_by": "timestamp"})
+                    try:
+                        data = _get(f"https://{host}/api/pcsx/search?{params}",
+                                    session=session, before_request=pace)
+                    except requests.HTTPError as error:
+                        denied = (error.response is not None
+                                  and error.response.status_code in (401, 403))
+                        raise
+                    status = data.get("status", 200)
+                    if status in (401, 403, "401", "403"):
+                        denied = True
+                        raise ValueError("PCSX access denied")
+                    if status not in (200, "200"):
+                        raise ValueError("PCSX search returned an unsuccessful status")
+                    payload = data["data"]
+                    rows = payload["positions"]
+                    return rows, payload.get("count"), offset + len(rows)
+
+                for rows in _pages(c, f"pcsx {q!r}/{loc}", page, lambda j: j["id"]):
+                    for j in rows:
+                        jid = str(j["id"])
+                        if jid in seen:
+                            continue
+                        seen.add(jid)
+                        out.append({
+                            "id": jid, "title": (j.get("name") or "").strip(),
+                            "company": c["name"],
+                            "location": _locations(j.get("locations") or []),
+                            "url": urljoin(f"https://{host}", j.get("positionUrl") or ""),
+                            "posted_ts": float(j.get("postedTs") or 0),
+                        })
+                if denied:
+                    _log(f"[access] {c['name']}: stopping this source after access denial")
+                    return out
     return out
 
 
@@ -382,6 +425,13 @@ def workday(c: dict) -> list[dict]:
     tenant = host.split(".")[0]
     base = f"https://{host}/wday/cxs/{tenant}/{site}"
     seen, out = set(), []
+
+    def identity(row):
+        path = row["externalPath"]
+        if not isinstance(path, str) or not path.startswith("/job/"):
+            raise ValueError("invalid Workday job path")
+        return path
+
     for q in c.get("queries", DEFAULT_QUERIES):
         def page(offset):
             data = _post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20,
@@ -389,22 +439,25 @@ def workday(c: dict) -> list[dict]:
             rows = data["jobPostings"]
             return rows, data.get("total"), offset + len(rows)
 
-        for rows in _pages(c, f"workday query {q!r}", page, lambda j: j["externalPath"]):
+        for rows in _pages(c, f"workday query {q!r}", page, identity):
             for j in rows:
                 path = j["externalPath"]
                 if path in seen:
                     continue
-                seen.add(path)
-                bullets = j.get("bulletFields") or []
-                job = {
-                    "id": str(bullets[0] if bullets else path),
-                    "title": (j.get("title") or "").strip(),
-                    "company": c["name"],
-                    "location": (j.get("locationsText") or "").strip(),
-                    "url": f"https://{host}/en-US/{site}{path}",
-                    "posted_ts": _workday_ts(j.get("postedOn", "")),
-                    "_path": path,
-                }
+                try:
+                    bullets = j.get("bulletFields") or []
+                    job = {
+                        "id": str(bullets[0] if bullets else path),
+                        "title": (j.get("title") or "").strip(),
+                        "company": c["name"],
+                        "location": (j.get("locationsText") or "").strip(),
+                        "url": f"https://{host}/en-US/{site}{path}",
+                        "posted_ts": _workday_ts(j.get("postedOn", "")),
+                        "_path": path,
+                    }
+                except (KeyError, TypeError, ValueError, AttributeError, IndexError) as error:
+                    _error(c, f"workday record {path}", error)
+                    continue
                 if re.fullmatch(r"\d+\s+Locations?", job["location"], re.I):
                     try:
                         info = _get(f"{base}{path}")["jobPostingInfo"]
@@ -420,6 +473,7 @@ def workday(c: dict) -> list[dict]:
                     except Exception as e:
                         _error(c, f"workday locations {path}", e)
                 out.append(job)
+                seen.add(path)
     return out
 
 

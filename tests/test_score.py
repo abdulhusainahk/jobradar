@@ -3,6 +3,7 @@ import io
 import json
 import unittest
 from contextlib import redirect_stderr
+from datetime import datetime, timezone
 from unittest.mock import Mock, patch
 
 import requests
@@ -43,6 +44,7 @@ def response(value=90, note="Strong infrastructure fit", status=200, finish="STO
 
 class GeminiScoringTests(unittest.TestCase):
     def setUp(self):
+        self.now = 0.0
         self.environment = patch.dict("os.environ", {
             "AI_SCORING": "on", "GEMINI_API_KEY": "private-test-key",
             "AI_MIN_SCORE": "70", "AI_MAX_ATTEMPTS": "3", "JOBRADAR_MODEL": "",
@@ -52,10 +54,16 @@ class GeminiScoringTests(unittest.TestCase):
         self.session_patch = patch.object(score.requests, "Session")
         self.session = self.session_patch.start().return_value.__enter__.return_value
         self.addCleanup(self.session_patch.stop)
-        self.sleep_patch = patch.object(score.time, "sleep")
+        self.clock_patch = patch.object(score.time, "monotonic", side_effect=lambda: self.now)
+        self.clock_patch.start()
+        self.addCleanup(self.clock_patch.stop)
+        self.sleep_patch = patch.object(score.time, "sleep", side_effect=self.advance)
         self.sleep = self.sleep_patch.start()
         self.addCleanup(self.sleep_patch.stop)
         self.jobs = copy.deepcopy(JOBS)
+
+    def advance(self, seconds):
+        self.now += seconds
 
     def test_transient_transport_failure_recovers_before_scoring_threshold(self):
         self.session.post.side_effect = [requests.Timeout(), response(95), response(40)]
@@ -74,7 +82,6 @@ class GeminiScoringTests(unittest.TestCase):
         self.assertTrue(all(not any(key.startswith("ai_") for key in job) for job in kept))
         self.assertEqual([job["fit"]["score"] for job in kept], [80, 60])
         self.assertEqual(self.session.post.call_count, 4)
-        self.assertEqual([call.args[0] for call in self.sleep.call_args_list], [5.0, 5.0])
 
     def test_invalid_key_retries_then_stops_ai_for_remaining_jobs(self):
         self.session.post.return_value = response(status=403)
@@ -147,6 +154,99 @@ class GeminiScoringTests(unittest.TestCase):
         kept = score.score_jobs(self.jobs, CONFIG)
         self.assertEqual(kept, JOBS)
         self.assertEqual(self.session.post.call_count, 3)
+
+    def test_requests_and_retries_obey_configured_pacing(self):
+        starts = []
+        replies = [response(status=503), response(95), response(90)]
+
+        def post(*args, **kwargs):
+            starts.append(self.now)
+            self.advance(2)
+            return replies.pop(0)
+
+        self.session.post.side_effect = post
+        with patch.dict("os.environ", {"AI_REQUESTS_PER_MINUTE": "10"}):
+            kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["ai_score"] for job in kept], [95, 90])
+        self.assertEqual(starts, [0, 6, 12])
+
+    def test_retryinfo_and_header_waits_are_both_respected(self):
+        limited = response(status=429)
+        limited.headers = {"Retry-After": "5"}
+        limited.json.return_value = {"error": {"details": [{
+            "@type": "type.googleapis.com/google.rpc.RetryInfo", "retryDelay": "12.250s",
+        }]}}
+        starts = []
+        replies = [limited, response(95), response(90)]
+
+        def post(*args, **kwargs):
+            starts.append(self.now)
+            return replies.pop(0)
+
+        self.session.post.side_effect = post
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(len(kept), 2)
+        self.assertGreaterEqual(starts[1] - starts[0], 12.25)
+
+    def test_http_date_retry_after_is_not_shortened(self):
+        limited = response(status=429)
+        limited.headers = {"Retry-After": "Thu, 01 Jan 2026 00:00:45 GMT"}
+        starts = []
+        replies = [limited, response(95)]
+
+        def post(*args, **kwargs):
+            starts.append(self.now)
+            return replies.pop(0)
+
+        self.session.post.side_effect = post
+        with patch.object(score, "datetime") as clock:
+            clock.now.return_value = datetime(2026, 1, 1, tzinfo=timezone.utc)
+            kept = score.score_jobs(self.jobs[:1], CONFIG)
+        self.assertEqual(kept[0]["ai_score"], 95)
+        self.assertGreaterEqual(starts[1], 45)
+
+    def test_malformed_retry_metadata_uses_a_quota_window_instead_of_crashing(self):
+        limited = response(status=429)
+        limited.headers = {"Retry-After": "NaN"}
+        limited.json.return_value = {"error": {"details": 7}}
+        starts = []
+        replies = [limited, response(95)]
+
+        def post(*args, **kwargs):
+            starts.append(self.now)
+            return replies.pop(0)
+
+        self.session.post.side_effect = post
+        kept = score.score_jobs(self.jobs[:1], CONFIG)
+        self.assertEqual(kept[0]["ai_score"], 95)
+        self.assertGreaterEqual(starts[1], 60)
+
+    def test_daily_or_disabled_quota_falls_back_without_early_retries(self):
+        for violation in [
+            {"quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier", "quotaValue": "100"},
+            {"quotaId": "GenerateRequestsPerMinutePerProject", "quotaValue": "0"},
+        ]:
+            with self.subTest(violation=violation):
+                limited = response(status=429)
+                limited.json.return_value = {"error": {"details": [{
+                    "@type": "type.googleapis.com/google.rpc.QuotaFailure", "violations": [violation],
+                }]}}
+                self.session.post.reset_mock(side_effect=True)
+                self.session.post.return_value = limited
+                kept = score.score_jobs(self.jobs, CONFIG)
+                self.assertEqual(kept, JOBS)
+                self.assertEqual(self.session.post.call_count, 1)
+
+    def test_excessive_cooldown_is_deferred_not_capped_into_an_early_retry(self):
+        limited = response(status=429)
+        limited.json.return_value = {"error": {"details": [{
+            "@type": "type.googleapis.com/google.rpc.RetryInfo", "retryDelay": "3600s",
+        }]}}
+        self.session.post.return_value = limited
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(kept, JOBS)
+        self.assertEqual(self.session.post.call_count, 1)
+        self.assertEqual(self.now, 0)
 
 
 if __name__ == "__main__":

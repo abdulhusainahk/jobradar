@@ -1,3 +1,4 @@
+import json
 import unittest
 from unittest.mock import patch
 from urllib.parse import parse_qs, urlparse
@@ -14,10 +15,28 @@ def amazon_job(jid):
     return {"id_icims": jid, "title": "DevOps Engineer", "job_path": f"/jobs/{jid}",
             "normalized_location": "Bengaluru, India"}
 
+def http_response(data, status=200):
+    result = fetchers.requests.Response()
+    result.status_code = status
+    result._content = json.dumps(data).encode()
+    result._content_consumed = True
+    return result
+
+
 
 class FetcherTests(unittest.TestCase):
     def setUp(self):
         fetchers.FETCH_ERRORS.clear()
+        self.now = 0.0
+        clock = patch.object(fetchers.time, "monotonic", side_effect=lambda: self.now)
+        clock.start()
+        self.addCleanup(clock.stop)
+        sleeper = patch.object(fetchers.time, "sleep", side_effect=self.advance)
+        sleeper.start()
+        self.addCleanup(sleeper.stop)
+
+    def advance(self, seconds):
+        self.now += seconds
 
     def tearDown(self):
         fetchers.FETCH_ERRORS.clear()
@@ -67,7 +86,7 @@ class FetcherTests(unittest.TestCase):
             return {"id": jid, "name": "Platform Engineer", "positionUrl": f"/careers/job/{jid}",
                     "locations": ["New York", "Seattle", "Bengaluru, India", "London"]}
 
-        def api(url):
+        def api(url, **kwargs):
             query = params(url)
             offset = int(query["start"][0])
             ids = ["shared"] if offset == 0 else [query["query"][0]]
@@ -122,6 +141,123 @@ class FetcherTests(unittest.TestCase):
         self.assertEqual(jobs[0]["id"], "R1")
         self.assertEqual(jobs[0]["location"], "2 Locations")
         self.assertIn("detail unavailable", " ".join(fetchers.FETCH_ERRORS))
+
+    def test_workday_bad_identity_does_not_drop_valid_peers_or_later_pages(self):
+        company = {"name": "NVIDIA", "ats": "workday", "host": "nvidia.wd5.myworkdayjobs.com",
+                   "site": "NVIDIAExternalCareerSite", "queries": ["devops"]}
+        offsets = []
+
+        def search(url, body):
+            offsets.append(body["offset"])
+            rows = {
+                0: [{"title": "Missing path"}, {"externalPath": "/job/One", "title": "DevOps",
+                     "locationsText": "India", "bulletFields": ["R1"]}, {"externalPath": "", "title": "Empty path"}],
+                3: [{"externalPath": "/job/Two", "title": "SRE", "locationsText": "India",
+                     "bulletFields": ["R2"]}],
+            }
+            return {"total": 4, "jobPostings": rows[body["offset"]]}
+
+        with patch.object(fetchers, "_post", side_effect=search):
+            jobs = fetchers.fetch_company(company)
+        self.assertEqual([job["id"] for job in jobs], ["R1", "R2"])
+        self.assertEqual(offsets, [0, 3])
+        self.assertTrue(fetchers.FETCH_ERRORS)
+
+    def test_workday_all_bad_page_still_reaches_the_next_raw_offset(self):
+        company = {"name": "Example", "ats": "workday", "host": "example.wd5.myworkdayjobs.com",
+                   "site": "Careers", "queries": ["devops"]}
+
+        def search(url, body):
+            rows = {0: [None, {}],
+                    2: [{"externalPath": "/job/Valid", "title": "SRE", "bulletFields": ["valid"]}]}
+            return {"total": 3, "jobPostings": rows[body["offset"]]}
+
+        with patch.object(fetchers, "_post", side_effect=search):
+            jobs = fetchers.fetch_company(company)
+        self.assertEqual([job["id"] for job in jobs], ["valid"])
+        self.assertTrue(fetchers.FETCH_ERRORS)
+
+    def test_repeated_malformed_page_does_not_loop_forever(self):
+        company = {"name": "Example", "ats": "workday", "host": "example.wd5.myworkdayjobs.com",
+                   "site": "Careers", "queries": ["devops"]}
+        with patch.object(fetchers, "_post", return_value={"total": 100, "jobPostings": [{}]}) as api:
+            jobs = fetchers.fetch_company(company)
+        self.assertEqual(jobs, [])
+        self.assertEqual(api.call_count, 2)
+        self.assertTrue(fetchers.FETCH_ERRORS)
+
+    def test_bad_workday_field_does_not_discard_other_jobs(self):
+        company = {"name": "Example", "ats": "workday", "host": "example.wd5.myworkdayjobs.com",
+                   "site": "Careers", "queries": ["devops"]}
+        rows = [{"externalPath": "/job/Bad", "title": ["not text"]},
+                {"externalPath": "/job/Good", "title": "SRE", "bulletFields": ["good"]}]
+        with patch.object(fetchers, "_post", return_value={"total": 2, "jobPostings": rows}):
+            jobs = fetchers.fetch_company(company)
+        self.assertEqual([job["id"] for job in jobs], ["good"])
+        self.assertTrue(fetchers.FETCH_ERRORS)
+
+    def test_pcsx_denial_retains_results_and_stops_remaining_searches(self):
+        company = {"name": "Citi", "ats": "pcsx", "host": "citi.eightfold.ai", "domain": "citi.com",
+                   "queries": ["devops", "platform"], "locations": ["India", "Europe"]}
+        first = http_response({"data": {"count": 2, "positions": [
+            {"id": "saved", "name": "SRE", "locations": ["India"]},
+        ]}})
+        denied = http_response({"error": "Access denied"}, status=403)
+        with patch.object(fetchers.requests, "Session") as client:
+            transport = client.return_value.__enter__.return_value.get
+            transport.side_effect = [first, denied]
+            jobs = fetchers.fetch_company(company)
+            self.assertEqual(transport.call_count, 2)
+        self.assertEqual([job["id"] for job in jobs], ["saved"])
+        self.assertTrue(fetchers.FETCH_ERRORS)
+
+    def test_pcsx_json_access_denial_does_not_trigger_other_queries(self):
+        company = {"name": "PayPal", "ats": "pcsx", "host": "paypal.eightfold.ai",
+                   "domain": "paypal.com", "queries": ["devops", "platform"]}
+        with patch.object(fetchers.requests, "Session") as client:
+            transport = client.return_value.__enter__.return_value.get
+            transport.return_value = http_response({"status": 403, "error": "Access denied"})
+            jobs = fetchers.fetch_company(company)
+            self.assertEqual(transport.call_count, 1)
+        self.assertEqual(jobs, [])
+        self.assertTrue(fetchers.FETCH_ERRORS)
+
+    def test_pcsx_paces_requests_across_queries_in_one_session(self):
+        company = {"name": "Example", "ats": "pcsx", "host": "example.eightfold.ai",
+                   "domain": "example.com", "queries": ["devops", "platform"], "requests_per_minute": 30}
+        starts = []
+
+        def get(url, **kwargs):
+            starts.append(self.now)
+            query = params(url)["query"][0]
+            return http_response({"data": {"count": 1, "positions": [
+                {"id": query, "name": query, "locations": ["India"]},
+            ]}})
+
+        with patch.object(fetchers.requests, "Session") as client:
+            client.return_value.__enter__.return_value.get.side_effect = get
+            jobs = fetchers.fetch_company(company)
+        self.assertEqual({job["id"] for job in jobs}, {"devops", "platform"})
+        self.assertEqual(starts, [0, 2])
+
+    def test_pcsx_retries_share_the_same_request_pacing(self):
+        company = {"name": "Example", "ats": "pcsx", "host": "example.eightfold.ai",
+                   "domain": "example.com", "queries": ["devops"], "requests_per_minute": 1}
+        limited = http_response({}, status=429)
+        limited.headers["Retry-After"] = "1"
+        replies = [limited, http_response({"data": {"count": 2, "positions": [{"id": "one"}]}}),
+                   http_response({"data": {"count": 2, "positions": [{"id": "two"}]}})]
+        starts = []
+
+        def get(url, **kwargs):
+            starts.append(self.now)
+            return replies.pop(0)
+
+        with patch.object(fetchers.requests, "Session") as client:
+            client.return_value.__enter__.return_value.get.side_effect = get
+            jobs = fetchers.fetch_company(company)
+        self.assertEqual([job["id"] for job in jobs], ["one", "two"])
+        self.assertEqual(starts, [0, 60, 120])
 
     def test_oracle_uses_finder_offset_and_preserves_all_secondary_locations(self):
         def api(url):

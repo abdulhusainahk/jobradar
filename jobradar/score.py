@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import json
+import math
 import os
+import re
 import sys
 import time
 from datetime import datetime, timezone
@@ -13,7 +15,8 @@ import requests
 
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 DEFAULT_ATTEMPTS = 3
-MAX_RETRY_DELAY = 30.0
+DEFAULT_REQUESTS_PER_MINUTE = 10
+MAX_RETRY_DELAY = 120.0
 CHOICES = {
     "decision": ("keep", "reject", "uncertain"),
     "relevance": ("relevant", "irrelevant", "uncertain"),
@@ -67,19 +70,54 @@ def _profile(config: dict) -> dict:
     }
 
 
-def _retry_delay(response, attempt: int) -> float:
+def _retry_delay(response, attempt: int) -> float | None:
+    """None means the provider cannot permit a retry within this run's wait budget."""
     delay = float(2 ** attempt)
+    hints = []
     if response is not None:
         retry_after = response.headers.get("Retry-After", "")
         try:
-            delay = max(delay, float(retry_after))
+            value = float(retry_after)
+            if math.isfinite(value) and value >= 0:
+                hints.append(value)
         except (ValueError, TypeError):
             try:
                 deadline = parsedate_to_datetime(retry_after)
-                delay = max(delay, (deadline - datetime.now(timezone.utc)).total_seconds())
+                hints.append(max(0.0, (deadline - datetime.now(timezone.utc)).total_seconds()))
             except (ValueError, TypeError, OverflowError):
                 pass
-    return min(MAX_RETRY_DELAY, max(0.0, delay))
+        try:
+            details = (response.json().get("error") or {}).get("details") or []
+        except (ValueError, TypeError, AttributeError):
+            details = []
+        if not isinstance(details, list):
+            details = []
+        for detail in details:
+            if not isinstance(detail, dict):
+                continue
+            if detail.get("@type") == "type.googleapis.com/google.rpc.RetryInfo":
+                duration = detail.get("retryDelay")
+                if isinstance(duration, str) and re.fullmatch(r"\d+(?:\.\d{1,9})?s", duration):
+                    value = float(duration[:-1])
+                    if math.isfinite(value):
+                        hints.append(value)
+            if (response.status_code == 429
+                    and detail.get("@type") == "type.googleapis.com/google.rpc.QuotaFailure"):
+                violations = detail.get("violations") or []
+                if not isinstance(violations, list):
+                    continue
+                for violation in violations:
+                    if not isinstance(violation, dict):
+                        continue
+                    quota = re.sub(r"[^a-z]", "", str(violation.get("quotaId", "")).lower())
+                    limit = violation.get("quotaValue")
+                    if ("perday" in quota or "daily" in quota
+                            or (type(limit) in (str, int) and str(limit) == "0")):
+                        return None
+        if response.status_code == 429 and not hints:
+            delay = max(delay, 60.0)
+    delay = max([delay, *hints])
+    return delay if delay <= MAX_RETRY_DELAY else None
 
 
 def _assessment(response: dict) -> dict:
@@ -123,6 +161,9 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
 
     attempts = _setting("AI_MAX_ATTEMPTS", DEFAULT_ATTEMPTS, 2, 5)
     minimum = _setting("AI_MIN_SCORE", 0, 0, 100)
+    rpm = _setting("AI_REQUESTS_PER_MINUTE", DEFAULT_REQUESTS_PER_MINUTE, 1, 600)
+    request_interval = 60.0 / rpm
+    next_request_at = 0.0
     model = os.environ.get("JOBRADAR_MODEL", "").strip() or DEFAULT_MODEL
     endpoint = (
         "https://generativelanguage.googleapis.com/v1beta/models/"
@@ -148,7 +189,8 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
         "upper limit is at least two years below candidate_years. Otherwise stated "
         "overall experience is within_band; unstated overall experience is uncertain."
     )
-    _log(f"Gemini enabled; assessing {len(jobs)} candidate(s), up to {attempts} attempts per request")
+    _log(f"Gemini enabled; assessing {len(jobs)} candidate(s), up to {attempts} attempts "
+         f"per request, paced at {rpm} requests/minute")
     with requests.Session() as session:
         for index, job in enumerate(jobs, 1):
             payload = {
@@ -171,6 +213,10 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                 },
             }
             for attempt in range(1, attempts + 1):
+                wait = max(0.0, next_request_at - time.monotonic())
+                if wait:
+                    time.sleep(wait)
+                next_request_at = time.monotonic() + request_interval
                 response = None
                 try:
                     response = session.post(
@@ -189,10 +235,14 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                         status += f", HTTP {response.status_code}"
                     _log(f"role {index}: attempt {attempt}/{attempts} failed ({status})")
                     if attempt < attempts:
-                        time.sleep(_retry_delay(response, attempt))
-                        continue
+                        delay = _retry_delay(response, attempt)
+                        if delay is not None:
+                            next_request_at = max(next_request_at, time.monotonic() + delay)
+                            _log(f"retry scheduled after at least {delay:g}s")
+                            continue
+                        _log("provider quota or cooldown requires deferring further AI requests")
                     _clear_assessments(jobs)
-                    _log("attempts exhausted; using heuristic filtering and ranking for the entire batch")
+                    _log("AI unavailable; using heuristic filtering and ranking for the entire batch")
                     return jobs
                 else:
                     decision = assessment["decision"]

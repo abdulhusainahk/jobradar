@@ -78,7 +78,8 @@ configured, new alerts remain pending rather than being marked delivered.
 | `AI_SCORING` | `on` in Actions | `on` enables Gemini; `off` forces keyword matching |
 | `JOBRADAR_MODEL` | `gemini-3.5-flash-lite` | Gemini model ID; check current free-tier availability |
 | `AI_MIN_SCORE` | `0` | Minimum score for confident `keep` decisions; uncertain roles bypass this threshold |
-| `AI_MAX_ATTEMPTS` | `3` | Total attempts per failed Gemini request, from 2 to 5 |
+| `AI_MAX_ATTEMPTS` | `3` | Maximum attempts per failed Gemini request, from 2 to 5 |
+| `AI_REQUESTS_PER_MINUTE` | `10` | Client-side pace for all Gemini requests, including retries; set at or below your project's actual quota |
 
 The client uses Gemini's REST API with validated structured JSON. One request per
 new candidate assesses actual role relevance, overall experience (not individual
@@ -100,12 +101,17 @@ labels; the numeric heuristic score remains available as a secondary signal.
 
 - A missing key immediately keeps keyword scoring; there is no useful request to
   retry without credentials.
-- A configured key gets **three attempts by default** for request or response
+- A configured key gets **up to three attempts by default** for request or response
   failures, including authentication errors, quotas, timeouts, unavailable
   models, blocked responses, invalid JSON and invalid scores.
-- Retries use exponential backoff and the `Retry-After` header, with each delay
-  bounded at 30 seconds.
-- If attempts are exhausted, AI stops for the rest of the new batch. **All partial
+- Successful requests and retries are spaced using a monotonic clock (six seconds
+  between request starts at the default 10 requests/minute).
+- Retry waits honor both HTTP `Retry-After` and Google's structured `RetryInfo`,
+  including fractional seconds. A 429 without usable guidance waits a minute.
+- Explicit daily/zero quota or a required cooldown longer than 120 seconds stops
+  AI for the batch instead of retrying before the provider permits it. Other
+  failures use exponential backoff within the attempt limit.
+- If retries are exhausted or must be deferred, AI stops for the new batch. **All partial
   AI scores and decisions are discarded** before applying the existing deterministic
   filters and ranking. `AI_MIN_SCORE` never filters this fallback path.
 - Successful pending alerts reuse their saved assessment during delivery retries;
@@ -119,6 +125,9 @@ unresolved locations can reach AI, while fallback requires a known allowed locat
 fallback. No code can guarantee that a particular account/model always has free
 quota. Google may use free-tier content to improve its products; do not put
 confidential information in the profile or prompts.
+Request pacing is not a guarantee of capacity: token-per-minute and daily quotas
+also apply, and other clients can share the same project's limits. Check your
+active model quotas in AI Studio before raising the client-side request rate.
 
 Official references: [API keys](https://ai.google.dev/gemini-api/docs/api-key),
 [pricing and free-tier availability](https://ai.google.dev/gemini-api/docs/pricing),
@@ -162,7 +171,7 @@ description-based rejections rather than only scoring their survivors.
 | TurboHire | `ats: turbohire`, career subdomain token; Navi is `navi` |
 | Amazon | `ats: amazon`; optional `queries`; uses `base_query` and pagination |
 | Microsoft | `ats: microsoft`; PCSX search with pagination |
-| Other PCSX portals | `ats: pcsx`, `host`, `domain`; optional `queries` and `locations` |
+| Other PCSX portals | `ats: pcsx`, `host`, `domain`; optional `queries`, `locations`, and `requests_per_minute` (default 60) |
 | Workday | `ats: workday`, `host`, `site`; resolves multi-location summaries |
 | Oracle Recruiting | `ats: oracle`, `host`, `site`; complete board scan by default |
 | Atlassian | `ats: atlassian` |
@@ -183,6 +192,18 @@ GET-based sources retry HTTP 429 up to three total attempts, honoring
 `Retry-After` with bounded waits (30/60 seconds when the header is absent).
 Oracle advances by its reported page window, including hidden rows, rather than
 reusing the last page when the returned count is smaller than its advertised total.
+
+Citi and PayPal use one complete-board search (`queries: [""]`) instead of ten
+overlapping keyword searches. Their official careers sites still link to these
+Eightfold portals, and existing job IDs are preserved. PCSX reuses a per-source
+HTTP session and spaces requests; an HTTP/API 401 or 403 stops that source for the
+rest of the scan while retaining previously fetched roles and reporting degraded
+coverage. It does not try alternate identities or bypass denied access.
+
+Malformed records, including Workday entries without a usable `externalPath`,
+are reported individually. Valid records on the same page and later pages are
+still processed. Pagination advances by the original page window, and repeated
+malformed pages still trigger the no-progress guard.
 
 ## Running and checking locally
 
