@@ -10,6 +10,7 @@ October 17 reliability update:
 - Delivered jobs and the silent baseline remain in existing `seen` history. Legacy timestamps do not reveal whether a role was delivered or rejected; those records are preserved rather than blindly resending past jobs. No production history is reset.
 - Targeted AI platform, ML infrastructure, inference and forward-deployment title/query lanes now reach JD assessment; geography, experience and employer exclusions still apply.
 - Manual workflow input `preview=true` fetches and assesses without sending alerts or modifying history, even if test/resend inputs are also supplied. It can use Gemini quota. Use it to validate adapters from GitHub's network before rollout.
+- Set optional `preview_company` to an exact configured employer name (for example `Postman`) to validate one adapter quickly. It is accepted only in preview mode; it cannot narrow a scheduled production scan. Unknown or ambiguous names fail before collection.
 
 No new credentials or packages are required. Existing Gmail/Telegram credentials and Gemini access/quota still need to be valid. GitHub scheduling remains best effort; external scheduling/durable-state deployment needs a selected account and budget. These changes do not configure cloud services or an application-outcome tracker.
 

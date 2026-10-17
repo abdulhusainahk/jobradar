@@ -11,6 +11,10 @@ on:
         description: "Collect and assess only; never send or change delivery history"
         type: boolean
         default: false
+      preview_company:
+        description: "Optional exact employer name for a focused no-send preview"
+        type: string
+        default: ""
       test_alert:
         description: "Send ONE test alert to confirm Telegram/email works, then exit"
         type: boolean
@@ -61,6 +65,7 @@ jobs:
           JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
           JOBRADAR_RESEND_ALL: ${{ inputs.resend_all }}
           JOBRADAR_PREVIEW: ${{ inputs.preview }}
+          JOBRADAR_PREVIEW_COMPANY: ${{ inputs.preview_company }}
         run: python -m jobradar
 
       - name: Persist seen-jobs state

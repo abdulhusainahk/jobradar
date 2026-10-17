@@ -42,6 +42,12 @@ def run() -> int:
     companies = cfg.get("companies", [])
     channels = notify.configured_channels()
     preview = _truthy(os.environ.get("JOBRADAR_PREVIEW", ""))
+    preview_company = os.environ.get("JOBRADAR_PREVIEW_COMPANY", "").strip()
+    if preview and preview_company:
+        companies = [company for company in companies
+                     if company["name"].casefold() == preview_company.casefold()]
+        if len(companies) != 1:
+            raise ValueError("preview_company must identify exactly one configured employer")
     policy_version = hashlib.sha256(json.dumps([2, cfg.get("profile"), match,
         os.environ.get("AI_SCORING", ""), os.environ.get("AI_MIN_SCORE", "0"),
         os.environ.get("JOBRADAR_MODEL", "")], sort_keys=True).encode()).hexdigest()

@@ -111,6 +111,29 @@ class MonitorHealthTests(unittest.TestCase):
         send.assert_not_called()
         self.assertEqual(Path(state.STATE_FILE).read_bytes(), before)
 
+    def test_focused_preview_scans_only_selected_employer_and_never_sends(self):
+        before = Path(state.STATE_FILE).read_bytes()
+        with patch.dict(os.environ, {"JOBRADAR_PREVIEW": "true", "JOBRADAR_PREVIEW_COMPANY": " other "}), \
+                patch.object(fetchers, "fetch_company", return_value=[]) as fetch, \
+                patch.object(main.notify, "dispatch") as send:
+            self.assertEqual(main.run(), 0)
+        self.assertEqual([call.args[0]["name"] for call in fetch.call_args_list], ["Other"])
+        send.assert_not_called()
+        self.assertEqual(Path(state.STATE_FILE).read_bytes(), before)
+
+    def test_unknown_focused_preview_fails_before_any_remote_work(self):
+        with patch.dict(os.environ, {"JOBRADAR_PREVIEW": "true", "JOBRADAR_PREVIEW_COMPANY": "Unknown"}), \
+                patch.object(fetchers, "fetch_company") as fetch:
+            with self.assertRaisesRegex(ValueError, "preview_company"):
+                main.run()
+        fetch.assert_not_called()
+
+    def test_preview_company_cannot_narrow_a_production_scan(self):
+        with patch.dict(os.environ, {"JOBRADAR_PREVIEW_COMPANY": "Other"}), \
+                patch.object(fetchers, "fetch_company", return_value=[]) as fetch:
+            self.assertEqual(main.run(), 0)
+        self.assertEqual(fetch.call_count, 4)
+
     def test_completed_ai_decision_survives_fallback_for_other_roles(self):
         other = {**JOB, "id": "two"}
         def score(jobs, config):
