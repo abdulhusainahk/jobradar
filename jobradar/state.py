@@ -2,10 +2,11 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import os
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 STATE_FILE = os.environ.get("JOBRADAR_STATE", "seen_jobs.json")
 
@@ -32,6 +33,18 @@ def _validate(data: dict) -> None:
         raise StateError("State seen history must map job keys to timestamps")
     if not isinstance(pending, dict):
         raise StateError("State pending outbox must be an object")
+    review = data.get("review", {})
+    if not isinstance(review, dict):
+        raise StateError("Review history must be an object")
+    for job_key, record in review.items():
+        try:
+            if job_key in seen or job_key in pending or not isinstance(record, dict):
+                raise ValueError()
+            deadline = datetime.fromisoformat(record["next_review_at"])
+            if deadline.tzinfo is None or not all(isinstance(record[field], str) for field in ("signature", "policy_version", "reason", "mode")):
+                raise ValueError()
+        except (KeyError, TypeError, ValueError):
+            raise StateError("Invalid review history record") from None
     for job_key, entry in pending.items():
         if not isinstance(entry, dict) or not isinstance(entry.get("job"), dict):
             raise StateError("Pending delivery must contain a job snapshot")
@@ -67,9 +80,19 @@ def load() -> dict:
     return data
 
 
-def is_new(state: dict, job: dict) -> bool:
+def listing_signature(job):
+    return hashlib.sha256(json.dumps([job.get(field, "") for field in ("title", "location", "url")],
+                                     ensure_ascii=False).encode()).hexdigest()
+
+
+def is_new(state: dict, job: dict, policy_version="") -> bool:
     job_key = key(job)
-    return job_key not in state["seen"] and job_key not in state["pending"]
+    if job_key in state["seen"] or job_key in state["pending"]:
+        return False
+    review = state.get("review", {}).get(job_key)
+    return (not review or review["signature"] != listing_signature(job)
+            or review["policy_version"] != policy_version
+            or datetime.fromisoformat(review["next_review_at"]) <= datetime.now(timezone.utc))
 
 
 def initialize(state: dict, jobs: list[dict]) -> None:
@@ -81,12 +104,20 @@ def initialize(state: dict, jobs: list[dict]) -> None:
     state["initialized"] = True
 
 
-def reject(state: dict, job: dict) -> None:
-    """Finalize a matching rejection, never an undelivered queued alert."""
+def reject(state: dict, job: dict, *, policy_version="", temporary=False) -> None:
+    """Keep an auditable, expiring decision separate from actual delivery history."""
     job_key = key(job)
     if not state["initialized"] or job_key in state["pending"]:
         raise StateError("Cannot reject an uninitialized or pending alert")
-    state["seen"][job_key] = _now()
+    if job_key in state["seen"]:
+        return
+    state.setdefault("review", {})[job_key] = {
+        "at": _now(), "next_review_at": (datetime.now(timezone.utc) + timedelta(hours=6 if temporary else 168)).isoformat(),
+        "mode": "heuristic" if temporary else "ai", "reason": job.get("ai_note") or job.get("exp_note") or "Heuristic matching rejected this role",
+        "signature": listing_signature(job), "policy_version": policy_version,
+        "jd_hash": hashlib.sha256(job.get("_jd", "").encode()).hexdigest(),
+        "ai_assessment": {field: value for field, value in job.items() if field.startswith("ai_")},
+    }
 
 
 def enqueue(state: dict, job: dict, channels: list[str]) -> None:
@@ -96,6 +127,7 @@ def enqueue(state: dict, job: dict, channels: list[str]) -> None:
     job_key = key(job)
     if job_key in state["seen"]:
         return
+    state.get("review", {}).pop(job_key, None)
     required = list(dict.fromkeys(channels))
     entry = state["pending"].get(job_key)
     if entry is None:

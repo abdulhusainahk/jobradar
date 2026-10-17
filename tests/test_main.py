@@ -33,6 +33,9 @@ class MonitorLifecycleTests(unittest.TestCase):
         for mocked in self.patches:
             mocked.start()
             self.addCleanup(mocked.stop)
+        self.environment = patch.dict("os.environ", {"JOBRADAR_REPORT": str(Path(self.tmp.name) / "report.json")})
+        self.environment.start()
+        self.addCleanup(self.environment.stop)
         main.fetchers.FETCH_ERRORS.clear()
 
     def test_failed_alert_retries_even_after_role_disappears_from_feed(self):
@@ -135,7 +138,8 @@ class MonitorLifecycleTests(unittest.TestCase):
         delivered = dispatch.call_args.args[0]
         self.assertEqual([job["id"] for job in delivered], ["good"])
         self.assertFalse(any(key.startswith("ai_") for key in delivered[0]))
-        self.assertEqual(set(state.load()["seen"]), {state.key(job) for job in jobs})
+        self.assertEqual(set(state.load()["seen"]), {"Example::good"})
+        self.assertEqual(set(state.load()["review"]), {"Example::junior", "Example::monitoring"})
 
     def test_hard_exclusions_do_not_reach_description_or_ai_calls(self):
         self.config["match"].update(exclude_companies=["Excluded"], exclude_keywords=["intern"])

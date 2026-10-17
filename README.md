@@ -1,5 +1,17 @@
 # JobRadar
 
+October 17 reliability update:
+
+- Postman's retired Greenhouse board is replaced by its official Workday tenant (`postman.wd108.myworkdayjobs.com`, site `careers`). A live public endpoint check returned 25 roles.
+- Source coverage and delivery status are separate in `.state/jobradar-run.json`, the Actions summary and 35-day run artifacts. A degraded scan is still visible in job emails. The monitor fails if no source is healthy, fewer than `health.minimum_healthy_fraction` (default 75%) are healthy, a configured `health.critical_companies` entry fails, or required delivery remains pending. A healthy empty board counts as healthy; a partially fetched board does not.
+- Workday POSTs use bounded transient retries, safe response-type diagnostics, a one-second search-request interval and a per-run circuit breaker after access denial/non-JSON responses. Prior pages remain usable. Long provider cooldowns are deferred rather than shortened; access controls are not bypassed.
+- Completed Gemini assessments survive later request failures. Only unassessed roles use heuristics. New rejections are stored separately in `review`, with reason, profile version, listing signature, JD hash and a next-review time: six hours for heuristic decisions and seven days for AI decisions. A changed title/location/URL or profile triggers earlier review. For externally fetched descriptions, JD-only changes are discovered at the next scheduled review, not immediately.
+- Delivered jobs and the silent baseline remain in existing `seen` history. Legacy timestamps do not reveal whether a role was delivered or rejected; those records are preserved rather than blindly resending past jobs. No production history is reset.
+- Targeted AI platform, ML infrastructure, inference and forward-deployment title/query lanes now reach JD assessment; geography, experience and employer exclusions still apply.
+- Manual workflow input `preview=true` fetches and assesses without sending alerts or modifying history, even if test/resend inputs are also supplied. It can use Gemini quota. Use it to validate adapters from GitHub's network before rollout.
+
+No new credentials or packages are required. Existing Gmail/Telegram credentials and Gemini access/quota still need to be valid. GitHub scheduling remains best effort; external scheduling/durable-state deployment needs a selected account and budget. These changes do not configure cloud services or an application-outcome tracker.
+
 A GitHub Actions monitor for DevOps, SRE and platform roles across India, UAE and
 selected European locations. It reads configured employer feeds and career
 portals, filters jobs against your preferences, ranks matches, and delivers

@@ -36,7 +36,12 @@ DEFAULT_QUERIES = [
     "devops", "site reliability", "platform engineer",
     "infrastructure engineer", "systems development engineer", "cloud engineer",
     "production engineer", "reliability engineer", "developer productivity", "developer experience",
+    "AI platform", "ML infrastructure", "inference", "forward deployed",
 ]
+
+
+class SourceUnavailable(RuntimeError):
+    """A source-level response failure; later queries must not repeat it."""
 
 
 def _log(msg: str) -> None:
@@ -131,10 +136,47 @@ def _get(url: str, headers: dict | None = None, session: requests.Session | None
 
 
 def _post(url: str, body: dict, headers: dict | None = None):
-    r = requests.post(url, headers={**(headers or HEADERS), "Content-Type": "application/json"},
-                      json=body, timeout=TIMEOUT)
-    r.raise_for_status()
-    return r.json()
+    with requests.Session() as session:
+        for attempt in range(3):
+            response = None
+            try:
+                response = session.post(url, headers={**(headers or HEADERS), "Content-Type": "application/json"},
+                                        json=body, timeout=TIMEOUT)
+                status = response.status_code
+                content_type = response.headers.get("Content-Type", "").split(";", 1)[0].lower()
+                if status in (401, 403, 404):
+                    raise SourceUnavailable(f"HTTP {status}; content-type={content_type or 'unknown'}")
+                if status in (408, 429, 500, 502, 503, 504):
+                    if attempt == 2:
+                        raise SourceUnavailable(f"HTTP {status}; transient retries exhausted")
+                    delay = 2 ** (attempt + 1)
+                    if status == 429:
+                        hint = response.headers.get("Retry-After", "60")
+                        try:
+                            delay = float(hint)
+                        except (ValueError, TypeError):
+                            try:
+                                delay = (parsedate_to_datetime(hint) - datetime.now(timezone.utc)).total_seconds()
+                            except (ValueError, TypeError, OverflowError):
+                                delay = 60
+                        if not 0 <= delay <= 120:
+                            raise SourceUnavailable("Rate-limit cooldown exceeds retry budget")
+                    time.sleep(max(0, delay))
+                    continue
+                response.raise_for_status()
+                if content_type and "json" not in content_type:
+                    raise SourceUnavailable(f"HTTP {status}; non-JSON content-type={content_type}; bytes={len(response.content)}")
+                try:
+                    return response.json()
+                except ValueError:
+                    raise SourceUnavailable(f"HTTP {status}; invalid JSON; bytes={len(response.content)}") from None
+            except (requests.Timeout, requests.ConnectionError) as error:
+                if attempt == 2:
+                    raise SourceUnavailable(f"{type(error).__name__}; retries exhausted") from None
+                time.sleep(2 ** (attempt + 1))
+            finally:
+                if response is not None:
+                    response.close()
 
 
 # --------------------------- date helpers ---------------------------
@@ -425,6 +467,8 @@ def workday(c: dict) -> list[dict]:
     tenant = host.split(".")[0]
     base = f"https://{host}/wday/cxs/{tenant}/{site}"
     seen, out = set(), []
+    unavailable = False
+    next_request_at = 0.0
 
     def identity(row):
         path = row["externalPath"]
@@ -433,9 +477,20 @@ def workday(c: dict) -> list[dict]:
         return path
 
     for q in c.get("queries", DEFAULT_QUERIES):
+        if unavailable:
+            break
         def page(offset):
-            data = _post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20,
-                                        "offset": offset, "searchText": q})
+            nonlocal unavailable, next_request_at
+            wait = next_request_at - time.monotonic()
+            if wait > 0:
+                time.sleep(wait)
+            next_request_at = time.monotonic() + 1.0
+            try:
+                data = _post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20,
+                                            "offset": offset, "searchText": q})
+            except SourceUnavailable:
+                unavailable = True
+                raise
             rows = data["jobPostings"]
             return rows, data.get("total"), offset + len(rows)
 

@@ -241,9 +241,8 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                             _log(f"retry scheduled after at least {delay:g}s")
                             continue
                         _log("provider quota or cooldown requires deferring further AI requests")
-                    _clear_assessments(jobs)
-                    _log("AI unavailable; using heuristic filtering and ranking for the entire batch")
-                    return jobs
+                    _log("AI unavailable; preserving completed assessments; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
                 else:
                     decision = assessment["decision"]
                     clear_mismatch = (
@@ -267,9 +266,13 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                 finally:
                     if response is not None:
                         response.close()
-    kept = [job for job in jobs if job["ai_decision"] == "uncertain"
-            or (job["ai_decision"] == "keep" and job["ai_score"] >= minimum)]
+    kept = _selected(jobs, minimum)
     uncertain = sum(job["ai_decision"] == "uncertain" for job in kept)
     _log(f"assessed {len(jobs)} candidate(s); retained {len(kept)} "
          f"({uncertain} uncertain); rejected {len(jobs) - len(kept)}")
     return kept
+
+
+def _selected(jobs, minimum):
+    return [job for job in jobs if not job.get("ai_decision") or job["ai_decision"] == "uncertain"
+            or (job["ai_decision"] == "keep" and job["ai_score"] >= minimum)]

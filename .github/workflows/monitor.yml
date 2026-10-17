@@ -7,6 +7,10 @@ on:
     - cron: "17,47 * * * *"
   workflow_dispatch:      # lets you run it manually from the Actions tab
     inputs:
+      preview:
+        description: "Collect and assess only; never send or change delivery history"
+        type: boolean
+        default: false
       test_alert:
         description: "Send ONE test alert to confirm Telegram/email works, then exit"
         type: boolean
@@ -55,11 +59,12 @@ jobs:
           JOBRADAR_MODEL:     ${{ vars.JOBRADAR_MODEL }}
           JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
           JOBRADAR_RESEND_ALL: ${{ inputs.resend_all }}
+          JOBRADAR_PREVIEW: ${{ inputs.preview }}
         run: python -m jobradar
 
       - name: Persist seen-jobs state
         # Preserve retryable alerts even when a source/channel failed.
-        if: ${{ always() && (steps.monitor.outcome == 'success' || steps.monitor.outcome == 'failure') }}
+        if: ${{ always() && inputs.preview != true && (steps.monitor.outcome == 'success' || steps.monitor.outcome == 'failure') }}
         run: |
           git config user.name  "jobradar-bot"
           git config user.email "jobradar-bot@users.noreply.github.com"
@@ -71,3 +76,12 @@ jobs:
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi
+
+      - name: Retain source and delivery outcomes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobradar-${{ github.run_id }}
+          path: .state/jobradar-run.json
+          include-hidden-files: true
+          retention-days: 35

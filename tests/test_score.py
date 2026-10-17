@@ -73,14 +73,14 @@ class GeminiScoringTests(unittest.TestCase):
         self.assertEqual(self.session.post.call_count, 3)
         self.assertEqual(self.jobs[0]["fit"]["score"], 80)
 
-    def test_rate_limit_exhaustion_restores_even_prior_ai_rejections(self):
+    def test_rate_limit_exhaustion_preserves_completed_ai_and_leaves_remaining_unassessed(self):
         limited = response(status=429)
         limited.headers = {"Retry-After": "5"}
         self.session.post.side_effect = [response(20), limited, limited, limited]
         kept = score.score_jobs(self.jobs, CONFIG)
-        self.assertEqual([job["id"] for job in kept], ["a", "b"])
-        self.assertTrue(all(not any(key.startswith("ai_") for key in job) for job in kept))
-        self.assertEqual([job["fit"]["score"] for job in kept], [80, 60])
+        self.assertEqual([job["id"] for job in kept], ["b"])
+        self.assertEqual(self.jobs[0]["ai_score"], 20)
+        self.assertNotIn("ai_decision", kept[0])
         self.assertEqual(self.session.post.call_count, 4)
 
     def test_invalid_key_retries_then_stops_ai_for_remaining_jobs(self):
