@@ -16,6 +16,7 @@ import requests
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 DEFAULT_ATTEMPTS = 3
 DEFAULT_REQUESTS_PER_MINUTE = 10
+DEFAULT_TIME_BUDGET_SECONDS = 480
 MAX_RETRY_DELAY = 120.0
 CHOICES = {
     "decision": ("keep", "reject", "uncertain"),
@@ -162,6 +163,8 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
     attempts = _setting("AI_MAX_ATTEMPTS", DEFAULT_ATTEMPTS, 2, 5)
     minimum = _setting("AI_MIN_SCORE", 0, 0, 100)
     rpm = _setting("AI_REQUESTS_PER_MINUTE", DEFAULT_REQUESTS_PER_MINUTE, 1, 600)
+    budget = _setting("AI_TIME_BUDGET_SECONDS", DEFAULT_TIME_BUDGET_SECONDS, 1, 1200)
+    deadline = time.monotonic() + budget
     request_interval = 60.0 / rpm
     next_request_at = 0.0
     model = os.environ.get("JOBRADAR_MODEL", "").strip() or DEFAULT_MODEL
@@ -190,7 +193,7 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
         "overall experience is within_band; unstated overall experience is uncertain."
     )
     _log(f"Gemini enabled; assessing {len(jobs)} candidate(s), up to {attempts} attempts "
-         f"per request, paced at {rpm} requests/minute")
+         f"per request, paced at {rpm} requests/minute; shared {budget}s budget")
     with requests.Session() as session:
         for index, job in enumerate(jobs, 1):
             payload = {
@@ -213,17 +216,26 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                 },
             }
             for attempt in range(1, attempts + 1):
-                wait = max(0.0, next_request_at - time.monotonic())
+                now = time.monotonic()
+                wait = max(0.0, next_request_at - now)
+                if deadline - now <= wait:
+                    _log("AI time budget exhausted; preserving completed assessments; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
                 if wait:
                     time.sleep(wait)
-                next_request_at = time.monotonic() + request_interval
+                now = time.monotonic()
+                remaining = deadline - now
+                if remaining <= 0:
+                    _log("AI time budget exhausted; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
+                next_request_at = now + request_interval
                 response = None
                 try:
                     response = session.post(
                         endpoint,
                         headers={"x-goog-api-key": api_key},
                         json=payload,
-                        timeout=(5, 30),
+                        timeout=(min(5, remaining / 2), min(30, remaining / 2)),
                     )
                     response.raise_for_status()
                     assessment = _assessment(response.json())

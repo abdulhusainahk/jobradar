@@ -170,9 +170,11 @@ def run() -> int:
         print(f"[selection] {mode}: retained {len(scored)} of {len(matched_new)} candidates",
               file=sys.stderr)
     kept_keys = {state.key(job) for job in scored}
+    assessment = {"ai_assessed": sum(bool(job.get("ai_decision")) for job in matched_new),
+                  "heuristic": sum(not job.get("ai_decision") for job in matched_new)}
     if preview:
         print(f"[preview] {len(scored)} selected; no delivery or history changes", file=sys.stderr)
-        return finish(selected=len(scored), delivery="not_requested")
+        return finish(selected=len(scored), delivery="not_requested", assessment=assessment)
     if not resend:
         for job in matched_new:
             if state.key(job) not in kept_keys:
@@ -207,7 +209,7 @@ def run() -> int:
             print(f"[delivery] {len(st['pending'])} alert(s) pending; "
                   + ("failed channels will retry" if channels else "no channels configured"),
                   file=sys.stderr)
-    return finish(failed, selected=len(alerts), outcomes=outcomes, review_pending=len(st.get("review", {})))
+    return finish(failed, selected=len(alerts), outcomes=outcomes, review_pending=len(st.get("review", {})), assessment=assessment)
 
 
 if __name__ == "__main__":
