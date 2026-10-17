@@ -48,8 +48,8 @@ Employer feeds -> all result pages -> normalize + dedup
   service accepts a message but before its acknowledgement is persisted can
   cause a duplicate. `resend_all` intentionally sends duplicates.
 - Source errors are distinguished from valid empty boards. Partial results are
-  retained, but a degraded source scan exits unsuccessfully rather than claiming
-  complete coverage.
+  retained and labeled incomplete. The operational job fails at the configured
+  coverage threshold or for a critical source, rather than for every isolated error.
 
 ## Repository setup
 
@@ -123,9 +123,9 @@ labels; the numeric heuristic score remains available as a secondary signal.
 - Explicit daily/zero quota or a required cooldown longer than 120 seconds stops
   AI for the batch instead of retrying before the provider permits it. Other
   failures use exponential backoff within the attempt limit.
-- If retries are exhausted or must be deferred, AI stops for the new batch. **All partial
-  AI scores and decisions are discarded** before applying the existing deterministic
-  filters and ranking. `AI_MIN_SCORE` never filters this fallback path.
+- If retries are exhausted or must be deferred, completed AI assessments remain valid.
+  Remaining unassessed roles use deterministic filters and ranking. `AI_MIN_SCORE`
+  does not filter that heuristic path. Rejections remain reviewable with an expiry.
 - Successful pending alerts reuse their saved assessment during delivery retries;
   they do not incur another AI request.
 

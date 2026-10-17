@@ -1,4 +1,4 @@
-"""Gemini semantic assessment before heuristic rejection, with full fallback."""
+"""Gemini assessment before rejection; preserve completed work and fall back per role."""
 from __future__ import annotations
 
 import json
@@ -149,7 +149,7 @@ def _clear_assessments(jobs: list[dict]) -> None:
 
 
 def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
-    """Assess broad candidates; an exhausted batch leaves heuristic selection to the caller."""
+    """Assess broad candidates; unassessed roles retain heuristic selection in the caller."""
     _clear_assessments(jobs)
     enabled = os.environ.get("AI_SCORING", "").strip().lower() in ("1", "true", "on", "yes")
     if not enabled or not jobs:

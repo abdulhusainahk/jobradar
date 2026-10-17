@@ -58,7 +58,7 @@ def _validate(data: dict) -> None:
                 raise StateError(f"Pending delivery {field} must contain unique channel names")
         if not set(entry["delivered"]).issubset(entry["channels"]):
             raise StateError("Pending delivery contains an unrequested successful channel")
-    if not data["initialized"] and (seen or pending):
+    if not data["initialized"] and (seen or pending or review):
         raise StateError("Uninitialized delivery state must not contain history")
 
 
