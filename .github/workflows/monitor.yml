@@ -7,6 +7,14 @@ on:
     - cron: "17,47 * * * *"
   workflow_dispatch:      # lets you run it manually from the Actions tab
     inputs:
+      preview:
+        description: "Collect and assess only; never send or change delivery history"
+        type: boolean
+        default: false
+      preview_company:
+        description: "Optional exact employer name for a focused no-send preview"
+        type: string
+        default: ""
       test_alert:
         description: "Send ONE test alert to confirm Telegram/email works, then exit"
         type: boolean
@@ -52,14 +60,17 @@ jobs:
           AI_MIN_SCORE:       ${{ vars.AI_MIN_SCORE || '0' }}
           AI_MAX_ATTEMPTS:    ${{ vars.AI_MAX_ATTEMPTS || '3' }}
           AI_REQUESTS_PER_MINUTE: ${{ vars.AI_REQUESTS_PER_MINUTE || '10' }}
+          AI_TIME_BUDGET_SECONDS: ${{ vars.AI_TIME_BUDGET_SECONDS || '480' }}
           JOBRADAR_MODEL:     ${{ vars.JOBRADAR_MODEL }}
           JOBRADAR_TEST_ALERT: ${{ inputs.test_alert }}
           JOBRADAR_RESEND_ALL: ${{ inputs.resend_all }}
+          JOBRADAR_PREVIEW: ${{ inputs.preview }}
+          JOBRADAR_PREVIEW_COMPANY: ${{ inputs.preview_company }}
         run: python -m jobradar
 
       - name: Persist seen-jobs state
         # Preserve retryable alerts even when a source/channel failed.
-        if: ${{ always() && (steps.monitor.outcome == 'success' || steps.monitor.outcome == 'failure') }}
+        if: ${{ always() && inputs.preview != true && (steps.monitor.outcome == 'success' || steps.monitor.outcome == 'failure') }}
         run: |
           git config user.name  "jobradar-bot"
           git config user.email "jobradar-bot@users.noreply.github.com"
@@ -71,3 +82,12 @@ jobs:
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push
           fi
+
+      - name: Retain source and delivery outcomes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobradar-${{ github.run_id }}
+          path: .state/jobradar-run.json
+          include-hidden-files: true
+          retention-days: 35

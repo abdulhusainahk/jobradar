@@ -1,5 +1,20 @@
 # JobRadar
 
+October 17 reliability update:
+
+- Postman's retired Greenhouse board is replaced by its official Workday tenant (`postman.wd108.myworkdayjobs.com`, site `careers`). A live public endpoint check returned 25 roles.
+- Source coverage and delivery status are separate in `.state/jobradar-run.json`, the Actions summary and 35-day run artifacts. A degraded scan is still visible in job emails. The monitor fails if no source is healthy, fewer than `health.minimum_healthy_fraction` (default 75%) are healthy, a configured `health.critical_companies` entry fails, or required delivery remains pending. A healthy empty board counts as healthy; a partially fetched board does not.
+- Source results are checkpointed before JD/AI work with `phase=assessment_pending`; the final report uses `phase=complete`. An interrupted assessment therefore retains collection evidence without claiming that delivery finished.
+- Workday POSTs use bounded transient retries, safe response-type diagnostics, a one-second search-request interval and a per-run circuit breaker after access denial/non-JSON responses. Prior pages remain usable. Long provider cooldowns are deferred rather than shortened; access controls are not bypassed.
+- Completed Gemini assessments survive later request failures. Only unassessed roles use heuristics. New rejections are stored separately in `review`, with reason, profile version, listing signature, JD hash and a next-review time: six hours for heuristic decisions and seven days for AI decisions. A changed title/location/URL or profile triggers earlier review. For externally fetched descriptions, JD-only changes are discovered at the next scheduled review, not immediately.
+- Gemini shares an eight-minute batch budget (`AI_TIME_BUDGET_SECONDS`, configurable from 1–1200 seconds; default 480), including pacing and retry waits. Requests use timeouts capped by the remaining budget. Exhaustion preserves completed decisions and hands unassessed roles to heuristics; the report counts AI and heuristic assessments separately. Source collection and JD enrichment remain outside this AI budget.
+- Delivered jobs and the silent baseline remain in existing `seen` history. Legacy timestamps do not reveal whether a role was delivered or rejected; those records are preserved rather than blindly resending past jobs. No production history is reset.
+- Targeted AI platform, ML infrastructure, inference and forward-deployment title/query lanes now reach JD assessment; geography, experience and employer exclusions still apply.
+- Manual workflow input `preview=true` fetches and assesses without sending alerts or modifying history, even if test/resend inputs are also supplied. It can use Gemini quota. Use it to validate adapters from GitHub's network before rollout.
+- Set optional `preview_company` to an exact configured employer name (for example `Postman`) to validate one adapter quickly. It is accepted only in preview mode; it cannot narrow a scheduled production scan. Unknown or ambiguous names fail before collection.
+
+No new credentials or packages are required. Existing Gmail/Telegram credentials and Gemini access/quota still need to be valid. GitHub scheduling remains best effort; external scheduling/durable-state deployment needs a selected account and budget. These changes do not configure cloud services or an application-outcome tracker.
+
 A GitHub Actions monitor for DevOps, SRE and platform roles across India, UAE and
 selected European locations. It reads configured employer feeds and career
 portals, filters jobs against your preferences, ranks matches, and delivers
@@ -36,8 +51,8 @@ Employer feeds -> all result pages -> normalize + dedup
   service accepts a message but before its acknowledgement is persisted can
   cause a duplicate. `resend_all` intentionally sends duplicates.
 - Source errors are distinguished from valid empty boards. Partial results are
-  retained, but a degraded source scan exits unsuccessfully rather than claiming
-  complete coverage.
+  retained and labeled incomplete. The operational job fails at the configured
+  coverage threshold or for a critical source, rather than for every isolated error.
 
 ## Repository setup
 
@@ -111,9 +126,9 @@ labels; the numeric heuristic score remains available as a secondary signal.
 - Explicit daily/zero quota or a required cooldown longer than 120 seconds stops
   AI for the batch instead of retrying before the provider permits it. Other
   failures use exponential backoff within the attempt limit.
-- If retries are exhausted or must be deferred, AI stops for the new batch. **All partial
-  AI scores and decisions are discarded** before applying the existing deterministic
-  filters and ranking. `AI_MIN_SCORE` never filters this fallback path.
+- If retries are exhausted or must be deferred, completed AI assessments remain valid.
+  Remaining unassessed roles use deterministic filters and ranking. `AI_MIN_SCORE`
+  does not filter that heuristic path. Rejections remain reviewable with an expiry.
 - Successful pending alerts reuse their saved assessment during delivery retries;
   they do not incur another AI request.
 

@@ -22,6 +22,10 @@ profile:
     - "AI/LLMOps and MCP servers"
   preferences: "Product companies; infrastructure automation rather than pure support."
 
+health:
+  minimum_healthy_fraction: 0.75
+  critical_companies: []
+
 match:
   # Broad candidate titles; Gemini evaluates actual responsibilities in the JD.
   role_keywords:
@@ -41,6 +45,14 @@ match:
     - "reliability engineer"
     - "developer productivity"
     - "developer experience"
+    - "ai platform"
+    - "ml platform"
+    - "ml infrastructure"
+    - "ai infrastructure"
+    - "inference infrastructure"
+    - "inference platform"
+    - "forward deployed"
+    - "forward deployment"
   # NOTE: "observability" was removed as an inclusion keyword — at observability
   # companies (Datadog/Okta) it matched product roles, not infra-DevOps. It's
   # still used to DETECT monitoring-heavy JDs during fit scoring.
@@ -169,7 +181,8 @@ companies:
   - { name: Zeta,        ats: lever,      token: zeta,       tier: "Fintech · Blr/Mum" }
   - { name: PubMatic,    ats: greenhouse, token: pubmatic,   tier: "Adtech · Pune/Mum" }
   - { name: Druva,       ats: greenhouse, token: druva,      tier: "SaaS · Pune" }
-  - { name: Postman,     ats: greenhouse, token: postman,    tier: "SaaS · Blr" }
+  # Official employer Workday board; verified October 17, 2026 (old Greenhouse board is gone).
+  - { name: Postman, ats: workday, host: postman.wd108.myworkdayjobs.com, site: careers, tier: "SaaS · Blr" }
   - { name: HackerRank,  ats: greenhouse, token: hackerrank, tier: "SaaS · Blr" }
   # Plivo's current /jobs/ page still uses this Lever board, even when empty.
   - { name: Plivo,       ats: lever,      token: plivo,      tier: "SaaS · Blr" }

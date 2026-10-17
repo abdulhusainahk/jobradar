@@ -211,7 +211,8 @@ def send_email(jobs: list[dict]) -> dict[str, bool]:
                      f"</h3>{rows}")
     body = (
         f"<h2>JobRadar — {len(jobs)} new DevOps-fit role"
-        f"{'s' if len(jobs) != 1 else ''} (best fit first)</h2>{sections}"
+        f"{'s' if len(jobs) != 1 else ''} (best fit first)</h2>"
+        f"<p>{_esc(jobs[0].get('_coverage', ''))}</p>{sections}"
         "<hr><p style='color:#888;font-size:12px'>"
         "🟢 strong / 🟡 moderate / 🔴 monitoring-only. Apply fast + with a "
         "referral. Sent by your JobRadar GitHub Action.</p>"

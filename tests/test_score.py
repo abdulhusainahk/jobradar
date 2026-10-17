@@ -65,6 +65,35 @@ class GeminiScoringTests(unittest.TestCase):
     def advance(self, seconds):
         self.now += seconds
 
+    def test_shared_time_budget_preserves_completed_decisions(self):
+        def post(*args, **kwargs):
+            self.advance(5)
+            return response(95)
+        self.session.post.side_effect = post
+        with patch.dict("os.environ", {"AI_TIME_BUDGET_SECONDS": "5"}):
+            kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["id"] for job in kept], ["a", "b"])
+        self.assertEqual(self.jobs[0]["ai_decision"], "keep")
+        self.assertNotIn("ai_decision", self.jobs[1])
+        self.assertEqual(self.session.post.call_count, 1)
+        self.assertEqual(self.session.post.call_args.kwargs["timeout"], (2.5, 2.5))
+
+    def test_retry_cannot_sleep_past_shared_budget_or_ignore_cooldown(self):
+        limited = response(status=429)
+        limited.headers = {"Retry-After": "60"}
+        self.session.post.return_value = limited
+        with patch.dict("os.environ", {"AI_TIME_BUDGET_SECONDS": "10"}):
+            self.assertEqual(score.score_jobs(self.jobs, CONFIG), JOBS)
+        self.assertEqual(self.session.post.call_count, 1)
+        self.sleep.assert_not_called()
+
+    def test_request_pacing_cannot_sleep_past_shared_budget(self):
+        self.session.post.return_value = response(95)
+        with patch.dict("os.environ", {"AI_TIME_BUDGET_SECONDS": "5"}):
+            score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual(self.session.post.call_count, 1)
+        self.sleep.assert_not_called()
+
     def test_transient_transport_failure_recovers_before_scoring_threshold(self):
         self.session.post.side_effect = [requests.Timeout(), response(95), response(40)]
         kept = score.score_jobs(self.jobs, CONFIG)
@@ -73,14 +102,14 @@ class GeminiScoringTests(unittest.TestCase):
         self.assertEqual(self.session.post.call_count, 3)
         self.assertEqual(self.jobs[0]["fit"]["score"], 80)
 
-    def test_rate_limit_exhaustion_restores_even_prior_ai_rejections(self):
+    def test_rate_limit_exhaustion_preserves_completed_ai_and_leaves_remaining_unassessed(self):
         limited = response(status=429)
         limited.headers = {"Retry-After": "5"}
         self.session.post.side_effect = [response(20), limited, limited, limited]
         kept = score.score_jobs(self.jobs, CONFIG)
-        self.assertEqual([job["id"] for job in kept], ["a", "b"])
-        self.assertTrue(all(not any(key.startswith("ai_") for key in job) for job in kept))
-        self.assertEqual([job["fit"]["score"] for job in kept], [80, 60])
+        self.assertEqual([job["id"] for job in kept], ["b"])
+        self.assertEqual(self.jobs[0]["ai_score"], 20)
+        self.assertNotIn("ai_decision", kept[0])
         self.assertEqual(self.session.post.call_count, 4)
 
     def test_invalid_key_retries_then_stops_ai_for_remaining_jobs(self):

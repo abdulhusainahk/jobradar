@@ -1,4 +1,4 @@
-"""Gemini semantic assessment before heuristic rejection, with full fallback."""
+"""Gemini assessment before rejection; preserve completed work and fall back per role."""
 from __future__ import annotations
 
 import json
@@ -16,6 +16,7 @@ import requests
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 DEFAULT_ATTEMPTS = 3
 DEFAULT_REQUESTS_PER_MINUTE = 10
+DEFAULT_TIME_BUDGET_SECONDS = 480
 MAX_RETRY_DELAY = 120.0
 CHOICES = {
     "decision": ("keep", "reject", "uncertain"),
@@ -149,7 +150,7 @@ def _clear_assessments(jobs: list[dict]) -> None:
 
 
 def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
-    """Assess broad candidates; an exhausted batch leaves heuristic selection to the caller."""
+    """Assess broad candidates; unassessed roles retain heuristic selection in the caller."""
     _clear_assessments(jobs)
     enabled = os.environ.get("AI_SCORING", "").strip().lower() in ("1", "true", "on", "yes")
     if not enabled or not jobs:
@@ -162,6 +163,8 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
     attempts = _setting("AI_MAX_ATTEMPTS", DEFAULT_ATTEMPTS, 2, 5)
     minimum = _setting("AI_MIN_SCORE", 0, 0, 100)
     rpm = _setting("AI_REQUESTS_PER_MINUTE", DEFAULT_REQUESTS_PER_MINUTE, 1, 600)
+    budget = _setting("AI_TIME_BUDGET_SECONDS", DEFAULT_TIME_BUDGET_SECONDS, 1, 1200)
+    deadline = time.monotonic() + budget
     request_interval = 60.0 / rpm
     next_request_at = 0.0
     model = os.environ.get("JOBRADAR_MODEL", "").strip() or DEFAULT_MODEL
@@ -190,7 +193,7 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
         "overall experience is within_band; unstated overall experience is uncertain."
     )
     _log(f"Gemini enabled; assessing {len(jobs)} candidate(s), up to {attempts} attempts "
-         f"per request, paced at {rpm} requests/minute")
+         f"per request, paced at {rpm} requests/minute; shared {budget}s budget")
     with requests.Session() as session:
         for index, job in enumerate(jobs, 1):
             payload = {
@@ -213,17 +216,26 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                 },
             }
             for attempt in range(1, attempts + 1):
-                wait = max(0.0, next_request_at - time.monotonic())
+                now = time.monotonic()
+                wait = max(0.0, next_request_at - now)
+                if deadline - now <= wait:
+                    _log("AI time budget exhausted; preserving completed assessments; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
                 if wait:
                     time.sleep(wait)
-                next_request_at = time.monotonic() + request_interval
+                now = time.monotonic()
+                remaining = deadline - now
+                if remaining <= 0:
+                    _log("AI time budget exhausted; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
+                next_request_at = now + request_interval
                 response = None
                 try:
                     response = session.post(
                         endpoint,
                         headers={"x-goog-api-key": api_key},
                         json=payload,
-                        timeout=(5, 30),
+                        timeout=(min(5, remaining / 2), min(30, remaining / 2)),
                     )
                     response.raise_for_status()
                     assessment = _assessment(response.json())
@@ -241,9 +253,8 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                             _log(f"retry scheduled after at least {delay:g}s")
                             continue
                         _log("provider quota or cooldown requires deferring further AI requests")
-                    _clear_assessments(jobs)
-                    _log("AI unavailable; using heuristic filtering and ranking for the entire batch")
-                    return jobs
+                    _log("AI unavailable; preserving completed assessments; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
                 else:
                     decision = assessment["decision"]
                     clear_mismatch = (
@@ -267,9 +278,13 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                 finally:
                     if response is not None:
                         response.close()
-    kept = [job for job in jobs if job["ai_decision"] == "uncertain"
-            or (job["ai_decision"] == "keep" and job["ai_score"] >= minimum)]
+    kept = _selected(jobs, minimum)
     uncertain = sum(job["ai_decision"] == "uncertain" for job in kept)
     _log(f"assessed {len(jobs)} candidate(s); retained {len(kept)} "
          f"({uncertain} uncertain); rejected {len(jobs) - len(kept)}")
     return kept
+
+
+def _selected(jobs, minimum):
+    return [job for job in jobs if not job.get("ai_decision") or job["ai_decision"] == "uncertain"
+            or (job["ai_decision"] == "keep" and job["ai_score"] >= minimum)]
