@@ -115,8 +115,9 @@ def run() -> int:
     coverage_note = (f"Coverage {'incomplete' if degraded else 'healthy'}: {healthy}/{len(companies)} healthy sources. "
                      + ("Unavailable or partial: " + ", ".join(source["company"] for source in source_health if source["status"] != "healthy") if degraded else ""))
 
-    def finish(delivery_failed=False, **details):
+    def finish(delivery_failed=False, phase="complete", **details):
         report = {"at": datetime.now(timezone.utc).isoformat(), "mode": "preview" if preview else "monitor",
+                  "phase": phase,
                   "coverage": "failed" if coverage_failed else "degraded" if degraded else "healthy",
                   "sources": source_health, "roles_scanned": total_seen, "new_candidates": len(matched_new),
                   "delivery_failed": delivery_failed, **details}
@@ -124,7 +125,7 @@ def run() -> int:
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(json.dumps(report, indent=2) + "\n")
         summary = os.environ.get("GITHUB_STEP_SUMMARY")
-        if summary:
+        if summary and phase == "complete":
             with open(summary, "a") as stream:
                 stream.write(f"### JobRadar\n\n{coverage_note}\n\nScanned {total_seen} roles; {len(matched_new)} new candidates. "
                              f"Delivery failed: {delivery_failed}. Mode: {report['mode']}.\n")
@@ -143,6 +144,9 @@ def run() -> int:
               file=sys.stderr)
         return finish(baseline=True)
 
+    # Keep source evidence available to the always-run artifact step even if
+    # enrichment/assessment is interrupted before a final delivery outcome.
+    finish(phase="assessment_pending", delivery="not_requested" if preview else "not_started")
     for job in matched_new:
         job["_jd"] = describe.enrich_jd(job)
         job["fit"] = jfit.devops_fit(job, job["_jd"])

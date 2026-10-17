@@ -134,6 +134,19 @@ class MonitorHealthTests(unittest.TestCase):
             self.assertEqual(main.run(), 0)
         self.assertEqual(fetch.call_count, 4)
 
+    def test_interrupted_assessment_retains_source_report_without_claiming_completion(self):
+        with patch.dict(os.environ, {"JOBRADAR_PREVIEW": "true"}), \
+                patch.object(fetchers, "fetch_company", return_value=[copy.deepcopy(JOB)]), \
+                patch.object(main.describe, "enrich_jd", return_value="Terraform automation"), \
+                patch.object(main.score, "score_jobs", side_effect=KeyboardInterrupt):
+            with self.assertRaises(KeyboardInterrupt):
+                main.run()
+        report = json.loads(Path(os.environ["JOBRADAR_REPORT"]).read_text())
+        self.assertEqual(report["coverage"], "healthy")
+        self.assertEqual(report["phase"], "assessment_pending")
+        self.assertEqual(report["delivery"], "not_requested")
+        self.assertEqual(len(report["sources"]), 4)
+
     def test_completed_ai_decision_survives_fallback_for_other_roles(self):
         other = {**JOB, "id": "two"}
         def score(jobs, config):
