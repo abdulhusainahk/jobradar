@@ -3,164 +3,191 @@
   "pending": {},
   "review": {
     "Adobe::R165641": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a forward-deployed full-stack creative tools and solutions engineering role requiring deep mastery of design applications (like Photoshop or Figma) and client-facing enterprise presentations, which is completely misaligned with a DevOps and Platform Engineering background.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "9cc363c3ce2b2ca7906dddb44b305449e384fc1bf4a5a17f999d241343059935",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567323+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162776+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a forward-deployed full-stack creative tools and solutions engineering role requiring deep mastery of design applications (like Photoshop or Figma) and client-facing enterprise presentations, which is completely misaligned with a DevOps and Platform Engineering background.",
       "signature": "9406f635efebd8bc633e67ec6d87314cfb87627b8248b923a747b577cfe98b0c"
     },
     "Adobe::R169057": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Manager of Forward Deployed Engineering focused on creative tools and customer presentations, which is completely misaligned with DevOps and Platform Engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "b487bcdc4592fbc08769ad6c6e501f831866d1533d23f8fe7a489df69c1b185e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567298+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162754+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is for a Manager of Forward Deployed Engineering focused on creative tools and customer presentations, which is completely misaligned with DevOps and Platform Engineering.",
       "signature": "4be9a525366d12e7f02bdac866c78e370ad1eee3257d71d98ea98d4d6b427560"
     },
     "Adobe::R169058": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a client-facing Full-Stack/Creative Forward Deployed Engineer role requiring mastery of creative tools and Fortune 100 presentation skills, completely unrelated to DevOps, SRE, or platform engineering. Furthermore, the location is San Jose/New York, which is outside the candidate regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "44006068b994faf54b47f352b96c8ad3eb74193fd313cd9c641e6d7aa9d7d7aa",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567346+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162796+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a client-facing Full-Stack/Creative Forward Deployed Engineer role requiring mastery of creative tools and Fortune 100 presentation skills, completely unrelated to DevOps, SRE, or platform engineering. Furthermore, the location is San Jose/New York, which is outside the candidate regions.",
       "signature": "3d34fdb8707ef4eb85190b3bdf52198ebe64bf7143c19400a4bc2c3fb84047a5"
     },
     "Adobe::R169945": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on Adobe Experience Platform (AEP), solution architecture, and enterprise consulting, rather than a dedicated DevOps, SRE, or platform engineering role. Furthermore, the location is San Jose, which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "ca17cd965a22d99734b8bd648d88ce70a1e728e278ecc5983e48f26b499241d5",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567396+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162858+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on Adobe Experience Platform (AEP), solution architecture, and enterprise consulting, rather than a dedicated DevOps, SRE, or platform engineering role. Furthermore, the location is San Jose, which does not match the candidate's enabled regions.",
       "signature": "986b1863b6857aecd1cd59ae39b648a9a038a752e13c2decf43d6d43abb02742"
     },
     "Adobe::R171553": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on Adobe Experience Platform solutions rather than infrastructure automation or DevOps/SRE. Additionally, the location is Bucharest, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "71335aa21ac212410e07ba7526dec20f9dd6da85bc784c28a3da67d02622ec27",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567370+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162832+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on Adobe Experience Platform solutions rather than infrastructure automation or DevOps/SRE. Additionally, the location is Bucharest, which is outside the candidate's enabled regions.",
       "signature": "2d9c898cd9ac1086cf1462c1ddbc1c30c78a918ce1cebb4d1c9d38c126cb9681"
     },
     "Adobe::R172075": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on Adobe Experience Platform (AEP), solution architecture, and customer consulting rather than DevOps, SRE, or platform engineering. Furthermore, the job location is Bucharest, which is outside the candidate's preferred and enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "71335aa21ac212410e07ba7526dec20f9dd6da85bc784c28a3da67d02622ec27",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567426+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162882+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer focusing on Adobe Experience Platform (AEP), solution architecture, and customer consulting rather than DevOps, SRE, or platform engineering. Furthermore, the job location is Bucharest, which is outside the candidate's preferred and enabled regions.",
       "signature": "9b95b8ddaa3202aabf480aeb2db5b3cff38b2a2b83cd1620e9242f274e170a16"
     },
     "Adobe::R172095": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Forward Deployed AI Engineer focused on marketing analytics, consumer insights, and business workflows rather than infrastructure automation, DevOps, SRE, or platform engineering. Furthermore, the location is San Jose, Seattle, or San Francisco, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "1ad7b57b5cc8712efd7b754a264c090e01350b7e6e2398b6bebe0961c33ab1a7",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567452+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162904+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is for a Forward Deployed AI Engineer focused on marketing analytics, consumer insights, and business workflows rather than infrastructure automation, DevOps, SRE, or platform engineering. Furthermore, the location is San Jose, Seattle, or San Francisco, which is outside the candidate's enabled regions.",
       "signature": "2c0864c9831a803a8a6e4e07c6a43cb508bc97ba14dbfc88282733794025db02"
     },
     "Amazon::10435349": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a business development and go-to-market (GTM) strategy role for AI infrastructure, not a hands-on DevOps, SRE, or platform engineering role. Furthermore, the location is Tel Aviv, Israel, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "a6cf5d6dd92815a559d23c9044a7212c69859dadfa67b9bfb00c05455082e071",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566516+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162162+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a business development and go-to-market (GTM) strategy role for AI infrastructure, not a hands-on DevOps, SRE, or platform engineering role. Furthermore, the location is Tel Aviv, Israel, which is outside the candidate's enabled regions.",
       "signature": "1887d275ca07fe6c2a9b14da73f19224f243c34ad9790d83651c0f41838ef462"
     },
-    "Amazon::10576496": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
-      "jd_hash": "b976ae8b53c9e36f1627ac9f0b9613b84e74f3d4116f1ae9723711cb878c109a",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566627+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "eb9658b3b4c327518f9e1ea5467fa7f246054d4507f6512d382061a10b593013"
-    },
     "Amazon::10578997": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The job is for a Forward Deployed Software Engineer focusing on customer-facing AI architecture, software development, and technical delivery (requiring 30-50% travel and application software/coding expertise), rather than infrastructure automation or platform engineering. Furthermore, the job location is Singapore (SGP), which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "e3e7e6964d3306ce7d501a72f87c41ad252da8a21f582853de9a27bcaf5d4f39",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566589+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162224+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The job is for a Forward Deployed Software Engineer focusing on customer-facing AI architecture, software development, and technical delivery (requiring 30-50% travel and application software/coding expertise), rather than infrastructure automation or platform engineering. Furthermore, the job location is Singapore (SGP), which falls outside the candidate's enabled regions.",
       "signature": "f707b0cc6cacec93e7409372f8089cc91e1b6b49483716181f71fd74cbc53ecf"
     },
     "Amazon::10578998": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Software Engineer focusing on customer-facing AI applications, software development, and direct consulting rather than core DevOps, infrastructure automation, or platform engineering. Furthermore, the job location is in Brazil, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "17ffd1525757b905bc5eb3f7af92b8afd4399dba1d8aa0cd696bd2367a17a38d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566543+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162186+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Software Engineer focusing on customer-facing AI applications, software development, and direct consulting rather than core DevOps, infrastructure automation, or platform engineering. Furthermore, the job location is in Brazil, which falls outside the candidate's enabled regions.",
       "signature": "79ab24690ac943b20921e1a5719ea1916bb301174db36b02a8fdbe692cacd5fd"
     },
     "Amazon::10579001": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Software Engineering position focusing heavily on building AI applications, software development in Python/TypeScript/Go, and customer consulting with 30-50% travel, rather than core DevOps, SRE, or infrastructure platform engineering. Additionally, the location is Sao Paulo, Brazil, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 40
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "d8e048d2b11d12b63d9763d5a4bcfe264ddbfa47e8424a89bb5540b34aa4fce1",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566566+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162206+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Software Engineering position focusing heavily on building AI applications, software development in Python/TypeScript/Go, and customer consulting with 30-50% travel, rather than core DevOps, SRE, or infrastructure platform engineering. Additionally, the location is Sao Paulo, Brazil, which is outside the candidate's enabled regions.",
       "signature": "b39183ef60d4195751cf17e2a477d9f9b2e00ceb1547a2e3481f639565fce73b"
-    },
-    "Atlassian::27178": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
-      "jd_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566791+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "ff1f4e6cf4388060f033e58b9eac6f3ba35cca02f18606ac1e55e28248bf5602"
-    },
-    "Atlassian::27179": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
-      "jd_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566822+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "47d056b510939510d1341707a4ba9f34aca33a63b598fa3ebffbd6efbe4bf1b0"
-    },
-    "Atlassian::27182": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
-      "jd_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566806+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "aa4806bf23bd9d6e94f1de5fb14dd194364759d8408af5ee4b955191b5d07e24"
-    },
-    "Atlassian::27312": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
-      "jd_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566837+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "f8b126158afc9ce9d01638b1b63abe545a743131ec70a717f5b2337ce413900e"
     },
     "Cloudflare::7572075": {
       "ai_assessment": {
@@ -333,23 +360,37 @@
       "signature": "a64c803a9e9f8cb0200e7799c6badb184b99dbefcefa97f291320c5847901e6a"
     },
     "Databricks::8341313002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on data engineering, AI applications, and Spark rather than core infrastructure automation, DevOps, or SRE. Additionally, the location in New York City is outside the candidate's preferred and enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "633b2f87b8fa31b068b99c3eea438f7fd0da00063c60adcc9ea3fc0594be6d48",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566024+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161713+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on data engineering, AI applications, and Spark rather than core infrastructure automation, DevOps, or SRE. Additionally, the location in New York City is outside the candidate's preferred and enabled regions.",
       "signature": "8f37e137b0985b85880107815a58b9bff4d9829d55437cabc4109593879bb61d"
     },
     "Databricks::8371312002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and analytics solutions rather than core DevOps, SRE, or platform infrastructure automation. Additionally, the location is New York City / US Central & Eastern Time Zones, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "4bc9a58bfc40c974794647d4d89e5f638bf5aab214cb19f67a027a3356136422",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565838+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161530+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and analytics solutions rather than core DevOps, SRE, or platform infrastructure automation. Additionally, the location is New York City / US Central & Eastern Time Zones, which falls outside the candidate's enabled regions.",
       "signature": "962973417073f7ecc6f15d1c06e3d3e6183423ce3427cb74db2e6c1ab3036d50"
     },
     "Databricks::8439047002": {
@@ -540,43 +581,71 @@
       "signature": "1ef96c43b3d7f8f8786ebbf57e6d6553fe6124528765c25199e0f49fd5e561ae"
     },
     "Databricks::8494142002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, AI applications, and Apache Spark rather than core infrastructure, DevOps, or platform engineering. Additionally, the location is Boston/US, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "4bc9a58bfc40c974794647d4d89e5f638bf5aab214cb19f67a027a3356136422",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565864+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161563+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, AI applications, and Apache Spark rather than core infrastructure, DevOps, or platform engineering. Additionally, the location is Boston/US, which is outside the candidate's enabled regions.",
       "signature": "0c081aee0c41a5a07af88b65fd1020d6664eb5b75eee5aa9fbc6f5284d3f5d15"
     },
     "Databricks::8494143002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Forward Deployed Engineer role focused on data engineering, Spark, and custom applications rather than internal platform engineering or DevOps infrastructure. Additionally, the location is in the US while the candidate is enabled for India, UAE, and Europe.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "729f31d7267e6e52455b7970d3f8e0c5c8114eb996e44e2f6bcf81dfa5835a4e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565933+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161634+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a customer-facing Forward Deployed Engineer role focused on data engineering, Spark, and custom applications rather than internal platform engineering or DevOps infrastructure. Additionally, the location is in the US while the candidate is enabled for India, UAE, and Europe.",
       "signature": "83799311fca1694dfaa88b9888b2923820bceadae88840b36990044a34facca6"
     },
     "Databricks::8494146002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer (FDE) focusing on data engineering, AI platforms, and customer-facing solution delivery rather than infrastructure automation or DevOps/SRE. Additionally, the location is Atlanta/US, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "4bc9a58bfc40c974794647d4d89e5f638bf5aab214cb19f67a027a3356136422",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565910+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161611+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer (FDE) focusing on data engineering, AI platforms, and customer-facing solution delivery rather than infrastructure automation or DevOps/SRE. Additionally, the location is Atlanta/US, which is outside the candidate's enabled regions.",
       "signature": "191b3c7c60e08fc84ef8f76e27054cfa4dde9f84c6ec66c154dcbaaefe973be4"
     },
     "Databricks::8494148002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and custom applications rather than core DevOps/Platform engineering. Furthermore, the location is Philadelphia or US Central/Eastern time zones, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "4bc9a58bfc40c974794647d4d89e5f638bf5aab214cb19f67a027a3356136422",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565887+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161589+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and custom applications rather than core DevOps/Platform engineering. Furthermore, the location is Philadelphia or US Central/Eastern time zones, which is outside the candidate's enabled regions.",
       "signature": "364bc3f3f88ca1ba9750bf71b3711cc734993173789deaf70ce70235302afb3e"
     },
     "Databricks::8494153002": {
@@ -597,33 +666,54 @@
       "signature": "6e3f8c0d0e89c64e48c9430295443f493a02802b0df630be9ad39e0992a58ddb"
     },
     "Databricks::8494154002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and Databricks architecture rather than core DevOps, SRE, or platform engineering. Furthermore, the job location is in Boston, Massachusetts, which does not match the candidate's preferred regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "633b2f87b8fa31b068b99c3eea438f7fd0da00063c60adcc9ea3fc0594be6d48",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566002+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161696+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and Databricks architecture rather than core DevOps, SRE, or platform engineering. Furthermore, the job location is in Boston, Massachusetts, which does not match the candidate's preferred regions.",
       "signature": "c643be8b7d238156676ee500560b412e8ed071d29c0220f4597efcc530815096"
     },
     "Databricks::8494155002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Forward Deployed Engineer (FDE) role focusing on data engineering, Spark, and analytics solutions rather than core DevOps, SRE, or infrastructure automation. Additionally, the location is Philadelphia, Pennsylvania, which does not match the candidate's preferred regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "633b2f87b8fa31b068b99c3eea438f7fd0da00063c60adcc9ea3fc0594be6d48",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565979+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161676+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a customer-facing Forward Deployed Engineer (FDE) role focusing on data engineering, Spark, and analytics solutions rather than core DevOps, SRE, or infrastructure automation. Additionally, the location is Philadelphia, Pennsylvania, which does not match the candidate's preferred regions.",
       "signature": "0318828e37e23ef38b938310b60b5059a845862428fca253c04e3884597ede5c"
     },
     "Databricks::8494156002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and custom application development rather than core DevOps, SRE, or platform infrastructure automation. Additionally, the location is Seattle, which does not match the candidate's preferred regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "633b2f87b8fa31b068b99c3eea438f7fd0da00063c60adcc9ea3fc0594be6d48",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565957+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161655+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, and custom application development rather than core DevOps, SRE, or platform infrastructure automation. Additionally, the location is Seattle, which does not match the candidate's preferred regions.",
       "signature": "2211513d5d40b6ef38f38fb27640bca4403a57607e180d3d98ff7dc796fda4a4"
     },
     "Databricks::8503068002": {
@@ -865,13 +955,20 @@
       "signature": "d3c4c51f1875e80f1b6932b06f1b5899e7670fbbbf9f8c6e1452496062b498ec"
     },
     "Databricks::8632188002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on data engineering, Spark, and client-facing implementations in the US, requiring US citizenship and security clearances which the candidate does not match, and is outside the candidate's preferred regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "bd60625b71e642d886a75c16eb8667653b6927d14c4d4f907149f660cc504ed1",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566167+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161855+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer focusing on data engineering, Spark, and client-facing implementations in the US, requiring US citizenship and security clearances which the candidate does not match, and is outside the candidate's preferred regions.",
       "signature": "eb80ccea8382a2a62239bf94b9a4c9d926cf02c276f346cde001d7146bbb92e3"
     },
     "Databricks::8645052002": {
@@ -892,23 +989,37 @@
       "signature": "9810d1d70038dc5b4246e5c524dda01c928883c925d5ab16a11d32ef506610bb"
     },
     "Databricks::8647669002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on data engineering, Spark, and big data application development rather than core DevOps, SRE, or platform engineering. Furthermore, the job location is Chicago, Illinois, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "010f547d8403f9fbf0deef7d94a3db65459b83f61b164254f43d51de9f011f93",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566119+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161796+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on data engineering, Spark, and big data application development rather than core DevOps, SRE, or platform engineering. Furthermore, the job location is Chicago, Illinois, which is outside the candidate's enabled regions.",
       "signature": "d5789dde0af93c029a481816c1ffa619af9018028d1f6f2d8781b0f5c64a41e7"
     },
     "Databricks::8647675002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on data engineering, Spark, and customer-facing solution delivery rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Denver, Colorado, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "010f547d8403f9fbf0deef7d94a3db65459b83f61b164254f43d51de9f011f93",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566096+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161778+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer focusing on data engineering, Spark, and customer-facing solution delivery rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Denver, Colorado, which is outside the candidate's enabled regions.",
       "signature": "9675dc23d892b17374502483d46c414b3123386953f245efc81ad18e18a5932d"
     },
     "Databricks::8648494002": {
@@ -946,23 +1057,37 @@
       "signature": "bb5ce266d7089681f856a441163eecbb833af5020c8fc6638e06e9525e8c3a09"
     },
     "Databricks::8657478002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on data engineering, Spark, and AI/ML customer implementations in Washington D.C., requiring US citizenship and security clearance, which conflicts with the candidate's location preferences and core DevOps/Platform infrastructure automation focus.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "755014cec7ba8c58647baa319a2e8835c07b810b6e161698ed41cbf6605c1954",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566072+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161756+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer focusing on data engineering, Spark, and AI/ML customer implementations in Washington D.C., requiring US citizenship and security clearance, which conflicts with the candidate's location preferences and core DevOps/Platform infrastructure automation focus.",
       "signature": "3600e4efb15d248822bd139e56e8e5096bc10374af59b67bf29771aa3dface4e"
     },
     "Databricks::8657488002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer (FDE) focused on data engineering, Spark, analytics, and software applications for public sector clients requiring US security clearance, which does not match the candidate's DevOps and platform engineering background or geographic preferences.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "a0e2c9a17afd3af233c8f6613222da232f1310ad0c4f0b366e7d3ae94b8713ab",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566048+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161735+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer (FDE) focused on data engineering, Spark, analytics, and software applications for public sector clients requiring US security clearance, which does not match the candidate's DevOps and platform engineering background or geographic preferences.",
       "signature": "0ced5fb2a55f4ce89087bb0eb870b32a8a2ab95bc3d777b62940454141b1ae44"
     },
     "Databricks::8739458002": {
@@ -1051,13 +1176,20 @@
       "signature": "96c29056b26e3e6b79926d6cd912cb9c14ace6ea400f57a815a7d69c3e842e8c"
     },
     "Databricks::8746374002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires U.S. citizenship and a U.S. government secret clearance due to federal contract requirements, which the candidate profile does not support, and the location is restricted to U.S. regions outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "43da96b4a434e8f661ec1698b804ccf1c330145c093d8bab466e554c70f4c096",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566142+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161832+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role requires U.S. citizenship and a U.S. government secret clearance due to federal contract requirements, which the candidate profile does not support, and the location is restricted to U.S. regions outside the candidate's enabled regions.",
       "signature": "62034e7297faf885e8da698928f8fe0f34b8bd900228920aa59e6ce3d3d48040"
     },
     "Databricks::8760167002": {
@@ -1095,13 +1227,20 @@
       "signature": "e81175794e3b427d585c85efc87043ff6b4126b3a1f130ac1b3b0c78f06495e9"
     },
     "Databricks::8782216002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer (FDE) focusing on data engineering, Spark, and fullstack application delivery rather than core infrastructure automation, DevOps, or platform engineering. Additionally, the location is Zürich, Switzerland, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "ca286359d4562a180a6e171adfbc6f5364071d34835620aa6f0290f427328b86",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.565814+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161262+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focusing on data engineering, Spark, and fullstack application delivery rather than core infrastructure automation, DevOps, or platform engineering. Additionally, the location is Zürich, Switzerland, which falls outside the candidate's enabled regions.",
       "signature": "0de1e7726bd0b21dc145bec1704cc5073bb925e852d2f8667959998e4710d1a1"
     },
     "Databricks::8793863002": {
@@ -1207,13 +1346,20 @@
       "signature": "f129dd81e26eade12b43a1eac54478bf071f985d5f6ce9271dcebd2ea46efc3e"
     },
     "Databricks::8845270002": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is an engineering management and professional services leadership role focused on data science and AI consulting teams, rather than a DevOps, SRE, or platform engineering role. Furthermore, the location is Stockholm, Sweden, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "a133c0aae78879fe29af8316f240e02176f72b5ff7c6b4858e073c1ec8ff50c7",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566192+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161881+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is an engineering management and professional services leadership role focused on data science and AI consulting teams, rather than a DevOps, SRE, or platform engineering role. Furthermore, the location is Stockholm, Sweden, which falls outside the candidate's enabled regions.",
       "signature": "4233b85c6119dbc59b52d60a983af33ba10033e01a26bfe12a0eba26476d9ed5"
     },
     "Databricks::8849279002": {
@@ -1302,33 +1448,54 @@
       "signature": "61d06972a39a01ab6b659e90dfad5b9585d6b00621fe7828f27c505b2f463121"
     },
     "Datadog::7529852": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "uncertain",
+        "ai_note": "This is an Engineering Manager role for an AI Platform team rather than a dedicated DevOps/SRE/Platform engineering IC role, requiring direct people management experience which does not align with the candidate profile.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "c26b02ad25e1d8f639b15f100dc6e20c3a3028492b6f3e3ccca72dc64561c059",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566398+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162063+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is an Engineering Manager role for an AI Platform team rather than a dedicated DevOps/SRE/Platform engineering IC role, requiring direct people management experience which does not align with the candidate profile.",
       "signature": "3fbaf87a6b597cd805b98619e20be8689f48353068fb20b728de5811bc786398"
     },
     "Datadog::7965428": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is an Engineering Manager role focused on AI platform evaluation and annotation rather than an individual contributor DevOps, SRE, or platform engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "2a1ce89e3a27d85d9256b275eebbfb3bb3de76eff9d8736a496b54391ca84c67",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566377+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162045+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is an Engineering Manager role focused on AI platform evaluation and annotation rather than an individual contributor DevOps, SRE, or platform engineering role.",
       "signature": "25a663468a9f92c81c2378d3f02590ac33f23d0900a09e3dcb65e34d95c47bb3"
     },
     "Datadog::8172855": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is for a Senior Applied Scientist focusing on AI post-training, data generation, and LLM evaluation, whereas the candidate is a DevOps and Platform Engineer.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "7181c800fea952e54940f75855912c9e605695f8f2688f271f13107d803a7ce8",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566419+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162081+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is for a Senior Applied Scientist focusing on AI post-training, data generation, and LLM evaluation, whereas the candidate is a DevOps and Platform Engineer.",
       "signature": "406d8147ac027677bc51bf9976a3ccbc8cf394afa967f6cf052b383120272bbc"
     },
     "Elastic::8237962": {
@@ -1451,73 +1618,122 @@
       "signature": "884166333ac651bf3fe7722279a7d1100d1c0d83fca110caece30bdb6b94808d"
     },
     "HelloFresh::8258950": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role focuses on forward-deployed AI application engineering and building GenAI solutions rather than core DevOps, SRE, or platform engineering infrastructure. Additionally, the location in Poland is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "6c025a3b9f4dd04ca6bee7f181c4006207e09e1aa8c0b7d071f53cbd4441615a",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567730+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162997+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role focuses on forward-deployed AI application engineering and building GenAI solutions rather than core DevOps, SRE, or platform engineering infrastructure. Additionally, the location in Poland is outside the enabled regions.",
       "signature": "8cef0a5e5780f00dce031b4f0e56297ee33d6b9add9c60eea9f1da04a076ec86"
     },
     "Microsoft::1970393556927480": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Technical Program Manager / Forward Deployed Engineer position focused on customer management and solution delivery in Tokyo, requiring fluency in Japanese, whereas the candidate seeks infrastructure automation and DevOps roles in India, UAE, or Europe.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "148616ecebdf0e69e01618e9367a591b731a7d27138da5652836078b050d4b21",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566724+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162301+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "The role is a Technical Program Manager / Forward Deployed Engineer position focused on customer management and solution delivery in Tokyo, requiring fluency in Japanese, whereas the candidate seeks infrastructure automation and DevOps roles in India, UAE, or Europe.",
       "signature": "7e372bc11621ec22876c4e7529d2ef3eb38c1f3baf1910fb0caae6b52d998132"
     },
     "Microsoft::1970393556927481": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Principal Forward Deployed Engineer / Technical Program Manager requiring fluency in Japanese and located in Tokyo, Japan, which is outside the candidate regions. The responsibilities focus on technical program management and stakeholder management rather than core infrastructure automation or DevOps/Platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "2f96207e5b100bbf7c83ff993004654827e1c10c8abcf233f5bce199701aa51d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566701+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162283+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "The role is for a Principal Forward Deployed Engineer / Technical Program Manager requiring fluency in Japanese and located in Tokyo, Japan, which is outside the candidate regions. The responsibilities focus on technical program management and stakeholder management rather than core infrastructure automation or DevOps/Platform engineering.",
       "signature": "d97998a8b01fead7df8ac74a840db815ebefaf3b731905acde736e7e577a1dd8"
     },
     "Microsoft::1970393556927485": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Technical Program Manager / Forward Deployed Engineer requiring fluency in Japanese and located in Tokyo, Japan, which is outside the candidate's allowed regions and does not match core DevOps/infrastructure responsibilities.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "b215c80068f74fb433dd665738ded866b5588de2db96000e77f84d3c60152388",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566745+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162319+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "The role is for a Technical Program Manager / Forward Deployed Engineer requiring fluency in Japanese and located in Tokyo, Japan, which is outside the candidate's allowed regions and does not match core DevOps/infrastructure responsibilities.",
       "signature": "b84ad21f12e96785b2004f217d470652d580464c12a78907c56a4ec685672b33"
     },
     "Microsoft::1970393556945399": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Principal Data Scientist in a Forward Deployed Engineering model requiring extensive data science experience and fluency in Japanese. This does not align with a DevOps/Platform Engineering profile.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "017047e2987567af7747067b768ae062f5def65fb4918b014277edeff5b0e8ad",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566655+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162246+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is for a Principal Data Scientist in a Forward Deployed Engineering model requiring extensive data science experience and fluency in Japanese. This does not align with a DevOps/Platform Engineering profile.",
       "signature": "190a3b0a9e8748058921f3ba0d2ba4d6fa17e2b5522a84cd343a09127e121a10"
     },
     "Microsoft::1970393556945429": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role focuses on software engineering, customer-facing consulting, and coding in languages like C#, Java, or Python rather than infrastructure automation, DevOps, or platform engineering. Furthermore, the location is in Tokyo, Japan, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "89e5c57985ff0bc98fd5fb2be19a175874022b0335960e75b0263e77fa6c9a7a",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566679+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162267+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role focuses on software engineering, customer-facing consulting, and coding in languages like C#, Java, or Python rather than infrastructure automation, DevOps, or platform engineering. Furthermore, the location is in Tokyo, Japan, which is outside the candidate's enabled regions.",
       "signature": "b247683fff32b82a94adc606e4b390bdad98dbba96cd1520e3c70c033365dcf0"
     },
     "Microsoft::1970393557041967": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a sales and account management role rather than an infrastructure automation, DevOps, or platform engineering position.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "8afd37203450195abe235e673f17cc0861e501c70b7fbca84d9c1caa0f9a8ea2",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566766+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162336+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a sales and account management role rather than an infrastructure automation, DevOps, or platform engineering position.",
       "signature": "c6bcb329868628998df55aee237a6cde141f62eb1187f90db39c1af60d7f2e16"
     },
     "MongoDB::7392902": {
@@ -1606,313 +1822,530 @@
       "signature": "37443bdd509adbf9bdb6e14b8c41e3b5dcbb4c96d971f1d04bd7ca9b3705f955"
     },
     "NVIDIA::JR1998048": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires at least 8+ years of experience while the candidate has 6, and the location is Shanghai, China, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "7ca234f330c2f427111766395c15d70b5744fe7a5f37f8314568683209135683",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566494+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162144+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role requires at least 8+ years of experience while the candidate has 6, and the location is Shanghai, China, which falls outside the candidate's enabled regions.",
       "signature": "689fad469c36740169f633c38878085256d965f2128282b427caece769475eef"
     },
     "Notion::10437426-14c8-4c45-8075-67959ce80393": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Forward Deployed Engineer role focused on professional services, custom integrations, and data migrations rather than internal infrastructure automation, DevOps, or SRE. Additionally, the location is in the US (SF/NY) while the candidate is based in enabled regions outside the US.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "d1ba1a9e346ef273da44f6d4334f11a9fec4a75e0d73dba2aaa34e172511dccb",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566215+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161900+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a customer-facing Forward Deployed Engineer role focused on professional services, custom integrations, and data migrations rather than internal infrastructure automation, DevOps, or SRE. Additionally, the location is in the US (SF/NY) while the candidate is based in enabled regions outside the US.",
       "signature": "8f45dbe7e0c69d82ed68ecfa37b124a176fbea197bb286db4d953de329b41891"
     },
     "Notion::3e988191-692b-48b7-969f-61c000c1636e": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Solutions Architecture / Consulting role focused on implementing Notion workspaces and AI workflows for external clients, not an infrastructure automation or DevOps/Platform engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "1e54c1e00c0700753db56947ad61cd8718d3e38766173f863ce7be04b2a7f5d8",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566324+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162000+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a customer-facing Solutions Architecture / Consulting role focused on implementing Notion workspaces and AI workflows for external clients, not an infrastructure automation or DevOps/Platform engineering role.",
       "signature": "6f5b3291841f1927a128cf506b23ad25be1997f23d322ab24bf19e811e6fb312"
     },
     "Notion::4bc0802c-b5e0-411c-be01-daaea2bc3ae0": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on customer integration and professional services rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the candidate's permitted regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "fd3a2ecfaa5fe4ef4eb2be8893a15f7c48638a5eba35c80baa38350951ff9b48",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566242+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161926+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer focusing on customer integration and professional services rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the candidate's permitted regions.",
       "signature": "53a49bccfa3d99c6c017e7768237135dd8ff606b1ad9f206a035532cd45a1f76"
     },
     "Notion::8cb74a17-1685-4f92-8314-6ef6264b5085": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Architect position focused on workflow consulting, solution architecture, and AI implementation rather than DevOps, SRE, or infrastructure automation. Furthermore, the location is Seoul, South Korea, which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "d1d1ca5d24310d50156da52c37a996f8b282c0ed95f53725e844f07e9bf75083",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566351+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162022+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Architect position focused on workflow consulting, solution architecture, and AI implementation rather than DevOps, SRE, or infrastructure automation. Furthermore, the location is Seoul, South Korea, which does not match the candidate's enabled regions.",
       "signature": "f826869bdd4a552d538cce8f78f0dd82cadd760f7dd70132bca24dfa8fbcca3d"
     },
     "Notion::9a849c30-11ad-44ad-86e5-ecb7cc4b7934": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Forward Deployed Architect role focused on implementation consulting and solutions architecture for Notion's platform, rather than a DevOps, SRE, or platform engineering role. Furthermore, the location is Tokyo, Japan, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "94dfc4808c85ed5705416f577c34c358459b3d41bd6f1e1443f927c6898b59d4",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566270+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161951+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a customer-facing Forward Deployed Architect role focused on implementation consulting and solutions architecture for Notion's platform, rather than a DevOps, SRE, or platform engineering role. Furthermore, the location is Tokyo, Japan, which is outside the candidate's enabled regions.",
       "signature": "66a0c79b5ee76729e5dbbb93d083cdbe8ad6f489af4858c4afff5624226dc97a"
     },
     "Notion::d87154d4-d3c5-48cf-8e83-559436f27133": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Solutions Architecture and Forward Deployed Consulting role centered on Notion's workspace platform, not a DevOps, SRE, or infrastructure platform engineering position. Additionally, the location is Paris, France, which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "f248842c9b61a0faac63ed6d769a2591f9fa8652ebf3386bfb70b826011e1b57",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566297+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.161975+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a customer-facing Solutions Architecture and Forward Deployed Consulting role centered on Notion's workspace platform, not a DevOps, SRE, or infrastructure platform engineering position. Additionally, the location is Paris, France, which does not match the candidate's enabled regions.",
       "signature": "1b06f83ed42c16f383f990e172703d3d7bf3f0ad3900a15fc210cd478540c572"
     },
     "PagerDuty::6216876004": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires 8+ years of experience for a Staff-level Forward Deployed Engineer position, while the candidate has 6 years. Furthermore, the job location is San Francisco, which falls outside the candidate's enabled and preferred regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "9bda866920d05e1b67bca271003969a0be5efb71aa11237d4c70b67f9c5d3cc6",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566442+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162102+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role requires 8+ years of experience for a Staff-level Forward Deployed Engineer position, while the candidate has 6 years. Furthermore, the job location is San Francisco, which falls outside the candidate's enabled and preferred regions.",
       "signature": "88ba92831439629ad23c161a801fe292907cfec4b6772615659a0641d1ec5062"
     },
     "Salesforce::JR309445": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires U.S. citizenship, active U.S. security clearance (Secret or Top Secret), and location in Virginia or Hawaii, which conflicts with the candidate's regions. Additionally, the role demands 8+ years of experience while the candidate has 6 years.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "33ab02916400e3eb028d866868bb63354ce8fd3bb6bc62e8cb8fdbf9d3852eb6",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567052+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162529+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 8+ yrs",
+      "reason": "The role requires U.S. citizenship, active U.S. security clearance (Secret or Top Secret), and location in Virginia or Hawaii, which conflicts with the candidate's regions. Additionally, the role demands 8+ years of experience while the candidate has 6 years.",
       "signature": "88b9d6d7349fe3b98c5282340ee5c1ce76f9ef389bb3518fc16223c738e6b408"
     },
     "Salesforce::JR348957": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Sales/Solutions-oriented Forward Deployed Engineer role focusing on Salesforce-specific products (Agentforce, Apex, LWC) and requires Italian language proficiency, rather than core DevOps, SRE, or infrastructure platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "0bc11e291d139f20599a7cdaa94e99bcdd1435da3e0307a44039b9ce18a77f96",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566879+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162376+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "This is a customer-facing Sales/Solutions-oriented Forward Deployed Engineer role focusing on Salesforce-specific products (Agentforce, Apex, LWC) and requires Italian language proficiency, rather than core DevOps, SRE, or infrastructure platform engineering.",
       "signature": "348dc7f9e53df21be8e4b976599dffed331b33c28ecc4bf1568c702030d0c1ad"
     },
     "Salesforce::JR348964": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer position requiring Italian language proficiency and Salesforce platform expertise, which does not match a core DevOps/SRE/Platform infrastructure role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "f843daa14942bcabe09f9c9a74121bade3777d88a2e67db09f947a5307a6c17c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566933+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162425+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer position requiring Italian language proficiency and Salesforce platform expertise, which does not match a core DevOps/SRE/Platform infrastructure role.",
       "signature": "c11c91995f389dc44b9656b7aca63dbdb9726a7fce70764af96bcdf3c1983afd"
     },
     "Salesforce::JR348992": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role focuses on forward-deployed customer-facing software engineering and AI/Agentforce integration rather than infrastructure automation or platform engineering. Furthermore, the job location is Riyadh, Saudi Arabia, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "a57e62d4a0cac1c12da0d9c81fb077b531df68d9830a259833d75147bdd8cdfb",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566961+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162449+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "The role focuses on forward-deployed customer-facing software engineering and AI/Agentforce integration rather than infrastructure automation or platform engineering. Furthermore, the job location is Riyadh, Saudi Arabia, which is outside the candidate's enabled regions.",
       "signature": "23618125c73a2482d14b1a20033ab9b58f2155336e94e97b4a09eb277ddc6844"
     },
     "Salesforce::JR349466": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "This is a Forward Deployed Engineer (FDE) role focused on customer-facing technical delivery, application-level development, and AI agent integration rather than infrastructure automation, DevOps, or SRE responsibilities.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "d825195312daf0c7653715f7394412fe18bae2da87d804a3075a4fd104b49629",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567264+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162723+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a Forward Deployed Engineer (FDE) role focused on customer-facing technical delivery, application-level development, and AI agent integration rather than infrastructure automation, DevOps, or SRE responsibilities.",
       "signature": "6b7c1d32105ed7d4b574d89138ae23412210eda876d6ba27c44ae52f7d0e8925"
     },
     "Salesforce::JR350080": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing heavily on Salesforce platforms and Hebrew/English language requirements in Israel, which does not match DevOps/Platform engineering core infrastructure roles. Furthermore, location and experience requirements fall outside the candidate criteria.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "de61d56ec6e49075a12a8a9e4d62d67c2b98756b9389ce3aaea3ae3e6cff0078",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566907+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162400+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 10+ yrs",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing heavily on Salesforce platforms and Hebrew/English language requirements in Israel, which does not match DevOps/Platform engineering core infrastructure roles. Furthermore, location and experience requirements fall outside the candidate criteria.",
       "signature": "a6ae1971b8519cf9488f3c159231ab3f5310089bfbbefed28859346dd19ec618"
     },
     "Salesforce::JR352223": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on building AI applications, data pipelines, and integrations within enterprise software environments, rather than a DevOps/SRE/Platform engineering role focused on infrastructure automation and reliability. Additionally, the job locations are restricted to the US while the candidate's regions are India, UAE, and Europe.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "b32acf77a23358f82a807ba91590673f121f5c95fa36d8b9d806508e11bdadf0",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567234+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162695+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on building AI applications, data pipelines, and integrations within enterprise software environments, rather than a DevOps/SRE/Platform engineering role focused on infrastructure automation and reliability. Additionally, the job locations are restricted to the US while the candidate's regions are India, UAE, and Europe.",
       "signature": "17448129693e72d44335494b42e547492c2d28f9bb292e488ae46706fff741f7"
     },
     "Salesforce::JR353428": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Forward Deployed Engineer focusing heavily on Salesforce platforms (Apex, Agentforce, LWC) and enterprise AI application delivery rather than core DevOps, infrastructure automation, or SRE engineering. Additionally, the location is France (Paris), which is outside the candidate's allowed regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "7794543163fcf366a74d01deff1e5c95c7a10cbb11785760ef9e06281b5a82b9",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567014+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162494+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "The role is for a Forward Deployed Engineer focusing heavily on Salesforce platforms (Apex, Agentforce, LWC) and enterprise AI application delivery rather than core DevOps, infrastructure automation, or SRE engineering. Additionally, the location is France (Paris), which is outside the candidate's allowed regions.",
       "signature": "c31870b3e4efd7ba0a9db0ed3b983b4158b45051548f81aa8500a8f79f0bbed8"
     },
     "Salesforce::JR355047": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Forward Deployed Engineer focusing on custom AI agent development, application solutions, and Salesforce platforms rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "9e644ad13bc3c13db1e7ebe839dec6431a1fec383630da980eebf64a92a6b40a",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567078+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162552+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is for a Forward Deployed Engineer focusing on custom AI agent development, application solutions, and Salesforce platforms rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the candidate's enabled regions.",
       "signature": "f1ad7ef7b269dd24240c42095679079be24a0f27b72b51318186022aab9fd164"
     },
     "Salesforce::JR360310": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Consultant / Product Manager position focusing on Agentforce platform solutions, process automation, and business analysis, which does not match the candidate's DevOps and infrastructure automation skill set. Additionally, the job location is in the US while the candidate's preferred regions are India, UAE, and Europe.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "a2f9a737bfe276dd775e734cf1f636a3e3831bb9ecff1e50dbde4cd94aa13cdf",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567205+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162669+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Consultant / Product Manager position focusing on Agentforce platform solutions, process automation, and business analysis, which does not match the candidate's DevOps and infrastructure automation skill set. Additionally, the job location is in the US while the candidate's preferred regions are India, UAE, and Europe.",
       "signature": "cbd0e00dff2ad725117ed013836f9b3853b23e645eac4269e08b9071fdecd861"
     },
     "Salesforce::JR361110": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "This is a Forward Deployed Engineer role focused on Salesforce Data 360, application-layer development (Apex, Python, SQL), and data engineering, rather than a DevOps, SRE, or platform engineering infrastructure role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "1b3dbff8bbf085b7f04bfe9c8d4fd20d8ad4f67a53a8bd02d4e7810f1a325ccd",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567177+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162641+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 5+ yrs",
+      "reason": "This is a Forward Deployed Engineer role focused on Salesforce Data 360, application-layer development (Apex, Python, SQL), and data engineering, rather than a DevOps, SRE, or platform engineering infrastructure role.",
       "signature": "91a459f28c6a14952d1a2546109d798e46e4de753c7033b0c4e2c141cf0dcf9b"
     },
     "Salesforce::JR363024": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Forward Deployed Engineer role focused on AI application development and professional services delivery rather than a DevOps, SRE, or platform engineering role. Furthermore, the location is France (Paris), which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "d8ce3297ac3f9f817306e178f063fb13e0d12bee31402bf24db20732a237303e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567143+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162607+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 3+ yrs",
+      "reason": "This is a customer-facing Forward Deployed Engineer role focused on AI application development and professional services delivery rather than a DevOps, SRE, or platform engineering role. Furthermore, the location is France (Paris), which does not match the candidate's enabled regions.",
       "signature": "0a970b6d0adb2df317b1d6654dff76a9c65db4f2d108e0f8d25e5337dff46fa3"
     },
     "Salesforce::JR363565": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This role focuses on forward-deployed customer-facing application development, AI solution delivery, and Salesforce platform customization rather than core infrastructure, DevOps, or SRE responsibilities. Additionally, the location is Italy (Rome), which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "2257069124a10393db1cbfb7c8ce582682b711e6aa0aa1233d6796d6ae4d5a2f",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566987+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162470+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 4+ yrs",
+      "reason": "This role focuses on forward-deployed customer-facing application development, AI solution delivery, and Salesforce platform customization rather than core infrastructure, DevOps, or SRE responsibilities. Additionally, the location is Italy (Rome), which does not match the candidate's enabled regions.",
       "signature": "1e69149091a8baf7c8d94926183d32d304aaee515f21f9c296f986b9c2b1a694"
     },
     "Salesforce::JR364074": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a Forward Deployed Engineer role focused on Salesforce agentic AI solutions, application development, and customer implementations rather than core DevOps, SRE, or platform infrastructure engineering. Additionally, the job location is in Norway, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "44076090b5c14ee626003dc1e7db6c5259ea6a3ef4c69fb75440588b6a8afdb7",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566852+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162354+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "This is a Forward Deployed Engineer role focused on Salesforce agentic AI solutions, application development, and customer implementations rather than core DevOps, SRE, or platform infrastructure engineering. Additionally, the job location is in Norway, which is outside the candidate's enabled regions.",
       "signature": "23096c2896b5117a41d3526037833192153f6d12a26a2442323c77b4babaa87c"
     },
     "Salesforce::JR364467": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a forward-deployed software and AI application engineering role focused on Salesforce CRM/Agentforce rather than core DevOps, SRE, or platform infrastructure engineering. Additionally, the location is Spain - Madrid, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "e5058c425b04c950abd3a1d423fb8bcfc70435b2af0e8394eb024089e1b9c140",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567115+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162585+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 6+ yrs",
+      "reason": "This is a forward-deployed software and AI application engineering role focused on Salesforce CRM/Agentforce rather than core DevOps, SRE, or platform infrastructure engineering. Additionally, the location is Spain - Madrid, which is outside the candidate's enabled regions.",
       "signature": "1ab8cb3c4693587f8b802fac1ca25dcd7cd007591824064f0a195f36eea32498"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on applied AI, building LLM/ML applications and customer-facing solutions rather than core infrastructure, DevOps, or platform engineering. Additionally, the location in Warsaw, Poland is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "563daf7811a8b4b8e049913f2f02d3b64ead1ba346495c148098b57fa51d7f57",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.566472+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162125+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 3+ yrs",
+      "reason": "The role is a Forward Deployed Engineer focusing on applied AI, building LLM/ML applications and customer-facing solutions rather than core infrastructure, DevOps, or platform engineering. Additionally, the location in Warsaw, Poland is outside the candidate's enabled regions.",
       "signature": "34d5fde4cde7b74d4290f0abb8b7056c1cced5f7bd542ecb889cc790bdfb6034"
     },
     "Stripe::7230452": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on full-stack application development (TypeScript, React, Node) rather than DevOps, SRE, or platform engineering. Furthermore, the location is New York, which does not match the candidate's preferred regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "9aa259094eab7884aac6c73b35f9431c99128403318a205d4cf599ff1f63e2d3",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567684+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162963+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed Engineer focusing on full-stack application development (TypeScript, React, Node) rather than DevOps, SRE, or platform engineering. Furthermore, the location is New York, which does not match the candidate's preferred regions.",
       "signature": "59f86e2b18e13f8668962112c20c5f7c09e5e93ed8144100dc8b5f5a86b70c89"
     },
     "Stripe::7747640": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed AI Accelerator focusing on marketing workflows and enablement rather than core infrastructure, platform engineering, or SRE responsibilities. Furthermore, the job location (Seattle, San Francisco, New York) does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 40
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "b5ddf427213198a60b33024eb8bbcbfac0d4bdfeb244546d22e7ab8a9b5f6e3d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567499+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162944+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a Forward Deployed AI Accelerator focusing on marketing workflows and enablement rather than core infrastructure, platform engineering, or SRE responsibilities. Furthermore, the job location (Seattle, San Francisco, New York) does not match the candidate's enabled regions.",
       "signature": "36c6a8b02f6366eb5ca3b1ba7141560eb3c64cc09cd358e14cfd44e84d9f4751"
     },
     "Stripe::7947546": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is an Engineering Manager role focused on Forward Deployed Engineering (customer integrations and product development), not a DevOps, SRE, or Platform Engineering role. Additionally, the location is NYC, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "ef5fb11668a4d9870dea3d89c59fef00ceb05bc106d7ed43799f18c3dfc6d5ee",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567479+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162927+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is an Engineering Manager role focused on Forward Deployed Engineering (customer integrations and product development), not a DevOps, SRE, or Platform Engineering role. Additionally, the location is NYC, which is outside the candidate's enabled regions.",
       "signature": "9fedd09fd0b89ae52105a70314c298bdec5c4f72ddbee8fdae0466960eff3405"
     },
     "Stripe::8181003": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is a security and fraud incident response role, not a DevOps, SRE, or platform engineering role. Furthermore, it requires 10+ years of security/fraud experience.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "9f33dc1177f19f26ddb453833628e6199cc833a393839f24c83710eed0c18cd7",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567708+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.162979+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a security and fraud incident response role, not a DevOps, SRE, or platform engineering role. Furthermore, it requires 10+ years of security/fraud experience.",
       "signature": "dc51aadddd71ed71e25252412441383b093c440586456ea37a63ce0b0f3fb2b3"
     },
     "Target::R0000454084": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Lead Full Stack Engineer focused on AI application development and frontend/backend software engineering rather than core DevOps or platform infrastructure engineering. Furthermore, the location is in Minnesota, USA, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "3ed0e0eae3f0f3202084a32874b61d8c5d3f6209fccea87f0d3e3c2bcb7f899d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567752+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.163015+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is for a Lead Full Stack Engineer focused on AI application development and frontend/backend software engineering rather than core DevOps or platform infrastructure engineering. Furthermore, the location is in Minnesota, USA, which falls outside the candidate's enabled regions.",
       "signature": "e4c9c331cc79dca6076b40179f86759228f62ae475c792763eb488d2ad06b055"
     },
     "Target::R0000475423": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires 8+ years of experience while the candidate has 6 years, making it above band. Furthermore, the job location is in the United States (Minnesota and California) with work duties required to be performed within the country, which is outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "1e71a21b651a64887f1a3be3911166715ba2b12fa9943a4a3ab3879c765cdfff",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567804+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.163061+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role requires 8+ years of experience while the candidate has 6 years, making it above band. Furthermore, the job location is in the United States (Minnesota and California) with work duties required to be performed within the country, which is outside the candidate's enabled regions.",
       "signature": "0f08b76bc5c2e99c2a7a54cbc9a242be0fb956c8002e1e50791effb32a16ddbf"
     },
     "Target::R0000475426": {
-      "ai_assessment": {},
-      "at": "2026-10-17T13:50:49+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The job location is in Brooklyn Park, Minnesota, USA, which falls outside the candidate's enabled regions (india, uae, europe) and preferred locations.",
+        "ai_relevance": "relevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-17T22:03:30+00:00",
       "jd_hash": "70d6a919a0f31a545c7ffd3062fe084ddf994a7508efa97ac21f689b826e8cbd",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-17T19:50:49.567775+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-10-24T22:03:30.163034+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "🎓 5+ yrs",
+      "reason": "The job location is in Brooklyn Park, Minnesota, USA, which falls outside the candidate's enabled regions (india, uae, europe) and preferred locations.",
       "signature": "c4bd39215549d0a0a68976fabb94e38f68e55d35f833956728e1851c456de455"
     }
   },
@@ -2048,6 +2481,7 @@
     "Amazon::10576431": "2026-10-13T01:45:09+00:00",
     "Amazon::10576432": "2026-10-13T01:45:09+00:00",
     "Amazon::10576495": "2026-10-17T13:50:59+00:00",
+    "Amazon::10576496": "2026-10-17T22:03:32+00:00",
     "Amazon::10576816": "2026-10-13T16:52:05+00:00",
     "Amazon::10576818": "2026-10-13T16:52:05+00:00",
     "Amazon::10577077": "2026-10-13T16:52:02+00:00",
@@ -2079,9 +2513,13 @@
     "Atlassian::27053": "2026-09-15T03:30:09+00:00",
     "Atlassian::27056": "2026-09-15T16:39:26+00:00",
     "Atlassian::27078": "2026-10-01T00:57:09+00:00",
+    "Atlassian::27178": "2026-10-17T22:03:32+00:00",
+    "Atlassian::27179": "2026-10-17T22:03:32+00:00",
     "Atlassian::27180": "2026-10-17T13:50:59+00:00",
     "Atlassian::27181": "2026-10-17T13:50:59+00:00",
+    "Atlassian::27182": "2026-10-17T22:03:32+00:00",
     "Atlassian::27183": "2026-10-17T13:50:59+00:00",
+    "Atlassian::27312": "2026-10-17T22:03:32+00:00",
     "Atlassian::27391": "2026-09-25T15:40:48+00:00",
     "Careem::8620488002": "2026-09-15T16:39:26+00:00",
     "Celonis::7781590003": "2026-09-15T16:39:26+00:00",
