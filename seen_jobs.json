@@ -1413,6 +1413,40 @@
       "reason": "This is a Forward Deployed Software Engineer role focused on customer-facing application development and data/AI solutions, rather than a dedicated DevOps, SRE, or Platform Engineering infrastructure automation role.",
       "signature": "eebc84b781b1ef2903bce8375356dc466997f46d7278fd80ed996f3839d62c38"
     },
+    "Databricks::8876613002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer (FDE) focusing on data engineering, Spark, analytics, and software solutions, rather than infrastructure automation, DevOps, or SRE.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-19T05:49:07+00:00",
+      "jd_hash": "8d8eb0ff4a54727cc95446606eb83b219b77cfbc59f19fe063b5b80536fc848c",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T05:49:07.738816+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focusing on data engineering, Spark, analytics, and software solutions, rather than infrastructure automation, DevOps, or SRE.",
+      "signature": "f646462257c0f11ffa5b7ee18eff58f86e3b4afc592d60c2838d979a40128248"
+    },
+    "Databricks::8876680002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, AI applications, and technical consulting rather than core infrastructure automation, DevOps, or SRE.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-19T05:49:07+00:00",
+      "jd_hash": "083bc293a03ad6df7cb0659b734ccc343cfb35bf89f29bb6a0a49223ebeb27bb",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T05:49:07.739075+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, AI applications, and technical consulting rather than core infrastructure automation, DevOps, or SRE.",
+      "signature": "f728d3a8065a1964ae3bc1dfbdada71792de2e3f07c9a61f40316875ddf17a54"
+    },
     "Databricks::8884753002": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1837,6 +1871,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires at least 8+ years of experience while the candidate has 6, and the location is Shanghai, China, which falls outside the candidate's enabled regions.",
       "signature": "689fad469c36740169f633c38878085256d965f2128282b427caece769475eef"
+    },
+    "NVIDIA::JR2028031": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role focuses heavily on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud infrastructure automation, Kubernetes, and platform engineering. Furthermore, the location is Israel, which falls outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-19T05:49:07+00:00",
+      "jd_hash": "74de5d8b20c45a381ab7f98fa0a27fcfe44f04b3fb96b8476903a996b70ad8ae",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T05:49:07.739114+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses heavily on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud infrastructure automation, Kubernetes, and platform engineering. Furthermore, the location is Israel, which falls outside the enabled regions.",
+      "signature": "fc826cdbf66f5b734b37983124e7cc9549cee57f6dabb316a5a4dcae56d2447c"
     },
     "Notion::10437426-14c8-4c45-8075-67959ce80393": {
       "ai_assessment": {
