@@ -189,6 +189,23 @@
       "reason": "The role is a customer-facing Forward Deployed Software Engineering position focusing heavily on building AI applications, software development in Python/TypeScript/Go, and customer consulting with 30-50% travel, rather than core DevOps, SRE, or infrastructure platform engineering. Additionally, the location is Sao Paulo, Brazil, which is outside the candidate's enabled regions.",
       "signature": "b39183ef60d4195751cf17e2a477d9f9b2e00ceb1547a2e3481f639565fce73b"
     },
+    "Amazon::10582716": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is focused on incident response and operations for AWS rather than platform engineering and infrastructure automation. Additionally, the location is Sydney, Australia, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-19T18:02:22+00:00",
+      "jd_hash": "8817fa046d4af4e22d337ee20bbc9b42a76cde7379d8724056ebfd22373c4917",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T18:02:22.651141+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on incident response and operations for AWS rather than platform engineering and infrastructure automation. Additionally, the location is Sydney, Australia, which falls outside the candidate's enabled regions.",
+      "signature": "d9fa6d50b89a99a68ea9a2983386ec0b97b4af09113439f6856eb0ea7aac2181"
+    },
     "Cloudflare::7572075": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1770,6 +1787,23 @@
       "reason": "The role focuses on software engineering, customer-facing consulting, and coding in languages like C#, Java, or Python rather than infrastructure automation, DevOps, or platform engineering. Furthermore, the location is in Tokyo, Japan, which is outside the candidate's enabled regions.",
       "signature": "b247683fff32b82a94adc606e4b390bdad98dbba96cd1520e3c70c033365dcf0"
     },
+    "Microsoft::1970393557026699": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a customer-facing Cloud Solution Architect position focused on pre-sales/consulting for Microsoft Azure, rather than an internal DevOps, SRE, or infrastructure platform engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-19T18:02:22+00:00",
+      "jd_hash": "10c5a291bcc84222bcdc880b3e491257a96830fcd7f16e26031aaf3c2e4726ca",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T18:02:22.651438+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a customer-facing Cloud Solution Architect position focused on pre-sales/consulting for Microsoft Azure, rather than an internal DevOps, SRE, or infrastructure platform engineering role.",
+      "signature": "ba462332502558e607f22708b3ad49145df79f0a438ff6916a6d26273f2498b8"
+    },
     "Microsoft::1970393557041967": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3085,6 +3119,7 @@
     "J.P. Morgan::210797918": "2026-10-19T11:48:31+00:00",
     "J.P. Morgan::210799106": "2026-10-13T16:52:02+00:00",
     "J.P. Morgan::210799198": "2026-10-14T11:01:27+00:00",
+    "J.P. Morgan::210799216": "2026-10-19T18:02:26+00:00",
     "J.P. Morgan::210799270": "2026-10-16T10:13:34+00:00",
     "J.P. Morgan::210799559": "2026-10-14T05:48:49+00:00",
     "J.P. Morgan::210799566": "2026-10-14T11:01:30+00:00",
