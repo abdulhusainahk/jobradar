@@ -1668,6 +1668,23 @@
       "reason": "The role focuses on forward-deployed AI application engineering and building GenAI solutions rather than core DevOps, SRE, or platform engineering infrastructure. Additionally, the location in Poland is outside the enabled regions.",
       "signature": "8cef0a5e5780f00dce031b4f0e56297ee33d6b9add9c60eea9f1da04a076ec86"
     },
+    "J.P. Morgan::210796375": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-19T11:48:28+00:00",
+      "jd_hash": "d580bff6e2e94b7215abe2835c46f5f98cff7b21cefde2b515c272b813476540",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T11:48:28.740814+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
+      "signature": "3f46137656af51ad1431dffa1a7013a017fd59c25ea5413f472e2f9f008f5e7a"
+    },
     "Microsoft::1970393556927480": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1871,6 +1888,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires at least 8+ years of experience while the candidate has 6, and the location is Shanghai, China, which falls outside the candidate's enabled regions.",
       "signature": "689fad469c36740169f633c38878085256d965f2128282b427caece769475eef"
+    },
+    "NVIDIA::JR2027831": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires 8+ years of experience which is above the candidate's 6 years (above_band), and the location is in Taiwan, which is outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-19T11:48:28+00:00",
+      "jd_hash": "5abc939ddcd1c4fb9c12014a144f391bb7f4843da8ce35a77bd64699df07f973",
+      "mode": "ai",
+      "next_review_at": "2026-10-26T11:48:28.740519+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role requires 8+ years of experience which is above the candidate's 6 years (above_band), and the location is in Taiwan, which is outside the candidate's enabled regions.",
+      "signature": "dedab8ec7dc1724dc04358807c52ec9532272c0ca1c7d7c50335e16063a7531b"
     },
     "NVIDIA::JR2028031": {
       "ai_assessment": {
@@ -3039,6 +3073,7 @@
     "J.P. Morgan::210795158": "2026-10-08T16:55:41+00:00",
     "J.P. Morgan::210795220": "2026-09-29T20:24:34+00:00",
     "J.P. Morgan::210795827": "2026-10-07T22:23:08+00:00",
+    "J.P. Morgan::210796193": "2026-10-19T11:48:31+00:00",
     "J.P. Morgan::210796237": "2026-10-06T14:36:49+00:00",
     "J.P. Morgan::210796266": "2026-10-14T11:01:30+00:00",
     "J.P. Morgan::210796461": "2026-10-05T09:27:13+00:00",
@@ -3047,6 +3082,7 @@
     "J.P. Morgan::210796973": "2026-10-05T18:53:06+00:00",
     "J.P. Morgan::210797094": "2026-10-05T18:53:06+00:00",
     "J.P. Morgan::210797310": "2026-10-08T16:55:41+00:00",
+    "J.P. Morgan::210797918": "2026-10-19T11:48:31+00:00",
     "J.P. Morgan::210799106": "2026-10-13T16:52:02+00:00",
     "J.P. Morgan::210799198": "2026-10-14T11:01:27+00:00",
     "J.P. Morgan::210799270": "2026-10-16T10:13:34+00:00",
