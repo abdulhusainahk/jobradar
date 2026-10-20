@@ -206,6 +206,40 @@
       "reason": "The role is focused on incident response and operations for AWS rather than platform engineering and infrastructure automation. Additionally, the location is Sydney, Australia, which falls outside the candidate's enabled regions.",
       "signature": "d9fa6d50b89a99a68ea9a2983386ec0b97b4af09113439f6856eb0ea7aac2181"
     },
+    "Amazon::10583743": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
+        "ai_relevance": "relevant",
+        "ai_score": 0
+      },
+      "at": "2026-10-20T10:52:46+00:00",
+      "jd_hash": "17f4d9d9c7169b4a4af9061f89300e71fb470b46523223ed1a24b3ce84d610e8",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T10:52:46.699946+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
+      "signature": "127ed1555faf3cb20487b81f521f9bc1aa1d7bc9571c1382f1cd6cf63113647a"
+    },
+    "Citi::859038501308": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for an AI/LLM Security Engineer focusing on applied AI and cybersecurity workflows rather than DevOps, SRE, or platform engineering. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred or enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-20T10:52:46+00:00",
+      "jd_hash": "51dd5d3009484929e0baef561b1416decfbeef9374c326b27fe1efcd6052a15e",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T10:52:46.700189+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for an AI/LLM Security Engineer focusing on applied AI and cybersecurity workflows rather than DevOps, SRE, or platform engineering. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred or enabled regions.",
+      "signature": "a83a4c4a657191e5f767f205969207b0e2fcc6e86fc7c302e88cfec7a88b20e3"
+    },
     "Cloudflare::7572075": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2874,6 +2908,7 @@
     "Google::77835208795005638": "2026-07-31T15:36:59+00:00",
     "Google::78461517569106630": "2026-09-08T17:10:21+00:00",
     "Google::78481667945046726": "2026-07-15T09:30:17+00:00",
+    "Google::79375152675988166": "2026-10-20T10:52:48+00:00",
     "Google::79982683316200134": "2026-09-11T07:45:24+00:00",
     "Google::80216914189525702": "2026-08-03T15:25:07+00:00",
     "Google::82883055403836102": "2026-08-21T14:31:01+00:00",
