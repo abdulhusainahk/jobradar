@@ -2331,6 +2331,23 @@
       "reason": "This is a forward-deployed software and AI application engineering role focused on Salesforce CRM/Agentforce rather than core DevOps, SRE, or platform infrastructure engineering. Additionally, the location is Spain - Madrid, which is outside the candidate's enabled regions.",
       "signature": "1ab8cb3c4693587f8b802fac1ca25dcd7cd007591824064f0a195f36eea32498"
     },
+    "Salesforce::JR364715": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This role is a specialized Salesforce Technical Architect consulting position requiring extensive (8+ years) experience specifically on the Salesforce Platform, SFDX, and proprietary Salesforce deployment tools. It requires US citizenship and a security clearance, which conflicts with the candidate's location profile. Furthermore, it is an enterprise platform consulting role rather than general DevOps/infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-20T01:12:36+00:00",
+      "jd_hash": "a964c4953bbf13edebf2f4f6697747027352b517b0915b587379eb3585d494b2",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T01:12:36.643827+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This role is a specialized Salesforce Technical Architect consulting position requiring extensive (8+ years) experience specifically on the Salesforce Platform, SFDX, and proprietary Salesforce deployment tools. It requires US citizenship and a security clearance, which conflicts with the candidate's location profile. Furthermore, it is an enterprise platform consulting role rather than general DevOps/infrastructure automation.",
+      "signature": "55c8e672553c29cc46cba3a4c280cd94e3980125070a6856871180e8949f3823"
+    },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
         "ai_decision": "reject",
