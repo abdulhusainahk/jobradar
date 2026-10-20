@@ -1583,6 +1583,23 @@
       "reason": "The role is a Senior Engagement Manager in Professional Services and GTM, not a DevOps, SRE, or Platform Engineering role.",
       "signature": "61d06972a39a01ab6b659e90dfad5b9585d6b00621fe7828f27c505b2f463121"
     },
+    "Databricks::8899736002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is a technical management and professional services delivery role (Manager, Forward Deployed Engineering) focused on leading consulting teams, managing SOWs, and client migrations, rather than an infrastructure automation, DevOps, or SRE platform engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-20T20:04:53+00:00",
+      "jd_hash": "009ba89eb61810c64939c6304d5ed4642fe25b8fd097876898c98f5440c89b23",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T20:04:53.887399+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a technical management and professional services delivery role (Manager, Forward Deployed Engineering) focused on leading consulting teams, managing SOWs, and client migrations, rather than an infrastructure automation, DevOps, or SRE platform engineering role.",
+      "signature": "599833a4316d52a4721f3a669f2149e65cd6466cc872b6d66b04bf9a75adc564"
+    },
     "Datadog::7529852": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2778,6 +2795,7 @@
     "Atlassian::25682": "2026-07-09T05:35:29+00:00",
     "Atlassian::26359": "2026-09-15T16:39:26+00:00",
     "Atlassian::26639": "2026-10-06T07:16:19+00:00",
+    "Atlassian::26787": "2026-10-20T20:04:58+00:00",
     "Atlassian::26965": "2026-10-17T13:50:59+00:00",
     "Atlassian::26969": "2026-09-15T16:39:26+00:00",
     "Atlassian::26996": "2026-09-02T07:35:16+00:00",
@@ -2989,6 +3007,7 @@
     "Google::126802595330040518": "2026-10-17T13:50:59+00:00",
     "Google::127861388520366790": "2026-09-22T08:05:32+00:00",
     "Google::129307746674582214": "2026-10-17T13:50:59+00:00",
+    "Google::131995717597045446": "2026-10-20T20:04:58+00:00",
     "Google::133000867719586502": "2026-09-08T12:58:50+00:00",
     "Google::133746571215807174": "2026-07-08T12:18:40+00:00",
     "Google::134664139438990022": "2026-07-10T08:19:46+00:00",
@@ -3272,6 +3291,7 @@
     "J.P. Morgan::210797094": "2026-10-05T18:53:06+00:00",
     "J.P. Morgan::210797310": "2026-10-08T16:55:41+00:00",
     "J.P. Morgan::210797918": "2026-10-19T11:48:31+00:00",
+    "J.P. Morgan::210798655": "2026-10-20T20:04:58+00:00",
     "J.P. Morgan::210799106": "2026-10-13T16:52:02+00:00",
     "J.P. Morgan::210799198": "2026-10-14T11:01:27+00:00",
     "J.P. Morgan::210799216": "2026-10-19T18:02:26+00:00",
