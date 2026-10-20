@@ -2042,6 +2042,23 @@
       "reason": "This is a Forward Deployed Software Application Engineering role focusing on backend coding, database migrations, and partner integrations, not a DevOps/SRE/Platform engineering role. Additionally, the location is Toronto, which is outside the candidate's enabled regions.",
       "signature": "37443bdd509adbf9bdb6e14b8c41e3b5dcbb4c96d971f1d04bd7ca9b3705f955"
     },
+    "MongoDB::8300746": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "This role focuses on End User Computing (EUC) and client platform engineering (managing macOS, Windows, and Linux endpoints, MDM, and employee devices) rather than cloud infrastructure automation, DevOps, or SRE. Additionally, the candidate's years of experience fall below the stated requirement of 8+ years.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-20T23:08:00+00:00",
+      "jd_hash": "fbe2b2e7e046f46623ece83eff525e950ab80fbd05b32b471b75218224b9abb3",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T23:08:00.004954+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This role focuses on End User Computing (EUC) and client platform engineering (managing macOS, Windows, and Linux endpoints, MDM, and employee devices) rather than cloud infrastructure automation, DevOps, or SRE. Additionally, the candidate's years of experience fall below the stated requirement of 8+ years.",
+      "signature": "501c92aca703c0c248476f76ea025e109bda8bd39c53516fbc86c4267260e7f8"
+    },
     "NVIDIA::JR1998048": {
       "ai_assessment": {
         "ai_decision": "reject",
