@@ -121,6 +121,23 @@
       "reason": "The role is for a Forward Deployed AI Engineer focused on marketing analytics, consumer insights, and business workflows rather than infrastructure automation, DevOps, SRE, or platform engineering. Furthermore, the location is San Jose, Seattle, or San Francisco, which is outside the candidate's enabled regions.",
       "signature": "2c0864c9831a803a8a6e4e07c6a43cb508bc97ba14dbfc88282733794025db02"
     },
+    "Adyen::8227085": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a Product Experience Design (UX/UI for developers) role rather than a DevOps, SRE, or infrastructure automation role, and it is located in San Francisco.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-20T15:53:52+00:00",
+      "jd_hash": "bcaaeb87d85fcb05fda3ec37ec7add4ff148982e037f00dba115db1f02e7168b",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T15:53:52.313293+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a Product Experience Design (UX/UI for developers) role rather than a DevOps, SRE, or infrastructure automation role, and it is located in San Francisco.",
+      "signature": "8765364bc723b3f04758446ca15e5ce415f321d728b62c81032f8476443967e3"
+    },
     "Amazon::10435349": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -222,6 +239,40 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
       "signature": "127ed1555faf3cb20487b81f521f9bc1aa1d7bc9571c1382f1cd6cf63113647a"
+    },
+    "Citi::859038498233": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is a Lead Forward Deployed AI Software Engineering role focused on building agentic AI applications, LLM orchestration, and Python backend services, rather than a DevOps, SRE, or platform engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-20T15:53:52+00:00",
+      "jd_hash": "c00683c30685d15e613986a4c83c5ec9c2201d9b55a290308329a211e0d7fca9",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T15:53:52.313361+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a Lead Forward Deployed AI Software Engineering role focused on building agentic AI applications, LLM orchestration, and Python backend services, rather than a DevOps, SRE, or platform engineering role.",
+      "signature": "d379cea473a1dec7fd8bd05b27ca7fb15d45792980c94aec50581e8293157686"
+    },
+    "Citi::859038498623": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused on application development and AI agent engineering (building reasoning loops, Python backend logic, and LLM integrations) rather than DevOps, platform engineering, or infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-20T15:53:52+00:00",
+      "jd_hash": "a78285d29d328e6b343cb8e5179dc309fd683910a18412e143f6f0aebf17256d",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T15:53:52.313337+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on application development and AI agent engineering (building reasoning loops, Python backend logic, and LLM integrations) rather than DevOps, platform engineering, or infrastructure automation.",
+      "signature": "981e29240bf98eccb046179738d482af786128e2af54d81bf16a5976ec9e6297"
     },
     "Citi::859038501308": {
       "ai_assessment": {
@@ -1736,6 +1787,23 @@
       "reason": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
       "signature": "3f46137656af51ad1431dffa1a7013a017fd59c25ea5413f472e2f9f008f5e7a"
     },
+    "J.P. Morgan::210801851": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is focused on VMware NSX-T, virtualization support, and networking rather than cloud-native DevOps/platform engineering. Furthermore, the location is Buenos Aires, Argentina, which is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-20T15:53:52+00:00",
+      "jd_hash": "469c92cd8a7db2f03999e4413464c6ba84f18b2e9eedfab303c6b1a329feae29",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T15:53:52.313319+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on VMware NSX-T, virtualization support, and networking rather than cloud-native DevOps/platform engineering. Furthermore, the location is Buenos Aires, Argentina, which is outside the enabled regions.",
+      "signature": "ac4a7a51bbcab173fbb74cd79aa71f9b2ee8004f862092568aac0b56c4edb7d8"
+    },
     "Microsoft::1970393556927480": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1786,6 +1854,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is for a Technical Program Manager / Forward Deployed Engineer requiring fluency in Japanese and located in Tokyo, Japan, which is outside the candidate's allowed regions and does not match core DevOps/infrastructure responsibilities.",
       "signature": "b84ad21f12e96785b2004f217d470652d580464c12a78907c56a4ec685672b33"
+    },
+    "Microsoft::1970393556927529": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is for a Principal Forward Deployed Engineer / Technical Program Manager focused on customer engagement and project management rather than core DevOps, SRE, or infrastructure platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-20T15:53:52+00:00",
+      "jd_hash": "09ddca4d3eaa537287d00fabbb919c12850ef2c72fb8d1957e3f4fb855afc5d7",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T15:53:52.313188+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Principal Forward Deployed Engineer / Technical Program Manager focused on customer engagement and project management rather than core DevOps, SRE, or infrastructure platform engineering.",
+      "signature": "0973e52c4d3e4a8efdfb8a6b9b40a593cbd350e32eaa27061591b4259f8925cf"
     },
     "Microsoft::1970393556945399": {
       "ai_assessment": {
@@ -2126,6 +2211,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires U.S. citizenship, active U.S. security clearance (Secret or Top Secret), and location in Virginia or Hawaii, which conflicts with the candidate's regions. Additionally, the role demands 8+ years of experience while the candidate has 6 years.",
       "signature": "88b9d6d7349fe3b98c5282340ee5c1ce76f9ef389bb3518fc16223c738e6b408"
+    },
+    "Salesforce::JR348954": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Forward Deployed Software Engineer focusing on customer-facing AI application deployment and Salesforce platform customization, requiring Italian language proficiency and located in Italy, which mismatches the candidate's core DevOps/Platform profile, language capabilities, and location preferences.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-20T15:53:52+00:00",
+      "jd_hash": "12f2a82b2ad9a18f4f6da80b722cac64079bf6b879df4defc93e18666d2802ef",
+      "mode": "ai",
+      "next_review_at": "2026-10-27T15:53:52.313260+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Forward Deployed Software Engineer focusing on customer-facing AI application deployment and Salesforce platform customization, requiring Italian language proficiency and located in Italy, which mismatches the candidate's core DevOps/Platform profile, language capabilities, and location preferences.",
+      "signature": "e1cc28cae03a92034d3d717a76ec72d5c183a7a56d5fc0c9fa59c555749419c8"
     },
     "Salesforce::JR348957": {
       "ai_assessment": {
