@@ -240,6 +240,23 @@
       "reason": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
       "signature": "127ed1555faf3cb20487b81f521f9bc1aa1d7bc9571c1382f1cd6cf63113647a"
     },
+    "Citi::859038203579": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is primarily focused on Data Engineering, ETL development, and SQL Server database management rather than DevOps, SRE, or platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "08f0831f2887619f3aa8fa52647cefe5e4bcc45756f31ad3b361fb5da65ad01f",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188573+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is primarily focused on Data Engineering, ETL development, and SQL Server database management rather than DevOps, SRE, or platform engineering.",
+      "signature": "372daef2dcd955442a1ef9e69edc789c98c572867d158c1b91890c693623147b"
+    },
     "Citi::859038498233": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -307,6 +324,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role focuses heavily on enterprise network load balancing (F5, Citrix ADC) and application delivery rather than general DevOps/cloud platform automation. Additionally, the location is Budapest, Hungary, which falls outside the candidate's enabled regions.",
       "signature": "34a22e5cf6472518b9fb8b9f032d6e649a96224f6d945291ea8197ba3524abf7"
+    },
+    "Citi::859038519510": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused on AI evaluation, prompt engineering, and building agentic workflows rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "d52d34addedf9887da9564124e2485b9fbcbc6fc1fb7275c4e5956e0bd231c9f",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188552+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on AI evaluation, prompt engineering, and building agentic workflows rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+      "signature": "be1ae2f3cbfca630c16b6b2ff11b311df12fa4cc0423d2661e7713d737bd7ba2"
     },
     "Cloudflare::7572075": {
       "ai_assessment": {
@@ -1906,6 +1940,57 @@
       "reason": "The role is focused on VMware NSX-T, virtualization support, and networking rather than cloud-native DevOps/platform engineering. Furthermore, the location is Buenos Aires, Argentina, which is outside the enabled regions.",
       "signature": "ac4a7a51bbcab173fbb74cd79aa71f9b2ee8004f862092568aac0b56c4edb7d8"
     },
+    "Mastercard::R-291845": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role requires deep hands-on expertise with HP NonStop (Tandem) platforms and traditional payments infrastructure, which does not match the candidate's cloud-native DevOps, Kubernetes, and AWS/Azure skill set.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "b6872d01ff7fcecfe29d9b9a3e4f79e4f438fb187e29ee0ec36ee55e82390c76",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188599+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role requires deep hands-on expertise with HP NonStop (Tandem) platforms and traditional payments infrastructure, which does not match the candidate's cloud-native DevOps, Kubernetes, and AWS/Azure skill set.",
+      "signature": "fa3d980ccd0223ce8d8889d373bd39513a25232c61c8efd842ca87eedcde2a4b"
+    },
+    "Mastercard::R-294125": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is focused on software engineering for a Data & AI platform rather than DevOps, SRE, or infrastructure automation. Additionally, the job location is Arlington, Virginia, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "5f3464bc601a6284a98b987c14993563450aad2e793d7fc965b5f28a90b3609b",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188662+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on software engineering for a Data & AI platform rather than DevOps, SRE, or infrastructure automation. Additionally, the job location is Arlington, Virginia, which is outside the candidate's enabled regions.",
+      "signature": "dd93c14433098aac21da7bc998d081fb16eaa79ee56e23c4c12771a4a469acb6"
+    },
+    "Mastercard::R-294126": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Manager of Software Engineering focusing on data platform, data modeling, and governance, rather than DevOps, SRE, or platform engineering infrastructure. Additionally, the location is Arlington, Virginia, which is outside the candidate's allowed regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "1df083be0cc5f13a8654377db62098d08416162b61016c58e709d42edd931506",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188641+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Manager of Software Engineering focusing on data platform, data modeling, and governance, rather than DevOps, SRE, or platform engineering infrastructure. Additionally, the location is Arlington, Virginia, which is outside the candidate's allowed regions.",
+      "signature": "94a242785be8b7c15b6c770933da727049e33f747908547ac3e52916da7b57bd"
+    },
     "Microsoft::1970393556927480": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2314,6 +2399,23 @@
       "reason": "The role requires 8+ years of experience for a Staff-level Forward Deployed Engineer position, while the candidate has 6 years. Furthermore, the job location is San Francisco, which falls outside the candidate's enabled and preferred regions.",
       "signature": "88ba92831439629ad23c161a801fe292907cfec4b6772615659a0641d1ec5062"
     },
+    "Rubrik::8273808": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is primarily focused on software engineering and API development (Backend, Node.js/Java/Python/Go, API gateways, full-stack services, integration platforms) rather than infrastructure automation, DevOps, or SRE platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "0bc39e7b1a47073207e741749dd52aa5e4fa18bec72c881deab6fc9f44a66668",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188273+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is primarily focused on software engineering and API development (Backend, Node.js/Java/Python/Go, API gateways, full-stack services, integration platforms) rather than infrastructure automation, DevOps, or SRE platform engineering.",
+      "signature": "67ebf68aa6e735750cf3ac343bad2efc24c8cd34ca0087d4a7071280ca176b8f"
+    },
     "Salesforce::JR309445": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2569,6 +2671,23 @@
       "reason": "This is a Forward Deployed Engineer role focused on Salesforce Data 360, application-layer development (Apex, Python, SQL), and data engineering, rather than a DevOps, SRE, or platform engineering infrastructure role.",
       "signature": "91a459f28c6a14952d1a2546109d798e46e4de753c7033b0c4e2c141cf0dcf9b"
     },
+    "Salesforce::JR361210": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires an active Top Secret/SCI clearance with polygraph and is located in Herndon, Virginia, which conflicts with the candidate's enabled regions (India, UAE, Europe).",
+        "ai_relevance": "relevant",
+        "ai_score": 0
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "37a14a0d45d9a44041cb1d77ec3c583d93dd5cf4d82b4e4b278653676bc97bc5",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188526+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role requires an active Top Secret/SCI clearance with polygraph and is located in Herndon, Virginia, which conflicts with the candidate's enabled regions (India, UAE, Europe).",
+      "signature": "71dfdc924ed3a88aa6b3d04be193b02435b225c78f3d20ab023187883acdf841"
+    },
     "Salesforce::JR363024": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2653,6 +2772,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "This role is a specialized Salesforce Technical Architect consulting position requiring extensive (8+ years) experience specifically on the Salesforce Platform, SFDX, and proprietary Salesforce deployment tools. It requires US citizenship and a security clearance, which conflicts with the candidate's location profile. Furthermore, it is an enterprise platform consulting role rather than general DevOps/infrastructure automation.",
       "signature": "55c8e672553c29cc46cba3a4c280cd94e3980125070a6856871180e8949f3823"
+    },
+    "Salesforce::JR364817": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing product/solutions consulting role for Salesforce Life Sciences workflows rather than a DevOps, SRE, or infrastructure platform engineering position. The location is also outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-21T17:41:48+00:00",
+      "jd_hash": "b348d37a3903f9a38dc1ae6018f1da31ef3d537d6c5d8b02c86c86748bd8c03a",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T17:41:48.188490+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a customer-facing product/solutions consulting role for Salesforce Life Sciences workflows rather than a DevOps, SRE, or infrastructure platform engineering position. The location is also outside the candidate's enabled regions.",
+      "signature": "2481c330699f3541fc26142048cff82f91f57ea6e913d5e504321461615b6b59"
     },
     "Salesforce::JR365133": {
       "ai_assessment": {
@@ -3567,6 +3703,7 @@
     "Mastercard::R-292934": "2026-10-09T08:23:53+00:00",
     "Mastercard::R-293126": "2026-10-15T16:08:56+00:00",
     "Mastercard::R-293452": "2026-10-12T19:27:43+00:00",
+    "Mastercard::R-293622": "2026-10-21T17:41:53+00:00",
     "Mastercard::R-293997": "2026-10-15T23:04:08+00:00",
     "Meesho::60e0d986-abe8-42ee-b172-0d9aecb307b7": "2026-07-08T18:01:25+00:00",
     "Microsoft::1970393556650632": "2026-07-06T16:03:35+00:00",
