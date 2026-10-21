@@ -2518,6 +2518,23 @@
       "reason": "This role is a specialized Salesforce Technical Architect consulting position requiring extensive (8+ years) experience specifically on the Salesforce Platform, SFDX, and proprietary Salesforce deployment tools. It requires US citizenship and a security clearance, which conflicts with the candidate's location profile. Furthermore, it is an enterprise platform consulting role rather than general DevOps/infrastructure automation.",
       "signature": "55c8e672553c29cc46cba3a4c280cd94e3980125070a6856871180e8949f3823"
     },
+    "Salesforce::JR365133": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Staff Data Platform Engineer focused on data systems, analytics, and semantic layers rather than core DevOps or SRE. Additionally, the role is located in the US (SF, NYC, Atlanta, Seattle) outside the candidate's preferred regions, and requires 8+ years of experience while the candidate has 6.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T01:22:18+00:00",
+      "jd_hash": "cb7bdd9629a750307e062bb97f456d499da566ba210f122429e56becb786079b",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T01:22:18.055741+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Staff Data Platform Engineer focused on data systems, analytics, and semantic layers rather than core DevOps or SRE. Additionally, the role is located in the US (SF, NYC, Atlanta, Seattle) outside the candidate's preferred regions, and requires 8+ years of experience while the candidate has 6.",
+      "signature": "d5eebdf74fc38ae59147b41415d0aef0073793af8052e81e0f2ccbb75182ca37"
+    },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2829,6 +2846,7 @@
     "Atlassian::27183": "2026-10-17T13:50:59+00:00",
     "Atlassian::27312": "2026-10-17T22:03:32+00:00",
     "Atlassian::27391": "2026-09-25T15:40:48+00:00",
+    "Atlassian::27796": "2026-10-21T01:22:19+00:00",
     "Careem::8620488002": "2026-09-15T16:39:26+00:00",
     "Celonis::7781590003": "2026-09-15T16:39:26+00:00",
     "Celonis::7885744003": "2026-08-17T12:36:33+00:00",
