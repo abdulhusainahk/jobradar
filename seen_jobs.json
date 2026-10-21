@@ -291,6 +291,23 @@
       "reason": "The role is for an AI/LLM Security Engineer focusing on applied AI and cybersecurity workflows rather than DevOps, SRE, or platform engineering. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred or enabled regions.",
       "signature": "a83a4c4a657191e5f767f205969207b0e2fcc6e86fc7c302e88cfec7a88b20e3"
     },
+    "Citi::859038502642": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role focuses heavily on enterprise network load balancing (F5, Citrix ADC) and application delivery rather than general DevOps/cloud platform automation. Additionally, the location is Budapest, Hungary, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "8f966d4a5c4c47364a43e31ca7f27c0625d30a0b3ade2b5b0563e7836d3d4990",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915705+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses heavily on enterprise network load balancing (F5, Citrix ADC) and application delivery rather than general DevOps/cloud platform automation. Additionally, the location is Budapest, Hungary, which falls outside the candidate's enabled regions.",
+      "signature": "34a22e5cf6472518b9fb8b9f032d6e649a96224f6d945291ea8197ba3524abf7"
+    },
     "Cloudflare::7572075": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1787,6 +1804,23 @@
       "reason": "The role focuses on forward-deployed AI application engineering and building GenAI solutions rather than core DevOps, SRE, or platform engineering infrastructure. Additionally, the location in Poland is outside the enabled regions.",
       "signature": "8cef0a5e5780f00dce031b4f0e56297ee33d6b9add9c60eea9f1da04a076ec86"
     },
+    "J.P. Morgan::210790282": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a general Software Engineer position focused on Java, Spring, MongoDB, and Kafka application development rather than a dedicated DevOps, SRE, or Platform Engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "84586c6c5ed28e4ef1e6ea60327a08cddb5093391d36088042b789e7c41a2181",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915574+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a general Software Engineer position focused on Java, Spring, MongoDB, and Kafka application development rather than a dedicated DevOps, SRE, or Platform Engineering role.",
+      "signature": "7828f114ef21a83fe87e4205600b3ec0318ff66710380b6ca6503c68c382f98d"
+    },
     "J.P. Morgan::210796375": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1803,6 +1837,57 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
       "signature": "3f46137656af51ad1431dffa1a7013a017fd59c25ea5413f472e2f9f008f5e7a"
+    },
+    "J.P. Morgan::210800030": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused on proxy and network security administration (Broadcom/Bluecoat, Zscaler, etc.) rather than core DevOps, cloud infrastructure automation, or platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "44db414dc5d985d6366cb5e4847b3b031bd1c7853b86491cabb5b5fe60c2a348",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915613+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on proxy and network security administration (Broadcom/Bluecoat, Zscaler, etc.) rather than core DevOps, cloud infrastructure automation, or platform engineering.",
+      "signature": "3458818a3735015b8dcd7c10e21185f776fa97502d07edaae3a653edf07d05d1"
+    },
+    "J.P. Morgan::210800033": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused specifically on network security and proxy appliances (Broadcom Bluecoat, Symantec, Zscaler) rather than core DevOps, Kubernetes, and cloud infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "44db414dc5d985d6366cb5e4847b3b031bd1c7853b86491cabb5b5fe60c2a348",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915645+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused specifically on network security and proxy appliances (Broadcom Bluecoat, Symantec, Zscaler) rather than core DevOps, Kubernetes, and cloud infrastructure automation.",
+      "signature": "334ae27438cb69a4e53065f38746ac334524692f02859ad0b00ecc3c8c670ed4"
+    },
+    "J.P. Morgan::210800035": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused heavily on network proxy and security appliances (Broadcom/Bluecoat, Zscaler, SSL visibility) rather than general cloud infrastructure automation, Kubernetes, or DevOps/Platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "44db414dc5d985d6366cb5e4847b3b031bd1c7853b86491cabb5b5fe60c2a348",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915677+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused heavily on network proxy and security appliances (Broadcom/Bluecoat, Zscaler, SSL visibility) rather than general cloud infrastructure automation, Kubernetes, or DevOps/Platform engineering.",
+      "signature": "1407cf360c41b9d5ef93f7adda6aa558f98d30781de2e53c40e9ca1f53eaeaa8"
     },
     "J.P. Morgan::210801851": {
       "ai_assessment": {
@@ -2297,6 +2382,23 @@
       "reason": "The role is a customer-facing Forward Deployed Engineer position requiring Italian language proficiency and Salesforce platform expertise, which does not match a core DevOps/SRE/Platform infrastructure role.",
       "signature": "c11c91995f389dc44b9656b7aca63dbdb9726a7fce70764af96bcdf3c1983afd"
     },
+    "Salesforce::JR348983": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a 'Forward Deployed Engineer' within Sales rather than a DevOps, SRE, or Platform Engineering role, and the location is in South Africa, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "a896e6a051f88582a30f5f8fdc33a0c69623a16e3db9a0e283f6de6aa3f4caba",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915529+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a 'Forward Deployed Engineer' within Sales rather than a DevOps, SRE, or Platform Engineering role, and the location is in South Africa, which is outside the candidate's enabled regions.",
+      "signature": "3d001f1b60b457ec098fedb15f4df8c9f8a456ef218e8e4db6de20259c969ca4"
+    },
     "Salesforce::JR348992": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2365,6 +2467,23 @@
       "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on building AI applications, data pipelines, and integrations within enterprise software environments, rather than a DevOps/SRE/Platform engineering role focused on infrastructure automation and reliability. Additionally, the job locations are restricted to the US while the candidate's regions are India, UAE, and Europe.",
       "signature": "17448129693e72d44335494b42e547492c2d28f9bb292e488ae46706fff741f7"
     },
+    "Salesforce::JR353330": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Forward Deployed Engineer focusing on customer-facing AI application deployment, prompt engineering, and full-stack development, whereas the candidate is specialized in DevOps, SRE, and platform engineering. Additionally, the job location is in Paris, France, which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "d8ce3297ac3f9f817306e178f063fb13e0d12bee31402bf24db20732a237303e",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915402+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Forward Deployed Engineer focusing on customer-facing AI application deployment, prompt engineering, and full-stack development, whereas the candidate is specialized in DevOps, SRE, and platform engineering. Additionally, the job location is in Paris, France, which does not match the candidate's enabled regions.",
+      "signature": "a4b30326b53b29347dce4c2655ba3311079ad04fc6417b0c6c21c0724f5234e3"
+    },
     "Salesforce::JR353428": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2415,6 +2534,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is a Forward Deployed Consultant / Product Manager position focusing on Agentforce platform solutions, process automation, and business analysis, which does not match the candidate's DevOps and infrastructure automation skill set. Additionally, the job location is in the US while the candidate's preferred regions are India, UAE, and Europe.",
       "signature": "cbd0e00dff2ad725117ed013836f9b3853b23e645eac4269e08b9071fdecd861"
+    },
+    "Salesforce::JR360467": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Forward Deployed Engineer focusing on customer-facing AI application deployment and custom development rather than DevOps, SRE, or platform engineering infrastructure. Additionally, the location is Paris, France, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "d8ce3297ac3f9f817306e178f063fb13e0d12bee31402bf24db20732a237303e",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915301+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Forward Deployed Engineer focusing on customer-facing AI application deployment and custom development rather than DevOps, SRE, or platform engineering infrastructure. Additionally, the location is Paris, France, which falls outside the candidate's enabled regions.",
+      "signature": "875eff062d12eeb1f25bb4f13d72c059ec716709626551d2bbb4dbfadcafaf53"
     },
     "Salesforce::JR361110": {
       "ai_assessment": {
@@ -2534,6 +2670,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is for a Staff Data Platform Engineer focused on data systems, analytics, and semantic layers rather than core DevOps or SRE. Additionally, the role is located in the US (SF, NYC, Atlanta, Seattle) outside the candidate's preferred regions, and requires 8+ years of experience while the candidate has 6.",
       "signature": "d5eebdf74fc38ae59147b41415d0aef0073793af8052e81e0f2ccbb75182ca37"
+    },
+    "Salesforce::JR365157": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This role is a Senior Technical Consultant focused heavily on Salesforce project delivery, Apex, LWC, and Salesforce architecture, rather than core DevOps, SRE, or platform engineering infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-21T12:18:24+00:00",
+      "jd_hash": "e50a37d49d35fbcd26ffa002a1f7eef80d1f6049092ea623fe3140cd4f34a1af",
+      "mode": "ai",
+      "next_review_at": "2026-10-28T12:18:24.915470+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This role is a Senior Technical Consultant focused heavily on Salesforce project delivery, Apex, LWC, and Salesforce architecture, rather than core DevOps, SRE, or platform engineering infrastructure automation.",
+      "signature": "b40e5a252d72cea4d6318098f40c4f8012a6bb991239fc332c20a042c63004ce"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
@@ -3336,6 +3489,8 @@
     "J.P. Morgan::210800078": "2026-10-15T16:08:56+00:00",
     "J.P. Morgan::210800125": "2026-10-16T19:12:37+00:00",
     "J.P. Morgan::210800665": "2026-10-16T15:15:46+00:00",
+    "J.P. Morgan::210801167": "2026-10-21T12:18:28+00:00",
+    "J.P. Morgan::210801176": "2026-10-21T12:18:28+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
     "Mastercard::R-273348": "2026-07-08T20:03:56+00:00",
@@ -3637,6 +3792,8 @@
     "PhonePe::1000000000001806": "2026-09-15T11:30:01+00:00",
     "PhonePe::1000000000001812": "2026-09-15T11:30:01+00:00",
     "PhonePe::1000000000003063": "2026-09-25T10:35:49+00:00",
+    "PhonePe::1000000000004487": "2026-10-21T12:18:28+00:00",
+    "PhonePe::1000000000004498": "2026-10-21T12:18:28+00:00",
     "PhonePe::6574130003": "2026-07-06T14:03:12+00:00",
     "PhonePe::6589348003": "2026-07-06T14:03:12+00:00",
     "PhonePe::7731736003": "2026-07-06T14:03:12+00:00",
@@ -3700,6 +3857,7 @@
     "Salesforce::JR364391": "2026-10-16T10:13:34+00:00",
     "Salesforce::JR364392": "2026-10-16T10:13:34+00:00",
     "Salesforce::JR364395": "2026-10-16T10:13:34+00:00",
+    "Salesforce::JR365006": "2026-10-21T12:18:28+00:00",
     "Snowflake::4fe8d816-0453-4d63-ae0a-2085a5a49101": "2026-07-08T20:02:35+00:00",
     "Snowflake::cbc2087c-f5fc-48b7-8d23-114836a42e3e": "2026-08-13T05:54:29+00:00",
     "Stripe::7462961": "2026-09-15T16:39:26+00:00",
