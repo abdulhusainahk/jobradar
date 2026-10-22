@@ -2416,6 +2416,23 @@
       "reason": "The role requires 8+ years of experience for a Staff-level Forward Deployed Engineer position, while the candidate has 6 years. Furthermore, the job location is San Francisco, which falls outside the candidate's enabled and preferred regions.",
       "signature": "88ba92831439629ad23c161a801fe292907cfec4b6772615659a0641d1ec5062"
     },
+    "PhonePe::1000000000004581": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused heavily on database administration and specialized Oracle Exadata Cloud@Customer infrastructure rather than general cloud platform engineering or infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T08:02:36+00:00",
+      "jd_hash": "b221c18dafb1cb845e1cfa5e973eff019773826fea01c114b3978bf11fb51655",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T08:02:36.046341+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused heavily on database administration and specialized Oracle Exadata Cloud@Customer infrastructure rather than general cloud platform engineering or infrastructure automation.",
+      "signature": "31c505836abf1e8e332f2fa410b1fd90d7e2318db2d29c272842ef61a8d724ad"
+    },
     "Rubrik::8273808": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2841,6 +2858,23 @@
       "reason": "This role is a Senior Technical Consultant focused heavily on Salesforce project delivery, Apex, LWC, and Salesforce architecture, rather than core DevOps, SRE, or platform engineering infrastructure automation.",
       "signature": "b40e5a252d72cea4d6318098f40c4f8012a6bb991239fc332c20a042c63004ce"
     },
+    "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data migrations, data warehousing, and software development for the Snowflake platform, rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T08:02:36+00:00",
+      "jd_hash": "625f7399812a3f748b6b4b75f1bddf4f58ad2c8a8b0aa5965545696d83ef68c7",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T08:02:36.046683+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data migrations, data warehousing, and software development for the Snowflake platform, rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+      "signature": "8ef0a82fb624fa5eab9aaede36ad8bf0888fc58c73f2fe394e57ecd8188f0efb"
+    },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3208,6 +3242,7 @@
     "Citi::859038232377": "2026-10-07T02:50:45+00:00",
     "Citi::859038277211": "2026-10-07T22:23:06+00:00",
     "Citi::859038286973": "2026-10-08T16:55:41+00:00",
+    "Citi::859038426613": "2026-10-22T08:02:38+00:00",
     "Cloudflare::7093840": "2026-09-15T16:39:26+00:00",
     "Cloudflare::7462801": "2026-09-15T16:39:26+00:00",
     "Cloudflare::7560174": "2026-09-15T16:39:26+00:00",
@@ -3743,6 +3778,7 @@
     "Microsoft::1970393556992461": "2026-09-11T12:33:48+00:00",
     "Microsoft::1970393556994735": "2026-09-15T16:39:26+00:00",
     "Microsoft::1970393557008713": "2026-10-17T13:50:59+00:00",
+    "Microsoft::1970393557017633": "2026-10-22T08:02:38+00:00",
     "Microsoft::1970393557019254": "2026-10-05T18:53:06+00:00",
     "Microsoft::1970393557021843": "2026-10-05T18:53:09+00:00",
     "Microsoft::1970393557023797": "2026-10-13T08:51:04+00:00",
