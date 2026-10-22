@@ -2812,17 +2812,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Forward Deployed Consultant / Product Manager position focusing on Agentforce platform solutions, process automation, and business analysis, which does not match the candidate's DevOps and infrastructure automation skill set. Additionally, the job location is in the US while the candidate's preferred regions are India, UAE, and Europe.",
+        "ai_note": "This is a forward-deployed process and business consulting role focusing on enterprise business processes, ERP, supply chain, and change management rather than infrastructure automation, Kubernetes, or DevOps/SRE engineering. Additionally, the location is in the US while the candidate prefers India, UAE, or Europe.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-10-17T22:03:30+00:00",
-      "jd_hash": "a2f9a737bfe276dd775e734cf1f636a3e3831bb9ecff1e50dbde4cd94aa13cdf",
+      "at": "2026-10-22T22:03:34+00:00",
+      "jd_hash": "0ed042cd68f4ce3f46b9b0ef4ff53259dcdf0fe41e75eb2d34bdaa1b9c93561f",
       "mode": "ai",
-      "next_review_at": "2026-10-24T22:03:30.162669+00:00",
+      "next_review_at": "2026-10-29T22:03:34.421581+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Forward Deployed Consultant / Product Manager position focusing on Agentforce platform solutions, process automation, and business analysis, which does not match the candidate's DevOps and infrastructure automation skill set. Additionally, the job location is in the US while the candidate's preferred regions are India, UAE, and Europe.",
-      "signature": "cbd0e00dff2ad725117ed013836f9b3853b23e645eac4269e08b9071fdecd861"
+      "reason": "This is a forward-deployed process and business consulting role focusing on enterprise business processes, ERP, supply chain, and change management rather than infrastructure automation, Kubernetes, or DevOps/SRE engineering. Additionally, the location is in the US while the candidate prefers India, UAE, or Europe.",
+      "signature": "0d0bb31408bb8791e15ce9de0263920f779ab5e3aebe1a94397c1000fced781d"
     },
     "Salesforce::JR360467": {
       "ai_assessment": {
