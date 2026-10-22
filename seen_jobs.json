@@ -138,6 +138,23 @@
       "reason": "This is a Product Experience Design (UX/UI for developers) role rather than a DevOps, SRE, or infrastructure automation role, and it is located in San Francisco.",
       "signature": "8765364bc723b3f04758446ca15e5ce415f321d728b62c81032f8476443967e3"
     },
+    "Airbnb::8312713": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is an Atlassian/Jira administration and SaaS configuration role, not a core DevOps, SRE, or cloud infrastructure automation engineering role.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T18:28:57+00:00",
+      "jd_hash": "d6f36ae7595998e4f3db8ac2621d200b28e9d50f5429513801fdbd7bf6c6d0a8",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T18:28:57.603308+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is an Atlassian/Jira administration and SaaS configuration role, not a core DevOps, SRE, or cloud infrastructure automation engineering role.",
+      "signature": "1a38a60e58b98684764bb6b55b554b6823756323cc3f1e8bd723ca3e251dd04c"
+    },
     "Amazon::10435349": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1940,6 +1957,23 @@
       "reason": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
       "signature": "3f46137656af51ad1431dffa1a7013a017fd59c25ea5413f472e2f9f008f5e7a"
     },
+    "J.P. Morgan::210796782": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role focuses on Trader Voice infrastructure, VoIP, and telephony systems rather than DevOps, SRE, or cloud platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-22T18:28:57+00:00",
+      "jd_hash": "2f70eddf52627570ffd954297f8315bd7afde16c551b277cb0039136dd9d8a33",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T18:28:57.603458+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses on Trader Voice infrastructure, VoIP, and telephony systems rather than DevOps, SRE, or cloud platform engineering.",
+      "signature": "37a334ec9ad4ef1d8118ed82dfda1ffab7a1aacdc2fbb22db77ac3fd8304c969"
+    },
     "J.P. Morgan::210800030": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1990,6 +2024,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is focused heavily on network proxy and security appliances (Broadcom/Bluecoat, Zscaler, SSL visibility) rather than general cloud infrastructure automation, Kubernetes, or DevOps/Platform engineering.",
       "signature": "1407cf360c41b9d5ef93f7adda6aa558f98d30781de2e53c40e9ca1f53eaeaa8"
+    },
+    "J.P. Morgan::210801774": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused heavily on network infrastructure engineering and F5 load balancing administration rather than modern cloud platforms, Kubernetes, and CI/CD pipelines.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-22T18:28:57+00:00",
+      "jd_hash": "f5f07973508ac84c632b2c71c1bdcbc58581f7a77b18037a22abc7c980bb4b51",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T18:28:57.603483+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused heavily on network infrastructure engineering and F5 load balancing administration rather than modern cloud platforms, Kubernetes, and CI/CD pipelines.",
+      "signature": "e78db0f1fb392bdc94dc085421aebe43bcb18bb03ea53e0e8c7435da87ef6c4f"
     },
     "J.P. Morgan::210801851": {
       "ai_assessment": {
@@ -2296,6 +2347,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "This role focuses on End User Computing (EUC) and client platform engineering (managing macOS, Windows, and Linux endpoints, MDM, and employee devices) rather than cloud infrastructure automation, DevOps, or SRE. Additionally, the candidate's years of experience fall below the stated requirement of 8+ years.",
       "signature": "501c92aca703c0c248476f76ea025e109bda8bd39c53516fbc86c4267260e7f8"
+    },
+    "MongoDB::8304146": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is focused on customer-facing AI and software engineering solutions rather than core infrastructure automation, DevOps, or platform engineering. Furthermore, the location is restricted to the United States, which does not match the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T18:28:57+00:00",
+      "jd_hash": "876ad352dad9a6e6976eac638a9d6adfde9df7fe750da9fecbcf9868de6f6638",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T18:28:57.603022+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on customer-facing AI and software engineering solutions rather than core infrastructure automation, DevOps, or platform engineering. Furthermore, the location is restricted to the United States, which does not match the candidate's enabled regions.",
+      "signature": "123fed5148dd7c6c7d3a5045325606123a0e37c2a78eca896f22e628e8269215"
     },
     "NVIDIA::JR1998048": {
       "ai_assessment": {
@@ -2722,6 +2790,23 @@
       "reason": "The role is for a Forward Deployed Engineer focusing on custom AI agent development, application solutions, and Salesforce platforms rather than core DevOps, SRE, or platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the candidate's enabled regions.",
       "signature": "f1ad7ef7b269dd24240c42095679079be24a0f27b72b51318186022aab9fd164"
     },
+    "Salesforce::JR358360": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on customer-facing AI application delivery, prompt engineering, and full-stack/solutions development rather than infrastructure automation, DevOps, SRE, or platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T18:28:57+00:00",
+      "jd_hash": "832bb71431dcfc010f91a8b40facf40c7c5fe16d1ba4a263a044fd0b2936cf81",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T18:28:57.603389+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Engineer focusing on customer-facing AI application delivery, prompt engineering, and full-stack/solutions development rather than infrastructure automation, DevOps, SRE, or platform engineering.",
+      "signature": "1c7cbb384398ab0bd28eeaf341b0bbeb183463bc71562c7b42ee9bcae077a4cf"
+    },
     "Salesforce::JR360310": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2880,17 +2965,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is a customer-facing product/solutions consulting role for Salesforce Life Sciences workflows rather than a DevOps, SRE, or infrastructure platform engineering position. The location is also outside the candidate's enabled regions.",
+        "ai_note": "This is a product management and solutions consulting role focused on Salesforce CRM, Life Sciences workflows, and business process automation rather than DevOps, infrastructure automation, or platform engineering. Furthermore, the role is located in the United States while the candidate is located in enabled regions outside the US.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-10-21T17:41:48+00:00",
+      "at": "2026-10-22T18:28:57+00:00",
       "jd_hash": "b348d37a3903f9a38dc1ae6018f1da31ef3d537d6c5d8b02c86c86748bd8c03a",
       "mode": "ai",
-      "next_review_at": "2026-10-28T17:41:48.188490+00:00",
+      "next_review_at": "2026-10-29T18:28:57.603350+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This is a customer-facing product/solutions consulting role for Salesforce Life Sciences workflows rather than a DevOps, SRE, or infrastructure platform engineering position. The location is also outside the candidate's enabled regions.",
-      "signature": "2481c330699f3541fc26142048cff82f91f57ea6e913d5e504321461615b6b59"
+      "reason": "This is a product management and solutions consulting role focused on Salesforce CRM, Life Sciences workflows, and business process automation rather than DevOps, infrastructure automation, or platform engineering. Furthermore, the role is located in the United States while the candidate is located in enabled regions outside the US.",
+      "signature": "792389d5a82fb4f788ed964dea3747cb357c34a07aea3c33a8ac6bfee96dad22"
     },
     "Salesforce::JR365133": {
       "ai_assessment": {
@@ -3447,6 +3532,7 @@
     "Google::121140160912859846": "2026-10-17T13:50:59+00:00",
     "Google::121343637135991494": "2026-08-18T11:21:43+00:00",
     "Google::122664621973611206": "2026-10-17T13:50:59+00:00",
+    "Google::124000446996980422": "2026-10-22T18:29:00+00:00",
     "Google::125086141714965190": "2026-10-12T19:27:52+00:00",
     "Google::126802595330040518": "2026-10-17T13:50:59+00:00",
     "Google::127861388520366790": "2026-09-22T08:05:32+00:00",
@@ -3747,6 +3833,8 @@
     "J.P. Morgan::210800665": "2026-10-16T15:15:46+00:00",
     "J.P. Morgan::210801167": "2026-10-21T12:18:28+00:00",
     "J.P. Morgan::210801176": "2026-10-21T12:18:28+00:00",
+    "J.P. Morgan::210801724": "2026-10-22T18:29:00+00:00",
+    "J.P. Morgan::210801781": "2026-10-22T18:29:00+00:00",
     "J.P. Morgan::210801783": "2026-10-22T13:43:44+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
