@@ -240,6 +240,40 @@
       "reason": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
       "signature": "127ed1555faf3cb20487b81f521f9bc1aa1d7bc9571c1382f1cd6cf63113647a"
     },
+    "Amazon::10584792": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing heavily on customer-facing software development, AI application architecture, and professional services rather than core infrastructure automation, SRE, or platform engineering. Furthermore, the job location is in Singapore (SGP), which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-22T13:43:42+00:00",
+      "jd_hash": "a5052a8b7d761ecd6c2ed799fe73dc60347ce7190234cb01489d5650f38922db",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T13:43:42.233233+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Engineer focusing heavily on customer-facing software development, AI application architecture, and professional services rather than core infrastructure automation, SRE, or platform engineering. Furthermore, the job location is in Singapore (SGP), which falls outside the candidate's enabled regions.",
+      "signature": "a4a0fba1e876f793705705e68ce2ba553689d8ce6c2f2ab70bbcf7274e1d92b2"
+    },
+    "Amazon::10584793": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on software development, customer-facing delivery, and AI application engineering rather than core infrastructure automation, platform engineering, or SRE. Furthermore, the job location is Singapore (SGP), which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-22T13:43:42+00:00",
+      "jd_hash": "d3403a41164051453806c3c3441c3fe060d0c3a42b7a9d7dd153256ff891994f",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T13:43:42.233192+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Engineer focusing on software development, customer-facing delivery, and AI application engineering rather than core infrastructure automation, platform engineering, or SRE. Furthermore, the job location is Singapore (SGP), which falls outside the candidate's enabled regions.",
+      "signature": "0fd63dd38332b8c0b0f4712518a2e7f0dbb09067159ecc1e974253dcc136b4a4"
+    },
     "Amazon::10585257": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1855,6 +1889,23 @@
       "reason": "The role focuses on forward-deployed AI application engineering and building GenAI solutions rather than core DevOps, SRE, or platform engineering infrastructure. Additionally, the location in Poland is outside the enabled regions.",
       "signature": "8cef0a5e5780f00dce031b4f0e56297ee33d6b9add9c60eea9f1da04a076ec86"
     },
+    "J.P. Morgan::210780917": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a Principal Software Engineer focused on forward-deployed data solutions, Databricks, Snowflake, and data governance rather than core DevOps, SRE, or platform engineering infrastructure automation. Additionally, the role requires 7+ years of applied experience with senior leadership expectations, whereas the candidate has 6 years.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T13:43:42+00:00",
+      "jd_hash": "152383d0bc5cc8ebd7fc02d11ffb572f892c3a99b2eb35c0205f695f68b33854",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T13:43:42.233270+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Principal Software Engineer focused on forward-deployed data solutions, Databricks, Snowflake, and data governance rather than core DevOps, SRE, or platform engineering infrastructure automation. Additionally, the role requires 7+ years of applied experience with senior leadership expectations, whereas the candidate has 6 years.",
+      "signature": "fbe37064b556bac5e38368dd8c91af2cfe3f65b93496cdb6adc0dd1c4b4feaf7"
+    },
     "J.P. Morgan::210790282": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2262,6 +2313,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires at least 8+ years of experience while the candidate has 6, and the location is Shanghai, China, which falls outside the candidate's enabled regions.",
       "signature": "689fad469c36740169f633c38878085256d965f2128282b427caece769475eef"
+    },
+    "NVIDIA::JR2021329": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires 8+ years of experience which is above the candidate's 6 years, and the location is Israel, which is outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-22T13:43:42+00:00",
+      "jd_hash": "67cc0006ab0d2338618ba65d1856d287feaae2aa38d7dc46202518b7fab880d2",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T13:43:42.233111+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role requires 8+ years of experience which is above the candidate's 6 years, and the location is Israel, which is outside the candidate's enabled regions.",
+      "signature": "7b66d0f5e68d903431da8f30de8421c9eee55098f6ba0502d6a9736fab05a4ca"
     },
     "NVIDIA::JR2027831": {
       "ai_assessment": {
@@ -3679,6 +3747,7 @@
     "J.P. Morgan::210800665": "2026-10-16T15:15:46+00:00",
     "J.P. Morgan::210801167": "2026-10-21T12:18:28+00:00",
     "J.P. Morgan::210801176": "2026-10-21T12:18:28+00:00",
+    "J.P. Morgan::210801783": "2026-10-22T13:43:44+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
     "Mastercard::R-273348": "2026-07-08T20:03:56+00:00",
@@ -4048,6 +4117,7 @@
     "Salesforce::JR364392": "2026-10-16T10:13:34+00:00",
     "Salesforce::JR364395": "2026-10-16T10:13:34+00:00",
     "Salesforce::JR365006": "2026-10-21T12:18:28+00:00",
+    "Salesforce::JR365298": "2026-10-22T13:43:44+00:00",
     "Snowflake::4fe8d816-0453-4d63-ae0a-2085a5a49101": "2026-07-08T20:02:35+00:00",
     "Snowflake::cbc2087c-f5fc-48b7-8d23-114836a42e3e": "2026-08-13T05:54:29+00:00",
     "Stripe::7462961": "2026-09-15T16:39:26+00:00",
