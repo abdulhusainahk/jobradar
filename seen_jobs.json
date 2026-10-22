@@ -240,6 +240,23 @@
       "reason": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
       "signature": "127ed1555faf3cb20487b81f521f9bc1aa1d7bc9571c1382f1cd6cf63113647a"
     },
+    "Amazon::10585257": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a Developer Advocate/Developer Experience role focused on writing content, tutorials, and blogs about AI agents on AWS, rather than an infrastructure automation, DevOps, or SRE platform engineering role. Furthermore, the location is Vancouver, Canada, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-22T00:08:29+00:00",
+      "jd_hash": "719efd16d4b1d60b48d9ab92abcb0f2fef9dbcf6600cd60729f8aa0b95f73b53",
+      "mode": "ai",
+      "next_review_at": "2026-10-29T00:08:29.956742+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a Developer Advocate/Developer Experience role focused on writing content, tutorials, and blogs about AI agents on AWS, rather than an infrastructure automation, DevOps, or SRE platform engineering role. Furthermore, the location is Vancouver, Canada, which falls outside the candidate's enabled regions.",
+      "signature": "1faf113008f9610d7348322cf188de2661990c837733d77b2cef494063d1433f"
+    },
     "Citi::859038203579": {
       "ai_assessment": {
         "ai_decision": "reject",
