@@ -342,6 +342,23 @@
       "reason": "The role is a software development/Forward Deployed Engineering role focused on customer engagements, coding, and AI architecture rather than core DevOps or platform infrastructure automation. Additionally, the location (Sydney, Australia) is outside the candidate's enabled regions.",
       "signature": "8dad686f4017bd629e646349e3ba28daf011b2a7e8acca1d3558f03a45a8a40a"
     },
+    "Amazon::10585971": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Software Engineer focusing on customer-facing AI applications, software development, and technical delivery rather than core infrastructure automation, DevOps, or SRE. Additionally, the location in Melbourne, Australia is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-23T10:32:11+00:00",
+      "jd_hash": "ad393e0467fd94b519ce13c46f668c7f53bf7409517188daa75e28c0e30eb065",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T10:32:11.203219+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Software Engineer focusing on customer-facing AI applications, software development, and technical delivery rather than core infrastructure automation, DevOps, or SRE. Additionally, the location in Melbourne, Australia is outside the candidate's enabled regions.",
+      "signature": "cf4c16ef8dcf8ad90046af6597ce61613d0fe60d2287735ff63d9a5783c6fb61"
+    },
     "Amazon::10587164": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2280,6 +2297,23 @@
       "reason": "The role is a customer-facing Cloud Solution Architect position focused on pre-sales/consulting for Microsoft Azure, rather than an internal DevOps, SRE, or infrastructure platform engineering role.",
       "signature": "ba462332502558e607f22708b3ad49145df79f0a438ff6916a6d26273f2498b8"
     },
+    "Microsoft::1970393557039416": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is focused on cybersecurity incident response, digital forensics, and Active Directory recovery rather than DevOps, SRE, or platform engineering infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-23T10:32:11+00:00",
+      "jd_hash": "b872a6b4a95a2a1598732aa9efac045bf7f57fcd1f3b6e0e5edbcc69a6d69c87",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T10:32:11.203305+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on cybersecurity incident response, digital forensics, and Active Directory recovery rather than DevOps, SRE, or platform engineering infrastructure automation.",
+      "signature": "1aa9f759576869e25fb3db5cf843be41ef4ae95a435d68386ed1ad8b32f13896"
+    },
     "Microsoft::1970393557041967": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3079,6 +3113,23 @@
       "reason": "The role is a Forward Deployed Engineer focusing on customer-facing AI application deployment, Salesforce platform development, and software engineering rather than core DevOps, SRE, or platform infrastructure engineering. Furthermore, the location is South Africa, which is outside the candidate's enabled regions.",
       "signature": "add961cb0aa94c81141b421f244411d09a475fc3589d0918c366fd78e691c834"
     },
+    "Salesforce::JR365354": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is a specialized Salesforce DevOps Architect role requiring 10-16 years of overall experience and deep Salesforce platform certifications (Platform Developer, Salesforce Certified DevOps Engineer, etc.). The candidate has 6 years of general DevOps experience and lacks Salesforce-specific platform architecture expertise.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-23T10:32:11+00:00",
+      "jd_hash": "55abd6a51498f80aa9418da6c21789b7fa8b13c984141343f9fc2e7e9edf4043",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T10:32:11.203327+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a specialized Salesforce DevOps Architect role requiring 10-16 years of overall experience and deep Salesforce platform certifications (Platform Developer, Salesforce Certified DevOps Engineer, etc.). The candidate has 6 years of general DevOps experience and lacks Salesforce-specific platform architecture expertise.",
+      "signature": "5f946e08ee7ca0d489457a12eb5b4af51478f617a1ba77045930d115baa396f6"
+    },
     "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3314,6 +3365,7 @@
     "Amazon::10492848": "2026-09-15T16:39:30+00:00",
     "Amazon::10498372": "2026-09-15T16:39:26+00:00",
     "Amazon::10498498": "2026-09-15T16:39:26+00:00",
+    "Amazon::10503488": "2026-10-23T10:32:14+00:00",
     "Amazon::10505643": "2026-09-15T11:29:08+00:00",
     "Amazon::10505648": "2026-09-15T11:29:08+00:00",
     "Amazon::10506429": "2026-09-15T16:39:26+00:00",
@@ -3375,6 +3427,7 @@
     "Amazon::10581227": "2026-10-16T15:15:46+00:00",
     "Amazon::10581357": "2026-10-16T15:15:46+00:00",
     "Amazon::10583046": "2026-10-19T22:14:14+00:00",
+    "Amazon::10587334": "2026-10-23T10:32:14+00:00",
     "Amazon::2893777": "2026-09-15T16:39:26+00:00",
     "Amazon::2943487": "2026-09-15T16:39:26+00:00",
     "Amazon::3087178": "2026-09-15T11:30:01+00:00",
@@ -3470,6 +3523,7 @@
     "Cloudflare::7629805": "2026-09-15T16:39:26+00:00",
     "Cloudflare::7742773": "2026-10-12T19:27:43+00:00",
     "Cloudflare::7764827": "2026-09-15T16:39:26+00:00",
+    "Cloudflare::8018536": "2026-10-23T10:32:14+00:00",
     "Cloudflare::8022909": "2026-10-05T18:53:09+00:00",
     "Cloudflare::8030240": "2026-09-15T16:39:26+00:00",
     "Cloudflare::8050813": "2026-09-15T16:39:26+00:00",
@@ -3982,6 +4036,7 @@
     "Mastercard::R-293452": "2026-10-12T19:27:43+00:00",
     "Mastercard::R-293622": "2026-10-21T17:41:53+00:00",
     "Mastercard::R-293997": "2026-10-15T23:04:08+00:00",
+    "Mastercard::R-294109": "2026-10-23T10:32:14+00:00",
     "Meesho::60e0d986-abe8-42ee-b172-0d9aecb307b7": "2026-07-08T18:01:25+00:00",
     "Microsoft::1970393556650632": "2026-07-06T16:03:35+00:00",
     "Microsoft::1970393556751926": "2026-07-06T16:03:35+00:00",
