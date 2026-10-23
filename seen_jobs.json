@@ -308,6 +308,57 @@
       "reason": "This is a Developer Advocate/Developer Experience role focused on writing content, tutorials, and blogs about AI agents on AWS, rather than an infrastructure automation, DevOps, or SRE platform engineering role. Furthermore, the location is Vancouver, Canada, which falls outside the candidate's enabled regions.",
       "signature": "1faf113008f9610d7348322cf188de2661990c837733d77b2cef494063d1433f"
     },
+    "Amazon::10585969": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a software development and AI-focused customer-facing engineering position (Forward Deployed Engineer) rather than a DevOps, SRE, or platform engineering role. Additionally, the job location is Sydney, Australia, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-23T05:17:11+00:00",
+      "jd_hash": "69d3872724000c63eb05db701aa64175d64baaf78a2b1087681ee66061294022",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T05:17:11.312890+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a software development and AI-focused customer-facing engineering position (Forward Deployed Engineer) rather than a DevOps, SRE, or platform engineering role. Additionally, the job location is Sydney, Australia, which falls outside the candidate's enabled regions.",
+      "signature": "f5e9c7b9e5d4f77b3014dcd2da3bca9207ff65e98a304610e10f9f4e545030b2"
+    },
+    "Amazon::10585970": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a software development/Forward Deployed Engineering role focused on customer engagements, coding, and AI architecture rather than core DevOps or platform infrastructure automation. Additionally, the location (Sydney, Australia) is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-23T05:17:11+00:00",
+      "jd_hash": "ad393e0467fd94b519ce13c46f668c7f53bf7409517188daa75e28c0e30eb065",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T05:17:11.312857+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a software development/Forward Deployed Engineering role focused on customer engagements, coding, and AI architecture rather than core DevOps or platform infrastructure automation. Additionally, the location (Sydney, Australia) is outside the candidate's enabled regions.",
+      "signature": "8dad686f4017bd629e646349e3ba28daf011b2a7e8acca1d3558f03a45a8a40a"
+    },
+    "Amazon::10587164": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-23T05:17:11+00:00",
+      "jd_hash": "0d267e3fee9aef227dd261951a236bc5e7c98e8370b86037a59ab9729df86c97",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T05:17:11.312641+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
+      "signature": "9da8d67d269db3c56ee20af97014ad6d3eedf1c2775d03d33de67d4000c5fc88"
+    },
     "Citi::859038203579": {
       "ai_assessment": {
         "ai_decision": "reject",
