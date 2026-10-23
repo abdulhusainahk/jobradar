@@ -3011,6 +3011,23 @@
       "reason": "This role is a Senior Technical Consultant focused heavily on Salesforce project delivery, Apex, LWC, and Salesforce architecture, rather than core DevOps, SRE, or platform engineering infrastructure automation.",
       "signature": "b40e5a252d72cea4d6318098f40c4f8012a6bb991239fc332c20a042c63004ce"
     },
+    "Salesforce::JR365349": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on customer-facing AI application deployment, Salesforce platform development, and software engineering rather than core DevOps, SRE, or platform infrastructure engineering. Furthermore, the location is South Africa, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-23T00:38:18+00:00",
+      "jd_hash": "41b4c0d5da42191a6e94772f94aabdd91ad38c58c778926578d56b82ead4011e",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T00:38:18.167184+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Engineer focusing on customer-facing AI application deployment, Salesforce platform development, and software engineering rather than core DevOps, SRE, or platform infrastructure engineering. Furthermore, the location is South Africa, which is outside the candidate's enabled regions.",
+      "signature": "add961cb0aa94c81141b421f244411d09a475fc3589d0918c366fd78e691c834"
+    },
     "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
       "ai_assessment": {
         "ai_decision": "reject",
