@@ -1804,6 +1804,23 @@
       "reason": "This is a technical management and professional services delivery role (Manager, Forward Deployed Engineering) focused on leading consulting teams, managing SOWs, and client migrations, rather than an infrastructure automation, DevOps, or SRE platform engineering role.",
       "signature": "599833a4316d52a4721f3a669f2149e65cd6466cc872b6d66b04bf9a75adc564"
     },
+    "Databricks::8910988002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a customer-facing Solutions Architect role focusing on big data and security platforms rather than internal platform engineering or SRE, and the location in France is outside the candidate's allowed regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-23T19:41:33+00:00",
+      "jd_hash": "35966fd5c72140ebccbbe474dc6f4b8fedaa3868d7849a9b3ff6d2207224e2f5",
+      "mode": "ai",
+      "next_review_at": "2026-10-30T19:41:33.906480+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a customer-facing Solutions Architect role focusing on big data and security platforms rather than internal platform engineering or SRE, and the location in France is outside the candidate's allowed regions.",
+      "signature": "7077514d57c29cfd0a123ee6ef3b14ff5fdfe3e46ed1090ea76cf929aab86b14"
+    },
     "Datadog::7529852": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3446,6 +3463,7 @@
     "Amazon::10581357": "2026-10-16T15:15:46+00:00",
     "Amazon::10583046": "2026-10-19T22:14:14+00:00",
     "Amazon::10587334": "2026-10-23T10:32:14+00:00",
+    "Amazon::10587728": "2026-10-23T19:41:36+00:00",
     "Amazon::2893777": "2026-09-15T16:39:26+00:00",
     "Amazon::2943487": "2026-09-15T16:39:26+00:00",
     "Amazon::3087178": "2026-09-15T11:30:01+00:00",
@@ -4130,6 +4148,7 @@
     "N26::7866309": "2026-07-21T10:38:46+00:00",
     "N26::8007338": "2026-07-06T14:03:29+00:00",
     "N26::8138777": "2026-08-21T15:29:20+00:00",
+    "N26::8219953": "2026-10-23T19:41:36+00:00",
     "N26::8222839": "2026-09-23T17:26:54+00:00",
     "NVIDIA::JR1997336": "2026-09-15T19:42:35+00:00",
     "NVIDIA::JR2007808": "2026-07-13T15:20:42+00:00",
