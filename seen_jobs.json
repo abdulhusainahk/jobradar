@@ -2127,6 +2127,40 @@
       "reason": "The role is focused on VMware NSX-T, virtualization support, and networking rather than cloud-native DevOps/platform engineering. Furthermore, the location is Buenos Aires, Argentina, which is outside the enabled regions.",
       "signature": "ac4a7a51bbcab173fbb74cd79aa71f9b2ee8004f862092568aac0b56c4edb7d8"
     },
+    "J.P. Morgan::210802136": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is heavily focused on network engineering (campus, data center, WAN, routing/switching) rather than DevOps, SRE, or platform engineering automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-25T21:18:18+00:00",
+      "jd_hash": "55d893427ac6faccadec3f52dda9d1224034f2bc6c80445f44ac0228eadae2fc",
+      "mode": "ai",
+      "next_review_at": "2026-11-01T21:18:18.271192+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is heavily focused on network engineering (campus, data center, WAN, routing/switching) rather than DevOps, SRE, or platform engineering automation.",
+      "signature": "747138bbbb2720b35a406c2026c6f03413b6473378e133882d16e2cfb57da7a5"
+    },
+    "J.P. Morgan::210802140": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is heavily focused on network engineering (campus, data center, WAN, routing/switching) rather than DevOps, SRE, or platform engineering automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-25T21:18:18+00:00",
+      "jd_hash": "bb38a24084b88d10683b08a0cc983958209cb190e0ef2b0562364df90652c17a",
+      "mode": "ai",
+      "next_review_at": "2026-11-01T21:18:18.271394+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is heavily focused on network engineering (campus, data center, WAN, routing/switching) rather than DevOps, SRE, or platform engineering automation.",
+      "signature": "1639ede3f8d98dafe824d5d0ef24a273d80e5dc0e07011de682ec00ebb7410de"
+    },
     "Mastercard::R-291845": {
       "ai_assessment": {
         "ai_decision": "reject",
