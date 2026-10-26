@@ -1996,16 +1996,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
+        "ai_note": "The role is primarily focused on telecom implementation, carrier milestones, and network provisioning rather than DevOps, SRE, or platform engineering automation.",
         "ai_relevance": "irrelevant",
         "ai_score": 35
       },
-      "at": "2026-10-19T11:48:28+00:00",
+      "at": "2026-10-26T14:09:52+00:00",
       "jd_hash": "d580bff6e2e94b7215abe2835c46f5f98cff7b21cefde2b515c272b813476540",
       "mode": "ai",
-      "next_review_at": "2026-10-26T11:48:28.740814+00:00",
+      "next_review_at": "2026-11-02T14:09:52.757593+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role focuses on telecom project management, carrier milestone orchestration, and network circuit delivery rather than core DevOps, SRE, or infrastructure automation.",
+      "reason": "The role is primarily focused on telecom implementation, carrier milestones, and network provisioning rather than DevOps, SRE, or platform engineering automation.",
       "signature": "3f46137656af51ad1431dffa1a7013a017fd59c25ea5413f472e2f9f008f5e7a"
     },
     "J.P. Morgan::210796782": {
@@ -2024,6 +2024,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role focuses on Trader Voice infrastructure, VoIP, and telephony systems rather than DevOps, SRE, or cloud platform engineering.",
       "signature": "37a334ec9ad4ef1d8118ed82dfda1ffab7a1aacdc2fbb22db77ac3fd8304c969"
+    },
+    "J.P. Morgan::210799552": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role focuses on technology support, incident management, and operational maintenance rather than infrastructure automation or platform engineering, which does not match the candidate preferences.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-26T14:09:52+00:00",
+      "jd_hash": "93671e43c02ab8d353abb96a4c24ffb1891124b2ca1dd647c7e2a2445364b5f0",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T14:09:52.757490+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses on technology support, incident management, and operational maintenance rather than infrastructure automation or platform engineering, which does not match the candidate preferences.",
+      "signature": "66379ef6479f719b66f0619b0010ea6347aa2f6a550435b54b1f647a641082f7"
     },
     "J.P. Morgan::210800030": {
       "ai_assessment": {
@@ -2144,6 +2161,57 @@
       "reason": "The role is heavily focused on network engineering (campus, data center, WAN, routing/switching) rather than DevOps, SRE, or platform engineering automation.",
       "signature": "1639ede3f8d98dafe824d5d0ef24a273d80e5dc0e07011de682ec00ebb7410de"
     },
+    "J.P. Morgan::210802469": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role focuses heavily on network infrastructure, network design, SD-WAN, and routing rather than core DevOps, Kubernetes, Terraform, and cloud platform automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-26T14:09:52+00:00",
+      "jd_hash": "6e15622ce351f605cb45828673113b4b06d4cb7af8438d8dd65bf317113cc086",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T14:09:52.757516+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses heavily on network infrastructure, network design, SD-WAN, and routing rather than core DevOps, Kubernetes, Terraform, and cloud platform automation.",
+      "signature": "0278dd0f57a9cf05fbf1cdc7eb4ed48f6c0bdc76e218260ed45eb8ff8eefd11b"
+    },
+    "J.P. Morgan::210803281": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is heavily focused on traditional network engineering (routing, switching, Cisco data centers) rather than cloud-native DevOps, Kubernetes, or infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-26T14:09:52+00:00",
+      "jd_hash": "79414a792fc836d673100ac25c25f78cd62c45db5c0fcd8fcf4314d0d713fa02",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T14:09:52.757540+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is heavily focused on traditional network engineering (routing, switching, Cisco data centers) rather than cloud-native DevOps, Kubernetes, or infrastructure automation.",
+      "signature": "403483d3797ae3ed16eb2466fdd98348e9658cae7ff42b9120d809c300ef7f4c"
+    },
+    "J.P. Morgan::210803732": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role requires over 8 years of experience, exceeding the candidate's years, and is located in Shanghai, China, which is outside the enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-26T14:09:52+00:00",
+      "jd_hash": "7dabfbc1a8b38411243b1b8415552fc44c951f369f16a24bb91c48341ccb7fe7",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T14:09:52.757557+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role requires over 8 years of experience, exceeding the candidate's years, and is located in Shanghai, China, which is outside the enabled regions.",
+      "signature": "e4d9b8abf4c79ab9fa9881217d1a3efa862a71a9f5bae2b9c4961f5bf909dd20"
+    },
     "Mastercard::R-291845": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2177,6 +2245,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role matches platform and reliability engineering responsibilities, but the location is Kuala Lumpur, Malaysia, which is outside the candidate's enabled regions.",
       "signature": "67eacc9f775e521e6d325961bd176cf53ec5a91f5b892a431aa47f8cc179099f"
+    },
+    "Mastercard::R-294104": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "This role is a software engineering management position focused on data platforms, data pipelines, and Databricks rather than infrastructure automation, DevOps, or SRE.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-26T14:09:52+00:00",
+      "jd_hash": "eecbf0670f9c5176b9ff5963f14a523a327e6a5fb85d91ba93fe18770298e92e",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T14:09:52.757615+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This role is a software engineering management position focused on data platforms, data pipelines, and Databricks rather than infrastructure automation, DevOps, or SRE.",
+      "signature": "99302a6ffec7969e0feb54eef7df5fe5abe3830a28d0bdfeede1f8bcc3f95fb6"
     },
     "Mastercard::R-294125": {
       "ai_assessment": {
@@ -2523,16 +2608,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "above_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role requires 8+ years of experience which is above the candidate's 6 years (above_band), and the location is in Taiwan, which is outside the candidate's enabled regions.",
+        "ai_note": "The role requires 8+ years of experience which is above the candidate's 6 years (above_band with drop_out_of_band enabled), and the job location is in Taiwan, which is outside the candidate's enabled regions of India, UAE, and Europe.",
         "ai_relevance": "relevant",
-        "ai_score": 45
+        "ai_score": 40
       },
-      "at": "2026-10-19T11:48:28+00:00",
+      "at": "2026-10-26T14:09:52+00:00",
       "jd_hash": "5abc939ddcd1c4fb9c12014a144f391bb7f4843da8ce35a77bd64699df07f973",
       "mode": "ai",
-      "next_review_at": "2026-10-26T11:48:28.740519+00:00",
+      "next_review_at": "2026-11-02T14:09:52.757387+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role requires 8+ years of experience which is above the candidate's 6 years (above_band), and the location is in Taiwan, which is outside the candidate's enabled regions.",
+      "reason": "The role requires 8+ years of experience which is above the candidate's 6 years (above_band with drop_out_of_band enabled), and the job location is in Taiwan, which is outside the candidate's enabled regions of India, UAE, and Europe.",
       "signature": "dedab8ec7dc1724dc04358807c52ec9532272c0ca1c7d7c50335e16063a7531b"
     },
     "NVIDIA::JR2028031": {
@@ -3147,6 +3232,23 @@
       "reason": "The role is a Forward Deployed Engineer focusing on customer-facing AI application deployment, Salesforce platform development, and software engineering rather than core DevOps, SRE, or platform infrastructure engineering. Furthermore, the location is South Africa, which is outside the candidate's enabled regions.",
       "signature": "add961cb0aa94c81141b421f244411d09a475fc3589d0918c366fd78e691c834"
     },
+    "Salesforce::JR365350": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a Forward Deployed Engineer focusing on customer-facing technical delivery, software development, and AI agent implementation rather than core DevOps, infrastructure automation, or platform engineering.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-26T14:09:52+00:00",
+      "jd_hash": "aca48a63181a6b35920cf79df819044f016f28cdc0b4b5445652f998dfaf46ac",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T14:09:52.757450+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Engineer focusing on customer-facing technical delivery, software development, and AI agent implementation rather than core DevOps, infrastructure automation, or platform engineering.",
+      "signature": "cd779dec28f98bc773ac2ec02aa7a73ce36f815c40e7281ba46e0738d541b479"
+    },
     "Salesforce::JR365354": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3755,6 +3857,7 @@
     "HighRadius::6555499003": "2026-08-18T11:21:17+00:00",
     "HighRadius::7107816003": "2026-08-03T15:24:41+00:00",
     "HighRadius::7511610003": "2026-09-08T08:15:26+00:00",
+    "HighRadius::7511614003": "2026-10-26T14:09:56+00:00",
     "HighRadius::7565703003": "2026-10-17T13:50:59+00:00",
     "HighRadius::7601743003": "2026-10-17T13:50:59+00:00",
     "HighRadius::7608479003": "2026-10-17T13:50:59+00:00",
@@ -3902,6 +4005,7 @@
     "J.P. Morgan::210778554": "2026-09-15T16:39:26+00:00",
     "J.P. Morgan::210778688": "2026-09-18T14:56:22+00:00",
     "J.P. Morgan::210779428": "2026-08-18T15:57:24+00:00",
+    "J.P. Morgan::210779500": "2026-10-26T14:09:56+00:00",
     "J.P. Morgan::210779955": "2026-09-02T07:35:34+00:00",
     "J.P. Morgan::210779994": "2026-08-12T11:49:12+00:00",
     "J.P. Morgan::210780067": "2026-08-20T16:01:59+00:00",
