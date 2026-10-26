@@ -3181,6 +3181,23 @@
       "reason": "The role is for a Forward Deployed Engineer focusing on customer-facing AI application deployment, agentic AI solutions, and full-stack/consulting delivery rather than infrastructure automation or DevOps/SRE platform engineering. Additionally, the location is France, which is outside the candidate's enabled regions.",
       "signature": "0a970b6d0adb2df317b1d6654dff76a9c65db4f2d108e0f8d25e5337dff46fa3"
     },
+    "Salesforce::JR363163": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is for a Systems Engineer focused on enterprise finance applications, Zuora Revenue, and ERP support rather than DevOps, SRE, or infrastructure automation. Additionally, the job is located in New York, which does not match the candidate's preferred or enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 0
+      },
+      "at": "2026-10-26T23:49:00+00:00",
+      "jd_hash": "48b8ac724befc6ef246525f2efa4bd1d710320a3feadd2c43b39a822ddb9573d",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T23:49:00.716574+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Systems Engineer focused on enterprise finance applications, Zuora Revenue, and ERP support rather than DevOps, SRE, or infrastructure automation. Additionally, the job is located in New York, which does not match the candidate's preferred or enabled regions.",
+      "signature": "a34fe1dd3a231f68cc0c83674dc00168676d995e6ab888dd01f2af130517dfb0"
+    },
     "Salesforce::JR363565": {
       "ai_assessment": {
         "ai_decision": "reject",
