@@ -1685,38 +1685,21 @@
       "reason": "This is a Forward Deployed Software Engineer role focused on customer-facing application development and data/AI solutions, rather than a dedicated DevOps, SRE, or Platform Engineering infrastructure automation role.",
       "signature": "eebc84b781b1ef2903bce8375356dc466997f46d7278fd80ed996f3839d62c38"
     },
-    "Databricks::8876613002": {
+    "Databricks::8876680002": {
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is a customer-facing Forward Deployed Engineer (FDE) focusing on data engineering, Spark, analytics, and software solutions, rather than infrastructure automation, DevOps, or SRE.",
-        "ai_relevance": "irrelevant",
-        "ai_score": 30
-      },
-      "at": "2026-10-19T05:49:07+00:00",
-      "jd_hash": "8d8eb0ff4a54727cc95446606eb83b219b77cfbc59f19fe063b5b80536fc848c",
-      "mode": "ai",
-      "next_review_at": "2026-10-26T05:49:07.738816+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focusing on data engineering, Spark, analytics, and software solutions, rather than infrastructure automation, DevOps, or SRE.",
-      "signature": "f646462257c0f11ffa5b7ee18eff58f86e3b4afc592d60c2838d979a40128248"
-    },
-    "Databricks::8876680002": {
-      "ai_assessment": {
-        "ai_decision": "reject",
-        "ai_experience_fit": "below_band",
-        "ai_location_fit": "allowed",
-        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, AI applications, and technical consulting rather than core infrastructure automation, DevOps, or SRE.",
+        "ai_note": "This is a customer-facing Forward Deployed Engineer (FDE) role focused on data engineering, Spark, and analytics solutions rather than core DevOps, platform engineering, or infrastructure automation.",
         "ai_relevance": "irrelevant",
         "ai_score": 35
       },
-      "at": "2026-10-19T05:49:07+00:00",
+      "at": "2026-10-26T06:49:07+00:00",
       "jd_hash": "083bc293a03ad6df7cb0659b734ccc343cfb35bf89f29bb6a0a49223ebeb27bb",
       "mode": "ai",
-      "next_review_at": "2026-10-26T05:49:07.739075+00:00",
+      "next_review_at": "2026-11-02T06:49:07.526766+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data engineering, Spark, AI applications, and technical consulting rather than core infrastructure automation, DevOps, or SRE.",
+      "reason": "This is a customer-facing Forward Deployed Engineer (FDE) role focused on data engineering, Spark, and analytics solutions rather than core DevOps, platform engineering, or infrastructure automation.",
       "signature": "f728d3a8065a1964ae3bc1dfbdada71792de2e3f07c9a61f40316875ddf17a54"
     },
     "Databricks::8884753002": {
@@ -2178,6 +2161,23 @@
       "reason": "The role requires deep hands-on expertise with HP NonStop (Tandem) platforms and traditional payments infrastructure, which does not match the candidate's cloud-native DevOps, Kubernetes, and AWS/Azure skill set.",
       "signature": "fa3d980ccd0223ce8d8889d373bd39513a25232c61c8efd842ca87eedcde2a4b"
     },
+    "Mastercard::R-293373": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role matches platform and reliability engineering responsibilities, but the location is Kuala Lumpur, Malaysia, which is outside the candidate's enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-26T06:49:07+00:00",
+      "jd_hash": "a4434b288ed2ac77a2054113d63814e2c495415b69f895a772858c4cff53fe3f",
+      "mode": "ai",
+      "next_review_at": "2026-11-02T06:49:07.526940+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role matches platform and reliability engineering responsibilities, but the location is Kuala Lumpur, Malaysia, which is outside the candidate's enabled regions.",
+      "signature": "67eacc9f775e521e6d325961bd176cf53ec5a91f5b892a431aa47f8cc179099f"
+    },
     "Mastercard::R-294125": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2540,16 +2540,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role focuses heavily on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud infrastructure automation, Kubernetes, and platform engineering. Furthermore, the location is Israel, which falls outside the enabled regions.",
+        "ai_note": "The role focuses on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud DevOps or platform engineering. Additionally, the location in Israel is outside the candidate's enabled regions.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-10-19T05:49:07+00:00",
+      "at": "2026-10-26T06:49:07+00:00",
       "jd_hash": "74de5d8b20c45a381ab7f98fa0a27fcfe44f04b3fb96b8476903a996b70ad8ae",
       "mode": "ai",
-      "next_review_at": "2026-10-26T05:49:07.739114+00:00",
+      "next_review_at": "2026-11-02T06:49:07.526917+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role focuses heavily on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud infrastructure automation, Kubernetes, and platform engineering. Furthermore, the location is Israel, which falls outside the enabled regions.",
+      "reason": "The role focuses on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud DevOps or platform engineering. Additionally, the location in Israel is outside the candidate's enabled regions.",
       "signature": "fc826cdbf66f5b734b37983124e7cc9549cee57f6dabb316a5a4dcae56d2447c"
     },
     "Notion::10437426-14c8-4c45-8075-67959ce80393": {
@@ -3594,6 +3594,7 @@
     "Cloudflare::8275392": "2026-10-14T01:00:57+00:00",
     "Cloudflare::8276155": "2026-10-13T21:57:34+00:00",
     "Cloudflare::8278262": "2026-10-14T15:55:05+00:00",
+    "Cloudflare::8317751": "2026-10-26T06:49:10+00:00",
     "CockroachDB::8159674": "2026-09-15T16:39:26+00:00",
     "Databricks::7619811002": "2026-07-06T16:03:19+00:00",
     "Databricks::8493168002": "2026-09-15T16:39:26+00:00",
@@ -3609,6 +3610,7 @@
     "Databricks::8687202002": "2026-08-07T00:22:35+00:00",
     "Databricks::8798217002": "2026-09-15T16:39:26+00:00",
     "Databricks::8855360002": "2026-09-29T15:30:38+00:00",
+    "Databricks::8876613002": "2026-10-26T06:49:10+00:00",
     "Databricks::8884751002": "2026-10-17T13:50:59+00:00",
     "Elastic::7447246": "2026-07-06T16:03:18+00:00",
     "Elastic::8070615": "2026-09-15T16:39:26+00:00",
@@ -4074,6 +4076,7 @@
     "Mastercard::R-292934": "2026-10-09T08:23:53+00:00",
     "Mastercard::R-293126": "2026-10-15T16:08:56+00:00",
     "Mastercard::R-293452": "2026-10-12T19:27:43+00:00",
+    "Mastercard::R-293568": "2026-10-26T06:49:10+00:00",
     "Mastercard::R-293622": "2026-10-21T17:41:53+00:00",
     "Mastercard::R-293997": "2026-10-15T23:04:08+00:00",
     "Mastercard::R-294109": "2026-10-23T10:32:14+00:00",
@@ -4293,6 +4296,7 @@
     "PayPal::274922606003": "2026-10-11T13:55:10+00:00",
     "PayPal::274922786590": "2026-10-13T08:51:08+00:00",
     "PayPal::274922786592": "2026-10-12T09:35:36+00:00",
+    "PayPal::274922873916": "2026-10-26T06:49:10+00:00",
     "PhonePe::1000000000001523": "2026-09-15T11:30:01+00:00",
     "PhonePe::1000000000001741": "2026-09-15T11:30:01+00:00",
     "PhonePe::1000000000001753": "2026-09-15T11:30:01+00:00",
