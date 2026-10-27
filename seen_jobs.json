@@ -143,17 +143,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "This is an Atlassian/Jira administration and SaaS configuration role, not a core DevOps, SRE, or cloud infrastructure automation engineering role.",
+        "ai_note": "The role focuses heavily on Atlassian administration, Jira Cloud migration, and workflow management rather than core infrastructure automation, SRE, or platform engineering.",
         "ai_relevance": "irrelevant",
         "ai_score": 30
       },
-      "at": "2026-10-22T18:28:57+00:00",
+      "at": "2026-10-27T08:50:24+00:00",
       "jd_hash": "d6f36ae7595998e4f3db8ac2621d200b28e9d50f5429513801fdbd7bf6c6d0a8",
       "mode": "ai",
-      "next_review_at": "2026-10-29T18:28:57.603308+00:00",
+      "next_review_at": "2026-11-03T08:50:24.945886+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This is an Atlassian/Jira administration and SaaS configuration role, not a core DevOps, SRE, or cloud infrastructure automation engineering role.",
-      "signature": "1a38a60e58b98684764bb6b55b554b6823756323cc3f1e8bd723ca3e251dd04c"
+      "reason": "The role focuses heavily on Atlassian administration, Jira Cloud migration, and workflow management rather than core infrastructure automation, SRE, or platform engineering.",
+      "signature": "3264561021f0b316ac3264a792804d823a799968ec7627b544a748cc6e014a9b"
     },
     "Amazon::10435349": {
       "ai_assessment": {
@@ -2212,6 +2212,23 @@
       "reason": "The role focuses heavily on network infrastructure, network design, SD-WAN, and routing rather than core DevOps, Kubernetes, Terraform, and cloud platform automation.",
       "signature": "0278dd0f57a9cf05fbf1cdc7eb4ed48f6c0bdc76e218260ed45eb8ff8eefd11b"
     },
+    "J.P. Morgan::210802873": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role requires 10+ years of applied experience, which exceeds the candidate's 6 years of experience.",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-27T08:50:24+00:00",
+      "jd_hash": "9ab81721595dc228c83df6567dfbf3a4ad60621ec71a5f966fc2011f9416d79b",
+      "mode": "ai",
+      "next_review_at": "2026-11-03T08:50:24.946196+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role requires 10+ years of applied experience, which exceeds the candidate's 6 years of experience.",
+      "signature": "442751108c32edadd6e31bf698005918faaa8267b9f1a37a92dd24ec8862bedd"
+    },
     "J.P. Morgan::210803281": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3368,6 +3385,23 @@
       "reason": "This is a specialized Salesforce DevOps Architect role requiring 10-16 years of overall experience and deep Salesforce platform certifications (Platform Developer, Salesforce Certified DevOps Engineer, etc.). The candidate has 6 years of general DevOps experience and lacks Salesforce-specific platform architecture expertise.",
       "signature": "5f946e08ee7ca0d489457a12eb5b4af51478f617a1ba77045930d115baa396f6"
     },
+    "Salesforce::JR365826": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role focuses on forward-deployed customer-facing software engineering and browser automation rather than core DevOps, infrastructure automation, or platform engineering. Furthermore, the location is Mexico City, which is outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-27T08:50:24+00:00",
+      "jd_hash": "73b4797e8e733b38576784e1e3ff6e181f8d919a61a74e7637086ffd6ce66146",
+      "mode": "ai",
+      "next_review_at": "2026-11-03T08:50:24.946151+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role focuses on forward-deployed customer-facing software engineering and browser automation rather than core DevOps, infrastructure automation, or platform engineering. Furthermore, the location is Mexico City, which is outside the candidate's enabled regions.",
+      "signature": "774166e67f7e60de6534135a7870d359ad0d5ee8b76068dc0d4027561b70bf5b"
+    },
     "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3520,6 +3554,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role matches platform and AI infrastructure keywords, but the location is in Brooklyn Park, Minnesota, USA, which is outside the candidate's enabled regions (India, UAE, Europe).",
       "signature": "c4bd39215549d0a0a68976fabb94e38f68e55d35f833956728e1851c456de455"
+    },
+    "Target::R0000475428": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Engineer for AI Platforms requiring onsite hybrid presence in Brooklyn Park, Minnesota, US, which violates the candidate's regional preferences (India, UAE, Europe).",
+        "ai_relevance": "relevant",
+        "ai_score": 45
+      },
+      "at": "2026-10-27T08:50:24+00:00",
+      "jd_hash": "fe3b97c17a17a9a37b8c2efc4428765d36e29704b68e001ec8743ea41a350130",
+      "mode": "ai",
+      "next_review_at": "2026-11-03T08:50:24.946223+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Engineer for AI Platforms requiring onsite hybrid presence in Brooklyn Park, Minnesota, US, which violates the candidate's regional preferences (India, UAE, Europe).",
+      "signature": "a5fa438adc0deac3317eb8aed72203f94b706207acf7d70782a62988d73ff55f"
     }
   },
   "seen": {
