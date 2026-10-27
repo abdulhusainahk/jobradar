@@ -245,16 +245,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
+        "ai_note": "The role is relevant for a systems/DevOps engineer, but the job explicitly requires the candidate to be a national of an EU member state and residing in the EU, which the candidate does not meet.",
         "ai_relevance": "relevant",
-        "ai_score": 0
+        "ai_score": 40
       },
-      "at": "2026-10-20T10:52:46+00:00",
+      "at": "2026-10-27T15:25:33+00:00",
       "jd_hash": "17f4d9d9c7169b4a4af9061f89300e71fb470b46523223ed1a24b3ce84d610e8",
       "mode": "ai",
-      "next_review_at": "2026-10-27T10:52:46.699946+00:00",
+      "next_review_at": "2026-11-03T15:25:33.664194+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The candidate does not meet the mandatory eligibility requirement of being a national of an EU member state and residing in the EU.",
+      "reason": "The role is relevant for a systems/DevOps engineer, but the job explicitly requires the candidate to be a national of an EU member state and residing in the EU, which the candidate does not meet.",
       "signature": "127ed1555faf3cb20487b81f521f9bc1aa1d7bc9571c1382f1cd6cf63113647a"
     },
     "Amazon::10584792": {
@@ -447,18 +447,18 @@
     "Citi::859038501308": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "within_band",
+        "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is for an AI/LLM Security Engineer focusing on applied AI and cybersecurity workflows rather than DevOps, SRE, or platform engineering. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred or enabled regions.",
+        "ai_note": "This is an AI/ML engineering and cybersecurity role (Forward Deployed AI Engineer for Cyber Security), not a DevOps, SRE, or infrastructure platform role. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred regions.",
         "ai_relevance": "irrelevant",
-        "ai_score": 30
+        "ai_score": 25
       },
-      "at": "2026-10-20T10:52:46+00:00",
+      "at": "2026-10-27T15:25:33+00:00",
       "jd_hash": "51dd5d3009484929e0baef561b1416decfbeef9374c326b27fe1efcd6052a15e",
       "mode": "ai",
-      "next_review_at": "2026-10-27T10:52:46.700189+00:00",
+      "next_review_at": "2026-11-03T15:25:33.664560+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is for an AI/LLM Security Engineer focusing on applied AI and cybersecurity workflows rather than DevOps, SRE, or platform engineering. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred or enabled regions.",
+      "reason": "This is an AI/ML engineering and cybersecurity role (Forward Deployed AI Engineer for Cyber Security), not a DevOps, SRE, or infrastructure platform role. Furthermore, the location is Budapest, Hungary, which does not match the candidate's preferred regions.",
       "signature": "a83a4c4a657191e5f767f205969207b0e2fcc6e86fc7c302e88cfec7a88b20e3"
     },
     "Citi::859038502642": {
@@ -2024,6 +2024,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is a general Software Engineer position focused on Java, Spring, MongoDB, and Kafka application development rather than a dedicated DevOps, SRE, or Platform Engineering role.",
       "signature": "7828f114ef21a83fe87e4205600b3ec0318ff66710380b6ca6503c68c382f98d"
+    },
+    "J.P. Morgan::210794907": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is primarily a Software Engineer III - React/UI Developer position rather than a DevOps, SRE, or platform engineering role, despite incidental mentions of CI/CD and Kubernetes.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-27T15:25:33+00:00",
+      "jd_hash": "25aab3c15a759b7a85c9d233da093d2b4e72609dc32f2bafd1bef50c3112b9f0",
+      "mode": "ai",
+      "next_review_at": "2026-11-03T15:25:33.664511+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is primarily a Software Engineer III - React/UI Developer position rather than a DevOps, SRE, or platform engineering role, despite incidental mentions of CI/CD and Kubernetes.",
+      "signature": "5ecddf74b16530a29459e2e83ff553db7073541d61f2fee86d4b3c34b0e066e5"
     },
     "J.P. Morgan::210796375": {
       "ai_assessment": {
@@ -4332,6 +4349,7 @@
     "Mastercard::R-291891": "2026-10-01T23:49:07+00:00",
     "Mastercard::R-292321": "2026-10-08T16:55:38+00:00",
     "Mastercard::R-292450": "2026-10-17T13:50:59+00:00",
+    "Mastercard::R-292861": "2026-10-27T15:25:38+00:00",
     "Mastercard::R-292934": "2026-10-09T08:23:53+00:00",
     "Mastercard::R-293126": "2026-10-15T16:08:56+00:00",
     "Mastercard::R-293452": "2026-10-12T19:27:43+00:00",
