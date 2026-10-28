@@ -2195,6 +2195,23 @@
       "reason": "The role is focused heavily on network infrastructure engineering and F5 load balancing administration rather than modern cloud platforms, Kubernetes, and CI/CD pipelines.",
       "signature": "e78db0f1fb392bdc94dc085421aebe43bcb18bb03ea53e0e8c7435da87ef6c4f"
     },
+    "J.P. Morgan::210801797": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is for a Lead Security Engineer focusing on C#/.NET Core development, application security, and threat modeling rather than infrastructure automation, Kubernetes platforms, or DevOps/SRE responsibilities.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-28T09:28:13+00:00",
+      "jd_hash": "80493dbf4bcf1f79c73bdc71340f98413fa01cb5f77c678921119dbab094bd18",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T09:28:13.304273+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is for a Lead Security Engineer focusing on C#/.NET Core development, application security, and threat modeling rather than infrastructure automation, Kubernetes platforms, or DevOps/SRE responsibilities.",
+      "signature": "94d0eb57a3c9a8a32c7c0a17ee138e1624cfcc196b8ed1532f84957bc9bba909"
+    },
     "J.P. Morgan::210801851": {
       "ai_assessment": {
         "ai_decision": "reject",
