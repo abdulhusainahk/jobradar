@@ -1,11 +1,14 @@
 import copy
 import io
 import json
+import os
 import unittest
 from contextlib import redirect_stderr
 from datetime import datetime, timezone
 from unittest.mock import Mock, patch
 
+import anthropic
+import httpx2
 import requests
 
 from jobradar import score
@@ -280,3 +283,70 @@ class GeminiScoringTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def claude_reply(value=88, stop_reason="end_turn", status=200, **fields):
+    if status != 200:
+        return httpx2.Response(status, json={"type": "error", "error": {"type": "api_error", "message": "private"}})
+    assessment = {"score": value, "note": "Owns Terraform automation", "decision": "keep", "relevance": "relevant",
+                  "experience_fit": "within_band", "location_fit": "allowed", **fields}
+    return httpx2.Response(200, json={
+        "id": "msg_1", "type": "message", "role": "assistant", "model": "claude-opus-5-5",
+        "content": [{"type": "text", "text": json.dumps(assessment)}], "stop_reason": stop_reason,
+        "stop_sequence": None, "usage": {"input_tokens": 100, "output_tokens": 20},
+    })
+
+
+class ClaudeScoringTests(unittest.TestCase):
+    advance = GeminiScoringTests.advance
+
+    def setUp(self):
+        GeminiScoringTests.setUp(self)
+        os.environ["ANTHROPIC_API_KEY"] = "sk-ant-private-test-key"
+        self.claude_requests = []
+        self.claude_replies = []
+        real_client = anthropic.Anthropic
+
+        def handle(request):
+            self.claude_requests.append(json.loads(request.content))
+            return self.claude_replies.pop(0)
+
+        client_patch = patch.object(score.anthropic, "Anthropic", side_effect=lambda **options: real_client(
+            **options, http_client=httpx2.Client(transport=httpx2.MockTransport(handle))))
+        client_patch.start()
+        self.addCleanup(client_patch.stop)
+
+    def test_claude_assessment_skips_gemini(self):
+        self.claude_replies = [claude_reply(90), claude_reply(75)]
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["ai_score"] for job in kept], [90, 75])
+        self.session.post.assert_not_called()
+        request = self.claude_requests[0]
+        self.assertEqual((request["model"], request["fallbacks"]), ("claude-opus-5-5", "default"))
+        self.assertEqual(request["output_config"]["effort"], "low")
+        self.assertNotIn("maximum", request["output_config"]["format"]["schema"]["properties"]["score"])
+
+    def test_rejected_claude_key_falls_back_to_gemini_for_the_rest_of_the_run(self):
+        self.claude_replies = [claude_reply(status=401)]
+        self.session.post.side_effect = [response(95), response(80)]
+        log = io.StringIO()
+        with redirect_stderr(log):
+            kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["ai_score"] for job in kept], [95, 80])
+        self.assertEqual(len(self.claude_requests), 1)
+        self.assertNotIn("sk-ant-private-test-key", log.getvalue())
+
+    def test_transient_claude_failure_uses_gemini_for_that_role_only(self):
+        self.claude_replies = [claude_reply(status=529), claude_reply(72)]
+        self.session.post.return_value = response(95)
+        kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertEqual([job["ai_score"] for job in kept], [95, 72])
+        self.assertEqual(self.session.post.call_count, 1)
+
+    def test_declined_claude_role_without_gemini_keeps_heuristics(self):
+        self.claude_replies = [claude_reply(stop_reason="refusal"), claude_reply(85)]
+        with patch.dict("os.environ", {"GEMINI_API_KEY": ""}):
+            kept = score.score_jobs(self.jobs, CONFIG)
+        self.assertNotIn("ai_score", kept[0])
+        self.assertEqual(kept[1]["ai_score"], 85)
+        self.session.post.assert_not_called()

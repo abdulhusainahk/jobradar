@@ -70,7 +70,8 @@ whichever notification channels you want; both are independently optional.
 | `EMAIL_USER` | Gmail account used to send digests |
 | `EMAIL_APP_PASSWORD` | Gmail App Password, not the normal account password |
 | `EMAIL_TO` | Recipient address(es), comma-separated; empty defaults to `EMAIL_USER` |
-| `GEMINI_API_KEY` | Optional Google AI Studio API key for Gemini scoring |
+| `ANTHROPIC_API_KEY` | Optional Claude API key; primary AI scorer |
+| `GEMINI_API_KEY` | Optional Google AI Studio API key; scores roles Claude could not assess |
 
 To obtain a Telegram chat ID, message your bot, then inspect its `getUpdates`
 response using Telegram's API. Keep the token-bearing URL private. Gmail App
@@ -78,6 +79,16 @@ Passwords require two-step verification and an account that supports App Passwor
 
 Notification secrets are not required for fetching or ranking. With no channels
 configured, new alerts remain pending rather than being marked delivered.
+
+## Claude scoring with Gemini fallback
+
+Add a Claude API key from <https://platform.claude.com/settings/keys> as repository
+secret **`ANTHROPIC_API_KEY`**. Each new candidate is assessed once by Claude
+(`CLAUDE_MODEL`, default `claude-opus-5-5`, low effort, no retries, 60-second cap
+within the shared budget). A timeout, overload, decline or invalid answer sends
+that role to Gemini; a rejected key, billing problem, missing model or rate limit
+disables Claude for the rest of the run so Gemini handles every remaining role.
+Claude usage is billed per token; Gemini can stay on its free tier.
 
 ## Gemini free-tier scoring
 
@@ -90,7 +101,8 @@ configured, new alerts remain pending rather than being marked delivered.
 
 | Repository variable | Default | Meaning |
 | --- | --- | --- |
-| `AI_SCORING` | `on` in Actions | `on` enables Gemini; `off` forces keyword matching |
+| `AI_SCORING` | `on` in Actions | `on` enables Claude/Gemini; `off` forces keyword matching |
+| `CLAUDE_MODEL` | `claude-opus-5-5` | Claude model ID for the primary assessment |
 | `JOBRADAR_MODEL` | `gemini-3.5-flash-lite` | Gemini model ID; check current free-tier availability |
 | `AI_MIN_SCORE` | `0` | Minimum score for confident `keep` decisions; uncertain roles bypass this threshold |
 | `AI_MAX_ATTEMPTS` | `3` | Maximum attempts per failed Gemini request, from 2 to 5 |
@@ -98,8 +110,8 @@ configured, new alerts remain pending rather than being marked delivered.
 
 The client uses Gemini's REST API with validated structured JSON. One request per
 new candidate assesses actual role relevance, overall experience (not individual
-tool tenure), geographic eligibility, fit score, and a short reason. No additional
-AI SDK is required.
+tool tenure), geographic eligibility, fit score, and a short reason. Gemini runs
+only for roles Claude did not assess.
 
 | Decision | Selection behavior |
 | --- | --- |

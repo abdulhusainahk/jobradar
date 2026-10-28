@@ -54,8 +54,10 @@ jobs:
           EMAIL_USER:         ${{ secrets.EMAIL_USER }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_TO:           ${{ secrets.EMAIL_TO }}
-          # Missing/failed Gemini credentials retain keyword-only matching.
+          # Claude assesses first; Gemini covers roles Claude cannot. With neither, keyword-only matching.
           AI_SCORING:         ${{ vars.AI_SCORING || 'on' }}
+          ANTHROPIC_API_KEY:  ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL:       ${{ vars.CLAUDE_MODEL }}
           GEMINI_API_KEY:     ${{ secrets.GEMINI_API_KEY }}
           AI_MIN_SCORE:       ${{ vars.AI_MIN_SCORE || '0' }}
           AI_MAX_ATTEMPTS:    ${{ vars.AI_MAX_ATTEMPTS || '3' }}

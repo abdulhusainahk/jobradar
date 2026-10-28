@@ -1,4 +1,4 @@
-"""Gemini assessment before rejection; preserve completed work and fall back per role."""
+"""Claude assessment before rejection, Gemini when Claude cannot answer; preserve completed work per role."""
 from __future__ import annotations
 
 import json
@@ -11,9 +11,14 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 
+import anthropic
 import requests
 
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
+DEFAULT_CLAUDE_MODEL = "claude-opus-5-5"
+CLAUDE_EFFORT = "low"
+CLAUDE_REQUEST_TIMEOUT = 60.0
+CLAUDE_FALLBACK_BETA = "server-side-fallback-2026-07-01"
 DEFAULT_ATTEMPTS = 3
 DEFAULT_REQUESTS_PER_MINUTE = 10
 DEFAULT_TIME_BUDGET_SECONDS = 480
@@ -35,6 +40,7 @@ SCHEMA = {
     "required": [*CHOICES, "score", "note"],
     "additionalProperties": False,
 }
+CLAUDE_SCHEMA = anthropic.transform_schema(SCHEMA)
 
 
 def _log(message: str) -> None:
@@ -125,10 +131,28 @@ def _assessment(response: dict) -> dict:
     candidate = response["candidates"][0]
     if candidate.get("finishReason") != "STOP":
         raise ValueError("incomplete or blocked response")
-    text = "".join(
+    return _validated("".join(
         part["text"] for part in candidate["content"]["parts"]
         if "text" in part and not part.get("thought")
+    ))
+
+
+def _claude_assessment(client, model: str, instruction: str, content: str, timeout: float) -> dict:
+    message = client.with_options(timeout=timeout).beta.messages.create(
+        model=model,
+        max_tokens=8192,
+        betas=[CLAUDE_FALLBACK_BETA],
+        fallbacks="default",
+        system=instruction,
+        messages=[{"role": "user", "content": content}],
+        output_config={"effort": CLAUDE_EFFORT, "format": {"type": "json_schema", "schema": CLAUDE_SCHEMA}},
     )
+    if message.stop_reason != "end_turn":
+        raise ValueError("incomplete or declined response")
+    return _validated("".join(block.text for block in message.content if block.type == "text"))
+
+
+def _validated(text: str) -> dict:
     data = json.loads(text)
     if not isinstance(data, dict) or set(data) != set(SCHEMA["properties"]):
         raise ValueError("invalid assessment fields")
@@ -156,9 +180,12 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
     if not enabled or not jobs:
         return jobs
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
-        _log("GEMINI_API_KEY missing; using keyword scoring")
+    claude_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not api_key and not claude_key:
+        _log("ANTHROPIC_API_KEY and GEMINI_API_KEY missing; using keyword scoring")
         return jobs
+    claude = anthropic.Anthropic(api_key=claude_key, max_retries=0) if claude_key else None
+    claude_model = os.environ.get("CLAUDE_MODEL", "").strip() or DEFAULT_CLAUDE_MODEL
 
     attempts = _setting("AI_MAX_ATTEMPTS", DEFAULT_ATTEMPTS, 2, 5)
     minimum = _setting("AI_MIN_SCORE", 0, 0, 100)
@@ -192,23 +219,50 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
         "upper limit is at least two years below candidate_years. Otherwise stated "
         "overall experience is within_band; unstated overall experience is uncertain."
     )
-    _log(f"Gemini enabled; assessing {len(jobs)} candidate(s), up to {attempts} attempts "
-         f"per request, paced at {rpm} requests/minute; shared {budget}s budget")
+    providers = " then ".join(name for name, key in (("Claude", claude_key), ("Gemini", api_key)) if key)
+    _log(f"{providers} enabled; assessing {len(jobs)} candidate(s), up to {attempts} Gemini attempts "
+         f"per request, paced at {rpm} Gemini requests/minute; shared {budget}s budget")
     with requests.Session() as session:
         for index, job in enumerate(jobs, 1):
+            content = json.dumps({
+                "candidate": profile,
+                "job": {
+                    "title": job.get("title", ""),
+                    "company": job.get("company", ""),
+                    "location": job.get("location", ""),
+                    "description": job.get("_jd") or "",
+                    "location_status": job.get("_location_status", "unknown"),
+                    "country": job.get("country_code") or job.get("countryCode") or job.get("country"),
+                },
+            }, ensure_ascii=False)
+            if claude:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    _log("AI time budget exhausted; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
+                try:
+                    assessment = _claude_assessment(claude, claude_model, instruction, content,
+                                                    min(CLAUDE_REQUEST_TIMEOUT, remaining))
+                except Exception as error:  # Gemini or heuristics must still assess the role.
+                    status = type(error).__name__
+                    if isinstance(error, anthropic.APIStatusError):
+                        status += f", HTTP {error.status_code}"
+                        if error.status_code in (400, 401, 403, 404, 429):
+                            claude = None
+                    _log(f"role {index}: Claude failed ({status}); "
+                         + ("trying Gemini" if api_key else "using heuristics")
+                         + ("; Claude disabled for this run" if claude is None else ""))
+                else:
+                    _record(job, assessment, profile)
+                    continue
+            if not api_key:
+                if claude is None:
+                    _log("AI unavailable; preserving completed assessments; remaining roles use heuristics")
+                    return _selected(jobs, minimum)
+                continue
             payload = {
                 "systemInstruction": {"parts": [{"text": instruction}]},
-                "contents": [{"role": "user", "parts": [{"text": json.dumps({
-                    "candidate": profile,
-                    "job": {
-                        "title": job.get("title", ""),
-                        "company": job.get("company", ""),
-                        "location": job.get("location", ""),
-                        "description": job.get("_jd") or "",
-                        "location_status": job.get("_location_status", "unknown"),
-                        "country": job.get("country_code") or job.get("countryCode") or job.get("country"),
-                    },
-                }, ensure_ascii=False)}]}],
+                "contents": [{"role": "user", "parts": [{"text": content}]}],
                 "generationConfig": {
                     "responseMimeType": "application/json",
                     "responseJsonSchema": SCHEMA,
@@ -252,37 +306,45 @@ def score_jobs(jobs: list[dict], config: dict) -> list[dict]:
                             next_request_at = max(next_request_at, time.monotonic() + delay)
                             _log(f"retry scheduled after at least {delay:g}s")
                             continue
-                        _log("provider quota or cooldown requires deferring further AI requests")
-                    _log("AI unavailable; preserving completed assessments; remaining roles use heuristics")
-                    return _selected(jobs, minimum)
+                        _log("provider quota or cooldown requires deferring further Gemini requests")
+                    if claude is None:
+                        _log("AI unavailable; preserving completed assessments; remaining roles use heuristics")
+                        return _selected(jobs, minimum)
+                    _log("Gemini disabled for this run; remaining roles use Claude only")
+                    api_key = ""
+                    break
                 else:
-                    decision = assessment["decision"]
-                    clear_mismatch = (
-                        assessment["relevance"] == "irrelevant"
-                        or assessment["location_fit"] == "outside"
-                        or (profile["drop_out_of_band"] and assessment["experience_fit"]
-                            in ("below_band", "above_band"))
-                    )
-                    if not (job.get("_jd") or "").strip():
-                        decision = "uncertain"
-                        assessment["note"] = "Full job description unavailable; retained for manual review."
-                    elif ((not clear_mismatch and any(
-                        assessment[field] == "uncertain"
-                        for field in ("relevance", "experience_fit", "location_fit")
-                    )) or (decision == "keep" and clear_mismatch)):
-                        decision = "uncertain"
-                    assessment["decision"] = decision
-                    for field, value in assessment.items():
-                        job[f"ai_{field}"] = value
+                    _record(job, assessment, profile)
                     break
                 finally:
                     if response is not None:
                         response.close()
     kept = _selected(jobs, minimum)
-    uncertain = sum(job["ai_decision"] == "uncertain" for job in kept)
+    uncertain = sum(job.get("ai_decision") == "uncertain" for job in kept)
     _log(f"assessed {len(jobs)} candidate(s); retained {len(kept)} "
          f"({uncertain} uncertain); rejected {len(jobs) - len(kept)}")
     return kept
+
+
+def _record(job: dict, assessment: dict, profile: dict) -> None:
+    decision = assessment["decision"]
+    clear_mismatch = (
+        assessment["relevance"] == "irrelevant"
+        or assessment["location_fit"] == "outside"
+        or (profile["drop_out_of_band"] and assessment["experience_fit"]
+            in ("below_band", "above_band"))
+    )
+    if not (job.get("_jd") or "").strip():
+        decision = "uncertain"
+        assessment["note"] = "Full job description unavailable; retained for manual review."
+    elif ((not clear_mismatch and any(
+        assessment[field] == "uncertain"
+        for field in ("relevance", "experience_fit", "location_fit")
+    )) or (decision == "keep" and clear_mismatch)):
+        decision = "uncertain"
+    assessment["decision"] = decision
+    for field, value in assessment.items():
+        job[f"ai_{field}"] = value
 
 
 def _selected(jobs, minimum):
