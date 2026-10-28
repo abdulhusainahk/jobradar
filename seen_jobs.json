@@ -121,6 +121,23 @@
       "reason": "The role is a Forward Deployed AI Engineer focusing heavily on marketing analytics, consumer insights, and business workflow transformation, rather than core DevOps, infrastructure automation, or platform engineering. Furthermore, the location is in the US (San Jose, Seattle, San Francisco), which does not match the candidate's enabled regions.",
       "signature": "2c0864c9831a803a8a6e4e07c6a43cb508bc97ba14dbfc88282733794025db02"
     },
+    "Adobe::R173252": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing Workfront integration/solutions engineering role, not infrastructure automation. Located in Lehi, Utah, with US pay ranges, which is outside the enabled India, UAE and Europe regions. The stated 8-12 years overlaps the candidate's band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "1e74dd5dcd3bf74953bf917d4873ffed938ad5f17f512520e4fcbc578841d7ef",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T21:29:30.303950+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Customer-facing Workfront integration/solutions engineering role, not infrastructure automation. Located in Lehi, Utah, with US pay ranges, which is outside the enabled India, UAE and Europe regions. The stated 8-12 years overlaps the candidate's band.",
+      "signature": "c99722d452788e18811db7b9ad0423f80a56072ca33cdeeef16bdbe523e5f706"
+    },
     "Adyen::8227085": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -308,6 +325,23 @@
       "reason": "This is a Developer Advocate/Developer Experience role focused on writing content, tutorials, and blogs about AI agents on AWS, rather than an infrastructure automation, DevOps, or SRE platform engineering role. Furthermore, the location is Vancouver, Canada, which falls outside the candidate's enabled regions.",
       "signature": "1faf113008f9610d7348322cf188de2661990c837733d77b2cef494063d1433f"
     },
+    "Amazon::10585809": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role itself fits well: infrastructure automation, IaC, serverless on AWS, and CI/CD. But the location is San Jose, CRI (Costa Rica), which is outside the enabled regions (India, UAE, Europe). The description mentions no remote option. Overall years of experience required are not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "e1e4d284db325b140a05f1d39701cda456f352d12938e8466d91d5f38e01fe43",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T21:29:30.303868+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role itself fits well: infrastructure automation, IaC, serverless on AWS, and CI/CD. But the location is San Jose, CRI (Costa Rica), which is outside the enabled regions (India, UAE, Europe). The description mentions no remote option. Overall years of experience required are not stated.",
+      "signature": "e47c58494ae61f42b61f1b87a8fe8f0a90b64b5a3b2460fcd2fd6cf5f66386cf"
+    },
     "Amazon::10585969": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -392,6 +426,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
       "signature": "9da8d67d269db3c56ee20af97014ad6d3eedf1c2775d03d33de67d4000c5fc88"
+    },
+    "Amazon::10589838": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is based in Seoul, Korea, which is outside the enabled India, UAE and Europe regions, and it requires full working proficiency in Korean. It is primarily an AI software development role (production apps, agents, RAG pipelines) rather than infrastructure automation. Experience is within band (5+ years required).",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "7b6d666ada29ba21fb790e69bf599029dcaa73c2b650c227bfb787bf1ce87a92",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T21:29:30.303911+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is based in Seoul, Korea, which is outside the enabled India, UAE and Europe regions, and it requires full working proficiency in Korean. It is primarily an AI software development role (production apps, agents, RAG pipelines) rather than infrastructure automation. Experience is within band (5+ years required).",
+      "signature": "075277462ec3f71de6c05d5fdd42a1258024d716a152e8db3683e4e56c557e51"
     },
     "Amazon::10589840": {
       "ai_assessment": {
@@ -2382,6 +2433,23 @@
       "reason": "The role requires over 8 years of experience, exceeding the candidate's years, and is located in Shanghai, China, which is outside the enabled regions.",
       "signature": "e4d9b8abf4c79ab9fa9881217d1a3efa862a71a9f5bae2b9c4961f5bf909dd20"
     },
+    "J.P. Morgan::210804053": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE manager role is relevant and the 5+ years requirement is within band, but the JD explicitly places it in Buenos Aires, Argentina, outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "679a1c2bfaadc8efb47fb284a017824ab99489c27d1ed674e2c441f106a5be5b",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T21:29:30.303995+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "SRE manager role is relevant and the 5+ years requirement is within band, but the JD explicitly places it in Buenos Aires, Argentina, outside the enabled India, UAE and Europe regions.",
+      "signature": "4100a2e86c0396d8aa33c0070c9f88bb405025f5062a8d30e8645701f9c19a29"
+    },
     "Mastercard::R-277889": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2398,6 +2466,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is a Senior Site Reliability Engineer focused on CI/CD automation, Jenkins, and Chef. However, the job location is in O'Fallon, Missouri, which falls outside the candidate's enabled regions (India, UAE, Europe).",
       "signature": "14cfb971564fa143cab36741cb28f13afae204e908db202ef0cb7d104721cf96"
+    },
+    "Mastercard::R-279063": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong AI platform/infra automation match (Kubernetes, IaC, CI/CD, MLOps), but all locations are US-only (NYC, Boston, Arlington, Atlanta, Purchase, O'Fallon) with US pay ranges; outside enabled India/UAE/Europe regions. Years unstated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "b58c3cd95e8f6fd83e1174c50744a16afed976a33edc7f37f3e0fe26cd4094bc",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T21:29:30.304030+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Strong AI platform/infra automation match (Kubernetes, IaC, CI/CD, MLOps), but all locations are US-only (NYC, Boston, Arlington, Atlanta, Purchase, O'Fallon) with US pay ranges; outside enabled India/UAE/Europe regions. Years unstated.",
+      "signature": "3b7c792f7e78217da9a5fecb08261a9273c33c547246f7b2d58f1db919ae1f3f"
     },
     "Mastercard::R-286678": {
       "ai_assessment": {
@@ -2432,6 +2517,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires deep hands-on expertise with HP NonStop (Tandem) platforms and traditional payments infrastructure, which does not match the candidate's cloud-native DevOps, Kubernetes, and AWS/Azure skill set.",
       "signature": "fa3d980ccd0223ce8d8889d373bd39513a25232c61c8efd842ca87eedcde2a4b"
+    },
+    "Mastercard::R-293009": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Platform engineering manager role (IaC, Kubernetes, CI/CD) is relevant, but the JD explicitly places it in O'Fallon, Missouri, US, with US pay ranges, which is outside the enabled India/UAE/Europe regions. Overall experience years are not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "26a4bcefd4fdfcb72cec592fee3ec99be57e3983f88637eb5895b725ede0d58c",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T21:29:30.304079+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Platform engineering manager role (IaC, Kubernetes, CI/CD) is relevant, but the JD explicitly places it in O'Fallon, Missouri, US, with US pay ranges, which is outside the enabled India/UAE/Europe regions. Overall experience years are not stated.",
+      "signature": "d9c67d69260dc4fa56c8965179589e485d25a4c951b76fec9479104422bc4a6d"
     },
     "Mastercard::R-293373": {
       "ai_assessment": {
@@ -2470,35 +2572,35 @@
     "Mastercard::R-294125": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "within_band",
+        "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is focused on software engineering for a Data & AI platform rather than DevOps, SRE, or infrastructure automation. Additionally, the job location is Arlington, Virginia, which is outside the candidate's enabled regions.",
+        "ai_note": "Data/AI platform software engineering role (semantic metrics, SQL, data modeling), not infrastructure automation; located in Arlington, Virginia, US team, outside enabled regions. No overall experience stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 10
       },
-      "at": "2026-10-21T17:41:48+00:00",
+      "at": "2026-10-28T21:29:30+00:00",
       "jd_hash": "5f3464bc601a6284a98b987c14993563450aad2e793d7fc965b5f28a90b3609b",
       "mode": "ai",
-      "next_review_at": "2026-10-28T17:41:48.188662+00:00",
+      "next_review_at": "2026-11-04T21:29:30.304157+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is focused on software engineering for a Data & AI platform rather than DevOps, SRE, or infrastructure automation. Additionally, the job location is Arlington, Virginia, which is outside the candidate's enabled regions.",
+      "reason": "Data/AI platform software engineering role (semantic metrics, SQL, data modeling), not infrastructure automation; located in Arlington, Virginia, US team, outside enabled regions. No overall experience stated.",
       "signature": "dd93c14433098aac21da7bc998d081fb16eaa79ee56e23c4c12771a4a469acb6"
     },
     "Mastercard::R-294126": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "within_band",
+        "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is for a Manager of Software Engineering focusing on data platform, data modeling, and governance, rather than DevOps, SRE, or platform engineering infrastructure. Additionally, the location is Arlington, Virginia, which is outside the candidate's allowed regions.",
+        "ai_note": "Data engineering management role (data modeling/governance, metrics) for a new US-based team in Arlington, Virginia; not infrastructure automation and outside the enabled regions.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 5
       },
-      "at": "2026-10-21T17:41:48+00:00",
+      "at": "2026-10-28T21:29:30+00:00",
       "jd_hash": "1df083be0cc5f13a8654377db62098d08416162b61016c58e709d42edd931506",
       "mode": "ai",
-      "next_review_at": "2026-10-28T17:41:48.188641+00:00",
+      "next_review_at": "2026-11-04T21:29:30.304119+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is for a Manager of Software Engineering focusing on data platform, data modeling, and governance, rather than DevOps, SRE, or platform engineering infrastructure. Additionally, the location is Arlington, Virginia, which is outside the candidate's allowed regions.",
+      "reason": "Data engineering management role (data modeling/governance, metrics) for a new US-based team in Arlington, Virginia; not infrastructure automation and outside the enabled regions.",
       "signature": "94a242785be8b7c15b6c770933da727049e33f747908547ac3e52916da7b57bd"
     },
     "Microsoft::1970393556927480": {
@@ -2997,18 +3099,18 @@
     "Rubrik::8273808": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "above_band",
+        "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is primarily focused on software engineering and API development (Backend, Node.js/Java/Python/Go, API gateways, full-stack services, integration platforms) rather than infrastructure automation, DevOps, or SRE platform engineering.",
+        "ai_note": "Despite the 'Platform' title, this is a backend/API engineering role (REST/GraphQL, Node/Java, iPaaS, SaaS integrations). DevOps, Kubernetes and IaC are only incidental mentions, not core infrastructure automation. The 8+ year minimum is within the 11-year band, and Bangalore is allowed.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 25
       },
-      "at": "2026-10-21T17:41:48+00:00",
-      "jd_hash": "0bc39e7b1a47073207e741749dd52aa5e4fa18bec72c881deab6fc9f44a66668",
+      "at": "2026-10-28T21:29:30+00:00",
+      "jd_hash": "9138221520408ea4de8994c30ae9aaf1a2d86892f32d58614e02a549da1d4f77",
       "mode": "ai",
-      "next_review_at": "2026-10-28T17:41:48.188273+00:00",
+      "next_review_at": "2026-11-04T21:29:30.303778+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is primarily focused on software engineering and API development (Backend, Node.js/Java/Python/Go, API gateways, full-stack services, integration platforms) rather than infrastructure automation, DevOps, or SRE platform engineering.",
+      "reason": "Despite the 'Platform' title, this is a backend/API engineering role (REST/GraphQL, Node/Java, iPaaS, SaaS integrations). DevOps, Kubernetes and IaC are only incidental mentions, not core infrastructure automation. The 8+ year minimum is within the 11-year band, and Bangalore is allowed.",
       "signature": "67ebf68aa6e735750cf3ac343bad2efc24c8cd34ca0087d4a7071280ca176b8f"
     },
     "Salesforce::JR309445": {
@@ -4090,6 +4192,7 @@
     "Cloudflare::8276155": "2026-10-13T21:57:34+00:00",
     "Cloudflare::8278262": "2026-10-14T15:55:05+00:00",
     "Cloudflare::8317751": "2026-10-26T06:49:10+00:00",
+    "Cloudflare::8324908": "2026-10-28T21:29:32+00:00",
     "CockroachDB::8159674": "2026-09-15T16:39:26+00:00",
     "Databricks::7619811002": "2026-07-06T16:03:19+00:00",
     "Databricks::8493168002": "2026-09-15T16:39:26+00:00",
