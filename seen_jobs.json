@@ -393,6 +393,23 @@
       "reason": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
       "signature": "9da8d67d269db3c56ee20af97014ad6d3eedf1c2775d03d33de67d4000c5fc88"
     },
+    "Amazon::10589840": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a Forward Deployed Software Engineer focusing on application development, AI/ML workflows, and customer-facing software engineering rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Melbourne, Australia, which falls outside the candidate's enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-28T00:13:52+00:00",
+      "jd_hash": "69d3872724000c63eb05db701aa64175d64baaf78a2b1087681ee66061294022",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T00:13:52.019936+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is a Forward Deployed Software Engineer focusing on application development, AI/ML workflows, and customer-facing software engineering rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Melbourne, Australia, which falls outside the candidate's enabled regions.",
+      "signature": "734095a0ad6406393b026c977253d9923dc9a44e3dd505c68245cd46643756c2"
+    },
     "Citi::859037086583": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2659,16 +2676,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "below_band",
         "ai_location_fit": "uncertain",
-        "ai_note": "This role focuses on End User Computing (EUC) and client platform engineering (managing macOS, Windows, and Linux endpoints, MDM, and employee devices) rather than cloud infrastructure automation, DevOps, or SRE. Additionally, the candidate's years of experience fall below the stated requirement of 8+ years.",
+        "ai_note": "The role is for a Manager of Client Platform Engineering focusing on End User Computing (macOS, Windows, Linux endpoints, MDM, UEM) rather than cloud DevOps/SRE infrastructure automation. Additionally, the role requires 8+ years of experience while the candidate has 6 years, and the job location is Palo Alto/San Francisco, which does not match the candidate's preferred regions.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-10-20T23:08:00+00:00",
+      "at": "2026-10-28T00:13:52+00:00",
       "jd_hash": "fbe2b2e7e046f46623ece83eff525e950ab80fbd05b32b471b75218224b9abb3",
       "mode": "ai",
-      "next_review_at": "2026-10-27T23:08:00.004954+00:00",
+      "next_review_at": "2026-11-04T00:13:52.019680+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This role focuses on End User Computing (EUC) and client platform engineering (managing macOS, Windows, and Linux endpoints, MDM, and employee devices) rather than cloud infrastructure automation, DevOps, or SRE. Additionally, the candidate's years of experience fall below the stated requirement of 8+ years.",
+      "reason": "The role is for a Manager of Client Platform Engineering focusing on End User Computing (macOS, Windows, Linux endpoints, MDM, UEM) rather than cloud DevOps/SRE infrastructure automation. Additionally, the role requires 8+ years of experience while the candidate has 6 years, and the job location is Palo Alto/San Francisco, which does not match the candidate's preferred regions.",
       "signature": "501c92aca703c0c248476f76ea025e109bda8bd39c53516fbc86c4267260e7f8"
     },
     "MongoDB::8304146": {
@@ -2755,6 +2772,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role focuses on physical lab operations, hardware racking, cabling, and liquid cooling systems rather than cloud DevOps or platform engineering. Additionally, the location in Israel is outside the candidate's enabled regions.",
       "signature": "fc826cdbf66f5b734b37983124e7cc9549cee57f6dabb316a5a4dcae56d2447c"
+    },
+    "NVIDIA::JR2028822": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is focused on software engineering for developer experience, CI workflows, and internal tooling rather than core DevOps/SRE/platform infrastructure automation. Additionally, the location is Israel, which is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 35
+      },
+      "at": "2026-10-28T00:13:52+00:00",
+      "jd_hash": "55a799c9090f71bb12a93d666dc420f15e48cac35d1b0f2788c5c79de95d5ff2",
+      "mode": "ai",
+      "next_review_at": "2026-11-04T00:13:52.019908+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "The role is focused on software engineering for developer experience, CI workflows, and internal tooling rather than core DevOps/SRE/platform infrastructure automation. Additionally, the location is Israel, which is outside the enabled regions.",
+      "signature": "4b9f1e5b606f264d4c929c23a3f2b43bef1130a5793db0dbd30ce2d0c6bcab32"
     },
     "Notion::10437426-14c8-4c45-8075-67959ce80393": {
       "ai_assessment": {
