@@ -500,16 +500,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is primarily focused on Data Engineering, ETL development, and SQL Server database management rather than DevOps, SRE, or platform engineering.",
+        "ai_note": "Pune, India is allowed and 8+ years is within band, but this is a data engineering/ETL role (PySpark, SSIS, SQL Server, Hadoop, AutoSys) in Applications Development. Docker/Kubernetes and CI/CD are incidental, with no infrastructure automation responsibilities.",
         "ai_relevance": "irrelevant",
-        "ai_score": 30
+        "ai_score": 12
       },
-      "at": "2026-10-21T17:41:48+00:00",
+      "at": "2026-10-29T01:23:59+00:00",
       "jd_hash": "08f0831f2887619f3aa8fa52647cefe5e4bcc45756f31ad3b361fb5da65ad01f",
       "mode": "ai",
-      "next_review_at": "2026-10-28T17:41:48.188573+00:00",
+      "next_review_at": "2026-11-05T01:23:59.480920+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is primarily focused on Data Engineering, ETL development, and SQL Server database management rather than DevOps, SRE, or platform engineering.",
+      "reason": "Pune, India is allowed and 8+ years is within band, but this is a data engineering/ETL role (PySpark, SSIS, SQL Server, Hadoop, AutoSys) in Applications Development. Docker/Kubernetes and CI/CD are incidental, with no infrastructure automation responsibilities.",
       "signature": "372daef2dcd955442a1ef9e69edc789c98c572867d158c1b91890c693623147b"
     },
     "Citi::859038498233": {
@@ -583,18 +583,18 @@
     "Citi::859038519510": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "within_band",
+        "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is focused on AI evaluation, prompt engineering, and building agentic workflows rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+        "ai_note": "London is allowed, but the role is AI agent evaluation and prompt engineering (test harnesses, golden datasets, prompt optimization) under Applications Development. CI/CD test pipelines are incidental, not infrastructure automation, and no overall experience requirement is stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 22
       },
-      "at": "2026-10-21T17:41:48+00:00",
+      "at": "2026-10-29T01:23:59+00:00",
       "jd_hash": "d52d34addedf9887da9564124e2485b9fbcbc6fc1fb7275c4e5956e0bd231c9f",
       "mode": "ai",
-      "next_review_at": "2026-10-28T17:41:48.188552+00:00",
+      "next_review_at": "2026-11-05T01:23:59.480999+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is focused on AI evaluation, prompt engineering, and building agentic workflows rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+      "reason": "London is allowed, but the role is AI agent evaluation and prompt engineering (test harnesses, golden datasets, prompt optimization) under Applications Development. CI/CD test pipelines are incidental, not infrastructure automation, and no overall experience requirement is stated.",
       "signature": "be1ae2f3cbfca630c16b6b2ff11b311df12fa4cc0423d2661e7713d737bd7ba2"
     },
     "Cloudflare::7572075": {
