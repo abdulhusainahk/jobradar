@@ -427,6 +427,23 @@
       "reason": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
       "signature": "9da8d67d269db3c56ee20af97014ad6d3eedf1c2775d03d33de67d4000c5fc88"
     },
+    "Amazon::10588788": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing AWS ProServe consulting/architect role in Canada (Montreal/Vancouver/Ottawa/Toronto) requiring Canadian security clearance and French; Canada is outside the enabled regions (India, UAE, Europe). No overall years stated. The role is consulting rather than product infrastructure automation.",
+        "ai_relevance": "uncertain",
+        "ai_score": 12
+      },
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "f5f9ca0a251188f602ceb0420115fc12d9b62353eb33df2544d225f1f1978457",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T20:21:20.046347+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Customer-facing AWS ProServe consulting/architect role in Canada (Montreal/Vancouver/Ottawa/Toronto) requiring Canadian security clearance and French; Canada is outside the enabled regions (India, UAE, Europe). No overall years stated. The role is consulting rather than product infrastructure automation.",
+      "signature": "0d898f7d35315d62c04cb3d67426f6849c5b21882cb2a970ae21ef1be0cb85ee"
+    },
     "Amazon::10589838": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -478,6 +495,40 @@
       "reason": "On-site IT support/network/PC repair role in Jeddah, Saudi Arabia (restricted to Saudi nationals). This is not DevOps or infrastructure automation, and the location is outside the enabled regions.",
       "signature": "254637165de8300adfc644386b20f671be4eab6e12211bd776f9addf1db1b1eb"
     },
+    "Amazon::10591664": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is Vancouver, Canada, which is outside the enabled regions (India, UAE, Europe). The role is a Sr. SDE building an internal managed platform, adjacent to platform engineering but software-development focused. The 5+ years required fits the candidate's 6.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
+      },
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "7aa3a0bc94082c86aa3a23e85e08b16169d0ac29058ae44c9716d6f533248967",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T20:21:20.046331+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Location is Vancouver, Canada, which is outside the enabled regions (India, UAE, Europe). The role is a Sr. SDE building an internal managed platform, adjacent to platform engineering but software-development focused. The 5+ years required fits the candidate's 6.",
+      "signature": "93995fb2b4b9b7f9a52d22a5f1240aca734ca7d899c5068c508e371df662f684"
+    },
+    "Amazon::10592365": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Hardware power-electronics functional-safety and reliability role (IEC 61508, HALT/HASS, MTBF), not DevOps/SRE infrastructure automation. Lille, France is not in the enabled location list, and no overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "c9d9b81acf851265c4b2fe29916d5b847f0e6417e92a5b80ecb6705f9e10846c",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T20:21:20.046374+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Hardware power-electronics functional-safety and reliability role (IEC 61508, HALT/HASS, MTBF), not DevOps/SRE infrastructure automation. Lille, France is not in the enabled location list, and no overall years of experience are stated.",
+      "signature": "f03ee00c33a7b5bd255cde322f610c3e364bd5e6092c728580aaf9c070410e06"
+    },
     "Citi::859037086583": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -515,36 +566,36 @@
     "Citi::859038498233": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "within_band",
+        "ai_experience_fit": "above_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is focused on software engineering and AI application development (Lead Forward Deployed AI Engineer building agentic AI workflows) rather than core DevOps, SRE, or platform engineering infrastructure automation.",
+        "ai_note": "London is an allowed location. The role is AI application/agent software engineering (Applications Development), not infrastructure automation. It explicitly requires 12+ years of overall experience, above the 11-year max, and drop_out_of_band is true.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 12
       },
-      "at": "2026-10-27T20:35:34+00:00",
-      "jd_hash": "c00683c30685d15e613986a4c83c5ec9c2201d9b55a290308329a211e0d7fca9",
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "e39b3224f8e0fd640eded794d1ae6e6021be4cf13309e60d3dfb8be2997af280",
       "mode": "ai",
-      "next_review_at": "2026-11-03T20:35:34.561206+00:00",
+      "next_review_at": "2026-11-05T20:21:20.046488+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is focused on software engineering and AI application development (Lead Forward Deployed AI Engineer building agentic AI workflows) rather than core DevOps, SRE, or platform engineering infrastructure automation.",
-      "signature": "d379cea473a1dec7fd8bd05b27ca7fb15d45792980c94aec50581e8293157686"
+      "reason": "London is an allowed location. The role is AI application/agent software engineering (Applications Development), not infrastructure automation. It explicitly requires 12+ years of overall experience, above the 11-year max, and drop_out_of_band is true.",
+      "signature": "2e96e52e12d4ffa90990d085925516f783db0700a5f07bc16786622e4d1a9b6f"
     },
     "Citi::859038498623": {
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is focused on application development and AI agent engineering (Python, LLMs, MCP servers) rather than DevOps, SRE, or core infrastructure automation.",
+        "ai_note": "London is allowed and 7+ years is within band, but the role is AI application/agent software development (Python agent logic, RAG, MCP integrations) in Applications Development, not infrastructure automation. The MCP overlap is incidental; CI/CD and Docker are only peripheral.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 25
       },
-      "at": "2026-10-27T20:35:34+00:00",
-      "jd_hash": "a78285d29d328e6b343cb8e5179dc309fd683910a18412e143f6f0aebf17256d",
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "ea20b85817dc28c87db824d7adbb87802e635c788a1dc69db99d97853013e37d",
       "mode": "ai",
-      "next_review_at": "2026-11-03T20:35:34.561233+00:00",
+      "next_review_at": "2026-11-05T20:21:20.046469+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is focused on application development and AI agent engineering (Python, LLMs, MCP servers) rather than DevOps, SRE, or core infrastructure automation.",
-      "signature": "981e29240bf98eccb046179738d482af786128e2af54d81bf16a5976ec9e6297"
+      "reason": "London is allowed and 7+ years is within band, but the role is AI application/agent software development (Python agent logic, RAG, MCP integrations) in Applications Development, not infrastructure automation. The MCP overlap is incidental; CI/CD and Docker are only peripheral.",
+      "signature": "5620e0a729dfa7e62f7784fc961c625bc2ce6fe3a8f645aed8550e23836c6194"
     },
     "Citi::859038501308": {
       "ai_assessment": {
@@ -2110,6 +2161,23 @@
       "reason": "This is a Forward Deployed / Solutions / Customer-facing engineering role rather than a DevOps, SRE, or Platform Engineering role, focusing on customer pilots, demos, and integrations rather than infrastructure automation.",
       "signature": "884166333ac651bf3fe7722279a7d1100d1c0d83fca110caece30bdb6b94808d"
     },
+    "HackerRank::8203626": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing forward deployed/solutions role with no infrastructure automation duties; hybrid in Santa Clara/Mountain View, CA, which is outside the enabled India/UAE/Europe regions. Overall experience is unstated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "5c977a7e425c769ab6fa18bc1bbe9189ff63ae008fc954edff29587b5de2895a",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T20:21:20.046247+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Customer-facing forward deployed/solutions role with no infrastructure automation duties; hybrid in Santa Clara/Mountain View, CA, which is outside the enabled India/UAE/Europe regions. Overall experience is unstated.",
+      "signature": "bac182cd6c281ed23ef97491a1105e19e4bcd1f3e5b2fe79708eda6712b62b57"
+    },
     "HelloFresh::8258950": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2200,16 +2268,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role focuses on Trader Voice infrastructure, VoIP, and telephony systems rather than DevOps, SRE, or cloud platform engineering.",
+        "ai_note": "London is an allowed location, but the role is trader voice/telephony L3 support (IPC, SIP/VoIP, hoots, voice recording) with no cloud, IaC or Kubernetes automation. Experience asked is 5+ years, within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 12
       },
-      "at": "2026-10-22T18:28:57+00:00",
+      "at": "2026-10-29T20:21:20+00:00",
       "jd_hash": "2f70eddf52627570ffd954297f8315bd7afde16c551b277cb0039136dd9d8a33",
       "mode": "ai",
-      "next_review_at": "2026-10-29T18:28:57.603458+00:00",
+      "next_review_at": "2026-11-05T20:21:20.046454+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role focuses on Trader Voice infrastructure, VoIP, and telephony systems rather than DevOps, SRE, or cloud platform engineering.",
+      "reason": "London is an allowed location, but the role is trader voice/telephony L3 support (IPC, SIP/VoIP, hoots, voice recording) with no cloud, IaC or Kubernetes automation. Experience asked is 5+ years, within band.",
       "signature": "37a334ec9ad4ef1d8118ed82dfda1ffab7a1aacdc2fbb22db77ac3fd8304c969"
     },
     "J.P. Morgan::210799552": {
@@ -2897,16 +2965,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is focused on customer-facing AI and software engineering solutions rather than core infrastructure automation, DevOps, or platform engineering. Furthermore, the location is restricted to the United States, which does not match the candidate's enabled regions.",
+        "ai_note": "Customer-facing AI software engineering role (app refactoring, DB migration, Java/Python) rather than infrastructure automation, and it's US-only (remote within U.S. or North America offices), outside the India/UAE/Europe regions. 8+ years is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 30
+        "ai_score": 10
       },
-      "at": "2026-10-22T18:28:57+00:00",
-      "jd_hash": "876ad352dad9a6e6976eac638a9d6adfde9df7fe750da9fecbcf9868de6f6638",
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "4699c405890099f4fc8648fafaa9be3fd074599c3677ba94095c6f42226472d6",
       "mode": "ai",
-      "next_review_at": "2026-10-29T18:28:57.603022+00:00",
+      "next_review_at": "2026-11-05T20:21:20.046305+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is focused on customer-facing AI and software engineering solutions rather than core infrastructure automation, DevOps, or platform engineering. Furthermore, the location is restricted to the United States, which does not match the candidate's enabled regions.",
+      "reason": "Customer-facing AI software engineering role (app refactoring, DB migration, Java/Python) rather than infrastructure automation, and it's US-only (remote within U.S. or North America offices), outside the India/UAE/Europe regions. 8+ years is within band.",
       "signature": "123fed5148dd7c6c7d3a5045325606123a0e37c2a78eca896f22e628e8269215"
     },
     "NVIDIA::JR1998048": {
@@ -3407,16 +3475,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is a Forward Deployed Engineer focusing on customer-facing AI application delivery, prompt engineering, and full-stack/solutions development rather than infrastructure automation, DevOps, SRE, or platform engineering.",
+        "ai_note": "Dublin is allowed and 3+ years is within band, but this is a Sales-category, customer-facing AI agent/application delivery role (prompts, Salesforce, data pipelines, Apex/Python) with no infrastructure automation, Kubernetes, IaC or SRE responsibilities. It also requires a second EMEA language.",
         "ai_relevance": "irrelevant",
-        "ai_score": 30
+        "ai_score": 25
       },
-      "at": "2026-10-22T18:28:57+00:00",
+      "at": "2026-10-29T20:21:20+00:00",
       "jd_hash": "832bb71431dcfc010f91a8b40facf40c7c5fe16d1ba4a263a044fd0b2936cf81",
       "mode": "ai",
-      "next_review_at": "2026-10-29T18:28:57.603389+00:00",
+      "next_review_at": "2026-11-05T20:21:20.046435+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Forward Deployed Engineer focusing on customer-facing AI application delivery, prompt engineering, and full-stack/solutions development rather than infrastructure automation, DevOps, SRE, or platform engineering.",
+      "reason": "Dublin is allowed and 3+ years is within band, but this is a Sales-category, customer-facing AI agent/application delivery role (prompts, Salesforce, data pipelines, Apex/Python) with no infrastructure automation, Kubernetes, IaC or SRE responsibilities. It also requires a second EMEA language.",
       "signature": "1c7cbb384398ab0bd28eeaf341b0bbeb183463bc71562c7b42ee9bcae077a4cf"
     },
     "Salesforce::JR360310": {
@@ -3759,6 +3827,23 @@
       "reason": "This is a specialized Salesforce DevOps Architect role requiring 10-16 years of overall experience and deep Salesforce platform certifications (Platform Developer, Salesforce Certified DevOps Engineer, etc.). The candidate has 6 years of general DevOps experience and lacks Salesforce-specific platform architecture expertise.",
       "signature": "5f946e08ee7ca0d489457a12eb5b4af51478f617a1ba77045930d115baa396f6"
     },
+    "Salesforce::JR365759": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/infra automation role (Kubernetes, Terraform, observability, AIOps), but all locations are US-only remote/Seattle, outside the enabled India/UAE/Europe regions. The 9+ year requirement is within the 11-year max.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "85f7eaecda54a7498d1ee2ab8cb00576c74308c24764106cf6dc873e938c7ce9",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T20:21:20.046394+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Strong SRE/infra automation role (Kubernetes, Terraform, observability, AIOps), but all locations are US-only remote/Seattle, outside the enabled India/UAE/Europe regions. The 9+ year requirement is within the 11-year max.",
+      "signature": "0502d6a8d673741f9767bd92a5d60c91cd12be3f0181b83a6c5d2abdc3c427ea"
+    },
     "Salesforce::JR365826": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3792,6 +3877,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "A Data 360 forward deployed engineer role focused on Salesforce data engineering, SQL/Apex, and RAG, not infrastructure automation. The location is Milan, Italy, which is not among the configured Europe locations. The 8+ year minimum is within band.",
       "signature": "d3a94253965bfe33b5c9d22d9211cff0f9863dd5f861e96446dc851d85b7e007"
+    },
+    "Salesforce::JR366190": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Dublin location is allowed, and the 3+ years requirement is within band. However, this Salesforce Sales-category Forward Deployed Engineer role centres on customer-facing agentic AI app development, data pipelines and prompts, not infrastructure automation. It also requires a native language (title says Turkish, JD says Greek).",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-29T20:21:20+00:00",
+      "jd_hash": "ec335a0cd84315355efd83bc103f1d9220a6fcb38bb05845eff0184c6a5ec327",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T20:21:20.046417+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Dublin location is allowed, and the 3+ years requirement is within band. However, this Salesforce Sales-category Forward Deployed Engineer role centres on customer-facing agentic AI app development, data pipelines and prompts, not infrastructure automation. It also requires a native language (title says Turkish, JD says Greek).",
+      "signature": "69c3e65aae66dfd643c4c67bc0f13d07993753e7c6d9d519aefcab46908b85fa"
     },
     "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
       "ai_assessment": {
@@ -4247,6 +4349,7 @@
     "Cloudflare::8278262": "2026-10-14T15:55:05+00:00",
     "Cloudflare::8317751": "2026-10-26T06:49:10+00:00",
     "Cloudflare::8324908": "2026-10-28T21:29:32+00:00",
+    "Cloudflare::8331153": "2026-10-29T20:21:23+00:00",
     "CockroachDB::8159674": "2026-09-15T16:39:26+00:00",
     "Databricks::7619811002": "2026-07-06T16:03:19+00:00",
     "Databricks::8493168002": "2026-09-15T16:39:26+00:00",
@@ -4324,6 +4427,7 @@
     "Google::104556982945358534": "2026-09-07T18:04:40+00:00",
     "Google::106113082882695878": "2026-10-17T19:18:51+00:00",
     "Google::106345631739454150": "2026-10-17T13:50:59+00:00",
+    "Google::108715629858431686": "2026-10-29T20:21:23+00:00",
     "Google::109189301668848326": "2026-09-29T15:30:42+00:00",
     "Google::109338440650105542": "2026-07-09T09:38:25+00:00",
     "Google::110221678662820550": "2026-09-15T11:30:01+00:00",
