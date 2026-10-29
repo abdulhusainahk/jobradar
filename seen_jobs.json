@@ -279,16 +279,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Forward Deployed Engineer focusing heavily on customer-facing software development, AI application architecture, and professional services rather than core infrastructure automation, SRE, or platform engineering. Furthermore, the job location is in Singapore (SGP), which falls outside the candidate's enabled regions.",
+        "ai_note": "Location is Singapore (SGP), which is outside the enabled India, UAE and Europe regions. The role is a customer-embedded AI application FDE focused on software development, not infrastructure automation. The 5+ years of design experience falls within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 20
       },
-      "at": "2026-10-22T13:43:42+00:00",
+      "at": "2026-10-29T14:47:55+00:00",
       "jd_hash": "a5052a8b7d761ecd6c2ed799fe73dc60347ce7190234cb01489d5650f38922db",
       "mode": "ai",
-      "next_review_at": "2026-10-29T13:43:42.233233+00:00",
+      "next_review_at": "2026-11-05T14:47:55.237041+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Forward Deployed Engineer focusing heavily on customer-facing software development, AI application architecture, and professional services rather than core infrastructure automation, SRE, or platform engineering. Furthermore, the job location is in Singapore (SGP), which falls outside the candidate's enabled regions.",
+      "reason": "Location is Singapore (SGP), which is outside the enabled India, UAE and Europe regions. The role is a customer-embedded AI application FDE focused on software development, not infrastructure automation. The 5+ years of design experience falls within band.",
       "signature": "a4a0fba1e876f793705705e68ce2ba553689d8ce6c2f2ab70bbcf7274e1d92b2"
     },
     "Amazon::10584793": {
@@ -296,16 +296,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Forward Deployed Engineer focusing on software development, customer-facing delivery, and AI application engineering rather than core infrastructure automation, platform engineering, or SRE. Furthermore, the job location is Singapore (SGP), which falls outside the candidate's enabled regions.",
+        "ai_note": "Location is SGP (Singapore), which is not among the enabled India, UAE or Europe regions. The role itself is mainly AI application software development (RAG, agents, React/TypeScript) embedded with customers, not infrastructure automation. Its 2-3+ year experience requirement is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 15
       },
-      "at": "2026-10-22T13:43:42+00:00",
+      "at": "2026-10-29T14:47:55+00:00",
       "jd_hash": "d3403a41164051453806c3c3441c3fe060d0c3a42b7a9d7dd153256ff891994f",
       "mode": "ai",
-      "next_review_at": "2026-10-29T13:43:42.233192+00:00",
+      "next_review_at": "2026-11-05T14:47:55.237017+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Forward Deployed Engineer focusing on software development, customer-facing delivery, and AI application engineering rather than core infrastructure automation, platform engineering, or SRE. Furthermore, the job location is Singapore (SGP), which falls outside the candidate's enabled regions.",
+      "reason": "Location is SGP (Singapore), which is not among the enabled India, UAE or Europe regions. The role itself is mainly AI application software development (RAG, agents, React/TypeScript) embedded with customers, not infrastructure automation. Its 2-3+ year experience requirement is within band.",
       "signature": "0fd63dd38332b8c0b0f4712518a2e7f0dbb09067159ecc1e974253dcc136b4a4"
     },
     "Amazon::10585257": {
@@ -2130,18 +2130,18 @@
     "J.P. Morgan::210780917": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "below_band",
+        "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is a Principal Software Engineer focused on forward-deployed data solutions, Databricks, Snowflake, and data governance rather than core DevOps, SRE, or platform engineering infrastructure automation. Additionally, the role requires 7+ years of applied experience with senior leadership expectations, whereas the candidate has 6 years.",
+        "ai_note": "Principal data-engineering leadership role focused on Databricks/Snowflake delivery, data governance and executive program management, not infrastructure automation/DevOps. 7+ yrs is within band and Hyderabad is allowed, but the core function is a mismatch.",
         "ai_relevance": "irrelevant",
-        "ai_score": 30
+        "ai_score": 20
       },
-      "at": "2026-10-22T13:43:42+00:00",
+      "at": "2026-10-29T14:47:55+00:00",
       "jd_hash": "152383d0bc5cc8ebd7fc02d11ffb572f892c3a99b2eb35c0205f695f68b33854",
       "mode": "ai",
-      "next_review_at": "2026-10-29T13:43:42.233270+00:00",
+      "next_review_at": "2026-11-05T14:47:55.237206+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Principal Software Engineer focused on forward-deployed data solutions, Databricks, Snowflake, and data governance rather than core DevOps, SRE, or platform engineering infrastructure automation. Additionally, the role requires 7+ years of applied experience with senior leadership expectations, whereas the candidate has 6 years.",
+      "reason": "Principal data-engineering leadership role focused on Databricks/Snowflake delivery, data governance and executive program management, not infrastructure automation/DevOps. 7+ yrs is within band and Hyderabad is allowed, but the core function is a mismatch.",
       "signature": "fbe37064b556bac5e38368dd8c91af2cfe3f65b93496cdb6adc0dd1c4b4feaf7"
     },
     "J.P. Morgan::210790282": {
@@ -2382,6 +2382,23 @@
       "reason": "The role focuses heavily on network infrastructure, network design, SD-WAN, and routing rather than core DevOps, Kubernetes, Terraform, and cloud platform automation.",
       "signature": "0278dd0f57a9cf05fbf1cdc7eb4ed48f6c0bdc76e218260ed45eb8ff8eefd11b"
     },
+    "J.P. Morgan::210802704": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Java backend developer role (Spring Boot, Kafka, Hibernate). Kubernetes and Jenkins are only incidental mentions, with no infrastructure automation or platform ownership. Mumbai location is allowed, and the 3+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-29T14:47:55+00:00",
+      "jd_hash": "52e50ea8e77078a198b8d51289489405573b007cf506c0eb90251a0ba1510e6f",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T14:47:55.237169+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Java backend developer role (Spring Boot, Kafka, Hibernate). Kubernetes and Jenkins are only incidental mentions, with no infrastructure automation or platform ownership. Mumbai location is allowed, and the 3+ years requirement is within band.",
+      "signature": "be540a9928d718fdc81911ba074d0edc2f6c168bdef6de4a9214f14c128361e7"
+    },
     "J.P. Morgan::210802873": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2415,6 +2432,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is heavily focused on traditional network engineering (routing, switching, Cisco data centers) rather than cloud-native DevOps, Kubernetes, or infrastructure automation.",
       "signature": "403483d3797ae3ed16eb2466fdd98348e9658cae7ff42b9120d809c300ef7f4c"
+    },
+    "J.P. Morgan::210803714": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Infrastructure Engineer' title, this is a technology risk and controls role covering audits, compliance, KRIs, and control assessments. It has no infrastructure automation, IaC, Kubernetes, or CI/CD work. Hyderabad is an allowed location, and the 3+ year requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-29T14:47:55+00:00",
+      "jd_hash": "eb587a3ba9e3fc01bd65e7b41abf6add882bebe86a5f68436fda42fc9913a407",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T14:47:55.237190+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Despite the 'Infrastructure Engineer' title, this is a technology risk and controls role covering audits, compliance, KRIs, and control assessments. It has no infrastructure automation, IaC, Kubernetes, or CI/CD work. Hyderabad is an allowed location, and the 3+ year requirement is within band.",
+      "signature": "d0ab2696f02f60277238fc0a4469abf287ea8efb2742700cdd97f4ef8f50f3d0"
     },
     "J.P. Morgan::210803732": {
       "ai_assessment": {
@@ -2895,18 +2929,18 @@
     "NVIDIA::JR2021329": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "above_band",
+        "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role requires 8+ years of experience which is above the candidate's 6 years, and the location is Israel, which is outside the candidate's enabled regions.",
+        "ai_note": "Strong DevOps/CI-CD infrastructure automation role with 8+ years required, which is within the 11-year band. However, the JD explicitly places it in Yokneam, Israel, which is outside the enabled regions (India, UAE, Europe), so it is a clear location mismatch.",
         "ai_relevance": "relevant",
-        "ai_score": 45
+        "ai_score": 25
       },
-      "at": "2026-10-22T13:43:42+00:00",
+      "at": "2026-10-29T14:47:55+00:00",
       "jd_hash": "67cc0006ab0d2338618ba65d1856d287feaae2aa38d7dc46202518b7fab880d2",
       "mode": "ai",
-      "next_review_at": "2026-10-29T13:43:42.233111+00:00",
+      "next_review_at": "2026-11-05T14:47:55.236991+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role requires 8+ years of experience which is above the candidate's 6 years, and the location is Israel, which is outside the candidate's enabled regions.",
+      "reason": "Strong DevOps/CI-CD infrastructure automation role with 8+ years required, which is within the 11-year band. However, the JD explicitly places it in Yokneam, Israel, which is outside the enabled regions (India, UAE, Europe), so it is a clear location mismatch.",
       "signature": "7b66d0f5e68d903431da8f30de8421c9eee55098f6ba0502d6a9736fab05a4ca"
     },
     "NVIDIA::JR2027831": {
@@ -3078,23 +3112,6 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires 8+ years of experience for a Staff-level Forward Deployed Engineer position, while the candidate has 6 years. Furthermore, the job is located in San Francisco, outside the candidate's preferred and enabled regions.",
       "signature": "88ba92831439629ad23c161a801fe292907cfec4b6772615659a0641d1ec5062"
-    },
-    "PhonePe::1000000000004581": {
-      "ai_assessment": {
-        "ai_decision": "reject",
-        "ai_experience_fit": "within_band",
-        "ai_location_fit": "allowed",
-        "ai_note": "The role is focused heavily on database administration and specialized Oracle Exadata Cloud@Customer infrastructure rather than general cloud platform engineering or infrastructure automation.",
-        "ai_relevance": "irrelevant",
-        "ai_score": 30
-      },
-      "at": "2026-10-22T08:02:36+00:00",
-      "jd_hash": "b221c18dafb1cb845e1cfa5e973eff019773826fea01c114b3978bf11fb51655",
-      "mode": "ai",
-      "next_review_at": "2026-10-29T08:02:36.046341+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is focused heavily on database administration and specialized Oracle Exadata Cloud@Customer infrastructure rather than general cloud platform engineering or infrastructure automation.",
-      "signature": "31c505836abf1e8e332f2fa410b1fd90d7e2318db2d29c272842ef61a8d724ad"
     },
     "Rubrik::8273808": {
       "ai_assessment": {
@@ -3474,18 +3491,35 @@
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
-        "ai_location_fit": "uncertain",
-        "ai_note": "This is a Forward Deployed Engineer role focused on Salesforce Data 360, application-layer development (Apex, Python, SQL), and data engineering, rather than a DevOps, SRE, or platform engineering infrastructure role.",
+        "ai_location_fit": "outside",
+        "ai_note": "Data engineering/Salesforce Data 360 implementation role (SQL, Apex, RAG, pipelines) under Sales category, not infrastructure automation. Location is Madrid, Spain, which is not among the enabled locations. The 5+ years requirement fits the experience band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 12
       },
-      "at": "2026-10-17T22:03:30+00:00",
-      "jd_hash": "1b3dbff8bbf085b7f04bfe9c8d4fd20d8ad4f67a53a8bd02d4e7810f1a325ccd",
+      "at": "2026-10-29T14:47:55+00:00",
+      "jd_hash": "0d53467d7dcbeed759cffc52f8786e77d9fbc22806fa57446614f1fbae9837cd",
       "mode": "ai",
-      "next_review_at": "2026-10-24T22:03:30.162641+00:00",
+      "next_review_at": "2026-11-05T14:47:55.237135+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This is a Forward Deployed Engineer role focused on Salesforce Data 360, application-layer development (Apex, Python, SQL), and data engineering, rather than a DevOps, SRE, or platform engineering infrastructure role.",
-      "signature": "91a459f28c6a14952d1a2546109d798e46e4de753c7033b0c4e2c141cf0dcf9b"
+      "reason": "Data engineering/Salesforce Data 360 implementation role (SQL, Apex, RAG, pipelines) under Sales category, not infrastructure automation. Location is Madrid, Spain, which is not among the enabled locations. The 5+ years requirement fits the experience band.",
+      "signature": "43ee6d1ecd692f98edcb608489439e1fb4a87fd913cf40988ad2b56239dea2e3"
+    },
+    "Salesforce::JR361112": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Salesforce Data 360 data-engineering/implementation role (SQL, Apex, pipelines, RAG), not infrastructure automation; located in Milan, Italy, which is not in the enabled Europe locations. The 8+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-29T14:47:55+00:00",
+      "jd_hash": "c56d818c476112acc892778dd48b0b0ed729859489521487c7a0538d74d68acb",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T14:47:55.237095+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Salesforce Data 360 data-engineering/implementation role (SQL, Apex, pipelines, RAG), not infrastructure automation; located in Milan, Italy, which is not in the enabled Europe locations. The 8+ years requirement is within band.",
+      "signature": "83af2079615cdca3e46ee4d7acf4277bced96c834aea21e83bb460bc0a6b1bd2"
     },
     "Salesforce::JR361210": {
       "ai_assessment": {
@@ -3742,21 +3776,38 @@
       "reason": "The role focuses on forward-deployed customer-facing software engineering and browser automation rather than core DevOps, infrastructure automation, or platform engineering. Furthermore, the location is Mexico City, which is outside the candidate's enabled regions.",
       "signature": "774166e67f7e60de6534135a7870d359ad0d5ee8b76068dc0d4027561b70bf5b"
     },
+    "Salesforce::JR366176": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "A Data 360 forward deployed engineer role focused on Salesforce data engineering, SQL/Apex, and RAG, not infrastructure automation. The location is Milan, Italy, which is not among the configured Europe locations. The 8+ year minimum is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-29T14:47:55+00:00",
+      "jd_hash": "a69dc8526a176753d8e74ee0bae97c6d34e71f4ccb28775f7e18e50049f8a1a8",
+      "mode": "ai",
+      "next_review_at": "2026-11-05T14:47:55.237061+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "A Data 360 forward deployed engineer role focused on Salesforce data engineering, SQL/Apex, and RAG, not infrastructure automation. The location is Milan, Italy, which is not among the configured Europe locations. The 8+ year minimum is within band.",
+      "signature": "d3a94253965bfe33b5c9d22d9211cff0f9863dd5f861e96446dc851d85b7e007"
+    },
     "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is a customer-facing Forward Deployed Engineer focusing on data migrations, data warehousing, and software development for the Snowflake platform, rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+        "ai_note": "Despite the 'forward deployed' title keyword, this is a customer-facing data migration and data engineering role (Snowflake pipelines, data modeling, warehousing, AI/ML apps). It has no real infrastructure automation, Kubernetes or IaC focus. Remote Netherlands/Germany fits the enabled Europe region, and no overall years requirement is stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 30
+        "ai_score": 25
       },
-      "at": "2026-10-22T08:02:36+00:00",
+      "at": "2026-10-29T14:47:55+00:00",
       "jd_hash": "625f7399812a3f748b6b4b75f1bddf4f58ad2c8a8b0aa5965545696d83ef68c7",
       "mode": "ai",
-      "next_review_at": "2026-10-29T08:02:36.046683+00:00",
+      "next_review_at": "2026-11-05T14:47:55.236921+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a customer-facing Forward Deployed Engineer focusing on data migrations, data warehousing, and software development for the Snowflake platform, rather than core DevOps, infrastructure automation, or platform engineering responsibilities.",
+      "reason": "Despite the 'forward deployed' title keyword, this is a customer-facing data migration and data engineering role (Snowflake pipelines, data modeling, warehousing, AI/ML apps). It has no real infrastructure automation, Kubernetes or IaC focus. Remote Netherlands/Germany fits the enabled Europe region, and no overall years requirement is stated.",
       "signature": "8ef0a82fb624fa5eab9aaede36ad8bf0888fc58c73f2fe394e57ecd8188f0efb"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
@@ -4075,6 +4126,7 @@
     "Atlassian::25682": "2026-07-09T05:35:29+00:00",
     "Atlassian::26359": "2026-09-15T16:39:26+00:00",
     "Atlassian::26639": "2026-10-06T07:16:19+00:00",
+    "Atlassian::26753": "2026-10-29T14:47:57+00:00",
     "Atlassian::26787": "2026-10-20T20:04:58+00:00",
     "Atlassian::26965": "2026-10-17T13:50:59+00:00",
     "Atlassian::26969": "2026-09-15T16:39:26+00:00",
@@ -4090,8 +4142,10 @@
     "Atlassian::27181": "2026-10-17T13:50:59+00:00",
     "Atlassian::27182": "2026-10-17T22:03:32+00:00",
     "Atlassian::27183": "2026-10-17T13:50:59+00:00",
+    "Atlassian::27230": "2026-10-29T14:47:57+00:00",
     "Atlassian::27312": "2026-10-17T22:03:32+00:00",
     "Atlassian::27391": "2026-09-25T15:40:48+00:00",
+    "Atlassian::27589": "2026-10-29T14:47:57+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
     "Careem::8620488002": "2026-09-15T16:39:26+00:00",
     "Celonis::7781590003": "2026-09-15T16:39:26+00:00",
@@ -4886,9 +4940,11 @@
     "Okta::8247721": "2026-10-02T21:08:48+00:00",
     "Okta::8255902": "2026-10-06T14:36:49+00:00",
     "Okta::8255904": "2026-10-06T14:36:49+00:00",
+    "Okta::8260950": "2026-10-29T14:47:57+00:00",
     "Okta::8263916": "2026-10-13T08:51:08+00:00",
     "Okta::8263918": "2026-10-13T08:51:08+00:00",
     "Okta::8268917": "2026-10-13T01:45:09+00:00",
+    "Okta::8323977": "2026-10-29T14:47:57+00:00",
     "PagerDuty::6162484004": "2026-09-15T16:39:26+00:00",
     "PagerDuty::6162595004": "2026-09-15T16:39:26+00:00",
     "PagerDuty::6217049004": "2026-10-17T13:50:59+00:00",
@@ -4910,6 +4966,7 @@
     "PhonePe::1000000000003063": "2026-09-25T10:35:49+00:00",
     "PhonePe::1000000000004487": "2026-10-21T12:18:28+00:00",
     "PhonePe::1000000000004498": "2026-10-21T12:18:28+00:00",
+    "PhonePe::1000000000004581": "2026-10-29T14:47:57+00:00",
     "PhonePe::6574130003": "2026-07-06T14:03:12+00:00",
     "PhonePe::6589348003": "2026-07-06T14:03:12+00:00",
     "PhonePe::7731736003": "2026-07-06T14:03:12+00:00",
