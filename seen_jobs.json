@@ -347,16 +347,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a software development and AI-focused customer-facing engineering position (Forward Deployed Engineer) rather than a DevOps, SRE, or platform engineering role. Additionally, the job location is Sydney, Australia, which falls outside the candidate's enabled regions.",
-        "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_note": "Role is based in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). It is mainly an AI application software development role, with only some CI/CD and monitoring ownership. The 3+ years required is within the candidate's band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 20
       },
-      "at": "2026-10-23T05:17:11+00:00",
+      "at": "2026-10-30T06:16:19+00:00",
       "jd_hash": "69d3872724000c63eb05db701aa64175d64baaf78a2b1087681ee66061294022",
       "mode": "ai",
-      "next_review_at": "2026-10-30T05:17:11.312890+00:00",
+      "next_review_at": "2026-11-06T06:16:19.403250+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a software development and AI-focused customer-facing engineering position (Forward Deployed Engineer) rather than a DevOps, SRE, or platform engineering role. Additionally, the job location is Sydney, Australia, which falls outside the candidate's enabled regions.",
+      "reason": "Role is based in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). It is mainly an AI application software development role, with only some CI/CD and monitoring ownership. The 3+ years required is within the candidate's band.",
       "signature": "f5e9c7b9e5d4f77b3014dcd2da3bca9207ff65e98a304610e10f9f4e545030b2"
     },
     "Amazon::10585970": {
@@ -364,16 +364,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a software development/Forward Deployed Engineering role focused on customer engagements, coding, and AI architecture rather than core DevOps or platform infrastructure automation. Additionally, the location (Sydney, Australia) is outside the candidate's enabled regions.",
+        "ai_note": "Sydney, Australia is outside the enabled India/UAE/Europe regions. The role is primarily AI application software development (agents, RAG, React/TypeScript) embedded with customers, not infrastructure automation. The 5+ years overall requirement fits the band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 12
       },
-      "at": "2026-10-23T05:17:11+00:00",
+      "at": "2026-10-30T06:16:19+00:00",
       "jd_hash": "ad393e0467fd94b519ce13c46f668c7f53bf7409517188daa75e28c0e30eb065",
       "mode": "ai",
-      "next_review_at": "2026-10-30T05:17:11.312857+00:00",
+      "next_review_at": "2026-11-06T06:16:19.403189+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a software development/Forward Deployed Engineering role focused on customer engagements, coding, and AI architecture rather than core DevOps or platform infrastructure automation. Additionally, the location (Sydney, Australia) is outside the candidate's enabled regions.",
+      "reason": "Sydney, Australia is outside the enabled India/UAE/Europe regions. The role is primarily AI application software development (agents, RAG, React/TypeScript) embedded with customers, not infrastructure automation. The 5+ years overall requirement fits the band.",
       "signature": "8dad686f4017bd629e646349e3ba28daf011b2a7e8acca1d3558f03a45a8a40a"
     },
     "Amazon::10585971": {
@@ -413,18 +413,18 @@
     "Amazon::10587164": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "uncertain",
+        "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
+        "ai_note": "Developer Advocate role focused on content, talks and community engagement, not infrastructure automation. Explicitly based in Tokyo, Japan, which is outside the enabled regions. The 8+ years full-stack requirement is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 5
       },
-      "at": "2026-10-23T05:17:11+00:00",
-      "jd_hash": "0d267e3fee9aef227dd261951a236bc5e7c98e8370b86037a59ab9729df86c97",
+      "at": "2026-10-30T06:16:19+00:00",
+      "jd_hash": "df7a924e0f8a947cc1e9b9cd2e0d728fe3b3f78aaaeca0223c19a7cda51f9e34",
       "mode": "ai",
-      "next_review_at": "2026-10-30T05:17:11.312641+00:00",
+      "next_review_at": "2026-11-06T06:16:19.403105+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Developer Advocate position focused on community engagement, content creation, and evangelism rather than DevOps, SRE, or infrastructure platform engineering. Furthermore, the location is Tokyo, Japan, which is outside the enabled regions.",
+      "reason": "Developer Advocate role focused on content, talks and community engagement, not infrastructure automation. Explicitly based in Tokyo, Japan, which is outside the enabled regions. The 8+ years full-stack requirement is within band.",
       "signature": "9da8d67d269db3c56ee20af97014ad6d3eedf1c2775d03d33de67d4000c5fc88"
     },
     "Amazon::10588788": {
@@ -2246,6 +2246,23 @@
       "reason": "The role is primarily a Software Engineer III - React/UI Developer position rather than a DevOps, SRE, or platform engineering role, despite incidental mentions of CI/CD and Kubernetes.",
       "signature": "5ecddf74b16530a29459e2e83ff553db7073541d61f2fee86d4b3c34b0e066e5"
     },
+    "J.P. Morgan::210794925": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Java/Kafka/React application development role. Kubernetes appears only in the title, with no infrastructure automation, platform, or SRE responsibilities, so it is a clear mismatch despite the allowed Mumbai location. The stated 2+ years has no upper limit, so experience counts as within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T06:16:19+00:00",
+      "jd_hash": "e36b485d1f49c064022e4c55d415907d64d73ad3e8543a881d2c190ab81787a1",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T06:16:19.403440+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Java/Kafka/React application development role. Kubernetes appears only in the title, with no infrastructure automation, platform, or SRE responsibilities, so it is a clear mismatch despite the allowed Mumbai location. The stated 2+ years has no upper limit, so experience counts as within band.",
+      "signature": "80ef7582e695bf03336fa7d224302b61ff6f647b49b1031ffb961f74fdaa1582"
+    },
     "J.P. Morgan::210796375": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2857,6 +2874,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "This is an enterprise sales role (quotas, pipeline, C-level relationships), not hands-on infrastructure automation. It is based in Norway, which is not among the enabled locations (Europe list excludes Norway), and it requires Norwegian. No overall years of experience are stated.",
       "signature": "c6bcb329868628998df55aee237a6cde141f62eb1187f90db39c1af60d7f2e16"
+    },
+    "Microsoft::1970393557046973": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Relevant AI SRE agent platform work with observability, progressive delivery and Kubernetes, and 4+ years is within band. But the JD explicitly places the role in Shanghai, China, which is outside the enabled regions (India, UAE, Europe).",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T06:16:19+00:00",
+      "jd_hash": "af16985a4bc9505e6dd07ee4350707fd6931c11d85690526d4e9906b2ea13e96",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T06:16:19.403301+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Relevant AI SRE agent platform work with observability, progressive delivery and Kubernetes, and 4+ years is within band. But the JD explicitly places the role in Shanghai, China, which is outside the enabled regions (India, UAE, Europe).",
+      "signature": "d85ebb05d03de15d3e34c356e285eb4bd602e7560ccf8133faed5f80278cc8ac"
     },
     "MongoDB::7392902": {
       "ai_assessment": {
@@ -3883,16 +3917,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Forward Deployed Engineer focusing on customer-facing AI application deployment, Salesforce platform development, and software engineering rather than core DevOps, SRE, or platform infrastructure engineering. Furthermore, the location is South Africa, which is outside the candidate's enabled regions.",
+        "ai_note": "Johannesburg, South Africa is outside the enabled India/UAE/Europe regions. The role is also a Salesforce Agentforce application/data delivery job (Apex, LWC, LLM integration) under the Sales category, not infrastructure automation; DevOps appears only as a nice-to-have. The stated 6+ years falls within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 10
       },
-      "at": "2026-10-23T00:38:18+00:00",
+      "at": "2026-10-30T06:16:19+00:00",
       "jd_hash": "41b4c0d5da42191a6e94772f94aabdd91ad38c58c778926578d56b82ead4011e",
       "mode": "ai",
-      "next_review_at": "2026-10-30T00:38:18.167184+00:00",
+      "next_review_at": "2026-11-06T06:16:19.403344+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Forward Deployed Engineer focusing on customer-facing AI application deployment, Salesforce platform development, and software engineering rather than core DevOps, SRE, or platform infrastructure engineering. Furthermore, the location is South Africa, which is outside the candidate's enabled regions.",
+      "reason": "Johannesburg, South Africa is outside the enabled India/UAE/Europe regions. The role is also a Salesforce Agentforce application/data delivery job (Apex, LWC, LLM integration) under the Sales category, not infrastructure automation; DevOps appears only as a nice-to-have. The stated 6+ years falls within band.",
       "signature": "add961cb0aa94c81141b421f244411d09a475fc3589d0918c366fd78e691c834"
     },
     "Salesforce::JR365350": {
@@ -4013,6 +4047,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "Dublin location is allowed, and the 3+ years requirement is within band. However, this Salesforce Sales-category Forward Deployed Engineer role centres on customer-facing agentic AI app development, data pipelines and prompts, not infrastructure automation. It also requires a native language (title says Turkish, JD says Greek).",
       "signature": "69c3e65aae66dfd643c4c67bc0f13d07993753e7c6d9d519aefcab46908b85fa"
+    },
+    "Salesforce::JR366398": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Workday HCM/Financials security configuration and techno-functional role, not infrastructure automation; located in Dallas/Indianapolis/Denver (US), outside enabled regions. Experience is stated as Workday tool tenure (3-5 yrs), not overall experience.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-10-30T06:16:19+00:00",
+      "jd_hash": "68413a5306d34f183c0b4c43cefd3e025457360e566cb94a437712c9d0c31a60",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T06:16:19.403394+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Workday HCM/Financials security configuration and techno-functional role, not infrastructure automation; located in Dallas/Indianapolis/Denver (US), outside enabled regions. Experience is stated as Workday tool tenure (3-5 yrs), not overall experience.",
+      "signature": "da11bc9d4adcc6aa56ac447b7402b410ad6f2950beadc9e25e52beac014d6025"
     },
     "Snowflake::0f2d263b-37c1-4e5c-92b7-007818fbc0d5": {
       "ai_assessment": {
@@ -4874,6 +4925,7 @@
     "J.P. Morgan::210800665": "2026-10-16T15:15:46+00:00",
     "J.P. Morgan::210801167": "2026-10-21T12:18:28+00:00",
     "J.P. Morgan::210801176": "2026-10-21T12:18:28+00:00",
+    "J.P. Morgan::210801395": "2026-10-30T06:16:21+00:00",
     "J.P. Morgan::210801724": "2026-10-22T18:29:00+00:00",
     "J.P. Morgan::210801781": "2026-10-22T18:29:00+00:00",
     "J.P. Morgan::210801783": "2026-10-22T13:43:44+00:00",
@@ -5206,6 +5258,7 @@
     "PubMatic::5157318008": "2026-07-06T14:03:13+00:00",
     "Rubrik::7270376": "2026-09-15T16:39:26+00:00",
     "Rubrik::7510636": "2026-09-15T11:30:01+00:00",
+    "Rubrik::8161018": "2026-10-30T06:16:21+00:00",
     "SaaS/infra (native)::d0072499b1a75374": "2026-07-12T07:28:22+00:00",
     "Salesforce::JR333947": "2026-09-15T16:39:26+00:00",
     "Salesforce::JR335225": "2026-09-01T15:03:21+00:00",
