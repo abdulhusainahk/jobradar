@@ -1,110 +1,43 @@
-# Native-alert companies → one common digest
+# Employers without a pollable ATS
 
-> ✅ **Already live (Jul 2026):** 5 Google Alerts are set up and wired into
-> `config.yaml` — **Deloitte** (individual, India-scoped) + 4 India-scoped
-> **grouped** alerts covering PwC/EY/KPMG, the Mumbai brands, the SaaS/infra set,
-> and Uber/Intuit/Walmart/Visa/Wells Fargo/Wayfair. They flow into your normal
-> digest. The per-company queries below are kept as reference if you ever want a
-> finer, cleaner site-scoped alert for a specific company.
+> **Google Alerts RSS was retired on October 30, 2026.** All five feeds (Deloitte,
+> Big 4, Mumbai brands, SaaS/infra, Enterprise) returned HTTP 200 with **zero
+> entries** in every one of 40 consecutive monitor runs (October 23–30). Google
+> Alerts indexes news and blog pages, not job-board listings, so `site:` career
+> queries combined with long `OR` lists effectively never fire. Three feed URLs
+> were also wired to the wrong label in `config.yaml`. Because an empty feed is a
+> valid "healthy" result, the failure was invisible in source health.
 
+## Moved to direct ATS polling
 
-Some companies (Big 4, Indian consumer startups, a few enterprises) run **custom
-career sites with no machine-readable API** — JobRadar can't poll them directly.
+These were previously "covered" only by the dead feeds and now have verified
+public boards in `config.yaml`:
 
-The fix: **Google Alerts → RSS → JobRadar**. You create one Google Alert per
-company (region + role scoped), set its delivery to **RSS**, and paste the feed
-URL into `config.yaml`. JobRadar's `rss` fetcher then polls those feeds and folds
-the results into the **same India/International digest** — so you still get
-**one common alert**, deduped and fit-ranked, not 25 separate company emails.
-
-```
-Google Alert (per company)  ──RSS feed──►  JobRadar rss fetcher  ──►  same digest
-   site:careers.X.com devops india                                    (Telegram + email)
-```
-
----
-
-## One-time setup (~10 min for all)
-
-For each company below:
-
-1. Go to **https://www.google.com/alerts**
-2. Paste the **query** from the table into the search box.
-3. Click **Show options** →
-   - **How often:** As-it-happens
-   - **Sources:** Automatic
-   - **Deliver to:** **RSS feed**  ← important
-4. Click **Create Alert**.
-5. On the alerts page, click the **RSS icon** next to the new alert → copy the
-   feed URL (looks like `https://www.google.com/alerts/feeds/1234567890/9876543210`).
-6. In `config.yaml`, find that company's commented line under the NATIVE-ALERT
-   section, **uncomment it**, and paste the URL as `url:`. Example:
-   ```yaml
-   - { name: Deloitte, ats: rss, url: "https://www.google.com/alerts/feeds/12.../98...", tier: "Big4 · Native" }
-   ```
-7. Commit + push. Done — those roles now appear in your normal digest.
-
-> You don't have to do all of them. Start with the ones you care about most
-> (e.g. Mumbai brands), add more later.
-
----
-
-## Queries (copy-paste)
-
-Each query is scoped to the company's careers site + DevOps/SRE/Platform roles +
-India. Adjust the role terms or drop `india` if you want broader coverage.
-
-### Big 4
-| Company | Google Alert query |
+| Employer | Source |
 |---|---|
-| Deloitte | `site:apply.deloitte.com ("devops" OR "site reliability" OR "platform engineer" OR "cloud engineer") india` |
-| PwC | `site:pwc.com/careers ("devops" OR "site reliability" OR "platform engineer") india` |
-| EY | `site:careers.ey.com ("devops" OR "site reliability" OR "platform engineer") india` |
-| KPMG | `site:kpmg.com ("devops" OR "site reliability engineer" OR "platform engineer") india careers` |
+| Swiggy | SmartRecruiters `Swiggy` |
+| Harness | Greenhouse `harnessinc` |
+| Netskope | Greenhouse `netskope` |
+| Wells Fargo | Workday `wf.wd1` / `WellsFargoJobs` |
 
-### MANGO / GCC gap
-| Company | Query |
-|---|---|
-| Uber | `site:uber.com/careers ("devops" OR "site reliability" OR "platform engineer") india` |
-| Intuit | `site:intuit.com/careers ("devops" OR "site reliability" OR "platform engineer") india` |
-| Walmart | `site:careers.walmart.com ("devops" OR "site reliability" OR "platform engineer") india` |
-| Visa | `"Visa" ("devops" OR "site reliability engineer" OR "platform engineer") india careers` |
+## Still no machine-readable source (track manually)
 
-### Mumbai brands
-| Company | Query |
-|---|---|
-| CleverTap | `site:clevertap.com ("devops" OR "site reliability" OR "platform engineer" OR "infrastructure") careers` |
-| Media.net | `site:media.net ("devops" OR "site reliability" OR "platform engineer") careers` |
-| Fynd | `site:fynd.com ("devops" OR "sre" OR "platform engineer" OR "infrastructure") jobs` |
-| Games24x7 | `"Games24x7" ("devops" OR "site reliability" OR "platform engineer") careers` |
-| Angel One | `site:angelone.in ("devops" OR "sre" OR "platform engineer" OR "cloud") careers` |
-| ACKO | `site:acko.com ("devops" OR "site reliability" OR "platform engineer") careers` |
-| smallcase | `site:smallcase.com ("devops" OR "sre" OR "platform engineer" OR "infrastructure") careers` |
-| Quantiphi | `site:quantiphi.com ("devops" OR "mlops" OR "platform engineer" OR "cloud engineer") careers` |
-| Fractal | `site:fractal.ai ("devops" OR "mlops" OR "platform engineer" OR "cloud") careers` |
+Checked October 30, 2026. None exposes a public Greenhouse, Lever, Ashby,
+SmartRecruiters, Workday or Eightfold board that JobRadar can poll without
+bypassing access controls.
 
-### SaaS / infra
-| Company | Query |
-|---|---|
-| Razorpay | `site:razorpay.com ("devops" OR "site reliability" OR "platform engineer") jobs` |
-| Swiggy | `site:careers.swiggy.com ("devops" OR "site reliability" OR "platform engineer")` |
-| Flipkart | `site:flipkartcareers.com ("devops" OR "site reliability" OR "platform engineer")` |
-| Juspay | `site:juspay.io ("devops" OR "sre" OR "platform engineer" OR "infrastructure") careers` |
-| Nutanix | `site:nutanix.com ("devops" OR "site reliability" OR "platform engineer") india careers` |
-| Harness | `site:harness.io ("devops" OR "site reliability" OR "platform engineer") india` |
-| HashiCorp | `site:hashicorp.com ("devops" OR "site reliability" OR "platform engineer") india` |
-| Confluent | `site:confluent.io ("devops" OR "site reliability" OR "platform engineer") india` |
-| BrowserStack | `site:browserstack.com ("devops" OR "site reliability" OR "platform engineer") careers` |
-| Sprinklr | `site:sprinklr.com ("devops" OR "site reliability" OR "platform engineer") india careers` |
+| Group | Employers | Why |
+|---|---|---|
+| Big 4 | Deloitte, PwC, EY, KPMG | Custom portals (Taleo/SuccessFactors-style) with session tokens |
+| Big tech | Meta, Uber, LinkedIn, Intuit, Walmart, Visa | Meta uses GraphQL with page tokens; Uber's public search RPC was removed (`ERR_MISSING_HANDLER`); Visa's SmartRecruiters board is empty; Walmart/Intuit tenants are not public Workday sites |
+| Infra/SaaS | Nutanix, Confluent, Razorpay, Flipkart, Juspay, BrowserStack, Sprinklr | Nutanix career site returns 403; Confluent's Ashby board is empty; Razorpay's Greenhouse board lists no infra roles in India; the rest run custom portals |
+| Mumbai | CleverTap, Media.net, Fynd, Games24x7, Angel One, ACKO, smallcase, Quantiphi, Fractal | Custom or unlisted ATS |
 
----
+Recommended coverage: create **LinkedIn job alerts** (daily, India + Dubai +
+remote) for `"Production Engineer" Meta`, `SRE Uber`, `SRE LinkedIn`,
+`Platform Engineer Nutanix` and `DevOps Confluent`. For Meta, Uber and LinkedIn,
+a referral is worth more than any alert.
 
-## Notes
-
-- RSS items have **no full job description**, so they're scored on the **title**
-  (title/seniority boost) rather than deep DevOps-fit. They still respect the
-  role filter, dedupe, and grouping.
-- They default to the **India** group. If a company's alert is region-specific,
-  add `location: "Dubai"` (etc.) to its config line to group it correctly.
-- Google Alerts can lag a few hours and occasionally miss postings — it's a
-  best-effort net for the sites automation can't reach, not a guarantee.
+Re-check this list every quarter: employers move ATS providers (Postman moved
+from Greenhouse to Workday in October 2026). Add a company only after verifying
+its employer identity and that the board returns roles.

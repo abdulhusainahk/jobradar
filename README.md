@@ -18,8 +18,8 @@ No new credentials or packages are required. Existing Gmail/Telegram credentials
 A GitHub Actions monitor for DevOps, SRE and platform roles across India, UAE and
 selected European locations. It reads configured employer feeds and career
 portals, filters jobs against your preferences, ranks matches, and delivers
-Telegram and/or email digests. Google Alerts RSS supplements employers without a
-supported direct integration.
+Telegram and/or email digests. Employers without a pollable ATS are tracked
+manually; see `NATIVE-ALERTS.md`.
 
 Keyword matching needs no AI subscription. Optional Gemini scoring uses the
 Google AI Studio API; keep its project on the **Free Tier** if you want free API
@@ -207,13 +207,14 @@ description-based rejections rather than only scoring their survivors.
 
 Verify the **employer identity**, not just that a token returns jobs. Fintech Zeta
 uses Lever `zeta`; Greenhouse `zetaglobal` is a different company. Navi fintech
-uses TurboHire, not Ashby `navi`. Plivo's official careers page still uses its
-Lever board, which can legitimately be empty.
+uses TurboHire, not Ashby `navi`. A source that is empty in every run for a week
+is probably dead, not quiet: Plivo and the Google Alerts feeds were removed on
+October 30, 2026 for that reason.
 
 APIs can change or rate-limit access. Pagination stops on exhausted results or a
 visible source failure, not an arbitrary page cap. Oracle's broad search uses one
-complete board scan rather than six overlapping global keyword scans. RSS cannot
-guarantee complete coverage or accurate per-job locations; see `NATIVE-ALERTS.md`.
+complete board scan rather than six overlapping global keyword scans. RSS remains
+supported but cannot guarantee complete coverage or accurate per-job locations.
 Public accessibility does not remove the need to follow each source's terms.
 GET-based sources retry HTTP 429 up to three total attempts, honoring
 `Retry-After` with bounded waits (30/60 seconds when the header is absent).
@@ -221,7 +222,8 @@ Oracle advances by its reported page window, including hidden rows, rather than
 reusing the last page when the returned count is smaller than its advertised total.
 
 Citi and PayPal use one complete-board search (`queries: [""]`) instead of ten
-overlapping keyword searches. Their official careers sites still link to these
+overlapping keyword searches. Citi's search is split by region `locations`
+because its global timestamp ordering repeats pages beyond ~100 rows. Their official careers sites still link to these
 Eightfold portals, and existing job IDs are preserved. PCSX reuses a per-source
 HTTP session and spaces requests; an HTTP/API 401 or 403 stops that source for the
 rest of the scan while retaining previously fetched roles and reporting degraded

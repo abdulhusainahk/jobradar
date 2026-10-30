@@ -6,8 +6,9 @@
 # ============================================================================
 
 profile:
-  role: "Senior DevOps & Platform Engineer"
+  role: "Senior DevOps, SRE & Platform Engineer (incl. AI/ML infrastructure)"
   skills:
+    - "GCP (GKE, Cloud DNS, Cloud Armor, IAP, Workload Identity)"
     - AWS
     - Azure
     - Terraform
@@ -19,8 +20,16 @@ profile:
     - Prometheus
     - Grafana
     - ELK
-    - "AI/LLMOps and MCP servers"
-  preferences: "Product companies; infrastructure automation rather than pure support."
+    - HashiCorp Vault
+    - "Karpenter, KEDA, HPA/VPA autoscaling"
+    - "DNS, cross-cloud networking and incident response"
+    - "AI/LLMOps, MCP servers and the Claude API"
+  preferences: >-
+    Product companies; infrastructure automation rather than pure support.
+    AI/ML platform, GPU/inference infrastructure and MLOps roles are welcome when they
+    are infrastructure-heavy. Forward deployed roles fit only when they focus on
+    infrastructure, Kubernetes or platform deployment, not data science, full-stack
+    or sales engineering.
 
 health:
   minimum_healthy_fraction: 0.75
@@ -53,6 +62,19 @@ match:
     - "inference platform"
     - "forward deployed"
     - "forward deployment"
+    - mlops
+    - llmops
+    - aiops
+    - devsecops
+    - "machine learning platform"
+    - "machine learning infrastructure"
+    - "ml systems"
+    - "gpu infrastructure"
+    - "gpu cluster"
+    - hpc
+    - "cloud platform"
+    - "cloud operations"
+    - "database reliability"
   # NOTE: "observability" was removed as an inclusion keyword — at observability
   # companies (Datadog/Okta) it matched product roles, not infra-DevOps. It's
   # still used to DETECT monitoring-heavy JDs during fit scoring.
@@ -184,8 +206,9 @@ companies:
   # Official employer Workday board; verified October 17, 2026 (old Greenhouse board is gone).
   - { name: Postman, ats: workday, host: postman.wd108.myworkdayjobs.com, site: careers, tier: "SaaS · Blr" }
   - { name: HackerRank,  ats: greenhouse, token: hackerrank, tier: "SaaS · Blr" }
-  # Plivo's current /jobs/ page still uses this Lever board, even when empty.
-  - { name: Plivo,       ats: lever,      token: plivo,      tier: "SaaS · Blr" }
+  - { name: Swiggy,      ats: smartrecruiters, token: Swiggy, tier: "Consumer · Blr" }
+  - { name: InMobi,      ats: greenhouse, token: inmobi,     tier: "Adtech · Blr" }
+  - { name: Paytm,       ats: lever,      token: paytm,      tier: "Fintech · Noida/Blr" }
 
   # --- Global product cos with India/remote-India DevOps hiring ---
   - { name: GitLab,      ats: greenhouse, token: gitlab,     tier: "Product · Remote" }
@@ -195,6 +218,21 @@ companies:
   - { name: Rubrik,      ats: greenhouse, token: rubrik,     tier: "Product · Blr" }
   - { name: Databricks,  ats: greenhouse, token: databricks, tier: "Product · Blr" }
   - { name: Notion,      ats: ashby,      token: notion,     tier: "SaaS · Remote" }
+  - { name: Coinbase,    ats: greenhouse, token: coinbase,   tier: "Crypto · Remote India" }
+  - { name: Harness,     ats: greenhouse, token: harnessinc, tier: "DevOps platform · Blr" }
+  - { name: Netskope,    ats: greenhouse, token: netskope,   tier: "Security cloud · Pune/Blr" }
+  - { name: Supabase,    ats: ashby,      token: supabase,   tier: "Dev platform · Remote" }
+  - { name: ClickHouse,  ats: ashby,      token: clickhouse, tier: "Data infra · Remote/EU" }
+  - { name: Canva,       ats: smartrecruiters, token: Canva, tier: "Product · Production Eng" }
+
+  # --- AI labs / AI infrastructure (MLOps, inference, GPU platform) ---
+  - { name: Anthropic,   ats: greenhouse, token: anthropic,  tier: "AI lab · Blr/London/Dublin" }
+  - { name: OpenAI,      ats: ashby,      token: openai,     tier: "AI lab · India/UAE/EU" }
+  - { name: Cohere,      ats: ashby,      token: cohere,     tier: "AI lab · EU/Middle East" }
+  - { name: "Together AI", ats: greenhouse, token: togetherai, tier: "AI infra · Blr/Amsterdam" }
+  - { name: "Sarvam AI", ats: ashby,      token: sarvam,     tier: "AI lab · Blr" }
+  - { name: Perplexity,  ats: ashby,      token: perplexity, tier: "AI search · Blr/London" }
+  - { name: ElevenLabs,  ats: ashby,      token: elevenlabs, tier: "AI audio · Remote India/EU" }
 
   - { name: Datadog,     ats: greenhouse, token: datadog,   tier: "Observability · Remote/EU" }
   - { name: Okta,        ats: greenhouse, token: okta,      tier: "Security · Blr/Remote" }
@@ -238,31 +276,26 @@ companies:
   - { name: GetYourGuide, ats: greenhouse, token: getyourguide, tier: "Berlin · Travel-tech" }
   - { name: HelloFresh,   ats: greenhouse, token: hellofresh,   tier: "Berlin · Food-tech" }
   - { name: Trivago,      ats: greenhouse, token: trivago,      tier: "Düsseldorf · Travel-tech" }
+  - { name: Deliveroo,    ats: greenhouse, token: deliveroo,    tier: "London · Food-tech" }
+  - { name: "Delivery Hero", ats: smartrecruiters, token: DeliveryHero, tier: "Berlin/Dubai · Food-tech" }
 
   # --- Finance GCCs (huge Mumbai/Blr tech hubs; VP-level ≈ 60L+, clears target) ---
   - { name: "J.P. Morgan",    ats: oracle, host: jpmc.fa.oraclecloud.com, site: CX_1001, finance: true, tier: "Finance GCC · Mumbai HQ" }
   - { name: "Morgan Stanley", ats: pcsx, host: morganstanley.eightfold.ai, domain: morganstanley.com, finance: true, tier: "Finance GCC · Mumbai/Blr" }
-  - { name: "Citi",           ats: pcsx, host: citi.eightfold.ai, domain: citi.com, queries: [""], requests_per_minute: 60, finance: true, tier: "Finance GCC · Chennai/Pune/Mum" }
+  # Region-scoped scans: Citi's global timestamp ordering repeats pages past ~100 rows.
+  - { name: "Citi",           ats: pcsx, host: citi.eightfold.ai, domain: citi.com, queries: [""], locations: [India, United Arab Emirates, Ireland, United Kingdom, Germany, Netherlands], requests_per_minute: 60, finance: true, tier: "Finance GCC · Chennai/Pune/Mum" }
   - { name: "Mastercard",     ats: workday, host: mastercard.wd1.myworkdayjobs.com, site: CorporateCareers, finance: true, tier: "Finance GCC · Pune/Vadodara" }
   - { name: "PayPal",         ats: pcsx, host: paypal.eightfold.ai, domain: paypal.com, queries: [""], requests_per_minute: 60, finance: true, tier: "Fintech · Chennai/Blr/Hyd" }
   - { name: "Target",         ats: workday, host: target.wd5.myworkdayjobs.com, site: targetcareers, tier: "Retail GCC · Bengaluru" }
+  - { name: "Deutsche Bank",  ats: workday, host: db.wd3.myworkdayjobs.com, site: DBWebsite, finance: true, tier: "Finance GCC · Pune/Blr" }
+  - { name: "Barclays",       ats: workday, host: barclays.wd3.myworkdayjobs.com, site: External_Career_Site_Barclays, finance: true, tier: "Finance GCC · Pune/Chennai" }
+  - { name: "Wells Fargo",    ats: workday, host: wf.wd1.myworkdayjobs.com, site: WellsFargoJobs, finance: true, tier: "Finance GCC · Hyd/Blr" }
+  - { name: "BlackRock",      ats: workday, host: blackrock.wd1.myworkdayjobs.com, site: BlackRock_Professional, finance: true, tier: "Finance GCC · Mumbai/Gurugram" }
 
-  # ===========================================================================
-  # NATIVE-ALERT companies (custom career sites, no API). These flow into the
-  # SAME digest via Google Alerts RSS — so you get ONE common alert, not 25
-  # separate company emails. Setup (one-time, ~10 min): see NATIVE-ALERTS.md.
-  # For each: create a Google Alert with the given query, set delivery = RSS,
-  # copy the feed URL, and uncomment the line + paste it as `url:`.
-  # ---------------------------------------------------------------------------
-  # -- Big 4 --
-  - { name: Deloitte,   ats: rss, url: "https://www.google.com/alerts/feeds/08421968391209913331/2724848281564234799", tier: "Big4 · Native" }
-  # The 4 grouped alerts below cover (queries in NATIVE-ALERTS.md):
-  #   Big4:       PwC · EY · KPMG
-  #   Mumbai:     CleverTap · Media.net · Fynd · Games24x7 · Angel One · ACKO · smallcase · Quantiphi · Fractal
-  #   SaaS/infra: Razorpay · Swiggy · Flipkart · Juspay · Nutanix · Harness · HashiCorp · Confluent · BrowserStack · Sprinklr
-  #   Enterprise: Uber · Intuit · Walmart · Visa · Wells Fargo · Wayfair
-  - { name: "Big 4 (native)",      ats: rss, url: "https://www.google.com/alerts/feeds/08421968391209913331/3314404262596822106", tier: "PwC/EY/KPMG · Native" }
-  - { name: "Mumbai (native)",     ats: rss, url: "https://www.google.com/alerts/feeds/08421968391209913331/1999656414248428774", tier: "Mumbai brands · Native" }
-  - { name: "SaaS/infra (native)", ats: rss, url: "https://www.google.com/alerts/feeds/08421968391209913331/14976847699187413730", tier: "Razorpay/Swiggy/… · Native" }
-  - { name: "Enterprise (native)", ats: rss, finance: true, url: "https://www.google.com/alerts/feeds/08421968391209913331/16390943518549569209", tier: "Uber/Visa/Walmart/… · Native" }
-  # ===========================================================================
+  # --- Enterprise infra GCCs ---
+  - { name: HPE,        ats: workday, host: hpe.wd5.myworkdayjobs.com, site: Jobsathpe, tier: "Infra GCC · Blr" }
+  - { name: CrowdStrike, ats: workday, host: crowdstrike.wd5.myworkdayjobs.com, site: crowdstrikecareers, tier: "Security · Pune/Blr" }
+
+  # Google Alerts RSS was removed on October 30, 2026: all five feeds returned zero
+  # entries across 40 consecutive runs. Employers without a public ATS are listed
+  # in NATIVE-ALERTS.md for manual or LinkedIn-alert tracking.
