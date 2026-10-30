@@ -2,9 +2,9 @@ name: JobRadar monitor
 
 on:
   schedule:
-    # Twice hourly, away from the busy hour boundary. GitHub may delay/skip runs;
-    # this is best-effort scheduling, not a 30-minute delivery guarantee.
-    - cron: "17,47 * * * *"
+    # Every three hours, away from the busy hour boundary. A full scan takes ~30
+    # minutes and GitHub was dropping most half-hourly runs anyway.
+    - cron: "17 */3 * * *"
   workflow_dispatch:      # lets you run it manually from the Actions tab
     inputs:
       preview:

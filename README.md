@@ -36,8 +36,8 @@ Employer feeds -> all result pages -> normalize + dedup
   -> best fit first -> durable per-channel delivery -> saved acknowledgements
 ```
 
-- The monitor is scheduled at minutes **17 and 47** of each UTC hour. GitHub can
-  delay or skip scheduled runs; this is not an instant-alert or 30-minute SLA.
+- The monitor is scheduled at minute **17 every three hours** (UTC). GitHub can
+  delay or skip scheduled runs; this is not an instant-alert SLA.
 - The first run with a new state file records a **silent baseline**. It does not
   send all existing matches. An empty successful baseline is still initialized.
 - `seen_jobs.json` preserves finalized history and a pending delivery outbox.
