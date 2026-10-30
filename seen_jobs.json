@@ -3215,6 +3215,40 @@
       "reason": "The role requires U.S. citizenship, active security clearance, and living in specific U.S. locations (Virginia or Hawaii), which fails geographic and citizenship requirements. Furthermore, it asks for 8+ years of experience while the candidate has 6.",
       "signature": "88b9d6d7349fe3b98c5282340ee5c1ce76f9ef389bb3518fc16223c738e6b408"
     },
+    "Salesforce::JR346848": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing agentic AI solution building and Salesforce data and app delivery in a sales org, not infrastructure automation. The location, Mexico City, is outside the enabled regions. The 3+ years minimum is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "20f189195953590be266f2b4bf15febccde458713e4d099be77dd98306f7e988",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351761+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Customer-facing agentic AI solution building and Salesforce data and app delivery in a sales org, not infrastructure automation. The location, Mexico City, is outside the enabled regions. The 3+ years minimum is within band.",
+      "signature": "88ccff29f6b85afaed159944ad43ef3b7c050ffb31796a00ceaef227e19b4cf8"
+    },
+    "Salesforce::JR348387": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Sales-category people-manager role leading Salesforce Agentforce deployment teams in Santiago, Chile. No infrastructure automation, and Chile is outside the enabled India/UAE/Europe regions. Only 4+ years of leadership is stated, not overall engineering experience.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "b500c70865b8c40f15efe5e311f26579d7f4cc41bb8e360cd0069e9074877dcd",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351731+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Sales-category people-manager role leading Salesforce Agentforce deployment teams in Santiago, Chile. No infrastructure automation, and Chile is outside the enabled India/UAE/Europe regions. Only 4+ years of leadership is stated, not overall engineering experience.",
+      "signature": "b2e425d25554ae783b9bbe44801ef5ffcfc439f59ba34b1e110c3d18673a1c67"
+    },
     "Salesforce::JR348954": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3350,6 +3384,74 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is a customer-facing Forward Deployed Engineer focusing on Agentforce, Salesforce CRM, and Hebrew fluency, which does not match DevOps/Platform engineering. Furthermore, location is in Israel and experience requires 10+ years.",
       "signature": "a6ae1971b8519cf9488f3c159231ab3f5310089bfbbefed28859346dd19ec618"
+    },
+    "Salesforce::JR350176": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing Salesforce agentic AI solution building (sales category), not infrastructure automation; located in Santiago, Chile, outside enabled regions. 3+ years stated, within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "20f189195953590be266f2b4bf15febccde458713e4d099be77dd98306f7e988",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351647+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Customer-facing Salesforce agentic AI solution building (sales category), not infrastructure automation; located in Santiago, Chile, outside enabled regions. 3+ years stated, within band.",
+      "signature": "075c603c427dff5f09c3af66deed9b414ade043b86ad4912d7b71719193eea81"
+    },
+    "Salesforce::JR350178": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Located in Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions. The role is a customer-facing Salesforce AI solutions/sales delivery position (agents, prompts, data pipelines), not infrastructure automation. The stated 3+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "20f189195953590be266f2b4bf15febccde458713e4d099be77dd98306f7e988",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351697+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Located in Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions. The role is a customer-facing Salesforce AI solutions/sales delivery position (agents, prompts, data pipelines), not infrastructure automation. The stated 3+ years is within band.",
+      "signature": "6a6b1ec0d6c8ba4e2bde67e46a95629398803b6b023230214228017f48cf9087"
+    },
+    "Salesforce::JR350182": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is explicitly Bogota, Colombia, which is outside the enabled regions (India, UAE, Europe). The role is also a customer-facing, sales-category position building agentic AI apps and data pipelines, not infrastructure automation. The 3+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "20f189195953590be266f2b4bf15febccde458713e4d099be77dd98306f7e988",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351793+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Location is explicitly Bogota, Colombia, which is outside the enabled regions (India, UAE, Europe). The role is also a customer-facing, sales-category position building agentic AI apps and data pipelines, not infrastructure automation. The 3+ years requirement is within band.",
+      "signature": "8eee94d593886c9655d67ea66729fc9fdefacd93f95d8a8d516773b0da5b2422"
+    },
+    "Salesforce::JR350254": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a Sales-category people-management role leading Salesforce Agentforce delivery teams. It is not infrastructure automation, DevOps or SRE work. The JD only states 4+ years of people management or technical leadership, not overall engineering experience, so experience fit is uncertain. The location is Buenos Aires, Argentina, which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "3e7a2a95e8bfba5c82c275ba8a4d4d8373e57c3520a3bc309f7dafdadebec83a",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351586+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "This is a Sales-category people-management role leading Salesforce Agentforce delivery teams. It is not infrastructure automation, DevOps or SRE work. The JD only states 4+ years of people management or technical leadership, not overall engineering experience, so experience fit is uncertain. The location is Buenos Aires, Argentina, which is outside the enabled India, UAE and Europe regions.",
+      "signature": "b044f2150053c2c4f52d041ec2e976bbcde9d4fa4ef08aee05a2ec2195a61056"
     },
     "Salesforce::JR352223": {
       "ai_assessment": {
@@ -3492,16 +3594,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is a forward-deployed process and business consulting role focusing on enterprise business processes, ERP, supply chain, and change management rather than infrastructure automation, Kubernetes, or DevOps/SRE engineering. Additionally, the location is in the US while the candidate prefers India, UAE, or Europe.",
+        "ai_note": "Business process consulting role (supply chain/ERP automation, executive advisory) with no infrastructure automation duties; all listed locations are in the US, outside enabled regions. 5+ years overall is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 5
       },
-      "at": "2026-10-22T22:03:34+00:00",
+      "at": "2026-10-30T00:19:13+00:00",
       "jd_hash": "0ed042cd68f4ce3f46b9b0ef4ff53259dcdf0fe41e75eb2d34bdaa1b9c93561f",
       "mode": "ai",
-      "next_review_at": "2026-10-29T22:03:34.421581+00:00",
+      "next_review_at": "2026-11-06T00:19:13.351821+00:00",
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This is a forward-deployed process and business consulting role focusing on enterprise business processes, ERP, supply chain, and change management rather than infrastructure automation, Kubernetes, or DevOps/SRE engineering. Additionally, the location is in the US while the candidate prefers India, UAE, or Europe.",
+      "reason": "Business process consulting role (supply chain/ERP automation, executive advisory) with no infrastructure automation duties; all listed locations are in the US, outside enabled regions. 5+ years overall is within band.",
       "signature": "0d0bb31408bb8791e15ce9de0263920f779ab5e3aebe1a94397c1000fced781d"
     },
     "Salesforce::JR360467": {
@@ -3826,6 +3928,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "This is a specialized Salesforce DevOps Architect role requiring 10-16 years of overall experience and deep Salesforce platform certifications (Platform Developer, Salesforce Certified DevOps Engineer, etc.). The candidate has 6 years of general DevOps experience and lacks Salesforce-specific platform architecture expertise.",
       "signature": "5f946e08ee7ca0d489457a12eb5b4af51478f617a1ba77045930d115baa396f6"
+    },
+    "Salesforce::JR365370": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/infra automation role (K8s, Terraform, observability, 5+ yrs fits), but all listed locations are US cities (SF, Boston, NYC, Seattle, etc.) with US salary ranges; none in India, UAE, or Europe.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T00:19:13+00:00",
+      "jd_hash": "87d3f84810196e593393147fe271967c893d2a29b497168642ac64a4b1933a48",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T00:19:13.351489+00:00",
+      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
+      "reason": "Strong SRE/infra automation role (K8s, Terraform, observability, 5+ yrs fits), but all listed locations are US cities (SF, Boston, NYC, Seattle, etc.) with US salary ranges; none in India, UAE, or Europe.",
+      "signature": "3e103bf309d2d341991b5513ce81b41381247f0310264f251c6c4602cde143a2"
     },
     "Salesforce::JR365759": {
       "ai_assessment": {
