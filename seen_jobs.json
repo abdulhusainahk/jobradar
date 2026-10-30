@@ -565,6 +565,23 @@
       "reason": "The role is in Tokyo, Japan, which is outside the enabled India, UAE and Europe regions, and it requires business-level Japanese. It is an AI application/software forward-deployed role (agents, RAG, customer delivery), not infrastructure or platform work. The stated 5+ years of experience is within band.",
       "signature": "2d8982e8fc91d403c9c65449e5ac6eb174c10001c05795bfd069e71d08412045"
     },
+    "Amazon::10593211": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Tokyo-based customer-facing FDE role focused on building AI applications (multi-agent, RAG), not infrastructure. It requires business-level Japanese, and Tokyo is outside the enabled India/UAE/Europe regions. The 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "24557845a54643d8835ff7bddadc669cdf127f25bc7f5218c67fa1d1bf0c0120",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191595+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Tokyo-based customer-facing FDE role focused on building AI applications (multi-agent, RAG), not infrastructure. It requires business-level Japanese, and Tokyo is outside the enabled India/UAE/Europe regions. The 5+ years requirement is within band.",
+      "signature": "87b43c2e5e75d3b21456610d5bf71803f317f9fa5165b72601fedf4856fa076a"
+    },
     "Amazon::3199256": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -923,493 +940,428 @@
       "signature": "35f54d66a4805cadf2c723e22ce2e0a66ea80311bc148652ec0631b7907c8837"
     },
     "Barclays::JR-0000040669": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is software development: Java/Go APIs and microservices for an identity/IAM platform. Cloud, Docker and CI/CD are only supporting skills, so this is not an infrastructure-focused forward deployed role. Pune is an allowed location, and the 3+ years of experience is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "52c77468d9d9ddf4063c1cf3448089074e1bf35782a558516713a51e57376cec",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245160+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192177+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 3+ yrs",
+      "reason": "The role is software development: Java/Go APIs and microservices for an identity/IAM platform. Cloud, Docker and CI/CD are only supporting skills, so this is not an infrastructure-focused forward deployed role. Pune is an allowed location, and the 3+ years of experience is within band.",
       "signature": "2b7e6b73bbf705ff120f8ed65b9a928355eae10decafb125b035e3b30e703867"
     },
-    "Barclays::JR-0000044230": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "fc333fa9917f3d3918c8b89cb0bb880eb9e21984ae97df4165dd4f471332a872",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244897+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "cc11f6605a45a627d29d964b1af21aefb70effb43e7eae0aea906ebf575ff73c"
-    },
     "Barclays::JR-0000069724": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Network operations role at the Analyst level focused on routing, switching, WAN, SD-WAN and wireless support. Scripting is only exposure-level. This is not cloud, Kubernetes or IaC platform work. Location (Pune/Chennai) is allowed, but overall experience is not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "5e85b5b57299ea564a6581e30c219adf9c3d82ce96d052c96f8231dd37bb1bab",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245282+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192238+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Network operations role at the Analyst level focused on routing, switching, WAN, SD-WAN and wireless support. Scripting is only exposure-level. This is not cloud, Kubernetes or IaC platform work. Location (Pune/Chennai) is allowed, but overall experience is not stated.",
       "signature": "8c9f340d56dc6f407bfa6e3c8176480f48101dcaf9bdd4b9eb055875cbfa0d87"
     },
     "Barclays::JR-0000077537": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Pune is an allowed location, but the role demands more than ten years of professional experience (above the 11-year max is not exceeded; however, 'more than ten' is >10, not >11). Main mismatch: requires a Principal-level PostgreSQL DBA, which the candidate lacks; the role is database-centric SRE, with Kubernetes appearing only secondarily.",
+        "ai_relevance": "uncertain",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "13c1795d0e347d60a6e2ac55849e4f53a75a1b64303636430c78fefc77254f06",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244747+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192047+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 10+ yrs",
+      "reason": "Pune is an allowed location, but the role demands more than ten years of professional experience (above the 11-year max is not exceeded; however, 'more than ten' is >10, not >11). Main mismatch: requires a Principal-level PostgreSQL DBA, which the candidate lacks; the role is database-centric SRE, with Kubernetes appearing only secondarily.",
       "signature": "5ede1631eed5f2561572ab3b12d025e71aed4500b521a89473782b479e0c0f63"
     },
-    "Barclays::JR-0000079548": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "2528bfa9dbd80fef5d0ce7068818dadb751856442915002be2d37bad2d80547e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245177+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "10f38afc321cc1db847cfe9d8c9d29260c72a32aeb7a5ac88ebf46c6061677d6"
-    },
     "Barclays::JR-0000079550": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is New York, which is outside the enabled regions (India, UAE, Europe). The role is mostly front-office engineering success, Python tooling and AWS support rather than core infrastructure automation, and it states no overall years of experience.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "6fe4a890c359499bbc063ec546cded205b34639db60517e6a7c42502c524884c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245193+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192192+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Location is New York, which is outside the enabled regions (India, UAE, Europe). The role is mostly front-office engineering success, Python tooling and AWS support rather than core infrastructure automation, and it states no overall years of experience.",
       "signature": "5c9f06d68d9e7b2b78d07da4e1c1288307bfa69cb6ab0e1341288e838d96c3ae"
     },
     "Barclays::JR-0000080074": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Production support role for reference/static data (SQL, Autosys, RDM, incident resolution) at Barclays Glasgow (UK, allowed). Automation is only incidental. There is no infrastructure-as-code, Kubernetes or platform engineering work. Overall experience requirement is unstated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "1c25f7c7fcd8fb15740cc94a3595edb572bfa8e4a8a2b8d5734b099bd6da0197",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245041+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192162+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Production support role for reference/static data (SQL, Autosys, RDM, incident resolution) at Barclays Glasgow (UK, allowed). Automation is only incidental. There is no infrastructure-as-code, Kubernetes or platform engineering work. Overall experience requirement is unstated.",
       "signature": "0325218189ebf3e05f024742a3ca6634f7b9395ad57020203cbcc29516431695"
     },
-    "Barclays::JR-0000082433": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "7ce1e20e7c31b706e77b78c59c32b4bbec6e2103825ec4615c1132eeb9665bc1",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244969+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "d336e0cd5c776a2b1bba8ddfc21975cf194bc8c2e63993fe470d87846a42d1dc"
-    },
-    "Barclays::JR-0000083706": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "36451e6414999a562009911af0752173177771800ca7c0b6b3067f21e2f220ac",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244915+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "70fde674117009db1d41a8104b9dcee05d408d1e1e106244a7d099339b7f7bbd"
-    },
-    "Barclays::JR-0000086385": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "7d1b5013d70dd28a7371d3efd2096d8510205e684739637616f7ceb0e6c593a0",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245022+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "8688251313f393579a95de5a6050b522ed2a07546247ea2f35b4b5205e1cce2f"
-    },
-    "Barclays::JR-0000089562": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "36f3120568cd9bce8ab9b4d419f1b4fdd3feb2d25934a95ced71dfa09af5a7bc",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244710+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "38c8923b010d4d556cec1f066baf4aa847bfa770a06ebeae6f879a339f536ff2"
-    },
     "Barclays::JR-0000092605": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Software development role requiring full-stack (React/TypeScript) work on an internal developer platform; infrastructure skills like Kubernetes and cloud are only 'nice to have'. Based in Glasgow, which is not one of the enabled Europe locations (the UK is accepted only when the JD explicitly says London or United Kingdom). No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "ed49ebfd964f9b20bbc5ada3a9741e35c191ccffbbc8abce13a912106495f6bd",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245349+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192268+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Software development role requiring full-stack (React/TypeScript) work on an internal developer platform; infrastructure skills like Kubernetes and cloud are only 'nice to have'. Based in Glasgow, which is not one of the enabled Europe locations (the UK is accepted only when the JD explicitly says London or United Kingdom). No overall years of experience are stated.",
       "signature": "0794e6bff534c195ac9ecbc706155998a547e075b309909764dbee0d89e5bf6d"
     },
-    "Barclays::JR-0000093902": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "ee0f546bdfb97e299aac31bcea219080f37b463989d1c7666f0de28a7fa0ae55",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245211+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "6f97dc3266d8beef2bf70b1762553c65b871fa51336139bd04adaf901339b42a"
-    },
-    "Barclays::JR-0000100046": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "d869222d44c261cfecbc57d2cf2cb9b0efdcf07da62628a0d65e55e31f9c2e55",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245265+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "270eb48e0e7c305143b15a43b805269034e029c25c434d1d645d5c2c76fe212f"
-    },
-    "Barclays::JR-0000100184": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "dbf8d6c9ce678c76174d39afed7de3cf5af7a282d811ff8fe7f8e0cb23293732",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245299+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "6e8728336c337d1624454b4f36dcd3c456b5be07da4619284730246d6071ce12"
-    },
     "Barclays::JR-0000102291": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role focused on AI application/full-stack software development (LLMs, RAG, Python, React) with business consulting, not infrastructure or platform deployment. Glasgow/Knutsford in the UK falls within the enabled Europe region. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "a80554c21c8084fbfea329aadc3cb61db18cd03bae2899b8a1bb60c8aad9b732",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245332+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192253+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Forward deployed role focused on AI application/full-stack software development (LLMs, RAG, Python, React) with business consulting, not infrastructure or platform deployment. Glasgow/Knutsford in the UK falls within the enabled Europe region. No overall years of experience are stated.",
       "signature": "c322a8c1ae4ec17201d964752ae3c7fa1141b555bc0e235acb3d7723d50f4afc"
     },
-    "Barclays::JR-0000102838": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "5e54f949e131d2cab51bb8f016a533edd446415ce1338aa2c0da4c2d348f0075",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245381+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "29cec27742424bf0709d99d6b507162fce5ad4eed3a64b5efff7a9e49cf9d360"
-    },
-    "Barclays::JR-0000103428": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "f55520e242189e113a1c0e0291d5b066b0e185ad2f7235592a593f15b72a08ec",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245316+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "616e971b446dc8efa33f7891bb821b9386fb5d05956d25f4b73a44bbf3063815"
-    },
     "Barclays::JR-0000103434": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Bengaluru/Pune location fits. Despite the 'AI Platform' title, this is primarily software/GenAI application development (Python APIs, LLM/RAG, agent frameworks). Kubernetes and IaC appear only as basics or nice-to-haves, so it is not infrastructure-automation focused. The 3+ years cloud software requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "e16ffbd11223be225b305281c3bce16e68f9505ca72ad8d1864795fa0c015eaf",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244951+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192147+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Bengaluru/Pune location fits. Despite the 'AI Platform' title, this is primarily software/GenAI application development (Python APIs, LLM/RAG, agent frameworks). Kubernetes and IaC appear only as basics or nice-to-haves, so it is not infrastructure-automation focused. The 3+ years cloud software requirement is within band.",
       "signature": "4147840380fff7b31c9b498a6c2bb04f29c053a65f52abd9c0f27ad23b2ec433"
     },
-    "Barclays::JR-0000105807": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "04c83ccb82706d4d891eccf4f5f81dc3d5251370fa6dced661367dc755626883",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244987+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "e515dce726c3a821b3368f7002c7fb865784a37adf97b44d516e3fa0251f4979"
-    },
-    "Barclays::JR-0000111920": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "cebc03d25653bd69aa92fae5c694de1c74aa3770b38b6a3f4fc65159684b9986",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244676+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "a01baa8a4ca55933615cad17ede3d41df0d45916d13840b3e56ddbfd235244d6"
-    },
     "Barclays::JR-0000112608": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the SRE title, the core requirements are data science/ML modelling (Pandas, scikit-learn, XGBoost, supervised/unsupervised learning, EDA) plus generic IT service management, with no infrastructure automation focus. Pune, India is an allowed location. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "a5925d6c8e2b7d2c9ea2ed34247209fc5f752bf52cba87ad98f2605fa81f11ed",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244842+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192114+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Despite the SRE title, the core requirements are data science/ML modelling (Pandas, scikit-learn, XGBoost, supervised/unsupervised learning, EDA) plus generic IT service management, with no infrastructure automation focus. Pune, India is an allowed location. No overall experience requirement is stated.",
       "signature": "64b5e295630ec42d9528e8374e87b7c889088f20c085c9ffb3c8d81b6fc1cebf"
     },
-    "Barclays::JR-0000112829": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "0e822ed58683ab69939fc49c5ca7496b10488a7f90f0c4fa7ef9cbb8aa76b271",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244728+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "409161dddbe16fd220210fdf41c3727f3a8220bccf6e6f035e12a20fa737dd3a"
-    },
     "Barclays::JR-0000114686": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Prague, Czech Republic is not in the enabled locations (India, UAE, or the listed European countries). The role is also mainly software development (C++/C#/Java), with infrastructure work limited to Linux, scripting and CI/CD. No overall years of experience are stated.",
+        "ai_relevance": "uncertain",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "0bd954728471201c534c0e73c79268e361bb9ae7cb4803a83179b04b30e99d84",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245364+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192282+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Prague, Czech Republic is not in the enabled locations (India, UAE, or the listed European countries). The role is also mainly software development (C++/C#/Java), with infrastructure work limited to Linux, scripting and CI/CD. No overall years of experience are stated.",
       "signature": "22e569a2970f8ea1a0530ed9ac6a242cdfbdc0d83b3aaa94e770274ddc1094ec"
     },
-    "Barclays::JR-0000118118": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "723d0b233013e4bc5d10a83687098da0e5e55c4015896c5ada7667e8f0fdcee8",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244693+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "e945f9371bf2212091968830cd99f5c5a8dd429ab7c8e97ff4b3f7d9fccb6b44"
-    },
     "Barclays::JR-0000122937": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a genuine infra-heavy platform job (IaC, Kubernetes, CI/CD, observability, AI platform), but the JD explicitly places it in Whippany, NJ, USA. That is outside the enabled India, UAE and Europe regions. No overall experience requirement is stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "08eb4ecaff48e89699f3e6c698f30aa3fdc9c2e32e0ca7c0bb44ccfb69967856",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244933+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192130+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a genuine infra-heavy platform job (IaC, Kubernetes, CI/CD, observability, AI platform), but the JD explicitly places it in Whippany, NJ, USA. That is outside the enabled India, UAE and Europe regions. No overall experience requirement is stated.",
       "signature": "e1975aaf02bb3320d0c4cf22431239b9f302cdb3047b252714ea10b65aeef535"
     },
     "Barclays::JR-0000122979": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE role (AWS/Azure, IaC, EKS/AKS, incident response), but the JD explicitly places it in the Whippany, NJ office in the USA. That is outside the enabled India, UAE and Europe regions. Overall experience is not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "ece28bbb474a5ea9afe7e97238dd07f8e507323709c64a4bc91cf2319efdc0c9",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244765+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192064+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong SRE role (AWS/Azure, IaC, EKS/AKS, incident response), but the JD explicitly places it in the Whippany, NJ office in the USA. That is outside the enabled India, UAE and Europe regions. Overall experience is not stated.",
       "signature": "6f0aef5a095ffdd3d2f4fa122b60e0561b7053625b0732a6659ccdc75312dd59"
     },
     "Barclays::JR-0000123093": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Data engineering lead role: core requirements are expert Python/PySpark, data warehousing, SQL, ETL/Informatica, and BI. DevOps, CI/CD and IaC are only nice-to-haves, so this is not an infrastructure automation role. Pune is an allowed location. Overall experience is unstated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "988d3dbdf0d00cb71a1aa5f8ca88b96c04c4b982b407b8d8206f65e966879010",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244805+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192082+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Data engineering lead role: core requirements are expert Python/PySpark, data warehousing, SQL, ETL/Informatica, and BI. DevOps, CI/CD and IaC are only nice-to-haves, so this is not an infrastructure automation role. Pune is an allowed location. Overall experience is unstated.",
       "signature": "b4922e54d30b2f0d9b085daa781715f5eb08cfb39018ec0d96162ffa1afb9950"
     },
-    "Barclays::JR-0000123647": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "74691c39d567ea80eb2c2a55d2dce21d2c29d93bc20ec60ad9b29a14e734e94f",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244876+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "1ce999cca9d52b5b7a39f221e53c7a168e6088e2d498eede7d1ad4c023b56390"
-    },
-    "Barclays::JR-0000128305": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "f31e9672d11cd2bf54f7b91fa65609566cdc70b603044f528f582bc35fb82bb2",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245140+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "dcccaf4bec72fbe1e6e10c8bbb59d19b90b77512275bc088c9d774d5ad2b62d7"
-    },
     "Barclays::JR-0000132635": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/infra automation role (cloud, IaC, Kubernetes, CI/CD), but it is explicitly located in Whippany, NJ, USA, which is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "20589733c75ee844beae73cf179c0d657028e6623e2f22605c9c4fb6c0f6c1fc",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244823+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192097+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong SRE/infra automation role (cloud, IaC, Kubernetes, CI/CD), but it is explicitly located in Whippany, NJ, USA, which is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
       "signature": "8d4a5f5d945ef3af956205b6d6449f5f554ec334b21727362b008825e3610bc9"
     },
-    "Barclays::JR-0000133437": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "3356d0a7ecaaa0edaf13f7c7221dd85dd3d347fb14f5b7db07b6294f2e66af1d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245004+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "50e9a387645a277c428c9078f09ff61106e172f1e5b72387d89008a48a089195"
-    },
     "Barclays::JR-0000133475": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Contact center/IVR software engineering management role (LLM voice bots, call flows, managing 8 developers), not infrastructure automation; located in Whippany, NJ, USA, outside enabled regions. Overall experience not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "ed917af288067010826d0bbcb219b161b5b5bea9881b6a0875fd06919abac2d6",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245248+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192224+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Contact center/IVR software engineering management role (LLM voice bots, call flows, managing 8 developers), not infrastructure automation; located in Whippany, NJ, USA, outside enabled regions. Overall experience not stated.",
       "signature": "7c71afab4cf2799f230074493a9757679ec59cf16172efffb71990beee1dc67e"
     },
     "Barclays::JR-0000133640": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Java/Spring Boot microservices and fraud feature engineering role; CI/CD and AWS mentions are incidental. Located in Whippany, NJ (USA), hybrid, which is outside the enabled regions of India, UAE and Europe. Overall experience requirement is not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "3f99455ef9aef41b96414efa58a4b5474b314ce23fa45b35d84bbd7acb457e88",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245230+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192208+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Java/Spring Boot microservices and fraud feature engineering role; CI/CD and AWS mentions are incidental. Located in Whippany, NJ (USA), hybrid, which is outside the enabled regions of India, UAE and Europe. Overall experience requirement is not stated.",
       "signature": "58912c5a5098ab75edef70502ed88284d26903ab01b28e03331e4161b4cf3809"
     },
-    "Barclays::JR-0000136174": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "c963d3110d9d5a8155d1559883be1a1fa3fafbc661f9b1b65610eba6661aa126",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245120+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "b013ec03ea1ac4181b8b13e903bff6278f40514c2981537fc0f9266712afbdc1"
-    },
-    "Barclays::JR-0000136175": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "e3c9b8d644eec00843d788c5ea3907ec590b7960a79fab9272269898c366222c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245099+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "db87b46a24f08271a92bfdf5201875fd5c4fea43c402625dca3d7d96443c9fe6"
-    },
-    "Barclays::JR-0000136176": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "8ae395a079f26ad8a6d35f0a825e335b1c64ac04f116f488e9260f9e429dc9cb",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244785+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "8c8f93a28dbcb66a97a6dfad7c0c87209b71cf63d0085b9bf81cf5ce07c3cd6d"
-    },
-    "Barclays::JR-0000136179": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "8312c43b7521fd3b338b8a8f20077bc3fee52951eae491e9dbc8e69dbbc8d15b",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245059+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "5004594d8e4dee1d14eec12f697b25b4f82bb12fb36c87a827fb34659837bd36"
-    },
-    "Barclays::JR-0000136180": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "3059484d8d85568d059a600481bd382b84367c286748ebe8ba2af980174ab0f9",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245079+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "20d0a1c5ffe9a0a7f00552b70059baf03a6e1601db335dc80ef014cc97f5623f"
-    },
-    "BlackRock::R263956": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "7aa20301959e9f81fb5d84800e5607e2a2dace078e7315578a242e3906d28da5",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245586+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "208881904b9cf257cf737747d8c97d77e7d86f9b305d1037c45014b73c3e8a1c"
-    },
     "BlackRock::R265027": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Despite the 'Platform Engineer' title, this is a data platform role: Kafka streaming, data governance and Java/Python development, not infrastructure automation. It is based in New York with 4 days a week in office, outside the enabled India/UAE/Europe regions. No explicit years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "ed53bc3fce441fa42c393c4d2cd4c6f0229876aaf78294f514b6f4dca92f350f",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245606+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192444+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Despite the 'Platform Engineer' title, this is a data platform role: Kafka streaming, data governance and Java/Python development, not infrastructure automation. It is based in New York with 4 days a week in office, outside the enabled India/UAE/Europe regions. No explicit years of experience are stated.",
       "signature": "baac3932f79a983a78f4de5d7141006af25aa5028accb6cc2707094e0bcfa444"
     },
     "BlackRock::R265146": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong infrastructure-heavy AI platform role (multi-cloud IaC, MLOps, 5+ yrs fits), but the JD explicitly places it in New York, NY with 4 days/week in office. That is outside the enabled India/UAE/Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "d74a7ff8a4730553f273e0d46decec6e21c628b407823c3177a497655ce7029b",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245642+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192477+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 5+ yrs",
+      "reason": "Strong infrastructure-heavy AI platform role (multi-cloud IaC, MLOps, 5+ yrs fits), but the JD explicitly places it in New York, NY with 4 days/week in office. That is outside the enabled India/UAE/Europe regions.",
       "signature": "b37d6907fb9caad6aa8a1cab534ea19ecb0419b30cc349d6b1524cb00ec1395c"
     },
     "BlackRock::R266544": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Product operations role (OKRs, roadmaps, communications, intake) with no hands-on infrastructure automation despite the 'Platform Engineering' title. The 2–4 year range is at least two years below the candidate's 6. The only location is New York with 4 days a week in office, outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "317bf1798d86f10f2167c0eaeb740364e47b1b76eb2f1eb3c9542fcd483fa8a7",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245623+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192460+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Product operations role (OKRs, roadmaps, communications, intake) with no hands-on infrastructure automation despite the 'Platform Engineering' title. The 2–4 year range is at least two years below the candidate's 6. The only location is New York with 4 days a week in office, outside the enabled regions.",
       "signature": "e69928841c4532cb039399080ca5d9ca891df448ae69aa00c9615a437fe8d10f"
     },
     "BlackRock::R266603": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Role is a Java software development lead (8-10+ yrs core Java) with only partial CI/CD and container platform work. Location is New York with 4 office days, outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "605fa74fd7bb71f943a7c4fe9bd50d42fe4b179478d61654b09775bce212c913",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245544+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192407+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Role is a Java software development lead (8-10+ yrs core Java) with only partial CI/CD and container platform work. Location is New York with 4 office days, outside the enabled India, UAE and Europe regions.",
       "signature": "0066fb3c2fefa6bb4e2476bb9dd5480bd6ffca6ce0710133e7f0d48c4f27d199"
     },
     "BlackRock::R266856": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a forward deployed business analyst role focused on transformation, operating models and prototyping, with no infrastructure, Kubernetes or platform work. It is based in New York and Atlanta, outside the enabled regions. Its 3–5 year range tops out at least two years below the candidate's 6 years.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "ff6fe4aab8ac6e4281170c249bb65783cb3d598cc3a6eb9443d1e914444894af",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245698+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192526+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a forward deployed business analyst role focused on transformation, operating models and prototyping, with no infrastructure, Kubernetes or platform work. It is based in New York and Atlanta, outside the enabled regions. Its 3–5 year range tops out at least two years below the candidate's 6 years.",
       "signature": "ab2eca03e574f708b6e676db4423bc675cbfd35c1710d7442905518a19c5fe1c"
     },
     "BlackRock::R266862": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward Deployed Business Analyst focused on business analysis, operating models and prototyping, with no infrastructure automation. Located in Singapore/Hong Kong, outside the enabled regions. The stated 3–5 years has an upper limit only 1 year below the candidate's 6, so experience counts as within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "1ad82cdb8ee59140523044305a1a1d1783dfc614dabecd8474f14349cf90feb2",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245679+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192509+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Forward Deployed Business Analyst focused on business analysis, operating models and prototyping, with no infrastructure automation. Located in Singapore/Hong Kong, outside the enabled regions. The stated 3–5 years has an upper limit only 1 year below the candidate's 6, so experience counts as within band.",
       "signature": "4899482519c53af8c2392d1f5c214290351cb69f3ea99befa8de4d0729183ea7"
     },
     "BlackRock::R266884": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed business analyst role focused on transformation, business architecture and prototyping. It has no infrastructure, Kubernetes or platform automation work. London is an allowed location, and the 3–5 years required is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "fc82235f3188e366afa98c641ec006f94ba039e12f039fbe4707c4d8012017cd",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245661+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192493+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Forward deployed business analyst role focused on transformation, business architecture and prototyping. It has no infrastructure, Kubernetes or platform automation work. London is an allowed location, and the 3–5 years required is within band.",
       "signature": "f11afdf3524a5f56edc9b647c6296a4c639f4b911a02a88173601a9376cebc15"
     },
     "BlackRock::R266963": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Director-level enterprise architecture role (strategy, governance, financial-domain architecture), not hands-on infrastructure automation. Located in New York with 4 days/week in office, outside the enabled India/UAE/Europe regions. The 10+ years requirement is within the band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "4ee04dd41e3b97eb74e32a05fd5c3953082ddf93ccd9753c73fd2aa9985eef75",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245565+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192426+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Director-level enterprise architecture role (strategy, governance, financial-domain architecture), not hands-on infrastructure automation. Located in New York with 4 days/week in office, outside the enabled India/UAE/Europe regions. The 10+ years requirement is within the band.",
       "signature": "f792b386a7294febdfeea0b4045a42adcd4c2c0e5610ec3b178457193abb9e3d"
     },
     "Citi::859038498233": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "London is allowed, but this is an applications-development forward deployed role centred on building agentic AI apps, RAG and Python/Java backends, not infrastructure. It also requires 12+ years overall, above the 11-year maximum, and drop_out_of_band is true.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "e39b3224f8e0fd640eded794d1ae6e6021be4cf13309e60d3dfb8be2997af280",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244068+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191705+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 needs 12+ yrs — above your band",
+      "reason": "London is allowed, but this is an applications-development forward deployed role centred on building agentic AI apps, RAG and Python/Java backends, not infrastructure. It also requires 12+ years overall, above the 11-year maximum, and drop_out_of_band is true.",
       "signature": "2e96e52e12d4ffa90990d085925516f783db0700a5f07bc16786622e4d1a9b6f"
     },
     "Citi::859038501308": {
@@ -1667,6 +1619,23 @@
       "reason": "Customer-facing professional services role for Cloudflare app security (WAF/bot tuning), not infra automation. Requires 15+ years, above the 11-year max (drop_out_of_band true). JD explicitly says Sydney, outside India/UAE/Europe.",
       "signature": "3e897e55be5d37a5ef3cf6bd85c5f708e012e2b9717b4a89e0561d2d66f8dbfd"
     },
+    "Cloudflare::8338018": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a software engineering role building SDKs, a Terraform provider, code generation and API versioning, and it needs deep Go and multi-language library expertise. It does not involve infrastructure automation or operations. The 5+ years requirement fits the band. Location is only 'Hybrid' with no country given.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "9db3be343a8893a471ed89baf9104a5dafefb219be8c6f2a5cfcf2d07cce22b3",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191443+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Systems Engineer' title, this is a software engineering role building SDKs, a Terraform provider, code generation and API versioning, and it needs deep Go and multi-language library expertise. It does not involve infrastructure automation or operations. The 5+ years requirement fits the band. Location is only 'Hybrid' with no country given.",
+      "signature": "604c658e730b3575f66192c6d14c217e579604aaa01a8f16b5dbe479ba0464d1"
+    },
     "Cohere::031c2335-db85-4265-8a88-a54b911be36a": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1751,6 +1720,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Forward deployed role centered on building LLM agents, RAG, Python apps and frontend, not infrastructure or Kubernetes. Locations are US/Canada remote only, outside India/UAE/Europe. No overall experience requirement is stated.",
       "signature": "c9df0ed47c623c710cf16f1019e832964483798acf80496b14c34df20c3411ff"
+    },
+    "Cohere::be48aafc-9610-4ebd-8414-a0722a3cd59a": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Infra-focused forward deployed role (Kubernetes, Helm, private cloud deployment) fits the candidate well, but it is explicitly North America and located in Canadian cities (remote within Canada), outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "f9e6f64eab1e6fcc6077463ad2c6ecc36c52cc69147f9f15fcf8754dcd799365",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191511+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Infra-focused forward deployed role (Kubernetes, Helm, private cloud deployment) fits the candidate well, but it is explicitly North America and located in Canadian cities (remote within Canada), outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
+      "signature": "fbf4b127af6950dcab8fe5c2d6c1dd1963f37f8c642d36ecb5242a7da5d4f2fd"
     },
     "Databricks::8341313002": {
       "ai_assessment": {
@@ -2997,223 +2983,173 @@
       "signature": "3f30587457a2d9625a4211568d4cf15d0021ea41449e256a85c67a4535be804f"
     },
     "Deutsche Bank::R0341951": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "SAP BW/ECC production support role requiring 5+ years of SAP experience. It is not infrastructure automation. It is located in Bucharest, Romania, which is not among the enabled locations.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "6a07867b01aa6fb65fb6db99c416bec19563a1a2ce940e7db9d69ba2d28ee3ae",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244569+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191968+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "SAP BW/ECC production support role requiring 5+ years of SAP experience. It is not infrastructure automation. It is located in Bucharest, Romania, which is not among the enabled locations.",
       "signature": "30463e2541a4d64958e4e42502fb932869d81ca52f048ee4dec08903fd7dde5c"
     },
-    "Deutsche Bank::R0361102": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "6bc33fbc8a4d7ec74adeb565ecd4a747601da8584fcbabb2be037200d0f8ba19",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244287+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "72fba4a776f42dce508879b46c57789ec8f51384954194e3ee184e4174853e3d"
-    },
     "Deutsche Bank::R0423994": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Primarily a Java/GCP software development role (data stack BigQuery/Dataproc, APIs, unit testing); CI/Terraform/GKE are secondary. 4 yrs GCP is tool tenure, overall experience unstated. Pune is allowed.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "cb7c86e165f0c28a90c23253701d08d07935c4d42b65299eedefafd5cf1a35c5",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244429+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191903+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Primarily a Java/GCP software development role (data stack BigQuery/Dataproc, APIs, unit testing); CI/Terraform/GKE are secondary. 4 yrs GCP is tool tenure, overall experience unstated. Pune is allowed.",
       "signature": "aad36589cc0e4b76438bbf0e5746687c5db6a31807a4c28dfdd485fcdca24489"
     },
     "Deutsche Bank::R0424598": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "SAP BW/HANA production support role focused on SAP data modelling and application configuration, not infrastructure automation; located in Bucharest, Romania, which is not among the enabled locations. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "b91af0c449561d298430d27956a2f198ccc62490da770a470fca618d258dced9",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244552+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191935+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "SAP BW/HANA production support role focused on SAP data modelling and application configuration, not infrastructure automation; located in Bucharest, Romania, which is not among the enabled locations. No overall experience requirement is stated.",
       "signature": "5e09d4cbd93659f37228ad07d3e0ccdfc2c5e16286340cfe7a9d0c6ef5b6059d"
     },
-    "Deutsche Bank::R0427224": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "09cefe5265e20b094acb42ec7dc22a0f4d43060d3219e9a661f6e54a2877faca",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244345+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "10be0c4136fe9918eaad8cbd7efaabbb39fcf088c38098b0b236eda7a811249d"
-    },
     "Deutsche Bank::R0432121": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role itself is a strong infrastructure fit: GCP/GKE, Terraform, Kubernetes, Helm and CI/CD automation for AI/ML workloads. However, the JD places it in Bucharest, Romania, with hybrid work. Romania is not among the configured locations, so this is a clear geographic mismatch. Overall experience required is unstated.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "e8e9a50fc44f2d62358328dc6855d61307896e36647fb3494a837dfcffbcccc0",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244361+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191870+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role itself is a strong infrastructure fit: GCP/GKE, Terraform, Kubernetes, Helm and CI/CD automation for AI/ML workloads. However, the JD places it in Bucharest, Romania, with hybrid work. Romania is not among the configured locations, so this is a clear geographic mismatch. Overall experience required is unstated.",
       "signature": "3d80ea328ae7956872878d035ad8ef2cd0629a9a4087213f4b96cd2526af21fb"
     },
-    "Deutsche Bank::R0432348": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "a39d0dc6aee626b33ef33b87fa3dbe88f5a734b917ded02d1da69ec80c5ccdba",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244394+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 6–8 yrs",
-      "signature": "24480cbf5ed69cc4d6c4db05fcdd263681274c983986f940f9a68285072d0dc7"
-    },
-    "Deutsche Bank::R0435064": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "8a0f8ca18c2fcd47357c32da2eb3671d6be7c781cb995ac5e3facdf5b7096ace",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244515+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "769ae38ee186efce3750e230b1b07706f09fc8c0aac1e0d1e06ea1f1a9c1685f"
-    },
-    "Deutsche Bank::R0436983": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "a062755b06fd0153a32d0f5cacc31479680505e83352a6ab8513cd0d439f1ca3",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244410+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "6fab7fbdc1e8c4091ca96a135cdb8dc0cb564440dd073ed815e7175418c4e657"
-    },
     "Deutsche Bank::R0440448": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong Kubernetes SRE role with real automation, but the JD explicitly requires hybrid work from the Cary, NC (USA) office, which is outside the enabled India/UAE/Europe regions. No overall years requirement is stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "b3b8b8c2c040b6d0712a5c4de3ea968e4e1f4fc1d3c3538b1a623177e4fba67c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244497+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191917+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong Kubernetes SRE role with real automation, but the JD explicitly requires hybrid work from the Cary, NC (USA) office, which is outside the enabled India/UAE/Europe regions. No overall years requirement is stated.",
       "signature": "67845430b2b1f3c6ed2f3fd28f08de6b5a4be405377d5987c6a937ec7b10c8ca"
     },
-    "Deutsche Bank::R0441078": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "08fdd834e75c1c8a482a740f13a8ab4d5cfb4fb20aa4a04897021c2a3cc770d8",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244313+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "157d93997894f53cec224ec80a0103dba04b872fc1274e678b933fdb2d4800f6"
-    },
     "Deutsche Bank::R0441114": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong DevOps match (GCP/GKE, Terraform, Jenkins/GHA, Prometheus). However, the role is in Bucharest, Romania, which is not in the enabled locations, and it is hybrid with only 40% remote. Experience requirement is not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "4e38b937cdd509a4d771a49256b21845dcb28816e041db309b8b1962d26b1905",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244377+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191887+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong DevOps match (GCP/GKE, Terraform, Jenkins/GHA, Prometheus). However, the role is in Bucharest, Romania, which is not in the enabled locations, and it is hybrid with only 40% remote. Experience requirement is not stated.",
       "signature": "c56a6b2bab5d315552cfe21dd62816f9fa3886425a067944a5a72867523575e4"
     },
     "Deutsche Bank::R0441643": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Snowflake data platform role centered on data engineering (dbt, Airflow, ingestion pipelines), with Terraform only a secondary duty. Located in Madrid, Spain, which is outside the enabled India, UAE and listed Europe locations. Requirement of 3+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "220ca262ef9c56bbe4173406fdf537a3ce2c1c0f0897f5ff1653671b75aacd1e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244605+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192000+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 3+ yrs",
+      "reason": "Snowflake data platform role centered on data engineering (dbt, Airflow, ingestion pipelines), with Terraform only a secondary duty. Located in Madrid, Spain, which is outside the enabled India, UAE and listed Europe locations. Requirement of 3+ years is within band.",
       "signature": "f76000b4ecd292f3a9b0bd1c6181786d44edf364b134730680e4d6807e21c5cf"
     },
-    "Deutsche Bank::R0442646": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "d8eb256bf967bcc08ee55b953e83926dd442f964abeb1892cf40ca0cb6849f85",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244461+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "2422a2fd7c268bf292a522798f321c27ef745d05b9f762b0229863ecaceff78b"
-    },
-    "Deutsche Bank::R0446461": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "6d2d16808bd9556ad2fc4fbbc4940d5afc1553de4f7499df2b283288ce580917",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244330+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "1a1a2785f9e50806aea41ff576a56c3338e7e5ecf7ab279ed37493f662a5917e"
-    },
     "Deutsche Bank::R0446624": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "SAP BW production support role in Manila, Philippines, outside the enabled regions. It centres on SAP/HANA data modelling and finance analysis, not infrastructure automation, despite the SRE label. No overall years are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "3d53fd170785001ac59276855393e2e0f349998099a4f14f84787794f01f4ea0",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244587+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191985+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "SAP BW production support role in Manila, Philippines, outside the enabled regions. It centres on SAP/HANA data modelling and finance analysis, not infrastructure automation, despite the SRE label. No overall years are stated.",
       "signature": "d3e850b9f77197e6ff4b660d198c166d78096c568bd58183c2566a356c53aa7d"
     },
     "Deutsche Bank::R0447978": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Tokyo, Japan role (not in enabled regions) focused on functional production support for fixed income settlements, requiring fluent Japanese and JASDEC/BOJ experience; not infrastructure automation. The 10+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "0b887ab61e8ae1945040ff54f4e8a6251016555b8a3ca0bfdde40ef76f30b96b",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244656+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192028+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Tokyo, Japan role (not in enabled regions) focused on functional production support for fixed income settlements, requiring fluent Japanese and JASDEC/BOJ experience; not infrastructure automation. The 10+ years requirement is within band.",
       "signature": "3d5766ae751980614f92ae37e5409be84d4af1dd67596be0f4810ea87e17953b"
     },
-    "Deutsche Bank::R0448445": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "1a42c664bfdfdec1291cb07f7d7da8e880e0e7ff5235d79e9ac188f559344713",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244622+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "55d93e7bf6b74e4b64902fd001af947bcc69b5ed21369ade73a8db67d9c1ae52"
-    },
-    "Deutsche Bank::R0448537": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "520d2a9819c27bb1f2b4051a171fc8a29c820eadab35f26be0074022a038141b",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244445+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "dd7851ed99cdb045266243dc0571861db447c3fb5023c61561a1e170cb0b5f9c"
-    },
-    "Deutsche Bank::R0452282": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "ee75c821aec2f14cdb478b915d3af63e3c2c7d46b6f6b741be942e60f9b06b80",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244534+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
-      "signature": "b76b80839e284917df56b50cbfe0e95e08eb76cee2f10fddcce38c0e0d158e29"
-    },
-    "Deutsche Bank::R0452385": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "700c1056f234641b94aaa2bf48db78e462c11d14b96472764790c5c6bb16eac0",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244477+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 10–12 yrs",
-      "signature": "2b2256a3c864444677571619a73cac2035c15019f3f51239bf19e00541c9cff3"
-    },
     "Deutsche Bank::R0454442": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Role is in Cary, NC, USA, which is outside the enabled India, UAE and Europe regions. It is also production support for bank risk platforms (Python/SQL reconciliation, batch jobs), with only partial infra work (Kubernetes, CI/CD). The 2-year minimum is not an explicit range, so experience counts as within band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "6718dd350374b78202d9fbce624cd18d1f41bf1d8e6c57b84ef431eb2e7a225d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244640+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192014+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Role is in Cary, NC, USA, which is outside the enabled India, UAE and Europe regions. It is also production support for bank risk platforms (Python/SQL reconciliation, batch jobs), with only partial infra work (Kubernetes, CI/CD). The 2-year minimum is not an explicit range, so experience counts as within band.",
       "signature": "f3d044cae6058ecc4020cd4c00bc47729bd21d33e72a3aa1ec434e9d1c09c2b2"
     },
     "Elastic::8237962": {
@@ -3404,213 +3340,360 @@
       "signature": "1e094cf9bba4ed5b6ad93c62a4c13ebb6c0cc3741951d543245047f937aa94cd"
     },
     "HPE::1188791": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Hands-on multi-cloud DevOps leadership role (Terraform, K8s, networking) is relevant, and the 10+ year requirement is within the 11-year max, but it is onsite in Tel Aviv, Israel, which is outside the enabled India/UAE/Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "73d082eadc327cac1c6733fb67fa020a161fdae2e36b8ee8e7632560dc6bfb84",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245735+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192558+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Hands-on multi-cloud DevOps leadership role (Terraform, K8s, networking) is relevant, and the 10+ year requirement is within the 11-year max, but it is onsite in Tel Aviv, Israel, which is outside the enabled India/UAE/Europe regions.",
       "signature": "872e70a4222a7eec70144bb138ba1ed52363c3f1523c47fe969c456c28d9f0f1"
     },
     "HPE::1198815": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a hybrid position in Sofia, Bulgaria, requiring office attendance, and Bulgaria is not among the enabled Europe locations. The work is infrastructure-relevant but consulting-heavy: bare-metal and cluster provisioning plus Kubernetes. No overall years of experience are stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "69f22dcb360e1006e695e5d894adca19f070a34975486e7c73333196670f932c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245717+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192542+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is a hybrid position in Sofia, Bulgaria, requiring office attendance, and Bulgaria is not among the enabled Europe locations. The work is infrastructure-relevant but consulting-heavy: bare-metal and cluster provisioning plus Kubernetes. No overall years of experience are stated.",
       "signature": "882b5503f29a8c95f4639696a81b3a1454179ba11ec67ce1439da6b18ffbcb9e"
     },
     "HPE::1200145": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/IaC role (Terraform, GKE/EKS, CI/CD, observability) with a 6+ year minimum that fits the band, but it is hybrid with mandatory San Juan, Puerto Rico office attendance, outside the enabled regions (India, UAE, Europe).",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "6cad840909f4d3d4c1ccf1c9fff5853b4ae98a2e18985896bed94ccfe32d760c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245789+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192605+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong SRE/IaC role (Terraform, GKE/EKS, CI/CD, observability) with a 6+ year minimum that fits the band, but it is hybrid with mandatory San Juan, Puerto Rico office attendance, outside the enabled regions (India, UAE, Europe).",
       "signature": "67925023a8de9adfd4bf2eeb2240302362d57d15e2a37e01529ae71def276233"
     },
     "HPE::1200146": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/IaC role, and the 10+ year minimum is within the 11-year band. However, it is hybrid with mandatory San Juan, Puerto Rico office attendance, which is outside the enabled regions of India, UAE and Europe.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "d9d1c0ddd093a21d9f9b6e00577ac2f844c575c1a10434558f84151d272f6464",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245807+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192621+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong SRE/IaC role, and the 10+ year minimum is within the 11-year band. However, it is hybrid with mandatory San Juan, Puerto Rico office attendance, which is outside the enabled regions of India, UAE and Europe.",
       "signature": "64dab539c18a8858ae55f195071965a0097a58d05603f4e7d6737f5b5ac6ea0a"
     },
     "HPE::1200147": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/infra automation role (IaC, AWS/GCP, GKE/EKS, CI/CD, observability), and the 10+ year minimum is within the 11-year max. However, the JD explicitly places it in San Juan/Aguadilla, Puerto Rico, with mandatory in-office attendance twice a week. That is outside the enabled India/UAE/Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "2db656bae12d670ab63612caf097229ec2b340f8ff01506008756dc5988a5c4a",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245826+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192637+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong SRE/infra automation role (IaC, AWS/GCP, GKE/EKS, CI/CD, observability), and the 10+ year minimum is within the 11-year max. However, the JD explicitly places it in San Juan/Aguadilla, Puerto Rico, with mandatory in-office attendance twice a week. That is outside the enabled India/UAE/Europe regions.",
       "signature": "7d056aa160ba18f7ad75e80d9c1277a8ddd2714d84b40d555b9141cc13f4df51"
     },
     "HPE::1200151": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/IaC role (Terraform, GKE/EKS, CI/CD, observability), and the 6+ years requirement fits. However, the JD explicitly requires hybrid attendance at the San Juan, Puerto Rico office twice a week, which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "6cad840909f4d3d4c1ccf1c9fff5853b4ae98a2e18985896bed94ccfe32d760c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245770+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192589+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong SRE/IaC role (Terraform, GKE/EKS, CI/CD, observability), and the 6+ years requirement fits. However, the JD explicitly requires hybrid attendance at the San Juan, Puerto Rico office twice a week, which is outside the enabled India, UAE and Europe regions.",
       "signature": "f66511e616173e83fb0f5d492ac4d32b7986f553a6fef37abf9da0891c3f6f8b"
     },
     "HPE::1203154": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Technical Product Manager role focused on specs, triage and field support, not infrastructure automation, despite hands-on Kubernetes work. Onsite in Texas, California or Colorado (US), which is outside the enabled India, UAE and Europe regions. The 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "8b40551da0ee912aa31b731128f3a9c29b6a7ab92b41f0c9141940e5eecee18d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.246013+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192787+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Technical Product Manager role focused on specs, triage and field support, not infrastructure automation, despite hands-on Kubernetes work. Onsite in Texas, California or Colorado (US), which is outside the enabled India, UAE and Europe regions. The 5+ years requirement is within band.",
       "signature": "4e613512ee4d5c4d8f51459b5ce90d2ba9b0b4f3b66574a03aff5d63a4de4bfa"
     },
     "HPE::1204750": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Presales sales-engineering role focused on Juniper/Arista network architecture and RFPs, not infrastructure automation. The location is US-only (remote US, with US salary bands). The 10+ years required is within the 11-year band, but the role and location are a clear mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "67a4e91ca8ff2a0e63e4eb236935ac5ccb0807409502a1bf248ad08f6a1d1e01",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.246097+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192861+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Presales sales-engineering role focused on Juniper/Arista network architecture and RFPs, not infrastructure automation. The location is US-only (remote US, with US salary bands). The 10+ years required is within the 11-year band, but the role and location are a clear mismatch.",
       "signature": "0abc588b9d73cb4bbacac65b2f5eb73f8232eacb5d9fe5ad3be420b40551464a"
     },
     "HPE::1205939": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Pre-sales/consulting solution architect role (RFPs, executive advisory, cost models) rather than hands-on infra automation; Stockholm, Sweden is not in the enabled locations, and the role requires Swedish fluency and Swedish security clearance. 7+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "88094a3da6fc53b19d9b58584170ef4a3038cd9683ea46ba338abbe62ed7e624",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245893+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192686+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 7+ yrs",
+      "reason": "Pre-sales/consulting solution architect role (RFPs, executive advisory, cost models) rather than hands-on infra automation; Stockholm, Sweden is not in the enabled locations, and the role requires Swedish fluency and Swedish security clearance. 7+ years is within band.",
       "signature": "ddf3c8a191a34ae52f19b9e9e0998fa4bc222156ebac86daee8590c29fb34a5f"
     },
     "HPE::1209282": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Entry-level software engineering role (0–2 yrs, upper limit far below candidate's 6) focused on product development in datacenter networking. DevOps tooling appears only as exposure items. Bengaluru onsite is allowed, but with drop_out_of_band true this is a clear mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "01c6bc4d3083265fd4fc43d65b40e19fe27aefafb72f4700817c1b83463f1ee0",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245750+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192572+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 0–2 yrs — junior for your band",
+      "reason": "Entry-level software engineering role (0–2 yrs, upper limit far below candidate's 6) focused on product development in datacenter networking. DevOps tooling appears only as exposure items. Bengaluru onsite is allowed, but with drop_out_of_band true this is a clear mismatch.",
       "signature": "522cd64ae882ab7cc9267e81eae8ce0cb46fe0c02d434db3ce91a18b2ea0e643"
     },
     "HPE::1212247": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Embedded Linux kernel/Yocto/BSP C/C++ systems programming role, not infrastructure automation/DevOps; hybrid in San Juan, Puerto Rico, outside the enabled regions. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "fffaccd0eae941db6e56434611fd35ef90745dd347829742726485a7b87ad02a",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.246048+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192818+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Embedded Linux kernel/Yocto/BSP C/C++ systems programming role, not infrastructure automation/DevOps; hybrid in San Juan, Puerto Rico, outside the enabled regions. No overall years of experience are stated.",
       "signature": "b01be6fbb1ba0832cb1ef4148dd3e275cff385f87f606ca907f337a1a3390a49"
     },
     "HPE::1212261": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Embedded Linux kernel/Yocto/BSP systems programming in C/C++, not DevOps or cloud infrastructure automation. The role is hybrid from San Juan, Puerto Rico, which is outside the enabled India, UAE and Europe regions. Overall years of experience are not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "56de1a038b8f59e6d623d80e93470d3aaef65be0c1bc3a54fa13b6ec9e9e0a49",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.246080+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192847+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Embedded Linux kernel/Yocto/BSP systems programming in C/C++, not DevOps or cloud infrastructure automation. The role is hybrid from San Juan, Puerto Rico, which is outside the enabled India, UAE and Europe regions. Overall years of experience are not stated.",
       "signature": "c03a69b2c9ca62bd1d1f3e25420750d201b7a0ea5fc77571188267aee0562e72"
     },
     "HPE::1212262": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Embedded Linux kernel/Yocto/BSP C/C++ systems programming role, not DevOps/SRE infrastructure automation; hybrid in San Juan, Puerto Rico, outside enabled regions; no overall years stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "a4821cb737ac3c02df0d83c28f47b10c025a557b7006b30c59b89d71ed2922ec",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.246064+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192832+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Embedded Linux kernel/Yocto/BSP C/C++ systems programming role, not DevOps/SRE infrastructure automation; hybrid in San Juan, Puerto Rico, outside enabled regions; no overall years stated.",
       "signature": "bdaa2573e8d247178eb9d60cad603b9edb6585a8e242015b71e5c84e82af24b6"
     },
     "HPE::1212267": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Embedded Linux kernel/Yocto/BSP systems programming role (C/C++, hardware bring-up), not DevOps/SRE infrastructure automation; hybrid in San Juan, Puerto Rico, outside enabled regions; no overall experience stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "a49f4110276c9f9f31f8a97e2e9231ec727169ffa12c3acdfdc1beae7ffff1e1",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.246031+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192803+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Embedded Linux kernel/Yocto/BSP systems programming role (C/C++, hardware bring-up), not DevOps/SRE infrastructure automation; hybrid in San Juan, Puerto Rico, outside enabled regions; no overall experience stated.",
       "signature": "39e647941c3543d0d925110d050849a1fd4d1b1b4aff73afa460b40be5a20083"
     },
     "HPE::1214828": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Platform Engineer' title, the role is embedded/system software for storage arrays: device drivers, firmware, hardware bring-up, C/C++ and Linux internals. It has no DevOps/SRE or infrastructure automation work. Bengaluru location is allowed; overall experience is not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "21dbb4cd001183b2a450f0eb2c72eedc22e3e4158c74c9e7ce6e62a2e940e95e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245873+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192669+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Despite the 'Platform Engineer' title, the role is embedded/system software for storage arrays: device drivers, firmware, hardware bring-up, C/C++ and Linux internals. It has no DevOps/SRE or infrastructure automation work. Bengaluru location is allowed; overall experience is not stated.",
       "signature": "1102625b1e08a9481a83adb7c1e5695482af93226a2e5971c2882eaafc2b9078"
     },
     "HPE::1214830": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "This is a storage product software development role (C/C++, OS internals, data-path, storage protocols), not DevOps/SRE infrastructure automation, despite the 'Platform Engineer' title. The 10+ years required is within the 11-year max. Bengaluru is an allowed location.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "0962ff5853003797a7c3369ae4afc86892371f1b81208f6a210db16e0c553d53",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245844+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192652+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a storage product software development role (C/C++, OS internals, data-path, storage protocols), not DevOps/SRE infrastructure automation, despite the 'Platform Engineer' title. The 10+ years required is within the 11-year max. Bengaluru is an allowed location.",
       "signature": "7d601b7a6a95bf854826a8d786461086663b445bd4004b9ae38a7a477a29b089"
     },
     "HPE::1214833": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Systems Engineer' title, this is C/C++ storage data-path product development (OS internals, multi-threading, object storage), not infrastructure automation or DevOps/SRE/platform work. The 6+ years requirement and the Bengaluru hybrid location both fit.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "67e3c4f37cd9e9034eb94c0b69d005474608e7a6a549b6e1046f93323e80584c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245935+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192723+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Despite the 'Systems Engineer' title, this is C/C++ storage data-path product development (OS internals, multi-threading, object storage), not infrastructure automation or DevOps/SRE/platform work. The 6+ years requirement and the Bengaluru hybrid location both fit.",
       "signature": "bd7f7d27d954e1b15f8de1593b7671ae63321737083fa5d03ad5e2b242e6c3b2"
     },
     "HPE::1215497": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Cloud Engineer' title, the role is front-end UI development (React, TypeScript, web components) with no infrastructure automation. Pune is an allowed location, and the 7+ year minimum is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "19f7963199482685d570c2697482edfc6dc89a3cb36388b3d52e338ccbb007fc",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245974+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192755+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Despite the 'Cloud Engineer' title, the role is front-end UI development (React, TypeScript, web components) with no infrastructure automation. Pune is an allowed location, and the 7+ year minimum is within band.",
       "signature": "8d2d3d1dced46560baa81612b2fb46bb520b84952555b313a6dff4709d0c31a2"
     },
     "HPE::1215505": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Cloud Engineer' title, the role is front-end UI development (React, TypeScript, web components) with no infrastructure automation. The 7+ years required is within band and Pune is allowed, but the role is a clear mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "19f7963199482685d570c2697482edfc6dc89a3cb36388b3d52e338ccbb007fc",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245994+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192771+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Despite the 'Cloud Engineer' title, the role is front-end UI development (React, TypeScript, web components) with no infrastructure automation. The 7+ years required is within band and Pune is allowed, but the role is a clear mismatch.",
       "signature": "48ce9fc0d893dd1635487d42b39e2925133ac87ff9691e2204e9b60873bc90f6"
     },
     "HPE::1215862": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Graduate cloud role (0-2 yrs, far below the 6-year candidate) with some deployment/automation duties, hybrid in Aguadilla, Puerto Rico, which is outside the enabled India/UAE/Europe regions; drop_out_of_band is true.",
+        "ai_relevance": "relevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "83b07575809051bcb581b7041a3fa12d6116d5109907893a55b517a2d837e0d6",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245956+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192741+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 0–2 yrs — junior for your band",
+      "reason": "Graduate cloud role (0-2 yrs, far below the 6-year candidate) with some deployment/automation duties, hybrid in Aguadilla, Puerto Rico, which is outside the enabled India/UAE/Europe regions; drop_out_of_band is true.",
       "signature": "52b5bd5152c762d3463647f06cd3cf5a277f2939dbc12b41db6f01dc3c193df4"
     },
     "HPE::1216401": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Pre-sales networking sales engineering role (Aruba/Juniper wireless, territory pipeline), not infrastructure automation; remote limited to South Florida, USA, outside enabled regions. 10+ years preferred is within the band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "cf59b324160d49d041c639d9dfcf1a74bc4524959108ad9e0a1dde825d596b22",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245913+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192704+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Pre-sales networking sales engineering role (Aruba/Juniper wireless, territory pipeline), not infrastructure automation; remote limited to South Florida, USA, outside enabled regions. 10+ years preferred is within the band.",
       "signature": "dadf124be9615d470cd61a693c1dafa59dac86832e6975b1b6a0ad2a07f74ef2"
     },
     "HackerRank::7461142": {
@@ -3682,13 +3765,20 @@
       "signature": "7828f114ef21a83fe87e4205600b3ec0318ff66710380b6ca6503c68c382f98d"
     },
     "J.P. Morgan::210796782": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Trader voice/telephony L3 support role (IPC, SIP, VoIP, hoots). It has no cloud, Kubernetes or infrastructure-automation focus. The location (London) is allowed, and the 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "2f70eddf52627570ffd954297f8315bd7afde16c551b277cb0039136dd9d8a33",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244040+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191679+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Trader voice/telephony L3 support role (IPC, SIP, VoIP, hoots). It has no cloud, Kubernetes or infrastructure-automation focus. The location (London) is allowed, and the 5+ years requirement is within band.",
       "signature": "37a334ec9ad4ef1d8118ed82dfda1ffab7a1aacdc2fbb22db77ac3fd8304c969"
     },
     "J.P. Morgan::210800030": {
@@ -3760,13 +3850,20 @@
       "signature": "e78db0f1fb392bdc94dc085421aebe43bcb18bb03ea53e0e8c7435da87ef6c4f"
     },
     "J.P. Morgan::210801851": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE role with infrastructure automation (VMware NSX-T/vSphere, networking), but it is located in Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "469c92cd8a7db2f03999e4413464c6ba84f18b2e9eedfab303c6b1a329feae29",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244054+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191692+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "SRE role with infrastructure automation (VMware NSX-T/vSphere, networking), but it is located in Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
       "signature": "ac4a7a51bbcab173fbb74cd79aa71f9b2ee8004f862092568aac0b56c4edb7d8"
     },
     "J.P. Morgan::210802136": {
@@ -3855,23 +3952,37 @@
       "signature": "403483d3797ae3ed16eb2466fdd98348e9658cae7ff42b9120d809c300ef7f4c"
     },
     "J.P. Morgan::210803732": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong cloud platform/IaC/Kubernetes infrastructure role and 8+ years is within the band, but the JD states Shanghai, China, which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "7dabfbc1a8b38411243b1b8415552fc44c951f369f16a24bb91c48341ccb7fe7",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244025+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191664+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong cloud platform/IaC/Kubernetes infrastructure role and 8+ years is within the band, but the JD states Shanghai, China, which is outside the enabled India, UAE and Europe regions.",
       "signature": "e4d9b8abf4c79ab9fa9881217d1a3efa862a71a9f5bae2b9c4961f5bf909dd20"
     },
     "J.P. Morgan::210804053": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE lead role with 5+ years required fits experience, but the location is Buenos Aires, Argentina, which falls outside the enabled regions (India, UAE, Europe).",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "679a1c2bfaadc8efb47fb284a017824ab99489c27d1ed674e2c441f106a5be5b",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244001+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191647+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "SRE lead role with 5+ years required fits experience, but the location is Buenos Aires, Argentina, which falls outside the enabled regions (India, UAE, Europe).",
       "signature": "4100a2e86c0396d8aa33c0070c9f88bb405025f5062a8d30e8645701f9c19a29"
     },
     "Mastercard::R-277889": {
@@ -3892,13 +4003,20 @@
       "signature": "14cfb971564fa143cab36741cb28f13afae204e908db202ef0cb7d104721cf96"
     },
     "Mastercard::R-279063": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong infra-heavy AI platform role (Kubernetes, IaC, MLOps, inference), but all listed locations are US-only (NYC, Boston, Arlington, Atlanta, Purchase, O'Fallon) with US pay ranges; outside enabled India/UAE/Europe regions. Overall years not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "b58c3cd95e8f6fd83e1174c50744a16afed976a33edc7f37f3e0fe26cd4094bc",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244088+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191723+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Strong infra-heavy AI platform role (Kubernetes, IaC, MLOps, inference), but all listed locations are US-only (NYC, Boston, Arlington, Atlanta, Purchase, O'Fallon) with US pay ranges; outside enabled India/UAE/Europe regions. Overall years not stated.",
       "signature": "3b7c792f7e78217da9a5fecb08261a9273c33c547246f7b2d58f1db919ae1f3f"
     },
     "Mastercard::R-286678": {
@@ -3936,13 +4054,20 @@
       "signature": "fa3d980ccd0223ce8d8889d373bd39513a25232c61c8efd842ca87eedcde2a4b"
     },
     "Mastercard::R-293009": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Platform engineering manager role (IaC, Kubernetes, CI/CD) is relevant, but it is located in O'Fallon, Missouri, USA, with US pay ranges and US benefits. That is outside the enabled India/UAE/Europe regions. No overall years of experience are stated, and the role requires Hadoop/Cloudera big data expertise.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "26a4bcefd4fdfcb72cec592fee3ec99be57e3983f88637eb5895b725ede0d58c",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244113+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191746+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Platform engineering manager role (IaC, Kubernetes, CI/CD) is relevant, but it is located in O'Fallon, Missouri, USA, with US pay ranges and US benefits. That is outside the enabled India/UAE/Europe regions. No overall years of experience are stated, and the role requires Hadoop/Cloudera big data expertise.",
       "signature": "d9c67d69260dc4fa56c8965179589e485d25a4c951b76fec9479104422bc4a6d"
     },
     "Mastercard::R-293373": {
@@ -3997,13 +4122,20 @@
       "signature": "dd93c14433098aac21da7bc998d081fb16eaa79ee56e23c4c12771a4a469acb6"
     },
     "Mastercard::R-294126": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a US-based (Arlington, Virginia) engineering manager role focused on data modeling, governance and data services. It is not infrastructure automation or DevOps/SRE work, and it sits outside the enabled India, UAE and Europe regions. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "1df083be0cc5f13a8654377db62098d08416162b61016c58e709d42edd931506",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244132+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191764+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "This is a US-based (Arlington, Virginia) engineering manager role focused on data modeling, governance and data services. It is not infrastructure automation or DevOps/SRE work, and it sits outside the enabled India, UAE and Europe regions. No overall years of experience are stated.",
       "signature": "94a242785be8b7c15b6c770933da727049e33f747908547ac3e52916da7b57bd"
     },
     "Microsoft::1970393556927480": {
@@ -4305,6 +4437,23 @@
       "reason": "Heuristic matching rejected this role",
       "signature": "464e9daa5c572f369d7b5b3dd220a3c720a3aba01160f05caeabcfcec53c4761"
     },
+    "NVIDIA::JR1997487": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Systems software architect role in Shanghai, China, focused on NCCL/UCX communication libraries, DNN parallelism, RDMA and hardware co-design. This is not infrastructure automation or DevOps work, and China is outside the enabled regions. The 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "242d6bea490da31817935377880dfb22fcdbd3bc82d8d8240e0667eaf5eba039",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191581+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Systems software architect role in Shanghai, China, focused on NCCL/UCX communication libraries, DNN parallelism, RDMA and hardware co-design. This is not infrastructure automation or DevOps work, and China is outside the enabled regions. The 5+ years requirement is within band.",
+      "signature": "a4779e62bce5b6baac450634b6547c9e0eb981bc8d7a358f2c60f125045a1414"
+    },
     "NVIDIA::JR1998048": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4338,6 +4487,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The role is located in Raanana/Tel Aviv, Israel, which is outside the enabled regions (India, UAE, Europe). The 8+ years requirement is within band. Relevance is mixed: the role is mainly a Go/C++/Rust software engineering job building distributed systems, though it includes Kubernetes, observability and model serving.",
       "signature": "5d9ea0a76bcf3e608c7f68d98a12b34d9e8c2162154df87e5177dbd7e19c5829"
+    },
+    "NVIDIA::JR2020152": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Tel Aviv, Israel is outside the enabled India, UAE and Europe regions. The role is also software development (a Go Kubernetes scheduler, CRDs and controllers) rather than infrastructure automation. The 8+ years required is within the band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "692d2fbef19894a3c949d174879ad694f9758b95cba8b7f37ba64d97fe1d777a",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191567+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Tel Aviv, Israel is outside the enabled India, UAE and Europe regions. The role is also software development (a Go Kubernetes scheduler, CRDs and controllers) rather than infrastructure automation. The 8+ years required is within the band.",
+      "signature": "8930071b0e3f8b4449402631373745ca97a4e69b147fc1410b26f6abad8c9216"
     },
     "NVIDIA::JR2021329": {
       "ai_assessment": {
@@ -4390,6 +4556,23 @@
       "reason": "The role is based in Israel (Raanana/Tel Aviv), which is not among the enabled regions (India, UAE, Europe), so location is a clear mismatch. The work is also mainly software engineering in Go/C++/Rust building distributed systems and AIOps, with some model-serving and Kubernetes infrastructure. The 8+ years required is within band.",
       "signature": "838105a2ef783cd2dbf8d4ab715a4f9e853854468e7704efa814fe0a9ca1dc1b"
     },
+    "NVIDIA::JR2025844": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "An AI infrastructure software role (Kubernetes, model loading) is relevant, and the 5+ year minimum is within band. However, the explicit location is Tel Aviv, Israel, which is not among the enabled India, UAE or Europe locations.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "b4fd20790f67879d4b0d27fbb9fb906808c50822c6f906b2abd70069f21149c3",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191537+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "An AI infrastructure software role (Kubernetes, model loading) is relevant, and the 5+ year minimum is within band. However, the explicit location is Tel Aviv, Israel, which is not among the enabled India, UAE or Europe locations.",
+      "signature": "d478df367d3ce8340ca590a54e5907e4cbb0c3e5604de2d7b5571ec9fd60ec29"
+    },
     "NVIDIA::JR2027831": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4440,6 +4623,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The role is relevant HPC/GPU infrastructure SRE work (Slurm/LSF, IaC, automation) and the 5+ years requirement fits the band, but it is based in Yokneam and Tel Aviv, Israel, which is outside the enabled India/UAE/Europe regions.",
       "signature": "9cc72a8798d29560fbdfb6c858ec36aca8a7ef53657f71f0f6898083171ade6e"
+    },
+    "NVIDIA::JR2028811": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Located in Tel Aviv, Israel, which is outside the enabled regions (India, UAE, Europe). The role is also mainly Go backend development of Kubernetes controllers and schedulers rather than infra automation. The 8+ years requirement is within band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "69aa04438622474bfd83a97d39deedb2060811ac9ca782548ccffb708220ca31",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191554+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Located in Tel Aviv, Israel, which is outside the enabled regions (India, UAE, Europe). The role is also mainly Go backend development of Kubernetes controllers and schedulers rather than infra automation. The 8+ years requirement is within band.",
+      "signature": "7709fe90f9fd0e4a6d85629347c2adc9586d39df6b64c0d36ac05622409b9737"
     },
     "NVIDIA::JR2028822": {
       "ai_assessment": {
@@ -5461,6 +5661,23 @@
       "reason": "Sales-category forward deployed role building Agentforce AI agents, prompts, data pipelines and full-stack solutions with customer-facing delivery; not infrastructure/Kubernetes/platform deployment. Dublin allowed; 3+ years within band.",
       "signature": "e203eba2cb7b8e2983d2a8d0b850c821eeedab72889cfe58614f16ba244d7571"
     },
+    "Salesforce::JR346847": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Sales-category Forward Deployed role building Agentforce AI agents, prompts, data pipelines and full-stack customer solutions, not infrastructure/Kubernetes/platform work. The location is São Paulo, Brazil, which is outside the enabled India/UAE/Europe regions. The 3+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "37cc382d4bedd0a2869293e70e2559eb43bac838a30bcdc3865df3e7f16ad532",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191610+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Sales-category Forward Deployed role building Agentforce AI agents, prompts, data pipelines and full-stack customer solutions, not infrastructure/Kubernetes/platform work. The location is São Paulo, Brazil, which is outside the enabled India/UAE/Europe regions. The 3+ years requirement is within band.",
+      "signature": "0063e551c5b112cebd5959f33aeb1bc91711deff0d4892f980b968ef6b153bef"
+    },
     "Salesforce::JR346848": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5907,13 +6124,20 @@
       "signature": "875eff062d12eeb1f25bb4f13d72c059ec716709626551d2bbb4dbfadcafaf53"
     },
     "Salesforce::JR360491": {
-      "ai_assessment": {},
-      "at": "2026-10-30T07:22:07+00:00",
-      "jd_hash": "2d05d73db0ec586c1eebcd662d67859ce450f730a14025f1605f121bba6d4ed3",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T13:22:07.548594+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing forward-deployed role focused on JavaScript browser/RPA automation for enterprise apps, not infrastructure/Kubernetes/platform work; located in US cities (SF, Bellevue, NY), outside enabled regions. 8+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
+      "jd_hash": "3fb8a87318584ac9ab17dc75b1ebc7fbea31df54b57e49c22fc0fcc29f073fc0",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191627+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 8+ yrs",
+      "reason": "Customer-facing forward-deployed role focused on JavaScript browser/RPA automation for enterprise apps, not infrastructure/Kubernetes/platform work; located in US cities (SF, Bellevue, NY), outside enabled regions. 8+ years is within band.",
       "signature": "a60e4723dd9f574bf17c9266e823fff7795e6b04584c912bf4c68674ab9ccb20"
     },
     "Salesforce::JR360493": {
@@ -6293,53 +6517,88 @@
       "signature": "dc51aadddd71ed71e25252412441383b093c440586456ea37a63ce0b0f3fb2b3"
     },
     "Target::R0000446172": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Application security principal role (SAST/DAST, pen testing), not infra automation; hybrid at Brooklyn Park, MN, USA, with work restricted to the US, so outside the enabled regions. The 10+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "c46512ba5ae593e6d2f80ff29812efd335c4eff0856ab4e954f712d4d1b2094e",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244177+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191797+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 10+ yrs",
+      "reason": "Application security principal role (SAST/DAST, pen testing), not infra automation; hybrid at Brooklyn Park, MN, USA, with work restricted to the US, so outside the enabled regions. The 10+ years requirement is within band.",
       "signature": "6b5b0d600aec1948f7f45456f2106e72162c57418dc579d12ddbcdeda8ee9a52"
     },
     "Target::R0000454084": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Full-stack application role (React/TypeScript, agent tooling) rather than infrastructure automation. It is hybrid at Target HQ in Brooklyn Park, MN, USA, with work restricted to that country, which is outside the enabled regions. The 7+ years required is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "3ed0e0eae3f0f3202084a32874b61d8c5d3f6209fccea87f0d3e3c2bcb7f899d",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244156+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191781+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Full-stack application role (React/TypeScript, agent tooling) rather than infrastructure automation. It is hybrid at Target HQ in Brooklyn Park, MN, USA, with work restricted to that country, which is outside the enabled regions. The 7+ years required is within band.",
       "signature": "e4c9c331cc79dca6076b40179f86759228f62ae475c792763eb488d2ad06b055"
     },
     "Target::R0000475423": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is Brooklyn Park, MN and Sunnyvale, CA (US), and work cannot be performed outside the country of the primary work location. Role leans toward AI application and SDK development rather than infrastructure automation. The 8+ year requirement is within band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "1e71a21b651a64887f1a3be3911166715ba2b12fa9943a4a3ab3879c765cdfff",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244259+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191852+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Location is Brooklyn Park, MN and Sunnyvale, CA (US), and work cannot be performed outside the country of the primary work location. Role leans toward AI application and SDK development rather than infrastructure automation. The 8+ year requirement is within band.",
       "signature": "0f08b76bc5c2e99c2a7a54cbc9a242be0fb956c8002e1e50791effb32a16ddbf"
     },
     "Target::R0000475426": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Located in Brooklyn Park, MN, USA, and work duties cannot be performed outside the US, which is outside the enabled India/UAE/Europe regions. The role is also AI application software development (LLM apps, SDKs), not infrastructure-focused FDE work. Its 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "70d6a919a0f31a545c7ffd3062fe084ddf994a7508efa97ac21f689b826e8cbd",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244231+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191834+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 5+ yrs",
+      "reason": "Located in Brooklyn Park, MN, USA, and work duties cannot be performed outside the US, which is outside the enabled India/UAE/Europe regions. The role is also AI application software development (LLM apps, SDKs), not infrastructure-focused FDE work. Its 5+ years requirement is within band.",
       "signature": "c4bd39215549d0a0a68976fabb94e38f68e55d35f833956728e1851c456de455"
     },
     "Target::R0000475428": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed AI application/software development role (LLM apps, SDKs), not infrastructure-focused; hybrid onsite at Brooklyn Park, MN, USA with work restricted to that country, which is outside the enabled regions. 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "fe3b97c17a17a9a37b8c2efc4428765d36e29704b68e001ec8743ea41a350130",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.244203+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.191815+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 5+ yrs",
+      "reason": "Forward deployed AI application/software development role (LLM apps, SDKs), not infrastructure-focused; hybrid onsite at Brooklyn Park, MN, USA with work restricted to that country, which is outside the enabled regions. 5+ years requirement is within band.",
       "signature": "a5fa438adc0deac3317eb8aed72203f94b706207acf7d70782a62988d73ff55f"
     },
     "Together AI::4753072007": {
@@ -6564,13 +6823,20 @@
       "signature": "1a0a12ad07b76f1da57a581fb2f4663b9e90f72f12839730705801a9f94071df"
     },
     "Wells Fargo::R-569518": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The SRE/AIOps platform reliability role is relevant, and its 7+ years minimum is within band. However, the JD explicitly places it in Irving, TX (USA) as a hybrid in-office role with no visa sponsorship, which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "9f80265d9456d2088c40db3625c03471ac21144eeaaa977f426af2ac7ff1083b",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245439+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192331+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 7+ yrs",
+      "reason": "The SRE/AIOps platform reliability role is relevant, and its 7+ years minimum is within band. However, the JD explicitly places it in Irving, TX (USA) as a hybrid in-office role with no visa sponsorship, which is outside the enabled India, UAE and Europe regions.",
       "signature": "d093be803facdeceda46f3f37d582c7f101e1c57a3bfbe4e47ec4ee176e388a7"
     },
     "Wells Fargo::R-571696": {
@@ -6584,13 +6850,20 @@
       "signature": "de7cfab56ca7fec6c5e5b81ca12c7c6c0fdb3beec4e46058cac5a62d6ec9abdd"
     },
     "Wells Fargo::R-573422": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Second-line technology risk oversight role (assessments, governance, reporting), not hands-on infrastructure automation. The JD explicitly lists Charlotte, NC and Irving, TX (USA), which is outside the enabled regions, and sponsorship is not offered. Its 7+ years minimum is within the band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "fb600512649e2498da2492c93b2b2196030b2f2e82008a33ce10c49a4832e483",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245399+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192297+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Second-line technology risk oversight role (assessments, governance, reporting), not hands-on infrastructure automation. The JD explicitly lists Charlotte, NC and Irving, TX (USA), which is outside the enabled regions, and sponsorship is not offered. Its 7+ years minimum is within the band.",
       "signature": "4590604a65b6d2d164efd4c02ce807772c317dc49b8482459caed7b100289e11"
     },
     "Wells Fargo::R-580708": {
@@ -6604,53 +6877,88 @@
       "signature": "f0e4a0edee74067f760942b1d17143c412d9da88a97deb6d8d779b61781225ad"
     },
     "Wells Fargo::R-581731": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is relevant: Terraform IaC, GitHub CI/CD, Azure cloud engineering and production support. The 8+ years requirement is within band. However, the posting explicitly lists Charlotte, NC (US), which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 30
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "94eb37696c36cb9971a9cab618c2c26fc7410033509a7e1bc74b57b52b47f284",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245420+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192315+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "The role is relevant: Terraform IaC, GitHub CI/CD, Azure cloud engineering and production support. The 8+ years requirement is within band. However, the posting explicitly lists Charlotte, NC (US), which is outside the enabled India, UAE and Europe regions.",
       "signature": "c3d2fd66af6ef516d4f2f14d3a91c3b06dc6a572c2edb1359d98e1c7d23b3192"
     },
     "Wells Fargo::R-583063": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE role with real automation and observability work, and the 4+ years requirement is within band. However, it requires onsite work in Irving TX, Charlotte NC or Iselin NJ (all US) with no sponsorship, which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "d76a0df7ffc1097732e83c2fdd963c11c04ee1b07cfc4b2bdab086733f363c00",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245457+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192346+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "SRE role with real automation and observability work, and the 4+ years requirement is within band. However, it requires onsite work in Irving TX, Charlotte NC or Iselin NJ (all US) with no sponsorship, which is outside the enabled India, UAE and Europe regions.",
       "signature": "eb41912f2c803641a5009188765c66ebeb10ea6332d4d9a4ac83e000568873aa"
     },
     "Wells Fargo::R-584558": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Hands-on data center ops role (Layer 1 deployments, store network tickets, asset management, lifting) rather than infrastructure automation. The only stated location is Lewisville, TX, USA, which is outside the enabled regions. 2+ years required is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "edf30a2cfae7e513aee20547857d6f82873c0cf9de866f240301a4cb18fe08fc",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245492+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192361+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Hands-on data center ops role (Layer 1 deployments, store network tickets, asset management, lifting) rather than infrastructure automation. The only stated location is Lewisville, TX, USA, which is outside the enabled regions. 2+ years required is within band.",
       "signature": "00bdc9585b26c1cf6516f48abeef994c04694c1b2389eead9b0fd9c8c490028b"
     },
     "Wells Fargo::R-584690": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a business-facing AI solutions and prototyping role (agentic AI, RAG, stakeholder work), not infrastructure or platform automation. It requires on-site presence in Charlotte, Glen Allen or Irving, all in the US and outside the enabled regions, with no visa sponsorship.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "0040fff9fd28cfa79d7f1595ca135393c9ccacbe23c7c924d0fbd4e50ab7d6a5",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245526+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192391+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "🎓 3+ yrs",
+      "reason": "This is a business-facing AI solutions and prototyping role (agentic AI, RAG, stakeholder work), not infrastructure or platform automation. It requires on-site presence in Charlotte, Glen Allen or Irving, all in the US and outside the enabled regions, with no visa sponsorship.",
       "signature": "0f2af8c0d87cfd4f82fbdc63f6a709e0e5492a8045e5a39ac8ae0abd98799e42"
     },
     "Wells Fargo::R-584693": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed AI role centered on trading-domain solutions and agentic AI prototyping, not infrastructure/Kubernetes/platform deployment. Requires on-site New York presence (outside enabled regions) with no visa sponsorship. 10+ years required is within the 11-year max.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-10-30T22:57:08+00:00",
       "jd_hash": "ef8a8fe703da0f5736919ecedff73eabe9cdf01ebf1bf418ae496fca34971373",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.245507+00:00",
+      "mode": "ai",
+      "next_review_at": "2026-11-06T22:57:08.192374+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Forward deployed AI role centered on trading-domain solutions and agentic AI prototyping, not infrastructure/Kubernetes/platform deployment. Requires on-site New York presence (outside enabled regions) with no visa sponsorship. 10+ years required is within the 11-year max.",
       "signature": "17f0f31b0d59c28ceffaef856d82ce7169e4304542a4764fef3f30928c8c781c"
     },
     "Zeta::4dfd3df1-9520-4e20-9b9b-3a1fa80ad323": {
@@ -6862,6 +7170,30 @@
     "Atlassian::27563": "2026-10-30T16:38:20+00:00",
     "Atlassian::27589": "2026-10-29T14:47:57+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
+    "Barclays::JR-0000044230": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000079548": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000082433": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000083706": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000086385": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000089562": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000093902": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000100046": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000100184": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000102838": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000103428": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000105807": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000111920": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000112829": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000118118": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000123647": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000128305": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000133437": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000136174": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000136175": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000136176": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000136179": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000136180": "2026-10-30T22:57:18+00:00",
+    "BlackRock::R263956": "2026-10-30T22:57:18+00:00",
     "BlackRock::R266803": "2026-10-30T07:22:23+00:00",
     "Careem::8620488002": "2026-09-15T16:39:26+00:00",
     "Celonis::7781590003": "2026-09-15T16:39:26+00:00",
@@ -7008,6 +7340,18 @@
     "Databricks::8876613002": "2026-10-26T06:49:10+00:00",
     "Databricks::8884751002": "2026-10-17T13:50:59+00:00",
     "Deliveroo::8334486": "2026-10-30T07:22:23+00:00",
+    "Deutsche Bank::R0361102": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0427224": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0432348": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0435064": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0436983": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0441078": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0442646": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0446461": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0448445": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0448537": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0452282": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0452385": "2026-10-30T22:57:18+00:00",
     "Elastic::7447246": "2026-07-06T16:03:18+00:00",
     "Elastic::8070615": "2026-09-15T16:39:26+00:00",
     "Elastic::8088013": "2026-09-15T16:39:26+00:00",
