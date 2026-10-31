@@ -3995,16 +3995,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Senior Site Reliability Engineer focused on CI/CD automation, Jenkins, and Chef. However, the job location is in O'Fallon, Missouri, which falls outside the candidate's enabled regions (India, UAE, Europe).",
+        "ai_note": "Relevant SRE/CI-CD automation role (Jenkins, Chef), but it is located in O'Fallon, Missouri, USA, with US salary and benefits, which is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
         "ai_relevance": "relevant",
-        "ai_score": 40
+        "ai_score": 20
       },
-      "at": "2026-10-27T20:35:34+00:00",
+      "at": "2026-10-31T19:45:34+00:00",
       "jd_hash": "918d3a375d844a40035ebc11251e79691c1f9292bc6c04bbf26e833d5ddde15a",
       "mode": "ai",
-      "next_review_at": "2026-11-03T20:35:34.561258+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "The role is a Senior Site Reliability Engineer focused on CI/CD automation, Jenkins, and Chef. However, the job location is in O'Fallon, Missouri, which falls outside the candidate's enabled regions (India, UAE, Europe).",
+      "next_review_at": "2026-11-07T19:45:34.278939+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Relevant SRE/CI-CD automation role (Jenkins, Chef), but it is located in O'Fallon, Missouri, USA, with US salary and benefits, which is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
       "signature": "14cfb971564fa143cab36741cb28f13afae204e908db202ef0cb7d104721cf96"
     },
     "Mastercard::R-279063": {
