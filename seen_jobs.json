@@ -3616,6 +3616,23 @@
       "reason": "Despite the 'Systems Engineer' title, this is C/C++ storage data-path product development (OS internals, multi-threading, object storage), not infrastructure automation or DevOps/SRE/platform work. The 6+ years requirement and the Bengaluru hybrid location both fit.",
       "signature": "bd7f7d27d954e1b15f8de1593b7671ae63321737083fa5d03ad5e2b242e6c3b2"
     },
+    "HPE::1214836": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The title says 'Systems Engineer', but this is C/C++ storage data-path product development (OS internals, multi-threading, storage protocols), not infrastructure automation, DevOps or SRE. The 6+ years requirement fits and Bengaluru is allowed.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-10-31T12:57:56+00:00",
+      "jd_hash": "67e3c4f37cd9e9034eb94c0b69d005474608e7a6a549b6e1046f93323e80584c",
+      "mode": "ai",
+      "next_review_at": "2026-11-07T12:57:56.907760+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The title says 'Systems Engineer', but this is C/C++ storage data-path product development (OS internals, multi-threading, storage protocols), not infrastructure automation, DevOps or SRE. The 6+ years requirement fits and Bengaluru is allowed.",
+      "signature": "37f353db64d1b5b8929a0f67a133191df6dc14f1a0e812d5254b4ac626907c78"
+    },
     "HPE::1215497": {
       "ai_assessment": {
         "ai_decision": "reject",
