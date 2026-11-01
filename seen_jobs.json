@@ -495,6 +495,23 @@
       "reason": "Hardware power-electronics functional-safety and reliability role (IEC 61508, HALT/HASS, MTBF), not software infrastructure or SRE. The role is based in Lille, France, which is not in the enabled locations, and no overall experience requirement is stated.",
       "signature": "f03ee00c33a7b5bd255cde322f610c3e364bd5e6092c728580aaf9c070410e06"
     },
+    "Amazon::10592678": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "London is allowed and the stated 3+ years falls within band. However, this forward deployed role centres on ML model customization: post-training, RLHF, distributed training frameworks, inference optimization and custom kernels. It is ML research and engineering work rather than infrastructure, Kubernetes or platform deployment.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-01T00:36:07+00:00",
+      "jd_hash": "76328a7ea1dad793233c2e95d0de53b1e147a585d6e26a1e5dd00eea6e9cb899",
+      "mode": "ai",
+      "next_review_at": "2026-11-08T00:36:07.839951+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "London is allowed and the stated 3+ years falls within band. However, this forward deployed role centres on ML model customization: post-training, RLHF, distributed training frameworks, inference optimization and custom kernels. It is ML research and engineering work rather than infrastructure, Kubernetes or platform deployment.",
+      "signature": "2b5e72d0a008d544548aebf95d02eae116691e3e9e053ad6a2c8be267929da39"
+    },
     "Amazon::10592680": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7235,6 +7252,7 @@
     "Atlassian::27413": "2026-10-30T16:38:20+00:00",
     "Atlassian::27563": "2026-10-30T16:38:20+00:00",
     "Atlassian::27589": "2026-10-29T14:47:57+00:00",
+    "Atlassian::27617": "2026-11-01T00:36:09+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
     "Barclays::JR-0000044230": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000079548": "2026-10-30T22:57:18+00:00",
