@@ -5826,6 +5826,23 @@
       "reason": "The role is a customer-facing Forward Deployed Engineer focusing on Agentforce, Salesforce platform development, and AI application delivery rather than core DevOps, SRE, or platform engineering infrastructure automation. Additionally, the job location is Riyadh, Saudi Arabia, which is outside the candidate's allowed regions.",
       "signature": "23618125c73a2482d14b1a20033ab9b58f2155336e94e97b4a09eb277ddc6844"
     },
+    "Salesforce::JR348996": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed role focused on Agentforce/Salesforce app development, data pipelines and customer delivery (Apex, LWC, Italian required), not infrastructure. The 6+ years requirement fits, but the Milan, Italy location is not in the enabled locations.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-01T13:52:27+00:00",
+      "jd_hash": "372e9d9fce55b95e82b9707f69d980b33d7a87c7990fc638ae07b0e476620acb",
+      "mode": "ai",
+      "next_review_at": "2026-11-08T13:52:27.468278+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role focused on Agentforce/Salesforce app development, data pipelines and customer delivery (Apex, LWC, Italian required), not infrastructure. The 6+ years requirement fits, but the Milan, Italy location is not in the enabled locations.",
+      "signature": "0e7c2ada1300f69f6d88525d4a3d4f7d9e65a815721c6207f274ae6abe454175"
+    },
     "Salesforce::JR349383": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6065,13 +6082,20 @@
       "signature": "9baddc1601a58833e492f7f57fd4aacad9ed03f11b68e7cfe35b7f494bf53289"
     },
     "Salesforce::JR357412": {
-      "ai_assessment": {},
-      "at": "2026-10-30T16:38:15+00:00",
-      "jd_hash": "4115adc4c1a78f33d57451361693623c1945563cf07e54ed1b180c93a40d2180",
-      "mode": "heuristic",
-      "next_review_at": "2026-10-30T22:38:15.243682+00:00",
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed role under Sales category focused on building agentic AI solutions, prompts, data pipelines and full-stack delivery, not infrastructure/Kubernetes. Location is Warsaw, Poland, which is not in the enabled regions, and the role requires Polish. 3+ years experience is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-01T13:52:27+00:00",
+      "jd_hash": "97b8940c4c836ea9da0868be0107981f463ee70ff67c4a4a4dc62cdb86771620",
+      "mode": "ai",
+      "next_review_at": "2026-11-08T13:52:27.468367+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Heuristic matching rejected this role",
+      "reason": "Forward deployed role under Sales category focused on building agentic AI solutions, prompts, data pipelines and full-stack delivery, not infrastructure/Kubernetes. Location is Warsaw, Poland, which is not in the enabled regions, and the role requires Polish. 3+ years experience is within band.",
       "signature": "81874ebc3fb31e9f3a0b2826c9675f8cb872e992ea247477f41d5edbc7394338"
     },
     "Salesforce::JR358258": {
