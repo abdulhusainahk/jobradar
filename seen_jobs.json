@@ -1073,6 +1073,23 @@
       "reason": "Bengaluru/Pune location fits. Despite the 'AI Platform' title, this is primarily software/GenAI application development (Python APIs, LLM/RAG, agent frameworks). Kubernetes and IaC appear only as basics or nice-to-haves, so it is not infrastructure-automation focused. The 3+ years cloud software requirement is within band.",
       "signature": "4147840380fff7b31c9b498a6c2bb04f29c053a65f52abd9c0f27ad23b2ec433"
     },
+    "Barclays::JR-0000111582": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the infrastructure title and generic boilerplate, the actual role is in Barclays' Salesforce COE: user support, CRM adoption, MS Office work, and a Salesforce Administrator certification. It is not DevOps/SRE infrastructure automation. Gurgaon is an allowed location, and no overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "021cd1d780a21e89ff58dd8cefdebd961c26d2266bd80fe22f0bf422f9bf08c8",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.983059+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the infrastructure title and generic boilerplate, the actual role is in Barclays' Salesforce COE: user support, CRM adoption, MS Office work, and a Salesforce Administrator certification. It is not DevOps/SRE infrastructure automation. Gurgaon is an allowed location, and no overall years of experience are stated.",
+      "signature": "a9dba30acbc2e4010fe5a8fec024426fecb050888d68903cd5a94a88f3f61ce7"
+    },
     "Barclays::JR-0000112608": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1396,6 +1413,23 @@
       "reason": "Budapest, Hungary is not among enabled locations (Europe list covers Ireland, Germany, Netherlands, UK, EMEA only). Role is network/F5 load-balancer focused with some automation, so only a partial DevOps fit. The 6-10 year requirement is within band.",
       "signature": "34a22e5cf6472518b9fb8b9f032d6e649a96224f6d945291ea8197ba3524abf7"
     },
+    "Citi::859038615485": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Pune is an allowed location and the 8-10 years required is within band, but this is a data engineering and applications development role (Hadoop, PySpark, Snowflake, Kafka pipelines), not infrastructure automation, DevOps or SRE.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "6d19326be1e53326f864dff60e282539cfa61f4183f9673f99072f2f5b3c4d52",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.982975+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Pune is an allowed location and the 8-10 years required is within band, but this is a data engineering and applications development role (Hadoop, PySpark, Snowflake, Kafka pipelines), not infrastructure automation, DevOps or SRE.",
+      "signature": "bc3ce8f161352d778c99fa323666a000b06597659542903532134df7181c5092"
+    },
     "ClickHouse::86f88674-eb78-4abc-93f4-c8be453d15ae": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1616,6 +1650,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Customer-facing professional services role for Cloudflare app security (WAF/bot tuning), not infra automation. Requires 15+ years, above the 11-year max (drop_out_of_band true). JD explicitly says Sydney, outside India/UAE/Europe.",
       "signature": "3e897e55be5d37a5ef3cf6bd85c5f708e012e2b9717b4a89e0561d2d66f8dbfd"
+    },
+    "Cloudflare::8336674": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Backend software engineering role (Go/Rust/TypeScript feature development for WARP Zero Trust), not infrastructure automation; Kubernetes is incidental. Location is Lisbon, Portugal, which is not in the enabled Europe list. The 3+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "909132abbff804f0de943e8d66652c2aa4e0342d5d8c792ea88c6488960d2d0f",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.982765+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Backend software engineering role (Go/Rust/TypeScript feature development for WARP Zero Trust), not infrastructure automation; Kubernetes is incidental. Location is Lisbon, Portugal, which is not in the enabled Europe list. The 3+ years requirement is within band.",
+      "signature": "5b68a82afe84fd48d02190390feb2c225fcd43e6ea5e4a0bac52e85596974231"
     },
     "Cloudflare::8338018": {
       "ai_assessment": {
@@ -3973,6 +4024,23 @@
       "reason": "The role is heavily focused on traditional network engineering (routing, switching, Cisco data centers) rather than cloud-native DevOps, Kubernetes, or infrastructure automation.",
       "signature": "403483d3797ae3ed16eb2466fdd98348e9658cae7ff42b9120d809c300ef7f4c"
     },
+    "J.P. Morgan::210803331": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Enterprise network engineering role (LAN/WAN, Cisco, CCNP, MPLS/BGP) for branches and ATMs, not cloud/Kubernetes/DevOps platform automation. The 7+ years requirement is within band and the Bengaluru/Hyderabad location is allowed, but the core skill mismatch is clear.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "9a3674d3cc3549d79d5211fa157e0393ef8b2f37e2dab492b26ce7a036a8f7af",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.982931+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Enterprise network engineering role (LAN/WAN, Cisco, CCNP, MPLS/BGP) for branches and ATMs, not cloud/Kubernetes/DevOps platform automation. The 7+ years requirement is within band and the Bengaluru/Hyderabad location is allowed, but the core skill mismatch is clear.",
+      "signature": "809463a93d59372cf2b8f39c67758b35499d7652a69d309dbfd47ed0b488b6d0"
+    },
     "J.P. Morgan::210803732": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4074,6 +4142,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role requires deep hands-on expertise with HP NonStop (Tandem) platforms and traditional payments infrastructure, which does not match the candidate's cloud-native DevOps, Kubernetes, and AWS/Azure skill set.",
       "signature": "fa3d980ccd0223ce8d8889d373bd39513a25232c61c8efd842ca87eedcde2a4b"
+    },
+    "Mastercard::R-292589": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Senior Platform Engineer' title, the role is a SQL Server DBA position covering patching, AlwaysOn, SSIS/SSAS and query tuning, not infrastructure automation. Pune is an allowed location. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "5e54f523a47d172ec6654a76b8cccbe003ef3815a6ef105cf57557e86631f1ff",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.983015+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Senior Platform Engineer' title, the role is a SQL Server DBA position covering patching, AlwaysOn, SSIS/SSAS and query tuning, not infrastructure automation. Pune is an allowed location. No overall experience requirement is stated.",
+      "signature": "ca7ee608a72778b00ebbde0f89e90964436e38e167fbdc69fc6be8c8b9593170"
     },
     "Mastercard::R-293009": {
       "ai_assessment": {
@@ -4329,6 +4414,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The job is located in Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role is a software engineering position building AI SRE agents, with some overlap in AIOps and reliability work. The stated 4+ years of experience is within band.",
       "signature": "d85ebb05d03de15d3e34c356e285eb4bd602e7560ccf8133faed5f80278cc8ac"
+    },
+    "Microsoft::1970393557051229": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Hardware/manufacturing reliability engineering role (supplier qualification, failure analysis for consumer electronics), not DevOps/SRE. Located in Haiphong, Vietnam, which is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "86dab942dc08841c2e7b9404ba757e8649454431a2fa36f8c42c05ad6589e8cb",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.982874+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Hardware/manufacturing reliability engineering role (supplier qualification, failure analysis for consumer electronics), not DevOps/SRE. Located in Haiphong, Vietnam, which is outside the enabled regions.",
+      "signature": "c35127c52bed7ca52a52634744a1b6de10718b2466a4b03bc363187d21d210af"
     },
     "MongoDB::7392902": {
       "ai_assessment": {
@@ -7063,6 +7165,23 @@
       "reason": "Forward deployed AI role centered on trading-domain solutions and agentic AI prototyping, not infrastructure/Kubernetes/platform deployment. Requires on-site New York presence (outside enabled regions) with no visa sponsorship. 10+ years required is within the 11-year max.",
       "signature": "17f0f31b0d59c28ceffaef856d82ce7169e4304542a4764fef3f30928c8c781c"
     },
+    "Wells Fargo::R-584713": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "People-management role leading a systems operations team of 15+ monitoring analysts, focused on ITIL, governance and resource allocation. It is operations support management, not hands-on infrastructure automation. 5+ years is within band and Bengaluru is allowed, but the role itself is a clear mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 22
+      },
+      "at": "2026-11-02T11:35:42+00:00",
+      "jd_hash": "2829d22305f29f61429ab529453c3d99d84d5a264b61c9d44a003afb44915cda",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T11:35:42.983101+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "People-management role leading a systems operations team of 15+ monitoring analysts, focused on ITIL, governance and resource allocation. It is operations support management, not hands-on infrastructure automation. 5+ years is within band and Bengaluru is allowed, but the role itself is a clear mismatch.",
+      "signature": "59859f1dcde8a8097bc510d20fe77b402243e028d7fdaba21fa1c33e2ce7e003"
+    },
     "Zeta::4dfd3df1-9520-4e20-9b9b-3a1fa80ad323": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7277,6 +7396,7 @@
     "Atlassian::27563": "2026-10-30T16:38:20+00:00",
     "Atlassian::27589": "2026-10-29T14:47:57+00:00",
     "Atlassian::27617": "2026-11-01T00:36:09+00:00",
+    "Atlassian::27635": "2026-11-02T11:35:47+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
     "Barclays::JR-0000044230": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000079548": "2026-10-30T22:57:18+00:00",
@@ -7290,6 +7410,7 @@
     "Barclays::JR-0000102838": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000103428": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000105807": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000105817": "2026-11-02T11:35:47+00:00",
     "Barclays::JR-0000111920": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000112829": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000118118": "2026-10-30T22:57:18+00:00",
@@ -7431,6 +7552,7 @@
     "CrowdStrike::R29461": "2026-10-30T07:22:23+00:00",
     "CrowdStrike::R30345": "2026-10-30T07:22:23+00:00",
     "CrowdStrike::R30369": "2026-10-30T07:22:23+00:00",
+    "CrowdStrike::R30646": "2026-11-02T11:35:47+00:00",
     "Databricks::7619811002": "2026-07-06T16:03:19+00:00",
     "Databricks::8493168002": "2026-09-15T16:39:26+00:00",
     "Databricks::8517577002": "2026-09-15T16:39:26+00:00",
@@ -7449,6 +7571,8 @@
     "Databricks::8884751002": "2026-10-17T13:50:59+00:00",
     "Deliveroo::8334486": "2026-10-30T07:22:23+00:00",
     "Deutsche Bank::R0361102": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0414777": "2026-11-02T11:35:47+00:00",
+    "Deutsche Bank::R0426357": "2026-11-02T11:35:47+00:00",
     "Deutsche Bank::R0427224": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0432348": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0435064": "2026-10-30T22:57:18+00:00",
@@ -7460,6 +7584,7 @@
     "Deutsche Bank::R0448537": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0452282": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0452385": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0454139": "2026-11-02T11:35:47+00:00",
     "Elastic::7447246": "2026-07-06T16:03:18+00:00",
     "Elastic::8070615": "2026-09-15T16:39:26+00:00",
     "Elastic::8088013": "2026-09-15T16:39:26+00:00",
@@ -7550,6 +7675,7 @@
     "Google::124000446996980422": "2026-10-22T18:29:00+00:00",
     "Google::125086141714965190": "2026-10-12T19:27:52+00:00",
     "Google::126802595330040518": "2026-10-17T13:50:59+00:00",
+    "Google::127457591532888774": "2026-11-02T11:35:47+00:00",
     "Google::127861388520366790": "2026-09-22T08:05:32+00:00",
     "Google::128909707090764486": "2026-10-30T07:22:23+00:00",
     "Google::129307746674582214": "2026-10-17T13:50:59+00:00",
@@ -7876,6 +8002,7 @@
     "J.P. Morgan::210801797": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
+    "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
     "Mastercard::R-273348": "2026-07-08T20:03:56+00:00",
