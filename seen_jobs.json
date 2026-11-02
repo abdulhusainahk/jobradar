@@ -1600,6 +1600,23 @@
       "reason": "The JD explicitly lists Sydney, Australia as the only available location, which is outside the enabled India, UAE and Europe regions. The role is a customer-embedded forward deployed software engineering position leaning full-stack (TypeScript/Rust/Go) rather than infrastructure-focused. The 7+ years requirement is within the band.",
       "signature": "bccc9db771fd39764ffe0b83a79cc011fe6d0756fd407b9fdc44681005976f7d"
     },
+    "Cloudflare::8239181": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management, not infrastructure automation, DevOps or SRE work. IaC appears only as a bonus skill. The 5+ years requirement fits the experience band. Location is only 'Hybrid' with no country given.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-02T22:13:00+00:00",
+      "jd_hash": "b082590724ddd21b70edde5d9121548a03fcf77097e819d0f78f6333712de7b1",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T22:13:00.810475+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management, not infrastructure automation, DevOps or SRE work. IaC appears only as a bonus skill. The 5+ years requirement fits the experience band. Location is only 'Hybrid' with no country given.",
+      "signature": "3d926c13fa612335d897fdf7883721af593374ae2f4c5b1a3332fbf53563a17a"
+    },
     "Cloudflare::8265704": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2976,6 +2993,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Forward deployed role focused on full-stack application development (backend, frontend, data and AI apps) for customers, not infrastructure, Kubernetes or platform deployment. This matches the candidate's explicit exclusion. London is allowed. No overall experience requirement is stated.",
       "signature": "455e202a5e10300986583ea274b6b0f69d4164c008846d98aee889de37d903f8"
+    },
+    "Databricks::8922951002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Non-technical forward deployment strategist role (PRDs, C-suite scoping, project management), not infrastructure work. It also requires native-level Korean, and the role is based in Seoul, outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-11-02T22:13:00+00:00",
+      "jd_hash": "fe0c75a3bbb52e2025d24b35bbaae4e0282c4c9077c519b8e441f35c60ba040c",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T22:13:00.810540+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Non-technical forward deployment strategist role (PRDs, C-suite scoping, project management), not infrastructure work. It also requires native-level Korean, and the role is based in Seoul, outside the enabled regions.",
+      "signature": "919f1767900b8a834b9a6be3a8deb2ac01c7440f5e4d2ddba3353972b377f7b3"
     },
     "Datadog::7529852": {
       "ai_assessment": {},
@@ -5966,18 +6000,18 @@
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
-        "ai_location_fit": "uncertain",
-        "ai_note": "This is a Forward Deployed Engineer (FDE) role focused on customer-facing technical delivery, application-level development, and AI agent integration rather than infrastructure automation, DevOps, or SRE responsibilities.",
+        "ai_location_fit": "outside",
+        "ai_note": "Sales-category forward deployed role focused on agentic AI apps, prompts, data pipelines and full-stack delivery, not infrastructure/Kubernetes. Locations are all US-only, outside India/UAE/Europe. 3+ (6-10 senior) years is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 35
+        "ai_score": 5
       },
-      "at": "2026-10-17T22:03:30+00:00",
-      "jd_hash": "d825195312daf0c7653715f7394412fe18bae2da87d804a3075a4fd104b49629",
+      "at": "2026-11-02T22:13:00+00:00",
+      "jd_hash": "6c3a062813bca5afa9a5f25e3f3b2c3b5bf539c3c8dd0bfedcf56c596efacd10",
       "mode": "ai",
-      "next_review_at": "2026-10-24T22:03:30.162723+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This is a Forward Deployed Engineer (FDE) role focused on customer-facing technical delivery, application-level development, and AI agent integration rather than infrastructure automation, DevOps, or SRE responsibilities.",
-      "signature": "6b7c1d32105ed7d4b574d89138ae23412210eda876d6ba27c44ae52f7d0e8925"
+      "next_review_at": "2026-11-09T22:13:00.810622+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Sales-category forward deployed role focused on agentic AI apps, prompts, data pipelines and full-stack delivery, not infrastructure/Kubernetes. Locations are all US-only, outside India/UAE/Europe. 3+ (6-10 senior) years is within band.",
+      "signature": "80ac7f166e2ee8ac94d410af44a08e7a6348e4448455c42a8f73198e38a7c61b"
     },
     "Salesforce::JR350080": {
       "ai_assessment": {
@@ -6550,6 +6584,23 @@
       "reason": "Strong SRE/infra automation role (K8s, Terraform, GPU AIOps, 5+ yrs fits), but locations are all US cities (SF, Boston, NY, Seattle, etc.) with US pay ranges; outside the enabled India/UAE/Europe regions.",
       "signature": "3e103bf309d2d341991b5513ce81b41381247f0310264f251c6c4602cde143a2"
     },
+    "Salesforce::JR365751": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE role with real automation and AWS work, but it is onsite in Herndon, VA, USA, which is outside the enabled regions. It also requires US citizenship and an active TS/SCI with Polygraph clearance.",
+        "ai_relevance": "relevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-02T22:13:00+00:00",
+      "jd_hash": "73318d8e6d838d6ace1f7febf69bbb95cefa6c668f727f8c2cc2bfd333b21c11",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T22:13:00.810568+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "SRE role with real automation and AWS work, but it is onsite in Herndon, VA, USA, which is outside the enabled regions. It also requires US citizenship and an active TS/SCI with Polygraph clearance.",
+      "signature": "2000d3e5c7ddb5eb2699144d215fd1169de515d5a55b85562146787a394d8963"
+    },
     "Salesforce::JR365759": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6600,6 +6651,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Forward deployed role centered on Data 360 data engineering (SQL, Apex, pipelines, RAG), sales category, not infrastructure/Kubernetes platform work. Location Milan, Italy is not in the enabled locations. 8+ yrs is within band.",
       "signature": "d3a94253965bfe33b5c9d22d9211cff0f9863dd5f861e96446dc851d85b7e007"
+    },
+    "Salesforce::JR366368": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Security GRC/assurance governance role, not infrastructure automation; US-only locations (Bellevue, Atlanta, McLean, SF) with US citizenship/PR required, outside the enabled India/UAE/Europe regions. No overall years requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-02T22:13:00+00:00",
+      "jd_hash": "63a3cbe9d4fd1d4e6963bf1f48132b647d386c0bffac3453c2e084e1736aee35",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T22:13:00.810594+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Security GRC/assurance governance role, not infrastructure automation; US-only locations (Bellevue, Atlanta, McLean, SF) with US citizenship/PR required, outside the enabled India/UAE/Europe regions. No overall years requirement is stated.",
+      "signature": "2874eebb92c51c3fb6988dda3ecc70eee75ffaced87f50f5bb1ebd71a9802d4b"
     },
     "Salesforce::JR366398": {
       "ai_assessment": {
@@ -7043,6 +7111,23 @@
       "reason": "The SRE/AIOps platform reliability role is relevant, and its 7+ years minimum is within band. However, the JD explicitly places it in Irving, TX (USA) as a hybrid in-office role with no visa sponsorship, which is outside the enabled India, UAE and Europe regions.",
       "signature": "d093be803facdeceda46f3f37d582c7f101e1c57a3bfbe4e47ec4ee176e388a7"
     },
+    "Wells Fargo::R-570399": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is relevant platform/SRE/Kubernetes work at principal level, and the 7+ years requirement is within the candidate's band. However, it is on-site/hybrid in Charlotte, NC or Irving, TX, with no visa sponsorship or relocation. That location falls outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-02T22:13:00+00:00",
+      "jd_hash": "047830337020bd5346f9ff83ae1c94c301d24d98bd2cff9df0fcbde4fe14fc51",
+      "mode": "ai",
+      "next_review_at": "2026-11-09T22:13:00.810655+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is relevant platform/SRE/Kubernetes work at principal level, and the 7+ years requirement is within the candidate's band. However, it is on-site/hybrid in Charlotte, NC or Irving, TX, with no visa sponsorship or relocation. That location falls outside the enabled India, UAE and Europe regions.",
+      "signature": "0ab463764c8782f805677372383741e04306c6e5003ca5e98121fbefac508795"
+    },
     "Wells Fargo::R-571696": {
       "ai_assessment": {},
       "at": "2026-10-30T07:22:07+00:00",
@@ -7354,6 +7439,8 @@
     "Amazon::10587334": "2026-10-23T10:32:14+00:00",
     "Amazon::10587728": "2026-10-23T19:41:36+00:00",
     "Amazon::10588692": "2026-10-26T20:03:15+00:00",
+    "Amazon::10594522": "2026-11-02T22:13:04+00:00",
+    "Amazon::10594524": "2026-11-02T22:13:04+00:00",
     "Amazon::2893777": "2026-09-15T16:39:26+00:00",
     "Amazon::2943487": "2026-09-15T16:39:26+00:00",
     "Amazon::3087178": "2026-09-15T11:30:01+00:00",
@@ -7649,6 +7736,7 @@
     "Google::104556982945358534": "2026-09-07T18:04:40+00:00",
     "Google::106113082882695878": "2026-10-17T19:18:51+00:00",
     "Google::106345631739454150": "2026-10-17T13:50:59+00:00",
+    "Google::107241008671924934": "2026-11-02T22:13:04+00:00",
     "Google::108715629858431686": "2026-10-29T20:21:23+00:00",
     "Google::109189301668848326": "2026-09-29T15:30:42+00:00",
     "Google::109338440650105542": "2026-07-09T09:38:25+00:00",
@@ -8112,6 +8200,7 @@
     "Microsoft::1970393557026234": "2026-10-08T09:21:46+00:00",
     "Microsoft::1970393557026575": "2026-10-08T16:55:41+00:00",
     "Microsoft::1970393557026580": "2026-10-08T16:55:38+00:00",
+    "Microsoft::1970393557050065": "2026-11-02T22:13:04+00:00",
     "MongoDB::6982487": "2026-10-12T19:27:43+00:00",
     "MongoDB::6984814": "2026-07-06T14:03:14+00:00",
     "MongoDB::7613587": "2026-07-06T16:03:18+00:00",
@@ -8238,6 +8327,7 @@
     "NVIDIA::JR2027109": "2026-10-14T11:01:30+00:00",
     "NVIDIA::JR2027112": "2026-10-30T07:22:23+00:00",
     "NVIDIA::JR2027441": "2026-10-30T07:22:23+00:00",
+    "NVIDIA::JR2028545": "2026-11-02T22:13:04+00:00",
     "NVIDIA::JR2029042": "2026-10-30T16:38:20+00:00",
     "Netskope::8088811": "2026-10-30T07:22:23+00:00",
     "Netskope::8161047": "2026-10-30T07:22:23+00:00",
