@@ -3242,6 +3242,23 @@
       "reason": "Role is in Cary, NC, USA, which is outside the enabled India, UAE and Europe regions. It is also production support for bank risk platforms (Python/SQL reconciliation, batch jobs), with only partial infra work (Kubernetes, CI/CD). The 2-year minimum is not an explicit range, so experience counts as within band.",
       "signature": "f3d044cae6058ecc4020cd4c00bc47729bd21d33e72a3aa1ec434e9d1c09c2b2"
     },
+    "Deutsche Bank::R0455256": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Platform Engineer' title, this is a full-stack Adobe Experience Cloud martech role (AEP, RT-CDP, Launch tagging, JavaScript, QA testing) with no infrastructure automation, cloud or Kubernetes work. Pune, India is an allowed location. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-03T07:15:48+00:00",
+      "jd_hash": "7fac9c1e4adb7fbd6842edd184e184c5041ab973623c674001d9cdc813f8b330",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T07:15:48.391286+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Platform Engineer' title, this is a full-stack Adobe Experience Cloud martech role (AEP, RT-CDP, Launch tagging, JavaScript, QA testing) with no infrastructure automation, cloud or Kubernetes work. Pune, India is an allowed location. No overall experience requirement is stated.",
+      "signature": "43622bd05fb571abd29ed506253769ad948249a3a4542109e5331c09333995c7"
+    },
     "Elastic::8237962": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4108,6 +4125,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "SRE lead role with 5+ years required fits experience, but the location is Buenos Aires, Argentina, which falls outside the enabled regions (India, UAE, Europe).",
       "signature": "4100a2e86c0396d8aa33c0070c9f88bb405025f5062a8d30e8645701f9c19a29"
+    },
+    "J.P. Morgan::210804187": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Application/solution architect role centered on Java 17/Spring Boot microservices, data architecture and financial domain. Kubernetes/IaC are incidental, not core infrastructure automation. The 5+ years requirement is within band and Mumbai is allowed.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 22
+      },
+      "at": "2026-11-03T07:15:48+00:00",
+      "jd_hash": "b2bb7d2c639e278f5374c1d9f285face7af5d6d24bcf3b3090f079a3d63155f7",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T07:15:48.391220+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Application/solution architect role centered on Java 17/Spring Boot microservices, data architecture and financial domain. Kubernetes/IaC are incidental, not core infrastructure automation. The 5+ years requirement is within band and Mumbai is allowed.",
+      "signature": "da80913107c29cd5eaae6928a6f933e646c74a62189027a651016027d0028311"
     },
     "Mastercard::R-277889": {
       "ai_assessment": {
@@ -7501,6 +7535,7 @@
     "Barclays::JR-0000111920": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000112829": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000118118": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000120004": "2026-11-03T07:15:52+00:00",
     "Barclays::JR-0000123647": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000128305": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000133437": "2026-10-30T22:57:18+00:00",
@@ -8065,6 +8100,7 @@
     "J.P. Morgan::210796461": "2026-10-05T09:27:13+00:00",
     "J.P. Morgan::210796575": "2026-10-05T18:53:09+00:00",
     "J.P. Morgan::210796855": "2026-10-11T22:52:02+00:00",
+    "J.P. Morgan::210796962": "2026-11-03T07:15:52+00:00",
     "J.P. Morgan::210796973": "2026-10-05T18:53:06+00:00",
     "J.P. Morgan::210797094": "2026-10-05T18:53:06+00:00",
     "J.P. Morgan::210797310": "2026-10-08T16:55:41+00:00",
@@ -8091,6 +8127,7 @@
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
+    "J.P. Morgan::210805749": "2026-11-03T07:15:52+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
     "Mastercard::R-273348": "2026-07-08T20:03:56+00:00",
@@ -8400,6 +8437,7 @@
     "OpenAI::29c2c171-fb63-4985-9ac5-229b2ff5ced6": "2026-10-30T07:22:23+00:00",
     "OpenAI::329fe50f-7701-4f07-982d-a4e10cbec236": "2026-10-30T16:38:20+00:00",
     "OpenAI::348ac6bf-a5c3-43d1-a14a-5f1a3c8d90fa": "2026-10-30T16:38:20+00:00",
+    "OpenAI::4f2d9849-ad00-48d5-a22f-0cb943723999": "2026-11-03T07:15:52+00:00",
     "OpenAI::7ce64627-b273-48e1-b3bc-ef4be0444706": "2026-10-30T07:22:23+00:00",
     "OpenAI::9f7371c4-e306-4a45-a400-aa2843fabd85": "2026-10-30T16:38:20+00:00",
     "OpenAI::a5dd77a2-9ab1-4165-98aa-c7bb0260985b": "2026-10-30T16:38:20+00:00",
