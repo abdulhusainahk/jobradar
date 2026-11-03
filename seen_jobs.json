@@ -903,6 +903,23 @@
       "reason": "Physical security systems engineering role (perimeter barriers, intrusion detection, CCTV, construction documents in AutoCAD/Revit), not infrastructure automation or DevOps/SRE work. The location is San Francisco or remote-friendly, with no explicit India, UAE or Europe eligibility, and no overall years requirement is stated.",
       "signature": "9f29ee1dfeade2754cc0ce17c61d45e7d342fc688133997f7db7dea93d9b439e"
     },
+    "Anthropic::5442048008": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Munich is an allowed location, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. The 10+ year requirement is within band (max 11).",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-03T23:52:55+00:00",
+      "jd_hash": "adb3847a9ec352f8bd1a7ff2dd84272d0dca7fd692dbe76908120e516ecd5790",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T23:52:55.646047+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Munich is an allowed location, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. The 10+ year requirement is within band (max 11).",
+      "signature": "d9127b32b5d574ee2a83253b4de68918809f0cce00946de5da7dfab912b4abbc"
+    },
     "Anthropic::5445625008": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4891,6 +4908,23 @@
       "reason": "An AI infrastructure software role (Kubernetes, model loading) is relevant, and the 5+ year minimum is within band. However, the explicit location is Tel Aviv, Israel, which is not among the enabled India, UAE or Europe locations.",
       "signature": "d478df367d3ce8340ca590a54e5907e4cbb0c3e5604de2d7b5571ec9fd60ec29"
     },
+    "NVIDIA::JR2027828": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is Yokneam, Israel, which is not in the enabled regions (India/UAE/Europe). The role is a network SRE with some automation, but it is network-ops heavy. Its 10+ year minimum is within the 11-year max.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-03T23:52:55+00:00",
+      "jd_hash": "1379cebec3fab318392443f86443b7f1da564f6698b2b4fb4ae6922e48902799",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T23:52:55.646130+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Location is Yokneam, Israel, which is not in the enabled regions (India/UAE/Europe). The role is a network SRE with some automation, but it is network-ops heavy. Its 10+ year minimum is within the 11-year max.",
+      "signature": "5345419ae0f0379aa82752a226ae1c9e622099d252e0ca60a7bbd76533e62d5d"
+    },
     "NVIDIA::JR2027831": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6674,16 +6708,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is a product management and solutions consulting role focused on Salesforce CRM, Life Sciences workflows, and business process automation rather than DevOps, infrastructure automation, or platform engineering. Furthermore, the role is located in the United States while the candidate is located in enabled regions outside the US.",
+        "ai_note": "The role is a Salesforce Life Sciences product and process-automation consultant (PRDs, backlogs, low-code blueprints) with no infrastructure automation work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 3
       },
-      "at": "2026-10-22T18:28:57+00:00",
-      "jd_hash": "b348d37a3903f9a38dc1ae6018f1da31ef3d537d6c5d8b02c86c86748bd8c03a",
+      "at": "2026-11-03T23:52:55+00:00",
+      "jd_hash": "7415235f15b4f79a37bfa4cc67a7f95aa02536c93995e4409032501a8e6bbdf0",
       "mode": "ai",
-      "next_review_at": "2026-10-29T18:28:57.603350+00:00",
-      "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
-      "reason": "This is a product management and solutions consulting role focused on Salesforce CRM, Life Sciences workflows, and business process automation rather than DevOps, infrastructure automation, or platform engineering. Furthermore, the role is located in the United States while the candidate is located in enabled regions outside the US.",
+      "next_review_at": "2026-11-10T23:52:55.646166+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is a Salesforce Life Sciences product and process-automation consultant (PRDs, backlogs, low-code blueprints) with no infrastructure automation work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions.",
       "signature": "792389d5a82fb4f788ed964dea3747cb357c34a07aea3c33a8ac6bfee96dad22"
     },
     "Salesforce::JR365133": {
@@ -7645,6 +7679,7 @@
     "Amazon::10588692": "2026-10-26T20:03:15+00:00",
     "Amazon::10594522": "2026-11-02T22:13:04+00:00",
     "Amazon::10594524": "2026-11-02T22:13:04+00:00",
+    "Amazon::10595532": "2026-11-03T23:52:57+00:00",
     "Amazon::2893777": "2026-09-15T16:39:26+00:00",
     "Amazon::2943487": "2026-09-15T16:39:26+00:00",
     "Amazon::3087178": "2026-09-15T11:30:01+00:00",
