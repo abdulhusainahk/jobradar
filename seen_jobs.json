@@ -223,6 +223,23 @@
       "reason": "Customer-embedded FDE role focused on building AI applications (agents, RAG, React/TypeScript), not infrastructure or platform work. The role is based in Sao Paulo, Brazil, outside the enabled regions. No overall years of experience are stated.",
       "signature": "b39183ef60d4195751cf17e2a477d9f9b2e00ceb1547a2e3481f639565fce73b"
     },
+    "Amazon::10582029": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Berlin is allowed, but this forward deployed role centres on SDE-style AI application development: multi-agent systems, RAG, Java/C++, React/TypeScript and customer delivery. It is not infrastructure, Kubernetes or platform deployment, which the candidate's preferences exclude. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "880ff92b716886fea15f1f741db22ee7a332765a35f066a499140382bad0b742",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.056823+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Berlin is allowed, but this forward deployed role centres on SDE-style AI application development: multi-agent systems, RAG, Java/C++, React/TypeScript and customer delivery. It is not infrastructure, Kubernetes or platform deployment, which the candidate's preferences exclude. No overall years of experience are stated.",
+      "signature": "6237026ae5b540ebbc3e62a227b66287c3de606ee6121aca9e2ac9949b916e4f"
+    },
     "Amazon::10582716": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -579,6 +596,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Tokyo-based customer-facing FDE role focused on building AI applications (multi-agent, RAG), not infrastructure. It requires business-level Japanese, and Tokyo is outside the enabled India/UAE/Europe regions. The 5+ years requirement is within band.",
       "signature": "87b43c2e5e75d3b21456610d5bf71803f317f9fa5165b72601fedf4856fa076a"
+    },
+    "Amazon::10595488": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Community/partnerships manager role (events, outreach, marketing) with no infrastructure automation duties; located in São Paulo, Brazil, outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 2
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "2c495ddc058c299f1d578a395a56e34210c8e3ffa38090c2ba2b47e4be362d3a",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.056776+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Community/partnerships manager role (events, outreach, marketing) with no infrastructure automation duties; located in São Paulo, Brazil, outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
+      "signature": "49978014336fe14968a53f638f0babd1565aa5978779b0ea1af3ce19423cf38b"
     },
     "Amazon::3199256": {
       "ai_assessment": {
@@ -3011,6 +3045,23 @@
       "reason": "Non-technical forward deployment strategist role (PRDs, C-suite scoping, project management), not infrastructure work. It also requires native-level Korean, and the role is based in Seoul, outside the enabled regions.",
       "signature": "919f1767900b8a834b9a6be3a8deb2ac01c7440f5e4d2ddba3353972b377f7b3"
     },
+    "Databricks::8927390002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role focused on data engineering, Spark, ML/AI applications and customer-facing billable delivery, not infrastructure/Kubernetes/platform deployment. London is allowed; years unstated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "b764704769ea9e8803e542a10e61106f32c98965279cabc92335acc62d49697b",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.056643+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role focused on data engineering, Spark, ML/AI applications and customer-facing billable delivery, not infrastructure/Kubernetes/platform deployment. London is allowed; years unstated.",
+      "signature": "03ea1d3e37ddbbe635f27bae05858e1dfc44f3fb23ebad99d1f9668bd297d942"
+    },
     "Datadog::7529852": {
       "ai_assessment": {},
       "at": "2026-10-30T07:22:07+00:00",
@@ -3224,6 +3275,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Tokyo, Japan role (not in enabled regions) focused on functional production support for fixed income settlements, requiring fluent Japanese and JASDEC/BOJ experience; not infrastructure automation. The 10+ years requirement is within band.",
       "signature": "3d5766ae751980614f92ae37e5409be84d4af1dd67596be0f4810ea87e17953b"
+    },
+    "Deutsche Bank::R0450199": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Pune, India is allowed, but the role is a hands-on Java/PL/SQL data platform engineering position. Its core work is application and data engineering. DevSecOps and Terraform are secondary requirements, not infrastructure automation responsibilities. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "edb006d26d311d4248fc7fc43199ec25c47aa381b539e9b4ba197bf31dc9a09a",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.057035+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Pune, India is allowed, but the role is a hands-on Java/PL/SQL data platform engineering position. Its core work is application and data engineering. DevSecOps and Terraform are secondary requirements, not infrastructure automation responsibilities. No overall experience requirement is stated.",
+      "signature": "516a6feda387ce6cb3a1bf0142da40a50416e88e123315de91e758a2f9044d19"
     },
     "Deutsche Bank::R0454442": {
       "ai_assessment": {
@@ -3871,6 +3939,23 @@
       "reason": "The role focuses on forward-deployed AI application engineering and building GenAI solutions rather than core DevOps, SRE, or platform engineering infrastructure. Additionally, the location in Poland is outside the enabled regions.",
       "signature": "8cef0a5e5780f00dce031b4f0e56297ee33d6b9add9c60eea9f1da04a076ec86"
     },
+    "J.P. Morgan::210773846": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role focused on business-facing full-stack agentic AI/LLM solution building and stakeholder translation, not infrastructure/Kubernetes/platform deployment. Located in Glasgow, UK, which is allowed. Overall years of experience not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "22c91b43bed0c2ca407426ce7340c10bd9fc20ef157d18aa1cb948d8dbb608ee",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.056922+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role focused on business-facing full-stack agentic AI/LLM solution building and stakeholder translation, not infrastructure/Kubernetes/platform deployment. Located in Glasgow, UK, which is allowed. Overall years of experience not stated.",
+      "signature": "c8ccf887ae9b97e08c8aa3dfb33588c86bb2b1ce9ad84bda08dc9102fd996984"
+    },
     "J.P. Morgan::210790282": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4041,6 +4126,23 @@
       "reason": "The role focuses heavily on network infrastructure, network design, SD-WAN, and routing rather than core DevOps, Kubernetes, Terraform, and cloud platform automation.",
       "signature": "0278dd0f57a9cf05fbf1cdc7eb4ed48f6c0bdc76e218260ed45eb8ff8eefd11b"
     },
+    "J.P. Morgan::210802523": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Full-stack Java/Spring/React application development role; Kubernetes and Terraform are incidental or preferred mentions, not core infrastructure automation. The location (Mumbai) is allowed, and the 2+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "7826ee813034106d238750d530acafd835ba28d35083b402608da85b184d5467",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.056962+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Full-stack Java/Spring/React application development role; Kubernetes and Terraform are incidental or preferred mentions, not core infrastructure automation. The location (Mumbai) is allowed, and the 2+ years requirement is within band.",
+      "signature": "97a8b45f247a271c2e2e3e587a68fc15d2fc7a40049c870dae8d62b6d193e756"
+    },
     "J.P. Morgan::210802873": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4142,6 +4244,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Application/solution architect role centered on Java 17/Spring Boot microservices, data architecture and financial domain. Kubernetes/IaC are incidental, not core infrastructure automation. The 5+ years requirement is within band and Mumbai is allowed.",
       "signature": "da80913107c29cd5eaae6928a6f933e646c74a62189027a651016027d0028311"
+    },
+    "J.P. Morgan::210806222": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Security architecture role focused on design reviews, threat modeling, controls and audit, not hands-on infrastructure automation. Cloud and Kubernetes appear only as knowledge areas. Bengaluru is allowed; no overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "3de32eb0682525b136606750d0e88dfc98ef20e423c8c415d7781d1fe56cd790",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.057002+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Security architecture role focused on design reviews, threat modeling, controls and audit, not hands-on infrastructure automation. Cloud and Kubernetes appear only as knowledge areas. Bengaluru is allowed; no overall experience requirement is stated.",
+      "signature": "a7da934353ec0fcfb5d9361f6d7d8cc657698af79038e7dcd62090b39fc7e164"
     },
     "Mastercard::R-277889": {
       "ai_assessment": {
@@ -6689,19 +6808,19 @@
     "Salesforce::JR366368": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "uncertain",
+        "ai_experience_fit": "below_band",
         "ai_location_fit": "outside",
-        "ai_note": "Security GRC/assurance governance role, not infrastructure automation; US-only locations (Bellevue, Atlanta, McLean, SF) with US citizenship/PR required, outside the enabled India/UAE/Europe regions. No overall years requirement is stated.",
+        "ai_note": "Security GRC/compliance assurance role, not infrastructure automation. US-only locations with a US citizenship or permanent residency requirement. The stated 2-3 years of experience is well below the candidate's 6 years.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-02T22:13:00+00:00",
-      "jd_hash": "63a3cbe9d4fd1d4e6963bf1f48132b647d386c0bffac3453c2e084e1736aee35",
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "a8b1ea8a4e76cb243003fa540fc3b9b62543ae1366b11841d1922bf9a3158ea3",
       "mode": "ai",
-      "next_review_at": "2026-11-09T22:13:00.810594+00:00",
+      "next_review_at": "2026-11-10T17:35:12.056867+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Security GRC/assurance governance role, not infrastructure automation; US-only locations (Bellevue, Atlanta, McLean, SF) with US citizenship/PR required, outside the enabled India/UAE/Europe regions. No overall years requirement is stated.",
-      "signature": "2874eebb92c51c3fb6988dda3ecc70eee75ffaced87f50f5bb1ebd71a9802d4b"
+      "reason": "Security GRC/compliance assurance role, not infrastructure automation. US-only locations with a US citizenship or permanent residency requirement. The stated 2-3 years of experience is well below the candidate's 6 years.",
+      "signature": "15c6ba3d3beb4962228d6be8d28b455c5f9940bfa7b03b402af3f9ecb2f54655"
     },
     "Salesforce::JR366398": {
       "ai_assessment": {
@@ -6821,6 +6940,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Fraud/abuse security incident response role (Python/SQL investigations, merchant liaison, threat intel), not infrastructure, Kubernetes or platform automation. Dublin is allowed; 10+ years is within the 11-year max.",
       "signature": "dc51aadddd71ed71e25252412441383b093c440586456ea37a63ce0b0f3fb2b3"
+    },
+    "Sumo Logic::8349107": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is remote Costa Rica only, outside the enabled regions of India, UAE and Europe. The role is a quantitative FinOps/financial-modeling position rather than infrastructure automation. It asks for 7+ years overall, which is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "f0240d8a516689bba3ae7218ed031c74038a42fb98764f4da15e73b568f1c32b",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.056729+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Location is remote Costa Rica only, outside the enabled regions of India, UAE and Europe. The role is a quantitative FinOps/financial-modeling position rather than infrastructure automation. It asks for 7+ years overall, which is within band.",
+      "signature": "8394f806add229501aaee433a96dcaf4734b2cbd2d7189be37da0f84e501679c"
     },
     "Target::R0000446172": {
       "ai_assessment": {
@@ -7172,6 +7308,23 @@
       "reason": "Heuristic matching rejected this role",
       "signature": "de7cfab56ca7fec6c5e5b81ca12c7c6c0fdb3beec4e46058cac5a62d6ec9abdd"
     },
+    "Wells Fargo::R-572277": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Product management role (roadmap, backlog, KPIs) for developer frameworks, not hands-on infrastructure automation. Location is Charlotte NC / Irving TX (US), outside the enabled regions, and no visa sponsorship is offered.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "201e71f57ec8cd7d94ac7fab5b4203452a6a2ca9d714e424b4ff83263853fb32",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.057109+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Product management role (roadmap, backlog, KPIs) for developer frameworks, not hands-on infrastructure automation. Location is Charlotte NC / Irving TX (US), outside the enabled regions, and no visa sponsorship is offered.",
+      "signature": "09473ce81c811846b528dc71acf73d6c669c1d9a9a2770a33346890e41029bab"
+    },
     "Wells Fargo::R-573422": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7232,6 +7385,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "SRE role with real automation and observability work, and the 4+ years requirement is within band. However, it requires onsite work in Irving TX, Charlotte NC or Iselin NJ (all US) with no sponsorship, which is outside the enabled India, UAE and Europe regions.",
       "signature": "eb41912f2c803641a5009188765c66ebeb10ea6332d4d9a4ac83e000568873aa"
+    },
+    "Wells Fargo::R-584121": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Trader voice/telephony infrastructure role (IPC Unigy, Cloud9, SIP, ring-down circuits, PowerShell, vendor management) rather than cloud/Kubernetes/IaC platform automation. Requires niche voice platform expertise the candidate lacks. Bengaluru location is allowed, and the 4+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-03T17:35:12+00:00",
+      "jd_hash": "eda850ac97e97db5eb3b5091854a98b60146f7ab92aac399abf0b57301e39880",
+      "mode": "ai",
+      "next_review_at": "2026-11-10T17:35:12.057151+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Trader voice/telephony infrastructure role (IPC Unigy, Cloud9, SIP, ring-down circuits, PowerShell, vendor management) rather than cloud/Kubernetes/IaC platform automation. Requires niche voice platform expertise the candidate lacks. Bengaluru location is allowed, and the 4+ years requirement is within band.",
+      "signature": "07d164a1f8ee6a8490c912ea458995cfa5bf6e2d6f48368280f6dc221ffaf0e9"
     },
     "Wells Fargo::R-584558": {
       "ai_assessment": {
@@ -8127,6 +8297,7 @@
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
+    "J.P. Morgan::210805379": "2026-11-03T17:35:15+00:00",
     "J.P. Morgan::210805749": "2026-11-03T07:15:52+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
@@ -8204,6 +8375,7 @@
     "Mastercard::R-292861": "2026-10-27T15:25:38+00:00",
     "Mastercard::R-292934": "2026-10-09T08:23:53+00:00",
     "Mastercard::R-293126": "2026-10-15T16:08:56+00:00",
+    "Mastercard::R-293370": "2026-11-03T17:35:15+00:00",
     "Mastercard::R-293452": "2026-10-12T19:27:43+00:00",
     "Mastercard::R-293568": "2026-10-26T06:49:10+00:00",
     "Mastercard::R-293622": "2026-10-21T17:41:53+00:00",
