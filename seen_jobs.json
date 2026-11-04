@@ -4279,6 +4279,23 @@
       "reason": "Security architecture role focused on design reviews, threat modeling, controls and audit, not hands-on infrastructure automation. Cloud and Kubernetes appear only as knowledge areas. Bengaluru is allowed; no overall experience requirement is stated.",
       "signature": "a7da934353ec0fcfb5d9361f6d7d8cc657698af79038e7dcd62090b39fc7e164"
     },
+    "J.P. Morgan::210806262": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Primarily a Java/React full-stack backend developer role building microservices and Databricks apps. DevOps, Kubernetes and MLOps appear only as secondary qualifications, not core infrastructure automation. Mumbai location and the 3+ years requirement both fit.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-04T06:50:53+00:00",
+      "jd_hash": "bdac7d2df79848843b2d4e209c21de6772ef180ce06c24425821f6f5a1d7d772",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T06:50:53.696734+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Primarily a Java/React full-stack backend developer role building microservices and Databricks apps. DevOps, Kubernetes and MLOps appear only as secondary qualifications, not core infrastructure automation. Mumbai location and the 3+ years requirement both fit.",
+      "signature": "fffbce925c580d06069eacc21aff0b74b4a9b146bc7290c5c081ea923756ad0d"
+    },
     "Mastercard::R-277889": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4550,6 +4567,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Tokyo, Japan is outside the enabled India/UAE/Europe regions and the role requires Japanese fluency. It is a customer-embedded software engineering FDE role, not an infrastructure or platform role. The 6+ year minimum is within band.",
       "signature": "b247683fff32b82a94adc606e4b390bdad98dbba96cd1520e3c70c033365dcf0"
+    },
+    "Microsoft::1970393556997609": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the AI/ML Infrastructure title, the role is product software engineering: coding ML training and post-training features in C#/Java/Python with data scientists. Infra automation is incidental. The 4+ years requirement is within band, and Bangalore is an allowed location.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-04T06:50:53+00:00",
+      "jd_hash": "e0041ad834425429937748890846d75308c7c7604ee2e464fc8b3d5277c0b16b",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T06:50:53.696641+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the AI/ML Infrastructure title, the role is product software engineering: coding ML training and post-training features in C#/Java/Python with data scientists. Infra automation is incidental. The 4+ years requirement is within band, and Bangalore is an allowed location.",
+      "signature": "3bd806bff6cb67ba816e60b86f489a3d1eaffa8aa32967de3fbac6a1f97146f9"
     },
     "Microsoft::1970393557026699": {
       "ai_assessment": {
@@ -7693,6 +7727,7 @@
     "Anthropic::5211297008": "2026-10-30T07:22:23+00:00",
     "Anthropic::5211305008": "2026-10-30T07:22:23+00:00",
     "Atlassian::24970": "2026-10-30T16:38:20+00:00",
+    "Atlassian::25095": "2026-11-04T06:50:58+00:00",
     "Atlassian::25283": "2026-08-04T05:30:07+00:00",
     "Atlassian::25292": "2026-09-15T16:39:26+00:00",
     "Atlassian::25682": "2026-07-09T05:35:29+00:00",
@@ -7725,6 +7760,7 @@
     "Atlassian::27635": "2026-11-02T11:35:47+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
     "Barclays::JR-0000044230": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000052441": "2026-11-04T06:50:58+00:00",
     "Barclays::JR-0000079548": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000082433": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000083706": "2026-10-30T22:57:18+00:00",
@@ -8290,6 +8326,7 @@
     "J.P. Morgan::210794376": "2026-09-25T19:42:23+00:00",
     "J.P. Morgan::210794563": "2026-09-29T15:30:38+00:00",
     "J.P. Morgan::210794576": "2026-10-01T14:19:45+00:00",
+    "J.P. Morgan::210794721": "2026-11-04T06:50:58+00:00",
     "J.P. Morgan::210794730": "2026-10-14T11:01:27+00:00",
     "J.P. Morgan::210794907": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210794925": "2026-10-30T07:22:23+00:00",
@@ -8331,6 +8368,7 @@
     "J.P. Morgan::210801797": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
+    "J.P. Morgan::210804319": "2026-11-04T06:50:58+00:00",
     "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
     "J.P. Morgan::210805379": "2026-11-03T17:35:15+00:00",
     "J.P. Morgan::210805749": "2026-11-03T07:15:52+00:00",
@@ -8788,6 +8826,7 @@
     "Trivago::8859955002": "2026-10-09T15:43:47+00:00",
     "Twilio::8108771": "2026-08-05T17:00:32+00:00",
     "Wells Fargo::R-564802": "2026-10-30T07:22:23+00:00",
+    "Wells Fargo::R-572230": "2026-11-04T06:50:58+00:00",
     "Wells Fargo::R-583777": "2026-10-30T07:22:23+00:00",
     "Zeta::5594986004": "2026-07-06T14:03:13+00:00",
     "Zeta::5eb7a75b-312c-4759-8813-70e67b5d4109": "2026-09-15T11:30:01+00:00",
