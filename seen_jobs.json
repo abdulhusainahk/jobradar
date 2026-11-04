@@ -988,6 +988,23 @@
       "reason": "Endpoint/ChromeOS client platform role (device fleet management, Google Admin, Android Enterprise), not cloud infrastructure/Kubernetes DevOps. US-only locations (Boston, SF, Seattle, NYC, DC); no India/UAE/Europe option. Overall years not stated.",
       "signature": "35f54d66a4805cadf2c723e22ce2e0a66ea80311bc148652ec0631b7907c8837"
     },
+    "Anthropic::5471721008": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "People-management FDE role focused on customer AI application delivery, pre-sales and team building, not infrastructure/platform automation. Requires 10+ yrs (within 11 max) plus 2+ yrs management. Paris, France is not among the configured locations.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "59fea3ee9af1e07ce24bb940e0083a4efe3f9e0e9b1c16b40017a18f162e3f2c",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655360+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "People-management FDE role focused on customer AI application delivery, pre-sales and team building, not infrastructure/platform automation. Requires 10+ yrs (within 11 max) plus 2+ yrs management. Paris, France is not among the configured locations.",
+      "signature": "c4d69a6d3250c899066e2e42e2916fac9756ed4637693c02753edd6ca25550a8"
+    },
     "Barclays::JR-0000040669": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1412,6 +1429,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Director-level enterprise architecture role (strategy, governance, financial-domain architecture), not hands-on infrastructure automation. Located in New York with 4 days/week in office, outside the enabled India/UAE/Europe regions. The 10+ years requirement is within the band.",
       "signature": "f792b386a7294febdfeea0b4045a42adcd4c2c0e5610ec3b178457193abb9e3d"
+    },
+    "BlackRock::R267068": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Platform Engineer' title, this is Confluence Cloud SaaS administration and product ownership (permissions, Marketplace apps, SSO, migration validation). It involves no infrastructure automation, Kubernetes or IaC. The 5+ years requirement is within band, and Bengaluru is an allowed location.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "2c2c5d4eff8a4398ca30b2c52857b04bd29412ab2961acc830a1ea00f5433525",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655663+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Platform Engineer' title, this is Confluence Cloud SaaS administration and product ownership (permissions, Marketplace apps, SSO, migration validation). It involves no infrastructure automation, Kubernetes or IaC. The 5+ years requirement is within band, and Bengaluru is an allowed location.",
+      "signature": "a3b38eede60397e39c9449b749be3ba25b0da608b786654ed6334129822851ee"
     },
     "Citi::859038498233": {
       "ai_assessment": {
@@ -3062,6 +3096,23 @@
       "reason": "Non-technical forward deployment strategist role (PRDs, C-suite scoping, project management), not infrastructure work. It also requires native-level Korean, and the role is based in Seoul, outside the enabled regions.",
       "signature": "919f1767900b8a834b9a6be3a8deb2ac01c7440f5e4d2ddba3353972b377f7b3"
     },
+    "Databricks::8927179002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Customer-facing GenAI/data science FDE role (RAG, agents, pandas, PyTorch, professional services) rather than infrastructure or Kubernetes platform deployment. London is an allowed location. The stated 4+ years minimum is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "c272b78de6b11d5d885b3e6df2e54bb3b0bf63bc9c5b8fd2a8ea43b756e23789",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655100+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing GenAI/data science FDE role (RAG, agents, pandas, PyTorch, professional services) rather than infrastructure or Kubernetes platform deployment. London is an allowed location. The stated 4+ years minimum is within band.",
+      "signature": "80f90145b9fa7d60837e9a9f2677df0b96f4c1784b62ee454ae0a577290001f2"
+    },
     "Databricks::8927390002": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3078,6 +3129,74 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Forward deployed role focused on data engineering, Spark, ML/AI applications and customer-facing billable delivery, not infrastructure/Kubernetes/platform deployment. London is allowed; years unstated.",
       "signature": "03ea1d3e37ddbbe635f27bae05858e1dfc44f3fb23ebad99d1f9668bd297d942"
+    },
+    "Databricks::8929894002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "A customer-facing GenAI/data-science FDE role (RAG, fine-tuning, pandas/PyTorch, professional services), not infrastructure or platform deployment. It is located in Paris, France, remote within France only, and France is not among the configured Europe locations. Min 4 years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "b108f6c8cc0d060ab2ddec0a458d59bff7dba9c87655166e15caf7ec2226a5f9",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655211+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "A customer-facing GenAI/data-science FDE role (RAG, fine-tuning, pandas/PyTorch, professional services), not infrastructure or platform deployment. It is located in Paris, France, remote within France only, and France is not among the configured Europe locations. Min 4 years is within band.",
+      "signature": "447ed92a91f98e10ad248c82a7b81860cdb7af457665e5e84f5c0b476c72bacd"
+    },
+    "Databricks::8930374002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Customer-facing GenAI/data science FDE role (RAG, agents, fine-tuning, pandas/PyTorch, professional services), not infrastructure/Kubernetes platform deployment. Munich, Germany is allowed. Min 4 years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "eec872ab8647ff890b3d618c2eb87dfb6880db2cb5780a2fa107e4b6d0ced241",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655254+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing GenAI/data science FDE role (RAG, agents, fine-tuning, pandas/PyTorch, professional services), not infrastructure/Kubernetes platform deployment. Munich, Germany is allowed. Min 4 years is within band.",
+      "signature": "6f32b8b922c22543bd38cb11ca5121ab94b902663dfa92c38418776246a931e9"
+    },
+    "Databricks::8930378002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Customer-facing GenAI/data science professional-services FDE role (RAG, LangChain, pandas, PyTorch). It is not infrastructure, Kubernetes or platform deployment focused. Amsterdam is an allowed location and the 4+ year minimum is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "21d718f9d29c96f2b789bd7ae87a18fa7c344d8cf4b7da2c3015b8d7489d0bd7",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655290+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing GenAI/data science professional-services FDE role (RAG, LangChain, pandas, PyTorch). It is not infrastructure, Kubernetes or platform deployment focused. Amsterdam is an allowed location and the 4+ year minimum is within band.",
+      "signature": "f19b1265197ffd78089f4e9924dbe8017ca67c0dacdadf116d964cd55c526fe0"
+    },
+    "Databricks::8930381002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing GenAI/data science FDE role (RAG, fine-tuning, pandas/PyTorch), not infrastructure-focused. Stockholm, Sweden only, which is not among the configured Europe locations. The 4+ years requirement fits.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "03172415f515ef40dd9847c11bce6e07cd226aece65a29b1748041a94de57da2",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655325+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing GenAI/data science FDE role (RAG, fine-tuning, pandas/PyTorch), not infrastructure-focused. Stockholm, Sweden only, which is not among the configured Europe locations. The 4+ years requirement fits.",
+      "signature": "cb300c86780e74288078439a9a9ecfe6efbb94cb9374589688d69cd68abe0636"
     },
     "Datadog::7529852": {
       "ai_assessment": {},
@@ -3309,6 +3428,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Pune, India is allowed, but the role is a hands-on Java/PL/SQL data platform engineering position. Its core work is application and data engineering. DevSecOps and Terraform are secondary requirements, not infrastructure automation responsibilities. No overall experience requirement is stated.",
       "signature": "516a6feda387ce6cb3a1bf0142da40a50416e88e123315de91e758a2f9044d19"
+    },
+    "Deutsche Bank::R0454144": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Frankfurt, Germany, which is within the enabled Europe region. The role is primarily data engineering: ETL/ELT pipelines, data modeling, BigQuery, Spark/Beam and Java/Python application coding. GCP IaC and platform operations are secondary. Overall experience is given only as 'several years' with no explicit minimum.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "cff381c0d91907ea94991d5e83877f660d421e0ca3ae860208af6233a27798a5",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655613+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Frankfurt, Germany, which is within the enabled Europe region. The role is primarily data engineering: ETL/ELT pipelines, data modeling, BigQuery, Spark/Beam and Java/Python application coding. GCP IaC and platform operations are secondary. Overall experience is given only as 'several years' with no explicit minimum.",
+      "signature": "2c4017901587cd75d215916f1d5bb940a07b6b753d061c40d7972c47cd9a71cd"
     },
     "Deutsche Bank::R0454442": {
       "ai_assessment": {
@@ -4007,6 +4143,23 @@
       "reason": "Trader voice/telephony L3 support role (IPC, SIP, VoIP, hoots). It has no cloud, Kubernetes or infrastructure-automation focus. The location (London) is allowed, and the 5+ years requirement is within band.",
       "signature": "37a334ec9ad4ef1d8118ed82dfda1ffab7a1aacdc2fbb22db77ac3fd8304c969"
     },
+    "J.P. Morgan::210799136": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is centred on Ribbon SBC, SIP/VoIP telephony and carrier engineering, which the candidate lacks. The AWS and config-as-code work is secondary. Bengaluru location and 5+ years requirement both fit, but the domain is a clear mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "daa97da6072a56f825391af36018f85f73cec8826104148f7b9b270eb72ce67b",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655578+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is centred on Ribbon SBC, SIP/VoIP telephony and carrier engineering, which the candidate lacks. The AWS and config-as-code work is secondary. Bengaluru location and 5+ years requirement both fit, but the domain is a clear mismatch.",
+      "signature": "9036df6db26289cd46f0cf23c23e384f46182a5859a63a986c248b15f1178a73"
+    },
     "J.P. Morgan::210800030": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4636,6 +4789,40 @@
       "reason": "Enterprise sales role (account strategy, pipeline, C-level selling) with no hands-on infrastructure automation; candidate excludes sales engineering. Located in Norway, which is not in the enabled locations. No explicit years of experience are stated.",
       "signature": "c6bcb329868628998df55aee237a6cde141f62eb1187f90db39c1af60d7f2e16"
     },
+    "Microsoft::1970393557046166": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing support/advisory role (workshops, assessments, incident coordination) rather than hands-on infra automation, which conflicts with the candidate's preference. The JD states the location as Romania only, which is outside the enabled India/UAE/Europe location lists. No explicit overall years requirement is given.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "70c064f488d5ec99b33d6890256361239a382d54029d91d8d964a96cca64e85e",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655416+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing support/advisory role (workshops, assessments, incident coordination) rather than hands-on infra automation, which conflicts with the candidate's preference. The JD states the location as Romania only, which is outside the enabled India/UAE/Europe location lists. No explicit overall years requirement is given.",
+      "signature": "1d6ca4e6895f9314a47f6a3848bbe671814cd85c7a93dcbefb2397e455623095"
+    },
+    "Microsoft::1970393557046170": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing Support for Mission Critical role (workshops, assessments, incident coordination) rather than hands-on infrastructure automation. Located in Portugal, which is not in the enabled Europe locations. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "e5cf454df069d0e89b38f4cf03515e7b17823a6fd0a1811823a5c2be33ace7bb",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655463+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing Support for Mission Critical role (workshops, assessments, incident coordination) rather than hands-on infrastructure automation. Located in Portugal, which is not in the enabled Europe locations. No overall years of experience are stated.",
+      "signature": "986d71892f51fdd4d0d4b80bf8b79ff06a7378b1e12121bc91bb3d98e18f8532"
+    },
     "Microsoft::1970393557046973": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4652,6 +4839,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The job is located in Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role is a software engineering position building AI SRE agents, with some overlap in AIOps and reliability work. The stated 4+ years of experience is within band.",
       "signature": "d85ebb05d03de15d3e34c356e285eb4bd602e7560ccf8133faed5f80278cc8ac"
+    },
+    "Microsoft::1970393557050207": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing Microsoft support/advisory role (workshops, assessments, incident coordination, CSAM partnership) rather than hands-on infrastructure automation. Location is Greece, which is not in the enabled Europe locations. Overall years of experience are not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "b5ae61749f52878da10269d63b0b62d42f5031c26e42a83009bb4eff60056339",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655500+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing Microsoft support/advisory role (workshops, assessments, incident coordination, CSAM partnership) rather than hands-on infrastructure automation. Location is Greece, which is not in the enabled Europe locations. Overall years of experience are not stated.",
+      "signature": "25ecf72c2ef8d914da9e521d9c11a112eb67b45f708dbb3a6d253acfee3276be"
     },
     "Microsoft::1970393557051229": {
       "ai_assessment": {
@@ -6737,6 +6941,23 @@
       "reason": "This role is a specialized Salesforce Technical Architect consulting position requiring extensive (8+ years) experience specifically on the Salesforce Platform, SFDX, and proprietary Salesforce deployment tools. It requires US citizenship and a security clearance, which conflicts with the candidate's location profile. Furthermore, it is an enterprise platform consulting role rather than general DevOps/infrastructure automation.",
       "signature": "55c8e672553c29cc46cba3a4c280cd94e3980125070a6856871180e8949f3823"
     },
+    "Salesforce::JR364815": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role focused on product management, business process automation and Life Sciences consulting with Agentforce, not infrastructure, Kubernetes or platform deployment. Bangalore/Hyderabad allowed; the 3-8+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-04T17:47:10+00:00",
+      "jd_hash": "d5582b064443048e6d73f250570e1211182b604768c51656818c8ce3ca5702b2",
+      "mode": "ai",
+      "next_review_at": "2026-11-11T17:47:10.655532+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role focused on product management, business process automation and Life Sciences consulting with Agentforce, not infrastructure, Kubernetes or platform deployment. Bangalore/Hyderabad allowed; the 3-8+ years requirement is within band.",
+      "signature": "f0bb39422716a2c6d9545baf52af1af19bd0664ed9558a0cdaf7086e16e3abb9"
+    },
     "Salesforce::JR364817": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7775,10 +7996,13 @@
     "Barclays::JR-0000105817": "2026-11-02T11:35:47+00:00",
     "Barclays::JR-0000111920": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000112829": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000117547": "2026-11-04T17:47:16+00:00",
     "Barclays::JR-0000118118": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000120004": "2026-11-03T07:15:52+00:00",
     "Barclays::JR-0000123647": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000128305": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000130300": "2026-11-04T17:47:16+00:00",
+    "Barclays::JR-0000130302": "2026-11-04T17:47:16+00:00",
     "Barclays::JR-0000133437": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000136174": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000136175": "2026-10-30T22:57:18+00:00",
@@ -7850,6 +8074,7 @@
     "Citi::859038519510": "2026-10-30T07:22:23+00:00",
     "Citi::859038542560": "2026-10-26T20:03:15+00:00",
     "Citi::859038560359": "2026-10-30T07:22:23+00:00",
+    "Citi::859038805708": "2026-11-04T17:47:16+00:00",
     "ClickHouse::086c4dd1-217d-48f8-9d62-e57542e16dbe": "2026-10-30T07:22:23+00:00",
     "ClickHouse::2ce901c2-5f8f-412f-b150-0f1701093cde": "2026-10-30T07:22:23+00:00",
     "ClickHouse::56e89edd-e189-4afa-9b63-c3f339762ef0": "2026-10-30T07:22:23+00:00",
@@ -7945,6 +8170,7 @@
     "Deutsche Bank::R0446461": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0448445": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0448537": "2026-10-30T22:57:18+00:00",
+    "Deutsche Bank::R0451163": "2026-11-04T17:47:16+00:00",
     "Deutsche Bank::R0452282": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0452385": "2026-10-30T22:57:18+00:00",
     "Deutsche Bank::R0454139": "2026-11-02T11:35:47+00:00",
@@ -8023,7 +8249,9 @@
     "Google::113159956521198278": "2026-07-06T16:03:39+00:00",
     "Google::113956570412262086": "2026-09-08T08:15:49+00:00",
     "Google::114158829012165318": "2026-10-17T13:50:59+00:00",
+    "Google::114510446978835142": "2026-11-04T17:47:16+00:00",
     "Google::114745070573232838": "2026-08-27T10:06:41+00:00",
+    "Google::114800855487521478": "2026-11-04T17:47:16+00:00",
     "Google::115172208828916422": "2026-07-06T16:03:39+00:00",
     "Google::117327053513990854": "2026-09-25T15:40:48+00:00",
     "Google::117380930657493702": "2026-09-08T17:10:21+00:00",
@@ -8041,8 +8269,10 @@
     "Google::126802595330040518": "2026-10-17T13:50:59+00:00",
     "Google::127457591532888774": "2026-11-02T11:35:47+00:00",
     "Google::127861388520366790": "2026-09-22T08:05:32+00:00",
+    "Google::128306019372540614": "2026-11-04T17:47:16+00:00",
     "Google::128909707090764486": "2026-10-30T07:22:23+00:00",
     "Google::129307746674582214": "2026-10-17T13:50:59+00:00",
+    "Google::130401499556520646": "2026-11-04T17:47:16+00:00",
     "Google::131995717597045446": "2026-10-20T20:04:58+00:00",
     "Google::133000867719586502": "2026-09-08T12:58:50+00:00",
     "Google::133746571215807174": "2026-07-08T12:18:40+00:00",
@@ -8050,6 +8280,7 @@
     "Google::135427540884824774": "2026-07-06T16:03:39+00:00",
     "Google::135947084825010886": "2026-07-20T16:57:40+00:00",
     "Google::137060977077035718": "2026-07-06T16:03:39+00:00",
+    "Google::138431782729982662": "2026-11-04T17:47:16+00:00",
     "Google::139347961262809798": "2026-07-06T16:03:39+00:00",
     "Google::139545912010515142": "2026-07-06T16:03:39+00:00",
     "Google::139934359053312710": "2026-10-17T13:50:59+00:00",
@@ -8066,11 +8297,13 @@
     "Google::78461517569106630": "2026-09-08T17:10:21+00:00",
     "Google::78481667945046726": "2026-07-15T09:30:17+00:00",
     "Google::79375152675988166": "2026-10-20T10:52:48+00:00",
+    "Google::79778523924832966": "2026-11-04T17:47:16+00:00",
     "Google::79982683316200134": "2026-09-11T07:45:24+00:00",
     "Google::80216914189525702": "2026-08-03T15:25:07+00:00",
     "Google::82883055403836102": "2026-08-21T14:31:01+00:00",
     "Google::83003466422592198": "2026-07-06T16:03:39+00:00",
     "Google::85476474768761542": "2026-09-02T12:30:31+00:00",
+    "Google::85646978259526342": "2026-11-04T17:47:16+00:00",
     "Google::86975233134600902": "2026-07-06T16:03:39+00:00",
     "Google::87659706503307974": "2026-10-17T13:50:59+00:00",
     "Google::87706967249691334": "2026-09-07T18:04:40+00:00",
@@ -8532,6 +8765,7 @@
     "N26::8219953": "2026-10-23T19:41:36+00:00",
     "N26::8222839": "2026-09-23T17:26:54+00:00",
     "N26::8267143": "2026-10-30T07:22:23+00:00",
+    "N26::8352287": "2026-11-04T17:47:16+00:00",
     "NVIDIA::JR1997336": "2026-09-15T19:42:35+00:00",
     "NVIDIA::JR2007808": "2026-07-13T15:20:42+00:00",
     "NVIDIA::JR2008768": "2026-10-05T09:27:13+00:00",
@@ -8666,6 +8900,7 @@
     "Okta::8160475": "2026-09-15T16:39:26+00:00",
     "Okta::8184822": "2026-09-18T18:18:35+00:00",
     "Okta::8184824": "2026-09-18T18:18:35+00:00",
+    "Okta::8184826": "2026-11-04T17:47:16+00:00",
     "Okta::8193328": "2026-09-23T20:46:23+00:00",
     "Okta::8242975": "2026-09-30T16:21:08+00:00",
     "Okta::8242984": "2026-10-01T06:57:35+00:00",
@@ -8833,6 +9068,7 @@
     "Zeta::6010293004": "2026-07-06T14:03:13+00:00",
     "Zeta::6100741004": "2026-07-06T14:03:13+00:00",
     "Zeta::6110468004": "2026-07-15T11:11:53+00:00",
+    "Zeta::6c5a8ebc-94b9-41f7-9a49-1659956343eb": "2026-11-04T17:47:16+00:00",
     "Zeta::803792f5-0e9c-45bc-82ce-c0a552ce0cf8": "2026-09-15T11:30:01+00:00",
     "Zeta::8bd120c7-51aa-4fc9-a50e-37d6e19f0935": "2026-10-12T09:35:32+00:00",
     "Zeta::cac1b9e2-b9fd-4450-8d20-16d3c4f37a10": "2026-09-28T08:03:48+00:00",
@@ -8849,7 +9085,8 @@
     "Zscaler::5209072007": "2026-09-01T15:02:44+00:00",
     "Zscaler::5212053007": "2026-08-18T03:22:18+00:00",
     "Zscaler::5229507007": "2026-09-15T16:39:26+00:00",
-    "Zscaler::5271547007": "2026-10-30T16:38:20+00:00"
+    "Zscaler::5271547007": "2026-10-30T16:38:20+00:00",
+    "Zscaler::5279058007": "2026-11-04T17:47:16+00:00"
   },
   "version": 2
 }
