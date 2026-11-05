@@ -393,6 +393,23 @@
       "reason": "Forward deployed role focused on building production AI applications (RAG, agents, React/TypeScript), not infrastructure automation; located in Seoul, Korea, outside the enabled India/UAE/Europe regions. The 3+ years minimum is within band.",
       "signature": "9e6dfdca203cc68b016f1eb58ef8533ffc13da482a7d9e4dadfbcc35fb0fb3df"
     },
+    "Amazon::10586711": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is Iasi, Romania, which is not among the enabled India/UAE/Europe locations. The role is also early-career, first-line support for an IAM platform (tickets, runbooks, AI support agents), not infrastructure automation. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-05T17:55:54+00:00",
+      "jd_hash": "7a693d5261bb802ee5f2b89260c9529bc4431ba966606389ded423a2dedadb80",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T17:55:54.881172+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Location is Iasi, Romania, which is not among the enabled India/UAE/Europe locations. The role is also early-career, first-line support for an IAM platform (tickets, runbooks, AI support agents), not infrastructure automation. No overall years of experience are stated.",
+      "signature": "7bcbbd5c2a6ee826a2ed0f057e10ea004435bd03b0f1fb82902d54a36029a24d"
+    },
     "Amazon::10587164": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1957,6 +1974,23 @@
       "reason": "Infra-focused forward deployed role (Kubernetes, Helm, private cloud deployment) fits the candidate well, but it is explicitly North America and located in Canadian cities (remote within Canada), outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
       "signature": "fbf4b127af6950dcab8fe5c2d6c1dd1963f37f8c642d36ecb5242a7da5d4f2fd"
     },
+    "Cohere::fe2e2971-e2c0-43fd-9ab1-187571776a5d": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Senior Product Manager role owning P&L, pricing and GTM for inference platform; no hands-on infrastructure automation. Location Toronto/Canada/US remote, outside enabled regions. 10+ yrs PM experience is within max band but role is a clear mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-05T17:55:54+00:00",
+      "jd_hash": "0e3e9eecff5e58babde6af62236254ca45a34cd6941c6c3931234e99935681cf",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T17:55:54.881143+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Senior Product Manager role owning P&L, pricing and GTM for inference platform; no hands-on infrastructure automation. Location Toronto/Canada/US remote, outside enabled regions. 10+ yrs PM experience is within max band but role is a clear mismatch.",
+      "signature": "4cdf09fee510c749b75176e1982518adc2e62a42b452aa5388af3987b24edd87"
+    },
     "Databricks::8341313002": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -2811,18 +2845,18 @@
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
-        "ai_location_fit": "outside",
-        "ai_note": "Customer-facing fullstack/data-engineering FDE role (Spark, data pipelines, apps), not infrastructure-focused. The 6+ years requirement fits the band. Zürich, Switzerland is not among the enabled locations.",
+        "ai_location_fit": "allowed",
+        "ai_note": "Fullstack FDE role focused on data engineering, Spark, applications and customer delivery, not infrastructure/Kubernetes platform deployment. 6+ years is within band and Munich is allowed, but the role is a clear functional mismatch.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 18
       },
-      "at": "2026-10-30T07:22:07+00:00",
+      "at": "2026-11-05T17:55:54+00:00",
       "jd_hash": "ca286359d4562a180a6e171adfbc6f5364071d34835620aa6f0290f427328b86",
       "mode": "ai",
-      "next_review_at": "2026-11-06T07:22:07.544215+00:00",
+      "next_review_at": "2026-11-12T17:55:54.881037+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing fullstack/data-engineering FDE role (Spark, data pipelines, apps), not infrastructure-focused. The 6+ years requirement fits the band. Zürich, Switzerland is not among the enabled locations.",
-      "signature": "0de1e7726bd0b21dc145bec1704cc5073bb925e852d2f8667959998e4710d1a1"
+      "reason": "Fullstack FDE role focused on data engineering, Spark, applications and customer delivery, not infrastructure/Kubernetes platform deployment. 6+ years is within band and Munich is allowed, but the role is a clear functional mismatch.",
+      "signature": "5993663005bec85f24b03b71afde4ace780783771a80f8128ff7cc50c4e5a97d"
     },
     "Databricks::8793863002": {
       "ai_assessment": {
@@ -4500,6 +4534,23 @@
       "reason": "Application/solution architect role centered on Java 17/Spring Boot microservices, data architecture and financial domain. Kubernetes/IaC are incidental, not core infrastructure automation. The 5+ years requirement is within band and Mumbai is allowed.",
       "signature": "da80913107c29cd5eaae6928a6f933e646c74a62189027a651016027d0028311"
     },
+    "J.P. Morgan::210805443": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, firewalls) with support and stakeholder focus. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 22
+      },
+      "at": "2026-11-05T17:55:54+00:00",
+      "jd_hash": "7020e702ad037cefad92e98bf2ffcfefe50bd3a450e027948fcd77cabbf1bc60",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T17:55:54.881195+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, firewalls) with support and stakeholder focus. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting.",
+      "signature": "de3b870a41d039c68b0d975b58a3b36a537304ca5bdd8910e4bd6bf13134edae"
+    },
     "J.P. Morgan::210806222": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4619,6 +4670,23 @@
       "reason": "Despite the 'Senior Platform Engineer' title, the role is a SQL Server DBA position covering patching, AlwaysOn, SSIS/SSAS and query tuning, not infrastructure automation. Pune is an allowed location. No overall experience requirement is stated.",
       "signature": "ca7ee608a72778b00ebbde0f89e90964436e38e167fbdc69fc6be8c8b9593170"
     },
+    "Mastercard::R-292697": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE role with automation, but it is based in O'Fallon, Missouri, USA, with US pay ranges. This is outside the enabled India/UAE/Europe regions. It is also an entry-level (SRE I) role leaning toward CMDB and ops support, and no overall experience requirement is stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-05T17:55:54+00:00",
+      "jd_hash": "6026c012c7dd23e85dc4cfd1b26cee99389c6973ce942e7dabe09356a7cc5e1a",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T17:55:54.881210+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "SRE role with automation, but it is based in O'Fallon, Missouri, USA, with US pay ranges. This is outside the enabled India/UAE/Europe regions. It is also an entry-level (SRE I) role leaning toward CMDB and ops support, and no overall experience requirement is stated.",
+      "signature": "ba876007dad8d6c94c57843318deea0a0b31f2f6e4fa7b300735857ccde64aa2"
+    },
     "Mastercard::R-293009": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4703,6 +4771,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "This is a US-based (Arlington, Virginia) engineering manager role focused on data modeling, governance and data services. It is not infrastructure automation or DevOps/SRE work, and it sits outside the enabled India, UAE and Europe regions. No overall years of experience are stated.",
       "signature": "94a242785be8b7c15b6c770933da727049e33f747908547ac3e52916da7b57bd"
+    },
+    "Mastercard::R-294460": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "O'Fallon, Missouri (US) with US pay range is outside enabled regions (India/UAE/Europe). Role is also an entry-level, support-heavy SRE I position, a poor fit for a senior candidate. No overall years are stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-05T17:55:54+00:00",
+      "jd_hash": "bf39b2b53f0bdfb5c8280ecca074866f37df67a91cf7542cd5d70df9c3ba041d",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T17:55:54.881246+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "O'Fallon, Missouri (US) with US pay range is outside enabled regions (India/UAE/Europe). Role is also an entry-level, support-heavy SRE I position, a poor fit for a senior candidate. No overall years are stated.",
+      "signature": "c46359379cb376cd51540cd892ba4cfdd4946bbe9eb4061d5c250b8ea34eacae"
     },
     "Microsoft::1970393556927480": {
       "ai_assessment": {
@@ -5910,6 +5995,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "A security-focused forward deployed role (security controls, threat monitoring, red team) that requires an active US clearance. It is based in Washington DC with hybrid on-site and customer-site work, which is outside the India/UAE/Europe regions. The 5+ years of security engineering is within band, but the role is not infrastructure automation.",
       "signature": "36ac6205e11808cf23438d25449d743dc0610344b79a5fb65914c67753c5383d"
+    },
+    "OpenAI::8e7ba2dd-d632-4a8b-b95b-e2592f77a679": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed engineering manager role focused on customer delivery, full-stack JS/Python code and team management, not infrastructure. Based in New York City (hybrid, 3 days in office), which is outside the enabled regions. 10+ years required is within the 11-year max.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-05T17:55:54+00:00",
+      "jd_hash": "9d175611c43e3e16acd03ff499533c26103b8907284c702966eb2e9ec73b997d",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T17:55:54.881112+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed engineering manager role focused on customer delivery, full-stack JS/Python code and team management, not infrastructure. Based in New York City (hybrid, 3 days in office), which is outside the enabled regions. 10+ years required is within the 11-year max.",
+      "signature": "63c2b3b9f7bd9bfce1507710359a05844369b7145026f73438682b5eb6631e9b"
     },
     "OpenAI::967f94aa-1706-4dba-ac89-bfbc2c38b688": {
       "ai_assessment": {
@@ -8324,6 +8426,7 @@
     "Google::106113082882695878": "2026-10-17T19:18:51+00:00",
     "Google::106345631739454150": "2026-10-17T13:50:59+00:00",
     "Google::107241008671924934": "2026-11-02T22:13:04+00:00",
+    "Google::107813562172220102": "2026-11-05T17:55:57+00:00",
     "Google::108715629858431686": "2026-10-29T20:21:23+00:00",
     "Google::109189301668848326": "2026-09-29T15:30:42+00:00",
     "Google::109338440650105542": "2026-07-09T09:38:25+00:00",
@@ -9157,6 +9260,7 @@
     "Zeta::6c5a8ebc-94b9-41f7-9a49-1659956343eb": "2026-11-04T17:47:16+00:00",
     "Zeta::803792f5-0e9c-45bc-82ce-c0a552ce0cf8": "2026-09-15T11:30:01+00:00",
     "Zeta::8bd120c7-51aa-4fc9-a50e-37d6e19f0935": "2026-10-12T09:35:32+00:00",
+    "Zeta::a83bd184-4c9b-42b8-a6d4-7be310774a6a": "2026-11-05T17:55:57+00:00",
     "Zeta::cac1b9e2-b9fd-4450-8d20-16d3c4f37a10": "2026-09-28T08:03:48+00:00",
     "Zscaler::5030576007": "2026-09-07T12:53:32+00:00",
     "Zscaler::5055356007": "2026-07-15T09:29:50+00:00",
