@@ -1447,6 +1447,23 @@
       "reason": "Despite the 'Platform Engineer' title, this is Confluence Cloud SaaS administration and product ownership (permissions, Marketplace apps, SSO, migration validation). It involves no infrastructure automation, Kubernetes or IaC. The 5+ years requirement is within band, and Bengaluru is an allowed location.",
       "signature": "a3b38eede60397e39c9449b749be3ba25b0da608b786654ed6334129822851ee"
     },
+    "Citi::859038232403": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Kubernetes/OpenShift infrastructure work in Chennai is relevant, but the role explicitly requires 12 years of experience. That exceeds the 11-year maximum, and drop_out_of_band is true. It is also partly middleware and support-oriented.",
+        "ai_relevance": "relevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-05T07:15:38+00:00",
+      "jd_hash": "48bce9c2d6712005e24a1d74f9c85283ccdc54d86e2617ae2bf63a7be92248ed",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T07:15:38.630857+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Kubernetes/OpenShift infrastructure work in Chennai is relevant, but the role explicitly requires 12 years of experience. That exceeds the 11-year maximum, and drop_out_of_band is true. It is also partly middleware and support-oriented.",
+      "signature": "66ef4e317d8e19bfcf5e38bd3a6168acf2a7d22888db69dd8dd1138152ef8dc9"
+    },
     "Citi::859038498233": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1769,6 +1786,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations Austin or Lisbon; Portugal isn't among the enabled Europe locations. No overall years stated.",
       "signature": "3ec0be345a34fdca0ff02281eeaeb723be55f32f422f53efbfefb66018edb224"
+    },
+    "Cloudflare::8328562": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Role is a TypeScript software engineering job building LLM agent workflows for capacity planning on Cloudflare Workers. It also calls for forecasting and data skills, not infrastructure automation or platform ops; Terraform/CI is only a bonus. London is an allowed location, and no overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-05T07:15:38+00:00",
+      "jd_hash": "972811994b2685b755d485fe306c83df323c813a9d3dba2a094e3a2cdda29ffd",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T07:15:38.630744+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is a TypeScript software engineering job building LLM agent workflows for capacity planning on Cloudflare Workers. It also calls for forecasting and data skills, not infrastructure automation or platform ops; Terraform/CI is only a bonus. London is an allowed location, and no overall years of experience are stated.",
+      "signature": "59575c20c117a7d871c9f367601bcbadbb9153d7148b207340aa4b4e05570594"
     },
     "Cloudflare::8330512": {
       "ai_assessment": {
@@ -8896,6 +8930,7 @@
     "NVIDIA::JR2027441": "2026-10-30T07:22:23+00:00",
     "NVIDIA::JR2028545": "2026-11-02T22:13:04+00:00",
     "NVIDIA::JR2029042": "2026-10-30T16:38:20+00:00",
+    "NVIDIA::JR2029048": "2026-11-05T07:15:40+00:00",
     "Netskope::8088811": "2026-10-30T07:22:23+00:00",
     "Netskope::8161047": "2026-10-30T07:22:23+00:00",
     "Netskope::8334578": "2026-10-30T07:22:23+00:00",
