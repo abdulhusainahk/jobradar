@@ -1719,6 +1719,23 @@
       "reason": "Customer-embedded FDE role centered on full-stack software engineering (TypeScript/Rust/Go, frontend to backend), not infrastructure or platform deployment. The only listed location is Sweden, which is outside the enabled India, UAE and Europe locations. The 7+ year requirement is within band.",
       "signature": "a64c803a9e9f8cb0200e7799c6badb184b99dbefcefa97f291320c5847901e6a"
     },
+    "Cloudflare::8306486": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a firmware and hardware engineering role (OpenBMC, UEFI, embedded software), not DevOps, SRE or platform infrastructure automation. The listed locations, Austin and Lisbon, fall outside the enabled regions, since the Europe list does not include Portugal. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-05T00:10:20+00:00",
+      "jd_hash": "49c324d7402effe70de75d55c784968a8f80d41697d3a171fedd33bcc10290cb",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T00:10:20.431082+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "This is a firmware and hardware engineering role (OpenBMC, UEFI, embedded software), not DevOps, SRE or platform infrastructure automation. The listed locations, Austin and Lisbon, fall outside the enabled regions, since the Europe list does not include Portugal. No overall experience requirement is stated.",
+      "signature": "b8deb9ac9dc400b523d5e954b09dd7a375a2581aa3ec7df1a8bf30f5e440a2b7"
+    },
     "Cloudflare::8325821": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1735,6 +1752,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Hardware server qualification role (electrical/thermal/mechanical design, vendor component selection), not infrastructure automation/DevOps; JD explicitly lists Austin only, outside India/UAE/Europe. Entry-level, no overall years stated.",
       "signature": "b3d0fc3e21fb8461925517c06566a8503d1fa04408707a38309776eb60cf235d"
+    },
+    "Cloudflare::8325834": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations Austin or Lisbon; Portugal isn't among the enabled Europe locations. No overall years stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-05T00:10:20+00:00",
+      "jd_hash": "fc1fa57f3974fff5211d2588c6e6151f426ad7a854e96f085da0d6e078517057",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T00:10:20.430958+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations Austin or Lisbon; Portugal isn't among the enabled Europe locations. No overall years stated.",
+      "signature": "3ec0be345a34fdca0ff02281eeaeb723be55f32f422f53efbfefb66018edb224"
     },
     "Cloudflare::8330512": {
       "ai_assessment": {
@@ -4023,6 +4057,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Graduate cloud role (0-2 yrs, far below the 6-year candidate) with some deployment/automation duties, hybrid in Aguadilla, Puerto Rico, which is outside the enabled India/UAE/Europe regions; drop_out_of_band is true.",
       "signature": "52b5bd5152c762d3463647f06cd3cf5a277f2939dbc12b41db6f01dc3c193df4"
+    },
+    "HPE::1216324": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Presales sales engineering role for enterprise networking (Aruba/Juniper), not infrastructure automation; requires residing on Long Island, NY, USA, outside the enabled regions. Its 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-11-05T00:10:20+00:00",
+      "jd_hash": "aa2bcd12583001c95b67fb03e63708026b826802537fd2c0d3ad43fa22e2f8d4",
+      "mode": "ai",
+      "next_review_at": "2026-11-12T00:10:20.431144+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Presales sales engineering role for enterprise networking (Aruba/Juniper), not infrastructure automation; requires residing on Long Island, NY, USA, outside the enabled regions. Its 5+ years requirement is within band.",
+      "signature": "a7384f85e4b4c33925735a62dcd05807129e6bb2dc54ce5a3138ee9bebf95e53"
     },
     "HPE::1216401": {
       "ai_assessment": {
