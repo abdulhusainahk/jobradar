@@ -2977,6 +2977,23 @@
       "reason": "This is a finance role (Cloud FP&A/FinOps cost forecasting), not hands-on infrastructure automation. It is located only in Mountain View, San Francisco and Seattle, which are outside the enabled regions. The 8+ years requirement is within band.",
       "signature": "7d857454e8d80147415475f0ac631d3b726264618f7675fb9b0227bfc6aee40d"
     },
+    "Databricks::8823788002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "US-only public sector role (US locations, clearance eligibility required). It is a data engineering/Spark/full-stack forward deployed role, not infrastructure-focused. The 5+ year requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-06T00:08:01+00:00",
+      "jd_hash": "1de0a879636b93b69e676950df4ec954bdfb7446f97bf26d8380e0f484e8e2e7",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T00:08:01.894428+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "US-only public sector role (US locations, clearance eligibility required). It is a data engineering/Spark/full-stack forward deployed role, not infrastructure-focused. The 5+ year requirement is within band.",
+      "signature": "f676d524ee94fa997206d35bd8b77cca344ce7c18c97a2c884b64855e22a889b"
+    },
     "Databricks::8845270002": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3095,6 +3112,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Sales/engagement management role (PS&T selling, revenue targets, account growth), not infrastructure engineering. It requires 10+ years in senior customer-facing roles, above the 11-year max only marginally, but the core mismatch is the function. London is an allowed location.",
       "signature": "61d06972a39a01ab6b659e90dfad5b9585d6b00621fe7828f27c505b2f463121"
+    },
+    "Databricks::8893780002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing data/AI forward deployed role (Spark, data engineering, pipelines, account growth), not infrastructure-focused. It is US-based (USCA, US pay zones), requires a US security clearance, and travels to US government customers, so it is outside India/UAE/Europe. The 7+ years minimum is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-06T00:08:01+00:00",
+      "jd_hash": "b51b132f16c85ad48330f480272b0c7b7be1c8a168f2f3b0b9716f6f5782956f",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T00:08:01.894504+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing data/AI forward deployed role (Spark, data engineering, pipelines, account growth), not infrastructure-focused. It is US-based (USCA, US pay zones), requires a US security clearance, and travels to US government customers, so it is outside India/UAE/Europe. The 7+ years minimum is within band.",
+      "signature": "8d6939e09ef647021485c2b2a103b5240ef03ce9ee27111657884c11a1ff9573"
     },
     "Databricks::8899736002": {
       "ai_assessment": {
@@ -5418,6 +5452,23 @@
       "reason": "Developer-experience CI/infra role at NVIDIA Run:ai is relevant (5+ years fits the band), but it is located in Tel Aviv, Israel, which is outside the enabled India, UAE and Europe regions.",
       "signature": "4b9f1e5b606f264d4c929c23a3f2b43bef1130a5793db0dbd30ce2d0c6bcab32"
     },
+    "NVIDIA::JR2029097": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong SRE/Kubernetes infrastructure role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is not among the enabled India/UAE/Europe locations. No remote option is stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-06T00:08:01+00:00",
+      "jd_hash": "1da856265fa4bc8afec37c1d95a7badc9d6ad6ade3199c95cce60b1dfdbce0b0",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T00:08:01.894615+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Strong SRE/Kubernetes infrastructure role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is not among the enabled India/UAE/Europe locations. No remote option is stated.",
+      "signature": "4b58cb00ede5ceeb330a25edff3e81f95840c62d09fdd02112ad9af06c3a0a08"
+    },
     "Netskope::8059158": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6013,6 +6064,23 @@
       "reason": "Forward deployed engineering manager role focused on customer delivery, full-stack JS/Python code and team management, not infrastructure. Based in New York City (hybrid, 3 days in office), which is outside the enabled regions. 10+ years required is within the 11-year max.",
       "signature": "63c2b3b9f7bd9bfce1507710359a05844369b7145026f73438682b5eb6631e9b"
     },
+    "OpenAI::9471b38b-f65c-4a01-9626-bd33fca90f1d": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing full-stack FDE role (frontend/backend, LLM app delivery), not infrastructure/Kubernetes-focused. It is based in New York with 3 days per week in office, which is outside the enabled regions. 5+ years required is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-06T00:08:01+00:00",
+      "jd_hash": "a67637f9934cdb83a649af98583143ed695def1879fd26ed6413ec67a0c1f027",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T00:08:01.894585+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing full-stack FDE role (frontend/backend, LLM app delivery), not infrastructure/Kubernetes-focused. It is based in New York with 3 days per week in office, which is outside the enabled regions. 5+ years required is within band.",
+      "signature": "82dfaad1e8a35070f432b59ca96eff5af1545b8c77c954196f5c240b75241718"
+    },
     "OpenAI::967f94aa-1706-4dba-ac89-bfbc2c38b688": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6222,17 +6290,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The location is San Francisco, which is outside the enabled India, UAE and Europe regions, and the JD gives no remote option. The role is mostly agent-harness software and ML systems engineering (Rust/Python, evals, ablations) with some infra and observability work. No overall years of experience are stated.",
+        "ai_note": "Location is explicitly US-only (San Francisco, NYC, Seattle), which is outside the enabled India/UAE/Europe regions. The role is also more agent-harness and systems software engineering (Rust, evals, ablations) than infrastructure automation. No overall experience requirement is stated.",
         "ai_relevance": "uncertain",
         "ai_score": 20
       },
-      "at": "2026-10-30T16:38:15+00:00",
+      "at": "2026-11-06T00:08:01+00:00",
       "jd_hash": "943fda366fa76b2d08c0beb962c97164afa6b708b5570fc61ad5da7cb9d6a8bb",
       "mode": "ai",
-      "next_review_at": "2026-11-06T16:38:15.241349+00:00",
+      "next_review_at": "2026-11-13T00:08:01.894547+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The location is San Francisco, which is outside the enabled India, UAE and Europe regions, and the JD gives no remote option. The role is mostly agent-harness software and ML systems engineering (Rust/Python, evals, ablations) with some infra and observability work. No overall years of experience are stated.",
-      "signature": "74e9717e6c3ab16513c6cd3a5e50aea6cad15ebcb0dace880584d26fe17ed714"
+      "reason": "Location is explicitly US-only (San Francisco, NYC, Seattle), which is outside the enabled India/UAE/Europe regions. The role is also more agent-harness and systems software engineering (Rust, evals, ablations) than infrastructure automation. No overall experience requirement is stated.",
+      "signature": "2d462b9c78c4d183e51af47f35994b32b05af648910fda1d4d758fe379616421"
     },
     "OpenAI::e6d5ca02-f30b-4ac5-a69d-c947efb430f9": {
       "ai_assessment": {
@@ -7009,6 +7077,23 @@
       "reason": "The role requires an active Top Secret/SCI clearance with polygraph and is located in Herndon, Virginia, which conflicts with the candidate's enabled regions (India, UAE, Europe).",
       "signature": "71dfdc924ed3a88aa6b3d04be193b02435b225c78f3d20ab023187883acdf841"
     },
+    "Salesforce::JR362608": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Marketing Cloud Engagement operations role (Journey Builder, SQL, AMPscript), not infrastructure automation. The location is Chicago, US, which is outside the enabled regions. The only experience requirement is 5 years of SFMC tool tenure, with no overall years stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-06T00:08:01+00:00",
+      "jd_hash": "07c735614dfb27a3c1ab7f01591a96e25c05dd99e1ad83ee0782a9384358d276",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T00:08:01.894642+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Marketing Cloud Engagement operations role (Journey Builder, SQL, AMPscript), not infrastructure automation. The location is Chicago, US, which is outside the enabled regions. The only experience requirement is 5 years of SFMC tool tenure, with no overall years stated.",
+      "signature": "63332f3e8ad9d910305408b67ff0260d7a2e26d56449e10c1564d3d8b4346e00"
+    },
     "Salesforce::JR363024": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7331,6 +7416,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Financial ERP (Workday/Vertex) service management and L2/L3 support role, not infrastructure automation; requires 12+ years (above the 11-year max); located in Dallas/Atlanta/Indianapolis, US, outside the enabled India/UAE/Europe regions.",
       "signature": "378bbdbfb13e19b744c13cb1530514c724039c28b960271d3bd58d584ca93e6e"
+    },
+    "Salesforce::JR366779": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is US-only (San Francisco, Atlanta, Seattle), outside the India, UAE and Europe regions. The role is a staff agentic AI software engineering platform, mixed with infrastructure automation. The 10+ years minimum is within the 11-year max.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
+      },
+      "at": "2026-11-06T00:08:01+00:00",
+      "jd_hash": "8355b3c0c0f1a67c0aab4e09ba8a9ff8b469a004a1c513f3e56106895b2e0b18",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T00:08:01.894681+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Location is US-only (San Francisco, Atlanta, Seattle), outside the India, UAE and Europe regions. The role is a staff agentic AI software engineering platform, mixed with infrastructure automation. The 10+ years minimum is within the 11-year max.",
+      "signature": "d3edfaa30be807a153697032221421c74a86e5b727c108b2eaece37698a38a41"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
