@@ -1736,6 +1736,23 @@
       "reason": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management, not infrastructure automation, DevOps or SRE work. IaC appears only as a bonus skill. The 5+ years requirement fits the experience band. Location is only 'Hybrid' with no country given.",
       "signature": "3d926c13fa612335d897fdf7883721af593374ae2f4c5b1a3332fbf53563a17a"
     },
+    "Cloudflare::8263016": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong Kubernetes platform/SRE role with infra automation, but the JD explicitly limits available locations to US cities and Canada, none of which are in the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "191c650636866a59411a4b291a180a8439819a1237b32a62b6532f2d0ef0c969",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.930859+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Strong Kubernetes platform/SRE role with infra automation, but the JD explicitly limits available locations to US cities and Canada, none of which are in the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+      "signature": "8b83efedd2da8f252a5f430124f5074deab53158f648f4211ad0d1cc3de705bd"
+    },
     "Cloudflare::8265704": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5435,6 +5452,23 @@
       "reason": "Located in Tel Aviv, Israel, which is outside the enabled regions (India, UAE, Europe). The role is also mainly Go backend development of Kubernetes controllers and schedulers rather than infra automation. The 8+ years requirement is within band.",
       "signature": "7709fe90f9fd0e4a6d85629347c2adc9586d39df6b64c0d36ac05622409b9737"
     },
+    "NVIDIA::JR2028818": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong infra-heavy DevOps/platform role (5+ yrs, K8s, Terraform, CI/CD, GitOps) matching the profile, but the location is Raanana, Israel, which is outside the enabled India/UAE/Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "6726d677338fb4fe66102cba58617dfdf0b7668fcf9a859f63c6c023e1bbe25c",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.931040+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Strong infra-heavy DevOps/platform role (5+ yrs, K8s, Terraform, CI/CD, GitOps) matching the profile, but the location is Raanana, Israel, which is outside the enabled India/UAE/Europe regions.",
+      "signature": "83bdff33c7710c97be17c03159b8b40bc7d2cd933380387d1efcf4d395f01b89"
+    },
     "NVIDIA::JR2028822": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5452,6 +5486,23 @@
       "reason": "Developer-experience CI/infra role at NVIDIA Run:ai is relevant (5+ years fits the band), but it is located in Tel Aviv, Israel, which is outside the enabled India, UAE and Europe regions.",
       "signature": "4b9f1e5b606f264d4c929c23a3f2b43bef1130a5793db0dbd30ce2d0c6bcab32"
     },
+    "NVIDIA::JR2029062": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Role is in Yokneam/Tel Aviv, Israel, which is outside the enabled India, UAE and Europe locations, and it requires Hebrew. It is also a firmware regression/CI management role rather than core cloud or Kubernetes platform work. The 5+ years overall requirement is within band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "97308d4580b2f959ca00188ab4882cf944bb1c46e3a9caae51a6db13a50f5f0f",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.931059+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is in Yokneam/Tel Aviv, Israel, which is outside the enabled India, UAE and Europe locations, and it requires Hebrew. It is also a firmware regression/CI management role rather than core cloud or Kubernetes platform work. The 5+ years overall requirement is within band.",
+      "signature": "f974962e5f505f424e0fcb21e12df5b9a754444fc47ab051186943c6b95bd4a6"
+    },
     "NVIDIA::JR2029097": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5468,6 +5519,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Strong SRE/Kubernetes infrastructure role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is not among the enabled India/UAE/Europe locations. No remote option is stated.",
       "signature": "4b58cb00ede5ceeb330a25edff3e81f95840c62d09fdd02112ad9af06c3a0a08"
+    },
+    "NVIDIA::JR2029244": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Relevant DevOps/infra automation role (internal on-prem cloud, CI infra, Kubernetes, IaC) with 5+ years required, within band. However, it is explicitly located in Yokneam, Israel, which falls outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "05e9db74ba7b342f82a24b72e6cd9793b7673bab3a2e3b52bf6481fa2c807374",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.931079+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Relevant DevOps/infra automation role (internal on-prem cloud, CI infra, Kubernetes, IaC) with 5+ years required, within band. However, it is explicitly located in Yokneam, Israel, which falls outside the enabled India, UAE and Europe regions.",
+      "signature": "3d46ba1898bf2b198d56eaea6af874b73cd11fd13d756127f1878b0540210030"
     },
     "Netskope::8059158": {
       "ai_assessment": {
@@ -6098,6 +6166,23 @@
       "reason": "Customer-facing full-stack FDE role building LLM applications, not infrastructure/Kubernetes deployment. The location is San Francisco hybrid (3 days in office), outside India/UAE/Europe. The 5+ years requirement is within band.",
       "signature": "f1c1e91e21a396e3ee75f2e46fb37d621f8c904320efa2fe23f65bdc898c0138"
     },
+    "OpenAI::9c1aa1f3-b4d0-48fa-814b-37d36ad0ad2e": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Cyber FDE role: customer-facing security engineering, agent building and evals, not infra/K8s platform deployment. It is based in New York (hybrid, 3 days in office), outside India/UAE/Europe. The 5+ years requirement fits the band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "8c26d0d177bea1493ed6dd4e07f53f6c31e80ff84c84ed8488fcc504b6ef943a",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.930983+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Cyber FDE role: customer-facing security engineering, agent building and evals, not infra/K8s platform deployment. It is based in New York (hybrid, 3 days in office), outside India/UAE/Europe. The 5+ years requirement fits the band.",
+      "signature": "282dc7c53360b87e90f98110bd830b8c25c6f1002f0a34344bbcca5aab6412bb"
+    },
     "OpenAI::9d48e2e6-41a9-4a90-8b3b-6cc960e95c2f": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6148,6 +6233,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Healthcare FDE building AI applications, evaluations and EHR integrations, not infrastructure, Kubernetes or platform deployment. Based in Seattle (hybrid, 3 days in office), which is outside the enabled India, UAE and Europe regions. The 6+ years requirement is within band.",
       "signature": "efe59a4aa84660c182e6b12235ff27e06c5b3c6e8eabe99858c7fc069dd630dc"
+    },
+    "OpenAI::a84e6109-142f-45ae-80e1-05811732cca1": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing cyber/security FDE role (security agents, detection, customer engagement), not infra-focused platform work; based in San Francisco hybrid with relocation, outside enabled India/UAE/Europe regions. 5+ yrs is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "faa9cd5a0aca24ff0a0de7cb5a28c1263ba89ba5997e98ad9715801efbddc000",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.931015+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing cyber/security FDE role (security agents, detection, customer engagement), not infra-focused platform work; based in San Francisco hybrid with relocation, outside enabled India/UAE/Europe regions. 5+ yrs is within band.",
+      "signature": "755b65bfd7121cb6a33687154c2919986703a1afaf62b813a272152802a26c5a"
     },
     "OpenAI::ac43a452-1f50-42a2-816e-f920fdb51823": {
       "ai_assessment": {
@@ -6233,6 +6335,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Hardware supply chain program management role (material planning, suppliers, NPI). No infrastructure automation work; 'AI Infrastructure' in the title is incidental. 8+ years is within band. Location is San Francisco (Remote), with no evidence the remote option covers India, UAE or Europe.",
       "signature": "43a9934368dc92f66988a7c87b113d4436ea731648400c6acd4b679a9d51b970"
+    },
+    "OpenAI::c90cfa58-7513-4998-a1ce-f6168dd8fc95": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Customer-facing forward deployed role focused on full-stack and AI application delivery for financial services, plus pre-sales and GTM work, not infrastructure or Kubernetes. Based in New York (hybrid, 3 days in office), outside the enabled India/UAE/Europe locations despite the 'Remote' tag. 5+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "4a8b4cb5a093397629fc3808258f9983005806ea8da8d737592eea81aabd727d",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.930946+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing forward deployed role focused on full-stack and AI application delivery for financial services, plus pre-sales and GTM work, not infrastructure or Kubernetes. Based in New York (hybrid, 3 days in office), outside the enabled India/UAE/Europe locations despite the 'Remote' tag. 5+ years requirement is within band.",
+      "signature": "a58a2340225d6e7b27bfebe1b16340c8d67d266df2744ef5228b0feefb2d2d08"
     },
     "OpenAI::cf83e70e-6949-480f-ad97-df0f22cd0283": {
       "ai_assessment": {
@@ -7433,6 +7552,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Location is US-only (San Francisco, Atlanta, Seattle), outside the India, UAE and Europe regions. The role is a staff agentic AI software engineering platform, mixed with infrastructure automation. The 10+ years minimum is within the 11-year max.",
       "signature": "d3edfaa30be807a153697032221421c74a86e5b727c108b2eaece37698a38a41"
+    },
+    "Salesforce::JR367438": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "A Sales-category forward deployed role focused on building agentic AI solutions, full-stack development, data pipelines and customer delivery, not infrastructure or Kubernetes. Stockholm, Sweden is not among the configured Europe locations. The 3+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-06T07:15:41+00:00",
+      "jd_hash": "ad92d192044786af8deef522349e094aae5a6dcf7ba5e873ad71c1d3d6783f4d",
+      "mode": "ai",
+      "next_review_at": "2026-11-13T07:15:41.931098+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "A Sales-category forward deployed role focused on building agentic AI solutions, full-stack development, data pipelines and customer delivery, not infrastructure or Kubernetes. Stockholm, Sweden is not among the configured Europe locations. The 3+ years requirement is within band.",
+      "signature": "214bcb11d9b55a158b05270d04c617d34f83b3bc8934064d0a01ccdaae50ac45"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
@@ -8890,6 +9026,7 @@
     "J.P. Morgan::210801783": "2026-10-22T13:43:44+00:00",
     "J.P. Morgan::210801797": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
+    "J.P. Morgan::210802924": "2026-11-06T07:15:46+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210804319": "2026-11-04T06:50:58+00:00",
     "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
@@ -9354,6 +9491,7 @@
     "Wells Fargo::R-564802": "2026-10-30T07:22:23+00:00",
     "Wells Fargo::R-572230": "2026-11-04T06:50:58+00:00",
     "Wells Fargo::R-583777": "2026-10-30T07:22:23+00:00",
+    "Wells Fargo::R-585857": "2026-11-06T07:15:46+00:00",
     "Zeta::5594986004": "2026-07-06T14:03:13+00:00",
     "Zeta::5eb7a75b-312c-4759-8813-70e67b5d4109": "2026-09-15T11:30:01+00:00",
     "Zeta::6010293004": "2026-07-06T14:03:13+00:00",
