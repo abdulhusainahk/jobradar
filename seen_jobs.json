@@ -4041,6 +4041,23 @@
       "reason": "Embedded Linux kernel/Yocto/BSP C/C++ systems programming role, not infrastructure automation; hybrid in San Juan, Puerto Rico, outside enabled regions; no overall years stated.",
       "signature": "39e647941c3543d0d925110d050849a1fd4d1b1b4aff73afa460b40be5a20083"
     },
+    "HPE::1214372": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is HPC hardware/OS systems validation and test engineering (Linux certification, firmware, server testing), not DevOps/SRE/platform infrastructure automation. It sits in Bengaluru, and the stated minimum of 6 years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-07T13:29:12+00:00",
+      "jd_hash": "5d2cb9483cd9a9577f8cdb5edf404a92bd58b52919e97dea30c025583b9ea019",
+      "mode": "ai",
+      "next_review_at": "2026-11-14T13:29:12.221584+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is HPC hardware/OS systems validation and test engineering (Linux certification, firmware, server testing), not DevOps/SRE/platform infrastructure automation. It sits in Bengaluru, and the stated minimum of 6 years is within band.",
+      "signature": "40b4ab23120410443d7818233f56cc86d2117f9ebe89519529e3314f7b6afa83"
+    },
     "HPE::1214828": {
       "ai_assessment": {
         "ai_decision": "reject",
