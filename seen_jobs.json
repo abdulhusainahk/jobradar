@@ -5360,6 +5360,23 @@
       "reason": "Location is Israel (Raanana/Tel Aviv), which is not among the enabled regions (India, UAE, Europe). The role is also a software-engineering-heavy AIOps position requiring expert Go/C++/Rust for distributed systems, with some K8s and model-serving infrastructure. The 8+ years overall requirement is within the 11-year band.",
       "signature": "838105a2ef783cd2dbf8d4ab715a4f9e853854468e7704efa814fe0a9ca1dc1b"
     },
+    "NVIDIA::JR2025436": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Located in Yokneam, Israel, which is outside the enabled regions (India, UAE, Europe). The role is also mainly Python/C# tooling and CI/CD for semiconductor test automation, so it is weak on cloud and Kubernetes. Its 3+ years requirement is within band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 20
+      },
+      "at": "2026-11-08T10:50:57+00:00",
+      "jd_hash": "15e46fb8b485b2ad6795bf37a629921fa48684a117da5059000fc660cc5027c6",
+      "mode": "ai",
+      "next_review_at": "2026-11-15T10:50:57.172678+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Located in Yokneam, Israel, which is outside the enabled regions (India, UAE, Europe). The role is also mainly Python/C# tooling and CI/CD for semiconductor test automation, so it is weak on cloud and Kubernetes. Its 3+ years requirement is within band.",
+      "signature": "c9c9c1a89aa4170a54a72b9481667ec3cfa63f6d94b5d295d13d9d5e184972e8"
+    },
     "NVIDIA::JR2025844": {
       "ai_assessment": {
         "ai_decision": "reject",
