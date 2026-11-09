@@ -631,6 +631,23 @@
       "reason": "Community/partnerships manager role (events, outreach, marketing) with no infrastructure automation duties; located in São Paulo, Brazil, outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
       "signature": "49978014336fe14968a53f638f0babd1565aa5978779b0ea1af3ce19423cf38b"
     },
+    "Amazon::10599458": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a strong SRE/infrastructure fit: DNS reliability, automation and CI/CD. The 5+ years asked is within band. However, it is based in Sydney, Australia, and requires Australian citizenship plus security clearance. That is outside the enabled regions (India, UAE, Europe).",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-09T06:57:20+00:00",
+      "jd_hash": "20a1c4610a0fb42d09f338cbcbb72b0b7503ef2daabf576f9a4ac7980d7cb959",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T06:57:20.574189+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is a strong SRE/infrastructure fit: DNS reliability, automation and CI/CD. The 5+ years asked is within band. However, it is based in Sydney, Australia, and requires Australian citizenship plus security clearance. That is outside the enabled regions (India, UAE, Europe).",
+      "signature": "3a65677cca5f6be5575a61c726beaf0593ff39774ae241023d0700aa0b48abdd"
+    },
     "Amazon::3199256": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5224,6 +5241,23 @@
       "reason": "Forward deployed role focused on software engineering, app refactoring and AI feature development rather than infrastructure or platform work. The role is US-only (remote within the U.S. or North America offices), so it falls outside the enabled India, UAE and Europe regions. The 8+ years required is within the band.",
       "signature": "123fed5148dd7c6c7d3a5045325606123a0e37c2a78eca896f22e628e8269215"
     },
+    "Morgan Stanley::549801185670": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is in Hong Kong, which is outside the enabled regions. It requires 15+ years against a max of 11. It is a senior ITIL production-management and people-leadership role, not hands-on infrastructure automation.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-09T06:57:20+00:00",
+      "jd_hash": "41b39b644b96424ddc4a6d1806aa2bbec52f359a0fdd702716b7a2343a9e4723",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T06:57:20.574312+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is in Hong Kong, which is outside the enabled regions. It requires 15+ years against a max of 11. It is a senior ITIL production-management and people-leadership role, not hands-on infrastructure automation.",
+      "signature": "e7ac5109a8711fad234a1b9e326042893206648d84927b9dcfe381afe56c51d4"
+    },
     "N26::8268322": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6005,6 +6039,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Engineering manager role for customer-facing forward deployed engineers doing full-stack JS/Python delivery, not infrastructure or platform work. The role is based in New York City (hybrid, 3 days in office), which is outside India, the UAE and Europe. 10+ years is within the 11-year max.",
       "signature": "70a8e090b51c3e41a1af628120eb26ba85395127e4fdab7898fe6b885e0c5e1b"
+    },
+    "OpenAI::5d5b2256-ee0f-4ba6-a983-d62d0d70515d": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed engineering manager role focused on customer delivery and full-stack JS/Python code, not infrastructure/Kubernetes/platform deployment. Requires 8+ years (within band). Munich is allowed.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-09T06:57:20+00:00",
+      "jd_hash": "6b69d73eabc1b638501ffc3ad9c9930df223bbe08ddc098813994f4a673c8edf",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T06:57:20.574069+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed engineering manager role focused on customer delivery and full-stack JS/Python code, not infrastructure/Kubernetes/platform deployment. Requires 8+ years (within band). Munich is allowed.",
+      "signature": "0e4b2050806e4928633fe9af51f4d50a9b2e4a6321536392141f835c8ed1a1d8"
     },
     "OpenAI::5df9e349-f8e1-4cfd-ba20-ec9e4115d564": {
       "ai_assessment": {
@@ -9115,6 +9166,7 @@
     "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
     "J.P. Morgan::210805379": "2026-11-03T17:35:15+00:00",
     "J.P. Morgan::210805749": "2026-11-03T07:15:52+00:00",
+    "J.P. Morgan::210807403": "2026-11-09T06:57:23+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
     "Mastercard::R-273348": "2026-07-08T20:03:56+00:00",
