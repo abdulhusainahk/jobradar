@@ -70,6 +70,23 @@
       "reason": "Forward deployed role centred on marketing analytics and AI tooling (Python/SQL, consumer insights), not infrastructure. The candidate's preferences exclude forward deployed roles of this kind. Locations are San Jose, Seattle and San Francisco, with US pay ranges, which are outside India, UAE and Europe. The 5+ years requirement is within band.",
       "signature": "2c0864c9831a803a8a6e4e07c6a43cb508bc97ba14dbfc88282733794025db02"
     },
+    "Adobe::R173423": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The SRE/DevEx engineering manager role is infrastructure-relevant, but it is located in Yerevan, Armenia. Armenia is outside the enabled India, UAE and Europe locations. It also requires Armenian proficiency and people management. No overall years of experience are stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "acaf65121a742730595d56dc42103238f0a6f81ad58c85de9d451f749d1ee528",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T20:22:46.619450+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The SRE/DevEx engineering manager role is infrastructure-relevant, but it is located in Yerevan, Armenia. Armenia is outside the enabled India, UAE and Europe locations. It also requires Armenian proficiency and people management. No overall years of experience are stated.",
+      "signature": "126c5b16ea19dca427f061e42cc3b31f6f6a90296d1d9a6b1873ace609b918d7"
+    },
     "Adyen::8227085": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1163,16 +1180,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the infrastructure title and generic boilerplate, the actual role is in Barclays' Salesforce COE: user support, CRM adoption, MS Office work, and a Salesforce Administrator certification. It is not DevOps/SRE infrastructure automation. Gurgaon is an allowed location, and no overall years of experience are stated.",
+        "ai_note": "Despite the Infrastructure Engineer title and generic infra boilerplate, the actual role is in the Salesforce COE: user support, CRM adoption and MS Office, and it requires Salesforce Administrator certification. There is no real infrastructure automation work. The Gurugram location is allowed, and overall years of experience are not stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 10
       },
-      "at": "2026-11-02T11:35:42+00:00",
+      "at": "2026-11-09T20:22:46+00:00",
       "jd_hash": "021cd1d780a21e89ff58dd8cefdebd961c26d2266bd80fe22f0bf422f9bf08c8",
       "mode": "ai",
-      "next_review_at": "2026-11-09T11:35:42.983059+00:00",
+      "next_review_at": "2026-11-16T20:22:46.619581+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the infrastructure title and generic boilerplate, the actual role is in Barclays' Salesforce COE: user support, CRM adoption, MS Office work, and a Salesforce Administrator certification. It is not DevOps/SRE infrastructure automation. Gurgaon is an allowed location, and no overall years of experience are stated.",
+      "reason": "Despite the Infrastructure Engineer title and generic infra boilerplate, the actual role is in the Salesforce COE: user support, CRM adoption and MS Office, and it requires Salesforce Administrator certification. There is no real infrastructure automation work. The Gurugram location is allowed, and overall years of experience are not stated.",
       "signature": "a9dba30acbc2e4010fe5a8fec024426fecb050888d68903cd5a94a88f3f61ce7"
     },
     "Barclays::JR-0000112608": {
@@ -1345,6 +1362,23 @@
       "reason": "Strong infrastructure-heavy AI platform role (multi-cloud IaC, MLOps, 5+ yrs fits), but the JD explicitly places it in New York, NY with 4 days/week in office. That is outside the enabled India/UAE/Europe regions.",
       "signature": "b37d6907fb9caad6aa8a1cab534ea19ecb0419b30cc349d6b1524cb00ec1395c"
     },
+    "BlackRock::R266486": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "New York, NY role (4 days in office) is outside India/UAE/Europe. The work is also AI application/platform software engineering (LLMs, RAG, Java/Python services, team leadership) rather than infrastructure automation. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "46338d3fb156a09adf1600245b0b3bca913a8a77bcd9ffb9d71049ecbf575d0b",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T20:22:46.619598+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "New York, NY role (4 days in office) is outside India/UAE/Europe. The work is also AI application/platform software engineering (LLMs, RAG, Java/Python services, team leadership) rather than infrastructure automation. No overall experience requirement is stated.",
+      "signature": "588e9af3bb1b83ae47c35ac9ec2ad2ff89465c422861225c043bf454c35efb1d"
+    },
     "BlackRock::R266544": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1464,6 +1498,23 @@
       "reason": "Despite the 'Platform Engineer' title, this is Confluence Cloud SaaS administration and product ownership (permissions, Marketplace apps, SSO, migration validation). It involves no infrastructure automation, Kubernetes or IaC. The 5+ years requirement is within band, and Bengaluru is an allowed location.",
       "signature": "a3b38eede60397e39c9449b749be3ba25b0da608b786654ed6334129822851ee"
     },
+    "Celonis::8198943003": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Forward Deployed' title, this is a customer-facing value/sales engineering role (business cases, workshops, process consulting) with no infrastructure automation. It also requires native German. Munich is an allowed location, and no overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "e2b2cf0388f549fb2f9dc0a74c115fc790c3c57c328be40842d38d5e7beabf47",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T20:22:46.619475+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Forward Deployed' title, this is a customer-facing value/sales engineering role (business cases, workshops, process consulting) with no infrastructure automation. It also requires native German. Munich is an allowed location, and no overall years of experience are stated.",
+      "signature": "6180d03c422da7fd66da3fc99d5c5d67d015d266a8004de45828b3e2798aca93"
+    },
     "Citi::859038232403": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1537,16 +1588,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Pune is an allowed location and the 8-10 years required is within band, but this is a data engineering and applications development role (Hadoop, PySpark, Snowflake, Kafka pipelines), not infrastructure automation, DevOps or SRE.",
+        "ai_note": "Pune is an allowed location, and the 8-10 years required is within band. However, this is a data engineering and applications development role (Hadoop, PySpark, Databricks, Snowflake data pipelines), not DevOps, SRE or platform infrastructure automation.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-02T11:35:42+00:00",
+      "at": "2026-11-09T20:22:46+00:00",
       "jd_hash": "6d19326be1e53326f864dff60e282539cfa61f4183f9673f99072f2f5b3c4d52",
       "mode": "ai",
-      "next_review_at": "2026-11-09T11:35:42.982975+00:00",
+      "next_review_at": "2026-11-16T20:22:46.619495+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Pune is an allowed location and the 8-10 years required is within band, but this is a data engineering and applications development role (Hadoop, PySpark, Snowflake, Kafka pipelines), not infrastructure automation, DevOps or SRE.",
+      "reason": "Pune is an allowed location, and the 8-10 years required is within band. However, this is a data engineering and applications development role (Hadoop, PySpark, Databricks, Snowflake data pipelines), not DevOps, SRE or platform infrastructure automation.",
       "signature": "bc3ce8f161352d778c99fa323666a000b06597659542903532134df7181c5092"
     },
     "ClickHouse::86f88674-eb78-4abc-93f4-c8be453d15ae": {
@@ -1859,17 +1910,17 @@
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
-        "ai_location_fit": "outside",
-        "ai_note": "Backend software engineering role (Go/Rust/TypeScript feature development for WARP Zero Trust), not infrastructure automation; Kubernetes is incidental. Location is Lisbon, Portugal, which is not in the enabled Europe list. The 3+ years requirement is within band.",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a backend software engineering role building WARP/Zero Trust product features in Go/Rust/TypeScript with REST APIs, not infrastructure automation. London is an allowed location, and 3+ years of experience is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 25
       },
-      "at": "2026-11-02T11:35:42+00:00",
-      "jd_hash": "909132abbff804f0de943e8d66652c2aa4e0342d5d8c792ea88c6488960d2d0f",
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "2c495965bdbed1f6acd886e9a0b9e97e3e53fb605b6f6790c35c5b0444e29477",
       "mode": "ai",
-      "next_review_at": "2026-11-09T11:35:42.982765+00:00",
+      "next_review_at": "2026-11-16T20:22:46.619324+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Backend software engineering role (Go/Rust/TypeScript feature development for WARP Zero Trust), not infrastructure automation; Kubernetes is incidental. Location is Lisbon, Portugal, which is not in the enabled Europe list. The 3+ years requirement is within band.",
+      "reason": "Despite the 'Systems Engineer' title, this is a backend software engineering role building WARP/Zero Trust product features in Go/Rust/TypeScript with REST APIs, not infrastructure automation. London is an allowed location, and 3+ years of experience is within band.",
       "signature": "5b68a82afe84fd48d02190390feb2c225fcd43e6ea5e4a0bac52e85596974231"
     },
     "Cloudflare::8338018": {
@@ -3633,6 +3684,23 @@
       "reason": "Despite the 'Platform Engineer' title, this is a full-stack Adobe Experience Cloud martech role (AEP, RT-CDP, Launch tagging, JavaScript, QA testing) with no infrastructure automation, cloud or Kubernetes work. Pune, India is an allowed location. No overall experience requirement is stated.",
       "signature": "43622bd05fb571abd29ed506253769ad948249a3a4542109e5331c09333995c7"
     },
+    "Deutsche Bank::R0458277": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Role is in Cary, NC (USA), outside the enabled regions of India, UAE and Europe. It is also largely production support, release coordination and ITIL change management at a bank rather than infrastructure automation. 3 years minimum experience falls within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "9bc6ebca84821da8b98b7d02b4d70881410ed0f11228c00e445f89b323f05853",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T20:22:46.619567+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is in Cary, NC (USA), outside the enabled regions of India, UAE and Europe. It is also largely production support, release coordination and ITIL change management at a bank rather than infrastructure automation. 3 years minimum experience falls within band.",
+      "signature": "a348cba034aa26d3d782bc68f94445af1f9ed1791e06912ce40d7daef14c7c83"
+    },
     "Elastic::8237962": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4726,16 +4794,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the 'Senior Platform Engineer' title, the role is a SQL Server DBA position covering patching, AlwaysOn, SSIS/SSAS and query tuning, not infrastructure automation. Pune is an allowed location. No overall experience requirement is stated.",
+        "ai_note": "Despite the 'Platform Engineer' title, this is a SQL Server DBA role covering patching, AlwaysOn replication, query tuning, SSIS/SSAS and database support, with no infrastructure automation. Pune location is allowed, but no overall experience requirement is stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-02T11:35:42+00:00",
+      "at": "2026-11-09T20:22:46+00:00",
       "jd_hash": "5e54f523a47d172ec6654a76b8cccbe003ef3815a6ef105cf57557e86631f1ff",
       "mode": "ai",
-      "next_review_at": "2026-11-09T11:35:42.983015+00:00",
+      "next_review_at": "2026-11-16T20:22:46.619532+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the 'Senior Platform Engineer' title, the role is a SQL Server DBA position covering patching, AlwaysOn, SSIS/SSAS and query tuning, not infrastructure automation. Pune is an allowed location. No overall experience requirement is stated.",
+      "reason": "Despite the 'Platform Engineer' title, this is a SQL Server DBA role covering patching, AlwaysOn replication, query tuning, SSIS/SSAS and database support, with no infrastructure automation. Pune location is allowed, but no overall experience requirement is stated.",
       "signature": "ca7ee608a72778b00ebbde0f89e90964436e38e167fbdc69fc6be8c8b9593170"
     },
     "Mastercard::R-292697": {
@@ -4856,6 +4924,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "O'Fallon, Missouri (US) with US pay range is outside enabled regions (India/UAE/Europe). Role is also an entry-level, support-heavy SRE I position, a poor fit for a senior candidate. No overall years are stated.",
       "signature": "c46359379cb376cd51540cd892ba4cfdd4946bbe9eb4061d5c250b8ea34eacae"
+    },
+    "Mastercard::R-295497": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward-deployed AI application and change-leadership role (agents, Copilot Studio, coaching), not infrastructure or platform work. US-only locations (NY, VA, GA) are outside the enabled regions. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "afb7c5e9d2e4fd461dd9e6d494ece9625e9886bdb34843102121a00370478740",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T20:22:46.619511+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward-deployed AI application and change-leadership role (agents, Copilot Studio, coaching), not infrastructure or platform work. US-only locations (NY, VA, GA) are outside the enabled regions. No overall years of experience are stated.",
+      "signature": "1f47c41bcab86095b463faa46889bc5bcc2195e10ce2254778154edc64a2f257"
     },
     "Microsoft::1970393556927480": {
       "ai_assessment": {
@@ -5110,16 +5195,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Hardware/manufacturing reliability engineering role (supplier qualification, failure analysis for consumer electronics), not DevOps/SRE. Located in Haiphong, Vietnam, which is outside the enabled regions.",
+        "ai_note": "This is a hardware reliability and quality engineering role (electromechanical, supplier qualification, failure analysis), not DevOps/SRE. It is based in Haiphong, Vietnam, which is outside the enabled regions. The stated minimum of 2-7+ years is within the experience band.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-02T11:35:42+00:00",
+      "at": "2026-11-09T20:22:46+00:00",
       "jd_hash": "86dab942dc08841c2e7b9404ba757e8649454431a2fa36f8c42c05ad6589e8cb",
       "mode": "ai",
-      "next_review_at": "2026-11-09T11:35:42.982874+00:00",
+      "next_review_at": "2026-11-16T20:22:46.619392+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Hardware/manufacturing reliability engineering role (supplier qualification, failure analysis for consumer electronics), not DevOps/SRE. Located in Haiphong, Vietnam, which is outside the enabled regions.",
+      "reason": "This is a hardware reliability and quality engineering role (electromechanical, supplier qualification, failure analysis), not DevOps/SRE. It is based in Haiphong, Vietnam, which is outside the enabled regions. The stated minimum of 2-7+ years is within the experience band.",
       "signature": "c35127c52bed7ca52a52634744a1b6de10718b2466a4b03bc363187d21d210af"
     },
     "MongoDB::7392902": {
@@ -7179,6 +7264,23 @@
       "reason": "Dublin is allowed and 3+ years is within band, but this is a Sales-category, customer-facing AI agent/application delivery role (prompts, Salesforce, data pipelines, Apex/Python) with no infrastructure automation, Kubernetes, IaC or SRE responsibilities. It also requires a second EMEA language.",
       "signature": "1c7cbb384398ab0bd28eeaf341b0bbeb183463bc71562c7b42ee9bcae077a4cf"
     },
+    "Salesforce::JR359344": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Procure-to-pay business systems role (Salesforce/Coupa/Workday requirements, backlog, stakeholder work), not infrastructure automation. The locations are Dallas, Atlanta and Indianapolis in the US, outside the enabled regions. The 6-10 years required is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 3
+      },
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "26d4de7eaa9df807691b56430cbaf53d995a2fe10a82fc6b588cce406223473e",
+      "mode": "ai",
+      "next_review_at": "2026-11-16T20:22:46.619421+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Procure-to-pay business systems role (Salesforce/Coupa/Workday requirements, backlog, stakeholder work), not infrastructure automation. The locations are Dallas, Atlanta and Indianapolis in the US, outside the enabled regions. The 6-10 years required is within band.",
+      "signature": "f2b521c57ef6f05d31d66e8e97af9fbab3ab8e643f6d6e22d1b18c84c1a148f5"
+    },
     "Salesforce::JR360310": {
       "ai_assessment": {},
       "at": "2026-10-30T07:22:07+00:00",
@@ -7806,16 +7908,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Location is Brooklyn Park, MN and Sunnyvale, CA (US), and work cannot be performed outside the country of the primary work location. Role leans toward AI application and SDK development rather than infrastructure automation. The 8+ year requirement is within band.",
+        "ai_note": "Locations are Brooklyn Park, MN and Sunnyvale, CA (US). Remote is offered, but work cannot be done outside the primary work location's country, so it falls outside India/UAE/Europe. The role leans toward AI application and SDK engineering more than infrastructure. Its 8+ year minimum is within the 11-year band.",
         "ai_relevance": "uncertain",
         "ai_score": 15
       },
-      "at": "2026-10-30T22:57:08+00:00",
-      "jd_hash": "1e71a21b651a64887f1a3be3911166715ba2b12fa9943a4a3ab3879c765cdfff",
+      "at": "2026-11-09T20:22:46+00:00",
+      "jd_hash": "baaebc17bcff8e37c4ee5f6ed3601553156e4eef2085e13c4f57b6a4f266476e",
       "mode": "ai",
-      "next_review_at": "2026-11-06T22:57:08.191852+00:00",
+      "next_review_at": "2026-11-16T20:22:46.619548+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Location is Brooklyn Park, MN and Sunnyvale, CA (US), and work cannot be performed outside the country of the primary work location. Role leans toward AI application and SDK development rather than infrastructure automation. The 8+ year requirement is within band.",
+      "reason": "Locations are Brooklyn Park, MN and Sunnyvale, CA (US). Remote is offered, but work cannot be done outside the primary work location's country, so it falls outside India/UAE/Europe. The role leans toward AI application and SDK engineering more than infrastructure. Its 8+ year minimum is within the 11-year band.",
       "signature": "0f08b76bc5c2e99c2a7a54cbc9a242be0fb956c8002e1e50791effb32a16ddbf"
     },
     "Target::R0000475426": {
@@ -8564,6 +8666,7 @@
     "Barclays::JR-0000136176": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000136179": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000136180": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000138941": "2026-11-09T20:22:58+00:00",
     "BlackRock::R263956": "2026-10-30T22:57:18+00:00",
     "BlackRock::R266803": "2026-10-30T07:22:23+00:00",
     "Careem::8620488002": "2026-09-15T16:39:26+00:00",
@@ -8714,6 +8817,7 @@
     "Databricks::8855360002": "2026-09-29T15:30:38+00:00",
     "Databricks::8876613002": "2026-10-26T06:49:10+00:00",
     "Databricks::8884751002": "2026-10-17T13:50:59+00:00",
+    "Datadog::8364908": "2026-11-09T20:22:58+00:00",
     "Deliveroo::8334486": "2026-10-30T07:22:23+00:00",
     "Deliveroo::8355927": "2026-11-06T17:25:54+00:00",
     "Deutsche Bank::R0361102": "2026-10-30T22:57:18+00:00",
@@ -9478,6 +9582,7 @@
     "Okta::8263918": "2026-10-13T08:51:08+00:00",
     "Okta::8268917": "2026-10-13T01:45:09+00:00",
     "Okta::8323977": "2026-10-29T14:47:57+00:00",
+    "Okta::8353207": "2026-11-09T20:22:58+00:00",
     "OpenAI::05223b5a-5ff1-4fe7-9f97-4ef7fc68b8ef": "2026-10-30T07:22:23+00:00",
     "OpenAI::29c2c171-fb63-4985-9ac5-229b2ff5ced6": "2026-10-30T07:22:23+00:00",
     "OpenAI::329fe50f-7701-4f07-982d-a4e10cbec236": "2026-10-30T16:38:20+00:00",
