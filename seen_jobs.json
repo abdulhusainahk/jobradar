@@ -1775,16 +1775,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "uncertain",
-        "ai_note": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management, not infrastructure automation, DevOps or SRE work. IaC appears only as a bonus skill. The 5+ years requirement fits the experience band. Location is only 'Hybrid' with no country given.",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications (architecture, specs, code reviews). IaC is only a bonus skill, with no infrastructure automation, Kubernetes or SRE ownership. The 5+ years requirement fits the candidate. The location is just 'Hybrid' with no city, so it is unknown.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-02T22:13:00+00:00",
+      "at": "2026-11-10T04:05:26+00:00",
       "jd_hash": "b082590724ddd21b70edde5d9121548a03fcf77097e819d0f78f6333712de7b1",
       "mode": "ai",
-      "next_review_at": "2026-11-09T22:13:00.810475+00:00",
+      "next_review_at": "2026-11-17T04:05:26.278555+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management, not infrastructure automation, DevOps or SRE work. IaC appears only as a bonus skill. The 5+ years requirement fits the experience band. Location is only 'Hybrid' with no country given.",
+      "reason": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications (architecture, specs, code reviews). IaC is only a bonus skill, with no infrastructure automation, Kubernetes or SRE ownership. The 5+ years requirement fits the candidate. The location is just 'Hybrid' with no city, so it is unknown.",
       "signature": "3d926c13fa612335d897fdf7883721af593374ae2f4c5b1a3332fbf53563a17a"
     },
     "Cloudflare::8263016": {
@@ -3305,16 +3305,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Non-technical forward deployment strategist role (PRDs, C-suite scoping, project management), not infrastructure work. It also requires native-level Korean, and the role is based in Seoul, outside the enabled regions.",
+        "ai_note": "Non-technical deployment strategist/product-management role (PRDs, C-suite scoping, delivery), not infrastructure automation. Based in Seoul, outside enabled regions, and requires native Korean.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-02T22:13:00+00:00",
+      "at": "2026-11-10T04:05:26+00:00",
       "jd_hash": "fe0c75a3bbb52e2025d24b35bbaae4e0282c4c9077c519b8e441f35c60ba040c",
       "mode": "ai",
-      "next_review_at": "2026-11-09T22:13:00.810540+00:00",
+      "next_review_at": "2026-11-17T04:05:26.278681+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Non-technical forward deployment strategist role (PRDs, C-suite scoping, project management), not infrastructure work. It also requires native-level Korean, and the role is based in Seoul, outside the enabled regions.",
+      "reason": "Non-technical deployment strategist/product-management role (PRDs, C-suite scoping, delivery), not infrastructure automation. Based in Seoul, outside enabled regions, and requires native Korean.",
       "signature": "919f1767900b8a834b9a6be3a8deb2ac01c7440f5e4d2ddba3353972b377f7b3"
     },
     "Databricks::8927179002": {
@@ -6997,16 +6997,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Sales-category forward deployed role focused on agentic AI apps, prompts, data pipelines and full-stack delivery, not infrastructure/Kubernetes. Locations are all US-only, outside India/UAE/Europe. 3+ (6-10 senior) years is within band.",
+        "ai_note": "Customer-facing agentic AI/full-stack and data pipeline Forward Deployed role in the Sales category, not infrastructure or Kubernetes platform work. All listed locations are in the US, outside the India, UAE and Europe regions. Stated experience of 3+ years (6-10 for Senior) is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-02T22:13:00+00:00",
+      "at": "2026-11-10T04:05:26+00:00",
       "jd_hash": "6c3a062813bca5afa9a5f25e3f3b2c3b5bf539c3c8dd0bfedcf56c596efacd10",
       "mode": "ai",
-      "next_review_at": "2026-11-09T22:13:00.810622+00:00",
+      "next_review_at": "2026-11-17T04:05:26.278831+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Sales-category forward deployed role focused on agentic AI apps, prompts, data pipelines and full-stack delivery, not infrastructure/Kubernetes. Locations are all US-only, outside India/UAE/Europe. 3+ (6-10 senior) years is within band.",
+      "reason": "Customer-facing agentic AI/full-stack and data pipeline Forward Deployed role in the Sales category, not infrastructure or Kubernetes platform work. All listed locations are in the US, outside the India, UAE and Europe regions. Stated experience of 3+ years (6-10 for Senior) is within band.",
       "signature": "80ac7f166e2ee8ac94d410af44a08e7a6348e4448455c42a8f73198e38a7c61b"
     },
     "Salesforce::JR350080": {
@@ -7563,6 +7563,23 @@
       "reason": "The role is a Salesforce Life Sciences product and process-automation consultant (PRDs, backlogs, low-code blueprints) with no infrastructure automation work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions.",
       "signature": "792389d5a82fb4f788ed964dea3747cb357c34a07aea3c33a8ac6bfee96dad22"
     },
+    "Salesforce::JR364969": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "DNS/cloud infrastructure automation role (IaC, Kubernetes, on-call) fits well and 5+ years is within band, but the posting is located only in Bellevue, WA and San Francisco, CA (US), outside the enabled regions.",
+        "ai_relevance": "relevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-10T04:05:26+00:00",
+      "jd_hash": "0082ecec8c104d9fca9d7393e358718af3692838df9ad000c11f1b9aa857a14c",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T04:05:26.278790+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "DNS/cloud infrastructure automation role (IaC, Kubernetes, on-call) fits well and 5+ years is within band, but the posting is located only in Bellevue, WA and San Francisco, CA (US), outside the enabled regions.",
+      "signature": "141cb473357bf613b75ad6b90158d63ab36e1be5dea6f51b3df9550d590973c0"
+    },
     "Salesforce::JR365133": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7619,16 +7636,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "SRE role with real automation and AWS work, but it is onsite in Herndon, VA, USA, which is outside the enabled regions. It also requires US citizenship and an active TS/SCI with Polygraph clearance.",
+        "ai_note": "SRE role with real incident response and automation work, but it is onsite in Herndon, VA (USA), outside the enabled India/UAE/Europe regions. It also requires US citizenship and an active TS/SCI with Polygraph clearance. No overall years of experience are stated.",
         "ai_relevance": "relevant",
         "ai_score": 10
       },
-      "at": "2026-11-02T22:13:00+00:00",
+      "at": "2026-11-10T04:05:26+00:00",
       "jd_hash": "73318d8e6d838d6ace1f7febf69bbb95cefa6c668f727f8c2cc2bfd333b21c11",
       "mode": "ai",
-      "next_review_at": "2026-11-09T22:13:00.810568+00:00",
+      "next_review_at": "2026-11-17T04:05:26.278745+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "SRE role with real automation and AWS work, but it is onsite in Herndon, VA, USA, which is outside the enabled regions. It also requires US citizenship and an active TS/SCI with Polygraph clearance.",
+      "reason": "SRE role with real incident response and automation work, but it is onsite in Herndon, VA (USA), outside the enabled India/UAE/Europe regions. It also requires US citizenship and an active TS/SCI with Polygraph clearance. No overall years of experience are stated.",
       "signature": "2000d3e5c7ddb5eb2699144d215fd1169de515d5a55b85562146787a394d8963"
     },
     "Salesforce::JR365759": {
