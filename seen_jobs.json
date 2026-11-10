@@ -1515,6 +1515,23 @@
       "reason": "Despite the 'Forward Deployed' title, this is a customer-facing value/sales engineering role (business cases, workshops, process consulting) with no infrastructure automation. It also requires native German. Munich is an allowed location, and no overall years of experience are stated.",
       "signature": "6180d03c422da7fd66da3fc99d5c5d67d015d266a8004de45828b3e2798aca93"
     },
+    "Celonis::8200166003": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward Deployed title, but the role is actually a Value Engineer doing sales/consulting work: business cases, workshops and process improvement, with no infrastructure work. It is based in Paris, France, which is not among the enabled locations.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "75df9bb476835980bb7d99bc043a73753874424bf965d54520d2b46b5056821c",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374669+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward Deployed title, but the role is actually a Value Engineer doing sales/consulting work: business cases, workshops and process improvement, with no infrastructure work. It is based in Paris, France, which is not among the enabled locations.",
+      "signature": "a37c4a9d41b5870af7639fc28b659c5145a75fc49978078a488a8033a7e3eaa9"
+    },
     "Citi::859038232403": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -3531,6 +3548,23 @@
       "reason": "SAP BW/HANA application production support role (BW4HANA, ABAP, run books), not infrastructure automation. Located in Bucharest, Romania, which is outside the enabled locations. No overall years of experience are stated.",
       "signature": "5e09d4cbd93659f37228ad07d3e0ccdfc2c5e16286340cfe7a9d0c6ef5b6059d"
     },
+    "Deutsche Bank::R0425743": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Primarily a Java software developer role (design, develop, unit test applications) with GCP data services; CI/Terraform/Kubernetes are secondary. 8+ years GCP is within the 11-year max; Pune, India is allowed.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "6a316899c7bfb417d0d6764d52639f7e4a875cec4372c4d980b2605a81139b35",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374817+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Primarily a Java software developer role (design, develop, unit test applications) with GCP data services; CI/Terraform/Kubernetes are secondary. 8+ years GCP is within the 11-year max; Pune, India is allowed.",
+      "signature": "9c9bd8a0559eea0769742535a171448fc3511c184a5646496739d69754f8712b"
+    },
     "Deutsche Bank::R0440448": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4720,6 +4754,57 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Primarily a Java/React full-stack backend developer role building microservices and Databricks apps. DevOps, Kubernetes and MLOps appear only as secondary qualifications, not core infrastructure automation. Mumbai location and the 3+ years requirement both fit.",
       "signature": "fffbce925c580d06069eacc21aff0b74b4a9b146bc7290c5c081ea923756ad0d"
+    },
+    "J.P. Morgan::210806437": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the DevOps title, the role is primarily full-stack application development (Java, React, Spring Boot, production code). DevOps, Kubernetes and cloud are incidental, with no real infrastructure automation ownership. Mumbai is a preferred location, and the 3+ year requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "9005e17db610e3bc54d18bfc88e4a2b906aa252fe1739395d4a599821eff1ba2",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374726+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the DevOps title, the role is primarily full-stack application development (Java, React, Spring Boot, production code). DevOps, Kubernetes and cloud are incidental, with no real infrastructure automation ownership. Mumbai is a preferred location, and the 3+ year requirement is within band.",
+      "signature": "1e9e4926576b3428a6048bbc4ba12e468bfbccbfb80813edacd19f73d7a1e98c"
+    },
+    "J.P. Morgan::210807771": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Storage SRE support role centered on enterprise NAS (NetApp, Isilon, Pure, VAST) and 24/7 incident ops, and working knowledge of these products is mandatory. The candidate's skills are cloud/Kubernetes/IaC automation, so this is a clear mismatch with the preference for automation over support. Bengaluru location is allowed and 3+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "9f819989e159f1e3d02af8fa109edcdb41fbb74be5d217cfb02bf825343efb05",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374753+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Storage SRE support role centered on enterprise NAS (NetApp, Isilon, Pure, VAST) and 24/7 incident ops, and working knowledge of these products is mandatory. The candidate's skills are cloud/Kubernetes/IaC automation, so this is a clear mismatch with the preference for automation over support. Bengaluru location is allowed and 3+ years is within band.",
+      "signature": "6c7b7378342c58e6c21719617d157d6d7a86bc9720bce8bf61fca7e95e151cab"
+    },
+    "J.P. Morgan::210808222": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Windows/Citrix VDI image QA testing role with PowerShell, not cloud/Kubernetes infrastructure automation; located in Shanghai, China, outside enabled regions. Overall experience is not stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "6118f7b2f87bf2270ca11fdacd1c532f6b7b1f2ea1a789bf63767a69a88a0f20",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374787+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Windows/Citrix VDI image QA testing role with PowerShell, not cloud/Kubernetes infrastructure automation; located in Shanghai, China, outside enabled regions. Overall experience is not stated.",
+      "signature": "34173f3e3674e7421f0fefd9c857fff70ad919808a8bfc6ebab5e1acc2ff1683"
     },
     "Mastercard::R-277889": {
       "ai_assessment": {
@@ -6975,6 +7060,23 @@
       "reason": "Forward deployed role focused on Agentforce/Salesforce app development, data pipelines and customer delivery (Apex, LWC, Italian required), not infrastructure. The 6+ years requirement fits, but the Milan, Italy location is not in the enabled locations.",
       "signature": "0e7c2ada1300f69f6d88525d4a3d4f7d9e65a815721c6207f274ae6abe454175"
     },
+    "Salesforce::JR349012": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role centered on building Agentforce agentic apps, Salesforce Apex/LWC, data pipelines and customer delivery under Sales category; DevOps is only a nice-to-have. Not infrastructure-focused. Dubai allowed; 6+ yrs within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "0f909425c32c32d15445c757e4ef1d35e4523ba31be6a1cde01def847387c356",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374515+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role centered on building Agentforce agentic apps, Salesforce Apex/LWC, data pipelines and customer delivery under Sales category; DevOps is only a nice-to-have. Not infrastructure-focused. Dubai allowed; 6+ yrs within band.",
+      "signature": "b937976dfecfd12ad84dbdc4c7b121f94e8dc5ad9b86ad8b4407859a269ebc69"
+    },
     "Salesforce::JR349383": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -7110,6 +7212,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is a customer-facing Forward Deployed Engineer (FDE) focused on building AI applications, data pipelines, and integrations within enterprise software environments, rather than a DevOps/SRE/Platform engineering role focused on infrastructure automation and reliability. Additionally, the job locations are restricted to the US while the candidate's regions are India, UAE, and Europe.",
       "signature": "17448129693e72d44335494b42e547492c2d28f9bb292e488ae46706fff741f7"
+    },
+    "Salesforce::JR352720": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed role focused on agentic AI apps, Slack integrations, full-stack and customer delivery, not infrastructure. The location is New York with US pay ranges, outside the India, UAE and Europe regions. Experience of 3+ years (6-10 for senior) fits the band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "cc24a99598566479c8c12b8c22b1461eb44a13782abedb0343f1ef1143c30c3a",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374621+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role focused on agentic AI apps, Slack integrations, full-stack and customer delivery, not infrastructure. The location is New York with US pay ranges, outside the India, UAE and Europe regions. Experience of 3+ years (6-10 for senior) fits the band.",
+      "signature": "3b2a74eb497d6a99ea1b74a37088f9a8fd8cc05e958844d5dce1c08dc966e011"
     },
     "Salesforce::JR353330": {
       "ai_assessment": {
@@ -7750,6 +7869,23 @@
       "reason": "Financial ERP service management role (Workday, Vertex, ITSM), not infrastructure automation. It requires 12+ years, above the 11-year max, and the listed locations are US only (Dallas, Atlanta, Indianapolis), none of them enabled regions.",
       "signature": "378bbdbfb13e19b744c13cb1530514c724039c28b960271d3bd58d584ca93e6e"
     },
+    "Salesforce::JR366513": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "A Sales-category forward deployed role building voice AI agents, prompts, data pipelines and customer solutions. It is not infrastructure, Kubernetes or platform deployment work. The 3+ years requirement is within band. Madrid, Spain is not in the configured location list, though the JD mentions an EMEA South team.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "de1ada482a12de9c2f89eac55badd6cc670df3aa8564021688d6573e2c04093a",
+      "mode": "ai",
+      "next_review_at": "2026-11-17T15:23:26.374585+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "A Sales-category forward deployed role building voice AI agents, prompts, data pipelines and customer solutions. It is not infrastructure, Kubernetes or platform deployment work. The 3+ years requirement is within band. Madrid, Spain is not in the configured location list, though the JD mentions an EMEA South team.",
+      "signature": "197d9972ff6d5e25fcab0cf67b97a275cdde2382f70fb6c1a1e99ae6e23e43a4"
+    },
     "Salesforce::JR366779": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -8258,17 +8394,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Product management role (roadmap, backlog, KPIs) for developer frameworks, not hands-on infrastructure automation. Location is Charlotte NC / Irving TX (US), outside the enabled regions, and no visa sponsorship is offered.",
+        "ai_note": "Product owner/product management role for developer frameworks, not hands-on infrastructure automation. Located in Charlotte NC, Irving TX and McLean VA (US, hybrid, no visa sponsorship), which is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-03T17:35:12+00:00",
-      "jd_hash": "201e71f57ec8cd7d94ac7fab5b4203452a6a2ca9d714e424b4ff83263853fb32",
+      "at": "2026-11-10T15:23:26+00:00",
+      "jd_hash": "3bb8126e11e2fd62fe04dda553226d2e99c06ba6ff2546b268fcb0c823df3024",
       "mode": "ai",
-      "next_review_at": "2026-11-10T17:35:12.057109+00:00",
+      "next_review_at": "2026-11-17T15:23:26.374847+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Product management role (roadmap, backlog, KPIs) for developer frameworks, not hands-on infrastructure automation. Location is Charlotte NC / Irving TX (US), outside the enabled regions, and no visa sponsorship is offered.",
-      "signature": "09473ce81c811846b528dc71acf73d6c669c1d9a9a2770a33346890e41029bab"
+      "reason": "Product owner/product management role for developer frameworks, not hands-on infrastructure automation. Located in Charlotte NC, Irving TX and McLean VA (US, hybrid, no visa sponsorship), which is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
+      "signature": "98bdce188e5af68c86d0bd8974b2a979542b06c8aad8f97d1f352a94ead766f2"
     },
     "Wells Fargo::R-573422": {
       "ai_assessment": {
