@@ -138,6 +138,23 @@
       "reason": "Strong Kubernetes platform role, but it is explicitly based in the San Francisco office (3 days/week), requires US work authorization and offers no new visa sponsorship. That is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
       "signature": "0e72ff1197db43e00f09769207f31156843efa72163171930daf1e650631064d"
     },
+    "Adyen::8379238": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role focused on internal business productivity AI automation (Vertex AI agents, Slack/Atlassian integrations, stakeholder solutions engineering), not infrastructure/platform; K8s/GCP incidental. Amsterdam allowed; no years stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-11T17:39:57+00:00",
+      "jd_hash": "848908fadfa156c77946b33410f90b116a91ab6aa46c96fdd1031b6856294ab3",
+      "mode": "ai",
+      "next_review_at": "2026-11-18T17:39:57.523431+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role focused on internal business productivity AI automation (Vertex AI agents, Slack/Atlassian integrations, stakeholder solutions engineering), not infrastructure/platform; K8s/GCP incidental. Amsterdam allowed; no years stated.",
+      "signature": "f737b356a86e664f68daed53502469cb1aa3701990fc74896c97a2221b864a78"
+    },
     "Amazon::10435349": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -511,6 +528,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The location is Melbourne, Australia, which is outside the enabled India, UAE and Europe regions. The role is software and AI application building (RAG pipelines, agentic workflows, React/TypeScript), not infrastructure or platform deployment. The 3+ years required is within band.",
       "signature": "734095a0ad6406393b026c977253d9923dc9a44e3dd505c68245cd46643756c2"
+    },
+    "Amazon::10590740": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE/chaos engineering and infrastructure automation role is relevant, but the explicit location is Tokyo, Japan (team in Meguro), outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-11T17:39:57+00:00",
+      "jd_hash": "0bb8bcc8d5c58a30cb3227eda6fc5885025a2089d1cc379239bc424a83aa324d",
+      "mode": "ai",
+      "next_review_at": "2026-11-18T17:39:57.523359+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "SRE/chaos engineering and infrastructure automation role is relevant, but the explicit location is Tokyo, Japan (team in Meguro), outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
+      "signature": "522216e188d22ad1af07075eb4f3174734b70ede6089881ccaf578de6ecad429"
     },
     "Amazon::10591014": {
       "ai_assessment": {
@@ -1735,6 +1769,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "UK location is allowed, but this is a customer-facing professional services/solutions architect role (TAM/SA background, advisory, sales collaboration) with only incidental Terraform; not infrastructure-focused forward deployed work. Overall years unstated.",
       "signature": "53cf8c84333c9e9cbfff0a737152c594491122af3543a5aa87e4fdf8ccc86b39"
+    },
+    "Cloudflare::8089031": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "Role is a hands-on backend engineering position (Go/TypeScript API gateway, authz, PostgreSQL/Redis) for an internal admin platform. Infra work (Kubernetes, Terraform, CI/CD) is only nice-to-have, so it is not a DevOps/SRE role. The 5+ years requirement is within band. Location is 'Hybrid' with no city or country stated, so location fit is uncertain.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-11T17:39:57+00:00",
+      "jd_hash": "9c10d17e80ee741449d70c639cd5a015a968334c5eb584d4514914276e27f7a8",
+      "mode": "ai",
+      "next_review_at": "2026-11-18T17:39:57.523285+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is a hands-on backend engineering position (Go/TypeScript API gateway, authz, PostgreSQL/Redis) for an internal admin platform. Infra work (Kubernetes, Terraform, CI/CD) is only nice-to-have, so it is not a DevOps/SRE role. The 5+ years requirement is within band. Location is 'Hybrid' with no city or country stated, so location fit is uncertain.",
+      "signature": "5554881dda581c6f2766b132fbdd3c184a9bbe57b9dcd1dd0e33a3760379ee39"
     },
     "Cloudflare::8184169": {
       "ai_assessment": {
@@ -5151,16 +5202,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the AI/ML Infrastructure title, the role is product software engineering: coding ML training and post-training features in C#/Java/Python with data scientists. Infra automation is incidental. The 4+ years requirement is within band, and Bangalore is an allowed location.",
+        "ai_note": "Bangalore fits and 4+ years is within band, but this is a software engineering role (C#/Java/Python feature code, ML training pipelines, recipes, evaluations) on an AI platform. Infrastructure automation is incidental, not the core of the role.",
         "ai_relevance": "irrelevant",
         "ai_score": 30
       },
-      "at": "2026-11-04T06:50:53+00:00",
+      "at": "2026-11-11T17:39:57+00:00",
       "jd_hash": "e0041ad834425429937748890846d75308c7c7604ee2e464fc8b3d5277c0b16b",
       "mode": "ai",
-      "next_review_at": "2026-11-11T06:50:53.696641+00:00",
+      "next_review_at": "2026-11-18T17:39:57.523393+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the AI/ML Infrastructure title, the role is product software engineering: coding ML training and post-training features in C#/Java/Python with data scientists. Infra automation is incidental. The 4+ years requirement is within band, and Bangalore is an allowed location.",
+      "reason": "Bangalore fits and 4+ years is within band, but this is a software engineering role (C#/Java/Python feature code, ML training pipelines, recipes, evaluations) on an AI platform. Infrastructure automation is incidental, not the core of the role.",
       "signature": "3bd806bff6cb67ba816e60b86f489a3d1eaffa8aa32967de3fbac6a1f97146f9"
     },
     "Microsoft::1970393557026699": {
@@ -9175,6 +9226,7 @@
     "Google::117327053513990854": "2026-09-25T15:40:48+00:00",
     "Google::117380930657493702": "2026-09-08T17:10:21+00:00",
     "Google::118223037379027654": "2026-10-17T13:50:59+00:00",
+    "Google::118545308907905734": "2026-11-11T17:40:00+00:00",
     "Google::118807281243431622": "2026-08-04T15:54:11+00:00",
     "Google::119646125937304262": "2026-07-06T16:03:39+00:00",
     "Google::119658964668293830": "2026-07-29T14:52:53+00:00",
@@ -9183,7 +9235,9 @@
     "Google::121140160912859846": "2026-10-17T13:50:59+00:00",
     "Google::121343637135991494": "2026-08-18T11:21:43+00:00",
     "Google::122664621973611206": "2026-10-17T13:50:59+00:00",
+    "Google::123521561096266438": "2026-11-11T17:40:00+00:00",
     "Google::124000446996980422": "2026-10-22T18:29:00+00:00",
+    "Google::124088771657245382": "2026-11-11T17:40:00+00:00",
     "Google::125086141714965190": "2026-10-12T19:27:52+00:00",
     "Google::126802595330040518": "2026-10-17T13:50:59+00:00",
     "Google::127457591532888774": "2026-11-02T11:35:47+00:00",
@@ -9677,6 +9731,7 @@
     "Morgan Stanley::549799436299": "2026-08-05T17:02:03+00:00",
     "Morgan Stanley::549799464829": "2026-09-15T16:39:26+00:00",
     "Morgan Stanley::549799464846": "2026-09-15T16:39:26+00:00",
+    "Morgan Stanley::549800962834": "2026-11-11T17:40:00+00:00",
     "N26::7405138": "2026-07-09T15:44:29+00:00",
     "N26::7768035": "2026-07-06T14:03:29+00:00",
     "N26::7774526": "2026-09-15T16:39:26+00:00",
@@ -9689,6 +9744,7 @@
     "N26::8222839": "2026-09-23T17:26:54+00:00",
     "N26::8267143": "2026-10-30T07:22:23+00:00",
     "N26::8352287": "2026-11-04T17:47:16+00:00",
+    "N26::8378357": "2026-11-11T17:40:00+00:00",
     "NVIDIA::JR1997336": "2026-09-15T19:42:35+00:00",
     "NVIDIA::JR2007808": "2026-07-13T15:20:42+00:00",
     "NVIDIA::JR2008768": "2026-10-05T09:27:13+00:00",
