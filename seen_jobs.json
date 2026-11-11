@@ -976,16 +976,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Munich is an allowed location, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. The 10+ year requirement is within band (max 11).",
+        "ai_note": "Munich is allowed, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. It requires 10+ years, which is within the 11-year max, plus 2+ years of management.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 12
       },
-      "at": "2026-11-03T23:52:55+00:00",
-      "jd_hash": "adb3847a9ec352f8bd1a7ff2dd84272d0dca7fd692dbe76908120e516ecd5790",
+      "at": "2026-11-11T06:50:49+00:00",
+      "jd_hash": "4f5878321935a2f837f0abd314569620e9d231cd2190a6a468cbcc7bee75b5ec",
       "mode": "ai",
-      "next_review_at": "2026-11-10T23:52:55.646047+00:00",
+      "next_review_at": "2026-11-18T06:50:49.622565+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Munich is an allowed location, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. The 10+ year requirement is within band (max 11).",
+      "reason": "Munich is allowed, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. It requires 10+ years, which is within the 11-year max, plus 2+ years of management.",
       "signature": "d9127b32b5d574ee2a83253b4de68918809f0cce00946de5da7dfab912b4abbc"
     },
     "Anthropic::5445625008": {
@@ -5654,16 +5654,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Location is Yokneam, Israel, which is not in the enabled regions (India/UAE/Europe). The role is a network SRE with some automation, but it is network-ops heavy. Its 10+ year minimum is within the 11-year max.",
+        "ai_note": "Location is Yokneam, Israel, which is outside the enabled regions (India, UAE, Europe). The role is a network-operations SRE (BGP/OSPF, enterprise and data-center networking) with partial overlap with the candidate's skills. The 10-year minimum is within the 11-year max.",
         "ai_relevance": "relevant",
         "ai_score": 15
       },
-      "at": "2026-11-03T23:52:55+00:00",
+      "at": "2026-11-11T06:50:49+00:00",
       "jd_hash": "1379cebec3fab318392443f86443b7f1da564f6698b2b4fb4ae6922e48902799",
       "mode": "ai",
-      "next_review_at": "2026-11-10T23:52:55.646130+00:00",
+      "next_review_at": "2026-11-18T06:50:49.622665+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Location is Yokneam, Israel, which is not in the enabled regions (India/UAE/Europe). The role is a network SRE with some automation, but it is network-ops heavy. Its 10+ year minimum is within the 11-year max.",
+      "reason": "Location is Yokneam, Israel, which is outside the enabled regions (India, UAE, Europe). The role is a network-operations SRE (BGP/OSPF, enterprise and data-center networking) with partial overlap with the candidate's skills. The 10-year minimum is within the 11-year max.",
       "signature": "5345419ae0f0379aa82752a226ae1c9e622099d252e0ca60a7bbd76533e62d5d"
     },
     "NVIDIA::JR2027831": {
@@ -7721,16 +7721,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a Salesforce Life Sciences product and process-automation consultant (PRDs, backlogs, low-code blueprints) with no infrastructure automation work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions.",
+        "ai_note": "Forward deployed consultant focused on Life Sciences process automation, product management and Agentforce blueprints, not infrastructure or platform work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions. The stated 3 to 8+ years is within the experience band.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-03T23:52:55+00:00",
+      "at": "2026-11-11T06:50:49+00:00",
       "jd_hash": "7415235f15b4f79a37bfa4cc67a7f95aa02536c93995e4409032501a8e6bbdf0",
       "mode": "ai",
-      "next_review_at": "2026-11-10T23:52:55.646166+00:00",
+      "next_review_at": "2026-11-18T06:50:49.622727+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is a Salesforce Life Sciences product and process-automation consultant (PRDs, backlogs, low-code blueprints) with no infrastructure automation work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions.",
+      "reason": "Forward deployed consultant focused on Life Sciences process automation, product management and Agentforce blueprints, not infrastructure or platform work. All listed locations are in the US (NYC, Chicago, DC, Atlanta), outside the enabled regions. The stated 3 to 8+ years is within the experience band.",
       "signature": "792389d5a82fb4f788ed964dea3747cb357c34a07aea3c33a8ac6bfee96dad22"
     },
     "Salesforce::JR364969": {
@@ -8479,16 +8479,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Second-line technology risk oversight role (assessments, governance, reporting), not hands-on infrastructure automation. The JD explicitly lists Charlotte, NC and Irving, TX (USA), which is outside the enabled regions, and sponsorship is not offered. Its 7+ years minimum is within the band.",
+        "ai_note": "Second-line technology risk oversight role assessing DevOps controls, not hands-on infrastructure automation; location is Charlotte, NC / Irving, TX (US), outside the enabled India, UAE and Europe regions, and no sponsorship is offered.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-10-30T22:57:08+00:00",
-      "jd_hash": "fb600512649e2498da2492c93b2b2196030b2f2e82008a33ce10c49a4832e483",
+      "at": "2026-11-11T06:50:49+00:00",
+      "jd_hash": "4a0393f0b8b962409e1fb83fe6c1df4ca9a38b9bd062339bd79614c17611d39e",
       "mode": "ai",
-      "next_review_at": "2026-11-06T22:57:08.192297+00:00",
+      "next_review_at": "2026-11-18T06:50:49.622791+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Second-line technology risk oversight role (assessments, governance, reporting), not hands-on infrastructure automation. The JD explicitly lists Charlotte, NC and Irving, TX (USA), which is outside the enabled regions, and sponsorship is not offered. Its 7+ years minimum is within the band.",
+      "reason": "Second-line technology risk oversight role assessing DevOps controls, not hands-on infrastructure automation; location is Charlotte, NC / Irving, TX (US), outside the enabled India, UAE and Europe regions, and no sponsorship is offered.",
       "signature": "4590604a65b6d2d164efd4c02ce807772c317dc49b8482459caed7b100289e11"
     },
     "Wells Fargo::R-579705": {
@@ -10014,6 +10014,7 @@
     "Zscaler::5212053007": "2026-08-18T03:22:18+00:00",
     "Zscaler::5229507007": "2026-09-15T16:39:26+00:00",
     "Zscaler::5271547007": "2026-10-30T16:38:20+00:00",
+    "Zscaler::5278563007": "2026-11-11T06:50:52+00:00",
     "Zscaler::5279058007": "2026-11-04T17:47:16+00:00"
   },
   "version": 2
