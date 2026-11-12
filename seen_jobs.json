@@ -449,16 +449,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Location is Iasi, Romania, which is not among the enabled India/UAE/Europe locations. The role is also early-career, first-line support for an IAM platform (tickets, runbooks, AI support agents), not infrastructure automation. No overall years of experience are stated.",
+        "ai_note": "First-line customer support and ticket automation role for an IAM authorization platform, aimed at early-career engineers rather than infrastructure or platform automation. Location is Iasi, Romania, which is not among the enabled locations. No explicit overall years requirement is stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-05T17:55:54+00:00",
+      "at": "2026-11-12T20:26:22+00:00",
       "jd_hash": "7a693d5261bb802ee5f2b89260c9529bc4431ba966606389ded423a2dedadb80",
       "mode": "ai",
-      "next_review_at": "2026-11-12T17:55:54.881172+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560297+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Location is Iasi, Romania, which is not among the enabled India/UAE/Europe locations. The role is also early-career, first-line support for an IAM platform (tickets, runbooks, AI support agents), not infrastructure automation. No overall years of experience are stated.",
+      "reason": "First-line customer support and ticket automation role for an IAM authorization platform, aimed at early-career engineers rather than infrastructure or platform automation. Location is Iasi, Romania, which is not among the enabled locations. No explicit overall years requirement is stated.",
       "signature": "7bcbbd5c2a6ee826a2ed0f057e10ea004435bd03b0f1fb82902d54a36029a24d"
     },
     "Amazon::10587164": {
@@ -630,6 +630,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The role is in Tokyo, which is outside the enabled India, UAE and Europe regions. It is also a software-development forward deployed role building AI applications (RAG, agents) rather than infrastructure or platform work, and it requires business-level Japanese. The 3+ years requirement fits the experience band.",
       "signature": "cd7ebd33ac40e8e4da72a4181eb6afa93a8578c8d2a5abbb490fc1a41000a351"
+    },
+    "Amazon::10593055": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is a software-development FDE building AI applications (multi-agent systems, RAG, React/TypeScript, Java/C++ object-oriented design) with customer-facing delivery. It is not focused on infrastructure, Kubernetes or platform deployment. Berlin is an allowed location. No overall years of experience are stated; the only figure is 3+ years in an Agile or startup environment.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "c2e24897a2753a94c2df87a86f3bef26a1c7411ae35110045b9e5488049d634a",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T20:26:22.560334+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is a software-development FDE building AI applications (multi-agent systems, RAG, React/TypeScript, Java/C++ object-oriented design) with customer-facing delivery. It is not focused on infrastructure, Kubernetes or platform deployment. Berlin is an allowed location. No overall years of experience are stated; the only figure is 3+ years in an Agile or startup environment.",
+      "signature": "516b21373f83ff4cb535630b493e498acee0cc4bb2a90f0539686e3c6f5c50bd"
     },
     "Amazon::10593209": {
       "ai_assessment": {
@@ -3084,16 +3101,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Fullstack FDE role focused on data engineering, Spark, applications and customer delivery, not infrastructure/Kubernetes platform deployment. 6+ years is within band and Munich is allowed, but the role is a clear functional mismatch.",
+        "ai_note": "Forward deployed full-stack role centred on data engineering, Spark, application development and customer-facing billable delivery, not infrastructure or platform automation; candidate prefs exclude this. Experience is 6+ (within band). Munich is an allowed location.",
         "ai_relevance": "irrelevant",
         "ai_score": 18
       },
-      "at": "2026-11-05T17:55:54+00:00",
+      "at": "2026-11-12T20:26:22+00:00",
       "jd_hash": "ca286359d4562a180a6e171adfbc6f5364071d34835620aa6f0290f427328b86",
       "mode": "ai",
-      "next_review_at": "2026-11-12T17:55:54.881037+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560102+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Fullstack FDE role focused on data engineering, Spark, applications and customer delivery, not infrastructure/Kubernetes platform deployment. 6+ years is within band and Munich is allowed, but the role is a clear functional mismatch.",
+      "reason": "Forward deployed full-stack role centred on data engineering, Spark, application development and customer-facing billable delivery, not infrastructure or platform automation; candidate prefs exclude this. Experience is 6+ (within band). Munich is an allowed location.",
       "signature": "5993663005bec85f24b03b71afde4ace780783771a80f8128ff7cc50c4e5a97d"
     },
     "Databricks::8793863002": {
@@ -4058,6 +4075,23 @@
       "reason": "Forward deployed role centered on product code contributions (Ruby on Rails/Go), AI adoption with customers and thought leadership, not infrastructure/platform deployment. Infra is only a diagnostic domain. Location (Ireland/Germany/Netherlands/UK remote) is allowed; no explicit years stated.",
       "signature": "1e094cf9bba4ed5b6ad93c62a4c13ebb6c0cc3741951d543245047f937aa94cd"
     },
+    "GitLab::8936153002": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role centered on product engineering (Ruby on Rails/Go code contributions), customer AI adoption and thought leadership rather than infrastructure automation; infra/K8s are secondary. EMEA remote locations (Ireland, Germany, UK) allowed; no explicit years stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "8f11a9be3ee72a673f98bffeb0c7875a97f84280efb7230c0b64d598f4a5a176",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T20:26:22.559974+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role centered on product engineering (Ruby on Rails/Go code contributions), customer AI adoption and thought leadership rather than infrastructure automation; infra/K8s are secondary. EMEA remote locations (Ireland, Germany, UK) allowed; no explicit years stated.",
+      "signature": "8f9d71301389adec834f8826b99ac794ecdd92b3d9c5aaf30e9dccd5f88088f8"
+    },
     "HPE::1188791": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4862,16 +4896,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, firewalls) with support and stakeholder focus. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting.",
+        "ai_note": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, networking) with stakeholder support. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting the band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 22
+        "ai_score": 20
       },
-      "at": "2026-11-05T17:55:54+00:00",
+      "at": "2026-11-12T20:26:22+00:00",
       "jd_hash": "7020e702ad037cefad92e98bf2ffcfefe50bd3a450e027948fcd77cabbf1bc60",
       "mode": "ai",
-      "next_review_at": "2026-11-12T17:55:54.881195+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560484+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, firewalls) with support and stakeholder focus. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting.",
+      "reason": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, networking) with stakeholder support. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting the band.",
       "signature": "de3b870a41d039c68b0d975b58a3b36a537304ca5bdd8910e4bd6bf13134edae"
     },
     "J.P. Morgan::210806222": {
@@ -4959,6 +4993,23 @@
       "reason": "Windows/Citrix VDI image QA testing role with PowerShell, not cloud/Kubernetes infrastructure automation; located in Shanghai, China, outside enabled regions. Overall experience is not stated.",
       "signature": "34173f3e3674e7421f0fefd9c857fff70ad919808a8bfc6ebab5e1acc2ff1683"
     },
+    "J.P. Morgan::210808749": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Title mentions Terraform and Kubernetes, but the JD is Python/AWS application development and AIML integration with team leadership. IaC, Kubernetes and MLOps appear only as preferred qualifications, and SRE is a team it collaborates with. 5+ years is within band and Bengaluru is allowed.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 25
+      },
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "044f41eab4de7e166a4f78605f6256200acae1be9b8b3ebec5e4940615e95e70",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T20:26:22.560455+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Title mentions Terraform and Kubernetes, but the JD is Python/AWS application development and AIML integration with team leadership. IaC, Kubernetes and MLOps appear only as preferred qualifications, and SRE is a team it collaborates with. 5+ years is within band and Bengaluru is allowed.",
+      "signature": "7c25aa45e3afdbc68625eecb9591478b31b8446c6994cedc9a4e32b65f8ddd92"
+    },
     "Mastercard::R-277889": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5010,6 +5061,23 @@
       "reason": "The job location is in O'Fallon, Missouri, which does not match the candidate's enabled regions (india, uae, europe).",
       "signature": "0bc2ade4e327d5dd4fd114a4b247d81288049cea68e2bb47a5118f00932473e3"
     },
+    "Mastercard::R-291795": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is a strong technical match: hands-on platform engineering with Kubernetes, CI/CD, Terraform/Ansible IaC and automation. It is rejected because the job is in O'Fallon, Missouri, US, with US pay ranges, which is outside the enabled India, UAE and Europe regions. The JD states no overall experience requirement.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "d3d404231d7b35b4b3c6a05371cee690aa9c9223789452628fd48e795d2af42d",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T20:26:22.560634+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is a strong technical match: hands-on platform engineering with Kubernetes, CI/CD, Terraform/Ansible IaC and automation. It is rejected because the job is in O'Fallon, Missouri, US, with US pay ranges, which is outside the enabled India, UAE and Europe regions. The JD states no overall experience requirement.",
+      "signature": "56f41375212c2da1cdc8719894d27db849ac5464be39b1fef72f6f2545cd5e89"
+    },
     "Mastercard::R-291845": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5049,16 +5117,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "SRE role with automation, but it is based in O'Fallon, Missouri, USA, with US pay ranges. This is outside the enabled India/UAE/Europe regions. It is also an entry-level (SRE I) role leaning toward CMDB and ops support, and no overall experience requirement is stated.",
+        "ai_note": "SRE role with automation and ops duties is relevant, though somewhat enterprise ops/CMDB-heavy. However, it is explicitly located in O'Fallon, Missouri with US pay ranges, outside the enabled India, UAE and Europe regions. Overall years are unstated.",
         "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_score": 15
       },
-      "at": "2026-11-05T17:55:54+00:00",
+      "at": "2026-11-12T20:26:22+00:00",
       "jd_hash": "6026c012c7dd23e85dc4cfd1b26cee99389c6973ce942e7dabe09356a7cc5e1a",
       "mode": "ai",
-      "next_review_at": "2026-11-12T17:55:54.881210+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560509+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "SRE role with automation, but it is based in O'Fallon, Missouri, USA, with US pay ranges. This is outside the enabled India/UAE/Europe regions. It is also an entry-level (SRE I) role leaning toward CMDB and ops support, and no overall experience requirement is stated.",
+      "reason": "SRE role with automation and ops duties is relevant, though somewhat enterprise ops/CMDB-heavy. However, it is explicitly located in O'Fallon, Missouri with US pay ranges, outside the enabled India, UAE and Europe regions. Overall years are unstated.",
       "signature": "ba876007dad8d6c94c57843318deea0a0b31f2f6e4fa7b300735857ccde64aa2"
     },
     "Mastercard::R-293009": {
@@ -5151,16 +5219,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "O'Fallon, Missouri (US) with US pay range is outside enabled regions (India/UAE/Europe). Role is also an entry-level, support-heavy SRE I position, a poor fit for a senior candidate. No overall years are stated.",
+        "ai_note": "Location is O'Fallon, Missouri (US), which is outside the enabled regions of India, UAE and Europe. It is also an entry-level, support-heavy SRE I role, which fits poorly for a senior candidate. The JD states no years-of-experience requirement.",
         "ai_relevance": "relevant",
         "ai_score": 15
       },
-      "at": "2026-11-05T17:55:54+00:00",
+      "at": "2026-11-12T20:26:22+00:00",
       "jd_hash": "bf39b2b53f0bdfb5c8280ecca074866f37df67a91cf7542cd5d70df9c3ba041d",
       "mode": "ai",
-      "next_review_at": "2026-11-12T17:55:54.881246+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560589+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "O'Fallon, Missouri (US) with US pay range is outside enabled regions (India/UAE/Europe). Role is also an entry-level, support-heavy SRE I position, a poor fit for a senior candidate. No overall years are stated.",
+      "reason": "Location is O'Fallon, Missouri (US), which is outside the enabled regions of India, UAE and Europe. It is also an entry-level, support-heavy SRE I role, which fits poorly for a senior candidate. The JD states no years-of-experience requirement.",
       "signature": "c46359379cb376cd51540cd892ba4cfdd4946bbe9eb4061d5c250b8ea34eacae"
     },
     "Mastercard::R-295497": {
@@ -5398,18 +5466,18 @@
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
-        "ai_location_fit": "outside",
-        "ai_note": "This is a pre-sales solution engineering role: technical advisor, workshops, demos, PoCs and consultative selling, with no hands-on infrastructure automation, so it clearly mismatches the candidate's preferences. The locations, Switzerland and Spain, are not in the enabled regions. No overall years of experience are stated.",
+        "ai_location_fit": "uncertain",
+        "ai_note": "This is a pre-sales solution engineering role: technical advisor, winning technical decisions and consultative selling. It is not hands-on infrastructure automation, and the candidate's preferences exclude sales engineering. No overall years are stated. Switzerland, Spain and Denmark are in Europe, but the configured Europe list doesn't name them, so location is uncertain.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 15
       },
-      "at": "2026-11-07T06:30:35+00:00",
-      "jd_hash": "5a423b0b4ae5bd619f1dbf677d6e9f4b51495b8f3dce2dc2326c8a90896971fe",
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "179c5dc443b7dd4200b3b952bf7e0463057f2101aea05d5607ff9bfc67c17838",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191219+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560378+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a pre-sales solution engineering role: technical advisor, workshops, demos, PoCs and consultative selling, with no hands-on infrastructure automation, so it clearly mismatches the candidate's preferences. The locations, Switzerland and Spain, are not in the enabled regions. No overall years of experience are stated.",
-      "signature": "b93429c2fdf4ad1bd20cef7a1b290c3fae21b515252d5322d06e40bb89f9fc93"
+      "reason": "This is a pre-sales solution engineering role: technical advisor, winning technical decisions and consultative selling. It is not hands-on infrastructure automation, and the candidate's preferences exclude sales engineering. No overall years are stated. Switzerland, Spain and Denmark are in Europe, but the configured Europe list doesn't name them, so location is uncertain.",
+      "signature": "ec161617b6184bc6363bfb6582cf2a34e3a7770b2915231127188d9bbb126382"
     },
     "Microsoft::1970393557050207": {
       "ai_assessment": {
@@ -6091,6 +6159,23 @@
       "reason": "This is a customer-facing GTM forward deployed role focused on integrations, data migrations and AI workflows, not infrastructure, Kubernetes or platform deployment. It is based in San Francisco/New York (AMER, Remote), outside the India/UAE/Europe regions. The 5+ years requirement is within band.",
       "signature": "8f45dbe7e0c69d82ed68ecfa37b124a176fbea197bb286db4d953de329b41891"
     },
+    "Notion::31c2d810-ddb3-40f6-b883-c1c7f999ac69": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Customer-facing solutions/workspace architecture role designing Notion workflows, adoption and change management; no infrastructure, Kubernetes or platform deployment responsibilities. 2+ years is within band and Dublin is allowed, but the role mismatches the candidate.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "818e4f044816f6e79f4aabb7a1ea8ff3186fb3ee40b53ba97411704820b5af86",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T20:26:22.560186+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Customer-facing solutions/workspace architecture role designing Notion workflows, adoption and change management; no infrastructure, Kubernetes or platform deployment responsibilities. 2+ years is within band and Dublin is allowed, but the role mismatches the candidate.",
+      "signature": "c38dd48497489e539a560a3a28407385f986f009c3a4511451fe59fe096d51eb"
+    },
     "Notion::3e988191-692b-48b7-969f-61c000c1636e": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6606,16 +6691,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Forward deployed engineering manager role focused on customer delivery, full-stack JS/Python code and team management, not infrastructure. Based in New York City (hybrid, 3 days in office), which is outside the enabled regions. 10+ years required is within the 11-year max.",
+        "ai_note": "This is a forward deployed engineering management role focused on customer delivery and full-stack JS/Python, not infrastructure. It is based in NYC (hybrid, 3 days in office), outside India/UAE/Europe. The 10+ years required is within the 11-year max.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-05T17:55:54+00:00",
+      "at": "2026-11-12T20:26:22+00:00",
       "jd_hash": "9d175611c43e3e16acd03ff499533c26103b8907284c702966eb2e9ec73b997d",
       "mode": "ai",
-      "next_review_at": "2026-11-12T17:55:54.881112+00:00",
+      "next_review_at": "2026-11-19T20:26:22.560254+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed engineering manager role focused on customer delivery, full-stack JS/Python code and team management, not infrastructure. Based in New York City (hybrid, 3 days in office), which is outside the enabled regions. 10+ years required is within the 11-year max.",
+      "reason": "This is a forward deployed engineering management role focused on customer delivery and full-stack JS/Python, not infrastructure. It is based in NYC (hybrid, 3 days in office), outside India/UAE/Europe. The 10+ years required is within the 11-year max.",
       "signature": "63c2b3b9f7bd9bfce1507710359a05844369b7145026f73438682b5eb6631e9b"
     },
     "OpenAI::9471b38b-f65c-4a01-9626-bd33fca90f1d": {
@@ -7331,6 +7416,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Customer-facing agentic AI/full-stack and data pipeline Forward Deployed role in the Sales category, not infrastructure or Kubernetes platform work. All listed locations are in the US, outside the India, UAE and Europe regions. Stated experience of 3+ years (6-10 for Senior) is within band.",
       "signature": "80ac7f166e2ee8ac94d410af44a08e7a6348e4448455c42a8f73198e38a7c61b"
+    },
+    "Salesforce::JR350067": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "Forward deployed role centered on building Agentforce agentic apps, Salesforce Apex/LWC and data pipelines (sales category), not infrastructure or Kubernetes deployment. The 6+ years requirement fits. Location is Spain (Barcelona/Madrid), which is not among the listed Europe locations, so location fit is uncertain.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-12T20:26:22+00:00",
+      "jd_hash": "9f016bf29299a0bbe87469a05073baa814c5f25bccee9110417edb6f379ae6a7",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T20:26:22.560415+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role centered on building Agentforce agentic apps, Salesforce Apex/LWC and data pipelines (sales category), not infrastructure or Kubernetes deployment. The 6+ years requirement fits. Location is Spain (Barcelona/Madrid), which is not among the listed Europe locations, so location fit is uncertain.",
+      "signature": "c5d5b670b9b0fe03c1d1794ab23125ed296acd41c622e98ec170b3f7a3b7b528"
     },
     "Salesforce::JR350080": {
       "ai_assessment": {
@@ -9016,6 +9118,7 @@
     "Amazon::10594522": "2026-11-02T22:13:04+00:00",
     "Amazon::10594524": "2026-11-02T22:13:04+00:00",
     "Amazon::10595532": "2026-11-03T23:52:57+00:00",
+    "Amazon::10603263": "2026-11-12T20:26:26+00:00",
     "Amazon::2893777": "2026-09-15T16:39:26+00:00",
     "Amazon::2943487": "2026-09-15T16:39:26+00:00",
     "Amazon::3087178": "2026-09-15T11:30:01+00:00",
@@ -9160,6 +9263,7 @@
     "Citi::859038560359": "2026-10-30T07:22:23+00:00",
     "Citi::859038616950": "2026-11-06T17:25:54+00:00",
     "Citi::859038805708": "2026-11-04T17:47:16+00:00",
+    "Citi::859038930045": "2026-11-12T20:26:26+00:00",
     "ClickHouse::086c4dd1-217d-48f8-9d62-e57542e16dbe": "2026-10-30T07:22:23+00:00",
     "ClickHouse::2ce901c2-5f8f-412f-b150-0f1701093cde": "2026-10-30T07:22:23+00:00",
     "ClickHouse::56e89edd-e189-4afa-9b63-c3f339762ef0": "2026-10-30T07:22:23+00:00",
