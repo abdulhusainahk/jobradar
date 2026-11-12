@@ -716,6 +716,23 @@
       "reason": "The role is a strong SRE/infrastructure fit: DNS reliability, automation and CI/CD. The 5+ years asked is within band. However, it is based in Sydney, Australia, and requires Australian citizenship plus security clearance. That is outside the enabled regions (India, UAE, Europe).",
       "signature": "3a65677cca5f6be5575a61c726beaf0593ff39774ae241023d0700aa0b48abdd"
     },
+    "Amazon::10602932": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Hands-on data center hardware ops role (break-fix, cabling, 24x7 shifts), not infrastructure automation; located in Hong Kong, outside enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-12T01:15:31+00:00",
+      "jd_hash": "0950763ecfdeeb53a96dd6c26eddb21a97d4b30ccb6fc6eed6664f646be03f68",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T01:15:31.998864+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Hands-on data center hardware ops role (break-fix, cabling, 24x7 shifts), not infrastructure automation; located in Hong Kong, outside enabled regions.",
+      "signature": "6fc5c960c8757f4b356acca875af37e270274a90031f4ee7f69b63a052e2693f"
+    },
     "Amazon::3199256": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1095,16 +1112,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "People-management FDE role focused on customer AI application delivery, pre-sales and team building, not infrastructure/platform automation. Requires 10+ yrs (within 11 max) plus 2+ yrs management. Paris, France is not among the configured locations.",
+        "ai_note": "Customer-facing FDE management role (hiring, pre-sales, AI application delivery), not infrastructure/platform automation. Paris, France is not among the enabled locations. 10+ years required is within the 11-year max.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 10
       },
-      "at": "2026-11-04T17:47:10+00:00",
-      "jd_hash": "59fea3ee9af1e07ce24bb940e0083a4efe3f9e0e9b1c16b40017a18f162e3f2c",
+      "at": "2026-11-12T01:15:31+00:00",
+      "jd_hash": "eb45cfab3593a70be9a437214025d5dc177dd2a3db9ad278abedc64a1eef7c05",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655360+00:00",
+      "next_review_at": "2026-11-19T01:15:31.998793+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "People-management FDE role focused on customer AI application delivery, pre-sales and team building, not infrastructure/platform automation. Requires 10+ yrs (within 11 max) plus 2+ yrs management. Paris, France is not among the configured locations.",
+      "reason": "Customer-facing FDE management role (hiring, pre-sales, AI application delivery), not infrastructure/platform automation. Paris, France is not among the enabled locations. 10+ years required is within the 11-year max.",
       "signature": "c4d69a6d3250c899066e2e42e2916fac9756ed4637693c02753edd6ca25550a8"
     },
     "Barclays::JR-0000040669": {
@@ -1537,16 +1554,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the 'Platform Engineer' title, this is Confluence Cloud SaaS administration and product ownership (permissions, Marketplace apps, SSO, migration validation). It involves no infrastructure automation, Kubernetes or IaC. The 5+ years requirement is within band, and Bengaluru is an allowed location.",
+        "ai_note": "Despite the 'Platform Engineer' title, this is SaaS application ownership and Confluence Cloud administration (permissions, Marketplace apps, SSO/SCIM, migration validation). It involves no infrastructure automation, Kubernetes, IaC or cloud platform work. Bengaluru is allowed, and the 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "2c2c5d4eff8a4398ca30b2c52857b04bd29412ab2961acc830a1ea00f5433525",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655663+00:00",
+      "next_review_at": "2026-11-19T01:15:31.999177+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the 'Platform Engineer' title, this is Confluence Cloud SaaS administration and product ownership (permissions, Marketplace apps, SSO, migration validation). It involves no infrastructure automation, Kubernetes or IaC. The 5+ years requirement is within band, and Bengaluru is an allowed location.",
+      "reason": "Despite the 'Platform Engineer' title, this is SaaS application ownership and Confluence Cloud administration (permissions, Marketplace apps, SSO/SCIM, migration validation). It involves no infrastructure automation, Kubernetes, IaC or cloud platform work. Bengaluru is allowed, and the 5+ years requirement is within band.",
       "signature": "a3b38eede60397e39c9449b749be3ba25b0da608b786654ed6334129822851ee"
     },
     "Celonis::8198943003": {
@@ -1911,16 +1928,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "This is a firmware and hardware engineering role (OpenBMC, UEFI, embedded software), not DevOps, SRE or platform infrastructure automation. The listed locations, Austin and Lisbon, fall outside the enabled regions, since the Europe list does not include Portugal. No overall experience requirement is stated.",
+        "ai_note": "Firmware/embedded role (OpenBMC, BIOS, UEFI, Redfish), not DevOps/SRE/platform infrastructure automation. The JD lists Austin, Texas and Lisbon, Portugal; Portugal is not among the enabled Europe locations. No overall experience requirement is stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-05T00:10:20+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "49c324d7402effe70de75d55c784968a8f80d41697d3a171fedd33bcc10290cb",
       "mode": "ai",
-      "next_review_at": "2026-11-12T00:10:20.431082+00:00",
+      "next_review_at": "2026-11-19T01:15:31.998656+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a firmware and hardware engineering role (OpenBMC, UEFI, embedded software), not DevOps, SRE or platform infrastructure automation. The listed locations, Austin and Lisbon, fall outside the enabled regions, since the Europe list does not include Portugal. No overall experience requirement is stated.",
+      "reason": "Firmware/embedded role (OpenBMC, BIOS, UEFI, Redfish), not DevOps/SRE/platform infrastructure automation. The JD lists Austin, Texas and Lisbon, Portugal; Portugal is not among the enabled Europe locations. No overall experience requirement is stated.",
       "signature": "b8deb9ac9dc400b523d5e954b09dd7a375a2581aa3ec7df1a8bf30f5e440a2b7"
     },
     "Cloudflare::8325821": {
@@ -1945,16 +1962,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations Austin or Lisbon; Portugal isn't among the enabled Europe locations. No overall years stated.",
+        "ai_note": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations are Austin and Lisbon, and Portugal is not in the enabled Europe locations. Overall years are unstated.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-05T00:10:20+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "fc1fa57f3974fff5211d2588c6e6151f426ad7a854e96f085da0d6e078517057",
       "mode": "ai",
-      "next_review_at": "2026-11-12T00:10:20.430958+00:00",
+      "next_review_at": "2026-11-19T01:15:31.998542+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations Austin or Lisbon; Portugal isn't among the enabled Europe locations. No overall years stated.",
+      "reason": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations are Austin and Lisbon, and Portugal is not in the enabled Europe locations. Overall years are unstated.",
       "signature": "3ec0be345a34fdca0ff02281eeaeb723be55f32f422f53efbfefb66018edb224"
     },
     "Cloudflare::8328562": {
@@ -3407,16 +3424,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Customer-facing GenAI/data science FDE role (RAG, agents, pandas, PyTorch, professional services) rather than infrastructure or Kubernetes platform deployment. London is an allowed location. The stated 4+ years minimum is within band.",
+        "ai_note": "Customer-facing GenAI/data science FDE role (RAG, fine-tuning, pandas, PyTorch, professional services), not infrastructure/Kubernetes/platform deployment; candidate excludes data-science FDE roles. London is allowed; min 4 years is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 18
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "c272b78de6b11d5d885b3e6df2e54bb3b0bf63bc9c5b8fd2a8ea43b756e23789",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655100+00:00",
+      "next_review_at": "2026-11-19T01:15:31.998720+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing GenAI/data science FDE role (RAG, agents, pandas, PyTorch, professional services) rather than infrastructure or Kubernetes platform deployment. London is an allowed location. The stated 4+ years minimum is within band.",
+      "reason": "Customer-facing GenAI/data science FDE role (RAG, fine-tuning, pandas, PyTorch, professional services), not infrastructure/Kubernetes/platform deployment; candidate excludes data-science FDE roles. London is allowed; min 4 years is within band.",
       "signature": "80f90145b9fa7d60837e9a9f2677df0b96f4c1784b62ee454ae0a577290001f2"
     },
     "Databricks::8927390002": {
@@ -4369,16 +4386,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Presales sales engineering role for enterprise networking (Aruba/Juniper), not infrastructure automation; requires residing on Long Island, NY, USA, outside the enabled regions. Its 5+ years requirement is within band.",
+        "ai_note": "Presales sales-engineering role for enterprise networking (Aruba/Juniper) and not infrastructure automation. It requires residence on Long Island, NY, which is outside India, UAE and Europe. The 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-05T00:10:20+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "aa2bcd12583001c95b67fb03e63708026b826802537fd2c0d3ad43fa22e2f8d4",
       "mode": "ai",
-      "next_review_at": "2026-11-12T00:10:20.431144+00:00",
+      "next_review_at": "2026-11-19T01:15:31.999215+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Presales sales engineering role for enterprise networking (Aruba/Juniper), not infrastructure automation; requires residing on Long Island, NY, USA, outside the enabled regions. Its 5+ years requirement is within band.",
+      "reason": "Presales sales-engineering role for enterprise networking (Aruba/Juniper) and not infrastructure automation. It requires residence on Long Island, NY, which is outside India, UAE and Europe. The 5+ years requirement is within band.",
       "signature": "a7384f85e4b4c33925735a62dcd05807129e6bb2dc54ce5a3138ee9bebf95e53"
     },
     "HPE::1216401": {
@@ -4505,16 +4522,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "The role is centred on Ribbon SBC, SIP/VoIP telephony and carrier engineering, which the candidate lacks. The AWS and config-as-code work is secondary. Bengaluru location and 5+ years requirement both fit, but the domain is a clear mismatch.",
+        "ai_note": "The core of the role is VoIP and telecom engineering: Ribbon SBC, PSX routing, SIP/PRI migration and carrier work. That is a niche voice-network specialism the candidate lacks. The DevOps, AWS and config-as-code parts are secondary. The 5+ years and Bengaluru location both fit, and the employer is a bank rather than a product company.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "daa97da6072a56f825391af36018f85f73cec8826104148f7b9b270eb72ce67b",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655578+00:00",
+      "next_review_at": "2026-11-19T01:15:31.999152+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is centred on Ribbon SBC, SIP/VoIP telephony and carrier engineering, which the candidate lacks. The AWS and config-as-code work is secondary. Bengaluru location and 5+ years requirement both fit, but the domain is a clear mismatch.",
+      "reason": "The core of the role is VoIP and telecom engineering: Ribbon SBC, PSX routing, SIP/PRI migration and carrier work. That is a niche voice-network specialism the candidate lacks. The DevOps, AWS and config-as-code parts are secondary. The 5+ years and Bengaluru location both fit, and the employer is a bank rather than a product company.",
       "signature": "9036df6db26289cd46f0cf23c23e384f46182a5859a63a986c248b15f1178a73"
     },
     "J.P. Morgan::210800030": {
@@ -5263,16 +5280,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing support/advisory role (workshops, assessments, incident coordination) rather than hands-on infra automation, which conflicts with the candidate's preference. The JD states the location as Romania only, which is outside the enabled India/UAE/Europe location lists. No explicit overall years requirement is given.",
+        "ai_note": "Customer-facing support/advisory role (workshops, assessments, incident coordination) at a non-product services org, not hands-on infra automation; located in Romania, outside enabled India/UAE/Europe location list.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "70c064f488d5ec99b33d6890256361239a382d54029d91d8d964a96cca64e85e",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655416+00:00",
+      "next_review_at": "2026-11-19T01:15:31.998910+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing support/advisory role (workshops, assessments, incident coordination) rather than hands-on infra automation, which conflicts with the candidate's preference. The JD states the location as Romania only, which is outside the enabled India/UAE/Europe location lists. No explicit overall years requirement is given.",
+      "reason": "Customer-facing support/advisory role (workshops, assessments, incident coordination) at a non-product services org, not hands-on infra automation; located in Romania, outside enabled India/UAE/Europe location list.",
       "signature": "1d6ca4e6895f9314a47f6a3848bbe671814cd85c7a93dcbefb2397e455623095"
     },
     "Microsoft::1970393557046170": {
@@ -5280,16 +5297,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing Support for Mission Critical role (workshops, assessments, incident coordination) rather than hands-on infrastructure automation. Located in Portugal, which is not in the enabled Europe locations. No overall years of experience are stated.",
+        "ai_note": "Customer-facing Microsoft support/advisory role (workshops, assessments, incident coordination), not hands-on infrastructure automation; located in Portugal, which is not in the enabled locations; overall years of experience are not stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "e5cf454df069d0e89b38f4cf03515e7b17823a6fd0a1811823a5c2be33ace7bb",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655463+00:00",
+      "next_review_at": "2026-11-19T01:15:31.998962+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing Support for Mission Critical role (workshops, assessments, incident coordination) rather than hands-on infrastructure automation. Located in Portugal, which is not in the enabled Europe locations. No overall years of experience are stated.",
+      "reason": "Customer-facing Microsoft support/advisory role (workshops, assessments, incident coordination), not hands-on infrastructure automation; located in Portugal, which is not in the enabled locations; overall years of experience are not stated.",
       "signature": "986d71892f51fdd4d0d4b80bf8b79ff06a7378b1e12121bc91bb3d98e18f8532"
     },
     "Microsoft::1970393557046973": {
@@ -5331,16 +5348,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing Microsoft support/advisory role (workshops, assessments, incident coordination, CSAM partnership) rather than hands-on infrastructure automation. Location is Greece, which is not in the enabled Europe locations. Overall years of experience are not stated.",
+        "ai_note": "Customer-facing Microsoft support/advisory CSA role (workshops, assessments, incident coordination), not hands-on infrastructure automation. Location is Greece, which is not among the enabled locations. No explicit years of experience are stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "b5ae61749f52878da10269d63b0b62d42f5031c26e42a83009bb4eff60056339",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655500+00:00",
+      "next_review_at": "2026-11-19T01:15:31.999013+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing Microsoft support/advisory role (workshops, assessments, incident coordination, CSAM partnership) rather than hands-on infrastructure automation. Location is Greece, which is not in the enabled Europe locations. Overall years of experience are not stated.",
+      "reason": "Customer-facing Microsoft support/advisory CSA role (workshops, assessments, incident coordination), not hands-on infrastructure automation. Location is Greece, which is not among the enabled locations. No explicit years of experience are stated.",
       "signature": "25ecf72c2ef8d914da9e521d9c11a112eb67b45f708dbb3a6d253acfee3276be"
     },
     "Microsoft::1970393557051014": {
@@ -5393,6 +5410,40 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Pure Azure solution sales role with quarterly revenue targets, pipeline management and account work. There are no hands-on infrastructure automation duties. Location (Ireland/UK) is allowed, and no overall years are stated, so experience fit is uncertain.",
       "signature": "ec9e724a950a2371d3a42a1b2bdbe28fb733ca15180dcae079845311d4e41e82"
+    },
+    "Microsoft::1970393557071279": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Technical pre-sales/solution engineering role (explicitly 'technical sales'), not hands-on infrastructure automation. The location is Brazil (São Paulo), outside the enabled regions. Experience of 5+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-12T01:15:31+00:00",
+      "jd_hash": "194c285c036d8b266aa4a094c7695f79b1606fdac392a56741b722ac496787ad",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T01:15:31.999092+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Technical pre-sales/solution engineering role (explicitly 'technical sales'), not hands-on infrastructure automation. The location is Brazil (São Paulo), outside the enabled regions. Experience of 5+ years is within band.",
+      "signature": "0dc389d56ae30abb9e04c91fd6b0bca6900aeefc89e7284807b56964e7c56139"
+    },
+    "Microsoft::1970393557071281": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Technical pre-sales/solution engineering role (explicitly 'technical sales'), not hands-on infrastructure automation, and located in Brazil, which is outside the enabled regions (India, UAE, Europe).",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-12T01:15:31+00:00",
+      "jd_hash": "194c285c036d8b266aa4a094c7695f79b1606fdac392a56741b722ac496787ad",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T01:15:31.999059+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Technical pre-sales/solution engineering role (explicitly 'technical sales'), not hands-on infrastructure automation, and located in Brazil, which is outside the enabled regions (India, UAE, Europe).",
+      "signature": "f480d292e5f1ac489bff0c6ecb9866509c41b1947346f19b88055dd8f9eec7ac"
     },
     "MongoDB::7392902": {
       "ai_assessment": {
@@ -7755,16 +7806,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Forward deployed role focused on product management, business process automation and Life Sciences consulting with Agentforce, not infrastructure, Kubernetes or platform deployment. Bangalore/Hyderabad allowed; the 3-8+ years requirement is within band.",
+        "ai_note": "Forward deployed consultant role focused on product management, business process automation and Agentforce/Life Sciences blueprints, not infrastructure, Kubernetes or platform deployment. Bangalore/Hyderabad location is allowed, and the stated 3-8+ years is within band, but the role is a clear functional mismatch.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-04T17:47:10+00:00",
+      "at": "2026-11-12T01:15:31+00:00",
       "jd_hash": "d5582b064443048e6d73f250570e1211182b604768c51656818c8ce3ca5702b2",
       "mode": "ai",
-      "next_review_at": "2026-11-11T17:47:10.655532+00:00",
+      "next_review_at": "2026-11-19T01:15:31.999119+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed role focused on product management, business process automation and Life Sciences consulting with Agentforce, not infrastructure, Kubernetes or platform deployment. Bangalore/Hyderabad allowed; the 3-8+ years requirement is within band.",
+      "reason": "Forward deployed consultant role focused on product management, business process automation and Agentforce/Life Sciences blueprints, not infrastructure, Kubernetes or platform deployment. Bangalore/Hyderabad location is allowed, and the stated 3-8+ years is within band, but the role is a clear functional mismatch.",
       "signature": "f0bb39422716a2c6d9545baf52af1af19bd0664ed9558a0cdaf7086e16e3abb9"
     },
     "Salesforce::JR364817": {
