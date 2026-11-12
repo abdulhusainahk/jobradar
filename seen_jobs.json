@@ -733,6 +733,23 @@
       "reason": "Hands-on data center hardware ops role (break-fix, cabling, 24x7 shifts), not infrastructure automation; located in Hong Kong, outside enabled regions.",
       "signature": "6fc5c960c8757f4b356acca875af37e270274a90031f4ee7f69b63a052e2693f"
     },
+    "Amazon::10603015": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Relevant SRE/systems automation role, but it is strictly Melbourne, Australia, outside the enabled regions, and requires Australian citizenship and security clearance. Experience fit is uncertain: the '1+ years' requirement is for automation tenure, not overall experience.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-12T11:40:09+00:00",
+      "jd_hash": "2dbac94ea0dced60502c6c7de368e8811e5abf55553f61926d7e6b33a20bf8c2",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T11:40:09.255637+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Relevant SRE/systems automation role, but it is strictly Melbourne, Australia, outside the enabled regions, and requires Australian citizenship and security clearance. Experience fit is uncertain: the '1+ years' requirement is for automation tenure, not overall experience.",
+      "signature": "f43b4d31521055b4f8322f78587ce4e779448fb33344ab84081286217bf73041"
+    },
     "Amazon::3199256": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1430,6 +1447,23 @@
       "reason": "Strong infrastructure-heavy AI platform role (multi-cloud IaC, MLOps, 5+ yrs fits), but the JD explicitly places it in New York, NY with 4 days/week in office. That is outside the enabled India/UAE/Europe regions.",
       "signature": "b37d6907fb9caad6aa8a1cab534ea19ecb0419b30cc349d6b1524cb00ec1395c"
     },
+    "BlackRock::R266361": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "ServiceNow application development and ITSM support role (workflows, JavaScript, CMDB). It is not infrastructure automation, cloud or Kubernetes platform engineering, so 'Platform Engineering' in the title is misleading. Mumbai is allowed. The 5+ years is ServiceNow tool tenure, not overall experience, so experience fit is uncertain.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-12T11:40:09+00:00",
+      "jd_hash": "327d78e37f0da1936c68e3d6c4457c95641bcc9d3eb8e1feceb1fac80a05cffd",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T11:40:09.255724+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "ServiceNow application development and ITSM support role (workflows, JavaScript, CMDB). It is not infrastructure automation, cloud or Kubernetes platform engineering, so 'Platform Engineering' in the title is misleading. Mumbai is allowed. The 5+ years is ServiceNow tool tenure, not overall experience, so experience fit is uncertain.",
+      "signature": "e4b848bbf705d671956549560ff270f2a72e4e09322e984bc2547bbebf9c2582"
+    },
     "BlackRock::R266486": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1605,16 +1639,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "above_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Kubernetes/OpenShift infrastructure work in Chennai is relevant, but the role explicitly requires 12 years of experience. That exceeds the 11-year maximum, and drop_out_of_band is true. It is also partly middleware and support-oriented.",
+        "ai_note": "Kubernetes/OpenShift infra deployment role in Chennai (allowed), but requires 12 years overall experience, exceeding the 11-year max; drop_out_of_band is true. Also partly support/middleware-oriented at a bank, not a product company.",
         "ai_relevance": "relevant",
-        "ai_score": 30
+        "ai_score": 25
       },
-      "at": "2026-11-05T07:15:38+00:00",
+      "at": "2026-11-12T11:40:09+00:00",
       "jd_hash": "48bce9c2d6712005e24a1d74f9c85283ccdc54d86e2617ae2bf63a7be92248ed",
       "mode": "ai",
-      "next_review_at": "2026-11-12T07:15:38.630857+00:00",
+      "next_review_at": "2026-11-19T11:40:09.255703+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Kubernetes/OpenShift infrastructure work in Chennai is relevant, but the role explicitly requires 12 years of experience. That exceeds the 11-year maximum, and drop_out_of_band is true. It is also partly middleware and support-oriented.",
+      "reason": "Kubernetes/OpenShift infra deployment role in Chennai (allowed), but requires 12 years overall experience, exceeding the 11-year max; drop_out_of_band is true. Also partly support/middleware-oriented at a bank, not a product company.",
       "signature": "66ef4e317d8e19bfcf5e38bd3a6168acf2a7d22888db69dd8dd1138152ef8dc9"
     },
     "Citi::859038498233": {
@@ -1684,6 +1718,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Pune is an allowed location, and the 8-10 years required is within band. However, this is a data engineering and applications development role (Hadoop, PySpark, Databricks, Snowflake data pipelines), not DevOps, SRE or platform infrastructure automation.",
       "signature": "bc3ce8f161352d778c99fa323666a000b06597659542903532134df7181c5092"
+    },
+    "Citi::859038711279": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is data engineering (Starburst/Trino, Spark, ETL, PL/SQL, data warehousing) in the Applications Development family, not DevOps/SRE infrastructure automation. The MCP/AI-agent work is data-focused. Pune is allowed and the 7+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 12
+      },
+      "at": "2026-11-12T11:40:09+00:00",
+      "jd_hash": "a3690b969d694c6dc9642e603e885ff09fc664bf53f1ad0a1ca9e404d23722c7",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T11:40:09.255682+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is data engineering (Starburst/Trino, Spark, ETL, PL/SQL, data warehousing) in the Applications Development family, not DevOps/SRE infrastructure automation. The MCP/AI-agent work is data-focused. Pune is allowed and the 7+ years requirement is within band.",
+      "signature": "97a337eb12e0abec2eef2e854794d1b3c9a679f98840d86c6bdd36900aa96caf"
     },
     "ClickHouse::86f88674-eb78-4abc-93f4-c8be453d15ae": {
       "ai_assessment": {
@@ -1979,16 +2030,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Role is a TypeScript software engineering job building LLM agent workflows for capacity planning on Cloudflare Workers. It also calls for forecasting and data skills, not infrastructure automation or platform ops; Terraform/CI is only a bonus. London is an allowed location, and no overall years of experience are stated.",
+        "ai_note": "This is a software engineering role building TypeScript multi-agent workflows on Cloudflare Workers for capacity forecasting and planning, not infrastructure automation, SRE or platform work. Terraform and CI/CD appear only as bonus points. London, UK is an allowed location. Overall years of experience are not stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 25
+        "ai_score": 22
       },
-      "at": "2026-11-05T07:15:38+00:00",
+      "at": "2026-11-12T11:40:09+00:00",
       "jd_hash": "972811994b2685b755d485fe306c83df323c813a9d3dba2a094e3a2cdda29ffd",
       "mode": "ai",
-      "next_review_at": "2026-11-12T07:15:38.630744+00:00",
+      "next_review_at": "2026-11-19T11:40:09.255522+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Role is a TypeScript software engineering job building LLM agent workflows for capacity planning on Cloudflare Workers. It also calls for forecasting and data skills, not infrastructure automation or platform ops; Terraform/CI is only a bonus. London is an allowed location, and no overall years of experience are stated.",
+      "reason": "This is a software engineering role building TypeScript multi-agent workflows on Cloudflare Workers for capacity forecasting and planning, not infrastructure automation, SRE or platform work. Terraform and CI/CD appear only as bonus points. London, UK is an allowed location. Overall years of experience are not stated.",
       "signature": "59575c20c117a7d871c9f367601bcbadbb9153d7148b207340aa4b4e05570594"
     },
     "Cloudflare::8330512": {
@@ -3373,17 +3424,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Customer-facing, billable data engineering/Spark/full-stack FDE role building data and AI applications, not infrastructure, Kubernetes or platform deployment. This conflicts with the candidate's preference. London is allowed. No overall years are stated.",
+        "ai_note": "Forward deployed full-stack/data engineering role (Spark, data pipelines, apps, customer delivery), not infrastructure/Kubernetes/platform deployment; London is allowed but the role focus mismatches. No overall years stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 18
+        "ai_score": 15
       },
-      "at": "2026-11-06T17:25:49+00:00",
-      "jd_hash": "269c9b6b6b617022dc040cf4b5f36b627b637461f7d4580b1835cf5dd89f792e",
+      "at": "2026-11-12T11:40:09+00:00",
+      "jd_hash": "a0ce6a73a386a7d244c26b81184bfbf86939385dfbd99ff4f1731ad756c6a77d",
       "mode": "ai",
-      "next_review_at": "2026-11-13T17:25:49.401992+00:00",
+      "next_review_at": "2026-11-19T11:40:09.255604+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing, billable data engineering/Spark/full-stack FDE role building data and AI applications, not infrastructure, Kubernetes or platform deployment. This conflicts with the candidate's preference. London is allowed. No overall years are stated.",
-      "signature": "4987ea5617769be812da24f22b87a0e3938d607e5b039c6631f5cae70172702d"
+      "reason": "Forward deployed full-stack/data engineering role (Spark, data pipelines, apps, customer delivery), not infrastructure/Kubernetes/platform deployment; London is allowed but the role focus mismatches. No overall years stated.",
+      "signature": "5f9893c51546a4b01a5a4b3d1be77b3ddfcccb827b173df0b30dd8f9ab38afa5"
     },
     "Databricks::8921476002": {
       "ai_assessment": {
@@ -4584,6 +4635,23 @@
       "policy_version": "6167ed4bbaa56d40a8a20beaf5af642e4b58e55f53f7518608de105428603352",
       "reason": "The role is focused heavily on network proxy and security appliances (Broadcom/Bluecoat, Zscaler, SSL visibility) rather than general cloud infrastructure automation, Kubernetes, or DevOps/Platform engineering.",
       "signature": "1407cf360c41b9d5ef93f7adda6aa558f98d30781de2e53c40e9ca1f53eaeaa8"
+    },
+    "J.P. Morgan::210800480": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Role is test automation/software engineering (Selenium/Playwright/Appium, Java coding), with CI/CD only as general understanding; no real infrastructure, Kubernetes or platform automation responsibilities. Bengaluru is allowed and 3+ years fits.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-11-12T11:40:09+00:00",
+      "jd_hash": "25378d9c2afb2806f9488ef322fcbfdeb7216db6943ae70c85008d4d67d82332",
+      "mode": "ai",
+      "next_review_at": "2026-11-19T11:40:09.255662+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is test automation/software engineering (Selenium/Playwright/Appium, Java coding), with CI/CD only as general understanding; no real infrastructure, Kubernetes or platform automation responsibilities. Bengaluru is allowed and 3+ years fits.",
+      "signature": "90aa7645747c5a962f80356c943c855e38b71f8867368468a918f36d718339e8"
     },
     "J.P. Morgan::210801774": {
       "ai_assessment": {
@@ -9626,6 +9694,7 @@
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210802924": "2026-11-06T07:15:46+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
+    "J.P. Morgan::210803977": "2026-11-12T11:40:11+00:00",
     "J.P. Morgan::210804319": "2026-11-04T06:50:58+00:00",
     "J.P. Morgan::210805252": "2026-11-02T11:35:47+00:00",
     "J.P. Morgan::210805379": "2026-11-03T17:35:15+00:00",
@@ -9983,6 +10052,7 @@
     "PhonePe::1000000000004487": "2026-10-21T12:18:28+00:00",
     "PhonePe::1000000000004498": "2026-10-21T12:18:28+00:00",
     "PhonePe::1000000000004581": "2026-10-29T14:47:57+00:00",
+    "PhonePe::1000000000006009": "2026-11-12T11:40:11+00:00",
     "PhonePe::6574130003": "2026-07-06T14:03:12+00:00",
     "PhonePe::6589348003": "2026-07-06T14:03:12+00:00",
     "PhonePe::7731736003": "2026-07-06T14:03:12+00:00",
