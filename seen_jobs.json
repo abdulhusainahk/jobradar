@@ -801,6 +801,23 @@
       "reason": "Relevant SRE/systems automation role, but it is strictly Melbourne, Australia, outside the enabled regions, and requires Australian citizenship and security clearance. Experience fit is uncertain: the '1+ years' requirement is for automation tenure, not overall experience.",
       "signature": "f43b4d31521055b4f8322f78587ce4e779448fb33344ab84081286217bf73041"
     },
+    "Amazon::10603982": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "below_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Seoul, Korea role (not in India/UAE/Europe) requiring Korean proficiency and work authorization; entry-level AI application software FDE (graduates 2025-2027, 1+ yrs), not infrastructure-focused.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-13T11:28:57+00:00",
+      "jd_hash": "2b24498b010d273b01078a27a54532f36d9e8cca7b111efaab0fad2112099950",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T11:28:57.838698+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Seoul, Korea role (not in India/UAE/Europe) requiring Korean proficiency and work authorization; entry-level AI application software FDE (graduates 2025-2027, 1+ yrs), not infrastructure-focused.",
+      "signature": "7bc556454de57520e8463fa3970d3c4cc15d0f8220ca3bd9339b7d2ac41f0001"
+    },
     "Amazon::3199256": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -4993,6 +5010,23 @@
       "reason": "Despite the DevOps title, the role is primarily full-stack application development (Java, React, Spring Boot, production code). DevOps, Kubernetes and cloud are incidental, with no real infrastructure automation ownership. Mumbai is a preferred location, and the 3+ year requirement is within band.",
       "signature": "1e9e4926576b3428a6048bbc4ba12e468bfbccbfb80813edacd19f73d7a1e98c"
     },
+    "J.P. Morgan::210807411": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Location is Metro Manila, Philippines, which is outside the enabled regions (India, UAE, Europe). The role is also mostly production application support with some SRE and IaC work. Experience fits: at least 5 years required.",
+        "ai_relevance": "uncertain",
+        "ai_score": 20
+      },
+      "at": "2026-11-13T11:28:57+00:00",
+      "jd_hash": "9d42be3a0038140b3dce95e4ca5289aba664f3b03e191cc5f88849bc76e9545f",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T11:28:57.838759+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Location is Metro Manila, Philippines, which is outside the enabled regions (India, UAE, Europe). The role is also mostly production application support with some SRE and IaC work. Experience fits: at least 5 years required.",
+      "signature": "7a13ff6337251c1bf6786d9711aed39e2e13ff939182816f7f589a7a17fcbf80"
+    },
     "J.P. Morgan::210807771": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5887,6 +5921,23 @@
       "reason": "Strong DevOps/CI-CD infrastructure role (8+ yrs, within the 11-year max), but the JD explicitly places it in Yokneam, Israel, which is outside the enabled India, UAE and Europe regions.",
       "signature": "7b66d0f5e68d903431da8f30de8421c9eee55098f6ba0502d6a9736fab05a4ca"
     },
+    "NVIDIA::JR2021714": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed role centered on Palantir Foundry and AIP application and data development for supply chain, not infrastructure. It requires 12+ years (above the 11-year max), and Shenzhen, China is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-13T11:28:57+00:00",
+      "jd_hash": "466ee205d59fa7c4281db20f8615b1c6a837653a65778b6ffaf4131ce94d059a",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T11:28:57.838672+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role centered on Palantir Foundry and AIP application and data development for supply chain, not infrastructure. It requires 12+ years (above the 11-year max), and Shenzhen, China is outside the enabled regions.",
+      "signature": "8631c2b2a17685dab38efb5fedab2f0b266e4444f1d909a21bf1dfc7f9d1a80f"
+    },
     "NVIDIA::JR2022909": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6045,16 +6096,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Strong infra-heavy DevOps/platform role (5+ yrs, K8s, Terraform, CI/CD, GitOps) matching the profile, but the location is Raanana, Israel, which is outside the enabled India/UAE/Europe regions.",
+        "ai_note": "Strong infrastructure-heavy DevOps/platform role, and the 5+ years requirement fits the experience band. However, the JD places it explicitly in Raanana, Israel, which is outside the enabled India, UAE and Europe regions, with no remote option stated.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "6726d677338fb4fe66102cba58617dfdf0b7668fcf9a859f63c6c023e1bbe25c",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.931040+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838589+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong infra-heavy DevOps/platform role (5+ yrs, K8s, Terraform, CI/CD, GitOps) matching the profile, but the location is Raanana, Israel, which is outside the enabled India/UAE/Europe regions.",
+      "reason": "Strong infrastructure-heavy DevOps/platform role, and the 5+ years requirement fits the experience band. However, the JD places it explicitly in Raanana, Israel, which is outside the enabled India, UAE and Europe regions, with no remote option stated.",
       "signature": "83bdff33c7710c97be17c03159b8b40bc7d2cd933380387d1efcf4d395f01b89"
     },
     "NVIDIA::JR2028822": {
@@ -6079,16 +6130,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Role is in Yokneam/Tel Aviv, Israel, which is outside the enabled India, UAE and Europe locations, and it requires Hebrew. It is also a firmware regression/CI management role rather than core cloud or Kubernetes platform work. The 5+ years overall requirement is within band.",
+        "ai_note": "Location is Yokneam/Tel Aviv, Israel, which is outside the enabled regions (India, UAE, Europe). The role is a firmware regression and CI management position that requires Hebrew, so it is only partly infra-focused. The stated 5+ years of overall experience is within band.",
         "ai_relevance": "uncertain",
         "ai_score": 15
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "97308d4580b2f959ca00188ab4882cf944bb1c46e3a9caae51a6db13a50f5f0f",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.931059+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838617+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Role is in Yokneam/Tel Aviv, Israel, which is outside the enabled India, UAE and Europe locations, and it requires Hebrew. It is also a firmware regression/CI management role rather than core cloud or Kubernetes platform work. The 5+ years overall requirement is within band.",
+      "reason": "Location is Yokneam/Tel Aviv, Israel, which is outside the enabled regions (India, UAE, Europe). The role is a firmware regression and CI management position that requires Hebrew, so it is only partly infra-focused. The stated 5+ years of overall experience is within band.",
       "signature": "f974962e5f505f424e0fcb21e12df5b9a754444fc47ab051186943c6b95bd4a6"
     },
     "NVIDIA::JR2029097": {
@@ -6113,16 +6164,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Relevant DevOps/infra automation role (internal on-prem cloud, CI infra, Kubernetes, IaC) with 5+ years required, within band. However, it is explicitly located in Yokneam, Israel, which falls outside the enabled India, UAE and Europe regions.",
+        "ai_note": "Infrastructure-heavy DevOps/software role (on-prem cloud, CI infrastructure, automation) with 5+ years required, within band. However, it is explicitly located in Yokneam, Israel and marked hybrid, which is outside the enabled India, UAE and Europe regions.",
         "ai_relevance": "relevant",
-        "ai_score": 25
+        "ai_score": 20
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "05e9db74ba7b342f82a24b72e6cd9793b7673bab3a2e3b52bf6481fa2c807374",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.931079+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838648+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Relevant DevOps/infra automation role (internal on-prem cloud, CI infra, Kubernetes, IaC) with 5+ years required, within band. However, it is explicitly located in Yokneam, Israel, which falls outside the enabled India, UAE and Europe regions.",
+      "reason": "Infrastructure-heavy DevOps/software role (on-prem cloud, CI infrastructure, automation) with 5+ years required, within band. However, it is explicitly located in Yokneam, Israel and marked hybrid, which is outside the enabled India, UAE and Europe regions.",
       "signature": "3d46ba1898bf2b198d56eaea6af874b73cd11fd13d756127f1878b0540210030"
     },
     "Netskope::8059158": {
@@ -6810,16 +6861,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Cyber FDE role: customer-facing security engineering, agent building and evals, not infra/K8s platform deployment. It is based in New York (hybrid, 3 days in office), outside India/UAE/Europe. The 5+ years requirement fits the band.",
+        "ai_note": "Customer-facing security FDE role (security agents, detection, AppSec), not infrastructure/platform deployment; based in New York hybrid with US locations only, outside India/UAE/Europe. 5+ years is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "8c26d0d177bea1493ed6dd4e07f53f6c31e80ff84c84ed8488fcc504b6ef943a",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.930983+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838487+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Cyber FDE role: customer-facing security engineering, agent building and evals, not infra/K8s platform deployment. It is based in New York (hybrid, 3 days in office), outside India/UAE/Europe. The 5+ years requirement fits the band.",
+      "reason": "Customer-facing security FDE role (security agents, detection, AppSec), not infrastructure/platform deployment; based in New York hybrid with US locations only, outside India/UAE/Europe. 5+ years is within band.",
       "signature": "282dc7c53360b87e90f98110bd830b8c25c6f1002f0a34344bbcca5aab6412bb"
     },
     "OpenAI::9d48e2e6-41a9-4a90-8b3b-6cc960e95c2f": {
@@ -6895,16 +6946,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing cyber/security FDE role (security agents, detection, customer engagement), not infra-focused platform work; based in San Francisco hybrid with relocation, outside enabled India/UAE/Europe regions. 5+ yrs is within band.",
+        "ai_note": "A customer-facing cyber Forward Deployed Engineer role (security agents, detections, GTM partnership), not infrastructure/platform automation. It is based in San Francisco with 3 office days a week, outside the enabled regions. The 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "faa9cd5a0aca24ff0a0de7cb5a28c1263ba89ba5997e98ad9715801efbddc000",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.931015+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838549+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing cyber/security FDE role (security agents, detection, customer engagement), not infra-focused platform work; based in San Francisco hybrid with relocation, outside enabled India/UAE/Europe regions. 5+ yrs is within band.",
+      "reason": "A customer-facing cyber Forward Deployed Engineer role (security agents, detections, GTM partnership), not infrastructure/platform automation. It is based in San Francisco with 3 office days a week, outside the enabled regions. The 5+ years requirement is within band.",
       "signature": "755b65bfd7121cb6a33687154c2919986703a1afaf62b813a272152802a26c5a"
     },
     "OpenAI::ac43a452-1f50-42a2-816e-f920fdb51823": {
@@ -6997,16 +7048,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing forward deployed role focused on full-stack and AI application delivery for financial services, plus pre-sales and GTM work, not infrastructure or Kubernetes. Based in New York (hybrid, 3 days in office), outside the enabled India/UAE/Europe locations despite the 'Remote' tag. 5+ years requirement is within band.",
+        "ai_note": "Customer-facing financial-services FDE focused on full-stack solution delivery and pre-sales, not infrastructure/Kubernetes platform deployment. The role is explicitly hybrid in New York (3 days/week), outside the enabled India/UAE/Europe regions. The stated 5+ years is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "4a8b4cb5a093397629fc3808258f9983005806ea8da8d737592eea81aabd727d",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.930946+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838387+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing forward deployed role focused on full-stack and AI application delivery for financial services, plus pre-sales and GTM work, not infrastructure or Kubernetes. Based in New York (hybrid, 3 days in office), outside the enabled India/UAE/Europe locations despite the 'Remote' tag. 5+ years requirement is within band.",
+      "reason": "Customer-facing financial-services FDE focused on full-stack solution delivery and pre-sales, not infrastructure/Kubernetes platform deployment. The role is explicitly hybrid in New York (3 days/week), outside the enabled India/UAE/Europe regions. The stated 5+ years is within band.",
       "signature": "a58a2340225d6e7b27bfebe1b16340c8d67d266df2744ef5228b0feefb2d2d08"
     },
     "OpenAI::cf83e70e-6949-480f-ad97-df0f22cd0283": {
@@ -8316,16 +8367,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "A Sales-category forward deployed role focused on building agentic AI solutions, full-stack development, data pipelines and customer delivery, not infrastructure or Kubernetes. Stockholm, Sweden is not among the configured Europe locations. The 3+ years requirement is within band.",
+        "ai_note": "Sales-category forward deployed role building Agentforce AI agents, data pipelines and full-stack customer solutions, not infrastructure/Kubernetes deployment. The 3+ years requirement is within band. Stockholm, Sweden is not among the enabled locations.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-06T07:15:41+00:00",
+      "at": "2026-11-13T11:28:57+00:00",
       "jd_hash": "ad92d192044786af8deef522349e094aae5a6dcf7ba5e873ad71c1d3d6783f4d",
       "mode": "ai",
-      "next_review_at": "2026-11-13T07:15:41.931098+00:00",
+      "next_review_at": "2026-11-20T11:28:57.838725+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "A Sales-category forward deployed role focused on building agentic AI solutions, full-stack development, data pipelines and customer delivery, not infrastructure or Kubernetes. Stockholm, Sweden is not among the configured Europe locations. The 3+ years requirement is within band.",
+      "reason": "Sales-category forward deployed role building Agentforce AI agents, data pipelines and full-stack customer solutions, not infrastructure/Kubernetes deployment. The 3+ years requirement is within band. Stockholm, Sweden is not among the enabled locations.",
       "signature": "214bcb11d9b55a158b05270d04c617d34f83b3bc8934064d0a01ccdaae50ac45"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
@@ -9266,6 +9317,7 @@
     "Barclays::JR-0000105817": "2026-11-02T11:35:47+00:00",
     "Barclays::JR-0000111920": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000112829": "2026-10-30T22:57:18+00:00",
+    "Barclays::JR-0000116538": "2026-11-13T11:29:01+00:00",
     "Barclays::JR-0000117547": "2026-11-04T17:47:16+00:00",
     "Barclays::JR-0000118118": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000120004": "2026-11-03T07:15:52+00:00",
