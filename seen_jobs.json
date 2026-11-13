@@ -223,6 +223,40 @@
       "reason": "Post-sales TAM/customer advisory role, not hands-on infrastructure automation. It is based in Helsinki, Finland, which is not among the enabled locations, and it requires Finnish fluency. The 7+ years requirement is within band.",
       "signature": "4c0b11af83b2e7e5051f0316b15949e01e2081f4e4e504cef4966e6e56a29af0"
     },
+    "Amazon::10576494": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Technical product manager role in AWS FDE (discovery, specs, customer outcomes, GTM); engineering owns implementation, no infrastructure automation duties. London allowed; 5+ yrs PM within band but role mismatch.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 8
+      },
+      "at": "2026-11-13T02:19:51+00:00",
+      "jd_hash": "13357f8791c86cb1e6d452b7ff6e795b3b450282e010edd99553234241af8586",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T02:19:51.206235+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Technical product manager role in AWS FDE (discovery, specs, customer outcomes, GTM); engineering owns implementation, no infrastructure automation duties. London allowed; 5+ yrs PM within band but role mismatch.",
+      "signature": "29348c65bef9465a576b836bd48cbaa6343b883bea7e3e5c3165f5f9e48c6570"
+    },
+    "Amazon::10578161": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a product manager role (5+ years of product management) embedded in AWS FDE pods, focused on customer discovery and specs rather than infrastructure automation. The location is Singapore, which is outside the enabled India, UAE and Europe regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-13T02:19:51+00:00",
+      "jd_hash": "e344cd14c8882004f272be53debecdb5e8763b5c4c780eedad29b7329b246c32",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T02:19:51.206285+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "This is a product manager role (5+ years of product management) embedded in AWS FDE pods, focused on customer discovery and specs rather than infrastructure automation. The location is Singapore, which is outside the enabled India, UAE and Europe regions.",
+      "signature": "68457c2a34bcd48b8a3a6246c83b0136080580e6e5ab1ed5e6a795c5a5325777"
+    },
     "Amazon::10578997": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -1792,17 +1826,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-embedded FDE focused on advisory, app security and Terraform config; JD lists US-only locations (Austin, Dallas, Atlanta, NYC), outside enabled regions. 10+ years customer-facing is within the 11-year max.",
+        "ai_note": "The JD lists Austin, Dallas, Atlanta and NYC as the only locations, which is outside the enabled India, UAE and Europe regions. It is a customer-facing professional-services FDE role (advisory, migrations, Terraform config) rather than core platform engineering. The 10+ years required is within the 11-year max.",
         "ai_relevance": "uncertain",
         "ai_score": 15
       },
-      "at": "2026-11-06T17:25:49+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "d8b21ca4858fe3ad44daa05db09da97372405c8c09a2ffceea7d2faa700f31a2",
       "mode": "ai",
-      "next_review_at": "2026-11-13T17:25:49.400965+00:00",
+      "next_review_at": "2026-11-20T02:19:51.205947+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-embedded FDE focused on advisory, app security and Terraform config; JD lists US-only locations (Austin, Dallas, Atlanta, NYC), outside enabled regions. 10+ years customer-facing is within the 11-year max.",
-      "signature": "47ee461fd6bf7c8fcbd1104b16c3ae7a923740a4a19f169a727d8c76be4679f0"
+      "reason": "The JD lists Austin, Dallas, Atlanta and NYC as the only locations, which is outside the enabled India, UAE and Europe regions. It is a customer-facing professional-services FDE role (advisory, migrations, Terraform config) rather than core platform engineering. The 10+ years required is within the 11-year max.",
+      "signature": "af5b3bf11b54b6665ecc1c7d12e304823719a9056124b46d1db8dc60ab1e7b06"
     },
     "Cloudflare::8043287": {
       "ai_assessment": {
@@ -3237,16 +3271,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "US-only public sector role (US locations, clearance eligibility required). It is a data engineering/Spark/full-stack forward deployed role, not infrastructure-focused. The 5+ year requirement is within band.",
+        "ai_note": "US-only public sector FDE role requiring US clearance eligibility; focus is data engineering/Spark/app development, not infrastructure. Locations are all US states, outside India/UAE/Europe. 5+ years is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "1de0a879636b93b69e676950df4ec954bdfb7446f97bf26d8380e0f484e8e2e7",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894428+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206079+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "US-only public sector role (US locations, clearance eligibility required). It is a data engineering/Spark/full-stack forward deployed role, not infrastructure-focused. The 5+ year requirement is within band.",
+      "reason": "US-only public sector FDE role requiring US clearance eligibility; focus is data engineering/Spark/app development, not infrastructure. Locations are all US states, outside India/UAE/Europe. 5+ years is within band.",
       "signature": "f676d524ee94fa997206d35bd8b77cca344ce7c18c97a2c884b64855e22a889b"
     },
     "Databricks::8845270002": {
@@ -3373,16 +3407,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing data/AI forward deployed role (Spark, data engineering, pipelines, account growth), not infrastructure-focused. It is US-based (USCA, US pay zones), requires a US security clearance, and travels to US government customers, so it is outside India/UAE/Europe. The 7+ years minimum is within band.",
+        "ai_note": "Customer-facing Databricks FDE focused on data engineering, Spark, and data/AI solution delivery rather than infrastructure or Kubernetes. It is US-based (USCA, US government customers, Secret/Top Secret clearance, USD pay zones), outside India/UAE/Europe. The 7+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "b51b132f16c85ad48330f480272b0c7b7be1c8a168f2f3b0b9716f6f5782956f",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894504+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206123+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing data/AI forward deployed role (Spark, data engineering, pipelines, account growth), not infrastructure-focused. It is US-based (USCA, US pay zones), requires a US security clearance, and travels to US government customers, so it is outside India/UAE/Europe. The 7+ years minimum is within band.",
+      "reason": "Customer-facing Databricks FDE focused on data engineering, Spark, and data/AI solution delivery rather than infrastructure or Kubernetes. It is US-based (USCA, US government customers, Secret/Top Secret clearance, USD pay zones), outside India/UAE/Europe. The 7+ years requirement is within band.",
       "signature": "8d6939e09ef647021485c2b2a103b5240ef03ce9ee27111657884c11a1ff9573"
     },
     "Databricks::8899736002": {
@@ -5214,6 +5248,23 @@
       "reason": "This is a US-based (Arlington, VA) engineering manager role for data modeling, governance and data services. It is not infrastructure automation, and the location falls outside India, UAE and Europe.",
       "signature": "94a242785be8b7c15b6c770933da727049e33f747908547ac3e52916da7b57bd"
     },
+    "Mastercard::R-294454": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE role with real CI/CD and automation work, though BizOps support-heavy. The JD explicitly places it in O'Fallon, Missouri, USA with US pay ranges, outside the enabled India/UAE/Europe regions. Overall years of experience are not stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-13T02:19:51+00:00",
+      "jd_hash": "caf217e628fd7f06204ae477c147865a1579be51bc7fd30b61de105892adce8e",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T02:19:51.206380+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "SRE role with real CI/CD and automation work, though BizOps support-heavy. The JD explicitly places it in O'Fallon, Missouri, USA with US pay ranges, outside the enabled India/UAE/Europe regions. Overall years of experience are not stated.",
+      "signature": "a9536c74f0e9ced2d3f52eb38c59a45d0861d2368eaa8a1b552b54d62135a925"
+    },
     "Mastercard::R-294460": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5700,6 +5751,23 @@
       "reason": "Forward deployed role focused on software engineering, app refactoring and AI feature development rather than infrastructure or platform work. The role is US-only (remote within the U.S. or North America offices), so it falls outside the enabled India, UAE and Europe regions. The 8+ years required is within the band.",
       "signature": "123fed5148dd7c6c7d3a5045325606123a0e37c2a78eca896f22e628e8269215"
     },
+    "MongoDB::8384766": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Endpoint/EUC management leadership role (MDM, Intune, Jamf), not cloud infrastructure DevOps/SRE. It also requires 8+ years in EUC. The location is limited to US Pacific/Mountain time zones, outside India, UAE and Europe.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-13T02:19:51+00:00",
+      "jd_hash": "fda0423776f483005b5f97c009a282dcd2541be606d80caafbd7376f678a7d79",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T02:19:51.206031+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Endpoint/EUC management leadership role (MDM, Intune, Jamf), not cloud infrastructure DevOps/SRE. It also requires 8+ years in EUC. The location is limited to US Pacific/Mountain time zones, outside India, UAE and Europe.",
+      "signature": "5dea454ee24752dfd651d837c7ba398bd3d34de5de5e846467b2f0b256748b61"
+    },
     "Morgan Stanley::549801185670": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -6028,16 +6096,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Strong SRE/Kubernetes infrastructure role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is not among the enabled India/UAE/Europe locations. No remote option is stated.",
+        "ai_note": "Strong SRE/Kubernetes infra role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is outside the enabled regions (India, UAE, Europe) and no remote option is stated.",
         "ai_relevance": "relevant",
         "ai_score": 25
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "1da856265fa4bc8afec37c1d95a7badc9d6ad6ade3199c95cce60b1dfdbce0b0",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894615+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206217+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong SRE/Kubernetes infrastructure role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is not among the enabled India/UAE/Europe locations. No remote option is stated.",
+      "reason": "Strong SRE/Kubernetes infra role (5+ yrs, within band), but the location is Tel Aviv/Raanana, Israel, which is outside the enabled regions (India, UAE, Europe) and no remote option is stated.",
       "signature": "4b58cb00ede5ceeb330a25edff3e81f95840c62d09fdd02112ad9af06c3a0a08"
     },
     "NVIDIA::JR2029244": {
@@ -6708,16 +6776,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing full-stack FDE role (frontend/backend, LLM app delivery), not infrastructure/Kubernetes-focused. It is based in New York with 3 days per week in office, which is outside the enabled regions. 5+ years required is within band.",
+        "ai_note": "Forward deployed role centered on full-stack frontend/backend builds and customer delivery, not infrastructure/Kubernetes. Based in New York, hybrid 3 days/week in office, outside the enabled regions. Requires 5+ years, which is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 10
+        "ai_score": 8
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "a67637f9934cdb83a649af98583143ed695def1879fd26ed6413ec67a0c1f027",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894585+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206176+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing full-stack FDE role (frontend/backend, LLM app delivery), not infrastructure/Kubernetes-focused. It is based in New York with 3 days per week in office, which is outside the enabled regions. 5+ years required is within band.",
+      "reason": "Forward deployed role centered on full-stack frontend/backend builds and customer delivery, not infrastructure/Kubernetes. Based in New York, hybrid 3 days/week in office, outside the enabled regions. Requires 5+ years, which is within band.",
       "signature": "82dfaad1e8a35070f432b59ca96eff5af1545b8c77c954196f5c240b75241718"
     },
     "OpenAI::967f94aa-1706-4dba-ac89-bfbc2c38b688": {
@@ -6997,16 +7065,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Location is explicitly US-only (San Francisco, NYC, Seattle), which is outside the enabled India/UAE/Europe regions. The role is also more agent-harness and systems software engineering (Rust, evals, ablations) than infrastructure automation. No overall experience requirement is stated.",
+        "ai_note": "Location is explicitly San Francisco, New York City or Seattle (US only), outside the enabled India, UAE and Europe regions. The role is an agent-harness and systems engineering job with heavy Rust/ML eval work, which only partly matches infrastructure automation. No overall experience requirement is stated.",
         "ai_relevance": "uncertain",
-        "ai_score": 20
+        "ai_score": 15
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "943fda366fa76b2d08c0beb962c97164afa6b708b5570fc61ad5da7cb9d6a8bb",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894547+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206151+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Location is explicitly US-only (San Francisco, NYC, Seattle), which is outside the enabled India/UAE/Europe regions. The role is also more agent-harness and systems software engineering (Rust, evals, ablations) than infrastructure automation. No overall experience requirement is stated.",
+      "reason": "Location is explicitly San Francisco, New York City or Seattle (US only), outside the enabled India, UAE and Europe regions. The role is an agent-harness and systems engineering job with heavy Rust/ML eval work, which only partly matches infrastructure automation. No overall experience requirement is stated.",
       "signature": "2d462b9c78c4d183e51af47f35994b32b05af648910fda1d4d758fe379616421"
     },
     "OpenAI::e6d5ca02-f30b-4ac5-a69d-c947efb430f9": {
@@ -7025,6 +7093,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Developer productivity/CI/CD and build infrastructure role with Kubernetes is relevant, but the JD explicitly places it in San Francisco (3 days/week hybrid with relocation), outside the enabled regions of India, UAE and Europe. Overall experience is not stated.",
       "signature": "7dd7cd28f95bc9e1d8db639f7a071f4265f6f359092dad5efce7e54f0176d333"
+    },
+    "OpenAI::e70a2b94-17d7-4083-a028-943bae53d126": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Role is business/enterprise workflow software engineering (finance, procurement integrations), not infrastructure automation; the 'platform' title is misleading. The location is San Francisco, with Remote likely US-only, which falls outside the enabled regions. Overall experience is unstated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-13T02:19:51+00:00",
+      "jd_hash": "324bef511829d6a7e6dfe643dc4670cb9182501b6a304c3c2ea448e8b29caeb2",
+      "mode": "ai",
+      "next_review_at": "2026-11-20T02:19:51.206197+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Role is business/enterprise workflow software engineering (finance, procurement integrations), not infrastructure automation; the 'platform' title is misleading. The location is San Francisco, with Remote likely US-only, which falls outside the enabled regions. Overall experience is unstated.",
+      "signature": "7df343ad6ba72b7eac45711af8fd14da791f02ee81fac3a0ab145999d33067e5"
     },
     "OpenAI::ed9255f0-981f-49e9-8b01-9fd203141929": {
       "ai_assessment": {
@@ -7838,18 +7923,18 @@
     "Salesforce::JR362608": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "uncertain",
+        "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Marketing Cloud Engagement operations role (Journey Builder, SQL, AMPscript), not infrastructure automation. The location is Chicago, US, which is outside the enabled regions. The only experience requirement is 5 years of SFMC tool tenure, with no overall years stated.",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a Salesforce Marketing Cloud operations role (Journey Builder, SQL, AMPscript), not infrastructure automation. It is based in Chicago, USA, which is outside the enabled regions. The 5-year minimum is tool-specific, not overall experience.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "07c735614dfb27a3c1ab7f01591a96e25c05dd99e1ad83ee0782a9384358d276",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894642+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206320+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Marketing Cloud Engagement operations role (Journey Builder, SQL, AMPscript), not infrastructure automation. The location is Chicago, US, which is outside the enabled regions. The only experience requirement is 5 years of SFMC tool tenure, with no overall years stated.",
+      "reason": "Despite the 'Systems Engineer' title, this is a Salesforce Marketing Cloud operations role (Journey Builder, SQL, AMPscript), not infrastructure automation. It is based in Chicago, USA, which is outside the enabled regions. The 5-year minimum is tool-specific, not overall experience.",
       "signature": "63332f3e8ad9d910305408b67ff0260d7a2e26d56449e10c1564d3d8b4346e00"
     },
     "Salesforce::JR363024": {
@@ -8214,16 +8299,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Location is US-only (San Francisco, Atlanta, Seattle), outside the India, UAE and Europe regions. The role is a staff agentic AI software engineering platform, mixed with infrastructure automation. The 10+ years minimum is within the 11-year max.",
+        "ai_note": "US-only locations (San Francisco, Atlanta, Seattle) fall outside the enabled India/UAE/Europe regions. The role is agentic AI software engineering with only partial platform overlap. The 10+ years requirement sits within the 11-year max.",
         "ai_relevance": "uncertain",
         "ai_score": 15
       },
-      "at": "2026-11-06T00:08:01+00:00",
+      "at": "2026-11-13T02:19:51+00:00",
       "jd_hash": "8355b3c0c0f1a67c0aab4e09ba8a9ff8b469a004a1c513f3e56106895b2e0b18",
       "mode": "ai",
-      "next_review_at": "2026-11-13T00:08:01.894681+00:00",
+      "next_review_at": "2026-11-20T02:19:51.206350+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Location is US-only (San Francisco, Atlanta, Seattle), outside the India, UAE and Europe regions. The role is a staff agentic AI software engineering platform, mixed with infrastructure automation. The 10+ years minimum is within the 11-year max.",
+      "reason": "US-only locations (San Francisco, Atlanta, Seattle) fall outside the enabled India/UAE/Europe regions. The role is agentic AI software engineering with only partial platform overlap. The 10+ years requirement sits within the 11-year max.",
       "signature": "d3edfaa30be807a153697032221421c74a86e5b727c108b2eaece37698a38a41"
     },
     "Salesforce::JR367438": {
@@ -10140,6 +10225,7 @@
     "PayPal::274922873916": "2026-10-26T06:49:10+00:00",
     "Paytm::4a5c3f39-94d6-4581-9b73-65a2895cb03d": "2026-10-30T07:22:23+00:00",
     "Perplexity::0d722589-0f8c-4500-ae79-d3bba5c8a0ea": "2026-10-30T07:22:23+00:00",
+    "Perplexity::190962f1-a955-4690-8025-6943dcbf063c": "2026-11-13T02:19:53+00:00",
     "Perplexity::60deb376-51b5-46c6-9e17-55377a5ef34e": "2026-10-30T07:22:23+00:00",
     "Perplexity::739411fa-6580-4c8b-9960-035d5fa3c00e": "2026-10-30T07:22:23+00:00",
     "Perplexity::dd80ab52-34bd-42af-aa5e-6283b7e6c194": "2026-10-30T07:22:23+00:00",
