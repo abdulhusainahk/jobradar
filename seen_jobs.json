@@ -721,16 +721,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Tokyo-based customer-facing AI software FDE role (agents, RAG, business-level Japanese required), not infrastructure-focused. Location is outside India/UAE/Europe. 5+ years is within band.",
+        "ai_note": "Tokyo-based FDE role focused on building AI applications (multi-agent, RAG, software development), not infrastructure/platform work; requires business-level Japanese; location outside India/UAE/Europe. 5+ years experience is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "24557845a54643d8835ff7bddadc669cdf127f25bc7f5218c67fa1d1bf0c0120",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930424+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121523+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Tokyo-based customer-facing AI software FDE role (agents, RAG, business-level Japanese required), not infrastructure-focused. Location is outside India/UAE/Europe. 5+ years is within band.",
+      "reason": "Tokyo-based FDE role focused on building AI applications (multi-agent, RAG, software development), not infrastructure/platform work; requires business-level Japanese; location outside India/UAE/Europe. 5+ years experience is within band.",
       "signature": "87b43c2e5e75d3b21456610d5bf71803f317f9fa5165b72601fedf4856fa076a"
     },
     "Amazon::10595488": {
@@ -1231,16 +1231,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Forward deployed role focused on software development (Java/Go APIs, IAM, identity platform), not infrastructure/Kubernetes/platform automation. Pune location is allowed; 3+ years is within band.",
+        "ai_note": "Despite the 'Forward Deployed' title, this is a software development role (Java/Go APIs, microservices, IAM) on an identity platform. Cloud and CI/CD appear only as supporting skills, with no infrastructure, Kubernetes or platform deployment focus. Pune is an allowed location, and the 3+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "52c77468d9d9ddf4063c1cf3448089074e1bf35782a558516713a51e57376cec",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931205+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121893+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed role focused on software development (Java/Go APIs, IAM, identity platform), not infrastructure/Kubernetes/platform automation. Pune location is allowed; 3+ years is within band.",
+      "reason": "Despite the 'Forward Deployed' title, this is a software development role (Java/Go APIs, microservices, IAM) on an identity platform. Cloud and CI/CD appear only as supporting skills, with no infrastructure, Kubernetes or platform deployment focus. Pune is an allowed location, and the 3+ years requirement is within band.",
       "signature": "2b7e6b73bbf705ff120f8ed65b9a928355eae10decafb125b035e3b30e703867"
     },
     "Barclays::JR-0000069724": {
@@ -1299,16 +1299,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is mainly full-stack software development (React/TypeScript apps for an internal developer platform), and Kubernetes and cloud are listed only as nice-to-haves. It is based in Glasgow, Scotland, which matches none of the enabled locations. No overall experience requirement is stated.",
+        "ai_note": "Developer platform role at Barclays is primarily full-stack software development (React/TypeScript, apps), not infrastructure automation; K8s/cloud only nice-to-have. Glasgow, UK is not in the enabled location list.",
         "ai_relevance": "irrelevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "ed49ebfd964f9b20bbc5ada3a9741e35c191ccffbbc8abce13a912106495f6bd",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931284+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121914+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is mainly full-stack software development (React/TypeScript apps for an internal developer platform), and Kubernetes and cloud are listed only as nice-to-haves. It is based in Glasgow, Scotland, which matches none of the enabled locations. No overall experience requirement is stated.",
+      "reason": "Developer platform role at Barclays is primarily full-stack software development (React/TypeScript, apps), not infrastructure automation; K8s/cloud only nice-to-have. Glasgow, UK is not in the enabled location list.",
       "signature": "0794e6bff534c195ac9ecbc706155998a547e075b309909764dbee0d89e5bf6d"
     },
     "Barclays::JR-0000101382": {
@@ -1384,16 +1384,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the SRE title, the actual requirements are data science and ML modelling (Pandas, scikit-learn, XGBoost, supervised/unsupervised learning, EDA) plus IT service management. Infrastructure automation work is minimal. Pune is an allowed location, and overall experience is not stated.",
+        "ai_note": "Despite the SRE title, the actual skills required are data science and ML modeling (Pandas, scikit-learn, XGBoost, EDA, model training). Only incidental MLOps and CI/CD mentions, and no infrastructure automation, Kubernetes or IaC focus. Pune is an allowed location. Overall experience is unstated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 20
+        "ai_score": 18
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "a5925d6c8e2b7d2c9ea2ed34247209fc5f752bf52cba87ad98f2605fa81f11ed",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931128+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121871+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the SRE title, the actual requirements are data science and ML modelling (Pandas, scikit-learn, XGBoost, supervised/unsupervised learning, EDA) plus IT service management. Infrastructure automation work is minimal. Pune is an allowed location, and overall experience is not stated.",
+      "reason": "Despite the SRE title, the actual skills required are data science and ML modeling (Pandas, scikit-learn, XGBoost, EDA, model training). Only incidental MLOps and CI/CD mentions, and no infrastructure automation, Kubernetes or IaC focus. Pune is an allowed location. Overall experience is unstated.",
       "signature": "64b5e295630ec42d9528e8374e87b7c889088f20c085c9ffb3c8d81b6fc1cebf"
     },
     "Barclays::JR-0000114686": {
@@ -1452,16 +1452,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Core requirements are data engineering: expert Python/PySpark, SQL, data warehousing, ETL/Informatica and BI. DevOps, CI/CD and IaC appear only as nice-to-haves, so this is not an infrastructure automation role. Pune is an allowed location. Overall experience is unstated.",
+        "ai_note": "Pune is an allowed location, but this is primarily a data engineering lead role at a bank, not a product company. Core requirements are Python/PySpark, data warehousing, SQL and ETL (Informatica). DevOps, CI/CD and IaC are listed only as nice-to-haves, so it is not an infrastructure automation role. No overall years of experience are stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 25
+        "ai_score": 22
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "988d3dbdf0d00cb71a1aa5f8ca88b96c04c4b982b407b8d8206f65e966879010",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931074+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121827+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Core requirements are data engineering: expert Python/PySpark, SQL, data warehousing, ETL/Informatica and BI. DevOps, CI/CD and IaC appear only as nice-to-haves, so this is not an infrastructure automation role. Pune is an allowed location. Overall experience is unstated.",
+      "reason": "Pune is an allowed location, but this is primarily a data engineering lead role at a bank, not a product company. Core requirements are Python/PySpark, data warehousing, SQL and ETL (Informatica). DevOps, CI/CD and IaC are listed only as nice-to-haves, so it is not an infrastructure automation role. No overall years of experience are stated.",
       "signature": "b4922e54d30b2f0d9b085daa781715f5eb08cfb39018ec0d96162ffa1afb9950"
     },
     "Barclays::JR-0000132635": {
@@ -1469,16 +1469,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Strong SRE/infrastructure role (cloud, IaC, CI/CD, Kubernetes, DR), but the JD explicitly places it in Whippany, NJ, USA, which is outside the enabled regions (India, UAE, Europe). No overall years of experience are stated.",
+        "ai_note": "Strong SRE/infra role (cloud, IaC, Kubernetes, CI/CD, DR), but the JD explicitly places it in Whippany, NJ (USA), outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "20589733c75ee844beae73cf179c0d657028e6623e2f22605c9c4fb6c0f6c1fc",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931099+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121848+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong SRE/infrastructure role (cloud, IaC, CI/CD, Kubernetes, DR), but the JD explicitly places it in Whippany, NJ, USA, which is outside the enabled regions (India, UAE, Europe). No overall years of experience are stated.",
+      "reason": "Strong SRE/infra role (cloud, IaC, Kubernetes, CI/CD, DR), but the JD explicitly places it in Whippany, NJ (USA), outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
       "signature": "8d4a5f5d945ef3af956205b6d6449f5f554ec334b21727362b008825e3610bc9"
     },
     "Barclays::JR-0000133475": {
@@ -1758,16 +1758,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "above_band",
         "ai_location_fit": "allowed",
-        "ai_note": "London is allowed, but this is an applications-development forward deployed role focused on agentic AI software (LangGraph, RAG, MCP servers, prototyping), not infrastructure automation. It also requires 12+ years overall, above the 11-year maximum, and drop_out_of_band is true.",
+        "ai_note": "Forward deployed role centered on agentic AI application development (LangGraph, RAG, backend integration), not infrastructure. Applications Development family. Requires 12+ years overall, above the 11-year max with drop_out_of_band true. London is allowed.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "e39b3224f8e0fd640eded794d1ae6e6021be4cf13309e60d3dfb8be2997af280",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930599+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121615+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "London is allowed, but this is an applications-development forward deployed role focused on agentic AI software (LangGraph, RAG, MCP servers, prototyping), not infrastructure automation. It also requires 12+ years overall, above the 11-year maximum, and drop_out_of_band is true.",
+      "reason": "Forward deployed role centered on agentic AI application development (LangGraph, RAG, backend integration), not infrastructure. Applications Development family. Requires 12+ years overall, above the 11-year max with drop_out_of_band true. London is allowed.",
       "signature": "2e96e52e12d4ffa90990d085925516f783db0700a5f07bc16786622e4d1a9b6f"
     },
     "Citi::859038501308": {
@@ -1837,6 +1837,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "The role is data engineering (Starburst/Trino, Spark, ETL, PL/SQL, data warehousing) in the Applications Development family, not DevOps/SRE infrastructure automation. The MCP/AI-agent work is data-focused. Pune is allowed and the 7+ years requirement is within band.",
       "signature": "97a337eb12e0abec2eef2e854794d1b3c9a679f98840d86c6bdd36900aa96caf"
+    },
+    "ClickHouse::6d2d05da-c1f4-4ff6-9d02-a30306940857": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Platform' title, this is a senior data engineering role (SQL, Airflow, dbt, data modeling, DWH pipelines), not infrastructure automation. Netherlands, UK and Germany remote are allowed locations. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 18
+      },
+      "at": "2026-11-14T01:53:02+00:00",
+      "jd_hash": "9efb66ace69755bc8d4195d19b634b0c05caf407a4579d6f1f6a373390350d08",
+      "mode": "ai",
+      "next_review_at": "2026-11-21T01:53:02.121251+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Platform' title, this is a senior data engineering role (SQL, Airflow, dbt, data modeling, DWH pipelines), not infrastructure automation. Netherlands, UK and Germany remote are allowed locations. No overall years of experience are stated.",
+      "signature": "5d0a3b522e85bcb5f0ede7ad6d20e7d7c49125b0c07eab350b5cafe47d8b3daa"
     },
     "ClickHouse::86f88674-eb78-4abc-93f4-c8be453d15ae": {
       "ai_assessment": {
@@ -2183,16 +2200,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "uncertain",
-        "ai_note": "Software engineering role building SDKs, a Terraform provider (Go), code generation and API versioning. This is developer tooling and library work, not infrastructure automation or operations. Kubernetes and CI/CD appear only as bonus points. The 5+ years requirement fits the band. Location is only 'Hybrid', with no country stated.",
+        "ai_note": "The role is software engineering on SDKs, a Terraform provider, code generation and API governance, with deep Go and SDK development at its core. It is not infrastructure automation or operations work, and Kubernetes and CI/CD appear only as bonus skills. The 5+ years requirement is within band. Location is only stated as Hybrid with no city or country given.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "9db3be343a8893a471ed89baf9104a5dafefb219be8c6f2a5cfcf2d07cce22b3",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930009+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121174+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Software engineering role building SDKs, a Terraform provider (Go), code generation and API versioning. This is developer tooling and library work, not infrastructure automation or operations. Kubernetes and CI/CD appear only as bonus points. The 5+ years requirement fits the band. Location is only 'Hybrid', with no country stated.",
+      "reason": "The role is software engineering on SDKs, a Terraform provider, code generation and API governance, with deep Go and SDK development at its core. It is not infrastructure automation or operations work, and Kubernetes and CI/CD appear only as bonus skills. The 5+ years requirement is within band. Location is only stated as Hybrid with no city or country given.",
       "signature": "604c658e730b3575f66192c6d14c217e579604aaa01a8f16b5dbe479ba0464d1"
     },
     "Cloudflare::8385867": {
@@ -2285,16 +2302,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "This is a strong infrastructure match: running GPU Kubernetes fleets, automating fault remediation, and 24x7 on-call. However, the listed locations (Seattle, Canada, New York, California Remote) are all outside India, the UAE and Europe. The London/Berlin offices are mentioned only as company info, not as locations for this role.",
+        "ai_note": "Strong GPU Kubernetes infrastructure role, but the posting lists only Seattle, Canada, New York and California (Remote). None of these are in the enabled India, UAE or Europe locations. The company's London and Berlin offices are not listed for this role. Overall experience requirement is not stated.",
         "ai_relevance": "relevant",
         "ai_score": 30
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "047cccf2663dc956c6248bad68df814fc3c16d44c155aea83fe0242b0f919e70",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930226+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121366+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a strong infrastructure match: running GPU Kubernetes fleets, automating fault remediation, and 24x7 on-call. However, the listed locations (Seattle, Canada, New York, California Remote) are all outside India, the UAE and Europe. The London/Berlin offices are mentioned only as company info, not as locations for this role.",
+      "reason": "Strong GPU Kubernetes infrastructure role, but the posting lists only Seattle, Canada, New York and California (Remote). None of these are in the enabled India, UAE or Europe locations. The company's London and Berlin offices are not listed for this role. Overall experience requirement is not stated.",
       "signature": "2fd990c4e6f0be095542dd193526752f91703bc5b6f1d125956c3ec59820f04a"
     },
     "Cohere::b0bcef37-1d20-414f-aade-c54942d63df9": {
@@ -2319,16 +2336,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Infra-focused forward deployed role (Kubernetes, Helm, private cloud deployments) fits well, but it is explicitly North America, with Canadian locations (remote within Canada). This is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+        "ai_note": "Infrastructure-focused forward deployed role (Kubernetes, Helm, private cloud deployments) fits well, but it is explicitly North America, with locations in Canada only (Toronto, Vancouver, Ottawa, Montreal remote). That is outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
         "ai_relevance": "relevant",
         "ai_score": 25
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "f9e6f64eab1e6fcc6077463ad2c6ecc36c52cc69147f9f15fcf8754dcd799365",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930196+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121342+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Infra-focused forward deployed role (Kubernetes, Helm, private cloud deployments) fits well, but it is explicitly North America, with Canadian locations (remote within Canada). This is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+      "reason": "Infrastructure-focused forward deployed role (Kubernetes, Helm, private cloud deployments) fits well, but it is explicitly North America, with locations in Canada only (Toronto, Vancouver, Ottawa, Montreal remote). That is outside the enabled India/UAE/Europe regions. Overall experience is not stated.",
       "signature": "fbf4b127af6950dcab8fe5c2d6c1dd1963f37f8c642d36ecb5242a7da5d4f2fd"
     },
     "Cohere::fe2e2971-e2c0-43fd-9ab1-187571776a5d": {
@@ -3757,16 +3774,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is SAP BW/ECC/S4 production support, which needs 5+ years of SAP experience. That is application support, not infrastructure automation. The role is in Bucharest, Romania, which is not in the enabled Europe locations.",
+        "ai_note": "SAP BW/HANA production support role (ECC, S4, ABAP), not infrastructure automation. The SRE mention is incidental. The role is in Bucharest, Romania, which is not among the enabled locations.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "6a07867b01aa6fb65fb6db99c416bec19563a1a2ce940e7db9d69ba2d28ee3ae",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930945+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121721+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is SAP BW/ECC/S4 production support, which needs 5+ years of SAP experience. That is application support, not infrastructure automation. The role is in Bucharest, Romania, which is not in the enabled Europe locations.",
+      "reason": "SAP BW/HANA production support role (ECC, S4, ABAP), not infrastructure automation. The SRE mention is incidental. The role is in Bucharest, Romania, which is not among the enabled locations.",
       "signature": "30463e2541a4d64958e4e42502fb932869d81ca52f048ee4dec08903fd7dde5c"
     },
     "Deutsche Bank::R0423994": {
@@ -3774,16 +3791,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Primarily a Java/GCP software developer role (design, develop, unit-test applications, BigQuery/Dataproc); CI/Terraform/GKE are secondary to the application development focus. Pune, India is allowed. Only a GCP tool-tenure minimum of 4 years is stated, with no overall experience requirement.",
+        "ai_note": "Primarily a Java/GCP software development role (design, develop, unit-test applications, BigQuery/Dataproc). CI and Terraform/GKE are secondary, not infrastructure automation focus. Pune, India is allowed. Only a GCP tool-tenure minimum (4 years) is stated; overall experience is unstated.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "cb7c86e165f0c28a90c23253701d08d07935c4d42b65299eedefafd5cf1a35c5",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930865+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121659+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Primarily a Java/GCP software developer role (design, develop, unit-test applications, BigQuery/Dataproc); CI/Terraform/GKE are secondary to the application development focus. Pune, India is allowed. Only a GCP tool-tenure minimum of 4 years is stated, with no overall experience requirement.",
+      "reason": "Primarily a Java/GCP software development role (design, develop, unit-test applications, BigQuery/Dataproc). CI and Terraform/GKE are secondary, not infrastructure automation focus. Pune, India is allowed. Only a GCP tool-tenure minimum (4 years) is stated; overall experience is unstated.",
       "signature": "aad36589cc0e4b76438bbf0e5746687c5db6a31807a4c28dfdd485fcdca24489"
     },
     "Deutsche Bank::R0424598": {
@@ -3791,16 +3808,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "SAP BW/HANA application production support role (BW4HANA, ABAP, run books), not infrastructure automation. Located in Bucharest, Romania, which is outside the enabled locations. No overall years of experience are stated.",
+        "ai_note": "SAP BW/BW4HANA application production support role (HANA modelling, ABAP, ECC/S4) rather than infrastructure automation; located in Bucharest, Romania, which is not among the enabled locations; overall experience is unstated.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "b91af0c449561d298430d27956a2f198ccc62490da770a470fca618d258dced9",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930917+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121700+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "SAP BW/HANA application production support role (BW4HANA, ABAP, run books), not infrastructure automation. Located in Bucharest, Romania, which is outside the enabled locations. No overall years of experience are stated.",
+      "reason": "SAP BW/BW4HANA application production support role (HANA modelling, ABAP, ECC/S4) rather than infrastructure automation; located in Bucharest, Romania, which is not among the enabled locations; overall experience is unstated.",
       "signature": "5e09d4cbd93659f37228ad07d3e0ccdfc2c5e16286340cfe7a9d0c6ef5b6059d"
     },
     "Deutsche Bank::R0425743": {
@@ -3825,16 +3842,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Strong SRE/Kubernetes platform role, but the JD explicitly requires hybrid work from the Cary, NC (USA) office, which is outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
+        "ai_note": "Strong SRE/Kubernetes platform role, but explicitly based in Cary, NC (US) with hybrid in-office expectation; US is not an enabled region. No overall years stated.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "b3b8b8c2c040b6d0712a5c4de3ea968e4e1f4fc1d3c3538b1a623177e4fba67c",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930890+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121678+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong SRE/Kubernetes platform role, but the JD explicitly requires hybrid work from the Cary, NC (USA) office, which is outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
+      "reason": "Strong SRE/Kubernetes platform role, but explicitly based in Cary, NC (US) with hybrid in-office expectation; US is not an enabled region. No overall years stated.",
       "signature": "67845430b2b1f3c6ed2f3fd28f08de6b5a4be405377d5987c6a937ec7b10c8ca"
     },
     "Deutsche Bank::R0441114": {
@@ -3842,16 +3859,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Strong DevOps match (GCP/GKE, Terraform, Jenkins/GitHub Actions, Prometheus). However, the role is based in Bucharest, Romania, which is not in the enabled India/UAE/Europe location list, and it is hybrid rather than remote. Overall experience required is not stated.",
+        "ai_note": "Strong DevOps/GCP/GKE/Terraform match, but the role is in Bucharest, Romania (hybrid, 40% remote), which is not among the enabled India, UAE or Europe locations. Overall experience is not stated.",
         "ai_relevance": "relevant",
         "ai_score": 30
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "4e38b937cdd509a4d771a49256b21845dcb28816e041db309b8b1962d26b1905",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930839+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121638+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong DevOps match (GCP/GKE, Terraform, Jenkins/GitHub Actions, Prometheus). However, the role is based in Bucharest, Romania, which is not in the enabled India/UAE/Europe location list, and it is hybrid rather than remote. Overall experience required is not stated.",
+      "reason": "Strong DevOps/GCP/GKE/Terraform match, but the role is in Bucharest, Romania (hybrid, 40% remote), which is not among the enabled India, UAE or Europe locations. Overall experience is not stated.",
       "signature": "c56a6b2bab5d315552cfe21dd62816f9fa3886425a067944a5a72867523575e4"
     },
     "Deutsche Bank::R0441643": {
@@ -3859,16 +3876,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is in Madrid, Spain, which is not among the enabled Europe locations. It is also a Snowflake data engineering role focused on dbt/Airflow pipelines, with Terraform only a secondary part. The minimum of 3+ years of experience is within band.",
+        "ai_note": "Madrid, Spain is not in the enabled locations (Spain isn't listed and EMEA isn't stated). The role is data-engineering heavy (Snowflake, dbt, Airflow, Python/Java pipelines) with only incidental Terraform, so it isn't a DevOps/SRE platform role. The 3+ years requirement fits.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "220ca262ef9c56bbe4173406fdf537a3ce2c1c0f0897f5ff1653671b75aacd1e",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930998+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121764+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is in Madrid, Spain, which is not among the enabled Europe locations. It is also a Snowflake data engineering role focused on dbt/Airflow pipelines, with Terraform only a secondary part. The minimum of 3+ years of experience is within band.",
+      "reason": "Madrid, Spain is not in the enabled locations (Spain isn't listed and EMEA isn't stated). The role is data-engineering heavy (Snowflake, dbt, Airflow, Python/Java pipelines) with only incidental Terraform, so it isn't a DevOps/SRE platform role. The 3+ years requirement fits.",
       "signature": "f76000b4ecd292f3a9b0bd1c6181786d44edf364b134730680e4d6807e21c5cf"
     },
     "Deutsche Bank::R0446624": {
@@ -3876,16 +3893,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "This is an SAP BW/HANA production support role in finance, not infrastructure automation. It is based in Manila, Philippines, which is outside the enabled India, UAE and Europe regions. No overall years of experience are stated.",
+        "ai_note": "SAP BW production support/analysis role (BW4HANA, HANA modelling, ABAP), not infrastructure automation. Based in Manila, Philippines, which is outside the enabled India, UAE and Europe regions. Overall years are not stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "3d53fd170785001ac59276855393e2e0f349998099a4f14f84787794f01f4ea0",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930971+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121742+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is an SAP BW/HANA production support role in finance, not infrastructure automation. It is based in Manila, Philippines, which is outside the enabled India, UAE and Europe regions. No overall years of experience are stated.",
+      "reason": "SAP BW production support/analysis role (BW4HANA, HANA modelling, ABAP), not infrastructure automation. Based in Manila, Philippines, which is outside the enabled India, UAE and Europe regions. Overall years are not stated.",
       "signature": "d3e850b9f77197e6ff4b660d198c166d78096c568bd58183c2566a356c53aa7d"
     },
     "Deutsche Bank::R0447978": {
@@ -3893,16 +3910,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Functional production support for Japanese fixed-income settlements in Tokyo, requiring fluent Japanese. It is not infrastructure automation work, and Japan is outside the enabled regions. The 10+ years overall requirement is within the 11-year band.",
+        "ai_note": "Location is Tokyo, Japan, which is outside the enabled regions. The role is functional production support for Fixed Income settlements, not infrastructure automation. It also requires fluent Japanese. The 10+ years minimum is within the band.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "0b887ab61e8ae1945040ff54f4e8a6251016555b8a3ca0bfdde40ef76f30b96b",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931044+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121803+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Functional production support for Japanese fixed-income settlements in Tokyo, requiring fluent Japanese. It is not infrastructure automation work, and Japan is outside the enabled regions. The 10+ years overall requirement is within the 11-year band.",
+      "reason": "Location is Tokyo, Japan, which is outside the enabled regions. The role is functional production support for Fixed Income settlements, not infrastructure automation. It also requires fluent Japanese. The 10+ years minimum is within the band.",
       "signature": "3d5766ae751980614f92ae37e5409be84d4af1dd67596be0f4810ea87e17953b"
     },
     "Deutsche Bank::R0450199": {
@@ -3944,16 +3961,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Production engineering with Kubernetes, CI/CD, cloud and RCA work, though heavily centered on risk-data reconciliation and production support. Experience (2+ years) is within band. The JD explicitly locates the role in Cary, NC, USA, which is outside the enabled India, UAE and Europe regions.",
-        "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_note": "Role is in Cary, NC, USA, which is outside the enabled regions (India, UAE, Europe). It is also a bank production-support role focused on risk-metric reconciliation and batch processing, with only partial Kubernetes and CI/CD infrastructure work. The stated 2-year minimum is within band.",
+        "ai_relevance": "uncertain",
+        "ai_score": 15
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "6718dd350374b78202d9fbce624cd18d1f41bf1d8e6c57b84ef431eb2e7a225d",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.931022+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121785+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Production engineering with Kubernetes, CI/CD, cloud and RCA work, though heavily centered on risk-data reconciliation and production support. Experience (2+ years) is within band. The JD explicitly locates the role in Cary, NC, USA, which is outside the enabled India, UAE and Europe regions.",
+      "reason": "Role is in Cary, NC, USA, which is outside the enabled regions (India, UAE, Europe). It is also a bank production-support role focused on risk-metric reconciliation and batch processing, with only partial Kubernetes and CI/CD infrastructure work. The stated 2-year minimum is within band.",
       "signature": "f3d044cae6058ecc4020cd4c00bc47729bd21d33e72a3aa1ec434e9d1c09c2b2"
     },
     "Deutsche Bank::R0455256": {
@@ -4080,16 +4097,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing forward deployed software role focused on Python and API integrations, not infrastructure. It is restricted to Argentina, which is outside the enabled regions, and requires Spanish fluency. Overall experience is unstated.",
+        "ai_note": "Customer-facing Python software integration FDE role, not infrastructure-focused; explicitly remote within Argentina only, outside enabled regions; no overall years stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "973b84de28604ecadd133fe276fdd83afa98c23857664c7daeac1313f8ca7608",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930378+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121484+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing forward deployed software role focused on Python and API integrations, not infrastructure. It is restricted to Argentina, which is outside the enabled regions, and requires Spanish fluency. Overall experience is unstated.",
+      "reason": "Customer-facing Python software integration FDE role, not infrastructure-focused; explicitly remote within Argentina only, outside enabled regions; no overall years stated.",
       "signature": "5fada994da889327f46e16e9f6da699ed0ae934237011c9aa606b0bee57f6f5a"
     },
     "ElevenLabs::2d0016e0-3cc2-4ec7-b164-bc2b83990fb6": {
@@ -4097,16 +4114,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Customer-embedded forward deployed software engineering role focused on Python integrations and APIs, with no infrastructure, Kubernetes or platform deployment responsibilities. London/UK remote is an allowed location, and no overall years of experience are stated.",
+        "ai_note": "Forward deployed role centered on customer-facing Python software development and API integrations, not infrastructure, Kubernetes or platform deployment. London/UK location is allowed; no overall years of experience are stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 18
+        "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "1959633403904c629d6436997a8b703682c6c170f0d14d0526b06227f476e13e",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930353+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121465+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-embedded forward deployed software engineering role focused on Python integrations and APIs, with no infrastructure, Kubernetes or platform deployment responsibilities. London/UK remote is an allowed location, and no overall years of experience are stated.",
+      "reason": "Forward deployed role centered on customer-facing Python software development and API integrations, not infrastructure, Kubernetes or platform deployment. London/UK location is allowed; no overall years of experience are stated.",
       "signature": "c6c9fa1d6ceb925b3e344fa24141628ab0d9d188a45e19233053abc2f667185b"
     },
     "ElevenLabs::6c4c57c1-ec72-42ba-af3a-eb7aebbde2e6": {
@@ -4114,16 +4131,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing forward deployed software engineering role (Python, API integrations) with no infrastructure, Kubernetes or platform focus. The JD also restricts the role to the United States, which is outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
+        "ai_note": "Customer-embedded software/integration FDE role (Python, API integrations), not infrastructure-focused; explicitly remote within the United States only, outside India/UAE/Europe.",
         "ai_relevance": "irrelevant",
-        "ai_score": 5
+        "ai_score": 8
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "237cf1b300c50e2e68dc3a78a472f83f04a65ad19d6bb793cd0912d389e9d5b8",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930302+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121444+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing forward deployed software engineering role (Python, API integrations) with no infrastructure, Kubernetes or platform focus. The JD also restricts the role to the United States, which is outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
+      "reason": "Customer-embedded software/integration FDE role (Python, API integrations), not infrastructure-focused; explicitly remote within the United States only, outside India/UAE/Europe.",
       "signature": "1f17fc95ea3620d7802cb1caf0b564db03d38482323d4d538aeefee4ddae33e1"
     },
     "ElevenLabs::8a573932-b1fb-4df7-9023-e13a6cecbbbb": {
@@ -4131,16 +4148,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing forward deployed software engineering role (Python and API integrations) with no infrastructure, Kubernetes or platform focus. Location is restricted to Mexico, which is outside the enabled regions. No overall experience requirement is stated.",
+        "ai_note": "Customer-facing Python integration FDE role (software/solutions, not infrastructure/Kubernetes), restricted to Mexico with Spanish fluency; no overall experience requirement stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "4c1bce3c2fa9d6ddafaefea25dec349cf6b62cbd0db1b78e7075be49752adfae",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930401+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121504+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing forward deployed software engineering role (Python and API integrations) with no infrastructure, Kubernetes or platform focus. Location is restricted to Mexico, which is outside the enabled regions. No overall experience requirement is stated.",
+      "reason": "Customer-facing Python integration FDE role (software/solutions, not infrastructure/Kubernetes), restricted to Mexico with Spanish fluency; no overall experience requirement stated.",
       "signature": "cae63b386dea0020f570075a13160e8c775a3b9e8626c672589bf2b84f0cba33"
     },
     "ElevenLabs::d16a7ad6-ffbd-4655-8716-4872263f99ce": {
@@ -4726,16 +4743,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Specialist trader voice/telephony support role (IPC, SIP/VoIP, hoots, L3 troubleshooting), not DevOps/SRE infrastructure automation; London is allowed and 5+ years is within band.",
+        "ai_note": "Trader voice/telephony support role (SIP, VoIP, IPC, hoots, L3 troubleshooting), not infrastructure automation, cloud or Kubernetes platform work. London is allowed; 5+ years falls within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "2f70eddf52627570ffd954297f8315bd7afde16c551b277cb0039136dd9d8a33",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930557+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121581+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Specialist trader voice/telephony support role (IPC, SIP/VoIP, hoots, L3 troubleshooting), not DevOps/SRE infrastructure automation; London is allowed and 5+ years is within band.",
+      "reason": "Trader voice/telephony support role (SIP, VoIP, IPC, hoots, L3 troubleshooting), not infrastructure automation, cloud or Kubernetes platform work. London is allowed; 5+ years falls within band.",
       "signature": "37a334ec9ad4ef1d8118ed82dfda1ffab7a1aacdc2fbb22db77ac3fd8304c969"
     },
     "J.P. Morgan::210799136": {
@@ -4845,16 +4862,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "SRE role on VMware/NSX infrastructure automation, but it is based in Buenos Aires, Argentina, which is outside the enabled regions (India, UAE, Europe). The 7+ years required is within band.",
+        "ai_note": "The SRE infrastructure role (VMware NSX-T/vSphere, 7+ years) is within the experience band, but the JD explicitly places it in Buenos Aires, Argentina, outside the enabled India/UAE/Europe regions.",
         "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_score": 15
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "469c92cd8a7db2f03999e4413464c6ba84f18b2e9eedfab303c6b1a329feae29",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930578+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121599+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "SRE role on VMware/NSX infrastructure automation, but it is based in Buenos Aires, Argentina, which is outside the enabled regions (India, UAE, Europe). The 7+ years required is within band.",
+      "reason": "The SRE infrastructure role (VMware NSX-T/vSphere, 7+ years) is within the experience band, but the JD explicitly places it in Buenos Aires, Argentina, outside the enabled India/UAE/Europe regions.",
       "signature": "ac4a7a51bbcab173fbb74cd79aa71f9b2ee8004f862092568aac0b56c4edb7d8"
     },
     "J.P. Morgan::210802136": {
@@ -4981,16 +4998,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Infrastructure-heavy cloud platform role (Kubernetes, IaC, networking), but located in Shanghai, China, which is outside the enabled India, UAE and Europe regions. The 8+ year minimum is within the 11-year limit.",
+        "ai_note": "Cloud platform infrastructure role (IaC, Kubernetes, networking) is relevant and 8+ years is within band, but the JD explicitly places it in Shanghai, China, which is outside the enabled India/UAE/Europe regions.",
         "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_score": 15
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "7dabfbc1a8b38411243b1b8415552fc44c951f369f16a24bb91c48341ccb7fe7",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930536+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121564+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Infrastructure-heavy cloud platform role (Kubernetes, IaC, networking), but located in Shanghai, China, which is outside the enabled India, UAE and Europe regions. The 8+ year minimum is within the 11-year limit.",
+      "reason": "Cloud platform infrastructure role (IaC, Kubernetes, networking) is relevant and 8+ years is within band, but the JD explicitly places it in Shanghai, China, which is outside the enabled India/UAE/Europe regions.",
       "signature": "e4d9b8abf4c79ab9fa9881217d1a3efa862a71a9f5bae2b9c4961f5bf909dd20"
     },
     "J.P. Morgan::210804053": {
@@ -4998,16 +5015,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "SRE lead role is relevant and 5+ years fits, but the explicit location is Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions.",
+        "ai_note": "SRE lead role is relevant and 5+ years fits, but the job is in Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions.",
         "ai_relevance": "relevant",
         "ai_score": 15
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "679a1c2bfaadc8efb47fb284a017824ab99489c27d1ed674e2c441f106a5be5b",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930511+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121544+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "SRE lead role is relevant and 5+ years fits, but the explicit location is Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions.",
+      "reason": "SRE lead role is relevant and 5+ years fits, but the job is in Buenos Aires, Argentina, which is outside the enabled India/UAE/Europe regions.",
       "signature": "4100a2e86c0396d8aa33c0070c9f88bb405025f5062a8d30e8645701f9c19a29"
     },
     "J.P. Morgan::210804187": {
@@ -6606,16 +6623,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is a customer-facing life-sciences GenAI deployment role, covering pre-sales scoping, evals and regulated workflows, rather than infrastructure or Kubernetes platform work. It is based in San Francisco (hybrid), which is outside India, UAE and Europe. The 5+ year requirement is within band.",
+        "ai_note": "This is a customer-facing life sciences GenAI deployment role covering pre-sales scoping, evals, and regulated workflows, not infrastructure, Kubernetes or platform work. It is based in San Francisco (hybrid), outside India, the UAE and Europe. The 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "eba47e77a13b745844936675fc4a7ce3c6801063db2cdf6290d0161cf5879e0c",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930159+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121317+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a customer-facing life-sciences GenAI deployment role, covering pre-sales scoping, evals and regulated workflows, rather than infrastructure or Kubernetes platform work. It is based in San Francisco (hybrid), which is outside India, UAE and Europe. The 5+ year requirement is within band.",
+      "reason": "This is a customer-facing life sciences GenAI deployment role covering pre-sales scoping, evals, and regulated workflows, not infrastructure, Kubernetes or platform work. It is based in San Francisco (hybrid), outside India, the UAE and Europe. The 5+ years requirement is within band.",
       "signature": "4d77a54c2c6f4b02a320efb7e01e367b0444b4b76894383966e1dcb95ad3457c"
     },
     "OpenAI::2a931dd1-5002-47d1-a367-ec1a19ef7e9e": {
@@ -7014,16 +7031,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing life sciences FDE role focused on GenAI deployments, evals and pre-sales scoping, not infrastructure/Kubernetes platform work. It is based in New York (hybrid, 3 days in office), which is outside India/UAE/Europe. The 5+ years requirement is within band.",
+        "ai_note": "The role is a customer-facing life sciences GenAI deployment FDE (evals, pre-sales, regulated workflows, domain expertise), not infrastructure or Kubernetes platform work. It is based in New York with a hybrid schedule of 3 days in office, outside the enabled regions. The 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "4f7e4903417fc1e8a21839c530ced284f35f4316f6ae52e38b0d352b54f2f35b",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930108+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121285+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing life sciences FDE role focused on GenAI deployments, evals and pre-sales scoping, not infrastructure/Kubernetes platform work. It is based in New York (hybrid, 3 days in office), which is outside India/UAE/Europe. The 5+ years requirement is within band.",
+      "reason": "The role is a customer-facing life sciences GenAI deployment FDE (evals, pre-sales, regulated workflows, domain expertise), not infrastructure or Kubernetes platform work. It is based in New York with a hybrid schedule of 3 days in office, outside the enabled regions. The 5+ years requirement is within band.",
       "signature": "d6f0a2eafbbdacaf08641c619510853ef9687ece40a04c80554e14591f7f41c6"
     },
     "OpenAI::a4332746-163e-4506-b62a-90758fb7a950": {
@@ -7371,16 +7388,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Strong infra SRE match (EKS, Terraform, Karpenter, networking), but locations are explicitly US-only (SF, Seattle, NYC, Remote US), outside India/UAE/Europe. No overall years stated.",
+        "ai_note": "Strong SRE/Kubernetes/Terraform infrastructure role, but locations are San Francisco, Seattle, NYC and Remote (United States) only, which falls outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "90ad6aa1230c1c11a314220eea147835c0cd7376811d7632bf44905b30367f31",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930281+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121426+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong infra SRE match (EKS, Terraform, Karpenter, networking), but locations are explicitly US-only (SF, Seattle, NYC, Remote US), outside India/UAE/Europe. No overall years stated.",
+      "reason": "Strong SRE/Kubernetes/Terraform infrastructure role, but locations are San Francisco, Seattle, NYC and Remote (United States) only, which falls outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
       "signature": "5c2f23d361e7e87c2366ec71c477683faeb3dac0521570767606a1ea9593dca5"
     },
     "Perplexity::886f4ab3-e691-45ed-b2db-069edf6f5413": {
@@ -7388,16 +7405,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is strongly relevant GPU cluster/Kubernetes platform infrastructure. However, every listed location is in the US or Canada (SF, Remote US, Toronto, Seattle, NYC), none of which are in the enabled regions of India, UAE or Europe. The JD states no overall experience requirement.",
+        "ai_note": "Strong infra-heavy GPU cluster/Kubernetes platform role, but explicit locations (San Francisco, Remote US, Toronto, Seattle, NYC) are all outside enabled India/UAE/Europe regions. No overall years stated.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-14T01:53:02+00:00",
       "jd_hash": "b0d8552598a30cb7f1d36b2ae5ef1db4b6f205aa718beb2b624eda351c682860",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930255+00:00",
+      "next_review_at": "2026-11-21T01:53:02.121401+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is strongly relevant GPU cluster/Kubernetes platform infrastructure. However, every listed location is in the US or Canada (SF, Remote US, Toronto, Seattle, NYC), none of which are in the enabled regions of India, UAE or Europe. The JD states no overall experience requirement.",
+      "reason": "Strong infra-heavy GPU cluster/Kubernetes platform role, but explicit locations (San Francisco, Remote US, Toronto, Seattle, NYC) are all outside enabled India/UAE/Europe regions. No overall years stated.",
       "signature": "4be7d1fe0d798215af013b639b7dae733842fbf591b22829f97bbffb5a974b0f"
     },
     "Rubrik::8273808": {
@@ -9402,6 +9419,7 @@
     "Atlassian::27589": "2026-10-29T14:47:57+00:00",
     "Atlassian::27617": "2026-11-01T00:36:09+00:00",
     "Atlassian::27635": "2026-11-02T11:35:47+00:00",
+    "Atlassian::27789": "2026-11-14T01:53:04+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
     "Barclays::JR-0000044230": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000052441": "2026-11-04T06:50:58+00:00",
