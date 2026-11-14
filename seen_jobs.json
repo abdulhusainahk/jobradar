@@ -126,16 +126,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Strong Kubernetes platform role, but it is explicitly based in the San Francisco office (3 days/week), requires US work authorization and offers no new visa sponsorship. That is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
+        "ai_note": "Strong Kubernetes/platform infrastructure role (7+ yrs, within band), but explicitly based in San Francisco office 3 days/week with US work authorization required; outside enabled regions (India, UAE, Europe).",
         "ai_relevance": "relevant",
         "ai_score": 15
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "b79bc6f33626c4f807afe44094681f15881dbdf0e25a99ea54bf34445bc4e0a8",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191598+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510763+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong Kubernetes platform role, but it is explicitly based in the San Francisco office (3 days/week), requires US work authorization and offers no new visa sponsorship. That is outside the enabled India/UAE/Europe regions. The 7+ years requirement is within band.",
+      "reason": "Strong Kubernetes/platform infrastructure role (7+ yrs, within band), but explicitly based in San Francisco office 3 days/week with US work authorization required; outside enabled regions (India, UAE, Europe).",
       "signature": "0e72ff1197db43e00f09769207f31156843efa72163171930daf1e650631064d"
     },
     "Adyen::8379238": {
@@ -160,16 +160,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "This is a sales and go-to-market business development role (pipeline, revenue, partner co-sell), not hands-on infrastructure automation. It is based in Tel Aviv, Israel, which is outside the enabled regions.",
+        "ai_note": "GTM/business development sales role (pipeline, revenue, partner co-sell) for AI infrastructure, not hands-on infra automation. Located in Tel Aviv, Israel, outside the enabled India/UAE/Europe locations. Overall years of experience not stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "a6cf5d6dd92815a559d23c9044a7212c69859dadfa67b9bfb00c05455082e071",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190894+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510184+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a sales and go-to-market business development role (pipeline, revenue, partner co-sell), not hands-on infrastructure automation. It is based in Tel Aviv, Israel, which is outside the enabled regions.",
+      "reason": "GTM/business development sales role (pipeline, revenue, partner co-sell) for AI infrastructure, not hands-on infra automation. Located in Tel Aviv, Israel, outside the enabled India/UAE/Europe locations. Overall years of experience not stated.",
       "signature": "1887d275ca07fe6c2a9b14da73f19224f243c34ad9790d83651c0f41838ef462"
     },
     "Amazon::10440990": {
@@ -177,16 +177,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Post-sales customer-facing advisory role (Enterprise Support), not hands-on infrastructure automation. Located in Oslo, Norway, which is not in the enabled Europe locations. Norwegian fluency preferred. Overall years not stated.",
+        "ai_note": "Post-sales customer advisory role (Enterprise Support), not hands-on infra automation; based in Oslo, Norway, which isn't in the enabled locations; Norwegian fluency required. No overall years stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "e7843fca3387b3457465272212c1a9082288964f30d11d4a5fcc90007f054438",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190712+00:00",
+      "next_review_at": "2026-11-21T10:50:13.509990+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Post-sales customer-facing advisory role (Enterprise Support), not hands-on infrastructure automation. Located in Oslo, Norway, which is not in the enabled Europe locations. Norwegian fluency preferred. Overall years not stated.",
+      "reason": "Post-sales customer advisory role (Enterprise Support), not hands-on infra automation; based in Oslo, Norway, which isn't in the enabled locations; Norwegian fluency required. No overall years stated.",
       "signature": "b284d15821ee4e1c57f14fa3b96edae2ac6f92b37ed12cef68712ee562e41163"
     },
     "Amazon::10528232": {
@@ -194,16 +194,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "uncertain",
-        "ai_note": "Customer-facing Enterprise Support advisory role (TAM-like) that advises and reviews rather than doing hands-on infrastructure automation, and Swedish is preferred. The location is Gothenburg, Sweden, which is not in the enabled list, though the EMEA title tag leaves this uncertain. The 5+ years required is within band.",
+        "ai_note": "Customer-facing Enterprise Support advisory/TAM-style role, not hands-on infrastructure automation. The 5+ years required is within band. Gothenburg, Sweden is not in the configured location list, though the 'EMEA' in the title is ambiguous.",
         "ai_relevance": "irrelevant",
-        "ai_score": 22
+        "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "c4d03056a5c731ff03ef8b25081ebdbf2a968cddb6322291e8563dc5cbb645aa",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190678+00:00",
+      "next_review_at": "2026-11-21T10:50:13.509956+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing Enterprise Support advisory role (TAM-like) that advises and reviews rather than doing hands-on infrastructure automation, and Swedish is preferred. The location is Gothenburg, Sweden, which is not in the enabled list, though the EMEA title tag leaves this uncertain. The 5+ years required is within band.",
+      "reason": "Customer-facing Enterprise Support advisory/TAM-style role, not hands-on infrastructure automation. The 5+ years required is within band. Gothenburg, Sweden is not in the configured location list, though the 'EMEA' in the title is ambiguous.",
       "signature": "ddcd72651944721a91b2ea6796d5f27ab93ac11c4c7105ace30dd5b1fc1668a7"
     },
     "Amazon::10553294": {
@@ -211,16 +211,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Post-sales TAM/customer advisory role, not hands-on infrastructure automation. It is based in Helsinki, Finland, which is not among the enabled locations, and it requires Finnish fluency. The 7+ years requirement is within band.",
+        "ai_note": "Post-sales TAM/advisory role (customer-facing Enterprise Support), not hands-on infrastructure automation; based in Helsinki, Finland (not in the enabled Europe locations) and requires Finnish fluency. The 7+ year minimum is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "b30551b79fe8b4c1473bc610c6335c182209acbedc47610830fbd2ec37b8b55c",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190638+00:00",
+      "next_review_at": "2026-11-21T10:50:13.509917+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Post-sales TAM/customer advisory role, not hands-on infrastructure automation. It is based in Helsinki, Finland, which is not among the enabled locations, and it requires Finnish fluency. The 7+ years requirement is within band.",
+      "reason": "Post-sales TAM/advisory role (customer-facing Enterprise Support), not hands-on infrastructure automation; based in Helsinki, Finland (not in the enabled Europe locations) and requires Finnish fluency. The 7+ year minimum is within band.",
       "signature": "4c0b11af83b2e7e5051f0316b15949e01e2081f4e4e504cef4966e6e56a29af0"
     },
     "Amazon::10576494": {
@@ -262,16 +262,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "FDE role focused on building AI applications (agents, RAG, React/TypeScript), software development rather than infrastructure or platform deployment. The location is SGP (Singapore), which is not in the enabled regions. The 5+ years of experience required is within band.",
+        "ai_note": "The role is an AI application/software-development FDE (agents, RAG, React/TypeScript) and is customer-facing, not infrastructure or platform deployment. The location is Singapore (SGP), which is outside the enabled regions. The 5+ year requirement is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 15
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "e3e7e6964d3306ce7d501a72f87c41ad252da8a21f582853de9a27bcaf5d4f39",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191160+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510457+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "FDE role focused on building AI applications (agents, RAG, React/TypeScript), software development rather than infrastructure or platform deployment. The location is SGP (Singapore), which is not in the enabled regions. The 5+ years of experience required is within band.",
+      "reason": "The role is an AI application/software-development FDE (agents, RAG, React/TypeScript) and is customer-facing, not infrastructure or platform deployment. The location is Singapore (SGP), which is outside the enabled regions. The 5+ year requirement is within band.",
       "signature": "f707b0cc6cacec93e7409372f8089cc91e1b6b49483716181f71fd74cbc53ecf"
     },
     "Amazon::10578998": {
@@ -279,16 +279,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "The role is in Sao Paulo, Brazil, which is outside the enabled regions (India, UAE, Europe). It is a forward deployed AI application/software engineering role focused on RAG, agents and React/TypeScript, not infrastructure or platform work. No overall years requirement is stated.",
+        "ai_note": "The role is customer-embedded AI application software engineering (RAG, agents, React/TypeScript), not infrastructure-focused forward deployment. It is located in Sao Paulo, Brazil, which is outside the enabled India, UAE and Europe regions. Overall experience required is not stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "ebf600ad1b54daa2d2b2198ccc16a159656456da7377dac603a123380b9d6b24",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191100+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510417+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is in Sao Paulo, Brazil, which is outside the enabled regions (India, UAE, Europe). It is a forward deployed AI application/software engineering role focused on RAG, agents and React/TypeScript, not infrastructure or platform work. No overall years requirement is stated.",
+      "reason": "The role is customer-embedded AI application software engineering (RAG, agents, React/TypeScript), not infrastructure-focused forward deployment. It is located in Sao Paulo, Brazil, which is outside the enabled India, UAE and Europe regions. Overall experience required is not stated.",
       "signature": "79ab24690ac943b20921e1a5719ea1916bb301174db36b02a8fdbe692cacd5fd"
     },
     "Amazon::10579001": {
@@ -296,16 +296,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Forward deployed role focused on building AI applications (agents, RAG, React/TypeScript), not infrastructure or platform deployment. Location is Sao Paulo, Brazil, which is outside the enabled regions. No overall years of experience are stated.",
+        "ai_note": "Customer-embedded FDE role focused on building AI applications (multi-agent orchestration, RAG, React/TypeScript), not infrastructure or platform automation. The JD states no overall years requirement, and the role is located in Sao Paulo, Brazil, which is outside the enabled India, UAE and Europe regions.",
         "ai_relevance": "irrelevant",
-        "ai_score": 10
+        "ai_score": 12
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "7fa8e08ef5a839ef7b0f100ae50bf61d67ddf36e40c15c1fc193eb8051475d51",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191121+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510438+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed role focused on building AI applications (agents, RAG, React/TypeScript), not infrastructure or platform deployment. Location is Sao Paulo, Brazil, which is outside the enabled regions. No overall years of experience are stated.",
+      "reason": "Customer-embedded FDE role focused on building AI applications (multi-agent orchestration, RAG, React/TypeScript), not infrastructure or platform automation. The JD states no overall years requirement, and the role is located in Sao Paulo, Brazil, which is outside the enabled India, UAE and Europe regions.",
       "signature": "b39183ef60d4195751cf17e2a477d9f9b2e00ceb1547a2e3481f639565fce73b"
     },
     "Amazon::10582029": {
@@ -330,33 +330,33 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "SRE-adjacent incident response role with some automation, but the JD explicitly places it in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). No overall experience requirement is stated.",
+        "ai_note": "SRE-style incident response role with automation, dashboards and IaC, but explicitly located in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). No overall experience years are stated.",
         "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_score": 25
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "109b5ca3ddf76ee5c0d0c987013fc044c2b7c801287118d0f1bedb671f0e4c7a",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190606+00:00",
+      "next_review_at": "2026-11-21T10:50:13.509876+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "SRE-adjacent incident response role with some automation, but the JD explicitly places it in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). No overall experience requirement is stated.",
+      "reason": "SRE-style incident response role with automation, dashboards and IaC, but explicitly located in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). No overall experience years are stated.",
       "signature": "d9fa6d50b89a99a68ea9a2983386ec0b97b4af09113439f6856eb0ea7aac2181"
     },
     "Amazon::10584792": {
       "ai_assessment": {
         "ai_decision": "reject",
-        "ai_experience_fit": "uncertain",
+        "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Forward deployed role focused on building AI application software (multi-agent, RAG, React/TypeScript) in a customer-facing SDE capacity, not infrastructure or platform deployment. The location is SGP (Singapore), which is outside the enabled regions. Only a 5+ year design/architecture requirement is stated, with no overall experience figure.",
+        "ai_note": "Customer-embedded AI application FDE role (agents, RAG, React/TypeScript), not infrastructure-focused. The location is Singapore (SGP), which is outside the enabled regions. The JD states 5+ years, which is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "a5052a8b7d761ecd6c2ed799fe73dc60347ce7190234cb01489d5650f38922db",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191081+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510398+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed role focused on building AI application software (multi-agent, RAG, React/TypeScript) in a customer-facing SDE capacity, not infrastructure or platform deployment. The location is SGP (Singapore), which is outside the enabled regions. Only a 5+ year design/architecture requirement is stated, with no overall experience figure.",
+      "reason": "Customer-embedded AI application FDE role (agents, RAG, React/TypeScript), not infrastructure-focused. The location is Singapore (SGP), which is outside the enabled regions. The JD states 5+ years, which is within band.",
       "signature": "a4a0fba1e876f793705705e68ce2ba553689d8ce6c2f2ab70bbcf7274e1d92b2"
     },
     "Amazon::10584793": {
@@ -364,16 +364,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-embedded FDE role focused on building production AI applications (RAG, agents, React/TypeScript), not infrastructure or platform deployment. Location is SGP (Singapore), which is not an enabled region. The 2+/3+ year requirement is within band.",
+        "ai_note": "The role is a forward deployed position focused on building production AI applications: RAG, agents, API orchestration and React/TypeScript. It is a software/app role, not infrastructure or platform work, so it misses the candidate's forward-deployed criterion. The location is Singapore (SGP), which is outside the enabled India, UAE and Europe regions. The 2-3+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "d3403a41164051453806c3c3441c3fe060d0c3a42b7a9d7dd153256ff891994f",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191062+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510377+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-embedded FDE role focused on building production AI applications (RAG, agents, React/TypeScript), not infrastructure or platform deployment. Location is SGP (Singapore), which is not an enabled region. The 2+/3+ year requirement is within band.",
+      "reason": "The role is a forward deployed position focused on building production AI applications: RAG, agents, API orchestration and React/TypeScript. It is a software/app role, not infrastructure or platform work, so it misses the candidate's forward-deployed criterion. The location is Singapore (SGP), which is outside the enabled India, UAE and Europe regions. The 2-3+ years requirement is within band.",
       "signature": "0fd63dd38332b8c0b0f4712518a2e7f0dbb09067159ecc1e974253dcc136b4a4"
     },
     "Amazon::10585257": {
@@ -398,16 +398,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Infrastructure-automation SDE role (IaC, serverless, CI/CD, on-call) is relevant, but the explicit location is San Jose, Costa Rica (CRI), which is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+        "ai_note": "Infra-automation SDE role (IaC, serverless, CI/CD, on-call) is relevant, but the location is San Jose, Costa Rica (CRI), which is outside the enabled India/UAE/Europe regions. Overall experience years are not stated.",
         "ai_relevance": "relevant",
-        "ai_score": 25
+        "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "e1e4d284db325b140a05f1d39701cda456f352d12938e8466d91d5f38e01fe43",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190833+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510090+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Infrastructure-automation SDE role (IaC, serverless, CI/CD, on-call) is relevant, but the explicit location is San Jose, Costa Rica (CRI), which is outside the enabled India/UAE/Europe regions. No overall years of experience are stated.",
+      "reason": "Infra-automation SDE role (IaC, serverless, CI/CD, on-call) is relevant, but the location is San Jose, Costa Rica (CRI), which is outside the enabled India/UAE/Europe regions. Overall experience years are not stated.",
       "signature": "e47c58494ae61f42b61f1b87a8fe8f0a90b64b5a3b2460fcd2fd6cf5f66386cf"
     },
     "Amazon::10585969": {
@@ -415,16 +415,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Forward deployed SDE role focused on building AI applications (RAG, agents, React/TypeScript), not infrastructure/platform; located in Sydney, Australia, outside enabled regions. 3+ years required is within band.",
+        "ai_note": "Sydney, Australia is outside the enabled regions (India, UAE, Europe). The role is a software-development FDE building AI applications such as RAG pipelines and agents, with React/TypeScript/Python, not infrastructure or platform-focused. Its 3+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "db6e0d944d2b50cfb84c2aa53d45df602a1c9dd06a8f1171a835b538f4f4353f",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190980+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510285+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed SDE role focused on building AI applications (RAG, agents, React/TypeScript), not infrastructure/platform; located in Sydney, Australia, outside enabled regions. 3+ years required is within band.",
+      "reason": "Sydney, Australia is outside the enabled regions (India, UAE, Europe). The role is a software-development FDE building AI applications such as RAG pipelines and agents, with React/TypeScript/Python, not infrastructure or platform-focused. Its 3+ years requirement is within band.",
       "signature": "f5e9c7b9e5d4f77b3014dcd2da3bca9207ff65e98a304610e10f9f4e545030b2"
     },
     "Amazon::10585970": {
@@ -449,16 +449,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Located in Melbourne, Australia, which is outside the enabled regions (India, UAE, Europe). The FDE role is focused on software and AI application building (agents, RAG, React/TypeScript), not infrastructure or platform work. Experience fits: 5+ years required.",
+        "ai_note": "Melbourne, Australia is outside the enabled regions (India, UAE, Europe). The role is a software-development FDE building AI apps (agents, RAG, React/TypeScript) rather than infrastructure or platform work. Its 5+ years overall requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "016c6f6568435c84dcfb99c2730e3cb226b2ae367a5f9d41fc9177500ffc5de1",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190917+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510222+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Located in Melbourne, Australia, which is outside the enabled regions (India, UAE, Europe). The FDE role is focused on software and AI application building (agents, RAG, React/TypeScript), not infrastructure or platform work. Experience fits: 5+ years required.",
+      "reason": "Melbourne, Australia is outside the enabled regions (India, UAE, Europe). The role is a software-development FDE building AI apps (agents, RAG, React/TypeScript) rather than infrastructure or platform work. Its 5+ years overall requirement is within band.",
       "signature": "cf4c16ef8dcf8ad90046af6597ce61613d0fe60d2287735ff63d9a5783c6fb61"
     },
     "Amazon::10585972": {
@@ -466,16 +466,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is AI application software development (RAG, agents, React/TypeScript), not infrastructure or platform work. It is also based in Seoul, Korea, which is outside the enabled regions. The 3+ years requirement is within band.",
+        "ai_note": "Seoul, Korea is outside the enabled regions (India/UAE/Europe). The role is also an application-focused FDE job building AI apps, RAG pipelines and full-stack software, not infrastructure or platform work. The 3+ years required is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "c39edbe866d0bca2a02a139ac1d963128f708d67940e910eed5091ab99996e3d",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191042+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510357+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is AI application software development (RAG, agents, React/TypeScript), not infrastructure or platform work. It is also based in Seoul, Korea, which is outside the enabled regions. The 3+ years requirement is within band.",
+      "reason": "Seoul, Korea is outside the enabled regions (India/UAE/Europe). The role is also an application-focused FDE job building AI apps, RAG pipelines and full-stack software, not infrastructure or platform work. The 3+ years required is within band.",
       "signature": "9e6dfdca203cc68b016f1eb58ef8533ffc13da482a7d9e4dadfbcc35fb0fb3df"
     },
     "Amazon::10586711": {
@@ -500,16 +500,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is a developer advocacy role focused on content, talks and community work, and it requires full-stack experience rather than infrastructure automation. It is based in Tokyo, Japan, which is outside the enabled regions. The 8+ years requirement is within the band.",
+        "ai_note": "This is a Developer Advocate role focused on content, talks and community, not infrastructure automation. It asks for 8+ years of full-stack development, which is within the 11-year limit. The Tokyo location is outside the enabled regions.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "df7a924e0f8a947cc1e9b9cd2e0d728fe3b3f78aaaeca0223c19a7cda51f9e34",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190876+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510155+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a developer advocacy role focused on content, talks and community work, and it requires full-stack experience rather than infrastructure automation. It is based in Tokyo, Japan, which is outside the enabled regions. The 8+ years requirement is within the band.",
+      "reason": "This is a Developer Advocate role focused on content, talks and community, not infrastructure automation. It asks for 8+ years of full-stack development, which is within the 11-year limit. The Tokyo location is outside the enabled regions.",
       "signature": "9da8d67d269db3c56ee20af97014ad6d3eedf1c2775d03d33de67d4000c5fc88"
     },
     "Amazon::10588788": {
@@ -517,16 +517,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-facing AWS ProServe consulting/architecture role, not core infra automation. Located in Canada (Montreal/Vancouver/Ottawa/Toronto), outside the enabled regions. Requires Canadian security clearance and French fluency. No overall years stated.",
+        "ai_note": "Customer-facing AWS ProServe consulting role, not product-company infra automation. Location is Canada only (Montreal/Toronto/Ottawa/Vancouver), outside India/UAE/Europe. It requires Canadian security clearance and French fluency. No overall years of experience are stated.",
         "ai_relevance": "uncertain",
         "ai_score": 12
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "f5f9ca0a251188f602ceb0420115fc12d9b62353eb33df2544d225f1f1978457",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190801+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510053+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing AWS ProServe consulting/architecture role, not core infra automation. Located in Canada (Montreal/Vancouver/Ottawa/Toronto), outside the enabled regions. Requires Canadian security clearance and French fluency. No overall years stated.",
+      "reason": "Customer-facing AWS ProServe consulting role, not product-company infra automation. Location is Canada only (Montreal/Toronto/Ottawa/Vancouver), outside India/UAE/Europe. It requires Canadian security clearance and French fluency. No overall years of experience are stated.",
       "signature": "0d898f7d35315d62c04cb3d67426f6849c5b21882cb2a970ae21ef1be0cb85ee"
     },
     "Amazon::10589838": {
@@ -534,16 +534,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Seoul-based forward deployed role focused on building AI applications and software (agents, RAG, React/TypeScript), not infrastructure or platform deployment. It also requires Korean proficiency. The location is outside the enabled India, UAE and Europe regions. The 5+ year experience requirement is within band.",
+        "ai_note": "Seoul, Korea role requiring Korean fluency, outside the enabled regions. The work is a software/AI-application forward deployed role (agents, RAG, React/TypeScript), not infrastructure or platform automation. The 5+ year requirement is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "88daf1f1bc7c85f0513f7ec894968efc47506be13f3db1ab3993ecf7923d312c",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191023+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510338+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Seoul-based forward deployed role focused on building AI applications and software (agents, RAG, React/TypeScript), not infrastructure or platform deployment. It also requires Korean proficiency. The location is outside the enabled India, UAE and Europe regions. The 5+ year experience requirement is within band.",
+      "reason": "Seoul, Korea role requiring Korean fluency, outside the enabled regions. The work is a software/AI-application forward deployed role (agents, RAG, React/TypeScript), not infrastructure or platform automation. The 5+ year requirement is within band.",
       "signature": "075277462ec3f71de6c05d5fdd42a1258024d716a152e8db3683e4e56c557e51"
     },
     "Amazon::10589840": {
@@ -551,16 +551,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The location is Melbourne, Australia, which is outside the enabled India, UAE and Europe regions. The role is software and AI application building (RAG pipelines, agentic workflows, React/TypeScript), not infrastructure or platform deployment. The 3+ years required is within band.",
+        "ai_note": "Forward deployed SDE role focused on building AI applications (RAG, agents, React/TypeScript), not infrastructure/platform; located in Melbourne, Australia, outside enabled regions. 3+ years requirement is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "db6e0d944d2b50cfb84c2aa53d45df602a1c9dd06a8f1171a835b538f4f4353f",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190959+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510253+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The location is Melbourne, Australia, which is outside the enabled India, UAE and Europe regions. The role is software and AI application building (RAG pipelines, agentic workflows, React/TypeScript), not infrastructure or platform deployment. The 3+ years required is within band.",
+      "reason": "Forward deployed SDE role focused on building AI applications (RAG, agents, React/TypeScript), not infrastructure/platform; located in Melbourne, Australia, outside enabled regions. 3+ years requirement is within band.",
       "signature": "734095a0ad6406393b026c977253d9923dc9a44e3dd505c68245cd46643756c2"
     },
     "Amazon::10590740": {
@@ -602,16 +602,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Role is in Vancouver, Canada, which is outside the enabled India, UAE and Europe regions. It is also a software-development-heavy managed platform SDE role rather than clear infrastructure automation. The 5+ years requirement fits the candidate's 6.",
+        "ai_note": "Located in Vancouver, Canada, which is outside the enabled regions (India, UAE, Europe). The role is a software-development-heavy SDE position on an internal managed platform, with only partial overlap with infrastructure automation. The 5+ years requirement fits the candidate's 6 years.",
         "ai_relevance": "uncertain",
         "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "7aa3a0bc94082c86aa3a23e85e08b16169d0ac29058ae44c9716d6f533248967",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190783+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510022+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Role is in Vancouver, Canada, which is outside the enabled India, UAE and Europe regions. It is also a software-development-heavy managed platform SDE role rather than clear infrastructure automation. The 5+ years requirement fits the candidate's 6.",
+      "reason": "Located in Vancouver, Canada, which is outside the enabled regions (India, UAE, Europe). The role is a software-development-heavy SDE position on an internal managed platform, with only partial overlap with infrastructure automation. The 5+ years requirement fits the candidate's 6 years.",
       "signature": "93995fb2b4b9b7f9a52d22a5f1240aca734ca7d899c5068c508e371df662f684"
     },
     "Amazon::10592365": {
@@ -619,16 +619,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Power electronics functional-safety and hardware reliability role (IEC 61508, HALT/HASS, MTBF), with no infrastructure automation or SRE work. It is located in Lille, France, which is not among the enabled locations, and no overall experience requirement is stated.",
+        "ai_note": "Hardware power-electronics functional safety/reliability role (IEC 61508, HALT/HASS, MTBF), not software infrastructure automation. Lille, France is not in the enabled locations list, and no overall years of experience are stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "c9d9b81acf851265c4b2fe29916d5b847f0e6417e92a5b80ecb6705f9e10846c",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190852+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510120+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Power electronics functional-safety and hardware reliability role (IEC 61508, HALT/HASS, MTBF), with no infrastructure automation or SRE work. It is located in Lille, France, which is not among the enabled locations, and no overall experience requirement is stated.",
+      "reason": "Hardware power-electronics functional safety/reliability role (IEC 61508, HALT/HASS, MTBF), not software infrastructure automation. Lille, France is not in the enabled locations list, and no overall years of experience are stated.",
       "signature": "f03ee00c33a7b5bd255cde322f610c3e364bd5e6092c728580aaf9c070410e06"
     },
     "Amazon::10592678": {
@@ -653,16 +653,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is in Tokyo, which is outside the enabled India, UAE and Europe regions. It is also a software-development forward deployed role building AI applications (RAG, agents) rather than infrastructure or platform work, and it requires business-level Japanese. The 3+ years requirement fits the experience band.",
+        "ai_note": "Tokyo-based forward deployed SDE role building AI applications (RAG, agent workflows) that requires business-level Japanese; it is software development rather than infrastructure-focused, and the location is outside the enabled regions.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "7de9b005afdb537e3f7dc9dd4d56685a31baeb8a8b1e713ce1a05d79ac781173",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191002+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510316+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is in Tokyo, which is outside the enabled India, UAE and Europe regions. It is also a software-development forward deployed role building AI applications (RAG, agents) rather than infrastructure or platform work, and it requires business-level Japanese. The 3+ years requirement fits the experience band.",
+      "reason": "Tokyo-based forward deployed SDE role building AI applications (RAG, agent workflows) that requires business-level Japanese; it is software development rather than infrastructure-focused, and the location is outside the enabled regions.",
       "signature": "cd7ebd33ac40e8e4da72a4181eb6afa93a8578c8d2a5abbb490fc1a41000a351"
     },
     "Amazon::10593055": {
@@ -704,16 +704,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Tokyo-based role outside the enabled India/UAE/Europe regions, and it requires business-level Japanese. The work is AI application software development (agents, RAG, multi-agent systems), not infrastructure or platform deployment. The stated 5+ years of experience is within band.",
+        "ai_note": "Tokyo-based customer-facing FDE role building AI applications (agents, RAG, software development), not infra/platform-focused; requires business-level Japanese. Tokyo is outside enabled regions. 5+ yrs fits band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "340824ba4f76e1506f910aaa2bbfed09d122d92428b6da2e6e637ea6a778bf8f",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191180+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510477+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Tokyo-based role outside the enabled India/UAE/Europe regions, and it requires business-level Japanese. The work is AI application software development (agents, RAG, multi-agent systems), not infrastructure or platform deployment. The stated 5+ years of experience is within band.",
+      "reason": "Tokyo-based customer-facing FDE role building AI applications (agents, RAG, software development), not infra/platform-focused; requires business-level Japanese. Tokyo is outside enabled regions. 5+ yrs fits band.",
       "signature": "2d8982e8fc91d403c9c65449e5ac6eb174c10001c05795bfd069e71d08412045"
     },
     "Amazon::10593211": {
@@ -3757,16 +3757,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "This is a Staff Product Manager role owning GenAI platform strategy and roadmap, not hands-on infrastructure automation. It requires about 8 years of product management experience, which is within the 11-year limit. London is an allowed location, but the function itself is a clear mismatch.",
+        "ai_note": "Product management role for a GenAI platform (strategy, roadmap, stakeholders), not hands-on infrastructure automation. London is allowed; the typical 8+ years of PM experience falls within the band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 10
+        "ai_score": 12
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "a0808c7b0838f57208ec20c536cd08ba3737594e477126b2fb8b997d3a991ed1",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191662+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510806+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a Staff Product Manager role owning GenAI platform strategy and roadmap, not hands-on infrastructure automation. It requires about 8 years of product management experience, which is within the 11-year limit. London is an allowed location, but the function itself is a clear mismatch.",
+      "reason": "Product management role for a GenAI platform (strategy, roadmap, stakeholders), not hands-on infrastructure automation. London is allowed; the typical 8+ years of PM experience falls within the band.",
       "signature": "3f30587457a2d9625a4211568d4cf15d0021ea41449e256a85c67a4535be804f"
     },
     "Deutsche Bank::R0341951": {
@@ -5525,16 +5525,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Customer-embedded software engineering FDE role with no infrastructure, Kubernetes or platform focus, based in Tokyo, Japan (not an enabled region), and requires Japanese fluency. The 6+ year minimum is within band.",
+        "ai_note": "Customer-embedded software engineering FDE role focused on coding/solution delivery, not infrastructure/platform; located in Tokyo, Japan (outside enabled regions) and requires Japanese fluency. 6+ years minimum is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "89e5c57985ff0bc98fd5fb2be19a175874022b0335960e75b0263e77fa6c9a7a",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191239+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510518+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-embedded software engineering FDE role with no infrastructure, Kubernetes or platform focus, based in Tokyo, Japan (not an enabled region), and requires Japanese fluency. The 6+ year minimum is within band.",
+      "reason": "Customer-embedded software engineering FDE role focused on coding/solution delivery, not infrastructure/platform; located in Tokyo, Japan (outside enabled regions) and requires Japanese fluency. 6+ years minimum is within band.",
       "signature": "b247683fff32b82a94adc606e4b390bdad98dbba96cd1520e3c70c033365dcf0"
     },
     "Microsoft::1970393556997609": {
@@ -5637,16 +5637,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is in Shanghai, China, which is outside the enabled regions (India, UAE, Europe). That location mismatch is the clear reason to reject. Relevance is mixed: this is an AI agent software engineering role for SRE/AIOps tooling, with some reliability and observability work. The stated 4+ years of experience is within band.",
+        "ai_note": "Location is explicitly Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role is software engineering on AI agents for SRE/AIOps tooling, with some reliability, observability and Kubernetes work, so its relevance to infrastructure automation is only partial. The stated 4+ years overall fits the experience band.",
         "ai_relevance": "uncertain",
         "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "af16985a4bc9505e6dd07ee4350707fd6931c11d85690526d4e9906b2ea13e96",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191200+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510498+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is in Shanghai, China, which is outside the enabled regions (India, UAE, Europe). That location mismatch is the clear reason to reject. Relevance is mixed: this is an AI agent software engineering role for SRE/AIOps tooling, with some reliability and observability work. The stated 4+ years of experience is within band.",
+      "reason": "Location is explicitly Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role is software engineering on AI agents for SRE/AIOps tooling, with some reliability, observability and Kubernetes work, so its relevance to infrastructure automation is only partial. The stated 4+ years overall fits the experience band.",
       "signature": "d85ebb05d03de15d3e34c356e285eb4bd602e7560ccf8133faed5f80278cc8ac"
     },
     "Microsoft::1970393557047481": {
@@ -5926,16 +5926,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Product management role for an ML platform (roadmap, PRDs, stakeholder work), not hands-on infrastructure automation. Requires 7+ years of PM experience, which is within band. Barcelona, Spain is not among the configured locations, and HQ in Berlin does not change the job location.",
+        "ai_note": "Lead Technical Product Manager role focused on roadmap, strategy and PM mentoring, not hands-on infrastructure automation. Needs 7+ years of product management, which is within band. Barcelona, Spain is not among the enabled Europe locations.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "ef7c36b152a48e4de048e2598b978b3b62945afeff569e545be74d001960948f",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191640+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510783+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Product management role for an ML platform (roadmap, PRDs, stakeholder work), not hands-on infrastructure automation. Requires 7+ years of PM experience, which is within band. Barcelona, Spain is not among the configured locations, and HQ in Berlin does not change the job location.",
+      "reason": "Lead Technical Product Manager role focused on roadmap, strategy and PM mentoring, not hands-on infrastructure automation. Needs 7+ years of product management, which is within band. Barcelona, Spain is not among the enabled Europe locations.",
       "signature": "464e9daa5c572f369d7b5b3dd220a3c720a3aba01160f05caeabcfcec53c4761"
     },
     "NVIDIA::JR1997487": {
@@ -6504,16 +6504,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "DevSecOps role with real Terraform and cloud automation work, but it is based in Washington, DC and requires being on U.S. soil, U.S. person status and an active TS/SCI clearance. The US is not an enabled region. The 10+ years required is within the 11-year band.",
+        "ai_note": "DevSecOps automation role (Terraform, cloud, security scanning) is relevant, and 10+ years is within the 11-year max. However, it requires being on U.S. soil, U.S. person status and an active TS/SCI clearance in Washington, DC, which is outside India, UAE and Europe.",
         "ai_relevance": "relevant",
         "ai_score": 10
       },
-      "at": "2026-11-07T06:30:35+00:00",
-      "jd_hash": "96db3cc03a95951862359bf85cdeff6c7a51e851638bee21a7bb89963907acd9",
+      "at": "2026-11-14T10:50:13+00:00",
+      "jd_hash": "9aa0c79cb992eface41a423d5c968d8a6925778b9553d7c789dfa109fa4ae0bb",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190238+00:00",
+      "next_review_at": "2026-11-21T10:50:13.509735+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "DevSecOps role with real Terraform and cloud automation work, but it is based in Washington, DC and requires being on U.S. soil, U.S. person status and an active TS/SCI clearance. The US is not an enabled region. The 10+ years required is within the 11-year band.",
+      "reason": "DevSecOps automation role (Terraform, cloud, security scanning) is relevant, and 10+ years is within the 11-year max. However, it requires being on U.S. soil, U.S. person status and an active TS/SCI clearance in Washington, DC, which is outside India, UAE and Europe.",
       "signature": "8f1c9bff765e01b4243121f988a2f59d1567470116cc374e790f850d96f4d871"
     },
     "OpenAI::00207abc-49b7-465c-a219-f7c1140f8047": {
@@ -7354,16 +7354,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Infra-heavy forward deployed SRE Agent role (Terraform, ArgoCD, CI/CD, MCP) that fits relevance-wise, and 8+ years is within band. But the JD requires the San Francisco office or a client site 2+ days/week, which is outside the enabled India/UAE/Europe regions.",
-        "ai_relevance": "relevant",
+        "ai_note": "Role is San Francisco office/client site at least 2 days a week, which is outside the enabled India/UAE/Europe regions. It is a Staff forward deployed role mixing software and agent development with IaC/GitOps integration and customer-facing work. The 8+ year minimum is within the 11-year max.",
+        "ai_relevance": "uncertain",
         "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "a325805b7d27d61eebf23b265e88f0b0108a1808de0b0914a1c72b1156f79d8b",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.190318+00:00",
+      "next_review_at": "2026-11-21T10:50:13.509813+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Infra-heavy forward deployed SRE Agent role (Terraform, ArgoCD, CI/CD, MCP) that fits relevance-wise, and 8+ years is within band. But the JD requires the San Francisco office or a client site 2+ days/week, which is outside the enabled India/UAE/Europe regions.",
+      "reason": "Role is San Francisco office/client site at least 2 days a week, which is outside the enabled India/UAE/Europe regions. It is a Staff forward deployed role mixing software and agent development with IaC/GitOps integration and customer-facing work. The 8+ year minimum is within the 11-year max.",
       "signature": "88ba92831439629ad23c161a801fe292907cfec4b6772615659a0641d1ec5062"
     },
     "Perplexity::598e1f7d-b802-4de2-99ac-90eb2bc33315": {
@@ -7847,16 +7847,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Sales-category forward deployed role building Agentforce AI agents, data integration and app code, not infrastructure/Kubernetes. Requires Japanese fluency and is based in Tokyo, which is outside the enabled regions. The 5+ years requirement is within band.",
+        "ai_note": "Sales-category forward deployed role building Agentforce/LLM agents, data integration, and Salesforce apps, not infrastructure, Kubernetes or platform work. Located in Tokyo, Japan (outside the enabled regions) and requires Japanese fluency. The 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "54b762438145a189a82bb8125d5fc5450872165d24d054e2a704a4e9a91dc778",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191389+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510621+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Sales-category forward deployed role building Agentforce AI agents, data integration and app code, not infrastructure/Kubernetes. Requires Japanese fluency and is based in Tokyo, which is outside the enabled regions. The 5+ years requirement is within band.",
+      "reason": "Sales-category forward deployed role building Agentforce/LLM agents, data integration, and Salesforce apps, not infrastructure, Kubernetes or platform work. Located in Tokyo, Japan (outside the enabled regions) and requires Japanese fluency. The 5+ years requirement is within band.",
       "signature": "f1ad7ef7b269dd24240c42095679079be24a0f27b72b51318186022aab9fd164"
     },
     "Salesforce::JR355425": {
@@ -7864,16 +7864,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Sales-category forward deployed role building Agentforce AI agents, data pipelines and full-stack solutions, not infrastructure or platform work. It requires Polish fluency and is based in Warsaw, Poland, which is not among the enabled locations. The 3+ years requirement is within band.",
+        "ai_note": "Sales-category forward deployed role focused on building AI agents, data pipelines and full-stack customer delivery, not infrastructure/Kubernetes. Requires Polish. Warsaw, Poland is not among the enabled locations. The 3+ years requirement fits.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "518fc7a6f75418d995b77a1f2b12e20115ea85ae311f5242d024ed6960fadda1",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191470+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510683+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Sales-category forward deployed role building Agentforce AI agents, data pipelines and full-stack solutions, not infrastructure or platform work. It requires Polish fluency and is based in Warsaw, Poland, which is not among the enabled locations. The 3+ years requirement is within band.",
+      "reason": "Sales-category forward deployed role focused on building AI agents, data pipelines and full-stack customer delivery, not infrastructure/Kubernetes. Requires Polish. Warsaw, Poland is not among the enabled locations. The 3+ years requirement fits.",
       "signature": "9616fddaedcd115a960f308c3605acece818fd4313256829e8d014e0e0d4fdf7"
     },
     "Salesforce::JR356714": {
@@ -8163,16 +8163,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Security GRC/assurance governance role, not infrastructure automation; US-only locations (Bellevue, McLean, San Francisco) with US citizenship/PR required, outside India/UAE/Europe.",
+        "ai_note": "This is a security GRC and assurance governance role, not hands-on infrastructure automation. The locations are US-only (Bellevue, McLean, San Francisco) and require US citizenship or permanent residency, which falls outside India, UAE and Europe. The stated 5-6 years of experience is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "4473ea5bfc8279f42e15de9a6d37f72b7083e20e565905ee0dbddd7d0d43cabd",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191421+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510656+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Security GRC/assurance governance role, not infrastructure automation; US-only locations (Bellevue, McLean, San Francisco) with US citizenship/PR required, outside India/UAE/Europe.",
+      "reason": "This is a security GRC and assurance governance role, not hands-on infrastructure automation. The locations are US-only (Bellevue, McLean, San Francisco) and require US citizenship or permanent residency, which falls outside India, UAE and Europe. The stated 5-6 years of experience is within band.",
       "signature": "d5c7c09788a08d674465ff5db59e701aed06aba9bdf55bc7f3318ff400f59421"
     },
     "Salesforce::JR364074": {
@@ -8299,16 +8299,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Sales-category forward deployed role building Agentforce/Salesforce apps (Apex, LWC, data pipelines), not infrastructure. The location is Johannesburg, South Africa, which is outside the enabled regions. The 6+ years requirement is within band.",
+        "ai_note": "Sales-category Salesforce FDE focused on Agentforce app building, Apex/LWC, and data pipelines, not infrastructure. DevOps is only a nice-to-have. The role is in Johannesburg, South Africa, which is outside the enabled regions. The 6+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "db4b97dd8a18c64cca59e92d29f58034c1fdd1d0265977a2740cf3b2c8bb69e4",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191259+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510540+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Sales-category forward deployed role building Agentforce/Salesforce apps (Apex, LWC, data pipelines), not infrastructure. The location is Johannesburg, South Africa, which is outside the enabled regions. The 6+ years requirement is within band.",
+      "reason": "Sales-category Salesforce FDE focused on Agentforce app building, Apex/LWC, and data pipelines, not infrastructure. DevOps is only a nice-to-have. The role is in Johannesburg, South Africa, which is outside the enabled regions. The 6+ years requirement is within band.",
       "signature": "add961cb0aa94c81141b421f244411d09a475fc3589d0918c366fd78e691c834"
     },
     "Salesforce::JR365370": {
@@ -8316,16 +8316,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Strong SRE/infra automation role (K8s, Terraform, AIOps/GPU, 5+ yrs fits), but all listed locations are US cities (SF, Boston, NYC, Seattle, etc.) with US salary ranges; outside India/UAE/Europe.",
+        "ai_note": "Strong SRE/infra automation role (K8s, Terraform, GPU AIOps, 5+ yrs fits), but all listed locations are US cities (SF, Boston, NYC, Seattle, etc.) with US salary ranges; outside India/UAE/Europe.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "87d3f84810196e593393147fe271967c893d2a29b497168642ac64a4b1933a48",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191363+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510594+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong SRE/infra automation role (K8s, Terraform, AIOps/GPU, 5+ yrs fits), but all listed locations are US cities (SF, Boston, NYC, Seattle, etc.) with US salary ranges; outside India/UAE/Europe.",
+      "reason": "Strong SRE/infra automation role (K8s, Terraform, GPU AIOps, 5+ yrs fits), but all listed locations are US cities (SF, Boston, NYC, Seattle, etc.) with US salary ranges; outside India/UAE/Europe.",
       "signature": "3e103bf309d2d341991b5513ce81b41381247f0310264f251c6c4602cde143a2"
     },
     "Salesforce::JR365751": {
@@ -8350,16 +8350,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Strong SRE/infra automation role (Kubernetes, Terraform, AIOps/GPU), and the 9+ years minimum is within the 11-year band, but every listed location is in the US (remote US metros, Seattle), outside India, UAE and Europe.",
+        "ai_note": "Strong SRE/infra automation role (K8s, Terraform, observability, GPU AIOps), 9+ yrs within band, but all locations are US-only (SF, Seattle, NYC, Boston, Austin, DC remote), outside enabled India/UAE/Europe regions.",
         "ai_relevance": "relevant",
         "ai_score": 20
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "85f7eaecda54a7498d1ee2ab8cb00576c74308c24764106cf6dc873e938c7ce9",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191316+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510566+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strong SRE/infra automation role (Kubernetes, Terraform, AIOps/GPU), and the 9+ years minimum is within the 11-year band, but every listed location is in the US (remote US metros, Seattle), outside India, UAE and Europe.",
+      "reason": "Strong SRE/infra automation role (K8s, Terraform, observability, GPU AIOps), 9+ yrs within band, but all locations are US-only (SF, Seattle, NYC, Boston, Austin, DC remote), outside enabled India/UAE/Europe regions.",
       "signature": "0502d6a8d673741f9767bd92a5d60c91cd12be3f0181b83a6c5d2abdc3c427ea"
     },
     "Salesforce::JR365826": {
@@ -8520,16 +8520,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Forward deployed role focused on full-stack TypeScript/React feature development with customers, not infrastructure or platform work. The JD explicitly places the role in New York, which is outside the enabled regions. The 5+ years requirement is within band.",
+        "ai_note": "Forward deployed role focused on full-stack TypeScript/React feature development and customer work, not infrastructure. Location is New York, which is outside the enabled regions. The 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "9aa259094eab7884aac6c73b35f9431c99128403318a205d4cf599ff1f63e2d3",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191562+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510726+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed role focused on full-stack TypeScript/React feature development with customers, not infrastructure or platform work. The JD explicitly places the role in New York, which is outside the enabled regions. The 5+ years requirement is within band.",
+      "reason": "Forward deployed role focused on full-stack TypeScript/React feature development and customer work, not infrastructure. Location is New York, which is outside the enabled regions. The 5+ years requirement is within band.",
       "signature": "59f86e2b18e13f8668962112c20c5f7c09e5e93ed8144100dc8b5f5a86b70c89"
     },
     "Stripe::7747640": {
@@ -8554,16 +8554,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Engineering manager role leading customer-integration forward deployed engineers (Node/React product work), not infrastructure or platform automation. Located in NYC, which is outside the enabled India, UAE and Europe regions.",
+        "ai_note": "Engineering manager role for customer-facing forward deployed engineers building crypto wallet product integrations (Node/React). It is not infrastructure or platform automation work. The role is based in NYC, which is outside the enabled regions. No overall years of experience are stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 5
+        "ai_score": 8
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "ef5fb11668a4d9870dea3d89c59fef00ceb05bc106d7ed43799f18c3dfc6d5ee",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191543+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510708+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Engineering manager role leading customer-integration forward deployed engineers (Node/React product work), not infrastructure or platform automation. Located in NYC, which is outside the enabled India, UAE and Europe regions.",
+      "reason": "Engineering manager role for customer-facing forward deployed engineers building crypto wallet product integrations (Node/React). It is not infrastructure or platform automation work. The role is based in NYC, which is outside the enabled regions. No overall years of experience are stated.",
       "signature": "9fedd09fd0b89ae52105a70314c298bdec5c4f72ddbee8fdae0466960eff3405"
     },
     "Stripe::8181003": {
@@ -8571,16 +8571,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Fraud/abuse security incident response role (fraud investigation, threat intel, law enforcement liaison), not infrastructure/platform automation; forward deployed but not infra-focused. Dublin allowed; 10+ years within band.",
+        "ai_note": "Fraud/abuse security incident response role (investigations, merchant remediation, law enforcement liaison), not infrastructure/platform automation. The 10+ years minimum is within the 11-year band. Dublin is an allowed location.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 8
       },
-      "at": "2026-11-07T06:30:35+00:00",
+      "at": "2026-11-14T10:50:13+00:00",
       "jd_hash": "9f33dc1177f19f26ddb453833628e6199cc833a393839f24c83710eed0c18cd7",
       "mode": "ai",
-      "next_review_at": "2026-11-14T06:30:35.191580+00:00",
+      "next_review_at": "2026-11-21T10:50:13.510745+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Fraud/abuse security incident response role (fraud investigation, threat intel, law enforcement liaison), not infrastructure/platform automation; forward deployed but not infra-focused. Dublin allowed; 10+ years within band.",
+      "reason": "Fraud/abuse security incident response role (investigations, merchant remediation, law enforcement liaison), not infrastructure/platform automation. The 10+ years minimum is within the 11-year band. Dublin is an allowed location.",
       "signature": "dc51aadddd71ed71e25252412441383b093c440586456ea37a63ce0b0f3fb2b3"
     },
     "Sumo Logic::8349107": {
