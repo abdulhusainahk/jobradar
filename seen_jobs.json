@@ -636,16 +636,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "London is an allowed location and the 3+ years requirement is within band, but this is an ML research/engineering FDE role (post-training, RLHF, distributed training, custom kernels, model optimization). It is not infrastructure or platform automation, so it does not fit the candidate's forward-deployed criteria.",
+        "ai_note": "London is allowed and 3+ years is within band, but this is an ML research/engineering FDE role (post-training, RLHF, distributed training, custom kernels, model optimization), not infrastructure, Kubernetes or platform deployment.",
         "ai_relevance": "irrelevant",
         "ai_score": 20
       },
-      "at": "2026-11-08T01:04:25+00:00",
+      "at": "2026-11-15T07:01:17+00:00",
       "jd_hash": "76328a7ea1dad793233c2e95d0de53b1e147a585d6e26a1e5dd00eea6e9cb899",
       "mode": "ai",
-      "next_review_at": "2026-11-15T01:04:25.516865+00:00",
+      "next_review_at": "2026-11-22T07:01:17.522477+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "London is an allowed location and the 3+ years requirement is within band, but this is an ML research/engineering FDE role (post-training, RLHF, distributed training, custom kernels, model optimization). It is not infrastructure or platform automation, so it does not fit the candidate's forward-deployed criteria.",
+      "reason": "London is allowed and 3+ years is within band, but this is an ML research/engineering FDE role (post-training, RLHF, distributed training, custom kernels, model optimization), not infrastructure, Kubernetes or platform deployment.",
       "signature": "2b5e72d0a008d544548aebf95d02eae116691e3e9e053ad6a2c8be267929da39"
     },
     "Amazon::10592680": {
@@ -6227,6 +6227,23 @@
       "reason": "Developer-experience CI and infrastructure role (5+ yrs, within band) that is fairly relevant, but the JD explicitly places it in Tel Aviv, Israel, which is outside the enabled India, UAE and Europe regions.",
       "signature": "4b9f1e5b606f264d4c929c23a3f2b43bef1130a5793db0dbd30ce2d0c6bcab32"
     },
+    "NVIDIA::JR2029049": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "above_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Forward deployed Palantir Foundry/AIP application and data-pipeline role for supply chain, not infrastructure automation. It requires 12+ years, above the 11-year max, and is located in Yokneam, Israel, which is outside the enabled regions.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-15T07:01:17+00:00",
+      "jd_hash": "37843574f6063a41494b425e0105e2f7275ecc7a570d4c82d91272fe62042653",
+      "mode": "ai",
+      "next_review_at": "2026-11-22T07:01:17.522422+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed Palantir Foundry/AIP application and data-pipeline role for supply chain, not infrastructure automation. It requires 12+ years, above the 11-year max, and is located in Yokneam, Israel, which is outside the enabled regions.",
+      "signature": "c2055e8574f0c280b6bc5d5fa87768433fcfee5e8b97c529d7ec960f9061a224"
+    },
     "NVIDIA::JR2029062": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -8605,16 +8622,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Application security role (SAST/DAST, pen testing, threat modeling), not infrastructure automation; hybrid at Target HQ in Minnesota, USA, which is not an enabled region, and work must stay in-country. Requires 10+ years, within the 11-year max.",
+        "ai_note": "Application security principal role (SAST/DAST/pen testing) in Brooklyn Park, MN, US hybrid onsite, which is outside the enabled regions. 10+ years is within the 11-year max, but the role is AppSec, not infra automation.",
         "ai_relevance": "irrelevant",
-        "ai_score": 8
+        "ai_score": 10
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-15T07:01:17+00:00",
       "jd_hash": "c46512ba5ae593e6d2f80ff29812efd335c4eff0856ab4e954f712d4d1b2094e",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930778+00:00",
+      "next_review_at": "2026-11-22T07:01:17.522567+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Application security role (SAST/DAST, pen testing, threat modeling), not infrastructure automation; hybrid at Target HQ in Minnesota, USA, which is not an enabled region, and work must stay in-country. Requires 10+ years, within the 11-year max.",
+      "reason": "Application security principal role (SAST/DAST/pen testing) in Brooklyn Park, MN, US hybrid onsite, which is outside the enabled regions. 10+ years is within the 11-year max, but the role is AppSec, not infra automation.",
       "signature": "6b5b0d600aec1948f7f45456f2106e72162c57418dc579d12ddbcdeda8ee9a52"
     },
     "Target::R0000454084": {
@@ -8622,16 +8639,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Full-stack agent platform engineering role (React/TypeScript, APIs, SDKs), not infrastructure automation. It is hybrid at Target HQ in Brooklyn Park, MN, USA, and work cannot be performed outside the country, so it is outside the enabled regions. The 7+ years requirement is within band.",
+        "ai_note": "Full-stack application engineering role (React/TypeScript, agent apps), not infrastructure automation; located in Brooklyn Park, MN, USA with hybrid onsite work required in that country, so it falls outside India/UAE/Europe. The 7+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 8
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-15T07:01:17+00:00",
       "jd_hash": "3ed0e0eae3f0f3202084a32874b61d8c5d3f6209fccea87f0d3e3c2bcb7f899d",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930721+00:00",
+      "next_review_at": "2026-11-22T07:01:17.522510+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Full-stack agent platform engineering role (React/TypeScript, APIs, SDKs), not infrastructure automation. It is hybrid at Target HQ in Brooklyn Park, MN, USA, and work cannot be performed outside the country, so it is outside the enabled regions. The 7+ years requirement is within band.",
+      "reason": "Full-stack application engineering role (React/TypeScript, agent apps), not infrastructure automation; located in Brooklyn Park, MN, USA with hybrid onsite work required in that country, so it falls outside India/UAE/Europe. The 7+ years requirement is within band.",
       "signature": "e4c9c331cc79dca6076b40179f86759228f62ae475c792763eb488d2ad06b055"
     },
     "Target::R0000475423": {
@@ -8673,16 +8690,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Hybrid role at Target HQ in Brooklyn Park, MN (USA), which is outside the enabled regions. The FDE scope is AI application and software development rather than infrastructure or Kubernetes platform deployment. The 5+ years required is within band.",
+        "ai_note": "The role is AI application software engineering (building LLM and agentic apps for product teams), not infrastructure or platform deployment. It is also hybrid at Target HQ in Brooklyn Park, Minnesota (USA), and work cannot be performed outside the US, which falls outside India, UAE and Europe. Experience (5+ years) is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 10
+        "ai_score": 12
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-15T07:01:17+00:00",
       "jd_hash": "fe3b97c17a17a9a37b8c2efc4428765d36e29704b68e001ec8743ea41a350130",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930807+00:00",
+      "next_review_at": "2026-11-22T07:01:17.522593+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Hybrid role at Target HQ in Brooklyn Park, MN (USA), which is outside the enabled regions. The FDE scope is AI application and software development rather than infrastructure or Kubernetes platform deployment. The 5+ years required is within band.",
+      "reason": "The role is AI application software engineering (building LLM and agentic apps for product teams), not infrastructure or platform deployment. It is also hybrid at Target HQ in Brooklyn Park, Minnesota (USA), and work cannot be performed outside the US, which falls outside India, UAE and Europe. Experience (5+ years) is within band.",
       "signature": "a5fa438adc0deac3317eb8aed72203f94b706207acf7d70782a62988d73ff55f"
     },
     "Target::R0000480043": {
@@ -8690,16 +8707,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is in Brooklyn Park, MN, USA, and work cannot be performed outside the US, which is outside India/UAE/Europe. It is also a software and AI-application forward deployed engineering role (Java/Python, LLM apps), not infrastructure automation. Its 5+ years requirement is within band.",
+        "ai_note": "Location is Brooklyn Park, MN (US), and work cannot be done outside the US, so it is outside the enabled regions. The role is an AI application/software-development FDE (Java/Python, LLM apps, SDKs), not infrastructure automation. Its 5+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-06T23:43:41+00:00",
+      "at": "2026-11-15T07:01:17+00:00",
       "jd_hash": "18b81a6a396507e95c27491c97f87a635ed746902732e502d0ab9ab12755f122",
       "mode": "ai",
-      "next_review_at": "2026-11-13T23:43:41.930749+00:00",
+      "next_review_at": "2026-11-22T07:01:17.522534+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is in Brooklyn Park, MN, USA, and work cannot be performed outside the US, which is outside India/UAE/Europe. It is also a software and AI-application forward deployed engineering role (Java/Python, LLM apps), not infrastructure automation. Its 5+ years requirement is within band.",
+      "reason": "Location is Brooklyn Park, MN (US), and work cannot be done outside the US, so it is outside the enabled regions. The role is an AI application/software-development FDE (Java/Python, LLM apps, SDKs), not infrastructure automation. Its 5+ years requirement is within band.",
       "signature": "e72c2a033dfa3e6f6828b7493a7f3f87e4fd25fae7a6c390ccdb3abd5d14e039"
     },
     "Together AI::4753072007": {
@@ -9421,6 +9438,7 @@
     "Atlassian::27635": "2026-11-02T11:35:47+00:00",
     "Atlassian::27789": "2026-11-14T01:53:04+00:00",
     "Atlassian::27796": "2026-10-21T01:22:19+00:00",
+    "Atlassian::27928": "2026-11-15T07:01:19+00:00",
     "Barclays::JR-0000044230": "2026-10-30T22:57:18+00:00",
     "Barclays::JR-0000052441": "2026-11-04T06:50:58+00:00",
     "Barclays::JR-0000077537": "2026-11-06T23:43:45+00:00",
