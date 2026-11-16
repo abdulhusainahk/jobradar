@@ -155,6 +155,23 @@
       "reason": "Forward deployed role focused on internal business productivity AI automation (Vertex AI agents, Slack/Atlassian integrations, stakeholder solutions engineering), not infrastructure/platform; K8s/GCP incidental. Amsterdam allowed; no years stated.",
       "signature": "f737b356a86e664f68daed53502469cb1aa3701990fc74896c97a2221b864a78"
     },
+    "Amazon::10421951": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Melbourne, Australia role that requires Australian citizenship and security clearance, outside enabled regions (India/UAE/Europe). The work is SRE/ops-support (on-call, Linux, automation), though partly hands-on support; the stated 1+ years minimum is within band.",
+        "ai_relevance": "relevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-16T20:30:54+00:00",
+      "jd_hash": "e532f924c1864a5d8a8c679bf8fdf80e3d4dd5ab4159b70c2ac76462b1947415",
+      "mode": "ai",
+      "next_review_at": "2026-11-23T20:30:54.785881+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Melbourne, Australia role that requires Australian citizenship and security clearance, outside enabled regions (India/UAE/Europe). The work is SRE/ops-support (on-call, Linux, automation), though partly hands-on support; the stated 1+ years minimum is within band.",
+      "signature": "f3de33e8664f111bf06cc3ce1bd929e7d429c6a41ff8fe19f7073da45d59394e"
+    },
     "Amazon::10435349": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -755,16 +772,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a strong SRE/infrastructure fit: DNS reliability, automation and CI/CD. The 5+ years asked is within band. However, it is based in Sydney, Australia, and requires Australian citizenship plus security clearance. That is outside the enabled regions (India, UAE, Europe).",
+        "ai_note": "Strong infra/SRE fit (DNS reliability, automation, CI/CD, 5+ yrs within band), but the role is in Sydney, Australia and requires Australian citizenship and security clearance, which is outside the enabled India/UAE/Europe regions.",
         "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_score": 15
       },
-      "at": "2026-11-09T06:57:20+00:00",
+      "at": "2026-11-16T20:30:54+00:00",
       "jd_hash": "20a1c4610a0fb42d09f338cbcbb72b0b7503ef2daabf576f9a4ac7980d7cb959",
       "mode": "ai",
-      "next_review_at": "2026-11-16T06:57:20.574189+00:00",
+      "next_review_at": "2026-11-23T20:30:54.785905+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is a strong SRE/infrastructure fit: DNS reliability, automation and CI/CD. The 5+ years asked is within band. However, it is based in Sydney, Australia, and requires Australian citizenship plus security clearance. That is outside the enabled regions (India, UAE, Europe).",
+      "reason": "Strong infra/SRE fit (DNS reliability, automation, CI/CD, 5+ yrs within band), but the role is in Sydney, Australia and requires Australian citizenship and security clearance, which is outside the enabled India/UAE/Europe regions.",
       "signature": "3a65677cca5f6be5575a61c726beaf0593ff39774ae241023d0700aa0b48abdd"
     },
     "Amazon::10602932": {
@@ -5078,6 +5095,23 @@
       "reason": "Role is network security proxy engineering (Broadcom/Bluecoat ProxySG, Zscaler, SIEM, networking) with stakeholder support. It is not cloud/Kubernetes/IaC platform automation, so it is a clear mismatch despite London being allowed and 5+ years fitting the band.",
       "signature": "de3b870a41d039c68b0d975b58a3b36a537304ca5bdd8910e4bd6bf13134edae"
     },
+    "J.P. Morgan::210805717": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Strong infrastructure/platform role (OpenShift, Kubernetes, Terraform, automation), but the JD explicitly places it in Buenos Aires, Argentina, outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-16T20:30:54+00:00",
+      "jd_hash": "83f02088932795a6338e75a2ab3ee7d00b8e3ccb5ab52a7dcfc1ee4538bfa346",
+      "mode": "ai",
+      "next_review_at": "2026-11-23T20:30:54.785960+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Strong infrastructure/platform role (OpenShift, Kubernetes, Terraform, automation), but the JD explicitly places it in Buenos Aires, Argentina, outside the enabled India/UAE/Europe regions. No overall experience requirement is stated.",
+      "signature": "8522111a1902902a6dcf41bcfe7e4c2c85e85a01aa7326a8506004e16475e431"
+    },
     "J.P. Morgan::210806222": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5926,16 +5960,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "above_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is in Hong Kong, which is outside the enabled regions. It requires 15+ years against a max of 11. It is a senior ITIL production-management and people-leadership role, not hands-on infrastructure automation.",
+        "ai_note": "Senior VP role for production management and operational leadership (ITIL, governance, people leadership), not hands-on infrastructure automation. It requires 15+ years, above the 11-year max, and drop_out_of_band is true. Location is Hong Kong, which is outside the enabled regions of India, UAE and Europe.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-09T06:57:20+00:00",
+      "at": "2026-11-16T20:30:54+00:00",
       "jd_hash": "41b39b644b96424ddc4a6d1806aa2bbec52f359a0fdd702716b7a2343a9e4723",
       "mode": "ai",
-      "next_review_at": "2026-11-16T06:57:20.574312+00:00",
+      "next_review_at": "2026-11-23T20:30:54.785976+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is in Hong Kong, which is outside the enabled regions. It requires 15+ years against a max of 11. It is a senior ITIL production-management and people-leadership role, not hands-on infrastructure automation.",
+      "reason": "Senior VP role for production management and operational leadership (ITIL, governance, people leadership), not hands-on infrastructure automation. It requires 15+ years, above the 11-year max, and drop_out_of_band is true. Location is Hong Kong, which is outside the enabled regions of India, UAE and Europe.",
       "signature": "e7ac5109a8711fad234a1b9e326042893206648d84927b9dcfe381afe56c51d4"
     },
     "N26::8268322": {
@@ -6793,16 +6827,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Forward deployed engineering manager role focused on customer delivery and full-stack JS/Python code, not infrastructure/Kubernetes/platform deployment. Requires 8+ years (within band). Munich is allowed.",
+        "ai_note": "FDE manager role focused on customer delivery, people management and full-stack JS/Python coding, with no infrastructure, Kubernetes or platform automation focus. 8+ years required is within band; Munich is allowed.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-09T06:57:20+00:00",
+      "at": "2026-11-16T20:30:54+00:00",
       "jd_hash": "6b69d73eabc1b638501ffc3ad9c9930df223bbe08ddc098813994f4a673c8edf",
       "mode": "ai",
-      "next_review_at": "2026-11-16T06:57:20.574069+00:00",
+      "next_review_at": "2026-11-23T20:30:54.785812+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed engineering manager role focused on customer delivery and full-stack JS/Python code, not infrastructure/Kubernetes/platform deployment. Requires 8+ years (within band). Munich is allowed.",
+      "reason": "FDE manager role focused on customer delivery, people management and full-stack JS/Python coding, with no infrastructure, Kubernetes or platform automation focus. 8+ years required is within band; Munich is allowed.",
       "signature": "0e4b2050806e4928633fe9af51f4d50a9b2e4a6321536392141f835c8ed1a1d8"
     },
     "OpenAI::5df9e349-f8e1-4cfd-ba20-ec9e4115d564": {
@@ -8617,6 +8651,40 @@
       "reason": "Fraud/abuse security incident response role (investigations, merchant remediation, law enforcement liaison), not infrastructure/platform automation. The 10+ years minimum is within the 11-year band. Dublin is an allowed location.",
       "signature": "dc51aadddd71ed71e25252412441383b093c440586456ea37a63ce0b0f3fb2b3"
     },
+    "Stripe::8358071": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "Product integration/ops role (Ruby/Java code changes, SQL, partner coordination for card issuing). It is not infrastructure automation or SRE platform work. The location is Toronto, which is outside the enabled regions. No overall experience requirement is stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-16T20:30:54+00:00",
+      "jd_hash": "ed64775495b4e0f382286e299cb9babea6028db5c80f2340a7baa025efd8739d",
+      "mode": "ai",
+      "next_review_at": "2026-11-23T20:30:54.785945+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Product integration/ops role (Ruby/Java code changes, SQL, partner coordination for card issuing). It is not infrastructure automation or SRE platform work. The location is Toronto, which is outside the enabled regions. No overall experience requirement is stated.",
+      "signature": "d601d55704fb711402c2539ad7da85f4e20169d2570f0f539998090dca6d60c5"
+    },
+    "Stripe::8360332": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "Toronto is outside the enabled regions (India, UAE, Europe). The role is payment-integration technical operations with a support rotation, not infrastructure automation or platform engineering. The 2+ years overall requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-16T20:30:54+00:00",
+      "jd_hash": "8ed7a39eec6028dc4baa2b6500122799a8f14600190ef228a7dcecb638bcd1b4",
+      "mode": "ai",
+      "next_review_at": "2026-11-23T20:30:54.785929+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Toronto is outside the enabled regions (India, UAE, Europe). The role is payment-integration technical operations with a support rotation, not infrastructure automation or platform engineering. The 2+ years overall requirement is within band.",
+      "signature": "ffdde2bd0906adbdf5fcf76fa7b3bc2f2d250acd6637a3dcf511f86d4820151a"
+    },
     "Sumo Logic::8349107": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -9800,6 +9868,7 @@
     "Google::85476474768761542": "2026-09-02T12:30:31+00:00",
     "Google::85646978259526342": "2026-11-04T17:47:16+00:00",
     "Google::86975233134600902": "2026-07-06T16:03:39+00:00",
+    "Google::87484229977285318": "2026-11-16T20:30:57+00:00",
     "Google::87659706503307974": "2026-10-17T13:50:59+00:00",
     "Google::87706967249691334": "2026-09-07T18:04:40+00:00",
     "Google::90326320164020934": "2026-07-21T14:34:01+00:00",
@@ -10098,6 +10167,7 @@
     "J.P. Morgan::210802704": "2026-10-30T07:22:23+00:00",
     "J.P. Morgan::210802924": "2026-11-06T07:15:46+00:00",
     "J.P. Morgan::210803714": "2026-10-30T07:22:23+00:00",
+    "J.P. Morgan::210803833": "2026-11-16T20:30:57+00:00",
     "J.P. Morgan::210803977": "2026-11-12T11:40:11+00:00",
     "J.P. Morgan::210804319": "2026-11-04T06:50:58+00:00",
     "J.P. Morgan::210804435": "2026-11-16T07:04:03+00:00",
@@ -10106,6 +10176,7 @@
     "J.P. Morgan::210805745": "2026-11-16T07:04:03+00:00",
     "J.P. Morgan::210805749": "2026-11-03T07:15:52+00:00",
     "J.P. Morgan::210807403": "2026-11-09T06:57:23+00:00",
+    "J.P. Morgan::210808319": "2026-11-16T20:30:57+00:00",
     "J.P. Morgan::210808750": "2026-11-16T07:04:03+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
@@ -10218,6 +10289,7 @@
     "Microsoft::1970393557026575": "2026-10-08T16:55:41+00:00",
     "Microsoft::1970393557026580": "2026-10-08T16:55:38+00:00",
     "Microsoft::1970393557050065": "2026-11-02T22:13:04+00:00",
+    "Microsoft::1970393557070761": "2026-11-16T20:30:57+00:00",
     "MongoDB::6982487": "2026-10-12T19:27:43+00:00",
     "MongoDB::6984814": "2026-07-06T14:03:14+00:00",
     "MongoDB::7613587": "2026-07-06T16:03:18+00:00",
