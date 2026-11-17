@@ -70,23 +70,6 @@
       "reason": "This forward deployed role is marketing analytics and AI app building, not infrastructure or Kubernetes platform work. It is located in San Jose, Seattle and San Francisco, outside the enabled regions. The 5+ years of technical experience it asks for is within band.",
       "signature": "2c0864c9831a803a8a6e4e07c6a43cb508bc97ba14dbfc88282733794025db02"
     },
-    "Adobe::R173423": {
-      "ai_assessment": {
-        "ai_decision": "reject",
-        "ai_experience_fit": "uncertain",
-        "ai_location_fit": "outside",
-        "ai_note": "The SRE/DevEx engineering manager role is infrastructure-relevant, but it is located in Yerevan, Armenia. Armenia is outside the enabled India, UAE and Europe locations. It also requires Armenian proficiency and people management. No overall years of experience are stated.",
-        "ai_relevance": "relevant",
-        "ai_score": 15
-      },
-      "at": "2026-11-09T20:22:46+00:00",
-      "jd_hash": "acaf65121a742730595d56dc42103238f0a6f81ad58c85de9d451f749d1ee528",
-      "mode": "ai",
-      "next_review_at": "2026-11-16T20:22:46.619450+00:00",
-      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The SRE/DevEx engineering manager role is infrastructure-relevant, but it is located in Yerevan, Armenia. Armenia is outside the enabled India, UAE and Europe locations. It also requires Armenian proficiency and people management. No overall years of experience are stated.",
-      "signature": "126c5b16ea19dca427f061e42cc3b31f6f6a90296d1d9a6b1873ace609b918d7"
-    },
     "Adyen::7684222": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -205,6 +188,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Post-sales customer advisory role (Enterprise Support), not hands-on infra automation; based in Oslo, Norway, which isn't in the enabled locations; Norwegian fluency required. No overall years stated.",
       "signature": "b284d15821ee4e1c57f14fa3b96edae2ac6f92b37ed12cef68712ee562e41163"
+    },
+    "Amazon::10459575": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "The role is relevant SRE/systems automation work (self-healing, fleet monitoring, IaC, on-call), but it is based in Sydney, Australia, which is outside the enabled regions. It also requires Australian citizenship and a security clearance.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-17T04:41:25+00:00",
+      "jd_hash": "46c6aab02c7365cd286ab9c268c2acd7be10bd7da94c35d9783bb2bd98faa9b8",
+      "mode": "ai",
+      "next_review_at": "2026-11-24T04:41:25.447654+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is relevant SRE/systems automation work (self-healing, fleet monitoring, IaC, on-call), but it is based in Sydney, Australia, which is outside the enabled regions. It also requires Australian citizenship and a security clearance.",
+      "signature": "06e52570b7168af4b1d3dcf5160a39e1071ee69372df6e87fa9b67551bf49bef"
     },
     "Amazon::10528232": {
       "ai_assessment": {
@@ -1724,16 +1724,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the 'Forward Deployed' title, this is a customer-facing value/sales engineering role (business cases, workshops, process consulting) with no infrastructure automation. It also requires native German. Munich is an allowed location, and no overall years of experience are stated.",
+        "ai_note": "The title says Forward Deployed, but the internal title is Senior Value Engineer: a customer-facing value consulting and sales role (business cases, workshops, process mining) with no infrastructure work. It also requires native German. Munich is an allowed location, but the role does not match.",
         "ai_relevance": "irrelevant",
         "ai_score": 5
       },
-      "at": "2026-11-09T20:22:46+00:00",
+      "at": "2026-11-17T04:41:25+00:00",
       "jd_hash": "e2b2cf0388f549fb2f9dc0a74c115fc790c3c57c328be40842d38d5e7beabf47",
       "mode": "ai",
-      "next_review_at": "2026-11-16T20:22:46.619475+00:00",
+      "next_review_at": "2026-11-24T04:41:25.447725+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the 'Forward Deployed' title, this is a customer-facing value/sales engineering role (business cases, workshops, process consulting) with no infrastructure automation. It also requires native German. Munich is an allowed location, and no overall years of experience are stated.",
+      "reason": "The title says Forward Deployed, but the internal title is Senior Value Engineer: a customer-facing value consulting and sales role (business cases, workshops, process mining) with no infrastructure work. It also requires native German. Munich is an allowed location, but the role does not match.",
       "signature": "6180d03c422da7fd66da3fc99d5c5d67d015d266a8004de45828b3e2798aca93"
     },
     "Celonis::8200166003": {
@@ -1826,16 +1826,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Pune is an allowed location, and the 8-10 years required is within band. However, this is a data engineering and applications development role (Hadoop, PySpark, Databricks, Snowflake data pipelines), not DevOps, SRE or platform infrastructure automation.",
+        "ai_note": "Data engineering/applications development role (Hadoop, PySpark, Snowflake, Databricks pipelines), not infrastructure automation/DevOps; 8-10 yrs within band; Pune allowed.",
         "ai_relevance": "irrelevant",
         "ai_score": 12
       },
-      "at": "2026-11-09T20:22:46+00:00",
+      "at": "2026-11-17T04:41:25+00:00",
       "jd_hash": "6d19326be1e53326f864dff60e282539cfa61f4183f9673f99072f2f5b3c4d52",
       "mode": "ai",
-      "next_review_at": "2026-11-16T20:22:46.619495+00:00",
+      "next_review_at": "2026-11-24T04:41:25.447762+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Pune is an allowed location, and the 8-10 years required is within band. However, this is a data engineering and applications development role (Hadoop, PySpark, Databricks, Snowflake data pipelines), not DevOps, SRE or platform infrastructure automation.",
+      "reason": "Data engineering/applications development role (Hadoop, PySpark, Snowflake, Databricks pipelines), not infrastructure automation/DevOps; 8-10 yrs within band; Pune allowed.",
       "signature": "bc3ce8f161352d778c99fa323666a000b06597659542903532134df7181c5092"
     },
     "Citi::859038711279": {
@@ -2200,16 +2200,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the 'Systems Engineer' title, this is a backend software engineering role building WARP/Zero Trust product features in Go/Rust/TypeScript with REST APIs, not infrastructure automation. London is an allowed location, and 3+ years of experience is within band.",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a backend software engineering role building Zero Trust/WARP product features (Go/Rust, TypeScript, REST APIs, databases), not infrastructure automation. Kubernetes is only incidental. Experience is fine (3+ years). London is among the listed locations and is allowed.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-09T20:22:46+00:00",
+      "at": "2026-11-17T04:41:25+00:00",
       "jd_hash": "2c495965bdbed1f6acd886e9a0b9e97e3e53fb605b6f6790c35c5b0444e29477",
       "mode": "ai",
-      "next_review_at": "2026-11-16T20:22:46.619324+00:00",
+      "next_review_at": "2026-11-24T04:41:25.447578+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the 'Systems Engineer' title, this is a backend software engineering role building WARP/Zero Trust product features in Go/Rust/TypeScript with REST APIs, not infrastructure automation. London is an allowed location, and 3+ years of experience is within band.",
+      "reason": "Despite the 'Systems Engineer' title, this is a backend software engineering role building Zero Trust/WARP product features (Go/Rust, TypeScript, REST APIs, databases), not infrastructure automation. Kubernetes is only incidental. Experience is fine (3+ years). London is among the listed locations and is allowed.",
       "signature": "5b68a82afe84fd48d02190390feb2c225fcd43e6ea5e4a0bac52e85596974231"
     },
     "Cloudflare::8338018": {
@@ -5756,16 +5756,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "This is a hardware reliability and quality engineering role (electromechanical, supplier qualification, failure analysis), not DevOps/SRE. It is based in Haiphong, Vietnam, which is outside the enabled regions. The stated minimum of 2-7+ years is within the experience band.",
+        "ai_note": "Hardware reliability/supplier quality engineering role for consumer electronics, not infrastructure/SRE. Location Haiphong, Vietnam is outside enabled regions.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-09T20:22:46+00:00",
+      "at": "2026-11-17T04:41:25+00:00",
       "jd_hash": "86dab942dc08841c2e7b9404ba757e8649454431a2fa36f8c42c05ad6589e8cb",
       "mode": "ai",
-      "next_review_at": "2026-11-16T20:22:46.619392+00:00",
+      "next_review_at": "2026-11-24T04:41:25.447694+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "This is a hardware reliability and quality engineering role (electromechanical, supplier qualification, failure analysis), not DevOps/SRE. It is based in Haiphong, Vietnam, which is outside the enabled regions. The stated minimum of 2-7+ years is within the experience band.",
+      "reason": "Hardware reliability/supplier quality engineering role for consumer electronics, not infrastructure/SRE. Location Haiphong, Vietnam is outside enabled regions.",
       "signature": "c35127c52bed7ca52a52634744a1b6de10718b2466a4b03bc363187d21d210af"
     },
     "Microsoft::1970393557054354": {
@@ -9347,6 +9347,7 @@
     "Adobe::R172075": "2026-10-31T06:07:40+00:00",
     "Adobe::R172762": "2026-10-17T13:50:59+00:00",
     "Adobe::R173252": "2026-10-31T06:07:40+00:00",
+    "Adobe::R173423": "2026-11-17T04:41:27+00:00",
     "Adyen::7068985": "2026-07-06T14:03:29+00:00",
     "Adyen::7068990": "2026-07-06T14:03:29+00:00",
     "Adyen::7407157": "2026-07-17T12:42:28+00:00",
