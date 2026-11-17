@@ -1741,16 +1741,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Forward Deployed title, but the role is actually a Value Engineer doing sales/consulting work: business cases, workshops and process improvement, with no infrastructure work. It is based in Paris, France, which is not among the enabled locations.",
+        "ai_note": "Despite the 'Forward Deployed' title, this is a customer-facing value engineering/consulting role (business cases, workshops, process mining) with no infrastructure work. It is based in Paris, which is not an enabled location, and requires native French. Overall experience years are not stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 5
+        "ai_score": 3
       },
-      "at": "2026-11-10T15:23:26+00:00",
-      "jd_hash": "75df9bb476835980bb7d99bc043a73753874424bf965d54520d2b46b5056821c",
+      "at": "2026-11-17T16:53:19+00:00",
+      "jd_hash": "7c62254c25c886022ad1ee29cedabf4286b9487d9ba6b4071e745f5a669e497a",
       "mode": "ai",
-      "next_review_at": "2026-11-17T15:23:26.374669+00:00",
+      "next_review_at": "2026-11-24T16:53:19.172407+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward Deployed title, but the role is actually a Value Engineer doing sales/consulting work: business cases, workshops and process improvement, with no infrastructure work. It is based in Paris, France, which is not among the enabled locations.",
+      "reason": "Despite the 'Forward Deployed' title, this is a customer-facing value engineering/consulting role (business cases, workshops, process mining) with no infrastructure work. It is based in Paris, which is not an enabled location, and requires native French. Overall experience years are not stated.",
       "signature": "a37c4a9d41b5870af7639fc28b659c5145a75fc49978078a488a8033a7e3eaa9"
     },
     "Citi::859038232403": {
@@ -2064,16 +2064,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "uncertain",
-        "ai_note": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications (architecture, specs, code reviews). IaC is only a bonus skill, with no infrastructure automation, Kubernetes or SRE ownership. The 5+ years requirement fits the candidate. The location is just 'Hybrid' with no city, so it is unknown.",
+        "ai_note": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management. IaC is only a bonus skill, not core infrastructure automation. The 5+ years requirement fits the band. Location is just 'Hybrid' with an NYC compensation mention, so geography is unclear.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-10T04:05:26+00:00",
-      "jd_hash": "b082590724ddd21b70edde5d9121548a03fcf77097e819d0f78f6333712de7b1",
+      "at": "2026-11-17T16:53:19+00:00",
+      "jd_hash": "8831a2fc9299f94e883e11a69afdc0a0cf3cfbe8a8b09d3108af681b7f1a64c3",
       "mode": "ai",
-      "next_review_at": "2026-11-17T04:05:26.278555+00:00",
+      "next_review_at": "2026-11-24T16:53:19.172271+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications (architecture, specs, code reviews). IaC is only a bonus skill, with no infrastructure automation, Kubernetes or SRE ownership. The 5+ years requirement fits the candidate. The location is just 'Hybrid' with no city, so it is unknown.",
+      "reason": "Despite the 'Systems Engineer' title, this is a Go software development role building platform applications for resource management. IaC is only a bonus skill, not core infrastructure automation. The 5+ years requirement fits the band. Location is just 'Hybrid' with an NYC compensation mention, so geography is unclear.",
       "signature": "3d926c13fa612335d897fdf7883721af593374ae2f4c5b1a3332fbf53563a17a"
     },
     "Cloudflare::8263016": {
@@ -3628,16 +3628,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Non-technical deployment strategist/product-management role (PRDs, C-suite scoping, delivery), not infrastructure automation. Based in Seoul, outside enabled regions, and requires native Korean.",
+        "ai_note": "Non-technical deployment strategist/product-manager role (PRDs, C-suite scoping, project management), not infrastructure automation; located in Seoul, South Korea, outside enabled regions, and requires native Korean.",
         "ai_relevance": "irrelevant",
         "ai_score": 3
       },
-      "at": "2026-11-10T04:05:26+00:00",
+      "at": "2026-11-17T16:53:19+00:00",
       "jd_hash": "fe0c75a3bbb52e2025d24b35bbaae4e0282c4c9077c519b8e441f35c60ba040c",
       "mode": "ai",
-      "next_review_at": "2026-11-17T04:05:26.278681+00:00",
+      "next_review_at": "2026-11-24T16:53:19.172349+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Non-technical deployment strategist/product-management role (PRDs, C-suite scoping, delivery), not infrastructure automation. Based in Seoul, outside enabled regions, and requires native Korean.",
+      "reason": "Non-technical deployment strategist/product-manager role (PRDs, C-suite scoping, project management), not infrastructure automation; located in Seoul, South Korea, outside enabled regions, and requires native Korean.",
       "signature": "919f1767900b8a834b9a6be3a8deb2ac01c7440f5e4d2ddba3353972b377f7b3"
     },
     "Databricks::8927179002": {
@@ -5151,16 +5151,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Despite the DevOps title, the role is primarily full-stack application development (Java, React, Spring Boot, production code). DevOps, Kubernetes and cloud are incidental, with no real infrastructure automation ownership. Mumbai is a preferred location, and the 3+ year requirement is within band.",
+        "ai_note": "Despite the DevOps title, the role is primarily Java/Spring/React application development and production code work, with DevOps and Kubernetes only incidental mentions. Mumbai location fits; the 3+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-10T15:23:26+00:00",
+      "at": "2026-11-17T16:53:19+00:00",
       "jd_hash": "9005e17db610e3bc54d18bfc88e4a2b906aa252fe1739395d4a599821eff1ba2",
       "mode": "ai",
-      "next_review_at": "2026-11-17T15:23:26.374726+00:00",
+      "next_review_at": "2026-11-24T16:53:19.172464+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Despite the DevOps title, the role is primarily full-stack application development (Java, React, Spring Boot, production code). DevOps, Kubernetes and cloud are incidental, with no real infrastructure automation ownership. Mumbai is a preferred location, and the 3+ year requirement is within band.",
+      "reason": "Despite the DevOps title, the role is primarily Java/Spring/React application development and production code work, with DevOps and Kubernetes only incidental mentions. Mumbai location fits; the 3+ years requirement is within band.",
       "signature": "1e9e4926576b3428a6048bbc4ba12e468bfbccbfb80813edacd19f73d7a1e98c"
     },
     "J.P. Morgan::210807411": {
@@ -5197,21 +5197,38 @@
       "reason": "Storage SRE support role centered on enterprise NAS (NetApp, Isilon, Pure, VAST) and 24/7 incident ops, and working knowledge of these products is mandatory. The candidate's skills are cloud/Kubernetes/IaC automation, so this is a clear mismatch with the preference for automation over support. Bengaluru location is allowed and 3+ years is within band.",
       "signature": "6c7b7378342c58e6c21719617d157d6d7a86bc9720bce8bf61fca7e95e151cab"
     },
+    "J.P. Morgan::210807834": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "The role is mainly Storage SRE operations support on enterprise storage arrays (PowerMax, Pure, iSCSI/NVMe) with 24/7 incident handling. It is support-heavy, not cloud/Kubernetes infrastructure automation, so it is a poor match for the candidate's skills and preferences. The 3+ years requirement is within band and Hyderabad is an allowed location.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-17T16:53:19+00:00",
+      "jd_hash": "ff7266ca0bf07646ec49892ff94a53ac4b9d2fd83c6a3288f58d805b604d95e7",
+      "mode": "ai",
+      "next_review_at": "2026-11-24T16:53:19.172434+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "The role is mainly Storage SRE operations support on enterprise storage arrays (PowerMax, Pure, iSCSI/NVMe) with 24/7 incident handling. It is support-heavy, not cloud/Kubernetes infrastructure automation, so it is a poor match for the candidate's skills and preferences. The 3+ years requirement is within band and Hyderabad is an allowed location.",
+      "signature": "4bad4e9616512a3f2b769762debcb08ad85790ceaf272893a1d0856124de7b66"
+    },
     "J.P. Morgan::210808222": {
       "ai_assessment": {
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Windows/Citrix VDI image QA testing role with PowerShell, not cloud/Kubernetes infrastructure automation; located in Shanghai, China, outside enabled regions. Overall experience is not stated.",
+        "ai_note": "Windows/Citrix VDI image QA role focused on PowerShell testing, not DevOps/SRE/platform automation; location is Shanghai, China, outside the enabled regions. Overall experience requirement is not stated.",
         "ai_relevance": "irrelevant",
-        "ai_score": 8
+        "ai_score": 5
       },
-      "at": "2026-11-10T15:23:26+00:00",
+      "at": "2026-11-17T16:53:19+00:00",
       "jd_hash": "6118f7b2f87bf2270ca11fdacd1c532f6b7b1f2ea1a789bf63767a69a88a0f20",
       "mode": "ai",
-      "next_review_at": "2026-11-17T15:23:26.374787+00:00",
+      "next_review_at": "2026-11-24T16:53:19.172478+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Windows/Citrix VDI image QA testing role with PowerShell, not cloud/Kubernetes infrastructure automation; located in Shanghai, China, outside enabled regions. Overall experience is not stated.",
+      "reason": "Windows/Citrix VDI image QA role focused on PowerShell testing, not DevOps/SRE/platform automation; location is Shanghai, China, outside the enabled regions. Overall experience requirement is not stated.",
       "signature": "34173f3e3674e7421f0fefd9c857fff70ad919808a8bfc6ebab5e1acc2ff1683"
     },
     "J.P. Morgan::210808749": {
@@ -5230,6 +5247,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Title mentions Terraform and Kubernetes, but the JD is Python/AWS application development and AIML integration with team leadership. IaC, Kubernetes and MLOps appear only as preferred qualifications, and SRE is a team it collaborates with. 5+ years is within band and Bengaluru is allowed.",
       "signature": "7c25aa45e3afdbc68625eecb9591478b31b8446c6994cedc9a4e32b65f8ddd92"
+    },
+    "J.P. Morgan::210809967": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "SRE role with infra automation, but it is VMware/NSX-heavy and located in Buenos Aires, Argentina, outside the enabled regions (India/UAE/Europe). Its 7+ years requirement is within the band.",
+        "ai_relevance": "relevant",
+        "ai_score": 20
+      },
+      "at": "2026-11-17T16:53:19+00:00",
+      "jd_hash": "469c92cd8a7db2f03999e4413464c6ba84f18b2e9eedfab303c6b1a329feae29",
+      "mode": "ai",
+      "next_review_at": "2026-11-24T16:53:19.172448+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "SRE role with infra automation, but it is VMware/NSX-heavy and located in Buenos Aires, Argentina, outside the enabled regions (India/UAE/Europe). Its 7+ years requirement is within the band.",
+      "signature": "2b38cbe92e7566ef9f5bae46b47077dfaa69efb3bd696ce0fe8635c159cfa457"
     },
     "Mastercard::R-277889": {
       "ai_assessment": {
@@ -8583,6 +8617,23 @@
       "reason": "Forward deployed applied AI role focused on building AI agents, ML pipelines, Python/SQL, ETL and data modeling for customers, not infrastructure/Kubernetes/platform deployment. Location is Warsaw, Poland, which is not in the enabled locations. The 3+ years requirement is within band.",
       "signature": "34d5fde4cde7b74d4290f0abb8b7056c1cced5f7bd542ecb889cc790bdfb6034"
     },
+    "Snowflake::a276eb40-644b-4384-9d9a-bae1c263baa6": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Forward deployed role centered on building LLM agents, RAG, evals and Python/SQL customer solutions, not infrastructure/Kubernetes/platform deployment. Bangalore/Mumbai location fits and 3+ years is within band, but the role is application/AI engineering focused.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 22
+      },
+      "at": "2026-11-17T16:53:19+00:00",
+      "jd_hash": "a115988c9baadfa3ca5fa9da85eec78849c80f3baa6e1402170bc440adb2f301",
+      "mode": "ai",
+      "next_review_at": "2026-11-24T16:53:19.172378+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Forward deployed role centered on building LLM agents, RAG, evals and Python/SQL customer solutions, not infrastructure/Kubernetes/platform deployment. Bangalore/Mumbai location fits and 3+ years is within band, but the role is application/AI engineering focused.",
+      "signature": "a07aeccfbc483ce14cea0b6f35ca200cccf4305a8ae44e893d82e0a6632bf823"
+    },
     "Stripe::7230452": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -9625,6 +9676,7 @@
     "Citi::859038542560": "2026-10-26T20:03:15+00:00",
     "Citi::859038560359": "2026-10-30T07:22:23+00:00",
     "Citi::859038616950": "2026-11-06T17:25:54+00:00",
+    "Citi::859038774477": "2026-11-17T16:53:21+00:00",
     "Citi::859038805708": "2026-11-04T17:47:16+00:00",
     "Citi::859038930045": "2026-11-12T20:26:26+00:00",
     "ClickHouse::086c4dd1-217d-48f8-9d62-e57542e16dbe": "2026-10-30T07:22:23+00:00",
@@ -9934,6 +9986,7 @@
     "J.P. Morgan::210729945": "2026-07-13T15:21:23+00:00",
     "J.P. Morgan::210730212": "2026-07-24T07:05:57+00:00",
     "J.P. Morgan::210730300": "2026-07-09T09:38:44+00:00",
+    "J.P. Morgan::210734656": "2026-11-17T16:53:21+00:00",
     "J.P. Morgan::210734663": "2026-07-06T20:51:29+00:00",
     "J.P. Morgan::210735428": "2026-07-15T07:28:55+00:00",
     "J.P. Morgan::210735655": "2026-07-13T15:21:23+00:00",
