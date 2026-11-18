@@ -75,16 +75,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "The role is a CI/CD infrastructure position focused on mobile pipelines, which is relevant DevOps work, and the 5+ years requirement is within band. However, it is based in the Chicago office (3 days a week in-office) and requires US work authorization, which is outside India, UAE and Europe.",
+        "ai_note": "CI/CD infrastructure role (mobile-focused) with 5+ yrs, but explicitly based in Chicago office, US work authorization required; outside enabled regions (India/UAE/Europe).",
         "ai_relevance": "relevant",
-        "ai_score": 15
+        "ai_score": 20
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "0db57bdebf3991ca95a33cbc3d542c6025be77ce273eee44e34e87b87cf2b4f3",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904662+00:00",
+      "next_review_at": "2026-11-25T01:44:41.351165+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "The role is a CI/CD infrastructure position focused on mobile pipelines, which is relevant DevOps work, and the 5+ years requirement is within band. However, it is based in the Chicago office (3 days a week in-office) and requires US work authorization, which is outside India, UAE and Europe.",
+      "reason": "CI/CD infrastructure role (mobile-focused) with 5+ yrs, but explicitly based in Chicago office, US work authorization required; outside enabled regions (India/UAE/Europe).",
       "signature": "01a0f53f0fd251335f5999d2600096c539364877d4d57d3ce9fe8629f9de6fd7"
     },
     "Adyen::8227085": {
@@ -330,16 +330,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Berlin is allowed, but this Forward Deployed role is SDE-style AI application and agent building (Java/C++, RAG, multi-agent, React/TypeScript), customer-facing with 30–50% travel. It does not focus on infrastructure, Kubernetes or platform deployment. Only '3+ years in Agile/startup' is stated, not overall experience, so experience fit is uncertain.",
+        "ai_note": "Berlin is an allowed location, but this forward deployed role centers on SDE-style AI application work: multi-agent orchestration, RAG, Java/C++ OOP, and customer delivery. It is not infrastructure, Kubernetes or platform deployment. No explicit overall years requirement is stated; the only figure is 3+ years in an Agile environment.",
         "ai_relevance": "irrelevant",
         "ai_score": 22
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "880ff92b716886fea15f1f741db22ee7a332765a35f066a499140382bad0b742",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904529+00:00",
+      "next_review_at": "2026-11-25T01:44:41.351104+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Berlin is allowed, but this Forward Deployed role is SDE-style AI application and agent building (Java/C++, RAG, multi-agent, React/TypeScript), customer-facing with 30–50% travel. It does not focus on infrastructure, Kubernetes or platform deployment. Only '3+ years in Agile/startup' is stated, not overall experience, so experience fit is uncertain.",
+      "reason": "Berlin is an allowed location, but this forward deployed role centers on SDE-style AI application work: multi-agent orchestration, RAG, Java/C++ OOP, and customer delivery. It is not infrastructure, Kubernetes or platform deployment. No explicit overall years requirement is stated; the only figure is 3+ years in an Agile environment.",
       "signature": "6237026ae5b540ebbc3e62a227b66287c3de606ee6121aca9e2ac9949b916e4f"
     },
     "Amazon::10582716": {
@@ -358,6 +358,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "SRE-style incident response role with automation, dashboards and IaC, but explicitly located in Sydney, Australia, which is outside the enabled regions (India, UAE, Europe). No overall experience years are stated.",
       "signature": "d9fa6d50b89a99a68ea9a2983386ec0b97b4af09113439f6856eb0ea7aac2181"
+    },
+    "Amazon::10583479": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "DevOps-style systems development manager role with real ops automation, but it is in Sydney, Australia and requires Australian citizenship and security clearance, which is outside the enabled regions. It also asks for 7+ years of systems experience and 5+ years managing teams.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-18T01:44:41+00:00",
+      "jd_hash": "f709aa6deabbdedce5517e06b819de7e2a398c85d0f41a6a1e4cbe0c0623012d",
+      "mode": "ai",
+      "next_review_at": "2026-11-25T01:44:41.351057+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "DevOps-style systems development manager role with real ops automation, but it is in Sydney, Australia and requires Australian citizenship and security clearance, which is outside the enabled regions. It also asks for 7+ years of systems experience and 5+ years managing teams.",
+      "signature": "5e690116f3adfb74ca8010e2d547ec3c24b2a52c2711cba104d331cc13822c9c"
     },
     "Amazon::10584792": {
       "ai_assessment": {
@@ -750,6 +767,23 @@
       "reason": "Tokyo-based FDE role focused on building AI applications (multi-agent, RAG, software development), not infrastructure/platform work; requires business-level Japanese; location outside India/UAE/Europe. 5+ years experience is within band.",
       "signature": "87b43c2e5e75d3b21456610d5bf71803f317f9fa5165b72601fedf4856fa076a"
     },
+    "Amazon::10594515": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "uncertain",
+        "ai_location_fit": "outside",
+        "ai_note": "This is a GM-style FDE leadership role in Sao Paulo, Brazil, which is outside the enabled India, UAE and Europe regions. It covers engineering, data science and go-to-market, with commercial and customer focus rather than infrastructure automation. No overall years of experience are stated.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 5
+      },
+      "at": "2026-11-18T01:44:41+00:00",
+      "jd_hash": "4f97ab2e76cf6d952fe30259d45a518fa14c2eb5c2d4bf8d2650deda38c51299",
+      "mode": "ai",
+      "next_review_at": "2026-11-25T01:44:41.351125+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "This is a GM-style FDE leadership role in Sao Paulo, Brazil, which is outside the enabled India, UAE and Europe regions. It covers engineering, data science and go-to-market, with commercial and customer focus rather than infrastructure automation. No overall years of experience are stated.",
+      "signature": "ce99b6b41bd6a2975dff5130d62f9b245e507df6a8ab13093e3e562b8f862059"
+    },
     "Amazon::10595488": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -851,6 +885,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "This is a customer-facing AWS support and advisory role, not hands-on infrastructure automation, which conflicts with the candidate's preference against pure support. It is based in Mexico City, outside the enabled India, UAE and Europe regions. The 3+ years requirement is within band.",
       "signature": "a6c92f4c1ceb4f81f947bade286f64339fd56d28b86d4a2425743f90439358d2"
+    },
+    "Amazon::3147063": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "outside",
+        "ai_note": "DevOps-style systems role with automation and on-call duties, but it is based in Melbourne, Australia and requires Australian citizenship and a security clearance, which falls outside the enabled India, UAE and Europe regions. The 7+ years minimum is within the 11-year band, though it is a people-manager role.",
+        "ai_relevance": "relevant",
+        "ai_score": 15
+      },
+      "at": "2026-11-18T01:44:41+00:00",
+      "jd_hash": "a459ddd947bde7242dc786403037b192117f5859d0f58dc022348ace01cbb7bf",
+      "mode": "ai",
+      "next_review_at": "2026-11-25T01:44:41.351082+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "DevOps-style systems role with automation and on-call duties, but it is based in Melbourne, Australia and requires Australian citizenship and a security clearance, which falls outside the enabled India, UAE and Europe regions. The 7+ years minimum is within the 11-year band, though it is a people-manager role.",
+      "signature": "1f4a6afec02298f9be123168243161797b257d247552b72b5bebdde7e87e8288"
     },
     "Amazon::3199256": {
       "ai_assessment": {
@@ -2149,17 +2200,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "outside",
-        "ai_note": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations are Austin and Lisbon, and Portugal is not in the enabled Europe locations. Overall years are unstated.",
+        "ai_note": "This is a hardware qualification role for GPU servers: rack design, interconnects, power, cooling and vendor RCA. It is not DevOps/SRE infrastructure automation. The JD lists only Austin and Lisbon, which are outside the enabled India, UAE and Europe locations (Portugal is not in the configured Europe list). No overall experience requirement is stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-12T01:15:31+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "fc1fa57f3974fff5211d2588c6e6151f426ad7a854e96f085da0d6e078517057",
       "mode": "ai",
-      "next_review_at": "2026-11-19T01:15:31.998542+00:00",
+      "next_review_at": "2026-11-25T01:44:41.350859+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Hardware qualification role (GPU rack design, NVLink, power/cooling, vendor RCA), not infra automation/DevOps. Locations are Austin and Lisbon, and Portugal is not in the enabled Europe locations. Overall years are unstated.",
-      "signature": "3ec0be345a34fdca0ff02281eeaeb723be55f32f422f53efbfefb66018edb224"
+      "reason": "This is a hardware qualification role for GPU servers: rack design, interconnects, power, cooling and vendor RCA. It is not DevOps/SRE infrastructure automation. The JD lists only Austin and Lisbon, which are outside the enabled India, UAE and Europe locations (Portugal is not in the configured Europe list). No overall experience requirement is stated.",
+      "signature": "546707ef3e259b05b82c829a5d0e87d518d018ce624c846759382008bccc4c0d"
     },
     "Cloudflare::8328562": {
       "ai_assessment": {
@@ -3662,16 +3713,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Customer-facing billable FDE focused on data engineering, Spark, application development and ML solution delivery, not infrastructure/Kubernetes/platform deployment; candidate excludes such forward-deployed roles. London is allowed; overall years are not stated.",
+        "ai_note": "Customer-facing, billable data engineering/Spark/application delivery FDE role. It is not focused on infrastructure, Kubernetes or platform deployment, and the JD states no overall years requirement. London is an allowed location.",
         "ai_relevance": "irrelevant",
         "ai_score": 18
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "e6834ef0bfd31ffdf04fc1a22aca2eba715347dd9b229b5934523e07046c5e24",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904321+00:00",
+      "next_review_at": "2026-11-25T01:44:41.350936+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Customer-facing billable FDE focused on data engineering, Spark, application development and ML solution delivery, not infrastructure/Kubernetes/platform deployment; candidate excludes such forward-deployed roles. London is allowed; overall years are not stated.",
+      "reason": "Customer-facing, billable data engineering/Spark/application delivery FDE role. It is not focused on infrastructure, Kubernetes or platform deployment, and the JD states no overall years requirement. London is an allowed location.",
       "signature": "03ea1d3e37ddbbe635f27bae05858e1dfc44f3fb23ebad99d1f9668bd297d942"
     },
     "Databricks::8929894002": {
@@ -4199,16 +4250,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Developer Experience role here is external SDK/open-source, API design, full-stack and technical content/DevRel work, not infrastructure automation or platform engineering. Location is fine (remote global, Europe/UK). No overall experience stated.",
+        "ai_note": "The role is SDK/open-source developer relations and full-stack API work, not infrastructure automation. There is no Kubernetes, cloud or platform ops scope. It is remote globally with Europe offices, so location is allowed. No overall experience requirement is stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 15
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "dd87b99c40299677effd60a964eaf4a3a7e57f7ad0b5cdfa59d23719c5214b5b",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904467+00:00",
+      "next_review_at": "2026-11-25T01:44:41.351013+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Developer Experience role here is external SDK/open-source, API design, full-stack and technical content/DevRel work, not infrastructure automation or platform engineering. Location is fine (remote global, Europe/UK). No overall experience stated.",
+      "reason": "The role is SDK/open-source developer relations and full-stack API work, not infrastructure automation. There is no Kubernetes, cloud or platform ops scope. It is remote globally with Europe offices, so location is allowed. No overall experience requirement is stated.",
       "signature": "590ee38aaf5836ab6e37a70b445ea3865eaff531d6bbf052054af2350d1e4cc2"
     },
     "GitLab::8522265002": {
@@ -5117,16 +5168,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "uncertain",
         "ai_location_fit": "allowed",
-        "ai_note": "Security architecture role (design reviews, threat modeling, controls, audit). Cloud and Kubernetes knowledge is needed, but the JD lists no hands-on infrastructure automation or platform engineering duties. The JD states no experience years. Bengaluru is an allowed location.",
+        "ai_note": "Security architecture role (design reviews, threat modeling, controls and audit) rather than hands-on infrastructure automation. Cloud and Kubernetes appear as knowledge areas only. Bengaluru location is allowed; no overall experience requirement is stated.",
         "ai_relevance": "irrelevant",
         "ai_score": 25
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "3de32eb0682525b136606750d0e88dfc98ef20e423c8c415d7781d1fe56cd790",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904742+00:00",
+      "next_review_at": "2026-11-25T01:44:41.351187+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Security architecture role (design reviews, threat modeling, controls, audit). Cloud and Kubernetes knowledge is needed, but the JD lists no hands-on infrastructure automation or platform engineering duties. The JD states no experience years. Bengaluru is an allowed location.",
+      "reason": "Security architecture role (design reviews, threat modeling, controls and audit) rather than hands-on infrastructure automation. Cloud and Kubernetes appear as knowledge areas only. Bengaluru location is allowed; no overall experience requirement is stated.",
       "signature": "a7da934353ec0fcfb5d9361f6d7d8cc657698af79038e7dcd62090b39fc7e164"
     },
     "J.P. Morgan::210806262": {
@@ -8741,16 +8792,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Quantitative FinOps role focused on financial modeling, forecasting and cost data pipelines rather than infrastructure automation; it is remote only for Costa Rica, which is outside the enabled regions. The 7+ years requirement is within band.",
+        "ai_note": "Remote only in Costa Rica, which is outside India/UAE/Europe. The role is quantitative FinOps financial modeling and data pipelines, not infrastructure automation. The 7+ years requirement is within band.",
         "ai_relevance": "irrelevant",
         "ai_score": 10
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "f0240d8a516689bba3ae7218ed031c74038a42fb98764f4da15e73b568f1c32b",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904498+00:00",
+      "next_review_at": "2026-11-25T01:44:41.351035+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Quantitative FinOps role focused on financial modeling, forecasting and cost data pipelines rather than infrastructure automation; it is remote only for Costa Rica, which is outside the enabled regions. The 7+ years requirement is within band.",
+      "reason": "Remote only in Costa Rica, which is outside India/UAE/Europe. The role is quantitative FinOps financial modeling and data pipelines, not infrastructure automation. The 7+ years requirement is within band.",
       "signature": "8394f806add229501aaee433a96dcaf4734b2cbd2d7189be37da0f84e501679c"
     },
     "Target::R0000446172": {
@@ -8979,16 +9030,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Infrastructure-heavy AI storage/Kubernetes platform role, but explicitly located in San Francisco with US salary; 'flexibility in remote work' is not explicit evidence of India/UAE/Europe eligibility. 8+ years is within band, though the role demands deep specialized storage expertise.",
+        "ai_note": "Infrastructure-heavy AI storage/Kubernetes platform role at a product company, and the 8+ year requirement is within band. However, the role is based in San Francisco with US salary bands only, which falls outside India/UAE/Europe. 'Flexibility in terms of remote work' does not establish eligibility in those regions. It is also a deep storage specialization the candidate lacks.",
         "ai_relevance": "relevant",
         "ai_score": 25
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "e61d1bc8c3112ebad01f542b0ddc037fef5f4d6f60e6e6e3bc54981614903eff",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904432+00:00",
+      "next_review_at": "2026-11-25T01:44:41.350990+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Infrastructure-heavy AI storage/Kubernetes platform role, but explicitly located in San Francisco with US salary; 'flexibility in remote work' is not explicit evidence of India/UAE/Europe eligibility. 8+ years is within band, though the role demands deep specialized storage expertise.",
+      "reason": "Infrastructure-heavy AI storage/Kubernetes platform role at a product company, and the 8+ year requirement is within band. However, the role is based in San Francisco with US salary bands only, which falls outside India/UAE/Europe. 'Flexibility in terms of remote work' does not establish eligibility in those regions. It is also a deep storage specialization the candidate lacks.",
       "signature": "fcf9d3a4defc77dd73563f28506193754a4adb4083708e7e120c16fc82b58b56"
     },
     "Together AI::5172169007": {
@@ -9081,16 +9132,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Strongly relevant bare-metal GPU Kubernetes platform role, and 8+ years is within the 11-year limit. However, the only location evidence is San Francisco with a US salary range, which is outside the enabled India, UAE and Europe regions. It is also a people-management role.",
+        "ai_note": "Highly relevant bare-metal GPU Kubernetes platform role; 8+ years is within the 11-year max. However, the JD explicitly places it in San Francisco with US salary, outside the enabled India/UAE/Europe regions, and it requires 2+ years of people management.",
         "ai_relevance": "relevant",
-        "ai_score": 20
+        "ai_score": 25
       },
-      "at": "2026-11-10T21:50:09+00:00",
+      "at": "2026-11-18T01:44:41+00:00",
       "jd_hash": "1efca5a7b539cd96f83bdf7b6f79028d43f7b97deffe29a36a12087e4513165f",
       "mode": "ai",
-      "next_review_at": "2026-11-17T21:50:09.904400+00:00",
+      "next_review_at": "2026-11-25T01:44:41.350968+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Strongly relevant bare-metal GPU Kubernetes platform role, and 8+ years is within the 11-year limit. However, the only location evidence is San Francisco with a US salary range, which is outside the enabled India, UAE and Europe regions. It is also a people-management role.",
+      "reason": "Highly relevant bare-metal GPU Kubernetes platform role; 8+ years is within the 11-year max. However, the JD explicitly places it in San Francisco with US salary, outside the enabled India/UAE/Europe regions, and it requires 2+ years of people management.",
       "signature": "f01dc7f97429fff1e2c1a4f80191b79e8bc5dc9e9b28f3e934efde63b696d3a9"
     },
     "Wells Fargo::R-569518": {
@@ -9838,6 +9889,7 @@
     "GitLab::8867725002": "2026-10-06T14:36:46+00:00",
     "GitLab::8867756002": "2026-10-15T11:51:59+00:00",
     "GitLab::8871406002": "2026-10-07T22:23:08+00:00",
+    "GitLab::8932489002": "2026-11-18T01:44:43+00:00",
     "Google::101868384420799174": "2026-07-06T16:03:39+00:00",
     "Google::102093428895949510": "2026-07-28T09:16:31+00:00",
     "Google::102152648441897670": "2026-10-09T15:43:50+00:00",
