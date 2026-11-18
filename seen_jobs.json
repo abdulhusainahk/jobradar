@@ -1197,16 +1197,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Munich is allowed, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. It requires 10+ years, which is within the 11-year max, plus 2+ years of management.",
+        "ai_note": "Munich is an allowed location, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure/Kubernetes/platform automation. The 10+ years required is within the 11-year max, but 2+ years of people management is also required.",
         "ai_relevance": "irrelevant",
-        "ai_score": 12
+        "ai_score": 15
       },
-      "at": "2026-11-11T06:50:49+00:00",
+      "at": "2026-11-18T12:41:10+00:00",
       "jd_hash": "4f5878321935a2f837f0abd314569620e9d231cd2190a6a468cbcc7bee75b5ec",
       "mode": "ai",
-      "next_review_at": "2026-11-18T06:50:49.622565+00:00",
+      "next_review_at": "2026-11-25T12:41:10.681347+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Munich is allowed, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure, Kubernetes or platform automation. It requires 10+ years, which is within the 11-year max, plus 2+ years of management.",
+      "reason": "Munich is an allowed location, but this is a people-management FDE leadership role focused on customer AI application delivery, pre-sales and team building, not infrastructure/Kubernetes/platform automation. The 10+ years required is within the 11-year max, but 2+ years of people management is also required.",
       "signature": "d9127b32b5d574ee2a83253b4de68918809f0cce00946de5da7dfab912b4abbc"
     },
     "Anthropic::5445625008": {
@@ -1888,6 +1888,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Data engineering/applications development role (Hadoop, PySpark, Snowflake, Databricks pipelines), not infrastructure automation/DevOps; 8-10 yrs within band; Pune allowed.",
       "signature": "bc3ce8f161352d778c99fa323666a000b06597659542903532134df7181c5092"
+    },
+    "Citi::859038617029": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Despite the 'Platform Engineer' title, this is a data/software engineering role centred on Scala/Spark/Databricks services, reconciliation engines and APIs (Job Family: Applications Development). Terraform, CI/CD and SRE work is secondary, not core infrastructure automation. The 8+ years requirement is within band, and Chennai/Pune are allowed locations.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 22
+      },
+      "at": "2026-11-18T12:41:10+00:00",
+      "jd_hash": "76bd01f296065fdc9456dfadddf80012c14eca5b37816118946b5b3163e23f43",
+      "mode": "ai",
+      "next_review_at": "2026-11-25T12:41:10.681566+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Despite the 'Platform Engineer' title, this is a data/software engineering role centred on Scala/Spark/Databricks services, reconciliation engines and APIs (Job Family: Applications Development). Terraform, CI/CD and SRE work is secondary, not core infrastructure automation. The 8+ years requirement is within band, and Chennai/Pune are allowed locations.",
+      "signature": "61dcb8ae10d06e2e6f0eaa2f70f75a1425a2a2b0a0b7943ab45e6eb12f87c760"
     },
     "Citi::859038711279": {
       "ai_assessment": {
@@ -5299,6 +5316,23 @@
       "reason": "Title mentions Terraform and Kubernetes, but the JD is Python/AWS application development and AIML integration with team leadership. IaC, Kubernetes and MLOps appear only as preferred qualifications, and SRE is a team it collaborates with. 5+ years is within band and Bengaluru is allowed.",
       "signature": "7c25aa45e3afdbc68625eecb9591478b31b8446c6994cedc9a4e32b65f8ddd92"
     },
+    "J.P. Morgan::210809553": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "allowed",
+        "ai_note": "Primarily a Python application development role (production code, algorithms, AIML integration) that collaborates with SRE rather than owning infrastructure. Kubernetes, MLOps and IaC appear only as supporting or preferred skills. Bengaluru is an allowed location and the 3+ years requirement is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 30
+      },
+      "at": "2026-11-18T12:41:10+00:00",
+      "jd_hash": "d1acd2f6eb71015eba60b1658964ff55d2a4f79686e92798292d2e25eeaa1522",
+      "mode": "ai",
+      "next_review_at": "2026-11-25T12:41:10.681525+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Primarily a Python application development role (production code, algorithms, AIML integration) that collaborates with SRE rather than owning infrastructure. Kubernetes, MLOps and IaC appear only as supporting or preferred skills. Bengaluru is an allowed location and the 3+ years requirement is within band.",
+      "signature": "8926d7fa1d06fe6ff0bcae92bfb8eaa41b3a9b74c9ae0ebeb36b544d232a375d"
+    },
     "J.P. Morgan::210809967": {
       "ai_assessment": {
         "ai_decision": "reject",
@@ -5773,17 +5807,17 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "outside",
-        "ai_note": "Location is explicitly Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role is software engineering on AI agents for SRE/AIOps tooling, with some reliability, observability and Kubernetes work, so its relevance to infrastructure automation is only partial. The stated 4+ years overall fits the experience band.",
+        "ai_note": "Location is explicitly Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role itself is mainly agentic AI software development for SRE tooling, so infrastructure-automation fit is only partial. The stated 4+ years of experience is within band.",
         "ai_relevance": "uncertain",
         "ai_score": 20
       },
-      "at": "2026-11-14T10:50:13+00:00",
+      "at": "2026-11-18T12:41:10+00:00",
       "jd_hash": "af16985a4bc9505e6dd07ee4350707fd6931c11d85690526d4e9906b2ea13e96",
       "mode": "ai",
-      "next_review_at": "2026-11-21T10:50:13.510498+00:00",
+      "next_review_at": "2026-11-25T12:41:10.681427+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Location is explicitly Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role is software engineering on AI agents for SRE/AIOps tooling, with some reliability, observability and Kubernetes work, so its relevance to infrastructure automation is only partial. The stated 4+ years overall fits the experience band.",
-      "signature": "d85ebb05d03de15d3e34c356e285eb4bd602e7560ccf8133faed5f80278cc8ac"
+      "reason": "Location is explicitly Shanghai, China, which is outside the enabled regions (India, UAE, Europe). The role itself is mainly agentic AI software development for SRE tooling, so infrastructure-automation fit is only partial. The stated 4+ years of experience is within band.",
+      "signature": "a7148d4d762e5fe53922c94585c3fb39a7acef33c0902d275ac16dfe1e1000be"
     },
     "Microsoft::1970393557047481": {
       "ai_assessment": {
@@ -7779,16 +7813,16 @@
         "ai_decision": "reject",
         "ai_experience_fit": "within_band",
         "ai_location_fit": "allowed",
-        "ai_note": "Forward deployed role centered on building Agentforce agentic apps, Salesforce Apex/LWC, data pipelines and customer delivery under Sales category; DevOps is only a nice-to-have. Not infrastructure-focused. Dubai allowed; 6+ yrs within band.",
+        "ai_note": "Sales-category forward deployed role building Agentforce agentic apps (Apex, LWC, data pipelines, Salesforce expertise, Arabic). It is application/solution engineering, not infrastructure or Kubernetes platform work, and DevOps appears only as a nice-to-have. Dubai is allowed and the 6+ years requirement is within band.",
         "ai_relevance": "irrelevant",
-        "ai_score": 15
+        "ai_score": 12
       },
-      "at": "2026-11-10T15:23:26+00:00",
+      "at": "2026-11-18T12:41:10+00:00",
       "jd_hash": "0f909425c32c32d15445c757e4ef1d35e4523ba31be6a1cde01def847387c356",
       "mode": "ai",
-      "next_review_at": "2026-11-17T15:23:26.374515+00:00",
+      "next_review_at": "2026-11-25T12:41:10.681498+00:00",
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
-      "reason": "Forward deployed role centered on building Agentforce agentic apps, Salesforce Apex/LWC, data pipelines and customer delivery under Sales category; DevOps is only a nice-to-have. Not infrastructure-focused. Dubai allowed; 6+ yrs within band.",
+      "reason": "Sales-category forward deployed role building Agentforce agentic apps (Apex, LWC, data pipelines, Salesforce expertise, Arabic). It is application/solution engineering, not infrastructure or Kubernetes platform work, and DevOps appears only as a nice-to-have. Dubai is allowed and the 6+ years requirement is within band.",
       "signature": "b937976dfecfd12ad84dbdc4c7b121f94e8dc5ad9b86ad8b4407859a269ebc69"
     },
     "Salesforce::JR349383": {
@@ -8650,6 +8684,23 @@
       "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
       "reason": "Sales-category forward deployed role building Agentforce AI agents, data pipelines and full-stack customer solutions, not infrastructure/Kubernetes deployment. The 3+ years requirement is within band. Stockholm, Sweden is not among the enabled locations.",
       "signature": "214bcb11d9b55a158b05270d04c617d34f83b3bc8934064d0a01ccdaae50ac45"
+    },
+    "Salesforce::JR368475": {
+      "ai_assessment": {
+        "ai_decision": "reject",
+        "ai_experience_fit": "within_band",
+        "ai_location_fit": "uncertain",
+        "ai_note": "Sales-category forward deployed role building Agentforce agentic apps (Apex, LWC, data pipelines), not infrastructure/Kubernetes deployment; DevOps only a nice-to-have. Milan, Italy is not among the configured locations, and Italian is required. 4+ years is within band.",
+        "ai_relevance": "irrelevant",
+        "ai_score": 10
+      },
+      "at": "2026-11-18T12:41:10+00:00",
+      "jd_hash": "57ee93005bb335291dd81dce6ddd68f9d7b6a782ef6d4d97bccacc568ce83681",
+      "mode": "ai",
+      "next_review_at": "2026-11-25T12:41:10.681464+00:00",
+      "policy_version": "96f2d895f470494ea48022235b2d3825b390a7ca4cd6fec9577ef84318de5bbb",
+      "reason": "Sales-category forward deployed role building Agentforce agentic apps (Apex, LWC, data pipelines), not infrastructure/Kubernetes deployment; DevOps only a nice-to-have. Milan, Italy is not among the configured locations, and Italian is required. 4+ years is within band.",
+      "signature": "66aca7fb1638217436c78250594c6cc5b567277689af3c35e2b6388e2ce3d572"
     },
     "Snowflake::467250b0-43bc-47aa-91d5-6312687e4097": {
       "ai_assessment": {
@@ -10284,6 +10335,8 @@
     "J.P. Morgan::210807403": "2026-11-09T06:57:23+00:00",
     "J.P. Morgan::210808319": "2026-11-16T20:30:57+00:00",
     "J.P. Morgan::210808750": "2026-11-16T07:04:03+00:00",
+    "J.P. Morgan::210809583": "2026-11-18T12:41:13+00:00",
+    "J.P. Morgan::210809591": "2026-11-18T12:41:13+00:00",
     "Mastercard::R-268611": "2026-07-23T09:09:31+00:00",
     "Mastercard::R-273203": "2026-07-08T20:03:56+00:00",
     "Mastercard::R-273348": "2026-07-08T20:03:56+00:00",
@@ -10777,6 +10830,7 @@
     "Zscaler::5209072007": "2026-09-01T15:02:44+00:00",
     "Zscaler::5212053007": "2026-08-18T03:22:18+00:00",
     "Zscaler::5229507007": "2026-09-15T16:39:26+00:00",
+    "Zscaler::5270971007": "2026-11-18T12:41:13+00:00",
     "Zscaler::5271547007": "2026-10-30T16:38:20+00:00",
     "Zscaler::5278563007": "2026-11-11T06:50:52+00:00",
     "Zscaler::5279058007": "2026-11-04T17:47:16+00:00"
